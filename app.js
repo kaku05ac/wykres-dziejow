@@ -331,6 +331,7 @@
 
     const localX = e => { const r = svgD.getBoundingClientRect(); return (e.clientX - r.left) * W / r.width; };
     svgD.addEventListener('pointerdown', e => {
+      svgD.dataset.pointer = '1';
       if (e.target.closest('[data-toggle]')) { open = !open; build(); dirty = true; return; }
       const dot = e.target.closest('.dk-dot'), x = localX(e);
       if (!dot && x < x0 - 6) return;
@@ -358,6 +359,7 @@
     svgD.addEventListener('pointerup', end);
     svgD.addEventListener('pointercancel', end);
     svgD.addEventListener('keydown', e => {
+      delete svgD.dataset.pointer;
       const step = e.shiftKey ? 100 : 10;
       const d = { ArrowRight: step, ArrowUp: step, ArrowLeft: -step, ArrowDown: -step }[e.key];
       if (d) { e.preventDefault(); set(s => ({ year: clamp(Math.round(s.year) + d, START, END), playing: false, sel: null })); }
