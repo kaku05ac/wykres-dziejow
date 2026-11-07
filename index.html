@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wykres dziejów świata</title>
+<meta name="description" content="Interaktywna kołowa chronologia biblijna od stworzenia świata do dziś, datowana według katolickich wydań Biblii.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <header class="intro">
+      <div class="lang" role="group" data-i18n-aria="lang" aria-label="Język">
+        <button type="button" data-lang="pl" class="on" aria-pressed="true">Polski</button><span aria-hidden="true">/</span><button type="button" data-lang="en" aria-pressed="false">English</button>
+      </div>
+      <div class="eyebrow" data-i18n="eyebrow">Datowanie wg katolickich wydań Biblii · Od stworzenia do 2026 n.e.</div>
+      <h1 class="title" data-i18n="title">Wykres dziejów świata</h1>
+      <button type="button" class="info-toggle" id="infoToggle" aria-expanded="false" aria-controls="lede"><svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5.25"/><path d="M6 5.3V8.8M6 3.4V3.6"/></svg><span>Info</span></button>
+      <p class="lede" id="lede" hidden data-i18n-html="lede">Rozdziały 1–11 Księgi Rodzaju nie podają dat, dlatego liczymy je w latach od stworzenia świata (AM, <i>anno mundi</i>). Od Abrahama daty są zgodne z katolickimi wydaniami Biblii, a przed 722 p.n.e. są przybliżone. Naciśnij „Odtwórz” albo przeciągnij oś czasu.</p>
+    </header>
+
+    <section class="panel player">
+      <div class="player-row">
+        <div class="year" id="yearLabel">AM 1</div>
+        <button type="button" class="btn-play" id="play"><svg class="btn-play-icon" viewBox="0 0 10 10" aria-hidden="true"><path class="ico-play" d="M2.5 1.5L8.5 5L2.5 8.5Z"/><path class="ico-pause" d="M2.5 1.5H4.2V8.5H2.5ZM5.8 1.5H7.5V8.5H5.8Z"/></svg><span id="playLabel">Odtwórz</span></button>
+      </div>
+    </section>
+
+    <section class="group">
+      <h2 class="group-title" data-i18n="periods">Okresy</h2>
+      <div class="chips" id="eras"></div>
+    </section>
+
+    <section class="panel card" aria-live="polite">
+      <div class="card-title" id="cardTitle"></div>
+      <div class="card-body" id="cardBody"></div>
+      <div class="card-ref" id="cardRef"></div>
+    </section>
+
+    <section class="group alive">
+      <h2 class="group-title"><span data-i18n="aliveIn">Żyjący w</span> <span id="aliveYear">AM 1</span></h2>
+      <div id="alive"></div>
+    </section>
+
+    <section class="group events">
+      <h2 class="group-title" data-i18n="events">Wydarzenia</h2>
+      <div id="eventList"></div>
+    </section>
+
+    <div class="legend" id="legend"></div>
+  </aside>
+
+  <main class="stage">
+    <div class="canvas">
+    <svg id="chart" viewBox="-750 -750 1500 1500" preserveAspectRatio="xMidYMid meet" role="img" data-i18n-aria="chart" aria-label="Kołowy wykres chronologii">
+      <circle cx="0" cy="0" r="650" fill="#fbfafb" stroke="#ebe8ea" stroke-width=".8"></circle>
+      <circle cx="0" cy="0" r="610" fill="none" stroke="#e3dfe1" stroke-width=".6"></circle>
+      <circle cx="0" cy="0" r="340" fill="none" stroke="#e3dfe1" stroke-width=".6" stroke-dasharray="2 5"></circle>
+      <circle cx="0" cy="0" r="80" fill="none" stroke="#e3dfe1" stroke-width=".6" stroke-dasharray="2 5"></circle>
+      <g id="ruler"></g>
+      <g id="arcs"></g>
+      <g id="arcLabels" class="no-hit"></g>
+      <line id="sweep" stroke="#4d3340" stroke-width=".8" stroke-dasharray="3 4"></line>
+      <circle id="sweepDot" r="3.5" fill="#e29885" stroke="#4d3340" stroke-width="1"></circle>
+      <g id="dots"></g>
+      <g id="figs"></g>
+      <circle cx="0" cy="0" r="52" fill="#fbfafb" stroke="#e3dfe1" stroke-width=".8"></circle>
+      <text id="hubYear" class="hub-year" x="0" y="2" text-anchor="middle">AM 1</text>
+      <text id="hubSub" class="hub-sub" x="0" y="20" text-anchor="middle">Przed potopem</text>
+    </svg>
+
+    <div class="reel" id="reel" data-i18n-aria="reel" aria-label="Wydarzenia w obrazach">
+      <div class="reel-track" id="reelTrack"></div>
+    </div>
+    <div class="reel-text" id="reelText" aria-live="polite">
+      <span class="rt-meta" id="capMeta"></span>
+      <span class="rt-title" id="capTitle"></span>
+      <span class="rt-body" id="capBody"></span>
+    </div>
+
+    <div class="zoom">
+      <button type="button" class="zoom-btn" id="zoomIn" data-i18n-aria="zoomIn" aria-label="Powiększ">+</button>
+      <button type="button" class="zoom-btn" id="zoomOut" data-i18n-aria="zoomOut" aria-label="Pomniejsz">−</button>
+      <button type="button" class="zoom-btn wide" id="reset" data-i18n="fullChart">Cały wykres</button>
+    </div>
+    </div>
+
+    <div class="dock">
+      <svg id="dockSvg" tabindex="0" role="slider" data-i18n-aria="dock" aria-label="Oś czasu: przeciągnij, aby zmienić rok, albo użyj klawiszy strzałek" aria-valuemin="-4083" aria-valuemax="2026" aria-valuenow="-4083"></svg>
+    </div>
+
+    <section class="ask" id="ask" hidden>
+      <button type="button" class="ask-bar" id="askToggle" aria-expanded="false" aria-controls="askBody">
+        <span class="ask-led" aria-hidden="true"></span><span class="ask-bar-label" data-i18n="askBar">Zapytaj o historię</span><span class="ask-bar-ctx" id="askCtx"></span><svg class="ask-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 6.5L5 3.5L8 6.5"/></svg>
+      </button>
+      <div class="ask-body" id="askBody" hidden>
+        <div class="ask-screen">
+          <div class="ask-log" id="askLog" role="log" aria-live="polite" data-i18n-aria="askLog" aria-label="Rozmowa o historii">
+            <div class="ask-empty" id="askEmpty">
+              <p class="ask-hello" data-i18n="askHello">dzień dobry</p>
+              <p class="ask-intro" data-i18n="askIntro">Zapytaj o postać, wydarzenie albo epokę. Odpowiedź uwzględnia rok, w którym jesteś na osi czasu.</p>
+            </div>
+          </div>
+          <form class="ask-form" id="askForm">
+            <input class="ask-input" id="askInput" type="text" autocomplete="off" maxlength="400" data-i18n-ph="askPh" placeholder="Np. kim był św. Augustyn?" data-i18n-aria="askBar" aria-label="Zapytaj o historię">
+            <button type="submit" class="ask-send" id="askSend" data-i18n="askSend">Wyślij</button>
+          </form>
+          <p class="ask-note" id="askNote" data-i18n="askNote">Odpowiada Claude (AI) i może się mylić.</p>
+        </div>
+        <div class="ask-pad">
+          <span class="ask-screw tl" aria-hidden="true"></span><span class="ask-screw tr" aria-hidden="true"></span>
+          <span class="ask-grille" aria-hidden="true"></span>
+          <span class="ask-seam h" aria-hidden="true"></span><span class="ask-seam v" aria-hidden="true"></span>
+          <span class="ask-tag" id="askYear" aria-hidden="true"></span>
+          <button type="button" class="ask-knob" id="askKnob"><span class="ask-dash" aria-hidden="true"></span><span class="ask-knob-label" data-i18n="askKnob">Zapytaj</span></button>
+          <span class="ask-mode" aria-hidden="true"><span class="ask-ring"></span><span data-i18n="askMode">Czat</span></span>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
