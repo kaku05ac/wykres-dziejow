@@ -71,7 +71,7 @@
     askCtx: $('askCtx'), askYear: $('askYear'),
     yearLabel: $('yearLabel'), aliveYear: $('aliveYear'), play: $('play'), playLabel: $('playLabel'),
     cardTitle: $('cardTitle'), cardBody: $('cardBody'), cardRef: $('cardRef'),
-    alive: $('alive'), eventList: $('eventList'), eras: $('eras'), legend: $('legend'),
+    alive: $('alive'), eventList: $('eventList'), legend: $('legend'),
     reel: $('reel'), reelTrack: $('reelTrack'), reelText: $('reelText'), capMeta: $('capMeta'), capTitle: $('capTitle'), capBody: $('capBody')
   };
   const cache = new Map();
@@ -108,7 +108,6 @@
   // Side-panel pieces (rebuilt when the language changes).
   let eventButtons = [], lastEvLine = '';
   const buildStatic = () => {
-    el.eras.innerHTML = ERAS.map((e, i) => `<button type="button" class="chip" data-era="${i}">${esc(e[0])}</button>`).join('');
     // Numbered rows; the current one carries a line that grows as its section plays.
     el.eventList.innerHTML = EV.map((v, i) => `<button type="button" class="event" data-ev="${i}"><span class="ev-num">${String(i + 1).padStart(2, '0')}</span><span class="ev-name">${esc(v[0])}</span><span class="when">${esc(evWhen(v))}</span><span class="ev-line" aria-hidden="true"></span></button>`).join('');
     lastEvLine = '';
@@ -674,22 +673,10 @@
   };
 
   // ── Controls ──────────────────────────────────────────────
-  const goEra = (name, from, to) => {
-    if (from === START && to === END) { set({ year: from, playing: true, stopAt: to, rate: PLAY_RATE, sel: null }); flyTo({ ...FULL_VIEW }); return; }
-    const a1 = ang(from), a2 = ang(to), r = 420, [x, y] = pt(r, (a1 + a2) / 2);
-    const span = (a2 - a1) * Math.PI / 180 * r;
-    set({ year: from, playing: true, stopAt: to, rate: Math.max(40, (to - from) / 9) * SPEED, sel: null });
-    flyTo({ cx: x, cy: y, w: Math.max(520, Math.min(1200, span * 1.4 + 300)) });
-  };
-
   el.play.addEventListener('click', () => {
     set(s => (s.year >= END
       ? { year: START, playing: true, stopAt: END, rate: PLAY_RATE, sel: null }
       : { playing: !s.playing, stopAt: s.playing ? s.stopAt : END, rate: s.playing ? s.rate : PLAY_RATE }));
-  });
-  el.eras.addEventListener('click', e => {
-    const b = e.target.closest('[data-era]'); if (!b) return;
-    const era = ERAS[+b.dataset.era]; goEra(era[0], era[1], era[2]);
   });
   el.eventList.addEventListener('click', e => {
     const b = e.target.closest('[data-ev]'); if (!b) return;
