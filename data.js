@@ -20,9 +20,9 @@ const am = n => START + n;
 
 // Lines (Gen 10 and after): tint, line colour, legend name.
 // Palette taken from a vivid poured-paint image: red-orange #eb5628, orange #f09c3f, yellow #e6c363,
-// green #3f8a3a, turquoise #2a9db0, petrol #24586b, crimson #a8344a, plum #6b2c43; kings in walnut #5d4030
-// alternating with a lighter walnut #a68263.
-const COL = { cain: ['#f7ecc9', '#e6c363', 'Kain i jego potomkowie'], sem: ['#efc9d0', '#a8344a', 'Semici'], ham: ['#fbe0c1', '#f09c3f', 'Chamici'], jap: ['#d3e6cf', '#3f8a3a', 'Jafetyci'], chu: ['#cdebf0', '#2a9db0', 'Kościół katolicki'], orth: ['#e3cdd5', '#6b2c43', 'Prawosławie'], ref: ['#cbdce2', '#24586b', 'Protestantyzm'], pat: ['#fbd3c4', '#eb5628', 'Patriarchowie'], king: ['#e3d6cc', '#5d4030', 'Królowie Izraela i Judy'] };
+// green #3f8a3a, turquoise #2a9db0, petrol #24586b, crimson #a8344a, plum #6b2c43; kings in dark brown #2b1b14
+// alternating with a lighter brown #7b5b4a.
+const COL = { cain: ['#f7ecc9', '#e6c363', 'Kain i jego potomkowie'], sem: ['#efc9d0', '#a8344a', 'Semici'], ham: ['#fbe0c1', '#f09c3f', 'Chamici'], jap: ['#d3e6cf', '#3f8a3a', 'Jafetyci'], chu: ['#cdebf0', '#2a9db0', 'Kościół katolicki'], orth: ['#e3cdd5', '#6b2c43', 'Prawosławie'], ref: ['#cbdce2', '#24586b', 'Protestantyzm'], pat: ['#fbd3c4', '#eb5628', 'Patriarchowie'], king: ['#d9d1cd', '#2b1b14', 'Królowie Izraela i Judy'] };
 
 // Patriarchs: name, birth (internal year), years lived (as Scripture gives them), reference.
 // The first 19 are counted from Creation (Rdz 5; 11,10-32).
