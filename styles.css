@@ -120,6 +120,11 @@ h1, h2, p { margin: 0; }
 .arc-label { transition: opacity .15s ease; }
 .arc-hit { fill: none; stroke: transparent; stroke-linecap: butt; pointer-events: stroke; }
 .testament-line { fill: none; stroke: var(--n-300); stroke-width: .8; }
+/* Very faint slices for the three testament bands: Old Testament, New Testament, the Church. */
+.pie { pointer-events: none; }
+.pie-0 { fill: var(--c4); opacity: .07; }
+.pie-1 { fill: var(--c1); opacity: .10; }
+.pie-2 { fill: var(--c2); opacity: .08; }
 .testament-label { font-family: var(--mono); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; fill: var(--n-500); }
 .fig-initial { font-family: var(--serif); font-weight: 300; fill: var(--n-900); pointer-events: none; }
 .hub-year { font-family: var(--serif); font-size: 19px; font-weight: 300; letter-spacing: -0.02em; fill: var(--n-900); }

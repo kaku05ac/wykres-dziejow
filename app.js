@@ -83,6 +83,12 @@
       html += `<line x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke="${seam ? '#b3afb1' : '#e3dfe1'}" stroke-width=".6"${seam ? ' stroke-dasharray="4 4"' : ''}/>`;
       html += `<text class="tick-label" x="${f1(x3)}" y="${f1(y3)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(a))} ${f1(x3)} ${f1(y3)})">${text}</text>`;
     });
+    // Faint pie slices behind everything, one per testament band, from the hub to the outer circle.
+    TESTAMENTS.forEach(([from, to], k) => {
+      const a1 = ang(from), a2 = ang(to), big = a2 - a1 > 180 ? 1 : 0, R = 650, r0 = 52;
+      const [ox1, oy1] = pt(R, a1), [ox2, oy2] = pt(R, a2), [ix2, iy2] = pt(r0, a2), [ix1, iy1] = pt(r0, a1);
+      html = `<path class="pie pie-${k}" d="M${f1(ox1)} ${f1(oy1)}A${R} ${R} 0 ${big} 1 ${f1(ox2)} ${f1(oy2)}L${f1(ix2)} ${f1(iy2)}A${r0} ${r0} 0 ${big} 0 ${f1(ix1)} ${f1(iy1)}Z"/>` + html;
+    });
     // Testament bands around the outside: Old Testament, New Testament, Church history.
     TESTAMENTS.forEach(([from, to], k) => {
       const a1 = ang(from), a2 = ang(to), R = 716, [sx, sy] = pt(R, a1 + 0.4), [ex, ey] = pt(R, a2 - 0.4);

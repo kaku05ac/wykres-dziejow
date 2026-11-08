@@ -130,7 +130,9 @@ const CH_EV = [
 ];
 
 // Testaments: bands marked around the chart and along the timeline (from, to).
-const TESTAMENTS = [[START, -5], [-5, 100], [100, END]];
+// Old Testament to the birth of Christ, New Testament to His death and resurrection (AD 30),
+// then the Church. The chart also shades these three stretches as faint slices of the pie.
+const TESTAMENTS = [[START, -5], [-5, 30], [30, END]];
 
 // Periods: name, from, to. The last one is the whole chart.
 const ERAS = [['Od stworzenia do potopu', am(0), am(1656)], ['Od potopu do Abrahama', am(1656), -1825], ['Od Abrahama do wyjścia z Egiptu', -1825, -1250], ['Królestwa Izraela', -1050, -587], ['Całość', START, END]];
