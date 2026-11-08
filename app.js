@@ -450,14 +450,15 @@
     // Ghost tracks: every arc's whole span is drawn first as a faint line of its colour,
     // and the strong colour fills it up to the slider's year.
     let ghosts = '';
-    const addArc = (key, r, w, s, e, col, title, body, ref, label, size) => {
+    // Every card shows its description alone; the dates go with the reference in the small line below.
+    const addArc = (key, r, w, s, e, col, title, body, ref, label, size, when) => {
       const round = key[0] === 'k' ? 0 : 0.5;
       ghosts += band(r, w, ang(s), ang(e), COL[col][1], false, 'arc-ghost', round);
       if (year < s) return;
       const a1 = ang(s), a2 = ang(Math.min(e, year));
       if (a2 - a1 < 0.05) return;
       const on = focus(key);
-      items[key] = { title, body, ref };
+      items[key] = { title, body, ref, when };
       // A band along the arc with softly rounded corners, plus a wider invisible line for easy hovering.
       const [sx, sy] = pt(r, a1), [ex, ey] = pt(r, a2), big = a2 - a1 > 180 ? 1 : 0;
       const d = `M${f1(sx)} ${f1(sy)}A${r} ${r} 0 ${big} 1 ${f1(ex)} ${f1(ey)}`;
@@ -473,26 +474,26 @@
     };
 
     // Nations ring (inner) and patriarch lifespans (outer).
-    // A nation's card: its description (if any), then its dates; the line of Cain has no dates, only "from Cain to the Flood".
-    NAT.forEach((n, i) => addArc('n' + i, 90 + i * 14.5, 7, n[2], n[3], n[1], n[0],
-      (n[5] ? n[5] + ' ' : '') + (n[2] < SEAM ? U().natCain : dot(U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3])))), n[4], n[0], 5));
+    // A nation's card: its description, with its dates in the line below; the line of Cain has no dates, only "from Cain to the Flood".
+    NAT.forEach((n, i) => addArc('n' + i, 90 + i * 14.5, 7, n[2], n[3], n[1], n[0], n[5] || '', n[4], n[0], 5,
+      n[2] < SEAM ? U().natCain.replace(/\.$/, '') : U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3]))));
     const alive = [];
     PAT.forEach((p, i) => {
       // Genesis 1–11 lifespans are cut at the seam: their years after it are not dated.
       const s = p[1], primeval = s < SEAM, e = primeval ? Math.min(p[1] + p[2], SEAM) : p[1] + p[2];
       if (year >= s && year <= e) alive.push({ text: U().age(p[0], Math.floor(year - s)), c: COL.pat });
-      const body = primeval
-        ? U().patAm(p[2], lat(p[2]))
-        : U().patDated(fmtD(s), dot(fmtD(e)), p[2], lat(p[2]));
-      addArc('p' + i, PAT_R[i], 5, s, e, 'pat', p[0], (p[4] ? p[4] + ' ' : '') + body, p[3], p[0], 4);
+      // Lifespan in years from Scripture; dates only from Abraham on (Genesis 1–11 is undated).
+      const span = p[2] + ' ' + lat(p[2]);
+      addArc('p' + i, PAT_R[i], 5, s, e, 'pat', p[0], p[4] || '', p[3], p[0], 4,
+        primeval ? span + ' · ' + U().undated : U().range(fmtD(s), fmtD(e)) + ' · ' + span);
     });
     // Kings ring, just inside the ruler: Judah (with Saul, David and Solomon) and, outside it, Israel.
     // Reigns follow one another on each track, so neighbours alternate between two shades.
     KINGS.forEach((k, i) => {
       const [name, s, e, realm, ref, age, reign] = k, t = e - s < 0.6 ? s + 0.6 : e;
       if (year >= s && year <= e) alive.push({ text: name + ' (' + U().realmShort[realm] + ')', c: COL.king });
-      const body = U().kingBody(U().realm[realm], dot(U().range(fmtD(s), fmtD(e))), age ? age + ' ' + lat(age) : '', reign);
-      addArc('k' + i, realm === 'is' ? 584 : 568, 6, s, t, KING_SHADE[i], name, body, ref, name, 4);
+      const body = U().kingBody(U().realm[realm], age ? age + ' ' + lat(age) : '', reign);
+      addArc('k' + i, realm === 'is' ? 584 : 568, 6, s, t, KING_SHADE[i], name, body, ref, name, 4, U().range(fmtD(s), fmtD(e)));
     });
     NAT.forEach(n => { if (year >= n[2] && year <= n[3]) alive.push({ text: n[0], c: COL[n[1]] }); });
 
@@ -502,7 +503,7 @@
       if (year < v[1]) return;
       const [x, y] = pt(70, ang(v[1])), key = 'e' + i, age = year - v[1];
       const when = evWhen(v);
-      items[key] = { title: v[0], body: v[3] + (when === U().undated ? '' : ' ' + cap(dot(when))), ref: v[2] };
+      items[key] = { title: v[0], body: v[3], ref: v[2], when };
       const hr = 5 + 30 * Math.min(1, age / 120), ho = age < 120 ? 1 - age / 120 : 0;
       dots += `<g><circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(hr)}" fill="none" stroke="#4d3340" stroke-width=".6" opacity="${ho.toFixed(3)}" pointer-events="none"/>`
         + `<circle cx="${f1(x)}" cy="${f1(y)}" r="${focus(key) ? 4.5 : 2.6}" fill="#4d3340" pointer-events="none"/>`
@@ -513,7 +514,7 @@
     CH_EV.forEach((c, i) => {
       if (year < c[1]) return;
       const key = 'c' + i, [x, y] = pt(88, ang(c[1])), d = focus(key) ? 5.5 : 3.6;
-      items[key] = { title: c[0], body: c[3] + ' ' + cap(dot(fmt(c[1]))), ref: c[2] || (c[4] ? U().historyEvent : U().churchEvent) };
+      items[key] = { title: c[0], body: c[3], ref: c[2] || (c[4] ? U().historyEvent : U().churchEvent), when: fmt(c[1]) };
       dots += `<path data-key="${key}" class="ch-mark" d="M${f1(x)} ${f1(y - d)}L${f1(x + d)} ${f1(y)}L${f1(x)} ${f1(y + d)}L${f1(x - d)} ${f1(y)}Z" fill="${COL[c[4] || 'chu'][1]}"/>`
         + `<circle data-key="${key}" cx="${f1(x)}" cy="${f1(y)}" r="8" fill="transparent"/>`;
     });
@@ -533,7 +534,7 @@
       if (year < g[1]) return;
       const age = year - g[1], p = clamp(age / 60, 0, 1), key = 'f' + i, a = ang(g[1]);
       const [x, y] = pt(FIG_R[i], a), [lx, ly] = pt(652, a), on = focus(key), c = COL[g[5]];
-      items[key] = { title: g[0], body: g[3] + (undated(g[1]) ? '' : ' ' + cap(dot(fmtD(g[1])))), ref: g[4] };
+      items[key] = { title: g[0], body: g[3], ref: g[4], when: fmtD(g[1]) };
       const ho = age < 150 ? 1 - age / 150 : 0, r = (on ? 11 : 9) * (1 - Math.pow(1 - p, 3));
       const stroke = on ? '#4d3340' : c[1];
       figs += `<g opacity="${p.toFixed(3)}">`
@@ -575,10 +576,10 @@
     const key = hover || sel;
     // The card shows what is hovered or selected; otherwise the current event at the slider's year.
     const curEv = eventAt(year);
-    const card = key && items[key] ? items[key] : items['e' + curEv] || { title: EV[curEv][0], body: EV[curEv][3], ref: EV[curEv][2] };
+    const card = key && items[key] ? items[key] : items['e' + curEv] || { title: EV[curEv][0], body: EV[curEv][3], ref: EV[curEv][2], when: evWhen(EV[curEv]) };
     put(el.cardTitle, 'text', card.title);
     put(el.cardBody, 'text', card.body);
-    put(el.cardRef, 'text', card.ref || '');
+    put(el.cardRef, 'text', [card.when, card.ref].filter(Boolean).join(' · '));
 
     put(el.alive, 'html', alive.map(a => `<div class="alive-row"><span class="swatch" style="background:${a.c[0]};border-color:${a.c[1]}"></span><span>${esc(a.text)}</span></div>`).join(''));
     // Events: the current row is in ink with its line, earlier rows grey, later rows lighter.
