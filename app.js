@@ -39,7 +39,7 @@
     dated.forEach(([, i], k) => { r[i] = 542 - k * 10; });
     return r;
   })();
-  COL.king2 = ['#e6e1df', '#6e5f58', ''];
+  COL.king2 = ['#efe4da', '#a68263', ''];
   const KING_SHADE = (() => { const n = { ju: 0, is: 0 }; return KINGS.map(k => (n[k[3] === 'is' ? 'is' : 'ju']++ % 2 ? 'king2' : 'king')); })();
 
   // Faint pie slices behind everything, one per testament band, from the hub to the outer circle.
