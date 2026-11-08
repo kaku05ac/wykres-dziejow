@@ -511,7 +511,11 @@
     const SCI = 1088, sciR = 664;
     ghosts += band(sciR, 1.6, ang(SCI), ang(END), COL.chu[1], false, 'arc-ghost', 0);
     if (year > SCI) {
-      arcs += band(sciR, 1.6, ang(SCI), ang(Math.min(year, END)), COL.chu[1], false, 'arc-line sci-line', 0);
+      // A marker like the other rings: hovering or clicking it opens its card (why science grew where it did).
+      const a1 = ang(SCI), a2 = ang(Math.min(year, END)), [sx, sy] = pt(sciR, a1), [ex, ey] = pt(sciR, a2);
+      items.sci = { title: U().science, body: U().scienceBody, ref: U().scienceRef, when: U().range(fmtD(SCI), U().present) };
+      arcs += band(sciR, 1.6, a1, a2, COL.chu[1], focus('sci'), 'arc-line sci-line', 0)
+        + `<path class="arc-hit" data-key="sci" d="M${f1(sx)} ${f1(sy)}A${sciR} ${sciR} 0 ${a2 - a1 > 180 ? 1 : 0} 1 ${f1(ex)} ${f1(ey)}" stroke-width="10"/>`;
       // The label runs along the band, just outside it, a little after the start.
       const la = Math.min(ang(SCI) + 7, ang(Math.min(year, END)));
       arcLabels += curved('sci-path', sciR + 7, la, 12, U().science, 'sci-label');
@@ -736,6 +740,7 @@
     if (k === 'k' && KINGS[i]) return KINGS[i][0] + ' · ' + U().range(fmtD(KINGS[i][1]), fmtD(KINGS[i][2]));
     if (k === 'n' && NAT[i]) { const n = NAT[i]; return n[0] + ' · ' + (n[2] === SEAM ? U().beforeSeamLower : n[2] < SEAM ? U().fromCain : U().from + fmtD(n[2])); }
     if (k === 'c' && CH_EV[i]) return CH_EV[i][0] + ' · ' + fmt(CH_EV[i][1]);
+    if (key === 'sci') return U().science + ' · ' + U().from + fmtD(1088);
     return null;
   };
   const keyAt = t => { const n = t && t.closest && t.closest('[data-key]'); return n ? n.getAttribute('data-key') : null; };
