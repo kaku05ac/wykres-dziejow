@@ -15,7 +15,8 @@
   let LANG = 'pl';
   const U = () => UI[LANG];
   // Genesis 1–11 (before the seam) has no dates: it shows as "Bez daty" / "Undated".
-  const fmt = y => (y < SEAM ? U().undated : y < 0 ? U().bc(-y) : y === 0 ? U().bc(1) : U().ad(y));
+  // Whole years only (some short reigns are placed at fractional years internally).
+  const fmt = y => { const r = Math.round(y); return y < SEAM ? U().undated : r < 0 ? U().bc(-r) : r === 0 ? U().bc(1) : U().ad(r); };
   const undated = y => y < SEAM;
   // Polish plural of "rok" for a number of years: 1 rok, 2–4 lata (not 12–14), otherwise lat.
   const lat = n => U().years(n);
@@ -494,7 +495,8 @@
     KINGS.forEach((k, i) => {
       const [name, s, e, realm, ref, age, reign] = k, t = e - s < 0.6 ? s + 0.6 : e;
       if (year >= s && year <= e) alive.push({ text: name + ' (' + U().realmShort[realm] + ')', c: COL.king });
-      const body = U().kingBody(U().realm[realm], age ? age + ' ' + lat(age) : '', reign);
+      // A short description of the king (who he was, how long he reigned, what he is known for).
+      const body = k[7] || U().kingBody(U().realm[realm], age ? age + ' ' + lat(age) : '', reign);
       addArc('k' + i, realm === 'is' ? 584 : 568, 6, s, t, KING_SHADE[i], name, body, ref, name, 4, U().range(fmtD(s), fmtD(e)));
     });
     NAT.forEach(n => { if (year >= n[2] && year <= n[3]) alive.push({ text: n[0], c: COL[n[1]] }); });
