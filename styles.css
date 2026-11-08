@@ -173,6 +173,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 #dockSvg:focus-visible:not([data-pointer]) { outline: 1px solid var(--n-300); outline-offset: -1px; }
 .dk-tick { font-family: var(--mono); font-size: 9.5px; letter-spacing: .06em; text-transform: uppercase; fill: var(--n-500); }
 .dk-line { stroke: var(--n-200); stroke-width: 1; }
+.dk-tick.under-pill { opacity: 0; }
 .dk-seam { stroke: var(--n-300); stroke-width: 1; stroke-dasharray: 2 4; }
 .dk-label { font-family: var(--mono); font-size: 10px; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; fill: var(--n-500); dominant-baseline: central; }
 .dk-strong { fill: var(--n-900); }
@@ -181,15 +182,20 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .dk-toggle:hover .dk-caret { stroke: var(--n-900); }
 .dk-dot { cursor: pointer; transition: opacity .2s ease; }
 .dk-dot.future { opacity: .22; }
-.dk-mark { transition: transform .15s ease; transform-box: fill-box; transform-origin: center; }
-.dk-dot:hover .dk-mark { transform: scale(1.35); }
+.dk-mark { stroke-width: 2; stroke-linecap: round; transition: stroke-width .15s ease; }
+.dk-dot:hover .dk-mark { stroke-width: 3.2; }
+.dk-bar { stroke-linecap: round; }
+.dk-dot:hover .dk-bar, .dk-dot:hover .dk-band { filter: brightness(.85); }
 .dk-count { font-size: 8.5px; font-weight: 600; fill: var(--n-0); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .dk-area-nat { fill: var(--c5); opacity: .45; }
 .dk-area-pat { fill: var(--c4); opacity: .55; }
 .dk-testament { stroke: var(--n-300); stroke-width: 1; }
 .dk-testament-label { font-family: var(--mono); font-size: 8.5px; letter-spacing: .08em; text-transform: uppercase; fill: var(--n-500); }
 .dk-head-line { stroke: var(--accent); stroke-width: 1; }
-.dk-head-cap { fill: var(--accent); }
+/* The playhead's year pill: a small dark capsule riding on top of the line. */
+.dk-pill rect { fill: var(--accent); }
+.dk-pill text { font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; fill: #fff; text-anchor: middle; dominant-baseline: central; }
+.dk-pill { pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { .dk-dot, .dk-mark { transition: none; } }
 
 /* ── Ask about history: a dark screen for the conversation beside a light panel with a round key ── */

@@ -236,7 +236,7 @@
     const svgD = $('dockSvg');
     const A_MAX = ang(END), RULER = 22;
     const yearFromA = a => (a <= 70 ? START + a / 70 * (SEAM - START) : a <= 190 ? SEAM + (a - 70) / 120 * -SEAM : (a - 190) / 95 * END);
-    let W = 0, x0 = 0, x1 = 1, open = true, dots = [], head = null, lastX = null, drag = null;
+    let W = 0, x0 = 0, x1 = 1, open = true, dots = [], head = null, lastX = null, drag = null, pill = null, pillText = null, pillRect = null, lastLabel = '', tickEls = [];
     const xOf = y => x0 + ang(y) / A_MAX * (x1 - x0);
     const yearOf = x => clamp(Math.round(yearFromA(clamp((x - x0) / (x1 - x0), 0, 1) * A_MAX)), START, END);
     const patEnd = p => (p[1] < SEAM ? Math.min(p[1] + p[2], SEAM) : p[1] + p[2]);
@@ -247,10 +247,12 @@
       if (open) {
         L.push({ label: U().lanes.figures, kind: 'dots', h: 24, cls: 'dk-sub',
           items: FIG.map((g, i) => ({ y: g[1], key: 'f' + i, name: g[0], when: fmtD(g[1]), color: COL[g[5]][1] })) });
-        L.push({ label: U().lanes.patriarchs, kind: 'dots', h: 24, cls: 'dk-sub',
-          items: PAT.map((p, i) => ({ y: p[1], key: 'p' + i, name: p[0], when: U().born + fmtD(p[1]), color: COL.pat[1] })) });
-        L.push({ label: U().lanes.kings, kind: 'dots', h: 24, cls: 'dk-sub',
-          items: KINGS.map((k, i) => ({ y: k[1], key: 'k' + i, name: k[0], when: fmtD(k[1]), color: COL.king[1] })) });
+        // Lifespans as thin rounded bars, as on the ring; overlapping lives stack in rows.
+        L.push({ label: U().lanes.patriarchs, kind: 'bars', cls: 'dk-sub',
+          items: PAT.map((p, i) => ({ y: p[1], e: patEnd(p), key: 'p' + i, name: p[0], when: U().born + fmtD(p[1]), color: COL.pat[1] })) });
+        // Kings as two continuous tracks of reigns (Judah with the united kingdom, then Israel), as on the ring.
+        L.push({ label: U().lanes.kings, kind: 'bands', h: 24, cls: 'dk-sub',
+          items: KINGS.map((k, i) => ({ y: k[1], e: k[2], row: k[3] === 'is' ? 1 : 0, key: 'k' + i, name: k[0], when: U().range(fmtD(k[1]), fmtD(k[2])), color: COL[KING_SHADE[i]][1] })) });
         L.push({ label: U().lanes.alive, kind: 'area', h: 32, cls: 'dk-sub' });
       }
       L.push({ label: U().lanes.nations, kind: 'dots', h: 30, cls: 'dk-head',
@@ -278,7 +280,7 @@
         const left = anchor === 'start' ? x : anchor === 'end' ? x - w : x - w / 2;
         if (left < prevEnd + 8) return;
         prevEnd = left + w;
-        out += `<text class="dk-tick" x="${f1(x)}" y="12" text-anchor="${anchor}">${label}</text>`;
+        out += `<text class="dk-tick" x="${f1(x)}" y="12" text-anchor="${anchor}" data-l="${f1(left)}" data-r="${f1(left + w)}">${label}</text>`;
       });
       // Testament strip: a thin bracket per testament, labelled where it fits.
       TESTAMENTS.forEach(([from, to], k) => {
@@ -289,7 +291,19 @@
       });
       y += 22;
       const behind = out.length;
+      const BAR = 2.4, ROW = 3.6;
       lanes().forEach(l => {
+        if (l.kind === 'bars') {
+          // Pack the bars into as few rows as possible, in order of birth.
+          const rows = [];
+          l.items.map(it => ({ ...it, x: xOf(it.y), xe: Math.max(xOf(it.e), xOf(it.y) + 2) })).sort((a, b) => a.x - b.x).forEach(it => {
+            let r = rows.findIndex(end => end < it.x - 2);
+            if (r < 0) { r = rows.length; rows.push(0); }
+            rows[r] = it.xe; it.r = r;
+            (l.packed = l.packed || []).push(it);
+          });
+          l.rows = rows.length; l.h = Math.max(24, rows.length * ROW + 12);
+        }
         const cy = y + l.h / 2, head = l.cls === 'dk-head', lab = `dk-label${head ? ' dk-strong' : ''}`;
         if (l.toggle) {
           const caret = open ? `M13 ${cy - 2}L16.5 ${cy + 1.5}L20 ${cy - 2}` : `M15 ${cy - 3.5}L18.5 ${cy}L15 ${cy + 3.5}`;
@@ -297,23 +311,28 @@
         } else {
           out += `<text class="${lab}" x="28" y="${cy}">${l.label}</text>`;
         }
+        const mark = (it, x, body) => {
+          const tip = esc(`${it.name} · ${it.when}`);
+          return `<g class="dk-dot" data-x="${f1(x)}" data-y="${it.y}" data-key="${it.key}" data-ask="${tip}"><title>${tip}</title>${body}</g>`;
+        };
         if (l.kind === 'dots') {
+          // A short vertical tick per item: close items read as a denser stripe, names show on hover.
           out += `<line class="dk-line" x1="${f1(x0)}" y1="${cy}" x2="${f1(x1)}" y2="${cy}"/>`;
-          const groups = [];
           l.items.map(it => ({ ...it, x: xOf(it.y) })).sort((a, b) => a.x - b.x).forEach(it => {
-            const g = groups[groups.length - 1];
-            if (g && it.x - g[0].x < (narrow ? 14 : 11)) g.push(it); else groups.push([it]);
+            out += mark(it, it.x, `<rect x="${f1(it.x - 3)}" y="${cy - 9}" width="6" height="18" fill="transparent"/>`
+              + `<line class="dk-mark" x1="${f1(it.x)}" y1="${cy - 5}" x2="${f1(it.x)}" y2="${cy + 5}" stroke="${it.color}"/>`);
           });
-          groups.forEach(g => {
-            const f = g[0], tip = esc(g.map(it => `${it.name} · ${it.when}`).join('\n'));
-            if (g.length === 1) {
-              out += `<g class="dk-dot" data-x="${f1(f.x)}" data-y="${f.y}" data-key="${f.key}" data-ask="${tip}"><title>${tip}</title>`
-                + `<circle cx="${f1(f.x)}" cy="${cy}" r="9" fill="transparent"/><circle class="dk-mark" cx="${f1(f.x)}" cy="${cy}" r="3" fill="${f.color}"/></g>`;
-            } else {
-              const gx = g.reduce((sum, it) => sum + it.x, 0) / g.length, col = g.every(it => it.color === f.color) ? f.color : '#a29fa1';
-              out += `<g class="dk-dot" data-x="${f1(f.x)}" data-y="${f.y}" data-ask="${tip}"><title>${tip}</title>`
-                + `<circle class="dk-mark" cx="${f1(gx)}" cy="${cy}" r="${g.length > 9 ? 8.5 : 7}" fill="${col}"/><text class="dk-count" x="${f1(gx)}" y="${cy + 0.5}"${g.length > 9 ? ' style="font-size:7.5px"' : ''}>${g.length}</text></g>`;
-            }
+        } else if (l.kind === 'bars') {
+          const top = cy - l.rows * ROW / 2 + ROW / 2;
+          l.packed.forEach(it => {
+            const by = top + it.r * ROW;
+            out += mark(it, it.x, `<rect x="${f1(it.x - 2)}" y="${f1(by - 2.5)}" width="${f1(it.xe - it.x + 4)}" height="5" fill="transparent"/>`
+              + `<line class="dk-bar" x1="${f1(it.x)}" y1="${f1(by)}" x2="${f1(it.xe)}" y2="${f1(by)}" stroke="${it.color}" stroke-width="${BAR}"/>`);
+          });
+        } else if (l.kind === 'bands') {
+          l.items.forEach(it => {
+            const xs = xOf(it.y), xe = Math.max(xOf(it.e), xs + 0.6), by = cy - 6 + it.row * 7;
+            out += mark(it, xs, `<rect class="dk-band" x="${f1(xs)}" y="${by}" width="${f1(xe - xs)}" height="5" fill="${it.color}"/>`);
           });
         } else {
           // Stacked areas: nations alive (darker), plus patriarchs alive on top (lighter).
@@ -331,14 +350,17 @@
       });
       // The seam goes behind the lanes so it never crosses a dot.
       out = out.slice(0, behind) + `<line class="dk-seam" x1="${f1(xOf(SEAM))}" y1="${RULER}" x2="${f1(xOf(SEAM))}" y2="${y}"/>` + out.slice(behind);
-      out += `<g id="dkHead"><line class="dk-head-line" x1="0" y1="${RULER - 2}" x2="0" y2="${y}"/><circle class="dk-head-cap" cx="0" cy="${RULER - 2}" r="3"/></g>`;
+      out += `<g id="dkHead"><line class="dk-head-line" x1="0" y1="${RULER - 2}" x2="0" y2="${y}"/></g>`
+        + `<g id="dkPill" class="dk-pill"><rect x="0" y="2" width="60" height="17" rx="8.5"/><text x="30" y="11"></text></g>`;
       const H = y + 6;
       svgD.setAttribute('viewBox', `0 0 ${W} ${H}`);
       svgD.style.height = H + 'px';
       svgD.innerHTML = out;
       dots = [...svgD.querySelectorAll('.dk-dot')].map(n => [n, +n.dataset.x]);
       head = svgD.querySelector('#dkHead');
-      lastX = null;
+      pill = svgD.querySelector('#dkPill'); pillText = pill.querySelector('text'); pillRect = pill.querySelector('rect');
+      tickEls = [...svgD.querySelectorAll('.dk-tick')].map(n => [n, +n.dataset.l, +n.dataset.r]);
+      lastX = null; lastLabel = '';
     };
 
     const update = year => {
@@ -347,6 +369,13 @@
       if (lastX !== null && Math.abs(x - lastX) < 0.05) return;
       lastX = x;
       head.setAttribute('transform', `translate(${f1(x)} 0)`);
+      // The year pill rides on the playhead, kept inside the strip at both ends.
+      const label = fmt(Math.round(year)), pw = label.length * 6.1 + 18;
+      if (label !== lastLabel) { lastLabel = label; pillText.textContent = label; pillRect.setAttribute('width', f1(pw)); pillText.setAttribute('x', f1(pw / 2)); }
+      const px = clamp(x - pw / 2, 4, W - pw - 4);
+      pill.setAttribute('transform', `translate(${f1(px)} 0)`);
+      // Hide the scale label the pill is passing over.
+      tickEls.forEach(([n, l, r]) => n.classList.toggle('under-pill', r > px - 4 && l < px + pw + 4));
       dots.forEach(([n, dx]) => n.classList.toggle('future', dx > x + 0.5));
       svgD.setAttribute('aria-valuenow', Math.round(year));
       svgD.setAttribute('aria-valuetext', fmt(Math.round(year)));
@@ -371,7 +400,7 @@
       if (drag && drag.dot && !drag.moved && e.type === 'pointerup') {
         const key = drag.dot.dataset.key, y0 = +drag.dot.dataset.y;
         // Arcs need a few years of length before they exist, so step just past their start.
-        const y = key && (key[0] === 'p' || key[0] === 'n') ? y0 + 3 : key && key[0] === 'k' ? y0 + 0.3 : y0;
+        const y = key && (key[0] === 'p' || key[0] === 'n') ? y0 + 3 : key && key[0] === 'k' ? y0 + 1 : y0;
         set({ year: y, playing: false, sel: key || null });
         flyToYear(y0);
         // Put a question about the clicked mark into the chat, ready to send.
