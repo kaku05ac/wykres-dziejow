@@ -510,7 +510,7 @@ const TEXT = {
    [
     "Jezus",
     "Chrystus",
-    "Syn Boży i Syn Maryi, urodzony w Betlejem, który nauczał o królestwie Bożym, uzdrawiał chorych i przebaczał grzechy. Umarł na krzyżu i zmartwychwstał; chrześcijanie wyznają Go jako Zbawiciela świata, a od Jego narodzin, obliczonych w VI wieku przez mnicha Dionizego Małego, liczymy lata naszej ery.",
+    "„Tak Bóg umiłował świat, że Syna swego Jednorodzonego dał” (J 3,16): Jezus, Syn Boży i Syn Maryi, przychodzi na świat w Betlejem jako znak tej miłości. Przez swoje nauczanie, cuda, śmierć na krzyżu i zmartwychwstanie otwiera każdemu człowiekowi drogę do Boga.",
     "Mt 2; Łk 2"
    ],
    [
@@ -1404,7 +1404,7 @@ const TEXT = {
    [
     "Jesus",
     "Christ",
-    "Son of God and son of Mary, born in Bethlehem, who taught about the Kingdom of God, healed the sick and forgave sins. He died on the cross and rose again; Christians confess Him as the Saviour of the world, and we count the years of our era from His birth, as calculated in the 6th century by the monk Dionysius Exiguus.",
+    "“For God so loved the world that he gave his only Son” (John 3:16): Jesus, Son of God and son of Mary, is born in Bethlehem as the sign of that love. Through his teaching, his miracles, his death on the cross and his resurrection he opens the way to God for every person.",
     "Matt 2; Luke 2"
    ],
    [
