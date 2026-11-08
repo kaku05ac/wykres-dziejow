@@ -562,9 +562,6 @@
     const yearLabel = fmt(Math.round(year));
     put(el.hubYear, 'text', yearLabel);
     put(el.yearLabel, 'text', yearLabel);
-    // "Bez daty" is set smaller than a real year.
-    el.yearLabel.classList.toggle('is-undated', undated(year));
-    el.hubYear.classList.toggle('is-undated', undated(year));
     put(el.aliveYear, 'text', undated(year) ? U().primeval : yearLabel);
     put(el.askCtx, 'text', yearLabel);
     put(el.askYear, 'text', yearLabel);
