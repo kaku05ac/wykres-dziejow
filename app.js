@@ -579,7 +579,10 @@
     const card = key && items[key] ? items[key] : items['e' + curEv] || { title: EV[curEv][0], body: EV[curEv][3], ref: EV[curEv][2], when: evWhen(EV[curEv]) };
     put(el.cardTitle, 'text', card.title);
     put(el.cardBody, 'text', card.body);
-    put(el.cardRef, 'text', [card.when, card.ref].filter(Boolean).join(' · '));
+    // The current event's date is already in the big year above, so its card shows only the reference;
+    // a hovered or selected item (another time) keeps its date in this line.
+    const isCurrent = !(key && items[key]) || key === 'e' + curEv;
+    put(el.cardRef, 'text', [isCurrent ? '' : card.when, card.ref].filter(Boolean).join(' · '));
 
     put(el.alive, 'html', alive.map(a => `<div class="alive-row"><span class="swatch" style="background:${a.c[0]};border-color:${a.c[1]}"></span><span>${esc(a.text)}</span></div>`).join(''));
     // Events: the current row is in ink with its line, earlier rows grey, later rows lighter.
