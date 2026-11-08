@@ -403,8 +403,9 @@
     // A band from angle a1 to a2, w wide, with fully rounded (pill) ends: the shape is drawn
     // inset by the corner radius (here half the width) and then stroked with round joins in the
     // same colour, so it still starts and ends exactly at its years. Very short bands become a dot.
-    const band = (r, w, a1, a2, color, on, cls = 'arc-line') => {
-      const rc = w * 0.5, ro = r + w / 2 - rc, ri = r - w / 2 + rc, da = rc / r * 180 / Math.PI;
+    // round = 0 gives square ends (the kings' ring, where reigns follow one another without gaps).
+    const band = (r, w, a1, a2, color, on, cls = 'arc-line', round = 0.5) => {
+      const rc = w * round, ro = r + w / 2 - rc, ri = r - w / 2 + rc, da = rc / r * 180 / Math.PI;
       let b1 = a1 + da, b2 = a2 - da;
       if (b2 < b1) b1 = b2 = (a1 + a2) / 2;
       const big = b2 - b1 > 180 ? 1 : 0, [o1x, o1y] = pt(ro, b1), [o2x, o2y] = pt(ro, b2), [i2x, i2y] = pt(ri, b2), [i1x, i1y] = pt(ri, b1);
@@ -416,7 +417,8 @@
     // and the strong colour fills it up to the slider's year.
     let ghosts = '';
     const addArc = (key, r, w, s, e, col, title, body, ref, label, size) => {
-      ghosts += band(r, w, ang(s), ang(e), COL[col][1], false, 'arc-ghost');
+      const round = key[0] === 'k' ? 0 : 0.5;
+      ghosts += band(r, w, ang(s), ang(e), COL[col][1], false, 'arc-ghost', round);
       if (year < s) return;
       const a1 = ang(s), a2 = ang(Math.min(e, year));
       if (a2 - a1 < 0.05) return;
@@ -425,7 +427,7 @@
       // A band along the arc with softly rounded corners, plus a wider invisible line for easy hovering.
       const [sx, sy] = pt(r, a1), [ex, ey] = pt(r, a2), big = a2 - a1 > 180 ? 1 : 0;
       const d = `M${f1(sx)} ${f1(sy)}A${r} ${r} 0 ${big} 1 ${f1(ex)} ${f1(ey)}`;
-      arcs += band(r, on ? w + 2.5 : w, a1, a2, COL[col][1], on)
+      arcs += band(r, on ? w + 2.5 : w, a1, a2, COL[col][1], on, 'arc-line', round)
         + `<path class="arc-hit" data-key="${key}" d="${d}" stroke-width="${w + 7}"/>`;
       const am = (a1 + a2) / 2, len = (a2 - a1) * Math.PI / 180 * r;
       if (len > label.length * size * 0.66 + 8) {
