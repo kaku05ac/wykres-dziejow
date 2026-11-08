@@ -503,9 +503,9 @@
     // The age of science: a thin band on the outer rim, by the figures' circles, from the first university
     // (Bologna, 1088) to today, in the Church's colour; faint at first, it fills in with the slider.
     const SCI = 1088, sciR = 664;
-    ghosts += band(sciR, 2.5, ang(SCI), ang(END), COL.chu[1], false, 'arc-ghost');
+    ghosts += band(sciR, 1.6, ang(SCI), ang(END), COL.chu[1], false, 'arc-ghost', 0);
     if (year > SCI) {
-      arcs += band(sciR, 2.5, ang(SCI), ang(Math.min(year, END)), COL.chu[1], false, 'arc-line sci-line');
+      arcs += band(sciR, 1.6, ang(SCI), ang(Math.min(year, END)), COL.chu[1], false, 'arc-line sci-line', 0);
       // The label runs along the band, just outside it, a little after the start.
       const la = Math.min(ang(SCI) + 7, ang(Math.min(year, END))), [lx, ly] = pt(sciR + 7, la);
       arcLabels += `<text class="sci-label" x="${f1(lx)}" y="${f1(ly)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(la))} ${f1(lx)} ${f1(ly)})">${esc(U().science)}</text>`;

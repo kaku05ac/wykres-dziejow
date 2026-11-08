@@ -132,9 +132,7 @@ const CH_EV = [
   ['Sobór Watykański II', 1962, '', 'Sobór zwołany przez św. Jana XXIII, który odnowił liturgię, wprowadzając języki narodowe, i otworzył Kościół na dialog ze światem współczesnym, innymi chrześcijanami i religiami. Jego dokumenty, jak „Lumen gentium” i „Gaudium et spes”, kształtują życie Kościoła do dziś.'],
   // Historic (non-Church) events carry the line key of their people as a 5th field.
   ['Rewolucja francuska', 1789, '', 'Wybucha rewolucja we Francji, a w 1792 r. upada monarchia; hasła wolności, równości i braterstwa, a zarazem podporządkowanie Kościoła państwu (1790) i prześladowania duchownych i wiernych.', 'jap'],
-  ['Septuaginta', -250, '', 'Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład.', 'jap'],
-  // The first universities grow out of the Church's schools; the chart marks the age of science from here.
-  ['Uniwersytet Boloński', 1088, '', 'Najstarszy nieprzerwanie działający uniwersytet świata, który według tradycji powstał w 1088 r. i zasłynął studiami prawa rzymskiego i kanonicznego. Za nim, często ze szkół katedralnych i z przywilejami papieży, powstają uniwersytety w Paryżu, Oksfordzie i Krakowie (1364), gdzie rozwijają się teologia, prawo, medycyna i nauki o przyrodzie.']
+  ['Septuaginta', -250, '', 'Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład.', 'jap']
 ];
 
 // Testaments: bands marked around the chart and along the timeline (from, to).
@@ -197,5 +195,7 @@ const FIG = [
   ['Sokrates', -399, 'Filozof', 'Twórca filozofii moralnej: w dialogu, metodą pytań, prowadzi rozmówców do samopoznania i szukania prawdy o dobru. Skazany przez Ateńczyków na śmierć, wybiera wierność sumieniu. Jego nauczanie przekazuje uczeń, Platon.', '', 'jap', 'S'],
   ['Platon', -387, 'Filozof', 'Uczeń Sokratesa i założyciel Akademii w Atenach. Uczy, że ponad zmiennym światem istnieje wieczna prawda, dobro i piękno, a dusza człowieka jest nieśmiertelna. Jego myśl stanie się dla Ojców Kościoła językiem do mówienia o Bogu.', '', 'jap', 'P'],
   ['Arystoteles', -335, 'Filozof', 'Uczeń Platona i wychowawca Aleksandra Wielkiego, założyciel Liceum. Porządkuje całą ówczesną wiedzę: tworzy logikę, etykę cnót i badanie przyrody, a rozumem dochodzi do Pierwszego Poruszyciela. Przez św. Tomasza z Akwinu staje się filarem myśli chrześcijańskiej.', '', 'jap', 'A'],
-  ['Św. Augustyn', 397, 'Biskup Hippony, Doktor Kościoła', 'Pisze „Wyznania” (ok. 397–400); łączy wiarę chrześcijańską z myślą Platona i kształtuje teologię Zachodu.', '', 'chu', 'A']
+  ['Św. Augustyn', 397, 'Biskup Hippony, Doktor Kościoła', 'Pisze „Wyznania” (ok. 397–400); łączy wiarę chrześcijańską z myślą Platona i kształtuje teologię Zachodu.', '', 'chu', 'A'],
+  // The first university; the chart marks the age of science on the outer rim from here.
+  ['Uniwersytet Boloński', 1088, 'Pierwszy uniwersytet', 'Najstarszy nieprzerwanie działający uniwersytet świata, który według tradycji powstał w 1088 r. i zasłynął studiami prawa rzymskiego i kanonicznego. Za nim, często ze szkół katedralnych i z przywilejami papieży, powstają uniwersytety w Paryżu, Oksfordzie i Krakowie (1364), gdzie rozwijają się teologia, prawo, medycyna i nauki o przyrodzie.', '', 'chu', 'U']
 ];

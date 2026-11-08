@@ -650,6 +650,12 @@ const TEXT = {
     "Biskup Hippony, Doktor Kościoła",
     "Pisze „Wyznania” (ok. 397–400); łączy wiarę chrześcijańską z myślą Platona i kształtuje teologię Zachodu.",
     ""
+   ],
+   [
+    "Uniwersytet Boloński",
+    "Pierwszy uniwersytet",
+    "Najstarszy nieprzerwanie działający uniwersytet świata, który według tradycji powstał w 1088 r. i zasłynął studiami prawa rzymskiego i kanonicznego. Za nim, często ze szkół katedralnych i z przywilejami papieży, powstają uniwersytety w Paryżu, Oksfordzie i Krakowie (1364), gdzie rozwijają się teologia, prawo, medycyna i nauki o przyrodzie.",
+    ""
    ]
   ],
   "CH_EV": [
@@ -682,11 +688,6 @@ const TEXT = {
     "Septuaginta",
     "",
     "Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład."
-   ],
-   [
-    "Uniwersytet Boloński",
-    "",
-    "Najstarszy nieprzerwanie działający uniwersytet świata, który według tradycji powstał w 1088 r. i zasłynął studiami prawa rzymskiego i kanonicznego. Za nim, często ze szkół katedralnych i z przywilejami papieży, powstają uniwersytety w Paryżu, Oksfordzie i Krakowie (1364), gdzie rozwijają się teologia, prawo, medycyna i nauki o przyrodzie."
    ]
   ],
   "KINGS": [
@@ -1591,6 +1592,12 @@ const TEXT = {
     "Bishop of Hippo, Doctor of the Church",
     "Writes the Confessions (c. 397–400); joins Christian faith with the thought of Plato and shapes Western theology.",
     ""
+   ],
+   [
+    "University of Bologna",
+    "First university",
+    "The oldest university in the world still in continuous operation, founded by tradition in 1088 and famous for the study of Roman and canon law. After it, often out of cathedral schools and with papal privileges, universities arise in Paris, Oxford and Kraków (1364), where theology, law, medicine and the study of nature flourish.",
+    ""
    ]
   ],
   "CH_EV": [
@@ -1623,11 +1630,6 @@ const TEXT = {
     "Septuagint",
     "",
     "Jews in Alexandria begin translating the Old Testament into Greek (in stages, from the 3rd century BC); the New Testament often quotes this translation."
-   ],
-   [
-    "University of Bologna",
-    "",
-    "The oldest university in the world still in continuous operation, founded by tradition in 1088 and famous for the study of Roman and canon law. After it, often out of cathedral schools and with papal privileges, universities arise in Paris, Oxford and Kraków (1364), where theology, law, medicine and the study of nature flourish."
    ]
   ],
   "KINGS": [
