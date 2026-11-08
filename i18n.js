@@ -18,87 +18,108 @@ const TEXT = {
   "PAT": [
    [
     "Adam",
-    "Rdz 5,3-5"
+    "Rdz 5,3-5",
+    "Pierwszy człowiek, którego imię oznacza po hebrajsku zarazem „człowieka” i „ludzkość”, bo w nim Biblia widzi cały rodzaj ludzki. Bóg umieszcza go w ogrodzie Eden, a po nieposłuszeństwie, mimo wygnania z raju, obiecuje zwycięstwo nad złem. Chrześcijanie nazywają Chrystusa „nowym Adamem”, który otwiera ludziom drogę z powrotem do Boga."
    ],
    [
     "Set",
-    "Rdz 5,6-8"
+    "Rdz 5,6-8",
+    "Syn Adama i Ewy, urodzony po śmierci Abla; Ewa nazywa go darem od Boga. Od niego wywodzi się ród, z którego przychodzą Noe i Abraham, a Ewangelia według św. Łukasza wymienia go w rodowodzie Jezusa."
    ],
    [
     "Enosz",
-    "Rdz 5,9-11"
+    "Rdz 5,9-11",
+    "Syn Seta, którego imię to poetyckie hebrajskie słowo na „człowieka”, to samo, które pojawia się w Psalmie: „Czym jest człowiek, że o nim pamiętasz?” (Ps 8,5). Przy jego narodzinach Biblia zapisuje, że „wtedy zaczęto wzywać imienia Pana”, czyli pierwszą wzmiankę o ludziach zwracających się do Boga w modlitwie."
    ],
    [
     "Kenan",
-    "Rdz 5,12-14"
+    "Rdz 5,12-14",
+    "Syn Enosza i ojciec Mahalalela, jedno z ogniw długiego rodowodu od Adama do Noego. Choć Biblia nie opowiada o jego czynach, jego imię przetrwało w rodowodzie Jezusa."
    ],
    [
     "Mahalalel",
-    "Rdz 5,15-17"
+    "Rdz 5,15-17",
+    "Syn Kenana, którego imię znaczy „chwała Boga”. Należy do pokoleń, którym Biblia przypisuje bardzo długie życie, co w starożytnych tekstach było znakiem błogosławieństwa i dawności rodu."
    ],
    [
     "Jered",
-    "Rdz 5,18-20"
+    "Rdz 5,18-20",
+    "Syn Mahalalela i jeden z najdłużej żyjących patriarchów. Najbardziej znany jest jako ojciec Henocha, człowieka szczególnie bliskiego Bogu."
    ],
    [
     "Henoch",
-    "Rdz 5,21-24"
+    "Rdz 5,21-24",
+    "O Henochu Biblia mówi pięknie: „żył w przyjaźni z Bogiem, a następnie zniknął, bo zabrał go Bóg”. Jako jedyny w tym rodowodzie nie umiera zwyczajnie, a List do Hebrajczyków stawia go wśród wzorów wiary. Jego 365 lat to tyle, ile dni ma rok."
    ],
    [
     "Metuszelach",
-    "Rdz 5,25-27"
+    "Rdz 5,25-27",
+    "Syn Henocha i dziadek Noego, najdłużej żyjący człowiek w Biblii; stąd powiedzenie „wiek Matuzalema”. Według liczb tekstu hebrajskiego umiera w roku potopu."
    ],
    [
     "Lamek",
-    "Rdz 5,28-31"
+    "Rdz 5,28-31",
+    "Syn Metuszelacha. Nadając synowi imię Noe, czyli „odpoczynek, pociecha”, wyraża nadzieję: „Ten nas pocieszy w naszej pracy i w trudzie rąk naszych”."
    ],
    [
     "Noe",
-    "Rdz 5,32; 9,28-29"
+    "Rdz 5,32; 9,28-29",
+    "„Człowiek prawy”, który na polecenie Boga zbudował arkę i ocalił w niej rodzinę oraz zwierzęta. Po potopie Bóg zawiera z nim przymierze z całą ludzkością, a jego znakiem jest tęcza. W tradycji chrześcijańskiej arka stała się obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów."
    ],
    [
     "Sem",
-    "Rdz 11,10-11"
+    "Rdz 11,10-11",
+    "Najstarszy syn Noego, którego ojciec szczególnie pobłogosławił. Od jego imienia pochodzi nazwa Semitów, a jego potomkami są Abraham, naród Izraela i według Ewangelii sam Jezus."
    ],
    [
     "Arpachszad",
-    "Rdz 11,12-13"
+    "Rdz 11,12-13",
+    "Syn Sema, urodzony dwa lata po potopie, pierwszy z rodowodu, który przyszedł na świat już na odnowionej ziemi. Jego imię przetrwało w rodowodzie Jezusa."
    ],
    [
     "Szelach",
-    "Rdz 11,14-15"
+    "Rdz 11,14-15",
+    "Syn Arpachszada i ojciec Hebera. Ciekawostka: grecki przekład Biblii, a za nim Ewangelia według św. Łukasza, dodaje przed nim jeszcze jedno pokolenie, Kainama, którego nie ma w tekście hebrajskim."
    ],
    [
     "Heber",
-    "Rdz 11,16-17"
+    "Rdz 11,16-17",
+    "Syn Szelacha, od którego imienia tradycja wywodzi nazwę „Hebrajczycy”. Pierwszym, kogo Biblia tak nazywa, jest jego potomek Abraham."
    ],
    [
     "Peleg",
-    "Rdz 11,18-19"
+    "Rdz 11,18-19",
+    "Syn Hebera, którego imię znaczy „podział”, bo „za jego dni ziemia została podzielona”, czyli ludzie rozeszli się po świecie. Od jego pokolenia długość życia patriarchów wyraźnie maleje."
    ],
    [
     "Reu",
-    "Rdz 11,20-21"
+    "Rdz 11,20-21",
+    "Syn Pelega i ojciec Seruga. Biblia nie opowiada o jego życiu, ale wiernie przechowuje jego imię w rodowodzie prowadzącym do Abrahama i do Jezusa."
    ],
    [
     "Serug",
-    "Rdz 11,22-23"
+    "Rdz 11,22-23",
+    "Pradziad Abrahama. Jego imię brzmi jak nazwa starożytnej miejscowości Sarugi w północnej Mezopotamii, w okolicy, z której wyszła rodzina Abrahama."
    ],
    [
     "Nachor",
-    "Rdz 11,24-25"
+    "Rdz 11,24-25",
+    "Dziadek Abrahama. Jego imię nosi również brat Abrahama, dziadek Rebeki, która później zostanie żoną Izaaka."
    ],
    [
     "Terach",
-    "Rdz 11,26-32"
+    "Rdz 11,26-32",
+    "Ojciec Abrama, Nachora i Harana. Wyrusza z rodziną z Ur chaldejskiego w stronę Kanaanu, ale zatrzymuje się w Charanie i tam umiera."
    ],
    [
     "Abraham",
-    "Rdz 25,7"
+    "Rdz 25,7",
+    "Patriarcha, któremu Bóg zmienia imię z Abram na Abraham, „ojciec mnóstwa narodów”. Ufa Bogu, zawiera z Nim przymierze i w starości otrzymuje syna Izaaka. Szanują go żydzi, chrześcijanie i muzułmanie, a Kościół wspomina go w każdej Mszy odprawianej z Kanonem Rzymskim."
    ],
    [
     "Sara",
-    "Rdz 23,1"
+    "Rdz 23,1",
+    "Żona Abrahama, której Bóg zmienia imię z Saraj na Sara, „księżniczka”. W starości rodzi Izaaka, którego imię znaczy „śmiać się”. Jest jedyną kobietą w Biblii, której wiek przy śmierci jest podany."
    ],
    [
     "Izmael",
@@ -153,15 +174,18 @@ const TEXT = {
   "NAT": [
    [
     "Ród Kaina",
-    "Rdz 4,17-22"
+    "Rdz 4,17-22",
+    "Potomkowie Kaina zakładają pierwsze miasto i rozwijają ludzkie umiejętności: Jabal jest ojcem pasterzy, Jubal grających na cytrze i flecie, a Tubal-Kain kowali brązu i żelaza. To biblijna opowieść o narodzinach kultury, rzemiosła i muzyki."
    ],
    [
     "Elam",
-    "Rdz 10,22"
+    "Rdz 10,22",
+    "Starożytny lud na wschód od Babilonii, w dzisiejszym Iranie, ze stolicą w Suzie. W dniu Pięćdziesiątnicy Elamici są wśród tych, którzy słyszą apostołów we własnym języku."
    ],
    [
     "Asyria",
-    "Rdz 10,22; 2 Krl 17"
+    "Rdz 10,22; 2 Krl 17",
+    "Potężne królestwo nad Tygrysem ze stolicą w Niniwie, które w 722 p.n.e. podbiło północne królestwo Izraela. Księga Jonasza opowiada jednak, jak mieszkańcy Niniwy nawrócili się i doznali Bożego miłosierdzia."
    ],
    [
     "Aram / Syria",
@@ -177,15 +201,18 @@ const TEXT = {
    ],
    [
     "Babilon",
-    "Rdz 10,8-10"
+    "Rdz 10,8-10",
+    "Starożytne miasto w krainie Szinear, którego nazwę Księga Rodzaju łączy z pomieszaniem języków przy wieży Babel. Później stolica imperium Nabuchodonozora, który zburzył Jerozolimę. W Apokalipsie nazwa „Babilon” stała się symbolem potęgi przeciwnej Bogu."
    ],
    [
     "Egipt",
-    "Rdz 10,6"
+    "Rdz 10,6",
+    "W biblijnej tablicy narodów to Misraim, syn Chama; tak Egipt nazywa się po hebrajsku do dziś. To kraj niewoli Izraela i wielkiego wyjścia, a później schronienie dla Świętej Rodziny. Wkrótce stał się jedną z kolebek chrześcijaństwa."
    ],
    [
     "Kanaan",
-    "Rdz 10,15-19"
+    "Rdz 10,15-19",
+    "Kraj nazwany od Kanaana, wnuka Noego, zamieszkany przez wiele ludów, m.in. Sydończyków, Hetytów i Jebusytów. To ziemia obiecana Abrahamowi i jego potomkom. W Ewangelii Jezus chwali wiarę kobiety kananejskiej i uzdrawia jej córkę."
    ],
    [
     "Fenicja",
@@ -193,7 +220,8 @@ const TEXT = {
    ],
    [
     "Ludy indoeuropejskie",
-    "Rdz 10,2-5"
+    "Rdz 10,2-5",
+    "Potomkowie Jafeta, syna Noego, zamieszkują północ i wybrzeża morza; wśród nich są Medowie i Grecy. Biblijna tablica narodów przedstawia całą ludzkość jako jedną wielką rodzinę wywodzącą się od Noego."
    ],
    [
     "Grecja",
@@ -226,25 +254,25 @@ const TEXT = {
    [
     "Stworzenie świata",
     "Rdz 1,1",
-    "Na początku Bóg stworzył niebo i ziemię.",
+    "„Na początku Bóg stworzył niebo i ziemię”: uroczysty hymn wyznaje, że wszystko, co istnieje, pochodzi od Boga i jest dobre. Obrazowy rytm sześciu dni i odpoczynku siódmego ukazuje ład stworzenia, a jego szczytem jest człowiek, mężczyzna i niewiasta, stworzony na obraz Boga i powołany do troski o świat. Kościół czyta ten tekst nie jako opis przyrodniczy, lecz jako katechezę o Stwórcy i godności człowieka (KKK 337–343).",
     "Bez daty"
    ],
    [
     "Potop",
     "Rdz 7",
-    "Noe wraz z rodziną wchodzi do arki; potop trwa rok.",
+    "Gdy zło zalewa ziemię, Bóg zsyła potop, ocalając w arce Noego, jego rodzinę i zwierzęta. Po roku wody opadają, a Bóg obiecuje, że już nigdy nie zniszczy ziemi. Chrześcijanie widzą w tej historii zapowiedź chrztu, w którym woda oznacza nowy początek.",
     "AM 1656"
    ],
    [
     "Wieża Babel",
     "Rdz 11,1-9",
-    "Bóg pomieszał języki i rozproszył narody.",
+    "Ludzie mówiący jednym językiem budują miasto i wieżę „sięgającą nieba”, by zdobyć sławę. Bóg miesza ich języki i rozprasza ich po całej ziemi. W dniu Pięćdziesiątnicy dzieje się coś odwrotnego: ludzie różnych języków rozumieją apostołów, co Kościół uznaje za swoje narodziny.",
     "Bez daty"
    ],
    [
     "Powołanie Abrahama",
     "Rdz 12,1-4",
-    "Abraham w wieku 75 lat opuszcza Charan i wyrusza do Kanaanu.",
+    "Bóg mówi do Abrama: „Wyjdź z twojej ziemi rodzinnej… do kraju, który ci ukażę”, i obiecuje, że przez niego będą błogosławione wszystkie ludy. Abram w wieku 75 lat wyrusza z Charanu do Kanaanu, nie znając drogi. Dlatego nazywa się go „ojcem wszystkich wierzących”.",
     null
    ],
    [
@@ -325,31 +353,31 @@ const TEXT = {
    [
     "Adam",
     "Pierwszy człowiek",
-    "Stworzony przez Boga i umieszczony w Edenie.",
+    "Pierwszy człowiek, którego imię oznacza po hebrajsku zarazem „człowieka” i „ludzkość”, bo w nim Biblia widzi cały rodzaj ludzki. Bóg umieszcza go w ogrodzie Eden, a po nieposłuszeństwie, mimo wygnania z raju, obiecuje zwycięstwo nad złem. Chrześcijanie nazywają Chrystusa „nowym Adamem”, który otwiera ludziom drogę z powrotem do Boga.",
     "Rdz 1-3"
    ],
    [
     "Henoch",
     "Chodził z Bogiem",
-    "Zabrany przez Boga w wieku 365 lat.",
+    "O Henochu Biblia mówi pięknie: „żył w przyjaźni z Bogiem, a następnie zniknął, bo zabrał go Bóg”. Jako jedyny w tym rodowodzie nie umiera zwyczajnie, a List do Hebrajczyków stawia go wśród wzorów wiary. Jego 365 lat to tyle, ile dni ma rok.",
     "Rdz 5,24"
    ],
    [
     "Noe",
     "Budowniczy arki",
-    "Ocalił rodzinę i zwierzęta podczas potopu.",
+    "„Człowiek prawy”, który na polecenie Boga zbudował arkę i ocalił w niej rodzinę oraz zwierzęta. Po potopie Bóg zawiera z nim przymierze z całą ludzkością, a jego znakiem jest tęcza. W tradycji chrześcijańskiej arka stała się obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów.",
     "Rdz 6-9"
    ],
    [
     "Nimrod",
     "Dzielny myśliwy",
-    "Założył królestwo w Babel, w krainie Szinear.",
+    "Syn Kusza, nazwany „pierwszym mocarzem na ziemi” i „dzielnym myśliwym przed Panem”. Zakłada królestwo w krainie Szinear, z miastami Babel, Erek i Akkad, a jego imię stało się przysłowiowe dla wielkich łowców.",
     "Rdz 10,8-10"
    ],
    [
     "Abraham",
     "Ojciec narodów",
-    "Powołany z Charanu, otrzymał obietnicę ziemi i potomstwa.",
+    "Patriarcha, któremu Bóg zmienia imię z Abram na Abraham, „ojciec mnóstwa narodów”. Ufa Bogu, zawiera z Nim przymierze i w starości otrzymuje syna Izaaka. Szanują go żydzi, chrześcijanie i muzułmanie, a Kościół wspomina go w każdej Mszy odprawianej z Kanonem Rzymskim.",
     "Rdz 12"
    ],
    [
@@ -865,87 +893,108 @@ const TEXT = {
   "PAT": [
    [
     "Adam",
-    "Gen 5:3-5"
+    "Gen 5:3-5",
+    "The first man, whose Hebrew name means both “man” and “humankind”, for in him the Bible sees the whole human race. God places him in the garden of Eden, and after his disobedience, though he must leave paradise, God promises victory over evil. Christians call Christ the “new Adam”, who opens the way back to God."
    ],
    [
     "Seth",
-    "Gen 5:6-8"
+    "Gen 5:6-8",
+    "Son of Adam and Eve, born after the death of Abel; Eve calls him a gift from God. From him comes the line of Noah and Abraham, and the Gospel of Luke names him in the genealogy of Jesus."
    ],
    [
     "Enosh",
-    "Gen 5:9-11"
+    "Gen 5:9-11",
+    "Son of Seth, whose name is a poetic Hebrew word for “man”, the same word as in the Psalm: “What is man that you are mindful of him?” (Ps 8:5). At his birth the Bible records that “people began to invoke the name of the Lord”, the first mention of people turning to God in prayer."
    ],
    [
     "Kenan",
-    "Gen 5:12-14"
+    "Gen 5:12-14",
+    "Son of Enosh and father of Mahalalel, one of the links in the long line from Adam to Noah. Though the Bible tells nothing of his deeds, his name lives on in the genealogy of Jesus."
    ],
    [
     "Mahalalel",
-    "Gen 5:15-17"
+    "Gen 5:15-17",
+    "Son of Kenan, whose name means “praise of God”. He belongs to the generations to whom the Bible gives very long lives, which in ancient texts was a sign of blessing and of a family’s great age."
    ],
    [
     "Jared",
-    "Gen 5:18-20"
+    "Gen 5:18-20",
+    "Son of Mahalalel and one of the longest-lived patriarchs. He is best known as the father of Enoch, a man especially close to God."
    ],
    [
     "Enoch",
-    "Gen 5:21-24"
+    "Gen 5:21-24",
+    "The Bible says of Enoch beautifully that he “walked with God, and he was no longer here, for God took him”. He is the only one in this line who does not die in the ordinary way, and the Letter to the Hebrews counts him among the examples of faith. His 365 years match the days of a year."
    ],
    [
     "Methuselah",
-    "Gen 5:25-27"
+    "Gen 5:25-27",
+    "Son of Enoch and grandfather of Noah, the longest-lived man in the Bible; hence the saying “as old as Methuselah”. By the numbers of the Hebrew text he dies in the year of the Flood."
    ],
    [
     "Lamech",
-    "Gen 5:28-31"
+    "Gen 5:28-31",
+    "Son of Methuselah. Naming his son Noah, “rest, comfort”, he speaks his hope: “This one will bring us relief from our work and the toil of our hands.”"
    ],
    [
     "Noah",
-    "Gen 5:32; 9:28-29"
+    "Gen 5:32; 9:28-29",
+    "“A righteous man” who at God’s command built the ark and saved his family and the animals in it. After the Flood God makes a covenant with him and with all humankind, and its sign is the rainbow. In Christian tradition the ark became an image of the Church, carrying people safely through the waves of history."
    ],
    [
     "Shem",
-    "Gen 11:10-11"
+    "Gen 11:10-11",
+    "The eldest son of Noah, whom his father especially blessed. The word “Semite” comes from his name, and his descendants include Abraham, the people of Israel and, according to the Gospel, Jesus himself."
    ],
    [
     "Arpachshad",
-    "Gen 11:12-13"
+    "Gen 11:12-13",
+    "Son of Shem, born two years after the Flood, the first of this line born on the renewed earth. His name lives on in the genealogy of Jesus."
    ],
    [
     "Shelah",
-    "Gen 11:14-15"
+    "Gen 11:14-15",
+    "Son of Arpachshad and father of Eber. A curiosity: the Greek translation of the Bible, and after it the Gospel of Luke, adds one more generation before him, Cainan, who is not in the Hebrew text."
    ],
    [
     "Eber",
-    "Gen 11:16-17"
+    "Gen 11:16-17",
+    "Son of Shelah, from whose name tradition derives the word “Hebrews”. The first person the Bible calls a Hebrew is his descendant Abraham."
    ],
    [
     "Peleg",
-    "Gen 11:18-19"
+    "Gen 11:18-19",
+    "Son of Eber, whose name means “division”, because “in his time the earth was divided”, that is, people spread out across the world. From his generation on, the patriarchs’ lives grow clearly shorter."
    ],
    [
     "Reu",
-    "Gen 11:20-21"
+    "Gen 11:20-21",
+    "Son of Peleg and father of Serug. The Bible tells nothing of his life, but faithfully keeps his name in the line that leads to Abraham and to Jesus."
    ],
    [
     "Serug",
-    "Gen 11:22-23"
+    "Gen 11:22-23",
+    "Great-grandfather of Abraham. His name sounds like the ancient town of Sarugi in northern Mesopotamia, in the region Abraham’s family came from."
    ],
    [
     "Nahor",
-    "Gen 11:24-25"
+    "Gen 11:24-25",
+    "Grandfather of Abraham. Abraham’s brother also bears his name, and is the grandfather of Rebekah, who will later marry Isaac."
    ],
    [
     "Terah",
-    "Gen 11:26-32"
+    "Gen 11:26-32",
+    "Father of Abram, Nahor and Haran. He sets out with his family from Ur of the Chaldeans towards Canaan, but stops in Haran and dies there."
    ],
    [
     "Abraham",
-    "Gen 25:7"
+    "Gen 25:7",
+    "The patriarch whose name God changes from Abram to Abraham, “father of a multitude of nations”. He trusts God, makes a covenant with him and in old age receives a son, Isaac. He is honoured by Jews, Christians and Muslims, and the Church remembers him at every Mass celebrated with the Roman Canon."
    ],
    [
     "Sarah",
-    "Gen 23:1"
+    "Gen 23:1",
+    "Wife of Abraham, whose name God changes from Sarai to Sarah, “princess”. In old age she gives birth to Isaac, whose name means “he laughs”. She is the only woman in the Bible whose age at death is given."
    ],
    [
     "Ishmael",
@@ -1000,15 +1049,18 @@ const TEXT = {
   "NAT": [
    [
     "Line of Cain",
-    "Gen 4:17-22"
+    "Gen 4:17-22",
+    "Cain’s descendants found the first city and develop human skills: Jabal is the ancestor of herdsmen, Jubal of those who play the lyre and pipe, and Tubal-cain of smiths in bronze and iron. It is the Bible’s story of the birth of culture, craft and music."
    ],
    [
     "Elam",
-    "Gen 10:22"
+    "Gen 10:22",
+    "An ancient people east of Babylonia, in present-day Iran, with its capital at Susa. At Pentecost, Elamites are among those who hear the apostles in their own language."
    ],
    [
     "Assyria",
-    "Gen 10:22; 2 Kgs 17"
+    "Gen 10:22; 2 Kgs 17",
+    "A powerful kingdom on the Tigris with its capital at Nineveh, which conquered the northern kingdom of Israel in 722 BC. Yet the Book of Jonah tells how the people of Nineveh repented and received God’s mercy."
    ],
    [
     "Aram / Syria",
@@ -1024,15 +1076,18 @@ const TEXT = {
    ],
    [
     "Babylon",
-    "Gen 10:8-10"
+    "Gen 10:8-10",
+    "An ancient city in the land of Shinar, whose name Genesis links with the confusion of languages at the tower of Babel. Later it was the capital of Nebuchadnezzar’s empire, which destroyed Jerusalem. In Revelation the name “Babylon” became a symbol of power set against God."
    ],
    [
     "Egypt",
-    "Gen 10:6"
+    "Gen 10:6",
+    "In the Bible’s table of nations it is Mizraim, son of Ham; this is still the Hebrew name for Egypt. It is the land of Israel’s slavery and of the great Exodus, and later a refuge for the Holy Family. Soon it became one of the cradles of Christianity."
    ],
    [
     "Canaan",
-    "Gen 10:15-19"
+    "Gen 10:15-19",
+    "The land named after Canaan, a grandson of Noah, home to many peoples, among them the Sidonians, Hittites and Jebusites. It is the land promised to Abraham and his descendants. In the Gospel Jesus praises the faith of a Canaanite woman and heals her daughter."
    ],
    [
     "Phoenicia",
@@ -1040,7 +1095,8 @@ const TEXT = {
    ],
    [
     "Indo-European peoples",
-    "Gen 10:2-5"
+    "Gen 10:2-5",
+    "The descendants of Japheth, son of Noah, live in the north and along the coasts; among them are the Medes and the Greeks. The Bible’s table of nations presents all humankind as one great family descended from Noah."
    ],
    [
     "Greece",
@@ -1073,25 +1129,25 @@ const TEXT = {
    [
     "Creation",
     "Gen 1:1",
-    "In the beginning God created the heavens and the earth.",
+    "“In the beginning God created the heavens and the earth”: this solemn hymn proclaims that everything that exists comes from God and is good. The poetic rhythm of six days and a seventh day of rest shows the order of creation, crowned by the human being, man and woman, made in God’s image and called to care for the world. The Church reads this text not as a scientific account but as a teaching about the Creator and human dignity (CCC 337–343).",
     "Undated"
    ],
    [
     "The Flood",
     "Gen 7",
-    "Noah and his household enter the ark; the flood lasts a year.",
+    "When evil floods the earth, God sends the Flood, saving Noah, his family and the animals in the ark. After a year the waters recede, and God promises never again to destroy the earth. Christians see in this story a foreshadowing of baptism, where water means a new beginning.",
     "AM 1656"
    ],
    [
     "Tower of Babel",
     "Gen 11:1-9",
-    "Languages are confused and the nations are dispersed.",
+    "People speaking one language build a city and a tower “with its top in the sky” to make a name for themselves. God confuses their language and scatters them over all the earth. At Pentecost the opposite happens: people of many languages understand the apostles, which the Church celebrates as her birth.",
     "Undated"
    ],
    [
     "Call of Abraham",
     "Gen 12:1-4",
-    "Abraham leaves Haran for Canaan at age 75.",
+    "God says to Abram: “Go forth from your land… to a land that I will show you”, and promises that through him all the families of the earth will be blessed. At 75 Abram sets out from Haran for Canaan, not knowing the way. That is why he is called “the father of all who believe”.",
     null
    ],
    [
@@ -1172,31 +1228,31 @@ const TEXT = {
    [
     "Adam",
     "First man",
-    "Created by God and placed in Eden.",
+    "The first man, whose Hebrew name means both “man” and “humankind”, for in him the Bible sees the whole human race. God places him in the garden of Eden, and after his disobedience, though he must leave paradise, God promises victory over evil. Christians call Christ the “new Adam”, who opens the way back to God.",
     "Gen 1-3"
    ],
    [
     "Enoch",
     "Walked with God",
-    "Taken by God at age 365.",
+    "The Bible says of Enoch beautifully that he “walked with God, and he was no longer here, for God took him”. He is the only one in this line who does not die in the ordinary way, and the Letter to the Hebrews counts him among the examples of faith. His 365 years match the days of a year.",
     "Gen 5:24"
    ],
    [
     "Noah",
     "Builder of the ark",
-    "Preserved his family and the animals through the flood.",
+    "“A righteous man” who at God’s command built the ark and saved his family and the animals in it. After the Flood God makes a covenant with him and with all humankind, and its sign is the rainbow. In Christian tradition the ark became an image of the Church, carrying people safely through the waves of history.",
     "Gen 6-9"
    ],
    [
     "Nimrod",
     "Mighty hunter",
-    "Began his kingdom at Babel in Shinar.",
+    "Son of Cush, called “the first mighty man on earth” and “a mighty hunter before the Lord”. He founds a kingdom in the land of Shinar, with the cities of Babel, Erech and Akkad, and his name became proverbial for great hunters.",
     "Gen 10:8-10"
    ],
    [
     "Abraham",
     "Father of the nations",
-    "Called from Haran and promised a land and a people.",
+    "The patriarch whose name God changes from Abram to Abraham, “father of a multitude of nations”. He trusts God, makes a covenant with him and in old age receives a son, Isaac. He is honoured by Jews, Christians and Muslims, and the Church remembers him at every Mass celebrated with the Roman Canon.",
     "Gen 12"
    ],
    [

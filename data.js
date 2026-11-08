@@ -27,20 +27,20 @@ const COL = { cain: ['#f7ecc9', '#e6c363', 'Kain i jego potomkowie'], sem: ['#ef
 // Patriarchs: name, birth (internal year), years lived (as Scripture gives them), reference.
 // The first 19 are counted from Creation (Rdz 5; 11,10-32).
 const PAT = [
-  ['Adam', am(0), 930, 'Rdz 5,3-5'], ['Set', am(130), 912, 'Rdz 5,6-8'], ['Enosz', am(235), 905, 'Rdz 5,9-11'],
-  ['Kenan', am(325), 910, 'Rdz 5,12-14'], ['Mahalalel', am(395), 895, 'Rdz 5,15-17'], ['Jered', am(460), 962, 'Rdz 5,18-20'],
-  ['Henoch', am(622), 365, 'Rdz 5,21-24'], ['Metuszelach', am(687), 969, 'Rdz 5,25-27'], ['Lamek', am(874), 777, 'Rdz 5,28-31'],
-  ['Noe', am(1056), 950, 'Rdz 5,32; 9,28-29'], ['Sem', am(1558), 600, 'Rdz 11,10-11'], ['Arpachszad', am(1658), 438, 'Rdz 11,12-13'],
-  ['Szelach', am(1693), 433, 'Rdz 11,14-15'], ['Heber', am(1723), 464, 'Rdz 11,16-17'], ['Peleg', am(1757), 239, 'Rdz 11,18-19'],
-  ['Reu', am(1787), 239, 'Rdz 11,20-21'], ['Serug', am(1819), 230, 'Rdz 11,22-23'], ['Nachor', am(1849), 148, 'Rdz 11,24-25'],
-  ['Terach', am(1878), 205, 'Rdz 11,26-32'],
+  ['Adam', am(0), 930, 'Rdz 5,3-5', 'Pierwszy człowiek, którego imię oznacza po hebrajsku zarazem „człowieka” i „ludzkość”, bo w nim Biblia widzi cały rodzaj ludzki. Bóg umieszcza go w ogrodzie Eden, a po nieposłuszeństwie, mimo wygnania z raju, obiecuje zwycięstwo nad złem. Chrześcijanie nazywają Chrystusa „nowym Adamem”, który otwiera ludziom drogę z powrotem do Boga.'], ['Set', am(130), 912, 'Rdz 5,6-8', 'Syn Adama i Ewy, urodzony po śmierci Abla; Ewa nazywa go darem od Boga. Od niego wywodzi się ród, z którego przychodzą Noe i Abraham, a Ewangelia według św. Łukasza wymienia go w rodowodzie Jezusa.'], ['Enosz', am(235), 905, 'Rdz 5,9-11', 'Syn Seta, którego imię to poetyckie hebrajskie słowo na „człowieka”, to samo, które pojawia się w Psalmie: „Czym jest człowiek, że o nim pamiętasz?” (Ps 8,5). Przy jego narodzinach Biblia zapisuje, że „wtedy zaczęto wzywać imienia Pana”, czyli pierwszą wzmiankę o ludziach zwracających się do Boga w modlitwie.'],
+  ['Kenan', am(325), 910, 'Rdz 5,12-14', 'Syn Enosza i ojciec Mahalalela, jedno z ogniw długiego rodowodu od Adama do Noego. Choć Biblia nie opowiada o jego czynach, jego imię przetrwało w rodowodzie Jezusa.'], ['Mahalalel', am(395), 895, 'Rdz 5,15-17', 'Syn Kenana, którego imię znaczy „chwała Boga”. Należy do pokoleń, którym Biblia przypisuje bardzo długie życie, co w starożytnych tekstach było znakiem błogosławieństwa i dawności rodu.'], ['Jered', am(460), 962, 'Rdz 5,18-20', 'Syn Mahalalela i jeden z najdłużej żyjących patriarchów. Najbardziej znany jest jako ojciec Henocha, człowieka szczególnie bliskiego Bogu.'],
+  ['Henoch', am(622), 365, 'Rdz 5,21-24', 'O Henochu Biblia mówi pięknie: „żył w przyjaźni z Bogiem, a następnie zniknął, bo zabrał go Bóg”. Jako jedyny w tym rodowodzie nie umiera zwyczajnie, a List do Hebrajczyków stawia go wśród wzorów wiary. Jego 365 lat to tyle, ile dni ma rok.'], ['Metuszelach', am(687), 969, 'Rdz 5,25-27', 'Syn Henocha i dziadek Noego, najdłużej żyjący człowiek w Biblii; stąd powiedzenie „wiek Matuzalema”. Według liczb tekstu hebrajskiego umiera w roku potopu.'], ['Lamek', am(874), 777, 'Rdz 5,28-31', 'Syn Metuszelacha. Nadając synowi imię Noe, czyli „odpoczynek, pociecha”, wyraża nadzieję: „Ten nas pocieszy w naszej pracy i w trudzie rąk naszych”.'],
+  ['Noe', am(1056), 950, 'Rdz 5,32; 9,28-29', '„Człowiek prawy”, który na polecenie Boga zbudował arkę i ocalił w niej rodzinę oraz zwierzęta. Po potopie Bóg zawiera z nim przymierze z całą ludzkością, a jego znakiem jest tęcza. W tradycji chrześcijańskiej arka stała się obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów.'], ['Sem', am(1558), 600, 'Rdz 11,10-11', 'Najstarszy syn Noego, którego ojciec szczególnie pobłogosławił. Od jego imienia pochodzi nazwa Semitów, a jego potomkami są Abraham, naród Izraela i według Ewangelii sam Jezus.'], ['Arpachszad', am(1658), 438, 'Rdz 11,12-13', 'Syn Sema, urodzony dwa lata po potopie, pierwszy z rodowodu, który przyszedł na świat już na odnowionej ziemi. Jego imię przetrwało w rodowodzie Jezusa.'],
+  ['Szelach', am(1693), 433, 'Rdz 11,14-15', 'Syn Arpachszada i ojciec Hebera. Ciekawostka: grecki przekład Biblii, a za nim Ewangelia według św. Łukasza, dodaje przed nim jeszcze jedno pokolenie, Kainama, którego nie ma w tekście hebrajskim.'], ['Heber', am(1723), 464, 'Rdz 11,16-17', 'Syn Szelacha, od którego imienia tradycja wywodzi nazwę „Hebrajczycy”. Pierwszym, kogo Biblia tak nazywa, jest jego potomek Abraham.'], ['Peleg', am(1757), 239, 'Rdz 11,18-19', 'Syn Hebera, którego imię znaczy „podział”, bo „za jego dni ziemia została podzielona”, czyli ludzie rozeszli się po świecie. Od jego pokolenia długość życia patriarchów wyraźnie maleje.'],
+  ['Reu', am(1787), 239, 'Rdz 11,20-21', 'Syn Pelega i ojciec Seruga. Biblia nie opowiada o jego życiu, ale wiernie przechowuje jego imię w rodowodzie prowadzącym do Abrahama i do Jezusa.'], ['Serug', am(1819), 230, 'Rdz 11,22-23', 'Pradziad Abrahama. Jego imię brzmi jak nazwa starożytnej miejscowości Sarugi w północnej Mezopotamii, w okolicy, z której wyszła rodzina Abrahama.'], ['Nachor', am(1849), 148, 'Rdz 11,24-25', 'Dziadek Abrahama. Jego imię nosi również brat Abrahama, dziadek Rebeki, która później zostanie żoną Izaaka.'],
+  ['Terach', am(1878), 205, 'Rdz 11,26-32', 'Ojciec Abrama, Nachora i Harana. Wyrusza z rodziną z Ur chaldejskiego w stronę Kanaanu, ale zatrzymuje się w Charanie i tam umiera.'],
   // From Abraham on: everyone up to the monarchy whose lifespan Scripture gives. Dates are
   // approximate: Abraham to Joseph in the Middle Bronze Age, Moses in the 13th century BC.
   // Others are placed by the text's own links: Sarah is 10 years younger than Abraham (Rdz 17,17),
   // Ishmael born when Abraham was 86 (Rdz 16,16), Levi a few years before Joseph, Kehat before the
   // descent into Egypt (Rdz 46,11), Aaron 3 years older than Moses (Wj 7,7). Wj 6 gives a shortened
   // genealogy, so Amram is placed by Moses's birth. An optional 5th field is a note for the card.
-  ['Abraham', -1900, 175, 'Rdz 25,7'], ['Sara', -1890, 127, 'Rdz 23,1'], ['Izmael', -1814, 137, 'Rdz 25,17'],
+  ['Abraham', -1900, 175, 'Rdz 25,7', 'Patriarcha, któremu Bóg zmienia imię z Abram na Abraham, „ojciec mnóstwa narodów”. Ufa Bogu, zawiera z Nim przymierze i w starości otrzymuje syna Izaaka. Szanują go żydzi, chrześcijanie i muzułmanie, a Kościół wspomina go w każdej Mszy odprawianej z Kanonem Rzymskim.'], ['Sara', -1890, 127, 'Rdz 23,1', 'Żona Abrahama, której Bóg zmienia imię z Saraj na Sara, „księżniczka”. W starości rodzi Izaaka, którego imię znaczy „śmiać się”. Jest jedyną kobietą w Biblii, której wiek przy śmierci jest podany.'], ['Izmael', -1814, 137, 'Rdz 25,17'],
   ['Izaak', -1800, 180, 'Rdz 35,28'], ['Jakub', -1740, 147, 'Rdz 47,28'], ['Lewi', -1657, 137, 'Wj 6,16'],
   ['Józef', -1650, 110, 'Rdz 50,26'], ['Kehat', -1615, 133, 'Wj 6,18'],
   ['Amram', -1400, 137, 'Wj 6,20', 'Wj 6 podaje skróconą genealogię: między Kehatem a Amramem mogło upłynąć więcej pokoleń.'],
@@ -72,17 +72,17 @@ const KINGS = [
 
 // Nations: name, line, start, end, reference. Peoples older than 2000 BC start at the seam.
 const NAT = [
-  ['Ród Kaina', 'cain', am(1), am(1656), 'Rdz 4,17-22'],
-  ['Elam', 'sem', SEAM, -539, 'Rdz 10,22'],
-  ['Asyria', 'sem', SEAM, -609, 'Rdz 10,22; 2 Krl 17'],
+  ['Ród Kaina', 'cain', am(1), am(1656), 'Rdz 4,17-22', 'Potomkowie Kaina zakładają pierwsze miasto i rozwijają ludzkie umiejętności: Jabal jest ojcem pasterzy, Jubal grających na cytrze i flecie, a Tubal-Kain kowali brązu i żelaza. To biblijna opowieść o narodzinach kultury, rzemiosła i muzyki.'],
+  ['Elam', 'sem', SEAM, -539, 'Rdz 10,22', 'Starożytny lud na wschód od Babilonii, w dzisiejszym Iranie, ze stolicą w Suzie. W dniu Pięćdziesiątnicy Elamici są wśród tych, którzy słyszą apostołów we własnym języku.'],
+  ['Asyria', 'sem', SEAM, -609, 'Rdz 10,22; 2 Krl 17', 'Potężne królestwo nad Tygrysem ze stolicą w Niniwie, które w 722 p.n.e. podbiło północne królestwo Izraela. Księga Jonasza opowiada jednak, jak mieszkańcy Niniwy nawrócili się i doznali Bożego miłosierdzia.'],
   ['Aram / Syria', 'sem', -1100, -732, 'Rdz 10,22; 2 Krl 16,9'],
   ['Arabowie', 'sem', -900, END, 'Rdz 25,12-18'],
   ['Izrael', 'sem', -1200, -587, 'Joz 1; 2 Krl 25'],
-  ['Babilon', 'ham', -1894, -539, 'Rdz 10,8-10'],
-  ['Egipt', 'ham', SEAM, -30, 'Rdz 10,6'],
-  ['Kanaan', 'ham', SEAM, -1000, 'Rdz 10,15-19'],
+  ['Babilon', 'ham', -1894, -539, 'Rdz 10,8-10', 'Starożytne miasto w krainie Szinear, którego nazwę Księga Rodzaju łączy z pomieszaniem języków przy wieży Babel. Później stolica imperium Nabuchodonozora, który zburzył Jerozolimę. W Apokalipsie nazwa „Babilon” stała się symbolem potęgi przeciwnej Bogu.'],
+  ['Egipt', 'ham', SEAM, -30, 'Rdz 10,6', 'W biblijnej tablicy narodów to Misraim, syn Chama; tak Egipt nazywa się po hebrajsku do dziś. To kraj niewoli Izraela i wielkiego wyjścia, a później schronienie dla Świętej Rodziny. Wkrótce stał się jedną z kolebek chrześcijaństwa.'],
+  ['Kanaan', 'ham', SEAM, -1000, 'Rdz 10,15-19', 'Kraj nazwany od Kanaana, wnuka Noego, zamieszkany przez wiele ludów, m.in. Sydończyków, Hetytów i Jebusytów. To ziemia obiecana Abrahamowi i jego potomkom. W Ewangelii Jezus chwali wiarę kobiety kananejskiej i uzdrawia jej córkę.'],
   ['Fenicja', 'ham', -1200, -332, '1 Krl 5'],
-  ['Ludy indoeuropejskie', 'jap', SEAM, -300, 'Rdz 10,2-5'],
+  ['Ludy indoeuropejskie', 'jap', SEAM, -300, 'Rdz 10,2-5', 'Potomkowie Jafeta, syna Noego, zamieszkują północ i wybrzeża morza; wśród nich są Medowie i Grecy. Biblijna tablica narodów przedstawia całą ludzkość jako jedną wielką rodzinę wywodzącą się od Noego.'],
   ['Grecja', 'jap', -776, -146, 'Dn 8,21', 'Kolebka filozofii, demokracji i nauki; po grecku spisano Nowy Testament.'],
   ['Persja', 'jap', -550, -330, 'Dn 8,20'],
   ['Rzym', 'jap', -753, 476, 'Dn 7,7'],
@@ -96,10 +96,10 @@ const NAT = [
 
 // Events: name, internal year, reference, description, optional date label.
 const EV = [
-  ['Stworzenie świata', am(0), 'Rdz 1,1', 'Na początku Bóg stworzył niebo i ziemię.', 'Bez daty'],
-  ['Potop', am(1656), 'Rdz 7', 'Noe wraz z rodziną wchodzi do arki; potop trwa rok.', 'AM 1656'],
-  ['Wieża Babel', am(1757), 'Rdz 11,1-9', 'Bóg pomieszał języki i rozproszył narody.', 'Bez daty'],
-  ['Powołanie Abrahama', -1825, 'Rdz 12,1-4', 'Abraham w wieku 75 lat opuszcza Charan i wyrusza do Kanaanu.'],
+  ['Stworzenie świata', am(0), 'Rdz 1,1', '„Na początku Bóg stworzył niebo i ziemię”: uroczysty hymn wyznaje, że wszystko, co istnieje, pochodzi od Boga i jest dobre. Obrazowy rytm sześciu dni i odpoczynku siódmego ukazuje ład stworzenia, a jego szczytem jest człowiek, mężczyzna i niewiasta, stworzony na obraz Boga i powołany do troski o świat. Kościół czyta ten tekst nie jako opis przyrodniczy, lecz jako katechezę o Stwórcy i godności człowieka (KKK 337–343).', 'Bez daty'],
+  ['Potop', am(1656), 'Rdz 7', 'Gdy zło zalewa ziemię, Bóg zsyła potop, ocalając w arce Noego, jego rodzinę i zwierzęta. Po roku wody opadają, a Bóg obiecuje, że już nigdy nie zniszczy ziemi. Chrześcijanie widzą w tej historii zapowiedź chrztu, w którym woda oznacza nowy początek.', 'AM 1656'],
+  ['Wieża Babel', am(1757), 'Rdz 11,1-9', 'Ludzie mówiący jednym językiem budują miasto i wieżę „sięgającą nieba”, by zdobyć sławę. Bóg miesza ich języki i rozprasza ich po całej ziemi. W dniu Pięćdziesiątnicy dzieje się coś odwrotnego: ludzie różnych języków rozumieją apostołów, co Kościół uznaje za swoje narodziny.', 'Bez daty'],
+  ['Powołanie Abrahama', -1825, 'Rdz 12,1-4', 'Bóg mówi do Abrama: „Wyjdź z twojej ziemi rodzinnej… do kraju, który ci ukażę”, i obiecuje, że przez niego będą błogosławione wszystkie ludy. Abram w wieku 75 lat wyrusza z Charanu do Kanaanu, nie znając drogi. Dlatego nazywa się go „ojcem wszystkich wierzących”.'],
   ['Ofiarowanie Izaaka', -1780, 'Rdz 22', 'Abraham zostaje wystawiony na próbę na górze Moria i ofiaruje swojego syna Izaaka.'],
   ['Wyjście z Egiptu', -1250, 'Wj 12', 'Izrael pod wodzą Mojżesza opuszcza Egipt.'],
   ['Świątynia Salomona', -960, '1 Krl 6-8', 'Świątynia w Jerozolimie zostaje poświęcona.'],
@@ -140,11 +140,11 @@ const ERAS = [['Od stworzenia do potopu', am(0), am(1656)], ['Od potopu do Abrah
 
 // Figures: name, internal year, role, description, reference, line, optional circle letter.
 const FIG = [
-  ['Adam', am(0), 'Pierwszy człowiek', 'Stworzony przez Boga i umieszczony w Edenie.', 'Rdz 1-3', 'sem'],
-  ['Henoch', am(987), 'Chodził z Bogiem', 'Zabrany przez Boga w wieku 365 lat.', 'Rdz 5,24', 'sem'],
-  ['Noe', am(1656), 'Budowniczy arki', 'Ocalił rodzinę i zwierzęta podczas potopu.', 'Rdz 6-9', 'sem'],
-  ['Nimrod', am(1720), 'Dzielny myśliwy', 'Założył królestwo w Babel, w krainie Szinear.', 'Rdz 10,8-10', 'ham'],
-  ['Abraham', -1825, 'Ojciec narodów', 'Powołany z Charanu, otrzymał obietnicę ziemi i potomstwa.', 'Rdz 12', 'sem'],
+  ['Adam', am(0), 'Pierwszy człowiek', 'Pierwszy człowiek, którego imię oznacza po hebrajsku zarazem „człowieka” i „ludzkość”, bo w nim Biblia widzi cały rodzaj ludzki. Bóg umieszcza go w ogrodzie Eden, a po nieposłuszeństwie, mimo wygnania z raju, obiecuje zwycięstwo nad złem. Chrześcijanie nazywają Chrystusa „nowym Adamem”, który otwiera ludziom drogę z powrotem do Boga.', 'Rdz 1-3', 'sem'],
+  ['Henoch', am(987), 'Chodził z Bogiem', 'O Henochu Biblia mówi pięknie: „żył w przyjaźni z Bogiem, a następnie zniknął, bo zabrał go Bóg”. Jako jedyny w tym rodowodzie nie umiera zwyczajnie, a List do Hebrajczyków stawia go wśród wzorów wiary. Jego 365 lat to tyle, ile dni ma rok.', 'Rdz 5,24', 'sem'],
+  ['Noe', am(1656), 'Budowniczy arki', '„Człowiek prawy”, który na polecenie Boga zbudował arkę i ocalił w niej rodzinę oraz zwierzęta. Po potopie Bóg zawiera z nim przymierze z całą ludzkością, a jego znakiem jest tęcza. W tradycji chrześcijańskiej arka stała się obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów.', 'Rdz 6-9', 'sem'],
+  ['Nimrod', am(1720), 'Dzielny myśliwy', 'Syn Kusza, nazwany „pierwszym mocarzem na ziemi” i „dzielnym myśliwym przed Panem”. Zakłada królestwo w krainie Szinear, z miastami Babel, Erek i Akkad, a jego imię stało się przysłowiowe dla wielkich łowców.', 'Rdz 10,8-10', 'ham'],
+  ['Abraham', -1825, 'Ojciec narodów', 'Patriarcha, któremu Bóg zmienia imię z Abram na Abraham, „ojciec mnóstwa narodów”. Ufa Bogu, zawiera z Nim przymierze i w starości otrzymuje syna Izaaka. Szanują go żydzi, chrześcijanie i muzułmanie, a Kościół wspomina go w każdej Mszy odprawianej z Kanonem Rzymskim.', 'Rdz 12', 'sem'],
   ['Izaak', -1800, 'Syn obietnicy', 'Syn Abrahama i Sary.', 'Rdz 21', 'sem'],
   ['Jakub', -1740, 'Izrael', 'Ojciec dwunastu pokoleń.', 'Rdz 25-50', 'sem'],
   ['Józef', -1620, 'Zarządca Egiptu', 'Sprzedany przez braci, później uratował rodzinę przed głodem.', 'Rdz 37-50', 'sem'],

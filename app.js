@@ -439,8 +439,9 @@
     };
 
     // Nations ring (inner) and patriarch lifespans (outer).
+    // A nation's card: its description (if any), then its dates; the line of Cain has no dates, only "from Cain to the Flood".
     NAT.forEach((n, i) => addArc('n' + i, 90 + i * 14.5, 7, n[2], n[3], n[1], n[0],
-      n[2] < SEAM ? U().natCain : (n[5] ? n[5] + ' ' : '') + dot(U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3]))), n[4], n[0], 5));
+      (n[5] ? n[5] + ' ' : '') + (n[2] < SEAM ? U().natCain : dot(U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3])))), n[4], n[0], 5));
     const alive = [];
     PAT.forEach((p, i) => {
       // Genesis 1–11 lifespans are cut at the seam: their years after it are not dated.
