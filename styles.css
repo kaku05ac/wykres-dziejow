@@ -199,7 +199,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .dk-area-nat2 { stroke: var(--c4); stroke-width: 1; stroke-dasharray: 2 2.5; }
 .dk-testament { stroke: var(--n-300); stroke-width: 1; }
 .dk-testament-label { font-family: var(--mono); font-size: 8.5px; letter-spacing: .08em; text-transform: uppercase; fill: var(--n-500); }
-.dk-head-line { stroke: var(--accent); stroke-width: 1; }
+.dk-head-line { stroke: var(--accent); stroke-width: 1; pointer-events: none; }
+.dk-head-hit { stroke: transparent; stroke-width: 14; pointer-events: stroke; cursor: ew-resize; }
 /* The playhead's year pill: an outlined capsule on the paper colour, riding on top of the line. */
 .dk-pill rect { fill: var(--n-75); stroke: var(--n-300); stroke-width: 1; }
 .dk-pill text { font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; fill: var(--n-900); text-anchor: middle; dominant-baseline: central; }
@@ -309,10 +310,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
    negative of what is under it; the timeline keeps the usual pointer ── */
 html.has-cursor, html.has-cursor * { cursor: none !important; }
 html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
-/* The timeline keeps its own pointers (drag sideways; hand over marks and the lanes toggle). */
-html.has-cursor #dockSvg, html.has-cursor #dockSvg * { cursor: ew-resize !important; }
-html.has-cursor #dockSvg .dk-dot, html.has-cursor #dockSvg .dk-dot *, html.has-cursor #dockSvg .dk-toggle, html.has-cursor #dockSvg .dk-toggle * { cursor: pointer !important; }
-html.has-cursor #dockSvg .dk-hint, html.has-cursor #dockSvg .dk-hint * { cursor: help !important; }
+/* On the timeline the dot stays; only over the year line do the two-way arrows show, to say it can be dragged. */
+html.has-cursor #dkHead, html.has-cursor #dkHead * { cursor: ew-resize !important; }
 .cursor-dot { position: fixed; left: 0; top: 0; z-index: 10000; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%;
   background: #111; box-shadow: 3px 4px 6px rgba(0, 0, 0, .22);
   pointer-events: none; opacity: 0; will-change: transform;

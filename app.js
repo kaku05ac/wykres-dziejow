@@ -365,7 +365,7 @@
       });
       // The seam goes behind the lanes so it never crosses a dot.
       out = out.slice(0, behind) + `<line class="dk-seam" x1="${f1(xOf(SEAM))}" y1="${RULER}" x2="${f1(xOf(SEAM))}" y2="${y}"/>` + out.slice(behind);
-      out += `<g id="dkHead"><line class="dk-head-line" x1="0" y1="${RULER - 2}" x2="0" y2="${y}"/></g>`
+      out += `<g id="dkHead"><line class="dk-head-hit" x1="0" y1="${RULER - 2}" x2="0" y2="${y}"/><line class="dk-head-line" x1="0" y1="${RULER - 2}" x2="0" y2="${y}"/></g>`
         + `<g id="dkPill" class="dk-pill"><rect x="0" y="2" width="60" height="17" rx="8.5"/><text x="30" y="11"></text></g>`;
       const H = y + 6;
       svgD.setAttribute('viewBox', `0 0 ${W} ${H}`);
@@ -918,8 +918,8 @@
       tx = e.clientX; ty = e.clientY;
       const t = e.target;
       dot.classList.toggle('is-text', !!(t.closest && t.closest('input, textarea')));
-      // Over the timeline the dot hides and the usual drag pointer shows instead.
-      const onSlider = !!(t.closest && t.closest('#dockSvg'));
+      // Over the year line on the timeline the dot hides and the two-way drag arrows show instead.
+      const onSlider = !!(t.closest && t.closest('#dkHead'));
       dot.classList.toggle('is-slider', onSlider);
       // Over the pictures and films the dot shows the negative of what is under it, like a photographic negative.
       dot.classList.toggle('is-media', !!(t.closest && t.closest('.art-slot')));
