@@ -2,18 +2,19 @@
 //
 // Dating follows the approach of Catholic study Bibles (NABRE, New Jerusalem Bible,
 // Biblia Tysiąclecia). The Church sets no official chronology, so:
-//  - Genesis 1–11 (Creation to Terah) is not given BC dates. It is counted in years
-//    from Creation (AM, anno mundi) using the genealogies of Genesis 5 and 11 (Hebrew
-//    text). The chart draws this stretch as its own segment.
+//  - Genesis 1–11 (Creation to Terah) has no BC dates, and the Church sets none, so it is
+//    shown as undated ("Bez daty"). The chart draws this stretch as its own segment; inside it
+//    people and events are only placed in order, using the genealogies of Genesis 5 and 11
+//    (Hebrew text) so that lifespans keep their lengths.
 //  - From Abraham on, years are scholarly approximations. Dates before 722 BC are
 //    approximate and show with "ok.".
 //
 // All years share one internal scale: BC years are negative, AD years positive, and
-// the primeval segment sits before 2000 BC so that AM 2083 (Terah's death) meets the
-// dated axis. Use am(n) to place a year counted from Creation.
+// the undated primeval segment sits before 2000 BC, ending at Terah's death. am(n) places
+// a point n years after Creation inside that segment (for layout only; never shown).
 // Names and scripture references follow Polish Catholic usage (Biblia Tysiąclecia).
 
-const START = -4083;   // AM 0, Creation
+const START = -4083;   // Creation (start of the undated segment)
 const SEAM = -2000;    // end of Genesis 1–11, start of dated history
 const END = 2026;
 const am = n => START + n;
@@ -97,7 +98,7 @@ const NAT = [
 // Events: name, internal year, reference, description, optional date label.
 const EV = [
   ['Stworzenie świata', am(0), 'Rdz 1,1', '„Na początku Bóg stworzył niebo i ziemię”: uroczysty hymn wyznaje, że wszystko, co istnieje, pochodzi od Boga i jest dobre. Obrazowy rytm sześciu dni i odpoczynku siódmego ukazuje ład stworzenia, a jego szczytem jest człowiek, mężczyzna i niewiasta, stworzony na obraz Boga i powołany do troski o świat. Kościół czyta ten tekst nie jako opis przyrodniczy, lecz jako katechezę o Stwórcy i godności człowieka (KKK 337–343).', 'Bez daty'],
-  ['Potop', am(1656), 'Rdz 7', 'Gdy zło zalewa ziemię, Bóg zsyła potop, ocalając w arce Noego, jego rodzinę i zwierzęta. Po roku wody opadają, a Bóg obiecuje, że już nigdy nie zniszczy ziemi. Chrześcijanie widzą w tej historii zapowiedź chrztu, w którym woda oznacza nowy początek.', 'AM 1656'],
+  ['Potop', am(1656), 'Rdz 7', 'Gdy zło zalewa ziemię, Bóg zsyła potop, ocalając w arce Noego, jego rodzinę i zwierzęta. Po roku wody opadają, a Bóg obiecuje, że już nigdy nie zniszczy ziemi. Chrześcijanie widzą w tej historii zapowiedź chrztu, w którym woda oznacza nowy początek.', 'Bez daty'],
   ['Wieża Babel', am(1757), 'Rdz 11,1-9', 'Ludzie mówiący jednym językiem budują miasto i wieżę „sięgającą nieba”, by zdobyć sławę. Bóg miesza ich języki i rozprasza ich po całej ziemi. W dniu Pięćdziesiątnicy dzieje się coś odwrotnego: ludzie różnych języków rozumieją apostołów, co Kościół uznaje za swoje narodziny.', 'Bez daty'],
   ['Powołanie Abrahama', -1825, 'Rdz 12,1-4', 'Bóg mówi do Abrama: „Wyjdź z twojej ziemi rodzinnej… do kraju, który ci ukażę”, i obiecuje, że przez niego będą błogosławione wszystkie ludy. Abram w wieku 75 lat wyrusza z Charanu do Kanaanu, nie znając drogi. Dlatego nazywa się go „ojcem wszystkich wierzących”.'],
   ['Ofiarowanie Izaaka', -1780, 'Rdz 22', 'Bóg poddaje Abrahama próbie i każe mu złożyć w ofierze ukochanego syna Izaaka na górze Moria. W ostatniej chwili anioł powstrzymuje jego rękę, a Abraham składa w ofierze baranka uwikłanego w zarośla. Księga Kronik umieszcza górę Moria w miejscu, gdzie Salomon zbudował świątynię (2 Krn 3,1), a chrześcijanie widzą w Izaaku niosącym drwa na ofiarę zapowiedź Chrystusa niosącego krzyż; Kościół czyta tę historię w Wigilię Paschalną.'],

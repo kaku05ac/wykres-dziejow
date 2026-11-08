@@ -280,7 +280,7 @@ const TEXT = {
     "Potop",
     "Rdz 7",
     "Gdy zło zalewa ziemię, Bóg zsyła potop, ocalając w arce Noego, jego rodzinę i zwierzęta. Po roku wody opadają, a Bóg obiecuje, że już nigdy nie zniszczy ziemi. Chrześcijanie widzą w tej historii zapowiedź chrztu, w którym woda oznacza nowy początek.",
-    "AM 1656"
+    "Bez daty"
    ],
    [
     "Wieża Babel",
@@ -1174,7 +1174,7 @@ const TEXT = {
     "The Flood",
     "Gen 7",
     "When evil floods the earth, God sends the Flood, saving Noah, his family and the animals in the ark. After a year the waters recede, and God promises never again to destroy the earth. Christians see in this story a foreshadowing of baptism, where water means a new beginning.",
-    "AM 1656"
+    "Undated"
    ],
    [
     "Tower of Babel",
@@ -1804,7 +1804,8 @@ const UI = {
     toggle: open => (open ? 'Ukryj' : 'Pokaż') + ' postacie, patriarchów i wykres żyjących',
     alivePat: 'Żyjący patriarchowie', aliveNat: 'Istniejące narody',
     natCain: 'Od Kaina do potopu.', beforeSeam: 'Przed 2000 p.n.e.', range: (a, b) => a + ' – ' + b, present: 'dziś',
-    patAm: (s, n, yrs, e) => 'Urodzony w ' + s + '. Żył ' + n + ' ' + yrs + ', do ' + e + '.',
+    patAm: (n, yrs) => 'Według Księgi Rodzaju żył ' + n + ' ' + yrs + '; Biblia nie podaje tu dat.',
+    primeval: 'czasach Rdz 1–11',
     patDated: (s, e, n, yrs) => 'Ur. ' + s + ', zm. ' + e + ' Pismo podaje ' + n + ' ' + yrs + '; daty są przybliżone.',
     age: (name, n) => name + ', wiek ' + n,
     hub: ['Przed potopem', 'Po potopie', 'Patriarchowie', 'Izrael i Juda', 'Imperia', 'Czas Kościoła'],
@@ -1814,7 +1815,7 @@ const UI = {
     ask: {
       lang: 'Polish', you: 'Ty',
       about: list => 'Opowiedz mi o: ' + (list.length > 1 ? list.slice(0, -1).join(', ') + ' i ' + list[list.length - 1] : list[0]) + '.', thinking: 'Myślę…', stopped: '(przerwano)',
-      auto: (year, ev) => 'Co działo się w ' + year + '? Jestem przy wydarzeniu „' + ev + '”.',
+      auto: (year, ev) => (year ? 'Co działo się w ' + year + '?' : 'Co opowiada ta część Księgi Rodzaju?') + ' Jestem przy wydarzeniu „' + ev + '”.',
       err: { rate_limited: 'Zbyt wiele pytań naraz. Spróbuj ponownie za chwilę.', session_expired: 'Zaloguj się ponownie do claude.ai, aby dalej pytać.',
         refused: 'Na to pytanie nie mogę odpowiedzieć. Spróbuj zapytać inaczej.', off: 'Czat jest niedostępny w tym widoku.', offline: 'Czat działa po otwarciu strony w claude.ai.',
         other: 'Nie udało się uzyskać odpowiedzi. Spróbuj ponownie.', cut: 'Odpowiedź została skrócona.' }
@@ -1823,7 +1824,7 @@ const UI = {
       docTitle: 'Wykres dziejów świata',
       eyebrow: 'Datowanie wg katolickich wydań Biblii · Od stworzenia do 2026 n.e.',
       title: 'Wykres dziejów świata',
-      lede: 'Rozdziały 1–11 Księgi Rodzaju nie podają dat, dlatego liczymy je w latach od stworzenia świata (AM, <i>anno mundi</i>). Od Abrahama daty są zgodne z katolickimi wydaniami Biblii, a przed 722 p.n.e. są przybliżone. Naciśnij „Odtwórz” albo przeciągnij oś czasu.',
+      lede: 'Rozdziały 1–11 Księgi Rodzaju nie podają dat, dlatego oznaczamy je jako „bez daty”; podajemy tylko długość życia patriarchów, tak jak Biblia. Od Abrahama daty są zgodne z katolickimi wydaniami Biblii, a przed 722 p.n.e. są przybliżone. Naciśnij „Odtwórz” albo przeciągnij oś czasu.',
       periods: 'Okresy', aliveIn: 'Żyjący w', events: 'Wydarzenia', fullChart: 'Cały wykres',
       zoomIn: 'Powiększ', zoomOut: 'Pomniejsz', chart: 'Kołowy wykres chronologii', reel: 'Wydarzenia w obrazach',
       dock: 'Oś czasu: przeciągnij, aby zmienić rok, albo użyj klawiszy strzałek', lang: 'Język',
@@ -1843,7 +1844,8 @@ const UI = {
     toggle: open => (open ? 'Hide' : 'Show') + ' figures, patriarchs and the alive chart',
     alivePat: 'Patriarchs alive', aliveNat: 'Nations alive',
     natCain: 'From Cain to the Flood.', beforeSeam: 'Before 2000 BC', range: (a, b) => a + ' to ' + b, present: 'present',
-    patAm: (s, n, yrs, e) => 'Born ' + s + '. Lived ' + n + ' ' + yrs + ', to ' + e + '.',
+    patAm: (n, yrs) => 'According to Genesis he lived ' + n + ' ' + yrs + '; the Bible gives no dates here.',
+    primeval: 'the time of Genesis 1–11',
     patDated: (s, e, n, yrs) => 'Born ' + s + ', died ' + e + ' Scripture gives ' + n + ' ' + yrs + '; the dates are approximate.',
     age: (name, n) => name + ', age ' + n,
     hub: ['Before the flood', 'After the flood', 'Patriarchs', 'Israel and Judah', 'Empires', 'Church age'],
@@ -1853,7 +1855,7 @@ const UI = {
     ask: {
       lang: 'English', you: 'You',
       about: list => 'Tell me about ' + (list.length > 1 ? list.slice(0, -1).join(', ') + ' and ' + list[list.length - 1] : list[0]) + '.', thinking: 'Thinking…', stopped: '(stopped)',
-      auto: (year, ev) => 'What was happening in ' + year + '? I am at the event "' + ev + '".',
+      auto: (year, ev) => (year ? 'What was happening in ' + year + '?' : 'What does this part of Genesis tell?') + ' I am at the event "' + ev + '".',
       err: { rate_limited: 'Too many questions at once. Try again in a moment.', session_expired: 'Sign in to claude.ai again to keep asking.',
         refused: 'I cannot answer that question. Try asking it another way.', off: 'Chat is not available in this view.', offline: 'Chat works when the page is opened in claude.ai.',
         other: 'Could not get an answer. Please try again.', cut: 'The answer was cut short.' }
@@ -1862,7 +1864,7 @@ const UI = {
       docTitle: 'World History Chart',
       eyebrow: 'Catholic study Bible dating · Creation to AD 2026',
       title: 'World history chart',
-      lede: 'Genesis 1–11 gives no dates, so it is counted in years from Creation (AM, <i>anno mundi</i>). From Abraham on, dates follow Catholic study Bibles and are approximate before 722 BC. Press Play or drag the timeline.',
+      lede: 'Genesis 1–11 gives no dates, so it is marked “undated”; only the patriarchs’ lifespans are shown, as the Bible gives them. From Abraham on, dates follow Catholic study Bibles and are approximate before 722 BC. Press Play or drag the timeline.',
       periods: 'Periods', aliveIn: 'Alive in', events: 'Events', fullChart: 'Full chart',
       zoomIn: 'Zoom in', zoomOut: 'Zoom out', chart: 'Radial chronology chart', reel: 'Events in pictures',
       dock: 'Timeline: drag to change the year, or use the arrow keys', lang: 'Language',
