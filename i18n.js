@@ -682,6 +682,11 @@ const TEXT = {
     "Septuaginta",
     "",
     "Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład."
+   ],
+   [
+    "Uniwersytet Boloński",
+    "",
+    "Najstarszy nieprzerwanie działający uniwersytet świata, który według tradycji powstał w 1088 r. i zasłynął studiami prawa rzymskiego i kanonicznego. Za nim, często ze szkół katedralnych i z przywilejami papieży, powstają uniwersytety w Paryżu, Oksfordzie i Krakowie (1364), gdzie rozwijają się teologia, prawo, medycyna i nauki o przyrodzie."
    ]
   ],
   "KINGS": [
@@ -1618,6 +1623,11 @@ const TEXT = {
     "Septuagint",
     "",
     "Jews in Alexandria begin translating the Old Testament into Greek (in stages, from the 3rd century BC); the New Testament often quotes this translation."
+   ],
+   [
+    "University of Bologna",
+    "",
+    "The oldest university in the world still in continuous operation, founded by tradition in 1088 and famous for the study of Roman and canon law. After it, often out of cathedral schools and with papal privileges, universities arise in Paris, Oxford and Kraków (1364), where theology, law, medicine and the study of nature flourish."
    ]
   ],
   "KINGS": [
@@ -1892,6 +1902,7 @@ const UI = {
     age: (name, n) => name + ', wiek ' + n,
     hub: ['Przed potopem', 'Po potopie', 'Patriarchowie', 'Izrael i Juda', 'Imperia', 'Czas Kościoła'],
     legend: { patLine: 'Długość życia podana w Piśmie' },
+    science: 'Epoka nauki',
     realm: { un: 'Zjednoczone królestwo', ju: 'Królestwo Judy', is: 'Królestwo Izraela' }, realmShort: { un: 'Izrael', ju: 'Juda', is: 'Izrael' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Wiek przy objęciu tronu: ' + age + '.' : '') + ' Pismo podaje: ' + reign + ' panowania.',
     ask: {
@@ -1930,6 +1941,7 @@ const UI = {
     age: (name, n) => name + ', age ' + n,
     hub: ['Before the flood', 'After the flood', 'Patriarchs', 'Israel and Judah', 'Empires', 'Church age'],
     legend: { patLine: 'Lifespans given in Scripture' },
+    science: 'Age of science',
     realm: { un: 'United kingdom', ju: 'Kingdom of Judah', is: 'Kingdom of Israel' }, realmShort: { un: 'Israel', ju: 'Judah', is: 'Israel' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Age at accession: ' + age + '.' : '') + ' Scripture gives ' + reign + ' of reign.',
     ask: {

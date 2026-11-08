@@ -119,6 +119,7 @@ h1, h2, p { margin: 0; }
 .arc-label.on { font-weight: 600; }
 .arc-label.dark { fill: var(--accent); }
 .arc-label { transition: opacity .15s ease; }
+.sci-label { font-family: var(--mono); font-size: 7px; letter-spacing: .14em; text-transform: uppercase; fill: var(--c2); }
 .arc-hit { fill: none; stroke: transparent; stroke-linecap: butt; pointer-events: stroke; }
 .testament-line { fill: none; stroke: var(--n-300); stroke-width: .8; }
 /* Very faint slices for the three testament bands: one neutral shade at first, then each band's

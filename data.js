@@ -132,7 +132,9 @@ const CH_EV = [
   ['Sobór Watykański II', 1962, '', 'Sobór zwołany przez św. Jana XXIII, który odnowił liturgię, wprowadzając języki narodowe, i otworzył Kościół na dialog ze światem współczesnym, innymi chrześcijanami i religiami. Jego dokumenty, jak „Lumen gentium” i „Gaudium et spes”, kształtują życie Kościoła do dziś.'],
   // Historic (non-Church) events carry the line key of their people as a 5th field.
   ['Rewolucja francuska', 1789, '', 'Wybucha rewolucja we Francji, a w 1792 r. upada monarchia; hasła wolności, równości i braterstwa, a zarazem podporządkowanie Kościoła państwu (1790) i prześladowania duchownych i wiernych.', 'jap'],
-  ['Septuaginta', -250, '', 'Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład.', 'jap']
+  ['Septuaginta', -250, '', 'Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład.', 'jap'],
+  // The first universities grow out of the Church's schools; the chart marks the age of science from here.
+  ['Uniwersytet Boloński', 1088, '', 'Najstarszy nieprzerwanie działający uniwersytet świata, który według tradycji powstał w 1088 r. i zasłynął studiami prawa rzymskiego i kanonicznego. Za nim, często ze szkół katedralnych i z przywilejami papieży, powstają uniwersytety w Paryżu, Oksfordzie i Krakowie (1364), gdzie rozwijają się teologia, prawo, medycyna i nauki o przyrodzie.']
 ];
 
 // Testaments: bands marked around the chart and along the timeline (from, to).
