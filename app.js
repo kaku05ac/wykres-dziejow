@@ -400,11 +400,11 @@
     const items = {};
     let arcs = '', arcLabels = '';
 
-    // A filled band from angle a1 to a2, w wide, whose corners are rounded: the shape is drawn
-    // inset by the corner radius and then stroked with round joins in the same colour, so it
-    // still starts and ends exactly at its years. Very short bands become a small capsule.
+    // A band from angle a1 to a2, w wide, with fully rounded (pill) ends: the shape is drawn
+    // inset by the corner radius (here half the width) and then stroked with round joins in the
+    // same colour, so it still starts and ends exactly at its years. Very short bands become a dot.
     const band = (r, w, a1, a2, color, on) => {
-      const rc = w * 0.32, ro = r + w / 2 - rc, ri = r - w / 2 + rc, da = rc / r * 180 / Math.PI;
+      const rc = w * 0.5, ro = r + w / 2 - rc, ri = r - w / 2 + rc, da = rc / r * 180 / Math.PI;
       let b1 = a1 + da, b2 = a2 - da;
       if (b2 < b1) b1 = b2 = (a1 + a2) / 2;
       const big = b2 - b1 > 180 ? 1 : 0, [o1x, o1y] = pt(ro, b1), [o2x, o2y] = pt(ro, b2), [i2x, i2y] = pt(ri, b2), [i1x, i1y] = pt(ri, b1);
