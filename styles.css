@@ -131,6 +131,8 @@ h1, h2, p { margin: 0; }
 .testament-label { font-family: var(--mono); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; fill: var(--n-500); }
 .fig-initial { font-family: var(--serif); font-weight: 300; fill: var(--n-900); pointer-events: none; }
 .hub-year { font-family: var(--serif); font-size: 19px; font-weight: 300; letter-spacing: -0.02em; fill: var(--n-900); }
+.year.is-undated { font-size: 26px; color: var(--n-600); }
+.hub-year.is-undated { font-size: 12px; fill: var(--n-600); }
 .hub-sub { font-family: var(--mono); font-size: 6.5px; letter-spacing: .1em; text-transform: uppercase; fill: var(--n-500); }
 
 
