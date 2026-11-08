@@ -173,11 +173,13 @@ const TEXT = {
    ],
    [
     "Heli",
-    "1 Sm 4,15"
+    "1 Sm 4,15",
+    "Kapłan w sanktuarium w Szilo, u którego wychowywał się prorok Samuel. To on nauczył chłopca odpowiadać Bogu: „Mów, Panie, bo sługa Twój słucha” (1 Sm 3,9)."
    ],
    [
     "Jojada",
-    "2 Krn 24,15"
+    "2 Krn 24,15",
+    "Kapłan w Jerozolimie, który ukrył małego Joasza przed królową Atalią i osadził go na tronie. Za to, że czynił dobro w Izraelu, pochowano go w grobach królewskich (2 Krn 24,16)."
    ]
   ],
   "NAT": [
@@ -198,15 +200,18 @@ const TEXT = {
    ],
    [
     "Aram / Syria",
-    "Rdz 10,22; 2 Krl 16,9"
+    "Rdz 10,22; 2 Krl 16,9",
+    "Starożytne królestwo Aramejczyków ze stolicą w Damaszku, sąsiad i częsty rywal Izraela. Ich język, aramejski, stał się powszechny na Bliskim Wschodzie; posługiwał się nim także Jezus."
    ],
    [
     "Arabowie",
-    "Rdz 25,12-18"
+    "Rdz 25,12-18",
+    "Ludy Półwyspu Arabskiego; tradycja umieszcza tam krainę Saby, z której królowa przybyła do Salomona. W dniu Pięćdziesiątnicy wśród słuchaczy apostołów są także Arabowie (Dz 2,11)."
    ],
    [
     "Izrael",
-    "Joz 1; 2 Krl 25"
+    "Joz 1; 2 Krl 25",
+    "Naród wywodzący się od dwunastu synów Jakuba, który po wyjściu z Egiptu osiedlił się w Kanaanie, a za Dawida i Salomona stworzył królestwo ze stolicą w Jerozolimie. Z tego narodu pochodzi Jezus, a św. Jan Paweł II nazwał Żydów „starszymi braćmi” chrześcijan w wierze."
    ],
    [
     "Babilon",
@@ -225,7 +230,8 @@ const TEXT = {
    ],
    [
     "Fenicja",
-    "1 Krl 5"
+    "1 Krl 5",
+    "Kraina kupców i żeglarzy na wybrzeżu dzisiejszego Libanu, z miastami Tyr i Sydon; król Tyru dostarczył Salomonowi cedrów na budowę świątyni. Fenicjanie rozpowszechnili alfabet, od którego pochodzą nasze litery."
    ],
    [
     "Ludy indoeuropejskie",
@@ -299,19 +305,19 @@ const TEXT = {
    [
     "Świątynia Salomona",
     "1 Krl 6-8",
-    "Świątynia w Jerozolimie zostaje poświęcona.",
+    "Pierwsza świątynia w Jerozolimie, zbudowana przez Salomona jako dom dla Pana, w którym w najświętszym miejscu stała Arka Przymierza. Przez wieki była sercem modlitwy Izraela, aż do zburzenia przez Babilończyków w 587 p.n.e.",
     null
    ],
    [
     "Podział królestwa",
     "1 Krl 12",
-    "Po śmierci Salomona Izrael i Juda się rozdzielają.",
+    "Po śmierci Salomona jedno królestwo rozpada się na dwa: północne Królestwo Izraela pod wodzą Jeroboama i południową Judę z Jerozolimą, przy której zostaje dynastia Dawida. Oba królestwa istnieją obok siebie przez dwa stulecia.",
     null
    ],
    [
     "Upadek Samarii",
     "2 Krl 17",
-    "Asyria uprowadza mieszkańców królestwa północnego.",
+    "Koniec północnego Królestwa Izraela: Asyria zdobywa jego stolicę, Samarię, i przesiedla mieszkańców w odległe krainy. Od tej krainy biorą nazwę Samarytanie, znani z przypowieści Jezusa o miłosiernym Samarytaninie.",
     null
    ],
    [
@@ -422,55 +428,55 @@ const TEXT = {
    [
     "Debora",
     "Sędzia i prorokini",
-    "Razem z Barakiem poprowadziła Izraela przeciw Syserze.",
+    "Prorokini i jedna z sędziów, czyli przywódców Izraela przed czasami królów. Razem z wodzem Barakiem prowadzi lud do zwycięstwa nad Syserą, a jej pieśń (Sdz 5) uchodzi za jeden z najstarszych utworów Biblii.",
     "Sdz 4-5"
    ],
    [
     "Samson",
     "Sędzia",
-    "Wybawił Izraela z rąk Filistynów.",
+    "Sędzia Izraela obdarzony przez Boga ogromną siłą, którą tracił, gdy obcięto mu włosy. Walczył z Filistynami, a List do Hebrajczyków wymienia go wśród bohaterów wiary (Hbr 11,32).",
     "Sdz 13-16"
    ],
    [
     "Saul",
     "Pierwszy król Izraela",
-    "Namaszczony przez Samuela.",
+    "Pierwszy król Izraela, namaszczony przez proroka Samuela. Odważny wojownik, który z czasem przestaje słuchać Boga i ginie w bitwie z Filistynami.",
     "1 Sm 10"
    ],
    [
     "Dawid",
     "Król Izraela",
-    "Uczynił Jerozolimę swoją stolicą.",
+    "Pasterz z Betlejem, który pokonał Goliata, został królem Izraela i uczynił Jerozolimę stolicą; tradycja przypisuje mu wiele psalmów. Bóg obiecał, że jego dynastia będzie trwać na wieki, dlatego Jezus nazywany jest „Synem Dawida”.",
     "2 Sm 5"
    ],
    [
     "Salomon",
     "Budowniczy świątyni",
-    "Słynął z mądrości i zbudował świątynię w Jerozolimie.",
+    "Syn Dawida i król Izraela, który poprosił Boga nie o bogactwo, lecz o mądrość. Słynął z mądrych wyroków i zbudował w Jerozolimie świątynię.",
     "1 Krl 6"
    ],
    [
     "Eliasz",
     "Prorok",
-    "Stawił czoła prorokom Baala na górze Karmel.",
+    "Jeden z największych proroków Izraela, który na górze Karmel ukazuje moc prawdziwego Boga wobec proroków Baala. Zostaje uniesiony do nieba w wichrze, a w Ewangelii ukazuje się obok Jezusa na górze Przemienienia.",
     "1 Krl 18"
    ],
    [
     "Izajasz",
     "Prorok",
-    "Powołany w roku śmierci króla Ozjasza.",
+    "Prorok z Jerozolimy, który zapowiada Emmanuela, którego pocznie Dziewica, i Sługę Pańskiego cierpiącego za grzechy innych. Kościół tak często czyta jego słowa w Adwencie, że św. Hieronim nazwał go raczej ewangelistą niż prorokiem.",
     "Iz 6,1"
    ],
    [
     "Ezechiasz",
     "Król Judy",
-    "Odnowił kult i oparł się Asyrii.",
+    "Pobożny król Judy, który oczyścił świątynię z bałwochwalstwa i odnowił obchody Paschy. Gdy Asyryjczycy oblegli Jerozolimę, zaufał Bogu za radą Izajasza, a miasto ocalało.",
     "2 Krl 18-19"
    ],
    [
     "Daniel",
     "Prorok w Babilonie",
-    "Uprowadzony do Babilonu, służył na dworze królewskim.",
+    "Prorok, młody Judejczyk uprowadzony do Babilonu, który pozostał wierny Bogu na dworze królewskim i wyszedł nietknięty z jaskini lwów. W jego wizji pojawia się „ktoś podobny do Syna Człowieczego” (Dn 7,13); tak właśnie często nazywał siebie Jezus.",
     "Dn 1"
    ],
    [
@@ -1057,11 +1063,13 @@ const TEXT = {
    ],
    [
     "Eli",
-    "1 Sam 4:15"
+    "1 Sam 4:15",
+    "A priest at the sanctuary of Shiloh, in whose care the prophet Samuel grew up. He taught the boy to answer God: “Speak, Lord, for your servant is listening” (1 Sam 3:9)."
    ],
    [
     "Jehoiada",
-    "2 Chr 24:15"
+    "2 Chr 24:15",
+    "A priest in Jerusalem who hid the young Joash from Queen Athaliah and set him on the throne. Because he had done good in Israel, he was buried among the kings (2 Chr 24:16)."
    ]
   ],
   "NAT": [
@@ -1082,15 +1090,18 @@ const TEXT = {
    ],
    [
     "Aram / Syria",
-    "Gen 10:22; 2 Kgs 16:9"
+    "Gen 10:22; 2 Kgs 16:9",
+    "The ancient kingdom of the Arameans with its capital at Damascus, a neighbour and frequent rival of Israel. Their language, Aramaic, spread across the Middle East; Jesus spoke it too."
    ],
    [
     "Arabs",
-    "Gen 25:12-18"
+    "Gen 25:12-18",
+    "The peoples of the Arabian Peninsula; tradition places there the land of Sheba, whose queen came to visit Solomon. At Pentecost, Arabs are among those who hear the apostles (Acts 2:11)."
    ],
    [
     "Israel",
-    "Josh 1; 2 Kgs 25"
+    "Josh 1; 2 Kgs 25",
+    "The people descended from the twelve sons of Jacob, who settled in Canaan after the Exodus and under David and Solomon formed a kingdom with Jerusalem as its capital. Jesus comes from this people, and St John Paul II called the Jews the “elder brothers” of Christians in faith."
    ],
    [
     "Babylon",
@@ -1109,7 +1120,8 @@ const TEXT = {
    ],
    [
     "Phoenicia",
-    "1 Kgs 5"
+    "1 Kgs 5",
+    "A land of merchants and sailors on the coast of present-day Lebanon, with the cities of Tyre and Sidon; the king of Tyre sent Solomon cedar for the temple. The Phoenicians spread the alphabet from which our letters come."
    ],
    [
     "Indo-European peoples",
@@ -1183,19 +1195,19 @@ const TEXT = {
    [
     "Solomon's temple",
     "1 Kgs 6-8",
-    "The temple at Jerusalem is dedicated.",
+    "The first temple in Jerusalem, built by Solomon as a house for the Lord, with the Ark of the Covenant in its holiest place. For centuries it was the heart of Israel’s prayer, until the Babylonians destroyed it in 587 BC.",
     null
    ],
    [
     "Kingdom divides",
     "1 Kgs 12",
-    "Israel and Judah separate after Solomon.",
+    "After Solomon’s death the one kingdom splits in two: the northern Kingdom of Israel under Jeroboam and southern Judah with Jerusalem, which stays with the line of David. The two kingdoms exist side by side for two centuries.",
     null
    ],
    [
     "Fall of Samaria",
     "2 Kgs 17",
-    "Assyria carries the northern kingdom away.",
+    "The end of the northern Kingdom of Israel: Assyria takes its capital, Samaria, and deports its people to distant lands. The Samaritans take their name from this region, known from Jesus’ parable of the Good Samaritan.",
     null
    ],
    [
@@ -1306,55 +1318,55 @@ const TEXT = {
    [
     "Deborah",
     "Judge and prophetess",
-    "Led Israel with Barak against Sisera.",
+    "A prophetess and one of the judges, the leaders of Israel before the time of the kings. With the commander Barak she leads the people to victory over Sisera, and her song (Judg 5) is thought to be one of the oldest texts in the Bible.",
     "Judg 4-5"
    ],
    [
     "Samson",
     "Judge",
-    "Delivered Israel from the Philistines.",
+    "A judge of Israel given great strength by God, which he lost when his hair was cut. He fought the Philistines, and the Letter to the Hebrews counts him among the heroes of faith (Heb 11:32).",
     "Judg 13-16"
    ],
    [
     "Saul",
     "First king of Israel",
-    "Anointed by Samuel.",
+    "The first king of Israel, anointed by the prophet Samuel. A brave warrior who in time stops listening to God and dies in battle with the Philistines.",
     "1 Sam 10"
    ],
    [
     "David",
     "King of Israel",
-    "Made Jerusalem his capital.",
+    "A shepherd from Bethlehem who defeated Goliath, became king of Israel and made Jerusalem his capital; tradition credits him with many psalms. God promised that his dynasty would last for ever, which is why Jesus is called “Son of David”.",
     "2 Sam 5"
    ],
    [
     "Solomon",
     "Builder of the temple",
-    "Known for wisdom and the temple at Jerusalem.",
+    "Son of David and king of Israel, who asked God not for riches but for wisdom. He was famous for his wise judgements and built the temple in Jerusalem.",
     "1 Kgs 6"
    ],
    [
     "Elijah",
     "Prophet",
-    "Confronted the prophets of Baal on Mount Carmel.",
+    "One of Israel’s greatest prophets, who on Mount Carmel shows the power of the true God before the prophets of Baal. He is taken up to heaven in a whirlwind, and in the Gospel he appears beside Jesus at the Transfiguration.",
     "1 Kgs 18"
    ],
    [
     "Isaiah",
     "Prophet",
-    "Called in the year King Uzziah died.",
+    "A prophet from Jerusalem who foretells Emmanuel, to be born of a Virgin, and the Servant of the Lord who suffers for the sins of others. The Church reads his words so often in Advent that St Jerome called him an evangelist rather than a prophet.",
     "Isa 6:1"
    ],
    [
     "Hezekiah",
     "King of Judah",
-    "Restored worship and withstood Assyria.",
+    "A devout king of Judah who cleansed the temple of idols and restored the Passover. When the Assyrians besieged Jerusalem, he trusted God on Isaiah’s advice, and the city was saved.",
     "2 Kgs 18-19"
    ],
    [
     "Daniel",
     "Prophet in Babylon",
-    "Taken to Babylon and served in the court.",
+    "A prophet, a young man of Judah taken to Babylon, who stayed faithful to God at the royal court and came out unharmed from the lions’ den. In his vision appears “one like a son of man” (Dan 7:13), the title Jesus often used of himself.",
     "Dan 1"
    ],
    [
