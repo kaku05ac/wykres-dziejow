@@ -251,7 +251,7 @@ const TEXT = {
    [
     "Rzym",
     "Dn 7,7",
-    "Miasto założone według tradycji w 753 p.n.e., które stało się imperium obejmującym cały basen Morza Śródziemnego; za panowania jego pierwszego cesarza, Augusta, urodził się Jezus (Łk 2,1). W Rzymie ponieśli męczeństwo święci Piotr i Paweł, a miasto stało się siedzibą papieży i centrum Kościoła katolickiego."
+    "Miasto założone według tradycji w 753 p.n.e., które stało się imperium obejmującym cały basen Morza Śródziemnego; za panowania jego pierwszego cesarza, Augusta, urodził się Jezus (Łk 2,1). W Rzymie ponieśli męczeństwo święci Piotr i Paweł, a miasto stało się siedzibą papieży i centrum Kościoła katolickiego. W 476 r. upada zachodnia część cesarstwa; wschodnia, ze stolicą w Konstantynopolu, przetrwa jako Bizancjum do 1453 r."
    ],
    [
     "Kościół katolicki",
@@ -1193,7 +1193,7 @@ const TEXT = {
    [
     "Rome",
     "Dan 7:7",
-    "A city founded, by tradition, in 753 BC, which grew into an empire around the whole Mediterranean; Jesus was born in the reign of its first emperor, Augustus (Luke 2:1). Sts Peter and Paul were martyred in Rome, and the city became the seat of the popes and the centre of the Catholic Church."
+    "A city founded, by tradition, in 753 BC, which grew into an empire around the whole Mediterranean; Jesus was born in the reign of its first emperor, Augustus (Luke 2:1). Sts Peter and Paul were martyred in Rome, and the city became the seat of the popes and the centre of the Catholic Church. In 476 the western half of the empire falls; the eastern half, with its capital at Constantinople, lives on as Byzantium until 1453."
    ],
    [
     "Catholic Church",
