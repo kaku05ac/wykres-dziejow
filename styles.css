@@ -41,7 +41,7 @@ h1, h2, p { margin: 0; }
 
 .intro { display: flex; flex-direction: column; gap: 18px; }
 .eyebrow { font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 11px; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-.title { font-family: 'Newsreader', 'Iowan Old Style', Georgia, serif; font-size: 54px; font-weight: 300; letter-spacing: -0.025em; line-height: 1.15; color: var(--ink); text-wrap: balance; }
+.title { font-family: 'Newsreader', 'Iowan Old Style', Georgia, serif; font-size: 48px; font-weight: 300; letter-spacing: -0.025em; line-height: 1.15; color: var(--ink); text-wrap: balance; }
 /* The note on dating is folded away behind a small Info toggle. */
 .info-toggle { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 2px 0; border: 0; background: none; cursor: pointer;
   font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--n-500); transition: color .15s ease; }
@@ -289,7 +289,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   .stage { order: -1; border-bottom: 1px solid var(--n-200); }
   .canvas { flex: none; height: min(100vw, 70vh); min-height: 380px; }
   .side { border-right: 0; overflow: visible; padding: 32px max(16px, env(safe-area-inset-right, 0px)) 28px max(16px, env(safe-area-inset-left, 0px)); }
-  .title { font-size: 46px; }
+  .title { font-size: 41px; }
   .reel { width: 104px; }
   .reel-track { right: 8px; }
   .art-slot { width: calc(var(--w) * .55); height: 56px; }
