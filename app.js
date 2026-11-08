@@ -913,7 +913,7 @@
       tx = e.clientX; ty = e.clientY;
       const t = e.target;
       dot.classList.toggle('is-text', !!(t.closest && t.closest('input, textarea')));
-      // Over the timeline the dot keeps its size and turns maroon.
+      // Over the timeline the dot hides and the usual drag pointer shows instead.
       const onSlider = !!(t.closest && t.closest('#dockSvg'));
       dot.classList.toggle('is-slider', onSlider);
       dot.classList.toggle('is-hover', !onSlider && !!(t.closest && t.closest(CLICKABLE)) && !(t.closest && t.closest('#chart') && !t.closest('[data-key]')));
