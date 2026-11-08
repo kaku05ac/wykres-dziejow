@@ -123,44 +123,53 @@ const TEXT = {
    ],
    [
     "Izmael",
-    "Rdz 25,17"
+    "Rdz 25,17",
+    "Pierworodny syn Abrahama i Hagar, egipskiej służącej Sary; jego imię znaczy „Bóg słyszy”. Gdy Hagar z chłopcem błąka się po pustyni, Bóg słyszy jego płacz, otwiera Hagar oczy na studnię i obiecuje, że z Izmaela wyprowadzi wielki naród. Razem z Izaakiem grzebie ojca; według tradycji arabskiej jest przodkiem Arabów."
    ],
    [
     "Izaak",
-    "Rdz 35,28"
+    "Rdz 35,28",
+    "Syn Abrahama i Sary, urodzony, gdy rodzice byli już w podeszłym wieku; jego imię znaczy „śmiać się”. Żeni się z Rebeką, a jego synami są bliźnięta Ezaw i Jakub. Żyje najdłużej z trzech patriarchów, o których Bóg mówi: „Jestem Bogiem Abrahama, Izaaka i Jakuba”."
    ],
    [
     "Jakub",
-    "Rdz 47,28"
+    "Rdz 47,28",
+    "Syn Izaaka i Rebeki, młodszy z bliźniąt. W drodze do Charanu śni o drabinie sięgającej nieba, a po nocnej walce otrzymuje od Boga nowe imię: Izrael, od którego pochodzi nazwa całego narodu. Jego dwunastu synów daje początek dwunastu pokoleniom Izraela."
    ],
    [
     "Lewi",
-    "Wj 6,16"
+    "Wj 6,16",
+    "Trzeci syn Jakuba i Lei. Od niego pochodzi pokolenie Lewiego, któremu Bóg powierzył służbę w przybytku, a później w świątyni; z tego pokolenia pochodzą Mojżesz i Aaron. Pokolenie Lewiego nie otrzymało własnej ziemi, bo, jak mówi Pismo, „Pan jest jego dziedzictwem” (Pwt 10,9)."
    ],
    [
     "Józef",
-    "Rdz 50,26"
+    "Rdz 50,26",
+    "Ukochany syn Jakuba, sprzedany przez zazdrosnych braci do Egiptu. Dzięki mądrości i wyjaśnieniu snów faraona zostaje zarządcą kraju i ratuje przed głodem Egipt oraz własną rodzinę. Przebacza braciom słowami: „Wy zamierzaliście wyrządzić mi zło, Bóg jednak zamierzył to jako dobro” (Rdz 50,20)."
    ],
    [
     "Kehat",
-    "Wj 6,18"
+    "Wj 6,18",
+    "Syn Lewiego, który wraz z ojcem i dziadkiem Jakubem przybył do Egiptu (Rdz 46,11). Jego potomkowie, Kehatyci, nosili podczas wędrówki po pustyni najświętsze sprzęty przybytku, w tym Arkę Przymierza (Lb 4). Jest dziadkiem Mojżesza i Aarona."
    ],
    [
     "Amram",
     "Wj 6,20",
-    "Wj 6 podaje skróconą genealogię: między Kehatem a Amramem mogło upłynąć więcej pokoleń."
+    "Wnuk Lewiego, mąż Jokebed i ojciec Aarona, Miriam i Mojżesza (Wj 6,20). Jego żona ukryła małego Mojżesza przed rozkazem faraona i powierzyła go wodom Nilu w koszyku (Wj 2). Wj 6 podaje skróconą genealogię: między Kehatem a Amramem mogło upłynąć więcej pokoleń."
    ],
    [
     "Aaron",
-    "Lb 33,38-39"
+    "Lb 33,38-39",
+    "Starszy brat Mojżesza, który przemawiał w jego imieniu przed faraonem. Bóg ustanowił go pierwszym arcykapłanem Izraela, a jego potomkowie sprawowali kapłaństwo w świątyni. Umiera na górze Hor. List do Hebrajczyków ukazuje Chrystusa jako doskonałego arcykapłana, którego zapowiadało kapłaństwo Aarona."
    ],
    [
     "Mojżesz",
-    "Pwt 34,7"
+    "Pwt 34,7",
+    "Uratowany jako niemowlę z wód Nilu i wychowany na dworze faraona, spotyka Boga w płonącym krzewie, który objawia mu swoje imię. Wyprowadza Izraela z Egiptu, a na górze Synaj otrzymuje Dziesięć Przykazań. Umiera na górze Nebo, oglądając z daleka Ziemię Obiecaną, a w Ewangelii ukazuje się obok Jezusa na górze Przemienienia."
    ],
    [
     "Jozue",
-    "Joz 24,29"
+    "Joz 24,29",
+    "Sługa i następca Mojżesza, który przeprowadza Izraela przez Jordan do Ziemi Obiecanej. Jego hebrajskie imię, Jehoszua, znaczy „Pan zbawia”; w greckiej formie brzmi ono „Jezus”. Pod koniec życia wzywa lud: „Ja i mój dom służyć będziemy Panu” (Joz 24,15)."
    ],
    [
     "Heli",
@@ -278,13 +287,13 @@ const TEXT = {
    [
     "Ofiarowanie Izaaka",
     "Rdz 22",
-    "Abraham zostaje wystawiony na próbę na górze Moria i ofiaruje swojego syna Izaaka.",
+    "Bóg poddaje Abrahama próbie i każe mu złożyć w ofierze ukochanego syna Izaaka na górze Moria. W ostatniej chwili anioł powstrzymuje jego rękę, a Abraham składa w ofierze baranka uwikłanego w zarośla. Księga Kronik umieszcza górę Moria w miejscu, gdzie Salomon zbudował świątynię (2 Krn 3,1), a chrześcijanie widzą w Izaaku niosącym drwa na ofiarę zapowiedź Chrystusa niosącego krzyż; Kościół czyta tę historię w Wigilię Paschalną.",
     null
    ],
    [
     "Wyjście z Egiptu",
     "Wj 12",
-    "Izrael pod wodzą Mojżesza opuszcza Egipt.",
+    "Bóg wyprowadza Izraelitów z niewoli egipskiej pod wodzą Mojżesza. Przed wyjściem spożywają baranka paschalnego, a krew na odrzwiach chroni ich domy; potem przechodzą suchą stopą przez morze. Żydzi wspominają to co roku w święto Paschy, a chrześcijanie widzą w nim zapowiedź Paschy Chrystusa, Jego śmierci i zmartwychwstania.",
     null
    ],
    [
@@ -383,31 +392,31 @@ const TEXT = {
    [
     "Izaak",
     "Syn obietnicy",
-    "Syn Abrahama i Sary.",
+    "Syn Abrahama i Sary, urodzony, gdy rodzice byli już w podeszłym wieku; jego imię znaczy „śmiać się”. Żeni się z Rebeką, a jego synami są bliźnięta Ezaw i Jakub. Żyje najdłużej z trzech patriarchów, o których Bóg mówi: „Jestem Bogiem Abrahama, Izaaka i Jakuba”.",
     "Rdz 21"
    ],
    [
     "Jakub",
     "Izrael",
-    "Ojciec dwunastu pokoleń.",
+    "Syn Izaaka i Rebeki, młodszy z bliźniąt. W drodze do Charanu śni o drabinie sięgającej nieba, a po nocnej walce otrzymuje od Boga nowe imię: Izrael, od którego pochodzi nazwa całego narodu. Jego dwunastu synów daje początek dwunastu pokoleniom Izraela.",
     "Rdz 25-50"
    ],
    [
     "Józef",
     "Zarządca Egiptu",
-    "Sprzedany przez braci, później uratował rodzinę przed głodem.",
+    "Ukochany syn Jakuba, sprzedany przez zazdrosnych braci do Egiptu. Dzięki mądrości i wyjaśnieniu snów faraona zostaje zarządcą kraju i ratuje przed głodem Egipt oraz własną rodzinę. Przebacza braciom słowami: „Wy zamierzaliście wyrządzić mi zło, Bóg jednak zamierzył to jako dobro” (Rdz 50,20).",
     "Rdz 37-50"
    ],
    [
     "Mojżesz",
     "Prawodawca",
-    "Wyprowadził Izraela z Egiptu i otrzymał Prawo na Synaju.",
+    "Uratowany jako niemowlę z wód Nilu i wychowany na dworze faraona, spotyka Boga w płonącym krzewie, który objawia mu swoje imię. Wyprowadza Izraela z Egiptu, a na górze Synaj otrzymuje Dziesięć Przykazań. Umiera na górze Nebo, oglądając z daleka Ziemię Obiecaną, a w Ewangelii ukazuje się obok Jezusa na górze Przemienienia.",
     "Wj 3-20"
    ],
    [
     "Jozue",
     "Zdobywca Kanaanu",
-    "Przeprowadził Izraela przez Jordan.",
+    "Sługa i następca Mojżesza, który przeprowadza Izraela przez Jordan do Ziemi Obiecanej. Jego hebrajskie imię, Jehoszua, znaczy „Pan zbawia”; w greckiej formie brzmi ono „Jezus”. Pod koniec życia wzywa lud: „Ja i mój dom służyć będziemy Panu” (Joz 24,15).",
     "Joz 3"
    ],
    [
@@ -998,44 +1007,53 @@ const TEXT = {
    ],
    [
     "Ishmael",
-    "Gen 25:17"
+    "Gen 25:17",
+    "Firstborn son of Abraham and Hagar, Sarah’s Egyptian maid; his name means “God hears”. When Hagar wanders in the desert with the boy, God hears his cry, opens Hagar’s eyes to a well and promises to make of Ishmael a great nation. With Isaac he buries their father; Arab tradition regards him as the ancestor of the Arabs."
    ],
    [
     "Isaac",
-    "Gen 35:28"
+    "Gen 35:28",
+    "Son of Abraham and Sarah, born when his parents were already old; his name means “he laughs”. He marries Rebekah, and his sons are the twins Esau and Jacob. He lives the longest of the three patriarchs of whom God says: “I am the God of Abraham, the God of Isaac and the God of Jacob.”"
    ],
    [
     "Jacob",
-    "Gen 47:28"
+    "Gen 47:28",
+    "Son of Isaac and Rebekah, the younger of the twins. On the way to Haran he dreams of a ladder reaching to heaven, and after a night of wrestling he receives from God a new name: Israel, which became the name of the whole people. His twelve sons are the ancestors of the twelve tribes of Israel."
    ],
    [
     "Levi",
-    "Ex 6:16"
+    "Ex 6:16",
+    "Third son of Jacob and Leah. From him comes the tribe of Levi, to which God entrusted the service of the tabernacle and later of the temple; Moses and Aaron belong to this tribe. The tribe of Levi received no land of its own, because, as Scripture says, “the Lord is its heritage” (Deut 10:9)."
    ],
    [
     "Joseph",
-    "Gen 50:26"
+    "Gen 50:26",
+    "Jacob’s beloved son, sold into Egypt by his jealous brothers. Through wisdom and by explaining Pharaoh’s dreams he becomes governor of the land and saves Egypt and his own family from famine. He forgives his brothers with the words: “Even though you meant harm to me, God meant it for good” (Gen 50:20)."
    ],
    [
     "Kohath",
-    "Ex 6:18"
+    "Ex 6:18",
+    "Son of Levi, who came to Egypt with his father and his grandfather Jacob (Gen 46:11). His descendants, the Kohathites, carried the most holy objects of the tabernacle during the desert journey, among them the Ark of the Covenant (Num 4). He is the grandfather of Moses and Aaron."
    ],
    [
     "Amram",
     "Ex 6:20",
-    "Exodus 6 gives a shortened genealogy: more generations may lie between Kohath and Amram."
+    "Grandson of Levi, husband of Jochebed and father of Aaron, Miriam and Moses (Ex 6:20). His wife hid the baby Moses from Pharaoh’s order and set him in a basket on the waters of the Nile (Ex 2). Exodus 6 gives a shortened genealogy: more generations may lie between Kohath and Amram."
    ],
    [
     "Aaron",
-    "Num 33:38-39"
+    "Num 33:38-39",
+    "Elder brother of Moses, who spoke for him before Pharaoh. God made him the first high priest of Israel, and his descendants served as priests in the temple. He dies on Mount Hor. The Letter to the Hebrews presents Christ as the perfect high priest, foreshadowed by the priesthood of Aaron."
    ],
    [
     "Moses",
-    "Deut 34:7"
+    "Deut 34:7",
+    "Rescued as a baby from the waters of the Nile and raised at Pharaoh’s court, he meets God in the burning bush, who reveals His name to him. He leads Israel out of Egypt and on Mount Sinai receives the Ten Commandments. He dies on Mount Nebo, seeing the Promised Land from afar, and in the Gospel he appears beside Jesus on the mount of the Transfiguration."
    ],
    [
     "Joshua",
-    "Josh 24:29"
+    "Josh 24:29",
+    "Servant and successor of Moses, who leads Israel across the Jordan into the Promised Land. His Hebrew name, Yehoshua, means “the Lord saves”; in its Greek form it is “Jesus”. At the end of his life he calls the people: “As for me and my household, we will serve the Lord” (Josh 24:15)."
    ],
    [
     "Eli",
@@ -1153,13 +1171,13 @@ const TEXT = {
    [
     "Binding of Isaac",
     "Gen 22",
-    "Abraham is tested on Mount Moriah and offers his son Isaac.",
+    "God tests Abraham and tells him to offer his beloved son Isaac on Mount Moriah. At the last moment an angel stops his hand, and Abraham offers instead a ram caught in a thicket. The Book of Chronicles places Mount Moriah where Solomon later built the temple (2 Chr 3:1), and Christians see in Isaac carrying the wood for the sacrifice a sign of Christ carrying the cross; the Church reads this story at the Easter Vigil.",
     null
    ],
    [
     "The Exodus",
     "Ex 12",
-    "Israel leaves Egypt under Moses.",
+    "God leads the Israelites out of slavery in Egypt under Moses. Before they leave they eat the Passover lamb, and its blood on the doorposts protects their homes; then they cross the sea on dry ground. Jews remember this every year at Passover, and Christians see in it a sign of Christ’s Passover, His death and resurrection.",
     null
    ],
    [
@@ -1258,31 +1276,31 @@ const TEXT = {
    [
     "Isaac",
     "Son of promise",
-    "Born to Abraham and Sarah.",
+    "Son of Abraham and Sarah, born when his parents were already old; his name means “he laughs”. He marries Rebekah, and his sons are the twins Esau and Jacob. He lives the longest of the three patriarchs of whom God says: “I am the God of Abraham, the God of Isaac and the God of Jacob.”",
     "Gen 21"
    ],
    [
     "Jacob",
     "Israel",
-    "Father of the twelve tribes.",
+    "Son of Isaac and Rebekah, the younger of the twins. On the way to Haran he dreams of a ladder reaching to heaven, and after a night of wrestling he receives from God a new name: Israel, which became the name of the whole people. His twelve sons are the ancestors of the twelve tribes of Israel.",
     "Gen 25-50"
    ],
    [
     "Joseph",
     "Ruler in Egypt",
-    "Sold by his brothers, later saved his family from famine.",
+    "Jacob’s beloved son, sold into Egypt by his jealous brothers. Through wisdom and by explaining Pharaoh’s dreams he becomes governor of the land and saves Egypt and his own family from famine. He forgives his brothers with the words: “Even though you meant harm to me, God meant it for good” (Gen 50:20).",
     "Gen 37-50"
    ],
    [
     "Moses",
     "Lawgiver",
-    "Led Israel out of Egypt and received the law at Sinai.",
+    "Rescued as a baby from the waters of the Nile and raised at Pharaoh’s court, he meets God in the burning bush, who reveals His name to him. He leads Israel out of Egypt and on Mount Sinai receives the Ten Commandments. He dies on Mount Nebo, seeing the Promised Land from afar, and in the Gospel he appears beside Jesus on the mount of the Transfiguration.",
     "Ex 3-20"
    ],
    [
     "Joshua",
     "Conqueror of Canaan",
-    "Led Israel across the Jordan.",
+    "Servant and successor of Moses, who leads Israel across the Jordan into the Promised Land. His Hebrew name, Yehoshua, means “the Lord saves”; in its Greek form it is “Jesus”. At the end of his life he calls the people: “As for me and my household, we will serve the Lord” (Josh 24:15).",
     "Josh 3"
    ],
    [
