@@ -42,6 +42,16 @@
   COL.king2 = ['#e3dade', '#8f7884', ''];
   const KING_SHADE = (() => { const n = { ju: 0, is: 0 }; return KINGS.map(k => (n[k[3] === 'is' ? 'is' : 'ju']++ % 2 ? 'king2' : 'king')); })();
 
+  // Faint pie slices behind everything, one per testament band, from the hub to the outer circle.
+  // All three start in one neutral shade; each takes its own colour up to the slider's year.
+  const slice = (a1, a2, cls) => {
+    if (a2 - a1 < 0.05) return '';
+    const big = a2 - a1 > 180 ? 1 : 0, R = 650, r0 = 52;
+    const [ox1, oy1] = pt(R, a1), [ox2, oy2] = pt(R, a2), [ix2, iy2] = pt(r0, a2), [ix1, iy1] = pt(r0, a1);
+    return `<path class="pie ${cls}" d="M${f1(ox1)} ${f1(oy1)}A${R} ${R} 0 ${big} 1 ${f1(ox2)} ${f1(oy2)}L${f1(ix2)} ${f1(iy2)}A${r0} ${r0} 0 ${big} 0 ${f1(ix1)} ${f1(iy1)}Z"/>`;
+  };
+  const pieBase = TESTAMENTS.map(([from, to]) => slice(ang(from), ang(to), 'pie-base')).join('');
+
   const FULL_VIEW = { cx: 0, cy: 0, w: 1500 };
   const MIN_W = 200, MAX_W = 1500;
 
@@ -57,7 +67,7 @@
   const svg = $('chart');
   const el = {
     ruler: $('ruler'), arcs: $('arcs'), arcLabels: $('arcLabels'), dots: $('dots'), figs: $('figs'),
-    sweep: $('sweep'), sweepDot: $('sweepDot'), hubYear: $('hubYear'), hubSub: $('hubSub'),
+    pie: $('pie'), sweep: $('sweep'), sweepDot: $('sweepDot'), hubYear: $('hubYear'), hubSub: $('hubSub'),
     askCtx: $('askCtx'), askYear: $('askYear'),
     yearLabel: $('yearLabel'), aliveYear: $('aliveYear'), play: $('play'), playLabel: $('playLabel'),
     cardTitle: $('cardTitle'), cardBody: $('cardBody'), cardRef: $('cardRef'),
@@ -82,12 +92,6 @@
       const a = ang(y), seam = y === SEAM, [x1, y1] = pt(seam ? 82 : 342, a), [x2, y2] = pt(606, a), [x3, y3] = pt(630, a);
       html += `<line x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke="${seam ? '#b3afb1' : '#e3dfe1'}" stroke-width=".6"${seam ? ' stroke-dasharray="4 4"' : ''}/>`;
       html += `<text class="tick-label" x="${f1(x3)}" y="${f1(y3)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(a))} ${f1(x3)} ${f1(y3)})">${text}</text>`;
-    });
-    // Faint pie slices behind everything, one per testament band, from the hub to the outer circle.
-    TESTAMENTS.forEach(([from, to], k) => {
-      const a1 = ang(from), a2 = ang(to), big = a2 - a1 > 180 ? 1 : 0, R = 650, r0 = 52;
-      const [ox1, oy1] = pt(R, a1), [ox2, oy2] = pt(R, a2), [ix2, iy2] = pt(r0, a2), [ix1, iy1] = pt(r0, a1);
-      html = `<path class="pie pie-${k}" d="M${f1(ox1)} ${f1(oy1)}A${R} ${R} 0 ${big} 1 ${f1(ox2)} ${f1(oy2)}L${f1(ix2)} ${f1(iy2)}A${r0} ${r0} 0 ${big} 0 ${f1(ix1)} ${f1(iy1)}Z"/>` + html;
     });
     // Testament bands around the outside: Old Testament, New Testament, Church history.
     TESTAMENTS.forEach(([from, to], k) => {
@@ -487,6 +491,7 @@
         + `<text class="fig-initial" x="${f1(x)}" y="${f1(y)}" text-anchor="middle" dominant-baseline="central" style="font-size:${(10 * p).toFixed(2)}px">${esc(g[6] || g[0].replace(/^(Św\.|Bł\.|Kard\.|St|Cardinal)\s+/, '')[0])}</text></g>`;
     });
 
+    put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join(''));
     put(el.arcs, 'html', arcs);
     // While an arc is hovered or selected, the other arcs and names step back.
     const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n' || fk[0] === 'k') && items[fk]);
