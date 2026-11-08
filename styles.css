@@ -310,9 +310,9 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 html.has-cursor, html.has-cursor * { cursor: none !important; }
 html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 /* The timeline keeps its own pointers (drag sideways; hand over marks and the lanes toggle). */
-html.has-cursor #dockSvg { cursor: ew-resize !important; }
-html.has-cursor #dockSvg .dk-dot, html.has-cursor #dockSvg .dk-toggle { cursor: pointer !important; }
-html.has-cursor #dockSvg .dk-hint { cursor: help !important; }
+html.has-cursor #dockSvg, html.has-cursor #dockSvg * { cursor: ew-resize !important; }
+html.has-cursor #dockSvg .dk-dot, html.has-cursor #dockSvg .dk-dot *, html.has-cursor #dockSvg .dk-toggle, html.has-cursor #dockSvg .dk-toggle * { cursor: pointer !important; }
+html.has-cursor #dockSvg .dk-hint, html.has-cursor #dockSvg .dk-hint * { cursor: help !important; }
 .cursor-dot { position: fixed; left: 0; top: 0; z-index: 10000; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%;
   background: #111; box-shadow: 3px 4px 6px rgba(0, 0, 0, .22);
   pointer-events: none; opacity: 0; will-change: transform;
