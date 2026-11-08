@@ -1904,7 +1904,7 @@ const UI = {
     age: (name, n) => name + ', wiek ' + n,
     hub: ['Przed potopem', 'Po potopie', 'Patriarchowie', 'Izrael i Juda', 'Imperia', 'Czas Kościoła'],
     legend: { patLine: 'Długość życia podana w Piśmie' },
-    science: 'Epoka nauki',
+    science: 'Rozwój nauki',
     realm: { un: 'Zjednoczone królestwo', ju: 'Królestwo Judy', is: 'Królestwo Izraela' }, realmShort: { un: 'Izrael', ju: 'Juda', is: 'Izrael' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Wiek przy objęciu tronu: ' + age + '.' : '') + ' Pismo podaje: ' + reign + ' panowania.',
     ask: {
@@ -1943,7 +1943,7 @@ const UI = {
     age: (name, n) => name + ', age ' + n,
     hub: ['Before the flood', 'After the flood', 'Patriarchs', 'Israel and Judah', 'Empires', 'Church age'],
     legend: { patLine: 'Lifespans given in Scripture' },
-    science: 'Age of science',
+    science: 'Growth of science',
     realm: { un: 'United kingdom', ju: 'Kingdom of Judah', is: 'Kingdom of Israel' }, realmShort: { un: 'Israel', ju: 'Judah', is: 'Israel' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Age at accession: ' + age + '.' : '') + ' Scripture gives ' + reign + ' of reign.',
     ask: {
