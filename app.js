@@ -52,6 +52,33 @@
   };
   const pieBase = TESTAMENTS.map(([from, to]) => slice(ang(from), ang(to), 'pie-base')).join('');
 
+  // Ring colours follow time: a gradient from gold at Creation through rust, brick and plum to
+  // slate blue today, sampled along the chart's angle. Each arc carries its own linear gradient
+  // between its two ends, so a long arc changes shade along its length.
+  const GRAD = [[0, '#bba853'], [0.03, '#b29335'], [0.05, '#b48730'], [0.07, '#b5742f'], [0.09, '#a05b25'], [0.11, '#934923'],
+    [0.2, '#8c4225'], [0.3, '#823c2b'], [0.4, '#783830'], [0.5, '#6e3636'], [0.6, '#61333d'], [0.7, '#56344a'],
+    [0.8, '#4d3e5d'], [0.9, '#464a6d'], [1, '#405378']];
+  const A_END = ang(END);
+  const gradAt = a => {
+    const t = clamp(a / A_END, 0, 1);
+    let k = 1; while (k < GRAD.length - 1 && GRAD[k][0] < t) k++;
+    const [t0, c0] = GRAD[k - 1], [t1, c1] = GRAD[k], f = (t - t0) / (t1 - t0 || 1);
+    const ch = (c, i) => parseInt(c.slice(1 + i * 2, 3 + i * 2), 16);
+    return '#' + [0, 1, 2].map(i => Math.round(ch(c0, i) + (ch(c1, i) - ch(c0, i)) * f).toString(16).padStart(2, '0')).join('');
+  };
+  // One gradient per arc, built once from its full span (so the colour does not shift as it grows).
+  const gradDefs = new Map();
+  const arcGrad = (key, r, a1, a2) => {
+    if (!gradDefs.has(key)) {
+      const [x1, y1] = pt(r, a1), [x2, y2] = pt(r, a2), n = Math.max(2, Math.ceil((a2 - a1) / 8));
+      const stops = Array.from({ length: n + 1 }, (_, i) => `<stop offset="${(i / n).toFixed(3)}" stop-color="${gradAt(a1 + (a2 - a1) * i / n)}"/>`).join('');
+      gradDefs.set(key, `<linearGradient id="g-${key}" gradientUnits="userSpaceOnUse" x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}">${stops}</linearGradient>`);
+    }
+    return `url(#g-${key})`;
+  };
+  // Light (gold) stretches get dark names, the rest white.
+  const isLight = a => { const c = gradAt(a), v = [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16)); return 0.299 * v[0] + 0.587 * v[1] + 0.114 * v[2] > 150; };
+
   const FULL_VIEW = { cx: 0, cy: 0, w: 1500 };
   const MIN_W = 200, MAX_W = 1500;
 
@@ -410,13 +437,12 @@
       const big = b2 - b1 > 180 ? 1 : 0, [o1x, o1y] = pt(ro, b1), [o2x, o2y] = pt(ro, b2), [i2x, i2y] = pt(ri, b2), [i1x, i1y] = pt(ri, b1);
       return `<path class="${cls}${on ? ' on' : ''}" d="M${f1(o1x)} ${f1(o1y)}A${f1(ro)} ${f1(ro)} 0 ${big} 1 ${f1(o2x)} ${f1(o2y)}L${f1(i2x)} ${f1(i2y)}A${f1(ri)} ${f1(ri)} 0 ${big} 0 ${f1(i1x)} ${f1(i1y)}Z" fill="${color}" stroke="${color}" stroke-width="${f1(2 * rc)}"/>`;
     };
-    // Lines light enough that white names would not read on them get dark names.
-    const LIGHT_LINE = new Set(['cain', 'ham', 'jap', 'chu']);
     // Ghost tracks: every arc's whole span is drawn first as a faint line of its colour,
     // and the strong colour fills it up to the slider's year.
     let ghosts = '';
     const addArc = (key, r, w, s, e, col, title, body, ref, label, size) => {
-      ghosts += band(r, w, ang(s), ang(e), COL[col][1], false, 'arc-ghost');
+      const paint = arcGrad(key, r, ang(s), ang(e));
+      ghosts += band(r, w, ang(s), ang(e), paint, false, 'arc-ghost');
       if (year < s) return;
       const a1 = ang(s), a2 = ang(Math.min(e, year));
       if (a2 - a1 < 0.05) return;
@@ -425,13 +451,13 @@
       // A band along the arc with softly rounded corners, plus a wider invisible line for easy hovering.
       const [sx, sy] = pt(r, a1), [ex, ey] = pt(r, a2), big = a2 - a1 > 180 ? 1 : 0;
       const d = `M${f1(sx)} ${f1(sy)}A${r} ${r} 0 ${big} 1 ${f1(ex)} ${f1(ey)}`;
-      arcs += band(r, on ? w + 2.5 : w, a1, a2, COL[col][1], on)
+      arcs += band(r, on ? w + 2.5 : w, a1, a2, paint, on)
         + `<path class="arc-hit" data-key="${key}" d="${d}" stroke-width="${w + 7}"/>`;
       const am = (a1 + a2) / 2, len = (a2 - a1) * Math.PI / 180 * r;
       if (len > label.length * size * 0.66 + 8) {
         // The name sits on its line.
         const [x, y] = pt(r, am);
-        arcLabels += `<text class="arc-label${on ? ' on' : ''}${LIGHT_LINE.has(col) ? ' dark' : ''}" x="${f1(x)}" y="${f1(y)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(am))} ${f1(x)} ${f1(y)})" style="font-size:${size}px">${esc(label)}</text>`;
+        arcLabels += `<text class="arc-label${on ? ' on' : ''}${isLight(am) ? ' dark' : ''}" x="${f1(x)}" y="${f1(y)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(am))} ${f1(x)} ${f1(y)})" style="font-size:${size}px">${esc(label)}</text>`;
       }
     };
 
@@ -506,7 +532,7 @@
     });
 
     put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join(''));
-    put(el.arcs, 'html', ghosts + arcs);
+    put(el.arcs, 'html', `<defs>${[...gradDefs.values()].join('')}</defs>` + ghosts + arcs);
     // While an arc is hovered or selected, the other arcs and names step back.
     const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n' || fk[0] === 'k') && items[fk]);
     el.arcs.classList.toggle('dim', arcFocus);
