@@ -249,20 +249,20 @@
     const patEnd = p => p[1] + p[2];
 
     const lanes = () => {
-      const L = [{ label: U().lanes.events, kind: 'dots', h: 30, cls: 'dk-head', toggle: true,
+      const L = [{ id: 'events', label: U().lanes.events, kind: 'dots', h: 30, cls: 'dk-head', toggle: true,
         items: EV.map((v, i) => ({ y: v[1], key: 'e' + i, name: v[0], when: evWhen(v), color: '#4d3340' })) }];
       if (open) {
-        L.push({ label: U().lanes.figures, kind: 'dots', h: 24, cls: 'dk-sub',
+        L.push({ id: 'figures', label: U().lanes.figures, kind: 'dots', h: 24, cls: 'dk-sub',
           items: FIG.map((g, i) => ({ y: g[1], key: 'f' + i, name: g[0], when: fmtD(g[1]), color: COL[g[5]][1] })) });
         // Lifespans as thin rounded bars, as on the ring; overlapping lives stack in rows.
-        L.push({ label: U().lanes.patriarchs, kind: 'bars', cls: 'dk-sub',
+        L.push({ id: 'patriarchs', label: U().lanes.patriarchs, kind: 'bars', cls: 'dk-sub',
           items: PAT.map((p, i) => ({ y: p[1], e: patEnd(p), key: 'p' + i, name: p[0], when: primeval(p) ? U().undated : U().born + fmtD(p[1]), color: COL.pat[1] })) });
         // Kings as two continuous tracks of reigns (Judah with the united kingdom, then Israel), as on the ring.
-        L.push({ label: U().lanes.kings, kind: 'bands', h: 24, cls: 'dk-sub',
+        L.push({ id: 'kings', label: U().lanes.kings, kind: 'bands', h: 24, cls: 'dk-sub',
           items: KINGS.map((k, i) => ({ y: k[1], e: k[2], row: k[3] === 'is' ? 1 : 0, key: 'k' + i, name: k[0], when: U().range(fmtD(k[1]), fmtD(k[2])), color: COL[KING_SHADE[i]][1] })) });
-        L.push({ label: U().lanes.alive, kind: 'area', h: 32, cls: 'dk-sub' });
+        L.push({ id: 'alive', label: U().lanes.alive, kind: 'area', h: 32, cls: 'dk-sub' });
       }
-      L.push({ label: U().lanes.nations, kind: 'dots', h: 30, cls: 'dk-head',
+      L.push({ id: 'nations', label: U().lanes.nations, kind: 'dots', h: 30, cls: 'dk-head',
         items: NAT.map((n, i) => ({ y: n[2], key: 'n' + i, name: n[0], when: n[2] === SEAM ? U().beforeSeamLower : n[2] < SEAM ? U().fromCain : U().from + fmtD(n[2]), color: COL[n[1]][1] })) });
       // Church and historic events stay on the ring (diamonds); they have no lanes of their own here.
       return L;
@@ -310,9 +310,9 @@
         const cy = y + l.h / 2, head = l.cls === 'dk-head', lab = `dk-label${head ? ' dk-strong' : ''}`;
         if (l.toggle) {
           const caret = open ? `M13 ${cy - 2}L16.5 ${cy + 1.5}L20 ${cy - 2}` : `M15 ${cy - 3.5}L18.5 ${cy}L15 ${cy + 3.5}`;
-          out += `<g class="dk-toggle" data-toggle="1"><title>${U().toggle(open)}</title><rect x="0" y="${y}" width="${labelW}" height="${l.h}" fill="transparent"/><path class="dk-caret" d="${caret}"/><text class="${lab}" x="28" y="${cy}">${l.label}</text></g>`;
+          out += `<g class="dk-toggle" data-toggle="1"><title>${esc((U().laneTips[l.id] || '') + ' ' + U().toggle(open))}</title><rect x="0" y="${y}" width="${labelW}" height="${l.h}" fill="transparent"/><path class="dk-caret" d="${caret}"/><text class="${lab}" x="28" y="${cy}">${l.label}</text></g>`;
         } else {
-          out += `<text class="${lab}" x="28" y="${cy}">${l.label}</text>`;
+          out += `<text class="${lab} dk-hint" x="28" y="${cy}"><title>${esc(U().laneTips[l.id] || '')}</title>${l.label}</text>`;
         }
         const mark = (it, x, body) => {
           const tip = esc(`${it.name} · ${it.when}`);

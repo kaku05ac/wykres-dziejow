@@ -1905,6 +1905,9 @@ const UI = {
     hub: ['Przed potopem', 'Po potopie', 'Patriarchowie', 'Izrael i Juda', 'Imperia', 'Czas Kościoła'],
     legend: { patLine: 'Długość życia podana w Piśmie' },
     science: 'Rozwój nauki',
+    laneTips: { events: 'Najważniejsze wydarzenia, każde z obrazem lub filmem.', figures: 'Ważne osoby, w roku ich najważniejszego czynu.',
+      patriarchs: 'Osoby, których długość życia podaje Biblia.', kings: 'Panowania królów: Judy (u góry) i Izraela (na dole).',
+      alive: 'Ile osób i narodów z wykresu żyje naraz; kropki: same narody.', nations: 'Narody i Kościoły, od ich początku.' },
     realm: { un: 'Zjednoczone królestwo', ju: 'Królestwo Judy', is: 'Królestwo Izraela' }, realmShort: { un: 'Izrael', ju: 'Juda', is: 'Izrael' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Wiek przy objęciu tronu: ' + age + '.' : '') + ' Pismo podaje: ' + reign + ' panowania.',
     ask: {
@@ -1944,6 +1947,9 @@ const UI = {
     hub: ['Before the flood', 'After the flood', 'Patriarchs', 'Israel and Judah', 'Empires', 'Church age'],
     legend: { patLine: 'Lifespans given in Scripture' },
     science: 'Growth of science',
+    laneTips: { events: 'Key events, each with a picture or film.', figures: 'Key people, at the year of their main deed.',
+      patriarchs: 'People whose lifespan the Bible gives.', kings: 'Reigns of the kings: Judah (top) and Israel (bottom).',
+      alive: 'How many people and nations on the chart are alive at once; dotted: nations only.', nations: 'Nations and Churches, from their beginning.' },
     realm: { un: 'United kingdom', ju: 'Kingdom of Judah', is: 'Kingdom of Israel' }, realmShort: { un: 'Israel', ju: 'Judah', is: 'Israel' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Age at accession: ' + age + '.' : '') + ' Scripture gives ' + reign + ' of reign.',
     ask: {

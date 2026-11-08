@@ -181,6 +181,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .dk-seam { stroke: var(--n-300); stroke-width: 1; stroke-dasharray: 2 4; }
 .dk-label { font-family: var(--mono); font-size: 10px; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; fill: var(--n-500); dominant-baseline: central; }
 .dk-strong { fill: var(--n-900); }
+.dk-hint { cursor: help; }
 .dk-caret { fill: none; stroke: var(--n-600); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
 .dk-toggle { cursor: pointer; }
 .dk-toggle:hover .dk-caret { stroke: var(--n-900); }
