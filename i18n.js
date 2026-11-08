@@ -177,7 +177,7 @@ const TEXT = {
    [
     "Prawosławie",
     "",
-    "Przez wieki chrześcijański Wschód i Zachód rozwijały się w różnych kulturach, greckiej i łacińskiej. Narastały różnice w liturgii i zwyczajach, w rozumieniu jedności Kościoła wokół następcy św. Piotra oraz w sprawie słów „i Syna” (Filioque) w Credo. W 1054 r. jedność między Rzymem a Konstantynopolem została zerwana. W 1965 r. św. Paweł VI i patriarcha Atenagoras znieśli wzajemne ekskomuniki, otwierając drogę do pojednania."
+    "Przez wieki chrześcijański Wschód i Zachód rozwijały się w różnych kulturach, greckiej i łacińskiej. Narastały różnice w liturgii i zwyczajach, w rozumieniu jedności Kościoła wokół następcy św. Piotra oraz w sprawie słów „i Syna” (Filioque) w Credo. W 1054 r. legaci papiescy i patriarcha Konstantynopola obłożyli się wzajemnie ekskomuniką; rozłam utrwalał się w kolejnych wiekach. W 1965 r. św. Paweł VI i patriarcha Atenagoras usunęli te ekskomuniki z pamięci Kościoła, otwierając drogę do pojednania, choć pełnej jedności jeszcze nie ma."
    ],
    [
     "Protestantyzm",
@@ -242,7 +242,7 @@ const TEXT = {
    [
     "Niewola babilońska",
     "2 Krl 24",
-    "Nabuchodonozor zdobywa Jerozolimę i uprowadza króla Jojakina do Babilonu.",
+    "Nabuchodonozor po raz pierwszy zdobywa Jerozolimę i uprowadza do Babilonu króla Jojakina wraz z elitą kraju; w 587 p.n.e. niszczy miasto i świątynię.",
     null
    ],
    [
@@ -437,7 +437,7 @@ const TEXT = {
    [
     "Konstantyn",
     "Cesarz rzymski",
-    "Edyktem mediolańskim zakończył prześladowania chrześcijan.",
+    "Wraz z Licyniuszem ogłasza edykt mediolański (313), który daje chrześcijanom wolność wyznania i kończy prześladowania.",
     ""
    ],
    [
@@ -455,7 +455,7 @@ const TEXT = {
    [
     "Jan Gutenberg",
     "Drukarz",
-    "Drukuje Biblię ruchomą czcionką; Pismo Święte trafia do całej Europy.",
+    "Drukuje Biblię ruchomą czcionką; do ok. 1500 r. w całej Europie działają setki drukarń, a Pismo Święte staje się dużo łatwiej dostępne.",
     ""
    ],
    [
@@ -473,7 +473,7 @@ const TEXT = {
    [
     "Justynian I",
     "Cesarz bizantyjski",
-    "Spisuje prawo rzymskie (Kodeks Justyniana) i buduje Hagię Sophię (537).",
+    "Cesarz od 527 r.; spisuje prawo rzymskie (Kodeks Justyniana, 529–534) i buduje Hagię Sophię (537).",
     ""
    ],
    [
@@ -485,7 +485,7 @@ const TEXT = {
    [
     "Mahomet",
     "Założyciel islamu",
-    "Hidżra z Mekki do Medyny; początek islamu, który zmienia Bliski Wschód i świat arabski.",
+    "Hidżra z Mekki do Medyny: powstaje wspólnota muzułmańska (umma), a od tej daty liczy się kalendarz islamski. Mahomet głosił od ok. 610 r.; islam zmienia Bliski Wschód i świat arabski.",
     ""
    ],
    [
@@ -497,7 +497,7 @@ const TEXT = {
    [
     "Św. Cyryl i Metody",
     "Apostołowie Słowian",
-    "Niosą Ewangelię Słowianom i tworzą dla nich pismo (głagolicę).",
+    "Niosą Ewangelię Słowianom na Morawach; Cyryl tworzy dla nich pismo (głagolicę), a bracia przekładają na język słowiański Pismo i liturgię.",
     ""
    ],
    [
@@ -533,13 +533,13 @@ const TEXT = {
    [
     "Napoleon Bonaparte",
     "Cesarz Francuzów",
-    "Przejmuje władzę po rewolucji francuskiej i koronuje się na cesarza; jego wojny i kodeks niosą idee rewolucji przez Europę.",
+    "Po zamachu stanu w 1799 r. przejmuje władzę, a w 1804 r., w obecności Piusa VII, koronuje się na cesarza; jego wojny i kodeks niosą idee rewolucji przez Europę.",
     ""
    ],
    [
     "Leon XIII",
     "Papież",
-    "Encyklika „Rerum novarum” o sprawie robotniczej; początek katolickiej nauki społecznej.",
+    "Encyklika „Rerum novarum” o sprawie robotniczej; początek nowożytnej katolickiej nauki społecznej.",
     ""
    ],
    [
@@ -563,7 +563,7 @@ const TEXT = {
    [
     "Św. Augustyn",
     "Biskup Hippony, Doktor Kościoła",
-    "Pisze „Wyznania”; łączy wiarę chrześcijańską z myślą Platona i kształtuje teologię Zachodu.",
+    "Pisze „Wyznania” (ok. 397–400); łączy wiarę chrześcijańską z myślą Platona i kształtuje teologię Zachodu.",
     ""
    ]
   ],
@@ -591,12 +591,12 @@ const TEXT = {
    [
     "Rewolucja francuska",
     "",
-    "Upadek monarchii we Francji; hasła wolności, równości i braterstwa, a zarazem prześladowanie Kościoła."
+    "Wybucha rewolucja we Francji, a w 1792 r. upada monarchia; hasła wolności, równości i braterstwa, a zarazem podporządkowanie Kościoła państwu (1790) i prześladowania duchownych i wiernych."
    ],
    [
     "Septuaginta",
     "",
-    "Żydzi w Aleksandrii tłumaczą Stary Testament na język grecki; z tego przekładu korzystają później apostołowie."
+    "Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład."
    ]
   ]
  },
@@ -774,7 +774,7 @@ const TEXT = {
    [
     "Orthodox Church",
     "",
-    "Over the centuries the Christian East and West grew up in different cultures, Greek and Latin. Differences deepened in liturgy and custom, in understanding the unity of the Church around the successor of St Peter, and over the words \"and the Son\" (Filioque) in the Creed. In 1054 the unity between Rome and Constantinople was broken. In 1965 St Paul VI and Patriarch Athenagoras lifted the mutual excommunications, opening the way to reconciliation."
+    "Over the centuries the Christian East and West grew up in different cultures, Greek and Latin. Differences deepened in liturgy and custom, in understanding the unity of the Church around the successor of St Peter, and over the words \"and the Son\" (Filioque) in the Creed. In 1054 the papal legates and the Patriarch of Constantinople excommunicated each other; the rift hardened over the following centuries. In 1965 St Paul VI and Patriarch Athenagoras removed those excommunications from the memory of the Church, opening the way to reconciliation, though full communion is not yet restored."
    ],
    [
     "Protestantism",
@@ -839,7 +839,7 @@ const TEXT = {
    [
     "Babylonian captivity",
     "2 Kgs 24",
-    "Nebuchadnezzar takes Jerusalem and deports King Jehoiachin to Babylon.",
+    "Nebuchadnezzar first takes Jerusalem and deports King Jehoiachin and the leading men of the land to Babylon; in 587 BC he destroys the city and the temple.",
     null
    ],
    [
@@ -1034,7 +1034,7 @@ const TEXT = {
    [
     "Constantine",
     "Roman emperor",
-    "Ended the persecution of Christians with the Edict of Milan.",
+    "With Licinius he issues the Edict of Milan (313), granting Christians freedom of worship and ending the persecutions.",
     ""
    ],
    [
@@ -1052,7 +1052,7 @@ const TEXT = {
    [
     "Johannes Gutenberg",
     "Printer",
-    "Prints the Bible with movable type; Scripture spreads across Europe.",
+    "Prints the Bible with movable type; by about 1500 hundreds of presses work across Europe, and Scripture becomes far more widely available.",
     ""
    ],
    [
@@ -1070,7 +1070,7 @@ const TEXT = {
    [
     "Justinian I",
     "Byzantine emperor",
-    "Codifies Roman law (the Code of Justinian) and builds the Hagia Sophia (537).",
+    "Emperor from 527; codifies Roman law (the Code of Justinian, 529–534) and builds the Hagia Sophia (537).",
     ""
    ],
    [
@@ -1082,7 +1082,7 @@ const TEXT = {
    [
     "Muhammad",
     "Founder of Islam",
-    "The Hijra from Mecca to Medina; the beginning of Islam, which transforms the Middle East and the Arab world.",
+    "The Hijra from Mecca to Medina founds the Muslim community (ummah) and begins the Islamic calendar. Muhammad had preached since about 610; Islam transforms the Middle East and the Arab world.",
     ""
    ],
    [
@@ -1094,7 +1094,7 @@ const TEXT = {
    [
     "Sts Cyril and Methodius",
     "Apostles to the Slavs",
-    "Bring the Gospel to the Slavs and create an alphabet for them (Glagolitic).",
+    "They bring the Gospel to the Slavs in Moravia; Cyril creates an alphabet for them (Glagolitic), and the brothers translate Scripture and the liturgy into Slavonic.",
     ""
    ],
    [
@@ -1130,13 +1130,13 @@ const TEXT = {
    [
     "Napoleon Bonaparte",
     "Emperor of the French",
-    "Takes power after the French Revolution and crowns himself emperor; his wars and code carry the ideas of the Revolution across Europe.",
+    "After the coup of 1799 he takes power, and in 1804, with Pius VII present, crowns himself emperor; his wars and code carry the ideas of the Revolution across Europe.",
     ""
    ],
    [
     "Leo XIII",
     "Pope",
-    "The encyclical Rerum novarum on the condition of workers; the beginning of Catholic social teaching.",
+    "The encyclical Rerum novarum on the condition of workers; the beginning of modern Catholic social teaching.",
     ""
    ],
    [
@@ -1160,7 +1160,7 @@ const TEXT = {
    [
     "St Augustine",
     "Bishop of Hippo, Doctor of the Church",
-    "Writes the Confessions; joins Christian faith with the thought of Plato and shapes Western theology.",
+    "Writes the Confessions (c. 397–400); joins Christian faith with the thought of Plato and shapes Western theology.",
     ""
    ]
   ],
@@ -1188,12 +1188,12 @@ const TEXT = {
    [
     "French Revolution",
     "",
-    "The fall of the monarchy in France; the ideals of liberty, equality and fraternity, and also the persecution of the Church."
+    "Revolution breaks out in France, and in 1792 the monarchy falls; the ideals of liberty, equality and fraternity, and also the Church placed under the state (1790) and the persecution of clergy and faithful."
    ],
    [
     "Septuagint",
     "",
-    "Jews in Alexandria translate the Old Testament into Greek; the apostles later use this translation."
+    "Jews in Alexandria begin translating the Old Testament into Greek (in stages, from the 3rd century BC); the New Testament often quotes this translation."
    ]
   ]
  }

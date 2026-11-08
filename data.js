@@ -59,7 +59,7 @@ const NAT = [
   // description shown on the card before the dates.
   ['Kościół katolicki', 'chu', 30, END, 'Mt 16,18; Dz 2'],
   ['Prawosławie', 'orth', 1054, END, '',
-    'Przez wieki chrześcijański Wschód i Zachód rozwijały się w różnych kulturach, greckiej i łacińskiej. Narastały różnice w liturgii i zwyczajach, w rozumieniu jedności Kościoła wokół następcy św. Piotra oraz w sprawie słów „i Syna” (Filioque) w Credo. W 1054 r. jedność między Rzymem a Konstantynopolem została zerwana. W 1965 r. św. Paweł VI i patriarcha Atenagoras znieśli wzajemne ekskomuniki, otwierając drogę do pojednania.'],
+    'Przez wieki chrześcijański Wschód i Zachód rozwijały się w różnych kulturach, greckiej i łacińskiej. Narastały różnice w liturgii i zwyczajach, w rozumieniu jedności Kościoła wokół następcy św. Piotra oraz w sprawie słów „i Syna” (Filioque) w Credo. W 1054 r. legaci papiescy i patriarcha Konstantynopola obłożyli się wzajemnie ekskomuniką; rozłam utrwalał się w kolejnych wiekach. W 1965 r. św. Paweł VI i patriarcha Atenagoras usunęli te ekskomuniki z pamięci Kościoła, otwierając drogę do pojednania, choć pełnej jedności jeszcze nie ma.'],
   ['Protestantyzm', 'ref', 1517, END, '']
 ];
 
@@ -74,7 +74,7 @@ const EV = [
   ['Świątynia Salomona', -960, '1 Krl 6-8', 'Świątynia w Jerozolimie zostaje poświęcona.'],
   ['Podział królestwa', -931, '1 Krl 12', 'Po śmierci Salomona Izrael i Juda się rozdzielają.'],
   ['Upadek Samarii', -722, '2 Krl 17', 'Asyria uprowadza mieszkańców królestwa północnego.'],
-  ['Niewola babilońska', -597, '2 Krl 24', 'Nabuchodonozor zdobywa Jerozolimę i uprowadza króla Jojakina do Babilonu.'],
+  ['Niewola babilońska', -597, '2 Krl 24', 'Nabuchodonozor po raz pierwszy zdobywa Jerozolimę i uprowadza do Babilonu króla Jojakina wraz z elitą kraju; w 587 p.n.e. niszczy miasto i świątynię.'],
   ['Powrót z wygnania', -538, 'Ezd 1', 'Cyrus pozwala Żydom wrócić do ojczyzny.'],
   ['Narodzenie Chrystusa', -5, 'Mt 2; Łk 2', 'Jezus rodzi się w Betlejem, przed śmiercią Heroda w 4 p.n.e.', 'ok. 6–4 p.n.e.'],
   ['Ukrzyżowanie i Pięćdziesiątnica', 30, 'Dz 2', 'W Jerozolimie rodzi się Kościół.', '30 lub 33 n.e.'],
@@ -95,8 +95,8 @@ const CH_EV = [
   ['Sobór Trydencki', 1545, '', 'Odpowiedź Kościoła na reformację: odnowa nauczania, sakramentów i dyscypliny.'],
   ['Sobór Watykański II', 1962, '', 'Odnowa liturgii i otwarcie Kościoła na świat współczesny.'],
   // Historic (non-Church) events carry the line key of their people as a 5th field.
-  ['Rewolucja francuska', 1789, '', 'Upadek monarchii we Francji; hasła wolności, równości i braterstwa, a zarazem prześladowanie Kościoła.', 'jap'],
-  ['Septuaginta', -250, '', 'Żydzi w Aleksandrii tłumaczą Stary Testament na język grecki; z tego przekładu korzystają później apostołowie.', 'jap']
+  ['Rewolucja francuska', 1789, '', 'Wybucha rewolucja we Francji, a w 1792 r. upada monarchia; hasła wolności, równości i braterstwa, a zarazem podporządkowanie Kościoła państwu (1790) i prześladowania duchownych i wiernych.', 'jap'],
+  ['Septuaginta', -250, '', 'Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład.', 'jap']
 ];
 
 // Testaments: bands marked around the chart and along the timeline (from, to).
@@ -132,30 +132,30 @@ const FIG = [
   ['Jan Chrzciciel', -6, 'Poprzednik', 'Przygotował drogę Chrystusowi.', 'Łk 1', 'chu'],
   ['Jezus', -5, 'Chrystus', 'Urodził się w Betlejem.', 'Mt 2; Łk 2', 'chu'],
   ['Paweł', 35, 'Apostoł', 'Zaniósł Ewangelię do całego świata rzymskiego.', 'Dz 9-28', 'chu'],
-  ['Konstantyn', 313, 'Cesarz rzymski', 'Edyktem mediolańskim zakończył prześladowania chrześcijan.', '', 'jap'],
+  ['Konstantyn', 313, 'Cesarz rzymski', 'Wraz z Licyniuszem ogłasza edykt mediolański (313), który daje chrześcijanom wolność wyznania i kończy prześladowania.', '', 'jap'],
   ['Marcin Luter', 1517, 'Reformator', 'Zapoczątkował reformację w Niemczech.', '', 'ref'],
   // Later figures. An optional 7th field sets the letter shown in the circle.
   ['Św. Tomasz z Akwinu', 1265, 'Doktor Kościoła', 'Rozpoczyna Sumę teologiczną, wielką syntezę wiary i rozumu, opartą na filozofii Arystotelesa.', '', 'chu', 'T'],
-  ['Jan Gutenberg', 1455, 'Drukarz', 'Drukuje Biblię ruchomą czcionką; Pismo Święte trafia do całej Europy.', '', 'chu', 'G'],
+  ['Jan Gutenberg', 1455, 'Drukarz', 'Drukuje Biblię ruchomą czcionką; do ok. 1500 r. w całej Europie działają setki drukarń, a Pismo Święte staje się dużo łatwiej dostępne.', '', 'chu', 'G'],
   ['Kard. Stefan Wyszyński', 1948, 'Prymas Tysiąclecia', 'Zostaje prymasem Polski; więziony w latach 1953–1956, prowadzi Kościół w Polsce przez czasy komunizmu.', '', 'chu', 'W'],
   ['Św. Jan Paweł II', 1978, 'Papież', 'Kard. Karol Wojtyła zostaje wybrany na papieża; jego pielgrzymki do Polski wspierają drogę do wolności.', '', 'chu', 'J'],
   // Konstantyn to Tomasz z Akwinu
-  ['Justynian I', 527, 'Cesarz bizantyjski', 'Spisuje prawo rzymskie (Kodeks Justyniana) i buduje Hagię Sophię (537).', '', 'jap', 'J'],
+  ['Justynian I', 527, 'Cesarz bizantyjski', 'Cesarz od 527 r.; spisuje prawo rzymskie (Kodeks Justyniana, 529–534) i buduje Hagię Sophię (537).', '', 'jap', 'J'],
   ['Św. Grzegorz Wielki', 590, 'Papież', 'Kształtuje średniowieczny Kościół, liturgię i misje; wysyła misjonarzy do Anglii.', '', 'chu', 'G'],
-  ['Mahomet', 622, 'Założyciel islamu', 'Hidżra z Mekki do Medyny; początek islamu, który zmienia Bliski Wschód i świat arabski.', '', 'sem', 'M'],
+  ['Mahomet', 622, 'Założyciel islamu', 'Hidżra z Mekki do Medyny: powstaje wspólnota muzułmańska (umma), a od tej daty liczy się kalendarz islamski. Mahomet głosił od ok. 610 r.; islam zmienia Bliski Wschód i świat arabski.', '', 'sem', 'M'],
   ['Karol Wielki', 800, 'Cesarz', 'Koronowany w Rzymie na cesarza; fundament chrześcijańskiej Europy.', '', 'jap', 'K'],
-  ['Św. Cyryl i Metody', 863, 'Apostołowie Słowian', 'Niosą Ewangelię Słowianom i tworzą dla nich pismo (głagolicę).', '', 'chu', 'C'],
+  ['Św. Cyryl i Metody', 863, 'Apostołowie Słowian', 'Niosą Ewangelię Słowianom na Morawach; Cyryl tworzy dla nich pismo (głagolicę), a bracia przekładają na język słowiański Pismo i liturgię.', '', 'chu', 'C'],
   ['Mieszko I', 966, 'Książę Polan', 'Przyjmuje chrzest; początek chrześcijaństwa i państwa polskiego.', '', 'chu', 'M'],
   ['Saladyn', 1187, 'Sułtan', 'Odbija Jerozolimę z rąk krzyżowców.', '', 'sem', 'S'],
   // Marcin Luter to Wyszyński
   ['Krzysztof Kolumb', 1492, 'Żeglarz', 'Dopływa do Ameryki; zaczyna się epoka wielkich odkryć, a wraz z nią misje Kościoła w Nowym Świecie.', '', 'jap', 'K'],
   ['Mikołaj Kopernik', 1543, 'Astronom', 'Wydaje „O obrotach sfer niebieskich”: Ziemia krąży wokół Słońca.', '', 'jap', 'K'],
   ['Izaak Newton', 1687, 'Uczony', 'Wydaje „Principia”: prawa ruchu i powszechnego ciążenia.', '', 'jap', 'N'],
-  ['Napoleon Bonaparte', 1804, 'Cesarz Francuzów', 'Przejmuje władzę po rewolucji francuskiej i koronuje się na cesarza; jego wojny i kodeks niosą idee rewolucji przez Europę.', '', 'jap', 'N'],
-  ['Leon XIII', 1891, 'Papież', 'Encyklika „Rerum novarum” o sprawie robotniczej; początek katolickiej nauki społecznej.', '', 'chu', 'L'],
+  ['Napoleon Bonaparte', 1804, 'Cesarz Francuzów', 'Po zamachu stanu w 1799 r. przejmuje władzę, a w 1804 r., w obecności Piusa VII, koronuje się na cesarza; jego wojny i kodeks niosą idee rewolucji przez Europę.', '', 'jap', 'N'],
+  ['Leon XIII', 1891, 'Papież', 'Encyklika „Rerum novarum” o sprawie robotniczej; początek nowożytnej katolickiej nauki społecznej.', '', 'chu', 'L'],
   // Greek philosophy and its heir in the Church
   ['Sokrates', -399, 'Filozof', 'Twórca filozofii moralnej: w dialogu, metodą pytań, prowadzi rozmówców do samopoznania i szukania prawdy o dobru. Skazany przez Ateńczyków na śmierć, wybiera wierność sumieniu. Jego nauczanie przekazuje uczeń, Platon.', '', 'jap', 'S'],
   ['Platon', -387, 'Filozof', 'Uczeń Sokratesa i założyciel Akademii w Atenach. Uczy, że ponad zmiennym światem istnieje wieczna prawda, dobro i piękno, a dusza człowieka jest nieśmiertelna. Jego myśl stanie się dla Ojców Kościoła językiem do mówienia o Bogu.', '', 'jap', 'P'],
   ['Arystoteles', -335, 'Filozof', 'Uczeń Platona i wychowawca Aleksandra Wielkiego, założyciel Liceum. Porządkuje całą ówczesną wiedzę: tworzy logikę, etykę cnót i badanie przyrody, a rozumem dochodzi do Pierwszego Poruszyciela. Przez św. Tomasza z Akwinu staje się filarem myśli chrześcijańskiej.', '', 'jap', 'A'],
-  ['Św. Augustyn', 397, 'Biskup Hippony, Doktor Kościoła', 'Pisze „Wyznania”; łączy wiarę chrześcijańską z myślą Platona i kształtuje teologię Zachodu.', '', 'chu', 'A']
+  ['Św. Augustyn', 397, 'Biskup Hippony, Doktor Kościoła', 'Pisze „Wyznania” (ok. 397–400); łączy wiarę chrześcijańską z myślą Platona i kształtuje teologię Zachodu.', '', 'chu', 'A']
 ];
