@@ -400,6 +400,16 @@
     const items = {};
     let arcs = '', arcLabels = '';
 
+    // A filled band from angle a1 to a2, w wide, whose corners are rounded: the shape is drawn
+    // inset by the corner radius and then stroked with round joins in the same colour, so it
+    // still starts and ends exactly at its years. Very short bands become a small capsule.
+    const band = (r, w, a1, a2, color, on) => {
+      const rc = w * 0.32, ro = r + w / 2 - rc, ri = r - w / 2 + rc, da = rc / r * 180 / Math.PI;
+      let b1 = a1 + da, b2 = a2 - da;
+      if (b2 < b1) b1 = b2 = (a1 + a2) / 2;
+      const big = b2 - b1 > 180 ? 1 : 0, [o1x, o1y] = pt(ro, b1), [o2x, o2y] = pt(ro, b2), [i2x, i2y] = pt(ri, b2), [i1x, i1y] = pt(ri, b1);
+      return `<path class="arc-line${on ? ' on' : ''}" d="M${f1(o1x)} ${f1(o1y)}A${f1(ro)} ${f1(ro)} 0 ${big} 1 ${f1(o2x)} ${f1(o2y)}L${f1(i2x)} ${f1(i2y)}A${f1(ri)} ${f1(ri)} 0 ${big} 0 ${f1(i1x)} ${f1(i1y)}Z" fill="${color}" stroke="${color}" stroke-width="${f1(2 * rc)}"/>`;
+    };
     // Lines light enough that white names would not read on them get dark names.
     const LIGHT_LINE = new Set(['cain', 'ham', 'jap', 'chu']);
     const addArc = (key, r, w, s, e, col, title, body, ref, label, size) => {
@@ -408,10 +418,10 @@
       if (a2 - a1 < 0.05) return;
       const on = focus(key);
       items[key] = { title, body, ref };
-      // A line with square ends along the arc, plus a wider invisible line for easy hovering.
+      // A band along the arc with softly rounded corners, plus a wider invisible line for easy hovering.
       const [sx, sy] = pt(r, a1), [ex, ey] = pt(r, a2), big = a2 - a1 > 180 ? 1 : 0;
       const d = `M${f1(sx)} ${f1(sy)}A${r} ${r} 0 ${big} 1 ${f1(ex)} ${f1(ey)}`;
-      arcs += `<path class="arc-line${on ? ' on' : ''}" d="${d}" stroke="${COL[col][1]}" stroke-width="${on ? w + 3 : w}"/>`
+      arcs += band(r, on ? w + 2.5 : w, a1, a2, COL[col][1], on)
         + `<path class="arc-hit" data-key="${key}" d="${d}" stroke-width="${w + 7}"/>`;
       const am = (a1 + a2) / 2, len = (a2 - a1) * Math.PI / 180 * r;
       if (len > label.length * size * 0.66 + 8) {
@@ -422,7 +432,7 @@
     };
 
     // Nations ring (inner) and patriarch lifespans (outer).
-    NAT.forEach((n, i) => addArc('n' + i, 90 + i * 14.5, 8, n[2], n[3], n[1], n[0],
+    NAT.forEach((n, i) => addArc('n' + i, 90 + i * 14.5, 7, n[2], n[3], n[1], n[0],
       n[2] < SEAM ? U().natCain : (n[5] ? n[5] + ' ' : '') + dot(U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3]))), n[4], n[0], 5));
     const alive = [];
     PAT.forEach((p, i) => {
@@ -432,7 +442,7 @@
       const body = primeval
         ? U().patAm(amText(s), p[2], lat(p[2]), amText(p[1] + p[2]))
         : U().patDated(fmtD(s), dot(fmtD(e)), p[2], lat(p[2]));
-      addArc('p' + i, PAT_R[i], 6, s, e, 'pat', p[0], (p[4] ? p[4] + ' ' : '') + body, p[3], p[0], 4);
+      addArc('p' + i, PAT_R[i], 5, s, e, 'pat', p[0], (p[4] ? p[4] + ' ' : '') + body, p[3], p[0], 4);
     });
     // Kings ring, just inside the ruler: Judah (with Saul, David and Solomon) and, outside it, Israel.
     // Reigns follow one another on each track, so neighbours alternate between two shades.
@@ -440,7 +450,7 @@
       const [name, s, e, realm, ref, age, reign] = k, t = e - s < 0.6 ? s + 0.6 : e;
       if (year >= s && year <= e) alive.push({ text: name + ' (' + U().realmShort[realm] + ')', c: COL.king });
       const body = U().kingBody(U().realm[realm], dot(U().range(fmtD(s), fmtD(e))), age ? age + ' ' + lat(age) : '', reign);
-      addArc('k' + i, realm === 'is' ? 584 : 568, 7, s, t, KING_SHADE[i], name, body, ref, name, 4);
+      addArc('k' + i, realm === 'is' ? 584 : 568, 6, s, t, KING_SHADE[i], name, body, ref, name, 4);
     });
     NAT.forEach(n => { if (year >= n[2] && year <= n[3]) alive.push({ text: n[0], c: COL[n[1]] }); });
 
