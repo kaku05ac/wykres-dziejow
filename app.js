@@ -39,7 +39,7 @@
     dated.forEach(([, i], k) => { r[i] = 542 - k * 10; });
     return r;
   })();
-  COL.king2 = ['#e3dade', '#8f7884', ''];
+  COL.king2 = ['#e3e2e2', '#6a6668', ''];
   const KING_SHADE = (() => { const n = { ju: 0, is: 0 }; return KINGS.map(k => (n[k[3] === 'is' ? 'is' : 'ju']++ % 2 ? 'king2' : 'king')); })();
 
   // Faint pie slices behind everything, one per testament band, from the hub to the outer circle.
@@ -411,7 +411,7 @@
       return `<path class="${cls}${on ? ' on' : ''}" d="M${f1(o1x)} ${f1(o1y)}A${f1(ro)} ${f1(ro)} 0 ${big} 1 ${f1(o2x)} ${f1(o2y)}L${f1(i2x)} ${f1(i2y)}A${f1(ri)} ${f1(ri)} 0 ${big} 0 ${f1(i1x)} ${f1(i1y)}Z" fill="${color}" stroke="${color}" stroke-width="${f1(2 * rc)}"/>`;
     };
     // Lines light enough that white names would not read on them get dark names.
-    const LIGHT_LINE = new Set(['cain', 'ham', 'jap', 'chu']);
+    const LIGHT_LINE = new Set(['cain', 'chu']);
     // Ghost tracks: every arc's whole span is drawn first as a faint line of its colour,
     // and the strong colour fills it up to the slider's year.
     let ghosts = '';
