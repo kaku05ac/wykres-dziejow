@@ -586,7 +586,18 @@
     put(el.aliveYear, 'text', undated(year) ? U().primeval : yearLabel);
     put(el.askCtx, 'text', yearLabel);
     put(el.askYear, 'text', yearLabel);
-    put(el.hubSub, 'text', U().hub[year < am(1656) ? 0 : year < SEAM ? 1 : year < -1250 ? 2 : year < -587 ? 3 : year < 30 ? 4 : 5]);
+    // The period under the big year: Genesis 1–11, the patriarchs, Exodus and judges, the united kingdom (Saul, 1050 BC),
+    // the divided kingdom (931 BC), the exile to Christ's birth, his life, then the Church.
+    const HUB = [am(1656), SEAM, -1250, -1050, -931, -587, -5, 30];
+    const hubAt = HUB.findIndex(b => year < b);
+    // A long name breaks into two lines at the space nearest its middle, so it stays inside the small centre circle.
+    const hubTxt = U().hub[hubAt < 0 ? HUB.length : hubAt];
+    let hubLines = [hubTxt];
+    if (hubTxt.length > 19) {
+      const sp = [...hubTxt.matchAll(/ /g)].map(m => m.index).sort((a, b) => Math.abs(a - hubTxt.length / 2) - Math.abs(b - hubTxt.length / 2))[0];
+      if (sp) hubLines = [hubTxt.slice(0, sp), hubTxt.slice(sp + 1)];
+    }
+    put(el.hubSub, 'html', hubLines.map((l, i) => `<tspan x="0" dy="${i ? 8 : 0}">${esc(l)}</tspan>`).join(''));
     put(el.playLabel, 'text', playing ? U().pause : U().play);
     el.play.classList.toggle('is-playing', playing);
     dock.update(year);
