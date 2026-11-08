@@ -403,16 +403,20 @@
     // A band from angle a1 to a2, w wide, with fully rounded (pill) ends: the shape is drawn
     // inset by the corner radius (here half the width) and then stroked with round joins in the
     // same colour, so it still starts and ends exactly at its years. Very short bands become a dot.
-    const band = (r, w, a1, a2, color, on) => {
+    const band = (r, w, a1, a2, color, on, cls = 'arc-line') => {
       const rc = w * 0.5, ro = r + w / 2 - rc, ri = r - w / 2 + rc, da = rc / r * 180 / Math.PI;
       let b1 = a1 + da, b2 = a2 - da;
       if (b2 < b1) b1 = b2 = (a1 + a2) / 2;
       const big = b2 - b1 > 180 ? 1 : 0, [o1x, o1y] = pt(ro, b1), [o2x, o2y] = pt(ro, b2), [i2x, i2y] = pt(ri, b2), [i1x, i1y] = pt(ri, b1);
-      return `<path class="arc-line${on ? ' on' : ''}" d="M${f1(o1x)} ${f1(o1y)}A${f1(ro)} ${f1(ro)} 0 ${big} 1 ${f1(o2x)} ${f1(o2y)}L${f1(i2x)} ${f1(i2y)}A${f1(ri)} ${f1(ri)} 0 ${big} 0 ${f1(i1x)} ${f1(i1y)}Z" fill="${color}" stroke="${color}" stroke-width="${f1(2 * rc)}"/>`;
+      return `<path class="${cls}${on ? ' on' : ''}" d="M${f1(o1x)} ${f1(o1y)}A${f1(ro)} ${f1(ro)} 0 ${big} 1 ${f1(o2x)} ${f1(o2y)}L${f1(i2x)} ${f1(i2y)}A${f1(ri)} ${f1(ri)} 0 ${big} 0 ${f1(i1x)} ${f1(i1y)}Z" fill="${color}" stroke="${color}" stroke-width="${f1(2 * rc)}"/>`;
     };
     // Lines light enough that white names would not read on them get dark names.
     const LIGHT_LINE = new Set(['cain', 'ham', 'jap', 'chu']);
+    // Ghost tracks: every arc's whole span is drawn first as a faint line of its colour,
+    // and the strong colour fills it up to the slider's year.
+    let ghosts = '';
     const addArc = (key, r, w, s, e, col, title, body, ref, label, size) => {
+      ghosts += band(r, w, ang(s), ang(e), COL[col][1], false, 'arc-ghost');
       if (year < s) return;
       const a1 = ang(s), a2 = ang(Math.min(e, year));
       if (a2 - a1 < 0.05) return;
@@ -502,7 +506,7 @@
     });
 
     put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join(''));
-    put(el.arcs, 'html', arcs);
+    put(el.arcs, 'html', ghosts + arcs);
     // While an arc is hovered or selected, the other arcs and names step back.
     const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n' || fk[0] === 'k') && items[fk]);
     el.arcs.classList.toggle('dim', arcFocus);

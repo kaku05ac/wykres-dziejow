@@ -113,6 +113,7 @@ h1, h2, p { margin: 0; }
 .arc-label { font-family: var(--mono); font-weight: 500; letter-spacing: .06em; text-transform: uppercase; fill: #ffffff; pointer-events: none; }
 .arc-line { stroke-linejoin: round; opacity: .85; pointer-events: none; transition: opacity .15s ease; }
 .arc-line.on { opacity: 1; }
+.arc-ghost { stroke-linejoin: round; opacity: .14; pointer-events: none; }
 #arcs.dim .arc-line:not(.on) { opacity: .22; }
 #arcLabels.dim .arc-label:not(.on) { opacity: .3; }
 .arc-label.on { font-weight: 600; }
