@@ -1,6 +1,6 @@
 /* World history chart — interactive radial Bible chronology.
    Vanilla JS port of the Claude Design prototype `Biblical Chronology Chart.dc.html`.
-   Data (COL, PAT, NAT, EV, ERAS, FIG) lives in data.js. */
+   Data (COL, PAT, KINGS, NAT, EV, ERAS, FIG) lives in data.js. */
 (() => {
   'use strict';
 
@@ -30,6 +30,17 @@
   // name and date on the left side reads the same way.
   const uprightRot = a => (a > 90 && a < 300 ? a + 180 : a);
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  // Lifespan arcs: Genesis 1–11 steps outward one track per person; from Abraham on the
+  // tracks step back inward, in order of birth, so the line reads as one staircase.
+  const PAT_R = (() => {
+    const r = [], dated = PAT.map((p, i) => [p[1], i]).filter(([y]) => y >= SEAM).sort((a, b) => a[0] - b[0]);
+    PAT.forEach((p, i) => { if (p[1] < SEAM) r[i] = 352 + i * 10; });
+    dated.forEach(([, i], k) => { r[i] = 542 - k * 10; });
+    return r;
+  })();
+  COL.king2 = ['#e3dade', '#8f7884', ''];
+  const KING_SHADE = (() => { const n = { ju: 0, is: 0 }; return KINGS.map(k => (n[k[3] === 'is' ? 'is' : 'ju']++ % 2 ? 'king2' : 'king')); })();
 
   const FULL_VIEW = { cx: 0, cy: 0, w: 1500 };
   const MIN_W = 200, MAX_W = 1500;
@@ -97,7 +108,7 @@
     // First row: the peoples (Genesis 10) and the patriarchs; second row: the Church.
     el.legend.innerHTML = `<div class="legend-row">`
       + ['cain', 'sem', 'ham', 'jap'].map(k => `<span>${sw(k)}${esc(COL[k][2])}</span>`).join('')
-      + `<span>${sw('pat')}${esc(L.patLine)}</span></div>`
+      + `<span>${sw('pat')}${esc(L.patLine)}</span><span>${sw('king')}${esc(COL.king[2])}</span></div>`
       + `<div class="legend-row">` + ['chu', 'orth', 'ref'].map(k => `<span>${sw(k)}${esc(COL[k][2])}</span>`).join('') + `</div>`;
   };
   buildStatic();
@@ -228,6 +239,8 @@
           items: FIG.map((g, i) => ({ y: g[1], key: 'f' + i, name: g[0], when: fmtD(g[1]), color: COL[g[5]][1] })) });
         L.push({ label: U().lanes.patriarchs, kind: 'dots', h: 24, cls: 'dk-sub',
           items: PAT.map((p, i) => ({ y: p[1], key: 'p' + i, name: p[0], when: U().born + fmtD(p[1]), color: COL.pat[1] })) });
+        L.push({ label: U().lanes.kings, kind: 'dots', h: 24, cls: 'dk-sub',
+          items: KINGS.map((k, i) => ({ y: k[1], key: 'k' + i, name: k[0], when: fmtD(k[1]), color: COL.king[1] })) });
         L.push({ label: U().lanes.alive, kind: 'area', h: 32, cls: 'dk-sub' });
       }
       L.push({ label: U().lanes.nations, kind: 'dots', h: 30, cls: 'dk-head',
@@ -289,7 +302,7 @@
             } else {
               const gx = g.reduce((sum, it) => sum + it.x, 0) / g.length, col = g.every(it => it.color === f.color) ? f.color : '#a29fa1';
               out += `<g class="dk-dot" data-x="${f1(f.x)}" data-y="${f.y}" data-ask="${tip}"><title>${tip}</title>`
-                + `<circle class="dk-mark" cx="${f1(gx)}" cy="${cy}" r="7" fill="${col}"/><text class="dk-count" x="${f1(gx)}" y="${cy + 0.5}">${g.length}</text></g>`;
+                + `<circle class="dk-mark" cx="${f1(gx)}" cy="${cy}" r="${g.length > 9 ? 8.5 : 7}" fill="${col}"/><text class="dk-count" x="${f1(gx)}" y="${cy + 0.5}"${g.length > 9 ? ' style="font-size:7.5px"' : ''}>${g.length}</text></g>`;
             }
           });
         } else {
@@ -348,7 +361,7 @@
       if (drag && drag.dot && !drag.moved && e.type === 'pointerup') {
         const key = drag.dot.dataset.key, y0 = +drag.dot.dataset.y;
         // Arcs need a few years of length before they exist, so step just past their start.
-        const y = key && (key[0] === 'p' || key[0] === 'n') ? y0 + 3 : y0;
+        const y = key && (key[0] === 'p' || key[0] === 'n') ? y0 + 3 : key && key[0] === 'k' ? y0 + 0.3 : y0;
         set({ year: y, playing: false, sel: key || null });
         flyToYear(y0);
         // Put a question about the clicked mark into the chat, ready to send.
@@ -409,7 +422,15 @@
       const body = primeval
         ? U().patAm(amText(s), p[2], lat(p[2]), amText(p[1] + p[2]))
         : U().patDated(fmtD(s), dot(fmtD(e)), p[2], lat(p[2]));
-      addArc('p' + i, 352 + i * 10, 6, s, e, 'pat', p[0], body, p[3], p[0], 4);
+      addArc('p' + i, PAT_R[i], 6, s, e, 'pat', p[0], (p[4] ? p[4] + ' ' : '') + body, p[3], p[0], 4);
+    });
+    // Kings ring, just inside the ruler: Judah (with Saul, David and Solomon) and, outside it, Israel.
+    // Reigns follow one another on each track, so neighbours alternate between two shades.
+    KINGS.forEach((k, i) => {
+      const [name, s, e, realm, ref, age, reign] = k, t = e - s < 0.6 ? s + 0.6 : e;
+      if (year >= s && year <= e) alive.push({ text: name + ' (' + U().realmShort[realm] + ')', c: COL.king });
+      const body = U().kingBody(U().realm[realm], dot(U().range(fmtD(s), fmtD(e))), age ? age + ' ' + lat(age) : '', reign);
+      addArc('k' + i, realm === 'is' ? 584 : 568, 7, s, t, KING_SHADE[i], name, body, ref, name, 4);
     });
     NAT.forEach(n => { if (year >= n[2] && year <= n[3]) alive.push({ text: n[0], c: COL[n[1]] }); });
 
@@ -462,7 +483,7 @@
 
     put(el.arcs, 'html', arcs);
     // While an arc is hovered or selected, the other arcs and names step back.
-    const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n') && items[fk]);
+    const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n' || fk[0] === 'k') && items[fk]);
     el.arcs.classList.toggle('dim', arcFocus);
     el.arcLabels.classList.toggle('dim', arcFocus);
     put(el.arcLabels, 'html', arcLabels);
@@ -625,6 +646,7 @@
     if (k === 'e' && EV[i]) return EV[i][0] + ' · ' + evWhen(EV[i]);
     if (k === 'f' && FIG[i]) return FIG[i][0] + ' · ' + fmtD(FIG[i][1]);
     if (k === 'p' && PAT[i]) return PAT[i][0] + ' · ' + U().born + fmtD(PAT[i][1]);
+    if (k === 'k' && KINGS[i]) return KINGS[i][0] + ' · ' + U().range(fmtD(KINGS[i][1]), fmtD(KINGS[i][2]));
     if (k === 'n' && NAT[i]) { const n = NAT[i]; return n[0] + ' · ' + (n[2] === SEAM ? U().beforeSeamLower : n[2] < SEAM ? U().fromCain : U().from + fmtD(n[2])); }
     if (k === 'c' && CH_EV[i]) return CH_EV[i][0] + ' · ' + fmt(CH_EV[i][1]);
     return null;
@@ -687,7 +709,8 @@
     const context = () => {
       const y = Math.round(state.year), ev = EV[eventAt(y)];
       const alive = NAT.filter(n => y >= n[2] && y <= n[3]).map(n => n[0])
-        .concat(PAT.filter(p => { const e = p[1] < SEAM ? Math.min(p[1] + p[2], SEAM) : p[1] + p[2]; return y >= p[1] && y <= e; }).map(p => p[0]));
+        .concat(PAT.filter(p => { const e = p[1] < SEAM ? Math.min(p[1] + p[2], SEAM) : p[1] + p[2]; return y >= p[1] && y <= e; }).map(p => p[0]))
+        .concat(KINGS.filter(k => y >= k[1] && y <= k[2]).map(k => k[0] + ' (' + U().realm[k[3]] + ')'));
       const near = FIG.filter(g => Math.abs(g[1] - y) <= 80).map(g => g[0] + ' (' + fmtD(g[1]) + ')');
       return 'Chart context: year ' + fmt(y) + '; section "' + ev[0] + '" (' + evWhen(ev) + '): ' + ev[3]
         + (alive.length ? '\nPeoples and patriarchs alive: ' + alive.join(', ') : '')

@@ -21,7 +21,7 @@ const am = n => START + n;
 // Lines (Gen 10 and after): tint, line colour, legend name.
 // Palette: Tasman #ced7c7 (deepened #8fa58f), Dust Storm #ead3cd, Tan #c2a382, Cranberry #c75f80, Apricot #e29885;
 // Orthodoxy #8a3d58 and Protestantism #9a7a55 are deeper cranberry and tan. Ink #4d3340.
-const COL = { cain: ['#f6ebe8', '#ead3cd', 'Kain i jego potomkowie'], sem: ['#e9bfcc', '#c75f80', 'Semici'], ham: ['#f3d6ce', '#e29885', 'Chamici'], jap: ['#d2dbd2', '#8fa58f', 'Jafetyci'], chu: ['#e7dacd', '#c2a382', 'Kościół katolicki'], orth: ['#d0b1bc', '#8a3d58', 'Prawosławie'], ref: ['#d7cabb', '#9a7a55', 'Protestantyzm'], pat: ['#e9bfcc', '#c75f80', 'Patriarchowie'] };
+const COL = { cain: ['#f6ebe8', '#ead3cd', 'Kain i jego potomkowie'], sem: ['#e9bfcc', '#c75f80', 'Semici'], ham: ['#f3d6ce', '#e29885', 'Chamici'], jap: ['#d2dbd2', '#8fa58f', 'Jafetyci'], chu: ['#e7dacd', '#c2a382', 'Kościół katolicki'], orth: ['#d0b1bc', '#8a3d58', 'Prawosławie'], ref: ['#d7cabb', '#9a7a55', 'Protestantyzm'], pat: ['#e9bfcc', '#c75f80', 'Patriarchowie'], king: ['#d6c8cf', '#4d3340', 'Królowie Izraela i Judy'] };
 
 // Patriarchs: name, birth (internal year), years lived (as Scripture gives them), reference.
 // The first 19 are counted from Creation (Rdz 5; 11,10-32).
@@ -33,10 +33,40 @@ const PAT = [
   ['Szelach', am(1693), 433, 'Rdz 11,14-15'], ['Heber', am(1723), 464, 'Rdz 11,16-17'], ['Peleg', am(1757), 239, 'Rdz 11,18-19'],
   ['Reu', am(1787), 239, 'Rdz 11,20-21'], ['Serug', am(1819), 230, 'Rdz 11,22-23'], ['Nachor', am(1849), 148, 'Rdz 11,24-25'],
   ['Terach', am(1878), 205, 'Rdz 11,26-32'],
-  // Dated patriarchs: approximate, placed in the Middle Bronze Age (Abraham to Joseph)
-  // and the 13th century BC (Moses), with the lifespans the text gives.
-  ['Abraham', -1900, 175, 'Rdz 25,7'], ['Izaak', -1800, 180, 'Rdz 35,28'], ['Jakub', -1740, 147, 'Rdz 47,28'],
-  ['Józef', -1650, 110, 'Rdz 50,26'], ['Mojżesz', -1330, 120, 'Pwt 34,7']
+  // From Abraham on: everyone up to the monarchy whose lifespan Scripture gives. Dates are
+  // approximate: Abraham to Joseph in the Middle Bronze Age, Moses in the 13th century BC.
+  // Others are placed by the text's own links: Sarah is 10 years younger than Abraham (Rdz 17,17),
+  // Ishmael born when Abraham was 86 (Rdz 16,16), Levi a few years before Joseph, Kehat before the
+  // descent into Egypt (Rdz 46,11), Aaron 3 years older than Moses (Wj 7,7). Wj 6 gives a shortened
+  // genealogy, so Amram is placed by Moses's birth. An optional 5th field is a note for the card.
+  ['Abraham', -1900, 175, 'Rdz 25,7'], ['Sara', -1890, 127, 'Rdz 23,1'], ['Izmael', -1814, 137, 'Rdz 25,17'],
+  ['Izaak', -1800, 180, 'Rdz 35,28'], ['Jakub', -1740, 147, 'Rdz 47,28'], ['Lewi', -1657, 137, 'Wj 6,16'],
+  ['Józef', -1650, 110, 'Rdz 50,26'], ['Kehat', -1615, 133, 'Wj 6,18'],
+  ['Amram', -1400, 137, 'Wj 6,20', 'Wj 6 podaje skróconą genealogię: między Kehatem a Amramem mogło upłynąć więcej pokoleń.'],
+  ['Aaron', -1333, 123, 'Lb 33,38-39'], ['Mojżesz', -1330, 120, 'Pwt 34,7'], ['Jozue', -1290, 110, 'Joz 24,29'],
+  ['Heli', -1168, 98, '1 Sm 4,15'], ['Jojada', -945, 130, '2 Krn 24,15']
+];
+
+// Kings of Israel and Judah: name, from, to, realm ('un' united kingdom, 'ju' Judah, 'is' Israel),
+// reference, age at accession (only Judah's kings have one in Scripture), and in i18n.js the length of
+// reign as the text gives it. Reign dates are an approximate reconstruction fitted to the dates
+// used elsewhere on the chart (931, 722, 597 and 587 BC); Catholic Bibles give no single table.
+const KINGS = [
+  ['Saul', -1050, -1010, 'un', '1 Sm 13,1; Dz 13,21', null], ['Dawid', -1010, -970, 'un', '2 Sm 5,4', 30], ['Salomon', -970, -931, 'un', '1 Krl 11,42', null],
+  ['Roboam', -931, -913, 'ju', '1 Krl 14,21', 41], ['Abiam', -913, -911, 'ju', '1 Krl 15,2', null], ['Asa', -911, -870, 'ju', '1 Krl 15,10', null],
+  ['Jozafat', -870, -848, 'ju', '1 Krl 22,42', 35], ['Joram', -848, -841, 'ju', '2 Krl 8,17', 32], ['Ochozjasz', -841, -840.4, 'ju', '2 Krl 8,26', 22],
+  ['Atalia', -840.4, -835, 'ju', '2 Krl 11,3', null], ['Joasz', -835, -796, 'ju', '2 Krl 12,1-2', 7], ['Amazjasz', -796, -767, 'ju', '2 Krl 14,2', 25],
+  ['Azariasz (Ozjasz)', -767, -742, 'ju', '2 Krl 15,2', 16], ['Jotam', -742, -735, 'ju', '2 Krl 15,33', 25], ['Achaz', -735, -715, 'ju', '2 Krl 16,2', 20],
+  ['Ezechiasz', -715, -687, 'ju', '2 Krl 18,2', 25], ['Manasses', -687, -642, 'ju', '2 Krl 21,1', 12], ['Amon', -642, -640, 'ju', '2 Krl 21,19', 22],
+  ['Jozjasz', -640, -609, 'ju', '2 Krl 22,1', 8], ['Joachaz', -609, -608.4, 'ju', '2 Krl 23,31', 23], ['Jojakim', -608.4, -598, 'ju', '2 Krl 23,36', 25],
+  ['Jojakin', -598, -597, 'ju', '2 Krl 24,8', 18], ['Sedecjasz', -597, -587, 'ju', '2 Krl 24,18', 21],
+  ['Jeroboam I', -931, -910, 'is', '1 Krl 14,20', null], ['Nadab', -910, -909, 'is', '1 Krl 15,25', null], ['Baasza', -909, -886, 'is', '1 Krl 15,33', null],
+  ['Ela', -886, -885.6, 'is', '1 Krl 16,8', null], ['Zimri', -885.6, -885, 'is', '1 Krl 16,15', null], ['Omri', -885, -874, 'is', '1 Krl 16,23', null],
+  ['Achab', -874, -853, 'is', '1 Krl 16,29', null], ['Ochozjasz', -853, -852, 'is', '1 Krl 22,52', null], ['Joram', -852, -841, 'is', '2 Krl 3,1', null],
+  ['Jehu', -841, -814, 'is', '2 Krl 10,36', null], ['Joachaz', -814, -798, 'is', '2 Krl 13,1', null], ['Joasz', -798, -782, 'is', '2 Krl 13,10', null],
+  ['Jeroboam II', -782, -753, 'is', '2 Krl 14,23', null], ['Zachariasz', -753, -752.5, 'is', '2 Krl 15,8', null], ['Szallum', -752.5, -752, 'is', '2 Krl 15,13', null],
+  ['Menachem', -752, -742, 'is', '2 Krl 15,17', null], ['Pekachiasz', -742, -740, 'is', '2 Krl 15,23', null], ['Pekach', -740, -732, 'is', '2 Krl 15,27', null],
+  ['Ozeasz', -732, -722, 'is', '2 Krl 17,1', null]
 ];
 
 // Nations: name, line, start, end, reference. Peoples older than 2000 BC start at the seam.

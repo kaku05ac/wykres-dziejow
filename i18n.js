@@ -12,7 +12,8 @@ const TEXT = {
    "chu": "Kościół katolicki",
    "ref": "Protestantyzm",
    "pat": "Patriarchowie",
-   "orth": "Prawosławie"
+   "orth": "Prawosławie",
+   "king": "Królowie Izraela i Judy"
   },
   "PAT": [
    [
@@ -96,6 +97,14 @@ const TEXT = {
     "Rdz 25,7"
    ],
    [
+    "Sara",
+    "Rdz 23,1"
+   ],
+   [
+    "Izmael",
+    "Rdz 25,17"
+   ],
+   [
     "Izaak",
     "Rdz 35,28"
    ],
@@ -104,12 +113,41 @@ const TEXT = {
     "Rdz 47,28"
    ],
    [
+    "Lewi",
+    "Wj 6,16"
+   ],
+   [
     "Józef",
     "Rdz 50,26"
    ],
    [
+    "Kehat",
+    "Wj 6,18"
+   ],
+   [
+    "Amram",
+    "Wj 6,20",
+    "Wj 6 podaje skróconą genealogię: między Kehatem a Amramem mogło upłynąć więcej pokoleń."
+   ],
+   [
+    "Aaron",
+    "Lb 33,38-39"
+   ],
+   [
     "Mojżesz",
     "Pwt 34,7"
+   ],
+   [
+    "Jozue",
+    "Joz 24,29"
+   ],
+   [
+    "Heli",
+    "1 Sm 4,15"
+   ],
+   [
+    "Jojada",
+    "2 Krn 24,15"
    ]
   ],
   "NAT": [
@@ -598,6 +636,218 @@ const TEXT = {
     "",
     "Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład."
    ]
+  ],
+  "KINGS": [
+   [
+    "Saul",
+    "1 Sm 13,1; Dz 13,21",
+    "40 lat"
+   ],
+   [
+    "Dawid",
+    "2 Sm 5,4",
+    "40 lat"
+   ],
+   [
+    "Salomon",
+    "1 Krl 11,42",
+    "40 lat"
+   ],
+   [
+    "Roboam",
+    "1 Krl 14,21",
+    "17 lat"
+   ],
+   [
+    "Abiam",
+    "1 Krl 15,2",
+    "3 lata"
+   ],
+   [
+    "Asa",
+    "1 Krl 15,10",
+    "41 lat"
+   ],
+   [
+    "Jozafat",
+    "1 Krl 22,42",
+    "25 lat"
+   ],
+   [
+    "Joram",
+    "2 Krl 8,17",
+    "8 lat"
+   ],
+   [
+    "Ochozjasz",
+    "2 Krl 8,26",
+    "1 rok"
+   ],
+   [
+    "Atalia",
+    "2 Krl 11,3",
+    "6 lat"
+   ],
+   [
+    "Joasz",
+    "2 Krl 12,1-2",
+    "40 lat"
+   ],
+   [
+    "Amazjasz",
+    "2 Krl 14,2",
+    "29 lat"
+   ],
+   [
+    "Azariasz (Ozjasz)",
+    "2 Krl 15,2",
+    "52 lata"
+   ],
+   [
+    "Jotam",
+    "2 Krl 15,33",
+    "16 lat"
+   ],
+   [
+    "Achaz",
+    "2 Krl 16,2",
+    "16 lat"
+   ],
+   [
+    "Ezechiasz",
+    "2 Krl 18,2",
+    "29 lat"
+   ],
+   [
+    "Manasses",
+    "2 Krl 21,1",
+    "55 lat"
+   ],
+   [
+    "Amon",
+    "2 Krl 21,19",
+    "2 lata"
+   ],
+   [
+    "Jozjasz",
+    "2 Krl 22,1",
+    "31 lat"
+   ],
+   [
+    "Joachaz",
+    "2 Krl 23,31",
+    "3 miesiące"
+   ],
+   [
+    "Jojakim",
+    "2 Krl 23,36",
+    "11 lat"
+   ],
+   [
+    "Jojakin",
+    "2 Krl 24,8",
+    "3 miesiące"
+   ],
+   [
+    "Sedecjasz",
+    "2 Krl 24,18",
+    "11 lat"
+   ],
+   [
+    "Jeroboam I",
+    "1 Krl 14,20",
+    "22 lata"
+   ],
+   [
+    "Nadab",
+    "1 Krl 15,25",
+    "2 lata"
+   ],
+   [
+    "Baasza",
+    "1 Krl 15,33",
+    "24 lata"
+   ],
+   [
+    "Ela",
+    "1 Krl 16,8",
+    "2 lata"
+   ],
+   [
+    "Zimri",
+    "1 Krl 16,15",
+    "7 dni"
+   ],
+   [
+    "Omri",
+    "1 Krl 16,23",
+    "12 lat"
+   ],
+   [
+    "Achab",
+    "1 Krl 16,29",
+    "22 lata"
+   ],
+   [
+    "Ochozjasz",
+    "1 Krl 22,52",
+    "2 lata"
+   ],
+   [
+    "Joram",
+    "2 Krl 3,1",
+    "12 lat"
+   ],
+   [
+    "Jehu",
+    "2 Krl 10,36",
+    "28 lat"
+   ],
+   [
+    "Joachaz",
+    "2 Krl 13,1",
+    "17 lat"
+   ],
+   [
+    "Joasz",
+    "2 Krl 13,10",
+    "16 lat"
+   ],
+   [
+    "Jeroboam II",
+    "2 Krl 14,23",
+    "41 lat"
+   ],
+   [
+    "Zachariasz",
+    "2 Krl 15,8",
+    "6 miesięcy"
+   ],
+   [
+    "Szallum",
+    "2 Krl 15,13",
+    "1 miesiąc"
+   ],
+   [
+    "Menachem",
+    "2 Krl 15,17",
+    "10 lat"
+   ],
+   [
+    "Pekachiasz",
+    "2 Krl 15,23",
+    "2 lata"
+   ],
+   [
+    "Pekach",
+    "2 Krl 15,27",
+    "20 lat"
+   ],
+   [
+    "Ozeasz",
+    "2 Krl 17,1",
+    "9 lat"
+   ]
   ]
  },
  "en": {
@@ -609,7 +859,8 @@ const TEXT = {
    "chu": "Catholic Church",
    "ref": "Protestantism",
    "pat": "Patriarchs",
-   "orth": "Orthodox Church"
+   "orth": "Orthodox Church",
+   "king": "Kings of Israel and Judah"
   },
   "PAT": [
    [
@@ -693,6 +944,14 @@ const TEXT = {
     "Gen 25:7"
    ],
    [
+    "Sarah",
+    "Gen 23:1"
+   ],
+   [
+    "Ishmael",
+    "Gen 25:17"
+   ],
+   [
     "Isaac",
     "Gen 35:28"
    ],
@@ -701,12 +960,41 @@ const TEXT = {
     "Gen 47:28"
    ],
    [
+    "Levi",
+    "Ex 6:16"
+   ],
+   [
     "Joseph",
     "Gen 50:26"
    ],
    [
+    "Kohath",
+    "Ex 6:18"
+   ],
+   [
+    "Amram",
+    "Ex 6:20",
+    "Exodus 6 gives a shortened genealogy: more generations may lie between Kohath and Amram."
+   ],
+   [
+    "Aaron",
+    "Num 33:38-39"
+   ],
+   [
     "Moses",
     "Deut 34:7"
+   ],
+   [
+    "Joshua",
+    "Josh 24:29"
+   ],
+   [
+    "Eli",
+    "1 Sam 4:15"
+   ],
+   [
+    "Jehoiada",
+    "2 Chr 24:15"
    ]
   ],
   "NAT": [
@@ -1195,6 +1483,218 @@ const TEXT = {
     "",
     "Jews in Alexandria begin translating the Old Testament into Greek (in stages, from the 3rd century BC); the New Testament often quotes this translation."
    ]
+  ],
+  "KINGS": [
+   [
+    "Saul",
+    "1 Sam 13:1; Acts 13:21",
+    "40 years"
+   ],
+   [
+    "David",
+    "2 Sam 5:4",
+    "40 years"
+   ],
+   [
+    "Solomon",
+    "1 Kgs 11:42",
+    "40 years"
+   ],
+   [
+    "Rehoboam",
+    "1 Kgs 14:21",
+    "17 years"
+   ],
+   [
+    "Abijam",
+    "1 Kgs 15:2",
+    "3 years"
+   ],
+   [
+    "Asa",
+    "1 Kgs 15:10",
+    "41 years"
+   ],
+   [
+    "Jehoshaphat",
+    "1 Kgs 22:42",
+    "25 years"
+   ],
+   [
+    "Jehoram",
+    "2 Kgs 8:17",
+    "8 years"
+   ],
+   [
+    "Ahaziah",
+    "2 Kgs 8:26",
+    "1 year"
+   ],
+   [
+    "Athaliah",
+    "2 Kgs 11:3",
+    "6 years"
+   ],
+   [
+    "Joash",
+    "2 Kgs 12:1-2",
+    "40 years"
+   ],
+   [
+    "Amaziah",
+    "2 Kgs 14:2",
+    "29 years"
+   ],
+   [
+    "Azariah (Uzziah)",
+    "2 Kgs 15:2",
+    "52 years"
+   ],
+   [
+    "Jotham",
+    "2 Kgs 15:33",
+    "16 years"
+   ],
+   [
+    "Ahaz",
+    "2 Kgs 16:2",
+    "16 years"
+   ],
+   [
+    "Hezekiah",
+    "2 Kgs 18:2",
+    "29 years"
+   ],
+   [
+    "Manasseh",
+    "2 Kgs 21:1",
+    "55 years"
+   ],
+   [
+    "Amon",
+    "2 Kgs 21:19",
+    "2 years"
+   ],
+   [
+    "Josiah",
+    "2 Kgs 22:1",
+    "31 years"
+   ],
+   [
+    "Jehoahaz",
+    "2 Kgs 23:31",
+    "3 months"
+   ],
+   [
+    "Jehoiakim",
+    "2 Kgs 23:36",
+    "11 years"
+   ],
+   [
+    "Jehoiachin",
+    "2 Kgs 24:8",
+    "3 months"
+   ],
+   [
+    "Zedekiah",
+    "2 Kgs 24:18",
+    "11 years"
+   ],
+   [
+    "Jeroboam I",
+    "1 Kgs 14:20",
+    "22 years"
+   ],
+   [
+    "Nadab",
+    "1 Kgs 15:25",
+    "2 years"
+   ],
+   [
+    "Baasha",
+    "1 Kgs 15:33",
+    "24 years"
+   ],
+   [
+    "Elah",
+    "1 Kgs 16:8",
+    "2 years"
+   ],
+   [
+    "Zimri",
+    "1 Kgs 16:15",
+    "7 days"
+   ],
+   [
+    "Omri",
+    "1 Kgs 16:23",
+    "12 years"
+   ],
+   [
+    "Ahab",
+    "1 Kgs 16:29",
+    "22 years"
+   ],
+   [
+    "Ahaziah",
+    "1 Kgs 22:52",
+    "2 years"
+   ],
+   [
+    "Joram",
+    "2 Kgs 3:1",
+    "12 years"
+   ],
+   [
+    "Jehu",
+    "2 Kgs 10:36",
+    "28 years"
+   ],
+   [
+    "Jehoahaz",
+    "2 Kgs 13:1",
+    "17 years"
+   ],
+   [
+    "Jehoash",
+    "2 Kgs 13:10",
+    "16 years"
+   ],
+   [
+    "Jeroboam II",
+    "2 Kgs 14:23",
+    "41 years"
+   ],
+   [
+    "Zechariah",
+    "2 Kgs 15:8",
+    "6 months"
+   ],
+   [
+    "Shallum",
+    "2 Kgs 15:13",
+    "1 month"
+   ],
+   [
+    "Menahem",
+    "2 Kgs 15:17",
+    "10 years"
+   ],
+   [
+    "Pekahiah",
+    "2 Kgs 15:23",
+    "2 years"
+   ],
+   [
+    "Pekah",
+    "2 Kgs 15:27",
+    "20 years"
+   ],
+   [
+    "Hoshea",
+    "2 Kgs 17:1",
+    "9 years"
+   ]
   ]
  }
 };
@@ -1204,7 +1704,7 @@ const UI = {
     bc: n => n + ' p.n.e.', ad: n => n + ' n.e.', approx: 'ok. ',
     years: n => (n === 1 ? 'rok' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'lata' : 'lat'),
     creation: 'Stworzenie', undated: 'Bez daty', history: 'Historia', play: 'Odtwórz', pause: 'Pauza',
-    lanes: { events: 'Wydarzenia', figures: 'Postacie', patriarchs: 'Patriarchowie', alive: 'Żyjący', nations: 'Narody', church: 'Kościół', history: 'Historia' },
+    lanes: { events: 'Wydarzenia', figures: 'Postacie', patriarchs: 'Patriarchowie', kings: 'Królowie', alive: 'Żyjący', nations: 'Narody', church: 'Kościół', history: 'Historia' },
     testaments: ['Stary Testament', 'Nowy Testament', 'Dzieje Kościoła'], testamentsShort: ['ST', 'NT', 'DK'], churchEvent: 'Wydarzenie w Kościele', historyEvent: 'Wydarzenie historyczne',
     born: 'ur. ', beforeSeamLower: 'przed 2000 p.n.e.', fromCain: 'od Kaina', from: 'od ',
     toggle: open => (open ? 'Ukryj' : 'Pokaż') + ' postacie, patriarchów i wykres żyjących',
@@ -1214,7 +1714,9 @@ const UI = {
     patDated: (s, e, n, yrs) => 'Ur. ' + s + ', zm. ' + e + ' Pismo podaje ' + n + ' ' + yrs + '; daty są przybliżone.',
     age: (name, n) => name + ', wiek ' + n,
     hub: ['Przed potopem', 'Po potopie', 'Patriarchowie', 'Izrael i Juda', 'Imperia', 'Czas Kościoła'],
-    legend: { patLine: 'Patriarchowie (linia Sema)' },
+    legend: { patLine: 'Długość życia podana w Piśmie' },
+    realm: { un: 'Zjednoczone królestwo', ju: 'Królestwo Judy', is: 'Królestwo Izraela' }, realmShort: { un: 'Izrael', ju: 'Juda', is: 'Izrael' },
+    kingBody: (realm, range, age, reign) => realm + ', panowanie ' + range + (age ? ' Wiek przy objęciu tronu: ' + age + '.' : '') + ' Pismo podaje: ' + reign + ' panowania.',
     ask: {
       lang: 'Polish', you: 'Ty',
       about: list => 'Opowiedz mi o: ' + (list.length > 1 ? list.slice(0, -1).join(', ') + ' i ' + list[list.length - 1] : list[0]) + '.', thinking: 'Myślę…', stopped: '(przerwano)',
@@ -1241,7 +1743,7 @@ const UI = {
     bc: n => n + ' BC', ad: n => 'AD ' + n, approx: 'c. ',
     years: n => (n === 1 ? 'year' : 'years'),
     creation: 'Creation', undated: 'Undated', history: 'History', play: 'Play', pause: 'Pause',
-    lanes: { events: 'Events', figures: 'Figures', patriarchs: 'Patriarchs', alive: 'Alive', nations: 'Nations', church: 'Church', history: 'History' },
+    lanes: { events: 'Events', figures: 'Figures', patriarchs: 'Patriarchs', kings: 'Kings', alive: 'Alive', nations: 'Nations', church: 'Church', history: 'History' },
     testaments: ['Old Testament', 'New Testament', 'Church history'], testamentsShort: ['OT', 'NT', 'CH'], churchEvent: 'Church event', historyEvent: 'Historic event',
     born: 'born ', beforeSeamLower: 'before 2000 BC', fromCain: 'from Cain', from: 'from ',
     toggle: open => (open ? 'Hide' : 'Show') + ' figures, patriarchs and the alive chart',
@@ -1251,7 +1753,9 @@ const UI = {
     patDated: (s, e, n, yrs) => 'Born ' + s + ', died ' + e + ' Scripture gives ' + n + ' ' + yrs + '; the dates are approximate.',
     age: (name, n) => name + ', age ' + n,
     hub: ['Before the flood', 'After the flood', 'Patriarchs', 'Israel and Judah', 'Empires', 'Church age'],
-    legend: { patLine: 'Patriarchs (line of Shem)' },
+    legend: { patLine: 'Lifespans given in Scripture' },
+    realm: { un: 'United kingdom', ju: 'Kingdom of Judah', is: 'Kingdom of Israel' }, realmShort: { un: 'Israel', ju: 'Judah', is: 'Israel' },
+    kingBody: (realm, range, age, reign) => realm + ', reign ' + range + (age ? ' Age at accession: ' + age + '.' : '') + ' Scripture gives ' + reign + ' of reign.',
     ask: {
       lang: 'English', you: 'You',
       about: list => 'Tell me about ' + (list.length > 1 ? list.slice(0, -1).join(', ') + ' and ' + list[list.length - 1] : list[0]) + '.', thinking: 'Thinking…', stopped: '(stopped)',
@@ -1280,7 +1784,8 @@ const UI = {
 function setDataLang(lang) {
   const T = TEXT[lang];
   Object.keys(T.COL).forEach(k => { COL[k][2] = T.COL[k]; });
-  T.PAT.forEach((x, i) => { PAT[i][0] = x[0]; PAT[i][3] = x[1]; });
+  T.PAT.forEach((x, i) => { PAT[i][0] = x[0]; PAT[i][3] = x[1]; PAT[i][4] = x[2] || ''; });
+  T.KINGS.forEach((x, i) => { KINGS[i][0] = x[0]; KINGS[i][4] = x[1]; KINGS[i][6] = x[2]; });
   T.NAT.forEach((x, i) => { NAT[i][0] = x[0]; NAT[i][4] = x[1]; NAT[i][5] = x[2] || ''; });
   T.EV.forEach((x, i) => { EV[i][0] = x[0]; EV[i][2] = x[1]; EV[i][3] = x[2]; if (x[3]) EV[i][4] = x[3]; else EV[i].length = 4; });
   T.ERAS.forEach((x, i) => { ERAS[i][0] = x; });
