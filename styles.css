@@ -305,7 +305,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   .zoom-btn.wide { height: 40px; }
 }
 
-/* ── Custom cursor: a small ink dot with a soft shadow that grows over clickable things; the timeline keeps the usual pointer ── */
+/* ── Custom cursor: a small ink dot with a soft shadow, always the same size; over pictures and films it shows the
+   negative of what is under it; the timeline keeps the usual pointer ── */
 html.has-cursor, html.has-cursor * { cursor: none !important; }
 html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 /* The timeline keeps its own pointers (drag sideways; hand over marks and the lanes toggle). */
@@ -317,8 +318,7 @@ html.has-cursor #dockSvg .dk-hint { cursor: help !important; }
   pointer-events: none; opacity: 0; will-change: transform;
   transition: opacity .2s ease, width .2s ease, height .2s ease, margin .2s ease, background-color .2s ease; }
 .cursor-dot.is-on { opacity: 1; }
-.cursor-dot.is-hover { width: 20px; height: 20px; margin: -10px 0 0 -10px; }
-.cursor-dot.is-down { width: 6px; height: 6px; margin: -3px 0 0 -3px; }
+.cursor-dot.is-media { background: #fff; mix-blend-mode: difference; box-shadow: none; }
 .cursor-dot.is-slider { opacity: 0; }
 .cursor-dot.is-text { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .cursor-dot { transition: opacity .2s ease; } }

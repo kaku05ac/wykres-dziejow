@@ -908,7 +908,6 @@
     document.documentElement.classList.add('has-cursor');
     const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
     let tx = -100, ty = -100, cx = -100, cy = -100, moving = false;
-    const CLICKABLE = 'a, button, [data-key], [data-ev], [data-lang], .dk-dot, .dk-toggle, #dockSvg, #chart';
     addEventListener('pointermove', e => {
       tx = e.clientX; ty = e.clientY;
       const t = e.target;
@@ -916,13 +915,12 @@
       // Over the timeline the dot hides and the usual drag pointer shows instead.
       const onSlider = !!(t.closest && t.closest('#dockSvg'));
       dot.classList.toggle('is-slider', onSlider);
-      dot.classList.toggle('is-hover', !onSlider && !!(t.closest && t.closest(CLICKABLE)) && !(t.closest && t.closest('#chart') && !t.closest('[data-key]')));
+      // Over the pictures and films the dot shows the negative of what is under it, like a photographic negative.
+      dot.classList.toggle('is-media', !!(t.closest && t.closest('.art-slot')));
       dot.classList.add('is-on');
       if (!moving) { moving = true; requestAnimationFrame(follow); }
     }, { passive: true });
     document.addEventListener('pointerleave', () => dot.classList.remove('is-on'));
-    addEventListener('pointerdown', () => dot.classList.add('is-down'));
-    addEventListener('pointerup', () => dot.classList.remove('is-down'));
     const follow = () => {
       const k = still ? 1 : 0.35;
       cx += (tx - cx) * k; cy += (ty - cy) * k;
