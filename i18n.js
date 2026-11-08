@@ -209,9 +209,9 @@ const TEXT = {
     "Ludy Półwyspu Arabskiego; tradycja umieszcza tam krainę Saby, z której królowa przybyła do Salomona. W dniu Pięćdziesiątnicy wśród słuchaczy apostołów są także Arabowie (Dz 2,11)."
    ],
    [
-    "Izrael / naród żydowski",
+    "Izrael",
     "Joz 1; 2 Krl 25",
-    "Naród wywodzący się od dwunastu synów Jakuba, który po wyjściu z Egiptu osiedlił się w Kanaanie, a za Dawida i Salomona stworzył królestwo ze stolicą w Jerozolimie. Po niewoli babilońskiej wraca do ojczyzny, a po zburzeniu świątyni przez Rzymian w 70 r. żyje w diasporze na całym świecie. Z tego narodu pochodzi Jezus, a św. Jan Paweł II nazwał Żydów „starszymi braćmi” chrześcijan w wierze."
+    "Naród wywodzący się od dwunastu synów Jakuba, który po wyjściu z Egiptu osiedlił się w Kanaanie, a za Dawida i Salomona stworzył królestwo ze stolicą w Jerozolimie. Z tego narodu pochodzi Jezus, a św. Jan Paweł II nazwał Żydów „starszymi braćmi” chrześcijan w wierze."
    ],
    [
     "Babilon",
@@ -267,6 +267,11 @@ const TEXT = {
     "Protestantyzm",
     "",
     "Wspólnoty chrześcijańskie wyrosłe z reformacji XVI wieku, m.in. luteranie, kalwiniści i liczne Kościoły ewangelikalne, które podkreślają autorytet Pisma Świętego i zbawienie z łaski przez wiarę. Kościół katolicki uznaje ochrzczonych protestantów za braci w Chrystusie i prowadzi z nimi dialog ekumeniczny."
+   ],
+   [
+    "Naród żydowski",
+    "Ezd 1; Rz 11,1-2",
+    "Potomkowie Izraela, którzy po upadku Jerozolimy w 587 p.n.e. zachowali wiarę na wygnaniu, wrócili do ojczyzny i odbudowali świątynię. Po jej zburzeniu przez Rzymian w 70 r. żyją w diasporze na całym świecie; w 1948 r. powstało współczesne państwo Izrael."
    ]
   ],
   "EV": [
@@ -1151,9 +1156,9 @@ const TEXT = {
     "The peoples of the Arabian Peninsula; tradition places there the land of Sheba, whose queen came to visit Solomon. At Pentecost, Arabs are among those who hear the apostles (Acts 2:11)."
    ],
    [
-    "Israel / the Jewish people",
+    "Israel",
     "Josh 1; 2 Kgs 25",
-    "The people descended from the twelve sons of Jacob, who settled in Canaan after the Exodus and under David and Solomon formed a kingdom with Jerusalem as its capital. After the Babylonian exile they return home, and after the Romans destroy the temple in AD 70 they live in a diaspora across the world. Jesus comes from this people, and St John Paul II called the Jews the “elder brothers” of Christians in faith."
+    "The people descended from the twelve sons of Jacob, who settled in Canaan after the Exodus and under David and Solomon formed a kingdom with Jerusalem as its capital. Jesus comes from this people, and St John Paul II called the Jews the “elder brothers” of Christians in faith."
    ],
    [
     "Babylon",
@@ -1209,6 +1214,11 @@ const TEXT = {
     "Protestantism",
     "",
     "Christian communities that grew out of the 16th-century Reformation, among them Lutherans, Calvinists and many evangelical churches, which stress the authority of Scripture and salvation by grace through faith. The Catholic Church regards baptised Protestants as brothers and sisters in Christ and is in ecumenical dialogue with them."
+   ],
+   [
+    "The Jewish people",
+    "Ezra 1; Rom 11:1-2",
+    "The descendants of Israel, who after the fall of Jerusalem in 587 BC kept their faith in exile, returned home and rebuilt the temple. After the Romans destroyed it in AD 70 they have lived in a diaspora across the world; in 1948 the modern State of Israel was founded."
    ]
   ],
   "EV": [

@@ -32,6 +32,14 @@
   // name and date on the left side reads the same way.
   const uprightRot = a => (a > 90 && a < 300 ? a + 180 : a);
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  // Text that follows a ring: an invisible arc of radius r centred on angle am (half-width `half` degrees),
+  // drawn the other way round on the left half so the words stay upright, with the text laid along it.
+  const curved = (id, r, am, half, txt, cls, style) => {
+    const flip = uprightRot(am) !== am, s = flip ? am + half : am - half, e = flip ? am - half : am + half;
+    const [x1, y1] = pt(r, s), [x2, y2] = pt(r, e);
+    return `<path id="${id}" d="M${f1(x1)} ${f1(y1)}A${r} ${r} 0 ${2 * half > 180 ? 1 : 0} ${flip ? 0 : 1} ${f1(x2)} ${f1(y2)}" fill="none" stroke="none"/>`
+      + `<text class="${cls}" dominant-baseline="central"${style ? ` style="${style}"` : ''}><textPath href="#${id}" startOffset="50%" text-anchor="middle">${esc(txt)}</textPath></text>`;
+  };
 
   // Lifespan arcs: Genesis 1–11 steps outward one track per person. The post-Flood patriarchs
   // live on into Abraham's time, so each later person takes the outermost track that is free
@@ -106,8 +114,7 @@
       const a1 = ang(from), a2 = ang(to), R = 716, [sx, sy] = pt(R, a1 + 0.4), [ex, ey] = pt(R, a2 - 0.4);
       html += `<path class="testament-line" d="M${f1(sx)} ${f1(sy)}A${R} ${R} 0 ${a2 - a1 > 180 ? 1 : 0} 1 ${f1(ex)} ${f1(ey)}"/>`;
       [a1 + 0.4, a2 - 0.4].forEach(a => { const [t1x, t1y] = pt(R - 5, a), [t2x, t2y] = pt(R + 5, a); html += `<line class="testament-line" x1="${f1(t1x)}" y1="${f1(t1y)}" x2="${f1(t2x)}" y2="${f1(t2y)}"/>`; });
-      const am = (a1 + a2) / 2, [lx, ly] = pt(R + 14, am);
-      html += `<text class="testament-label" x="${f1(lx)}" y="${f1(ly)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(am))} ${f1(lx)} ${f1(ly)})">${esc(U().testaments[k])}</text>`;
+      html += curved('tl' + k, R + 14, (a1 + a2) / 2, 30, U().testaments[k], 'testament-label');
     });
     el.ruler.innerHTML = html;
   };
@@ -470,9 +477,8 @@
         + `<path class="arc-hit" data-key="${key}" d="${d}" stroke-width="${w + 7}"/>`;
       const am = (a1 + a2) / 2, len = (a2 - a1) * Math.PI / 180 * r;
       if (len > label.length * size * 0.66 + 8) {
-        // The name sits on its line.
-        const [x, y] = pt(r, am);
-        arcLabels += `<text class="arc-label${on ? ' on' : ''}${LIGHT_LINE.has(col) ? ' dark' : ''}" x="${f1(x)}" y="${f1(y)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(am))} ${f1(x)} ${f1(y)})" style="font-size:${size}px">${esc(label)}</text>`;
+        // The name sits on its line and bends with it.
+        arcLabels += curved('lp-' + key, r, am, (a2 - a1) / 2, label, `arc-label${on ? ' on' : ''}${LIGHT_LINE.has(col) ? ' dark' : ''}`, `font-size:${size}px`);
       }
     };
 
@@ -507,8 +513,8 @@
     if (year > SCI) {
       arcs += band(sciR, 1.6, ang(SCI), ang(Math.min(year, END)), COL.chu[1], false, 'arc-line sci-line', 0);
       // The label runs along the band, just outside it, a little after the start.
-      const la = Math.min(ang(SCI) + 7, ang(Math.min(year, END))), [lx, ly] = pt(sciR + 7, la);
-      arcLabels += `<text class="sci-label" x="${f1(lx)}" y="${f1(ly)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(la))} ${f1(lx)} ${f1(ly)})">${esc(U().science)}</text>`;
+      const la = Math.min(ang(SCI) + 7, ang(Math.min(year, END)));
+      arcLabels += curved('sci-path', sciR + 7, la, 12, U().science, 'sci-label');
     }
 
     // Event dots near the hub, with a ripple as each one passes.
