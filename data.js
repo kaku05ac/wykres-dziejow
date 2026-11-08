@@ -19,9 +19,9 @@ const END = 2026;
 const am = n => START + n;
 
 // Lines (Gen 10 and after): tint, line colour, legend name.
-// Palette: charcoal #302e2f, yellow #f5d55e, pink #ea84a4, orange #e87850, with teal #4f9e8f,
-// periwinkle #8f8ce0, sky #7cb8e0 and sand #d8cbb3 added to match. Yellow for the Church (the Vatican's colour).
-const COL = { cain: ['#f3ede2', '#d8cbb3', 'Kain i jego potomkowie'], sem: ['#f6d3df', '#d4618a', 'Semici'], ham: ['#fad6c8', '#e87850', 'Chamici'], jap: ['#cfe6e1', '#4f9e8f', 'Jafetyci'], chu: ['#fcf0c6', '#f5d55e', 'Kościół katolicki'], orth: ['#e0dff7', '#8f8ce0', 'Prawosławie'], ref: ['#d9eaf6', '#7cb8e0', 'Protestantyzm'], pat: ['#f9dae3', '#ea84a4', 'Patriarchowie'], king: ['#d6d5d5', '#302e2f', 'Królowie Izraela i Judy'] };
+// Palette: Tasman #ced7c7 (deepened #8fa58f), Dust Storm #ead3cd, Tan #c2a382, Cranberry #c75f80, Apricot #e29885;
+// Orthodoxy #8a3d58 and Protestantism #9a7a55 are deeper cranberry and tan. Ink #4d3340.
+const COL = { cain: ['#f6ebe8', '#ead3cd', 'Kain i jego potomkowie'], sem: ['#e9bfcc', '#c75f80', 'Semici'], ham: ['#f3d6ce', '#e29885', 'Chamici'], jap: ['#d2dbd2', '#8fa58f', 'Jafetyci'], chu: ['#e7dacd', '#c2a382', 'Kościół katolicki'], orth: ['#d0b1bc', '#8a3d58', 'Prawosławie'], ref: ['#d7cabb', '#9a7a55', 'Protestantyzm'], pat: ['#e9bfcc', '#c75f80', 'Patriarchowie'], king: ['#d6c8cf', '#4d3340', 'Królowie Izraela i Judy'] };
 
 // Patriarchs: name, birth (internal year), years lived (as Scripture gives them), reference.
 // The first 19 are counted from Creation (Rdz 5; 11,10-32).

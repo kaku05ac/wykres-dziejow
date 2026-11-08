@@ -13,12 +13,12 @@
   --n-900: #232323;
   --accent: #4d3340;
   /* Palette */
-  --c1: #ea84a4;
-  --c2: #4f9e8f;
-  --c3: #f6d3df;
-  --c4: #f5d55e;
-  --c5: #e87850;
-  --c6: #7cb8e0;
+  --c1: #c75f80;
+  --c2: #8fa58f;
+  --c3: #ead3cd;
+  --c4: #c2a382;
+  --c5: #e29885;
+  --c6: #9a7a55;
   --serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
   --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 }
