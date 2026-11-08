@@ -899,5 +899,34 @@
   try { startLang = location.hash === '#en' ? 'en' : localStorage.getItem('lang') || 'pl'; } catch (e) { /* default Polish */ }
   applyLang(startLang);
 
+  // ── Custom cursor: a small dot that follows the pointer and grows over anything clickable ──
+  // Only with a mouse (not on touch screens); the native pointer is hidden, except in text fields.
+  if (window.matchMedia && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    const dot = document.createElement('div');
+    dot.className = 'cursor-dot'; dot.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(dot);
+    document.documentElement.classList.add('has-cursor');
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let tx = -100, ty = -100, cx = -100, cy = -100, moving = false;
+    const CLICKABLE = 'a, button, [data-key], [data-ev], [data-lang], .dk-dot, .dk-toggle, #dockSvg, #chart';
+    addEventListener('pointermove', e => {
+      tx = e.clientX; ty = e.clientY;
+      const t = e.target;
+      dot.classList.toggle('is-text', !!(t.closest && t.closest('input, textarea')));
+      dot.classList.toggle('is-hover', !!(t.closest && t.closest(CLICKABLE)) && !(t.closest && t.closest('#chart') && !t.closest('[data-key]')));
+      dot.classList.add('is-on');
+      if (!moving) { moving = true; requestAnimationFrame(follow); }
+    }, { passive: true });
+    document.addEventListener('pointerleave', () => dot.classList.remove('is-on'));
+    addEventListener('pointerdown', () => dot.classList.add('is-down'));
+    addEventListener('pointerup', () => dot.classList.remove('is-down'));
+    const follow = () => {
+      const k = still ? 1 : 0.35;
+      cx += (tx - cx) * k; cy += (ty - cy) * k;
+      dot.style.transform = `translate(${cx.toFixed(1)}px, ${cy.toFixed(1)}px)`;
+      if (Math.abs(tx - cx) + Math.abs(ty - cy) > 0.2) requestAnimationFrame(follow); else moving = false;
+    };
+  }
+
   requestAnimationFrame(loop);
 })();
