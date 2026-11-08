@@ -913,7 +913,10 @@
       tx = e.clientX; ty = e.clientY;
       const t = e.target;
       dot.classList.toggle('is-text', !!(t.closest && t.closest('input, textarea')));
-      dot.classList.toggle('is-hover', !!(t.closest && t.closest(CLICKABLE)) && !(t.closest && t.closest('#chart') && !t.closest('[data-key]')));
+      // Over the timeline the dot keeps its size and turns maroon.
+      const onSlider = !!(t.closest && t.closest('#dockSvg'));
+      dot.classList.toggle('is-slider', onSlider);
+      dot.classList.toggle('is-hover', !onSlider && !!(t.closest && t.closest(CLICKABLE)) && !(t.closest && t.closest('#chart') && !t.closest('[data-key]')));
       dot.classList.add('is-on');
       if (!moving) { moving = true; requestAnimationFrame(follow); }
     }, { passive: true });

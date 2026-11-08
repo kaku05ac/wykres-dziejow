@@ -305,14 +305,16 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   .zoom-btn.wide { height: 40px; }
 }
 
-/* ── Custom cursor: a small dot (inverts what is under it) that grows over clickable things ── */
+/* ── Custom cursor: a small ink dot with a soft shadow; it grows over clickable things and turns maroon over the timeline ── */
 html.has-cursor, html.has-cursor * { cursor: none !important; }
 html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 .cursor-dot { position: fixed; left: 0; top: 0; z-index: 10000; width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%;
-  background: #fff; mix-blend-mode: difference; pointer-events: none; opacity: 0; will-change: transform;
-  transition: opacity .2s ease, width .2s ease, height .2s ease, margin .2s ease; }
+  background: var(--n-900); box-shadow: 0 1px 4px rgba(35, 25, 30, .35), 0 0 0 1px rgba(255, 255, 255, .35);
+  pointer-events: none; opacity: 0; will-change: transform;
+  transition: opacity .2s ease, width .2s ease, height .2s ease, margin .2s ease, background-color .2s ease; }
 .cursor-dot.is-on { opacity: 1; }
 .cursor-dot.is-hover { width: 16px; height: 16px; margin: -8px 0 0 -8px; }
 .cursor-dot.is-down { width: 4px; height: 4px; margin: -2px 0 0 -2px; }
+.cursor-dot.is-slider { background: #7a1f2e; }
 .cursor-dot.is-text { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .cursor-dot { transition: opacity .2s ease; } }
