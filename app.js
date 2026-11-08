@@ -427,7 +427,8 @@
       // A band along the arc with softly rounded corners, plus a wider invisible line for easy hovering.
       const [sx, sy] = pt(r, a1), [ex, ey] = pt(r, a2), big = a2 - a1 > 180 ? 1 : 0;
       const d = `M${f1(sx)} ${f1(sy)}A${r} ${r} 0 ${big} 1 ${f1(ex)} ${f1(ey)}`;
-      arcs += band(r, on ? w + 2.5 : w, a1, a2, COL[col][1], on, 'arc-line', round)
+      // A hovered or selected arc keeps its width; it stands out because the others fade.
+      arcs += band(r, w, a1, a2, COL[col][1], on, 'arc-line', round)
         + `<path class="arc-hit" data-key="${key}" d="${d}" stroke-width="${w + 7}"/>`;
       const am = (a1 + a2) / 2, len = (a2 - a1) * Math.PI / 180 * r;
       if (len > label.length * size * 0.66 + 8) {
