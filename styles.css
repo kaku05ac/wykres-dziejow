@@ -312,6 +312,7 @@ html.has-cursor, html.has-cursor * { cursor: none !important; }
 html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 /* On the timeline the dot stays; only over the year line do the two-way arrows show, to say it can be dragged. */
 html.has-cursor #dkHead, html.has-cursor #dkHead * { cursor: ew-resize !important; }
+html.has-cursor abbr.kkk { cursor: help !important; }
 /* Over the wheel an open hand says it can be moved; it closes while dragging, and marks and rings show the pointing hand. */
 html.has-cursor #chart, html.has-cursor #chart * { cursor: grab !important; }
 html.has-cursor #chart.dragging, html.has-cursor #chart.dragging * { cursor: grabbing !important; }
@@ -325,3 +326,6 @@ html.has-cursor #chart [data-key], html.has-cursor #chart [data-key] * { cursor:
 .cursor-dot.is-slider { opacity: 0; }
 .cursor-dot.is-text { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .cursor-dot { transition: opacity .2s ease; } }
+
+/* „KKK” in the card: a quiet dotted underline; hovering it explains the letters. */
+abbr.kkk { text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 2px; cursor: help; }

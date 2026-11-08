@@ -1225,7 +1225,7 @@ const TEXT = {
    [
     "Creation",
     "Gen 1:1",
-    "“In the beginning God created the heavens and the earth”: this solemn hymn proclaims that everything that exists comes from God and is good. The poetic rhythm of six days and a seventh day of rest shows the order of creation, crowned by the human being, man and woman, made in God’s image and called to care for the world. The Church reads this text not as a scientific account but as a teaching about the Creator and human dignity (CCC 337–343).",
+    "“In the beginning God created the heavens and the earth”: this solemn hymn proclaims that everything that exists comes from God and is good. The poetic rhythm of six days and a seventh day of rest shows the order of creation, crowned by the human being, man and woman, made in God’s image and called to care for the world. The Church reads this text not as a scientific account but as a teaching about the Creator and human dignity (KKK 337–343).",
     "Undated"
    ],
    [
@@ -1908,6 +1908,7 @@ const UI = {
     testaments: ['Stary Testament', 'Nowy Testament', 'Dzieje Kościoła'], testamentsShort: ['ST', 'NT', 'DK'], churchEvent: 'Wydarzenie w Kościele', historyEvent: 'Wydarzenie historyczne',
     born: 'ur. ', beforeSeamLower: 'przed 2000 p.n.e.', fromCain: 'od Kaina', from: 'od ',
     toggle: open => (open ? 'Ukryj' : 'Pokaż') + ' postacie, patriarchów i wykres żyjących',
+    kkk: 'KKK – Katechizm Kościoła Katolickiego',
     alivePat: 'Żyjący patriarchowie', aliveNat: 'Istniejące narody',
     natCain: 'Od Kaina do potopu.', beforeSeam: 'Przed 2000 p.n.e.', range: (a, b) => a + ' – ' + b, present: 'dziś',
     primeval: 'czasach Rdz 1–11',
@@ -1953,6 +1954,7 @@ const UI = {
     testaments: ['Old Testament', 'New Testament', 'Church history'], testamentsShort: ['OT', 'NT', 'CH'], churchEvent: 'Church event', historyEvent: 'Historic event',
     born: 'born ', beforeSeamLower: 'before 2000 BC', fromCain: 'from Cain', from: 'from ',
     toggle: open => (open ? 'Hide' : 'Show') + ' figures, patriarchs and the alive chart',
+    kkk: 'KKK – Katechizm Kościoła Katolickiego (the Catechism of the Catholic Church)',
     alivePat: 'Patriarchs alive', aliveNat: 'Nations alive',
     natCain: 'From Cain to the Flood.', beforeSeam: 'Before 2000 BC', range: (a, b) => a + ' to ' + b, present: 'present',
     primeval: 'the time of Genesis 1–11',

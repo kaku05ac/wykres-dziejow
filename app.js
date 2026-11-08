@@ -598,11 +598,13 @@
     const curEv = eventAt(year);
     const card = key && items[key] ? items[key] : items['e' + curEv] || { title: EV[curEv][0], body: EV[curEv][3], ref: EV[curEv][2], when: evWhen(EV[curEv]) };
     put(el.cardTitle, 'text', card.title);
-    put(el.cardBody, 'text', card.body);
+    // „KKK” (the Catechism) gets a hover note that says what the letters stand for, like the timeline lanes.
+    const withKKK = t => esc(t).replace(/\bKKK\b/g, `<abbr class="kkk" title="${esc(U().kkk)}">KKK</abbr>`);
+    put(el.cardBody, 'html', withKKK(card.body));
     // The current event's date is already in the big year above, so its card shows only the reference;
     // a hovered or selected item (another time) keeps its date in this line.
     const isCurrent = !(key && items[key]) || key === 'e' + curEv;
-    put(el.cardRef, 'text', [isCurrent ? '' : card.when, card.ref].filter(Boolean).join(' · '));
+    put(el.cardRef, 'html', withKKK([isCurrent ? '' : card.when, card.ref].filter(Boolean).join(' · ')));
 
     put(el.alive, 'html', alive.map(a => `<div class="alive-row"><span class="swatch" style="background:${a.c[0]};border-color:${a.c[1]}"></span><span>${esc(a.text)}</span></div>`).join(''));
     // Events: the current row is in ink with its line, earlier rows grey, later rows lighter.
@@ -919,7 +921,7 @@
       const t = e.target;
       dot.classList.toggle('is-text', !!(t.closest && t.closest('input, textarea')));
       // Over the year line on the timeline (two-way arrows) and over the wheel (a hand) the dot hides for the native pointer.
-      const onSlider = !!(t.closest && t.closest('#dkHead, #chart'));
+      const onSlider = !!(t.closest && t.closest('#dkHead, #chart, abbr.kkk'));
       dot.classList.toggle('is-slider', onSlider);
       // Over the pictures and films the dot shows the negative of what is under it, like a photographic negative.
       dot.classList.toggle('is-media', !!(t.closest && t.closest('.art-slot')));
