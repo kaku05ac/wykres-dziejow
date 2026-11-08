@@ -256,7 +256,7 @@ const TEXT = {
    [
     "Kościół katolicki",
     "Mt 16,18; Dz 2",
-    "Wspólnota uczniów Jezusa, zbudowana na apostołach z Piotrem na czele, która od Pięćdziesiątnicy głosi Ewangelię na całym świecie. Według watykańskiego Rocznika Statystycznego liczy dziś ponad 1,4 miliarda wiernych, a jej widzialnym zwierzchnikiem jest papież, Biskup Rzymu i następca św. Piotra."
+    "„Katolicki” znaczy po grecku „powszechny”, bo od Pięćdziesiątnicy Kościół jest otwarty dla każdego narodu, języka i kultury. Z dwunastu apostołów wyrósł przez dwa tysiące lat we wspólnotę ponad 1,4 miliarda ludzi, którą prowadzi papież, następca św. Piotra."
    ],
    [
     "Prawosławie",
@@ -265,7 +265,8 @@ const TEXT = {
    ],
    [
     "Protestantyzm",
-    ""
+    "",
+    "Wspólnoty chrześcijańskie wyrosłe z reformacji XVI wieku, m.in. luteranie, kalwiniści i liczne Kościoły ewangelikalne, które podkreślają autorytet Pisma Świętego i zbawienie z łaski przez wiarę. Kościół katolicki uznaje ochrzczonych protestantów za braci w Chrystusie i prowadzi z nimi dialog ekumeniczny."
    ]
   ],
   "EV": [
@@ -521,19 +522,19 @@ const TEXT = {
    [
     "Konstantyn",
     "Cesarz rzymski",
-    "Wraz z Licyniuszem ogłasza edykt mediolański (313), który daje chrześcijanom wolność wyznania i kończy prześladowania.",
+    "Cesarz rzymski, który wraz z Licyniuszem ogłosił w 313 r. edykt mediolański, dający chrześcijanom wolność wyznania. Zwołał Sobór Nicejski, założył Konstantynopol, a sam przyjął chrzest u kresu życia.",
     ""
    ],
    [
     "Marcin Luter",
     "Reformator",
-    "Zapoczątkował reformację w Niemczech.",
+    "Niemiecki zakonnik augustiański i profesor teologii, którego 95 tez z 1517 r. zapoczątkowało reformację protestancką. Przetłumaczył Biblię na niemiecki; dziś katolicy i luteranie prowadzą dialog, a w 1999 r. podpisali wspólną deklarację o usprawiedliwieniu.",
     ""
    ],
    [
     "Św. Tomasz z Akwinu",
     "Doktor Kościoła",
-    "Rozpoczyna Sumę teologiczną, wielką syntezę wiary i rozumu, opartą na filozofii Arystotelesa.",
+    "Włoski dominikanin, jeden z największych teologów Kościoła, nazywany Doktorem Anielskim. W Sumie teologicznej połączył wiarę z rozumem, korzystając z filozofii Arystotelesa; jest patronem szkół i uczelni katolickich.",
     ""
    ],
    [
@@ -545,13 +546,13 @@ const TEXT = {
    [
     "Kard. Stefan Wyszyński",
     "Prymas Tysiąclecia",
-    "Zostaje prymasem Polski; więziony w latach 1953–1956, prowadzi Kościół w Polsce przez czasy komunizmu.",
+    "Prymas Polski, który przez ponad 30 lat prowadził Kościół w czasach komunizmu; więziony w latach 1953–1956, nie ugiął się przed władzą. Wielką Nowenną przygotował Polaków do Tysiąclecia Chrztu Polski, a w 2021 r. został ogłoszony błogosławionym.",
     ""
    ],
    [
     "Św. Jan Paweł II",
     "Papież",
-    "Kard. Karol Wojtyła zostaje wybrany na papieża; jego pielgrzymki do Polski wspierają drogę do wolności.",
+    "Karol Wojtyła z Wadowic, pierwszy papież Polak, wybrany w 1978 r., który w ciągu prawie 27 lat pontyfikatu odwiedził ponad 120 krajów. Jego słowa z 1979 r. „Niech zstąpi Duch Twój! I odnowi oblicze ziemi. Tej ziemi!” dodały Polakom odwagi w drodze do wolności; jest świętym od 2014 r.",
     ""
    ],
    [
@@ -563,7 +564,7 @@ const TEXT = {
    [
     "Św. Grzegorz Wielki",
     "Papież",
-    "Kształtuje średniowieczny Kościół, liturgię i misje; wysyła misjonarzy do Anglii.",
+    "Papież i Doktor Kościoła, który troszczył się o ubogich, porządkował liturgię i wysłał misjonarzy do Anglii. Od jego imienia pochodzi nazwa chorału gregoriańskiego, a sam nazywał siebie „sługą sług Bożych”.",
     ""
    ],
    [
@@ -575,7 +576,7 @@ const TEXT = {
    [
     "Karol Wielki",
     "Cesarz",
-    "Koronowany w Rzymie na cesarza; fundament chrześcijańskiej Europy.",
+    "Król Franków, koronowany w Rzymie na cesarza przez papieża Leona III w Boże Narodzenie 800 r. Zjednoczył dużą część Europy, wspierał szkoły i klasztory, a jego czasy nazywa się renesansem karolińskim.",
     ""
    ],
    [
@@ -587,13 +588,13 @@ const TEXT = {
    [
     "Mieszko I",
     "Książę Polan",
-    "Przyjmuje chrzest; początek chrześcijaństwa i państwa polskiego.",
+    "Pierwszy historyczny władca Polski, który w 966 r. przyjął chrzest, co uważa się za początek chrześcijaństwa i państwowości polskiej. Do chrztu skłoniła go m.in. żona, czeska księżniczka Dobrawa.",
     ""
    ],
    [
     "Saladyn",
     "Sułtan",
-    "Odbija Jerozolimę z rąk krzyżowców.",
+    "Muzułmański sułtan Egiptu i Syrii, który w 1187 r. odbił Jerozolimę z rąk krzyżowców. Nawet przeciwnicy cenili go za rycerskość, a w pokoju zawartym w 1192 r. z Ryszardem Lwie Serce zgodził się, by chrześcijanie pielgrzymowali do Jerozolimy.",
     ""
    ],
    [
@@ -605,13 +606,13 @@ const TEXT = {
    [
     "Mikołaj Kopernik",
     "Astronom",
-    "Wydaje „O obrotach sfer niebieskich”: Ziemia krąży wokół Słońca.",
+    "Polski astronom i duchowny, kanonik warmiński, który w dziele „O obrotach sfer niebieskich” przedstawił model świata, w którym Ziemia krąży wokół Słońca. Swoje dzieło zadedykował papieżowi Pawłowi III.",
     ""
    ],
    [
     "Izaak Newton",
     "Uczony",
-    "Wydaje „Principia”: prawa ruchu i powszechnego ciążenia.",
+    "Angielski uczony, który w „Principiach” opisał prawa ruchu i powszechnego ciążenia, kładąc podstawy nowożytnej fizyki. Był człowiekiem głęboko wierzącym i wiele pisał o Biblii.",
     ""
    ],
    [
@@ -623,7 +624,7 @@ const TEXT = {
    [
     "Leon XIII",
     "Papież",
-    "Encyklika „Rerum novarum” o sprawie robotniczej; początek nowożytnej katolickiej nauki społecznej.",
+    "Papież, który w encyklice „Rerum novarum” upomniał się o godność robotników, sprawiedliwą płacę i prawo do zrzeszania się, dając początek nowożytnej katolickiej nauce społecznej. Był też wielkim czcicielem różańca, któremu poświęcił wiele encyklik.",
     ""
    ],
    [
@@ -655,22 +656,22 @@ const TEXT = {
    [
     "Sobór Nicejski I",
     "",
-    "Sobór wyznaje bóstwo Chrystusa i ogłasza Credo nicejskie przeciw arianizmowi."
+    "Pierwszy sobór powszechny, zwołany przez cesarza Konstantyna, na którym biskupi wyznali przeciw nauce Ariusza, że Syn Boży jest „współistotny Ojcu”. Wyznanie wiary z Nicei, rozwinięte w Konstantynopolu, chrześcijanie odmawiają do dziś w Credo."
    ],
    [
     "Wielka schizma",
     "",
-    "Rozłam między Kościołem na Zachodzie (katolickim) i na Wschodzie (prawosławnym)."
+    "Rozłam między chrześcijaństwem zachodnim, łacińskim (katolickim), a wschodnim, greckim (prawosławnym), symbolicznie datowany na wzajemne ekskomuniki z 1054 r. Od 1965 r. papieże i patriarchowie Konstantynopola prowadzą dialog na drodze do pojednania."
    ],
    [
     "Sobór Trydencki",
     "",
-    "Odpowiedź Kościoła na reformację: odnowa nauczania, sakramentów i dyscypliny."
+    "Sobór, który był odpowiedzią Kościoła na reformację: wyjaśnił naukę o łasce, sakramentach i Piśmie Świętym oraz odnowił życie duchowieństwa. Dał początek seminariom duchownym, Katechizmowi Rzymskiemu i mszałowi, który służył Kościołowi przez cztery stulecia."
    ],
    [
     "Sobór Watykański II",
     "",
-    "Odnowa liturgii i otwarcie Kościoła na świat współczesny."
+    "Sobór zwołany przez św. Jana XXIII, który odnowił liturgię, wprowadzając języki narodowe, i otworzył Kościół na dialog ze światem współczesnym, innymi chrześcijanami i religiami. Jego dokumenty, jak „Lumen gentium” i „Gaudium et spes”, kształtują życie Kościoła do dziś."
    ],
    [
     "Rewolucja francuska",
@@ -1149,7 +1150,7 @@ const TEXT = {
    [
     "Catholic Church",
     "Matt 16:18; Acts 2",
-    "The community of Jesus’ disciples, built on the apostles with Peter at their head, which since Pentecost has proclaimed the Gospel throughout the world. According to the Vatican’s Statistical Yearbook it has over 1.4 billion members today, and its visible head is the Pope, the Bishop of Rome and successor of St Peter."
+    "“Catholic” means “universal” in Greek, because since Pentecost the Church has been open to every nation, language and culture. From twelve apostles it has grown over two thousand years into a community of more than 1.4 billion people, led by the Pope, the successor of St Peter."
    ],
    [
     "Orthodox Church",
@@ -1158,7 +1159,8 @@ const TEXT = {
    ],
    [
     "Protestantism",
-    ""
+    "",
+    "Christian communities that grew out of the 16th-century Reformation, among them Lutherans, Calvinists and many evangelical churches, which stress the authority of Scripture and salvation by grace through faith. The Catholic Church regards baptised Protestants as brothers and sisters in Christ and is in ecumenical dialogue with them."
    ]
   ],
   "EV": [
@@ -1414,19 +1416,19 @@ const TEXT = {
    [
     "Constantine",
     "Roman emperor",
-    "With Licinius he issues the Edict of Milan (313), granting Christians freedom of worship and ending the persecutions.",
+    "Roman emperor who, with Licinius, issued the Edict of Milan in 313, giving Christians freedom of worship. He called the Council of Nicaea, founded Constantinople and was himself baptised at the end of his life.",
     ""
    ],
    [
     "Martin Luther",
     "Reformer",
-    "Began the Reformation in Germany.",
+    "German Augustinian friar and professor of theology whose 95 theses of 1517 began the Protestant Reformation. He translated the Bible into German; today Catholics and Lutherans are in dialogue, and in 1999 they signed a joint declaration on justification.",
     ""
    ],
    [
     "St Thomas Aquinas",
     "Doctor of the Church",
-    "Begins the Summa Theologiae, the great synthesis of faith and reason, built on the philosophy of Aristotle.",
+    "Italian Dominican, one of the Church’s greatest theologians, called the Angelic Doctor. In the Summa Theologiae he brought faith and reason together, drawing on the philosophy of Aristotle; he is the patron of Catholic schools and universities.",
     ""
    ],
    [
@@ -1438,13 +1440,13 @@ const TEXT = {
    [
     "Cardinal Stefan Wyszyński",
     "Primate of the Millennium",
-    "Becomes Primate of Poland; imprisoned 1953–1956, he leads the Church in Poland through the communist years.",
+    "Primate of Poland who led the Church through more than 30 years of communism; imprisoned from 1953 to 1956, he did not give in to the regime. With the Great Novena he prepared Poles for the Millennium of Poland’s Baptism, and in 2021 he was declared blessed.",
     ""
    ],
    [
     "St John Paul II",
     "Pope",
-    "Cardinal Karol Wojtyła is elected pope; his pilgrimages to Poland support the road to freedom.",
+    "Karol Wojtyła from Wadowice, the first Polish pope, elected in 1978, who in nearly 27 years as pope visited more than 120 countries. His words in 1979, “Let your Spirit descend and renew the face of the earth. This land!”, gave Poles courage on the road to freedom; he has been a saint since 2014.",
     ""
    ],
    [
@@ -1456,7 +1458,7 @@ const TEXT = {
    [
     "St Gregory the Great",
     "Pope",
-    "Shapes the medieval Church, its liturgy and missions; sends missionaries to England.",
+    "Pope and Doctor of the Church who cared for the poor, set the liturgy in order and sent missionaries to England. Gregorian chant takes its name from him, and he called himself “servant of the servants of God”.",
     ""
    ],
    [
@@ -1468,7 +1470,7 @@ const TEXT = {
    [
     "Charlemagne",
     "Emperor",
-    "Crowned emperor in Rome; the foundation of Christian Europe.",
+    "King of the Franks, crowned emperor in Rome by Pope Leo III on Christmas Day 800. He united much of Europe and supported schools and monasteries; his age is called the Carolingian Renaissance.",
     ""
    ],
    [
@@ -1480,13 +1482,13 @@ const TEXT = {
    [
     "Mieszko I",
     "Duke of the Polans",
-    "Is baptised; the beginning of Christianity and of the Polish state.",
+    "The first historical ruler of Poland, who was baptised in 966, regarded as the beginning of Christianity and statehood in Poland. Among those who led him to baptism was his wife, the Czech princess Dobrawa.",
     ""
    ],
    [
     "Saladin",
     "Sultan",
-    "Retakes Jerusalem from the crusaders.",
+    "Muslim sultan of Egypt and Syria, who retook Jerusalem from the crusaders in 1187. Even his enemies admired his chivalry, and in the peace he made with Richard the Lionheart in 1192 he allowed Christians to go on pilgrimage to Jerusalem.",
     ""
    ],
    [
@@ -1498,13 +1500,13 @@ const TEXT = {
    [
     "Nicolaus Copernicus",
     "Astronomer",
-    "Publishes On the Revolutions of the Heavenly Spheres: the Earth moves around the Sun.",
+    "Polish astronomer and churchman, a canon of Warmia, who in On the Revolutions of the Heavenly Spheres set out a model of the world in which the Earth goes round the Sun. He dedicated the work to Pope Paul III.",
     ""
    ],
    [
     "Isaac Newton",
     "Scientist",
-    "Publishes the Principia: the laws of motion and universal gravitation.",
+    "English scientist who in the Principia described the laws of motion and universal gravitation, laying the foundations of modern physics. He was a deeply religious man and wrote much about the Bible.",
     ""
    ],
    [
@@ -1516,7 +1518,7 @@ const TEXT = {
    [
     "Leo XIII",
     "Pope",
-    "The encyclical Rerum novarum on the condition of workers; the beginning of modern Catholic social teaching.",
+    "Pope who in the encyclical Rerum novarum stood up for the dignity of workers, a just wage and the right to form unions, giving rise to modern Catholic social teaching. He was also a great lover of the Rosary, to which he devoted many encyclicals.",
     ""
    ],
    [
@@ -1548,22 +1550,22 @@ const TEXT = {
    [
     "First Council of Nicaea",
     "",
-    "The Council affirms the divinity of Christ and proclaims the Nicene Creed against Arianism."
+    "The first ecumenical council, called by Emperor Constantine, at which the bishops professed against the teaching of Arius that the Son of God is “consubstantial with the Father”. The Nicene creed, completed at Constantinople, is still said by Christians today."
    ],
    [
     "Great Schism",
     "",
-    "The split between the Church in the West (Catholic) and in the East (Orthodox)."
+    "The split between Western, Latin (Catholic) and Eastern, Greek (Orthodox) Christianity, symbolically dated to the mutual excommunications of 1054. Since 1965 popes and patriarchs of Constantinople have been in dialogue on the way to reconciliation."
    ],
    [
     "Council of Trent",
     "",
-    "The Church answers the Reformation: renewal of teaching, sacraments and discipline."
+    "The council that was the Church’s answer to the Reformation: it clarified teaching on grace, the sacraments and Scripture and renewed the life of the clergy. It gave rise to seminaries, the Roman Catechism and a missal that served the Church for four centuries."
    ],
    [
     "Second Vatican Council",
     "",
-    "Renewal of the liturgy and the Church opening to the modern world."
+    "The council called by St John XXIII, which renewed the liturgy by bringing in national languages and opened the Church to dialogue with the modern world, other Christians and other religions. Its documents, such as Lumen gentium and Gaudium et spes, shape the life of the Church to this day."
    ],
    [
     "French Revolution",

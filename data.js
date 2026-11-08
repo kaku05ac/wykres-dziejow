@@ -88,10 +88,10 @@ const NAT = [
   ['Rzym', 'jap', -753, 476, 'Dn 7,7', 'Miasto założone według tradycji w 753 p.n.e., które stało się imperium obejmującym cały basen Morza Śródziemnego; za panowania jego pierwszego cesarza, Augusta, urodził się Jezus (Łk 2,1). W Rzymie ponieśli męczeństwo święci Piotr i Paweł, a miasto stało się siedzibą papieży i centrum Kościoła katolickiego.'],
   // The Church: separate from the Genesis 10 peoples above. An optional 6th field is a short
   // description shown on the card before the dates.
-  ['Kościół katolicki', 'chu', 30, END, 'Mt 16,18; Dz 2', 'Wspólnota uczniów Jezusa, zbudowana na apostołach z Piotrem na czele, która od Pięćdziesiątnicy głosi Ewangelię na całym świecie. Według watykańskiego Rocznika Statystycznego liczy dziś ponad 1,4 miliarda wiernych, a jej widzialnym zwierzchnikiem jest papież, Biskup Rzymu i następca św. Piotra.'],
+  ['Kościół katolicki', 'chu', 30, END, 'Mt 16,18; Dz 2', '„Katolicki” znaczy po grecku „powszechny”, bo od Pięćdziesiątnicy Kościół jest otwarty dla każdego narodu, języka i kultury. Z dwunastu apostołów wyrósł przez dwa tysiące lat we wspólnotę ponad 1,4 miliarda ludzi, którą prowadzi papież, następca św. Piotra.'],
   ['Prawosławie', 'orth', 1054, END, '',
     'Przez wieki chrześcijański Wschód i Zachód rozwijały się w różnych kulturach, greckiej i łacińskiej. Narastały różnice w liturgii i zwyczajach, w rozumieniu jedności Kościoła wokół następcy św. Piotra oraz w sprawie słów „i Syna” (Filioque) w Credo. W 1054 r. legaci papiescy i patriarcha Konstantynopola obłożyli się wzajemnie ekskomuniką; rozłam utrwalał się w kolejnych wiekach. W 1965 r. św. Paweł VI i patriarcha Atenagoras usunęli te ekskomuniki z pamięci Kościoła, otwierając drogę do pojednania, choć pełnej jedności jeszcze nie ma.'],
-  ['Protestantyzm', 'ref', 1517, END, '']
+  ['Protestantyzm', 'ref', 1517, END, '', 'Wspólnoty chrześcijańskie wyrosłe z reformacji XVI wieku, m.in. luteranie, kalwiniści i liczne Kościoły ewangelikalne, które podkreślają autorytet Pisma Świętego i zbawienie z łaski przez wiarę. Kościół katolicki uznaje ochrzczonych protestantów za braci w Chrystusie i prowadzi z nimi dialog ekumeniczny.']
 ];
 
 // Events: name, internal year, reference, description, optional date label.
@@ -121,10 +121,10 @@ const EV_IDS = ['creation', 'the-flood', 'tower-of-babel', 'call-of-abraham', 'b
 // Church events (and a few historic ones, with a 5th field): name, year, reference, description. Shown as markers on the chart and in the
 // timeline's Church lane; they are not sections, so the event column and its films are unchanged.
 const CH_EV = [
-  ['Sobór Nicejski I', 325, '', 'Sobór wyznaje bóstwo Chrystusa i ogłasza Credo nicejskie przeciw arianizmowi.'],
-  ['Wielka schizma', 1054, '', 'Rozłam między Kościołem na Zachodzie (katolickim) i na Wschodzie (prawosławnym).'],
-  ['Sobór Trydencki', 1545, '', 'Odpowiedź Kościoła na reformację: odnowa nauczania, sakramentów i dyscypliny.'],
-  ['Sobór Watykański II', 1962, '', 'Odnowa liturgii i otwarcie Kościoła na świat współczesny.'],
+  ['Sobór Nicejski I', 325, '', 'Pierwszy sobór powszechny, zwołany przez cesarza Konstantyna, na którym biskupi wyznali przeciw nauce Ariusza, że Syn Boży jest „współistotny Ojcu”. Wyznanie wiary z Nicei, rozwinięte w Konstantynopolu, chrześcijanie odmawiają do dziś w Credo.'],
+  ['Wielka schizma', 1054, '', 'Rozłam między chrześcijaństwem zachodnim, łacińskim (katolickim), a wschodnim, greckim (prawosławnym), symbolicznie datowany na wzajemne ekskomuniki z 1054 r. Od 1965 r. papieże i patriarchowie Konstantynopola prowadzą dialog na drodze do pojednania.'],
+  ['Sobór Trydencki', 1545, '', 'Sobór, który był odpowiedzią Kościoła na reformację: wyjaśnił naukę o łasce, sakramentach i Piśmie Świętym oraz odnowił życie duchowieństwa. Dał początek seminariom duchownym, Katechizmowi Rzymskiemu i mszałowi, który służył Kościołowi przez cztery stulecia.'],
+  ['Sobór Watykański II', 1962, '', 'Sobór zwołany przez św. Jana XXIII, który odnowił liturgię, wprowadzając języki narodowe, i otworzył Kościół na dialog ze światem współczesnym, innymi chrześcijanami i religiami. Jego dokumenty, jak „Lumen gentium” i „Gaudium et spes”, kształtują życie Kościoła do dziś.'],
   // Historic (non-Church) events carry the line key of their people as a 5th field.
   ['Rewolucja francuska', 1789, '', 'Wybucha rewolucja we Francji, a w 1792 r. upada monarchia; hasła wolności, równości i braterstwa, a zarazem podporządkowanie Kościoła państwu (1790) i prześladowania duchownych i wiernych.', 'jap'],
   ['Septuaginta', -250, '', 'Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład.', 'jap']
@@ -165,27 +165,27 @@ const FIG = [
   ['Jan Chrzciciel', -6, 'Poprzednik', 'Syn Zachariasza i Elżbiety, krewny Jezusa, który nad Jordanem wzywał do nawrócenia i udzielał chrztu, także samemu Jezusowi. Wskazał na Niego słowami „Oto Baranek Boży” (J 1,29), które Kościół powtarza w każdej Mszy Świętej.', 'Łk 1', 'chu'],
   ['Jezus', -5, 'Chrystus', 'Syn Boży i Syn Maryi, urodzony w Betlejem, który nauczał o królestwie Bożym, uzdrawiał chorych i przebaczał grzechy. Umarł na krzyżu i zmartwychwstał; chrześcijanie wyznają Go jako Zbawiciela świata, a od Jego narodzin, obliczonych w VI wieku przez mnicha Dionizego Małego, liczymy lata naszej ery.', 'Mt 2; Łk 2', 'chu'],
   ['Paweł', 35, 'Apostoł', 'Żyd z Tarsu, najpierw prześladowca chrześcijan, który po spotkaniu ze zmartwychwstałym Jezusem pod Damaszkiem został Apostołem Narodów. Zakładał wspólnoty w całym świecie rzymskim, jego listy stanowią dużą część Nowego Testamentu, a życie oddał jako męczennik w Rzymie.', 'Dz 9-28', 'chu'],
-  ['Konstantyn', 313, 'Cesarz rzymski', 'Wraz z Licyniuszem ogłasza edykt mediolański (313), który daje chrześcijanom wolność wyznania i kończy prześladowania.', '', 'jap'],
-  ['Marcin Luter', 1517, 'Reformator', 'Zapoczątkował reformację w Niemczech.', '', 'ref'],
+  ['Konstantyn', 313, 'Cesarz rzymski', 'Cesarz rzymski, który wraz z Licyniuszem ogłosił w 313 r. edykt mediolański, dający chrześcijanom wolność wyznania. Zwołał Sobór Nicejski, założył Konstantynopol, a sam przyjął chrzest u kresu życia.', '', 'jap'],
+  ['Marcin Luter', 1517, 'Reformator', 'Niemiecki zakonnik augustiański i profesor teologii, którego 95 tez z 1517 r. zapoczątkowało reformację protestancką. Przetłumaczył Biblię na niemiecki; dziś katolicy i luteranie prowadzą dialog, a w 1999 r. podpisali wspólną deklarację o usprawiedliwieniu.', '', 'ref'],
   // Later figures. An optional 7th field sets the letter shown in the circle.
-  ['Św. Tomasz z Akwinu', 1265, 'Doktor Kościoła', 'Rozpoczyna Sumę teologiczną, wielką syntezę wiary i rozumu, opartą na filozofii Arystotelesa.', '', 'chu', 'T'],
+  ['Św. Tomasz z Akwinu', 1265, 'Doktor Kościoła', 'Włoski dominikanin, jeden z największych teologów Kościoła, nazywany Doktorem Anielskim. W Sumie teologicznej połączył wiarę z rozumem, korzystając z filozofii Arystotelesa; jest patronem szkół i uczelni katolickich.', '', 'chu', 'T'],
   ['Jan Gutenberg', 1455, 'Drukarz', 'Drukuje Biblię ruchomą czcionką; do ok. 1500 r. w całej Europie działają setki drukarń, a Pismo Święte staje się dużo łatwiej dostępne.', '', 'chu', 'G'],
-  ['Kard. Stefan Wyszyński', 1948, 'Prymas Tysiąclecia', 'Zostaje prymasem Polski; więziony w latach 1953–1956, prowadzi Kościół w Polsce przez czasy komunizmu.', '', 'chu', 'W'],
-  ['Św. Jan Paweł II', 1978, 'Papież', 'Kard. Karol Wojtyła zostaje wybrany na papieża; jego pielgrzymki do Polski wspierają drogę do wolności.', '', 'chu', 'J'],
+  ['Kard. Stefan Wyszyński', 1948, 'Prymas Tysiąclecia', 'Prymas Polski, który przez ponad 30 lat prowadził Kościół w czasach komunizmu; więziony w latach 1953–1956, nie ugiął się przed władzą. Wielką Nowenną przygotował Polaków do Tysiąclecia Chrztu Polski, a w 2021 r. został ogłoszony błogosławionym.', '', 'chu', 'W'],
+  ['Św. Jan Paweł II', 1978, 'Papież', 'Karol Wojtyła z Wadowic, pierwszy papież Polak, wybrany w 1978 r., który w ciągu prawie 27 lat pontyfikatu odwiedził ponad 120 krajów. Jego słowa z 1979 r. „Niech zstąpi Duch Twój! I odnowi oblicze ziemi. Tej ziemi!” dodały Polakom odwagi w drodze do wolności; jest świętym od 2014 r.', '', 'chu', 'J'],
   // Konstantyn to Tomasz z Akwinu
   ['Justynian I', 527, 'Cesarz bizantyjski', 'Cesarz od 527 r.; spisuje prawo rzymskie (Kodeks Justyniana, 529–534) i buduje Hagię Sophię (537).', '', 'jap', 'J'],
-  ['Św. Grzegorz Wielki', 590, 'Papież', 'Kształtuje średniowieczny Kościół, liturgię i misje; wysyła misjonarzy do Anglii.', '', 'chu', 'G'],
+  ['Św. Grzegorz Wielki', 590, 'Papież', 'Papież i Doktor Kościoła, który troszczył się o ubogich, porządkował liturgię i wysłał misjonarzy do Anglii. Od jego imienia pochodzi nazwa chorału gregoriańskiego, a sam nazywał siebie „sługą sług Bożych”.', '', 'chu', 'G'],
   ['Mahomet', 622, 'Założyciel islamu', 'Hidżra z Mekki do Medyny: powstaje wspólnota muzułmańska (umma), a od tej daty liczy się kalendarz islamski. Mahomet głosił od ok. 610 r.; islam zmienia Bliski Wschód i świat arabski.', '', 'sem', 'M'],
-  ['Karol Wielki', 800, 'Cesarz', 'Koronowany w Rzymie na cesarza; fundament chrześcijańskiej Europy.', '', 'jap', 'K'],
+  ['Karol Wielki', 800, 'Cesarz', 'Król Franków, koronowany w Rzymie na cesarza przez papieża Leona III w Boże Narodzenie 800 r. Zjednoczył dużą część Europy, wspierał szkoły i klasztory, a jego czasy nazywa się renesansem karolińskim.', '', 'jap', 'K'],
   ['Św. Cyryl i Metody', 863, 'Apostołowie Słowian', 'Niosą Ewangelię Słowianom na Morawach; Cyryl tworzy dla nich pismo (głagolicę), a bracia przekładają na język słowiański Pismo i liturgię.', '', 'chu', 'C'],
-  ['Mieszko I', 966, 'Książę Polan', 'Przyjmuje chrzest; początek chrześcijaństwa i państwa polskiego.', '', 'chu', 'M'],
-  ['Saladyn', 1187, 'Sułtan', 'Odbija Jerozolimę z rąk krzyżowców.', '', 'sem', 'S'],
+  ['Mieszko I', 966, 'Książę Polan', 'Pierwszy historyczny władca Polski, który w 966 r. przyjął chrzest, co uważa się za początek chrześcijaństwa i państwowości polskiej. Do chrztu skłoniła go m.in. żona, czeska księżniczka Dobrawa.', '', 'chu', 'M'],
+  ['Saladyn', 1187, 'Sułtan', 'Muzułmański sułtan Egiptu i Syrii, który w 1187 r. odbił Jerozolimę z rąk krzyżowców. Nawet przeciwnicy cenili go za rycerskość, a w pokoju zawartym w 1192 r. z Ryszardem Lwie Serce zgodził się, by chrześcijanie pielgrzymowali do Jerozolimy.', '', 'sem', 'S'],
   // Marcin Luter to Wyszyński
   ['Krzysztof Kolumb', 1492, 'Żeglarz', 'Dopływa do Ameryki; zaczyna się epoka wielkich odkryć, a wraz z nią misje Kościoła w Nowym Świecie.', '', 'jap', 'K'],
-  ['Mikołaj Kopernik', 1543, 'Astronom', 'Wydaje „O obrotach sfer niebieskich”: Ziemia krąży wokół Słońca.', '', 'jap', 'K'],
-  ['Izaak Newton', 1687, 'Uczony', 'Wydaje „Principia”: prawa ruchu i powszechnego ciążenia.', '', 'jap', 'N'],
+  ['Mikołaj Kopernik', 1543, 'Astronom', 'Polski astronom i duchowny, kanonik warmiński, który w dziele „O obrotach sfer niebieskich” przedstawił model świata, w którym Ziemia krąży wokół Słońca. Swoje dzieło zadedykował papieżowi Pawłowi III.', '', 'jap', 'K'],
+  ['Izaak Newton', 1687, 'Uczony', 'Angielski uczony, który w „Principiach” opisał prawa ruchu i powszechnego ciążenia, kładąc podstawy nowożytnej fizyki. Był człowiekiem głęboko wierzącym i wiele pisał o Biblii.', '', 'jap', 'N'],
   ['Napoleon Bonaparte', 1804, 'Cesarz Francuzów', 'Po zamachu stanu w 1799 r. przejmuje władzę, a w 1804 r., w obecności Piusa VII, koronuje się na cesarza; jego wojny i kodeks niosą idee rewolucji przez Europę.', '', 'jap', 'N'],
-  ['Leon XIII', 1891, 'Papież', 'Encyklika „Rerum novarum” o sprawie robotniczej; początek nowożytnej katolickiej nauki społecznej.', '', 'chu', 'L'],
+  ['Leon XIII', 1891, 'Papież', 'Papież, który w encyklice „Rerum novarum” upomniał się o godność robotników, sprawiedliwą płacę i prawo do zrzeszania się, dając początek nowożytnej katolickiej nauce społecznej. Był też wielkim czcicielem różańca, któremu poświęcił wiele encyklik.', '', 'chu', 'L'],
   // Greek philosophy and its heir in the Church
   ['Sokrates', -399, 'Filozof', 'Twórca filozofii moralnej: w dialogu, metodą pytań, prowadzi rozmówców do samopoznania i szukania prawdy o dobru. Skazany przez Ateńczyków na śmierć, wybiera wierność sumieniu. Jego nauczanie przekazuje uczeń, Platon.', '', 'jap', 'S'],
   ['Platon', -387, 'Filozof', 'Uczeń Sokratesa i założyciel Akademii w Atenach. Uczy, że ponad zmiennym światem istnieje wieczna prawda, dobro i piękno, a dusza człowieka jest nieśmiertelna. Jego myśl stanie się dla Ojców Kościoła językiem do mówienia o Bogu.', '', 'jap', 'P'],
