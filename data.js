@@ -9,15 +9,19 @@
 //  - From Abraham on, years are scholarly approximations. Dates before 722 BC are
 //    approximate and show with "ok.".
 //
-// All years share one internal scale: BC years are negative, AD years positive, and
-// the undated primeval segment sits before 2000 BC, ending at Terah's death. am(n) places
-// a point n years after Creation inside that segment (for layout only; never shown).
+// All years share one internal scale: BC years are negative, AD years positive. am(n) places
+// a point n years after Creation (for layout only; never shown). The primeval genealogy is
+// joined to the dated years at Abraham: Genesis 11,26 has Abram born when Terah was 70, i.e.
+// 1948 years after Creation by the Hebrew numbers, and the chart dates his birth to about
+// 1900 BC. So the post-Flood patriarchs (Shem to Terah) live on into Abraham's lifetime, as
+// the Hebrew text implies (NABRE note on Gen 11,32); they are still shown as undated.
 // Names and scripture references follow Polish Catholic usage (Biblia Tysiąclecia).
 
-const START = -4083;   // Creation (start of the undated segment)
+const START = -3848;   // Creation (start of the undated segment): am(1948) = -1900, Abraham's birth
 const SEAM = -2000;    // end of Genesis 1–11, start of dated history
 const END = 2026;
 const am = n => START + n;
+const ABRAHAM = am(1948);   // Abraham's birth; patriarchs born before him belong to Genesis 1–11 (undated)
 
 // Lines (Gen 10 and after): tint, line colour, legend name.
 // Palette taken from a vivid poured-paint image: red-orange #eb5628, orange #f09c3f, yellow #e6c363,

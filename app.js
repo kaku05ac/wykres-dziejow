@@ -32,12 +32,18 @@
   const uprightRot = a => (a > 90 && a < 300 ? a + 180 : a);
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-  // Lifespan arcs: Genesis 1–11 steps outward one track per person; from Abraham on the
-  // tracks step back inward, in order of birth, so the line reads as one staircase.
+  // Lifespan arcs: Genesis 1–11 steps outward one track per person. The post-Flood patriarchs
+  // live on into Abraham's time, so each later person takes the outermost track that is free
+  // for the whole of their life (in order of birth); no two arcs ever overlap.
+  const primeval = p => p[1] < ABRAHAM;
   const PAT_R = (() => {
-    const r = [], dated = PAT.map((p, i) => [p[1], i]).filter(([y]) => y >= SEAM).sort((a, b) => a[0] - b[0]);
-    PAT.forEach((p, i) => { if (p[1] < SEAM) r[i] = 352 + i * 10; });
-    dated.forEach(([, i], k) => { r[i] = 542 - k * 10; });
+    const r = [], used = {}, take = (rad, s, e) => (used[rad] = used[rad] || []).push([s, e]);
+    const free = (rad, s, e) => !(used[rad] || []).some(([a, b]) => s < b + 8 && a < e + 8);
+    PAT.forEach((p, i) => { if (primeval(p)) { r[i] = 352 + i * 10; take(r[i], p[1], p[1] + p[2]); } });
+    PAT.map((p, i) => [p, i]).filter(([p]) => !primeval(p)).sort((a, b) => a[0][1] - b[0][1]).forEach(([p, i]) => {
+      let rad = 552; while (rad > 352 && !free(rad, p[1], p[1] + p[2])) rad -= 10;
+      r[i] = rad; take(rad, p[1], p[1] + p[2]);
+    });
     return r;
   })();
   COL.king2 = ['#ece6e2', '#b7a79e', ''];
@@ -239,7 +245,7 @@
     let W = 0, x0 = 0, x1 = 1, open = true, dots = [], head = null, lastX = null, drag = null, pill = null, pillText = null, pillRect = null, lastLabel = '', tickEls = [];
     const xOf = y => x0 + ang(y) / A_MAX * (x1 - x0);
     const yearOf = x => clamp(Math.round(yearFromA(clamp((x - x0) / (x1 - x0), 0, 1) * A_MAX)), START, END);
-    const patEnd = p => (p[1] < SEAM ? Math.min(p[1] + p[2], SEAM) : p[1] + p[2]);
+    const patEnd = p => p[1] + p[2];
 
     const lanes = () => {
       const L = [{ label: U().lanes.events, kind: 'dots', h: 30, cls: 'dk-head', toggle: true,
@@ -249,7 +255,7 @@
           items: FIG.map((g, i) => ({ y: g[1], key: 'f' + i, name: g[0], when: fmtD(g[1]), color: COL[g[5]][1] })) });
         // Lifespans as thin rounded bars, as on the ring; overlapping lives stack in rows.
         L.push({ label: U().lanes.patriarchs, kind: 'bars', cls: 'dk-sub',
-          items: PAT.map((p, i) => ({ y: p[1], e: patEnd(p), key: 'p' + i, name: p[0], when: undated(p[1]) ? U().undated : U().born + fmtD(p[1]), color: COL.pat[1] })) });
+          items: PAT.map((p, i) => ({ y: p[1], e: patEnd(p), key: 'p' + i, name: p[0], when: primeval(p) ? U().undated : U().born + fmtD(p[1]), color: COL.pat[1] })) });
         // Kings as two continuous tracks of reigns (Judah with the united kingdom, then Israel), as on the ring.
         L.push({ label: U().lanes.kings, kind: 'bands', h: 24, cls: 'dk-sub',
           items: KINGS.map((k, i) => ({ y: k[1], e: k[2], row: k[3] === 'is' ? 1 : 0, key: 'k' + i, name: k[0], when: U().range(fmtD(k[1]), fmtD(k[2])), color: COL[KING_SHADE[i]][1] })) });
@@ -475,13 +481,13 @@
       n[2] < SEAM ? U().natCain.replace(/\.$/, '') : U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3]))));
     const alive = [];
     PAT.forEach((p, i) => {
-      // Genesis 1–11 lifespans are cut at the seam: their years after it are not dated.
-      const s = p[1], primeval = s < SEAM, e = primeval ? Math.min(p[1] + p[2], SEAM) : p[1] + p[2];
+      // Full lifespans: the post-Flood patriarchs reach into Abraham's time (cards stay undated).
+      const s = p[1], early = primeval(p), e = p[1] + p[2];
       if (year >= s && year <= e) alive.push({ text: U().age(p[0], Math.floor(year - s)), c: COL.pat });
       // Lifespan in years from Scripture; dates only from Abraham on (Genesis 1–11 is undated).
       const span = p[2] + ' ' + lat(p[2]);
       addArc('p' + i, PAT_R[i], 5, s, e, 'pat', p[0], p[4] || '', p[3], p[0], 4,
-        primeval ? span + ' · ' + U().undated : U().range(fmtD(s), fmtD(e)) + ' · ' + span);
+        early ? span + ' · ' + U().undated : U().range(fmtD(s), fmtD(e)) + ' · ' + span);
     });
     // Kings ring, just inside the ruler: Judah (with Saul, David and Solomon) and, outside it, Israel.
     // Reigns follow one another on each track, so neighbours alternate between two shades.
@@ -695,7 +701,7 @@
     const i = +key.slice(1), k = key[0];
     if (k === 'e' && EV[i]) return EV[i][0] + ' · ' + evWhen(EV[i]);
     if (k === 'f' && FIG[i]) return FIG[i][0] + ' · ' + fmtD(FIG[i][1]);
-    if (k === 'p' && PAT[i]) return PAT[i][0] + ' · ' + (undated(PAT[i][1]) ? U().undated : U().born + fmtD(PAT[i][1]));
+    if (k === 'p' && PAT[i]) return PAT[i][0] + ' · ' + (primeval(PAT[i]) ? U().undated : U().born + fmtD(PAT[i][1]));
     if (k === 'k' && KINGS[i]) return KINGS[i][0] + ' · ' + U().range(fmtD(KINGS[i][1]), fmtD(KINGS[i][2]));
     if (k === 'n' && NAT[i]) { const n = NAT[i]; return n[0] + ' · ' + (n[2] === SEAM ? U().beforeSeamLower : n[2] < SEAM ? U().fromCain : U().from + fmtD(n[2])); }
     if (k === 'c' && CH_EV[i]) return CH_EV[i][0] + ' · ' + fmt(CH_EV[i][1]);
@@ -759,7 +765,7 @@
     const context = () => {
       const y = Math.round(state.year), ev = EV[eventAt(y)];
       const alive = NAT.filter(n => y >= n[2] && y <= n[3]).map(n => n[0])
-        .concat(PAT.filter(p => { const e = p[1] < SEAM ? Math.min(p[1] + p[2], SEAM) : p[1] + p[2]; return y >= p[1] && y <= e; }).map(p => p[0]))
+        .concat(PAT.filter(p => y >= p[1] && y <= p[1] + p[2]).map(p => p[0]))
         .concat(KINGS.filter(k => y >= k[1] && y <= k[2]).map(k => k[0] + ' (' + U().realm[k[3]] + ')'));
       const near = FIG.filter(g => Math.abs(g[1] - y) <= 80).map(g => g[0] + ' (' + fmtD(g[1]) + ')');
       return 'Chart context: year ' + fmt(y) + '; section "' + ev[0] + '" (' + evWhen(ev) + '): ' + ev[3]
