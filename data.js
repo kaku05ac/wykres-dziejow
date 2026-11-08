@@ -83,12 +83,12 @@ const NAT = [
   ['Kanaan', 'ham', SEAM, -1000, 'Rdz 10,15-19', 'Kraj nazwany od Kanaana, wnuka Noego, zamieszkany przez wiele ludów, m.in. Sydończyków, Hetytów i Jebusytów. To ziemia obiecana Abrahamowi i jego potomkom. W Ewangelii Jezus chwali wiarę kobiety kananejskiej i uzdrawia jej córkę.'],
   ['Fenicja', 'ham', -1200, -332, '1 Krl 5', 'Kraina kupców i żeglarzy na wybrzeżu dzisiejszego Libanu, z miastami Tyr i Sydon; król Tyru dostarczył Salomonowi cedrów na budowę świątyni. Fenicjanie rozpowszechnili alfabet, od którego pochodzą nasze litery.'],
   ['Ludy indoeuropejskie', 'jap', SEAM, -300, 'Rdz 10,2-5', 'Potomkowie Jafeta, syna Noego, zamieszkują północ i wybrzeża morza; wśród nich są Medowie i Grecy. Biblijna tablica narodów przedstawia całą ludzkość jako jedną wielką rodzinę wywodzącą się od Noego.'],
-  ['Grecja', 'jap', -776, -146, 'Dn 8,21', 'Kolebka filozofii, demokracji i nauki; po grecku spisano Nowy Testament.'],
-  ['Persja', 'jap', -550, -330, 'Dn 8,20'],
-  ['Rzym', 'jap', -753, 476, 'Dn 7,7'],
+  ['Grecja', 'jap', -776, -146, 'Dn 8,21', 'Kraina miast-państw, takich jak Ateny i Sparta, kolebka filozofii, demokracji, teatru i nauki. Dzięki podbojom Aleksandra Wielkiego greka stała się wspólnym językiem świata śródziemnomorskiego, i w tym języku spisano cały Nowy Testament.'],
+  ['Persja', 'jap', -550, -330, 'Dn 8,20', 'Imperium Achemenidów z ośrodkami w Suzie i Persepolis, jedno z największych państw starożytności, od Indii po Egipt. Jego królowie, zwłaszcza Cyrus, pozwolili Żydom wrócić z wygnania i odbudować świątynię.'],
+  ['Rzym', 'jap', -753, 476, 'Dn 7,7', 'Miasto założone według tradycji w 753 p.n.e., które stało się imperium obejmującym cały basen Morza Śródziemnego; za panowania jego pierwszego cesarza, Augusta, urodził się Jezus (Łk 2,1). W Rzymie ponieśli męczeństwo święci Piotr i Paweł, a miasto stało się siedzibą papieży i centrum Kościoła katolickiego.'],
   // The Church: separate from the Genesis 10 peoples above. An optional 6th field is a short
   // description shown on the card before the dates.
-  ['Kościół katolicki', 'chu', 30, END, 'Mt 16,18; Dz 2'],
+  ['Kościół katolicki', 'chu', 30, END, 'Mt 16,18; Dz 2', 'Wspólnota uczniów Jezusa, zbudowana na apostołach z Piotrem na czele, która od Pięćdziesiątnicy głosi Ewangelię na całym świecie. Według watykańskiego Rocznika Statystycznego liczy dziś ponad 1,4 miliarda wiernych, a jej widzialnym zwierzchnikiem jest papież, Biskup Rzymu i następca św. Piotra.'],
   ['Prawosławie', 'orth', 1054, END, '',
     'Przez wieki chrześcijański Wschód i Zachód rozwijały się w różnych kulturach, greckiej i łacińskiej. Narastały różnice w liturgii i zwyczajach, w rozumieniu jedności Kościoła wokół następcy św. Piotra oraz w sprawie słów „i Syna” (Filioque) w Credo. W 1054 r. legaci papiescy i patriarcha Konstantynopola obłożyli się wzajemnie ekskomuniką; rozłam utrwalał się w kolejnych wiekach. W 1965 r. św. Paweł VI i patriarcha Atenagoras usunęli te ekskomuniki z pamięci Kościoła, otwierając drogę do pojednania, choć pełnej jedności jeszcze nie ma.'],
   ['Protestantyzm', 'ref', 1517, END, '']
@@ -106,9 +106,9 @@ const EV = [
   ['Podział królestwa', -931, '1 Krl 12', 'Po śmierci Salomona jedno królestwo rozpada się na dwa: północne Królestwo Izraela pod wodzą Jeroboama i południową Judę z Jerozolimą, przy której zostaje dynastia Dawida. Oba królestwa istnieją obok siebie przez dwa stulecia.'],
   ['Upadek Samarii', -722, '2 Krl 17', 'Koniec północnego Królestwa Izraela: Asyria zdobywa jego stolicę, Samarię, i przesiedla mieszkańców w odległe krainy. Od tej krainy biorą nazwę Samarytanie, znani z przypowieści Jezusa o miłosiernym Samarytaninie.'],
   ['Niewola babilońska', -597, '2 Krl 24', 'Nabuchodonozor po raz pierwszy zdobywa Jerozolimę i uprowadza do Babilonu króla Jojakina wraz z elitą kraju; w 587 p.n.e. niszczy miasto i świątynię.'],
-  ['Powrót z wygnania', -538, 'Ezd 1', 'Cyrus pozwala Żydom wrócić do ojczyzny.'],
-  ['Narodzenie Chrystusa', -5, 'Mt 2; Łk 2', 'Jezus rodzi się w Betlejem, przed śmiercią Heroda w 4 p.n.e.', 'ok. 6–4 p.n.e.'],
-  ['Ukrzyżowanie i Pięćdziesiątnica', 30, 'Dz 2', 'W Jerozolimie rodzi się Kościół.', '30 lub 33 n.e.'],
+  ['Powrót z wygnania', -538, 'Ezd 1', 'Perski król Cyrus pozwala Żydom uprowadzonym do Babilonu wrócić do ojczyzny i odbudować świątynię w Jerozolimie. Powracający, prowadzeni m.in. przez Zorobabela, odbudowują ją; druga świątynia zostaje ukończona ok. 515 p.n.e. (Ezd 6,15).'],
+  ['Narodzenie Chrystusa', -5, 'Mt 2; Łk 2', 'Jezus, Syn Boży, rodzi się z Maryi Dziewicy w Betlejem, mieście Dawida, i zostaje złożony w żłobie. Odwiedzają Go pasterze i Mędrcy ze Wschodu, a Kościół świętuje to wydarzenie w Boże Narodzenie.', 'ok. 6–4 p.n.e.'],
+  ['Ukrzyżowanie i Pięćdziesiątnica', 30, 'Dz 2', 'Jezus umiera na krzyżu w Jerozolimie i trzeciego dnia zmartwychwstaje, a pięćdziesiąt dni później Duch Święty zstępuje na apostołów zgromadzonych z Maryją. Piotr wygłasza pierwsze kazanie, a tego dnia chrzest przyjmuje około trzech tysięcy osób: to narodziny Kościoła.', '30 lub 33 n.e.'],
   ['Upadek Rzymu', 476, '', 'Upada zachodnie cesarstwo rzymskie. Przez kolejne tysiąc lat Kościół jednoczy Europę: klasztory chronią wiedzę, misjonarze chrzczą nowe ludy, powstają katedry i uniwersytety. Kościół daje też zalążek rozwojowi nauki: w jego szkołach i na uniwersytetach przekonanie, że stworzony świat jest rozumny i poznawalny, prowadzi do badania przyrody.'],
   ['Reformacja', 1517, '', 'Luter ogłasza 95 tez. Spór o odpusty szybko przeradza się w szerszy ruch: Luter naucza o zbawieniu przez samą wiarę i o Piśmie Świętym jako jedynym autorytecie, odrzucając część nauczania i władzy Kościoła. Za nim idą inni reformatorzy, jak Zwingli i Kalwin, a w Anglii Henryk VIII zrywa z Rzymem. Dzięki drukowi i poparciu władców w ciągu kilku dekad zachodnie chrześcijaństwo dzieli się na katolików i protestantów. Kościół odpowiada odnową na Soborze Trydenckim (1545–1563).']
 ];
@@ -159,12 +159,12 @@ const FIG = [
   ['Izajasz', -742, 'Prorok', 'Prorok z Jerozolimy, który zapowiada Emmanuela, którego pocznie Dziewica, i Sługę Pańskiego cierpiącego za grzechy innych. Kościół tak często czyta jego słowa w Adwencie, że św. Hieronim nazwał go raczej ewangelistą niż prorokiem.', 'Iz 6,1', 'sem'],
   ['Ezechiasz', -715, 'Król Judy', 'Pobożny król Judy, który oczyścił świątynię z bałwochwalstwa i odnowił obchody Paschy. Gdy Asyryjczycy oblegli Jerozolimę, zaufał Bogu za radą Izajasza, a miasto ocalało.', '2 Krl 18-19', 'sem'],
   ['Daniel', -605, 'Prorok w Babilonie', 'Prorok, młody Judejczyk uprowadzony do Babilonu, który pozostał wierny Bogu na dworze królewskim i wyszedł nietknięty z jaskini lwów. W jego wizji pojawia się „ktoś podobny do Syna Człowieczego” (Dn 7,13); tak właśnie często nazywał siebie Jezus.', 'Dn 1', 'sem'],
-  ['Cyrus', -538, 'Król Persji', 'Pozwolił Żydom wrócić do Jerozolimy.', 'Ezd 1', 'jap'],
-  ['Estera', -480, 'Królowa Persji', 'Ocaliła Żydów przed spiskiem Hamana.', 'Est 4-8', 'sem'],
-  ['Nehemiasz', -445, 'Namiestnik', 'Odbudował mury Jerozolimy.', 'Ne 2-6', 'sem'],
-  ['Jan Chrzciciel', -6, 'Poprzednik', 'Przygotował drogę Chrystusowi.', 'Łk 1', 'chu'],
-  ['Jezus', -5, 'Chrystus', 'Urodził się w Betlejem.', 'Mt 2; Łk 2', 'chu'],
-  ['Paweł', 35, 'Apostoł', 'Zaniósł Ewangelię do całego świata rzymskiego.', 'Dz 9-28', 'chu'],
+  ['Cyrus', -538, 'Król Persji', 'Król Persji, który w 539 p.n.e. zdobył Babilon i pozwolił Żydom wrócić do Jerozolimy. Księga Izajasza nazywa go „pomazańcem” Pana, czyli władcą wybranym przez Boga do wykonania Jego planu (Iz 45,1).', 'Ezd 1', 'jap'],
+  ['Estera', -480, 'Królowa Persji', 'Żydowska królowa Persji, żona króla Aswerusa, która z narażeniem życia wstawiła się za swoim ludem i ocaliła go przed zagładą zaplanowaną przez Hamana. Na pamiątkę tego ocalenia Żydzi obchodzą święto Purim.', 'Est 4-8', 'sem'],
+  ['Nehemiasz', -445, 'Namiestnik', 'Żydowski podczaszy króla Persji, który został namiestnikiem Judy i odbudował mury Jerozolimy w 52 dni (Ne 6,15). Doprowadził też do tego, że lud uroczyście odnowił przymierze z Bogiem (Ne 10).', 'Ne 2-6', 'sem'],
+  ['Jan Chrzciciel', -6, 'Poprzednik', 'Syn Zachariasza i Elżbiety, krewny Jezusa, który nad Jordanem wzywał do nawrócenia i udzielał chrztu, także samemu Jezusowi. Wskazał na Niego słowami „Oto Baranek Boży” (J 1,29), które Kościół powtarza w każdej Mszy Świętej.', 'Łk 1', 'chu'],
+  ['Jezus', -5, 'Chrystus', 'Syn Boży i Syn Maryi, urodzony w Betlejem, który nauczał o królestwie Bożym, uzdrawiał chorych i przebaczał grzechy. Umarł na krzyżu i zmartwychwstał; chrześcijanie wyznają Go jako Zbawiciela świata, a od Jego narodzin, obliczonych w VI wieku przez mnicha Dionizego Małego, liczymy lata naszej ery.', 'Mt 2; Łk 2', 'chu'],
+  ['Paweł', 35, 'Apostoł', 'Żyd z Tarsu, najpierw prześladowca chrześcijan, który po spotkaniu ze zmartwychwstałym Jezusem pod Damaszkiem został Apostołem Narodów. Zakładał wspólnoty w całym świecie rzymskim, jego listy stanowią dużą część Nowego Testamentu, a życie oddał jako męczennik w Rzymie.', 'Dz 9-28', 'chu'],
   ['Konstantyn', 313, 'Cesarz rzymski', 'Wraz z Licyniuszem ogłasza edykt mediolański (313), który daje chrześcijanom wolność wyznania i kończy prześladowania.', '', 'jap'],
   ['Marcin Luter', 1517, 'Reformator', 'Zapoczątkował reformację w Niemczech.', '', 'ref'],
   // Later figures. An optional 7th field sets the letter shown in the circle.

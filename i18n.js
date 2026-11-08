@@ -241,19 +241,22 @@ const TEXT = {
    [
     "Grecja",
     "Dn 8,21",
-    "Kolebka filozofii, demokracji i nauki; po grecku spisano Nowy Testament."
+    "Kraina miast-państw, takich jak Ateny i Sparta, kolebka filozofii, demokracji, teatru i nauki. Dzięki podbojom Aleksandra Wielkiego greka stała się wspólnym językiem świata śródziemnomorskiego, i w tym języku spisano cały Nowy Testament."
    ],
    [
     "Persja",
-    "Dn 8,20"
+    "Dn 8,20",
+    "Imperium Achemenidów z ośrodkami w Suzie i Persepolis, jedno z największych państw starożytności, od Indii po Egipt. Jego królowie, zwłaszcza Cyrus, pozwolili Żydom wrócić z wygnania i odbudować świątynię."
    ],
    [
     "Rzym",
-    "Dn 7,7"
+    "Dn 7,7",
+    "Miasto założone według tradycji w 753 p.n.e., które stało się imperium obejmującym cały basen Morza Śródziemnego; za panowania jego pierwszego cesarza, Augusta, urodził się Jezus (Łk 2,1). W Rzymie ponieśli męczeństwo święci Piotr i Paweł, a miasto stało się siedzibą papieży i centrum Kościoła katolickiego."
    ],
    [
     "Kościół katolicki",
-    "Mt 16,18; Dz 2"
+    "Mt 16,18; Dz 2",
+    "Wspólnota uczniów Jezusa, zbudowana na apostołach z Piotrem na czele, która od Pięćdziesiątnicy głosi Ewangelię na całym świecie. Według watykańskiego Rocznika Statystycznego liczy dziś ponad 1,4 miliarda wiernych, a jej widzialnym zwierzchnikiem jest papież, Biskup Rzymu i następca św. Piotra."
    ],
    [
     "Prawosławie",
@@ -329,19 +332,19 @@ const TEXT = {
    [
     "Powrót z wygnania",
     "Ezd 1",
-    "Cyrus pozwala Żydom wrócić do ojczyzny.",
+    "Perski król Cyrus pozwala Żydom uprowadzonym do Babilonu wrócić do ojczyzny i odbudować świątynię w Jerozolimie. Powracający, prowadzeni m.in. przez Zorobabela, odbudowują ją; druga świątynia zostaje ukończona ok. 515 p.n.e. (Ezd 6,15).",
     null
    ],
    [
     "Narodzenie Chrystusa",
     "Mt 2; Łk 2",
-    "Jezus rodzi się w Betlejem, przed śmiercią Heroda w 4 p.n.e.",
+    "Jezus, Syn Boży, rodzi się z Maryi Dziewicy w Betlejem, mieście Dawida, i zostaje złożony w żłobie. Odwiedzają Go pasterze i Mędrcy ze Wschodu, a Kościół świętuje to wydarzenie w Boże Narodzenie.",
     "ok. 6–4 p.n.e."
    ],
    [
     "Ukrzyżowanie i Pięćdziesiątnica",
     "Dz 2",
-    "W Jerozolimie rodzi się Kościół.",
+    "Jezus umiera na krzyżu w Jerozolimie i trzeciego dnia zmartwychwstaje, a pięćdziesiąt dni później Duch Święty zstępuje na apostołów zgromadzonych z Maryją. Piotr wygłasza pierwsze kazanie, a tego dnia chrzest przyjmuje około trzech tysięcy osób: to narodziny Kościoła.",
     "30 lub 33 n.e."
    ],
    [
@@ -482,37 +485,37 @@ const TEXT = {
    [
     "Cyrus",
     "Król Persji",
-    "Pozwolił Żydom wrócić do Jerozolimy.",
+    "Król Persji, który w 539 p.n.e. zdobył Babilon i pozwolił Żydom wrócić do Jerozolimy. Księga Izajasza nazywa go „pomazańcem” Pana, czyli władcą wybranym przez Boga do wykonania Jego planu (Iz 45,1).",
     "Ezd 1"
    ],
    [
     "Estera",
     "Królowa Persji",
-    "Ocaliła Żydów przed spiskiem Hamana.",
+    "Żydowska królowa Persji, żona króla Aswerusa, która z narażeniem życia wstawiła się za swoim ludem i ocaliła go przed zagładą zaplanowaną przez Hamana. Na pamiątkę tego ocalenia Żydzi obchodzą święto Purim.",
     "Est 4-8"
    ],
    [
     "Nehemiasz",
     "Namiestnik",
-    "Odbudował mury Jerozolimy.",
+    "Żydowski podczaszy króla Persji, który został namiestnikiem Judy i odbudował mury Jerozolimy w 52 dni (Ne 6,15). Doprowadził też do tego, że lud uroczyście odnowił przymierze z Bogiem (Ne 10).",
     "Ne 2-6"
    ],
    [
     "Jan Chrzciciel",
     "Poprzednik",
-    "Przygotował drogę Chrystusowi.",
+    "Syn Zachariasza i Elżbiety, krewny Jezusa, który nad Jordanem wzywał do nawrócenia i udzielał chrztu, także samemu Jezusowi. Wskazał na Niego słowami „Oto Baranek Boży” (J 1,29), które Kościół powtarza w każdej Mszy Świętej.",
     "Łk 1"
    ],
    [
     "Jezus",
     "Chrystus",
-    "Urodził się w Betlejem.",
+    "Syn Boży i Syn Maryi, urodzony w Betlejem, który nauczał o królestwie Bożym, uzdrawiał chorych i przebaczał grzechy. Umarł na krzyżu i zmartwychwstał; chrześcijanie wyznają Go jako Zbawiciela świata, a od Jego narodzin, obliczonych w VI wieku przez mnicha Dionizego Małego, liczymy lata naszej ery.",
     "Mt 2; Łk 2"
    ],
    [
     "Paweł",
     "Apostoł",
-    "Zaniósł Ewangelię do całego świata rzymskiego.",
+    "Żyd z Tarsu, najpierw prześladowca chrześcijan, który po spotkaniu ze zmartwychwstałym Jezusem pod Damaszkiem został Apostołem Narodów. Zakładał wspólnoty w całym świecie rzymskim, jego listy stanowią dużą część Nowego Testamentu, a życie oddał jako męczennik w Rzymie.",
     "Dz 9-28"
    ],
    [
@@ -1131,19 +1134,22 @@ const TEXT = {
    [
     "Greece",
     "Dan 8:21",
-    "The cradle of philosophy, democracy and science; the New Testament was written in Greek."
+    "A land of city-states such as Athens and Sparta, the cradle of philosophy, democracy, theatre and science. Through the conquests of Alexander the Great, Greek became the common language of the Mediterranean world, and the whole New Testament was written in it."
    ],
    [
     "Persia",
-    "Dan 8:20"
+    "Dan 8:20",
+    "The Achaemenid Empire, centred on Susa and Persepolis, one of the largest states of the ancient world, from India to Egypt. Its kings, above all Cyrus, allowed the Jews to return from exile and rebuild the temple."
    ],
    [
     "Rome",
-    "Dan 7:7"
+    "Dan 7:7",
+    "A city founded, by tradition, in 753 BC, which grew into an empire around the whole Mediterranean; Jesus was born in the reign of its first emperor, Augustus (Luke 2:1). Sts Peter and Paul were martyred in Rome, and the city became the seat of the popes and the centre of the Catholic Church."
    ],
    [
     "Catholic Church",
-    "Matt 16:18; Acts 2"
+    "Matt 16:18; Acts 2",
+    "The community of Jesus’ disciples, built on the apostles with Peter at their head, which since Pentecost has proclaimed the Gospel throughout the world. According to the Vatican’s Statistical Yearbook it has over 1.4 billion members today, and its visible head is the Pope, the Bishop of Rome and successor of St Peter."
    ],
    [
     "Orthodox Church",
@@ -1219,19 +1225,19 @@ const TEXT = {
    [
     "Return from exile",
     "Ezra 1",
-    "Cyrus permits the Jews to return.",
+    "The Persian king Cyrus allows the Jews exiled in Babylon to return home and rebuild the temple in Jerusalem. The returning exiles, led among others by Zerubbabel, rebuild it; the second temple is completed around 515 BC (Ezra 6:15).",
     null
    ],
    [
     "Birth of Christ",
     "Matt 2; Luke 2",
-    "Jesus is born in Bethlehem, before the death of Herod in 4 BC.",
+    "Jesus, the Son of God, is born of the Virgin Mary in Bethlehem, the city of David, and laid in a manger. Shepherds and the Magi from the East come to see him, and the Church celebrates this at Christmas.",
     "c. 6–4 BC"
    ],
    [
     "Crucifixion and Pentecost",
     "Acts 2",
-    "The church begins at Jerusalem.",
+    "Jesus dies on the cross in Jerusalem and rises on the third day, and fifty days later the Holy Spirit comes down on the apostles gathered with Mary. Peter preaches the first sermon, and about three thousand people are baptised that day: the birth of the Church.",
     "AD 30 or 33"
    ],
    [
@@ -1372,37 +1378,37 @@ const TEXT = {
    [
     "Cyrus",
     "King of Persia",
-    "Allowed the Jews to return to Jerusalem.",
+    "King of Persia, who took Babylon in 539 BC and allowed the Jews to return to Jerusalem. The Book of Isaiah calls him the Lord’s “anointed”, a ruler chosen by God to carry out His plan (Isa 45:1).",
     "Ezra 1"
    ],
    [
     "Esther",
     "Queen of Persia",
-    "Saved the Jews from Haman's plot.",
+    "A Jewish queen of Persia, wife of King Ahasuerus, who risked her life to plead for her people and saved them from the destruction Haman had planned. Jews celebrate the feast of Purim in memory of this rescue.",
     "Esth 4-8"
    ],
    [
     "Nehemiah",
     "Governor",
-    "Rebuilt the walls of Jerusalem.",
+    "A Jewish cupbearer to the king of Persia who became governor of Judah and rebuilt the walls of Jerusalem in 52 days (Neh 6:15). He also led the people to renew their covenant with God (Neh 10).",
     "Neh 2-6"
    ],
    [
     "John the Baptist",
     "Forerunner",
-    "Prepared the way for Christ.",
+    "Son of Zechariah and Elizabeth, a relative of Jesus, who called people to repentance at the Jordan and baptised them, Jesus too. He pointed to Him with the words “Behold the Lamb of God” (John 1:29), which the Church repeats at every Mass.",
     "Luke 1"
    ],
    [
     "Jesus",
     "Christ",
-    "Born in Bethlehem.",
+    "Son of God and son of Mary, born in Bethlehem, who taught about the Kingdom of God, healed the sick and forgave sins. He died on the cross and rose again; Christians confess Him as the Saviour of the world, and we count the years of our era from His birth, as calculated in the 6th century by the monk Dionysius Exiguus.",
     "Matt 2; Luke 2"
    ],
    [
     "Paul",
     "Apostle",
-    "Took the gospel across the Roman world.",
+    "A Jew from Tarsus, at first a persecutor of Christians, who after meeting the risen Jesus near Damascus became the Apostle of the Nations. He founded communities across the Roman world, his letters make up a large part of the New Testament, and he gave his life as a martyr in Rome.",
     "Acts 9-28"
    ],
    [
