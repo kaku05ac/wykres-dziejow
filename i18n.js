@@ -1909,7 +1909,7 @@ const UI = {
       figures: 'Ważne postaci, umieszczone w roku, z którego są najbardziej znane.',
       patriarchs: 'Patriarchowie i inne osoby, których lata życia podaje Pismo Święte.',
       kings: 'Okresy panowania królów Judy (górny pas) i Izraela (dolny pas).',
-      alive: 'Liczba osób i narodów z wykresu żyjących w tym samym czasie; linia kropkowana oznacza same narody.',
+      alive: 'Ile osób i narodów z wykresu istnieje w danym roku. Linia ciągła: osoby i narody razem; linia kropkowana: tylko narody.',
       nations: 'Narody i Kościoły od chwili ich powstania.' },
     realm: { un: 'Zjednoczone królestwo', ju: 'Królestwo Judy', is: 'Królestwo Izraela' }, realmShort: { un: 'Izrael', ju: 'Juda', is: 'Izrael' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Wiek przy objęciu tronu: ' + age + '.' : '') + ' Pismo podaje: ' + reign + ' panowania.',
@@ -1952,7 +1952,7 @@ const UI = {
     science: 'Growth of science',
     laneTips: { events: 'Key events, each with a picture or film.', figures: 'Key people, at the year of their main deed.',
       patriarchs: 'People whose lifespan the Bible gives.', kings: 'Reigns of the kings: Judah (top) and Israel (bottom).',
-      alive: 'How many people and nations on the chart are alive at once; dotted: nations only.', nations: 'Nations and Churches, from their beginning.' },
+      alive: 'How many people and nations on the chart exist in a given year. Solid line: people and nations together; dotted line: nations only.', nations: 'Nations and Churches, from their beginning.' },
     realm: { un: 'United kingdom', ju: 'Kingdom of Judah', is: 'Kingdom of Israel' }, realmShort: { un: 'Israel', ju: 'Judah', is: 'Israel' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Age at accession: ' + age + '.' : '') + ' Scripture gives ' + reign + ' of reign.',
     ask: {
