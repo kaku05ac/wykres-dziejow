@@ -755,7 +755,8 @@
       + 'made for a Catholic audience in Poland. Answer the reader\'s questions about history, the Bible, the Church, philosophy and culture.\n'
       + 'Rules:\n'
       + '- Answer in ' + U().ask.lang + '.\n'
-      + '- 2 to 4 sentences, at most about 90 words. Plain text only: no Markdown, no lists, no headings.\n'
+      + '- 3 to 6 sentences, at most about 150 words. Plain text only: no Markdown, no lists, no headings.\n'
+      + '- The reader already sees a short description on the chart card (given in the chart context). Never restate it: go deeper, with background, how it fits the wider story, its meaning for faith and the Church, and less known but reliable details.\n'
       + '- Be historically accurate and balanced. Speak of the Catholic Church with respect, and of other Christian traditions and other religions fairly, without polemics.\n'
       + '- Dates follow Catholic study Bibles: Genesis 1-11 (Creation to Terah) has no dates; never give BC dates or years from Creation for it. From Abraham on, dates before 722 BC are approximate. Do not use Ussher\'s dates.\n'
       + '- If you are not sure of something, say so briefly instead of guessing.\n'
@@ -770,7 +771,8 @@
       const near = FIG.filter(g => Math.abs(g[1] - y) <= 80).map(g => g[0] + ' (' + fmtD(g[1]) + ')');
       return 'Chart context: year ' + fmt(y) + '; section "' + ev[0] + '" (' + evWhen(ev) + '): ' + ev[3]
         + (alive.length ? '\nPeoples and patriarchs alive: ' + alive.join(', ') : '')
-        + (near.length ? '\nFigures near this year: ' + near.join(', ') : '');
+        + (near.length ? '\nFigures near this year: ' + near.join(', ') : '')
+        + '\nThe card the reader already sees: ' + $('cardTitle').textContent + ': ' + $('cardBody').textContent;
     };
 
     const bubble = (cls, text) => {
@@ -842,10 +844,10 @@
       if (sample) box.hidden = false;
     };
     start();
-    // A question about marks clicked on the timeline: opens the chat with it typed in, ready to send.
+    // A click on a marker only shows its card. If the chat is already open, it also types a question
+    // about that marker, ready to send; a closed chat stays closed.
     const prefill = items => {
-      if (box.hidden || off) return;
-      setOpen(true);
+      if (box.hidden || off || body.hidden) return;
       input.value = U().ask.about(items.map(t => { const [name, when] = t.split(' · '); return !when || when === U().undated ? name : name + ' (' + when + ')'; }));
       input.focus({ preventScroll: true });
       input.setSelectionRange(input.value.length, input.value.length);
