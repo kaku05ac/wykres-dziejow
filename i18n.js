@@ -209,9 +209,9 @@ const TEXT = {
     "Ludy Półwyspu Arabskiego; tradycja umieszcza tam krainę Saby, z której królowa przybyła do Salomona. W dniu Pięćdziesiątnicy wśród słuchaczy apostołów są także Arabowie (Dz 2,11)."
    ],
    [
-    "Izrael",
+    "Izrael / naród żydowski",
     "Joz 1; 2 Krl 25",
-    "Naród wywodzący się od dwunastu synów Jakuba, który po wyjściu z Egiptu osiedlił się w Kanaanie, a za Dawida i Salomona stworzył królestwo ze stolicą w Jerozolimie. Z tego narodu pochodzi Jezus, a św. Jan Paweł II nazwał Żydów „starszymi braćmi” chrześcijan w wierze."
+    "Naród wywodzący się od dwunastu synów Jakuba, który po wyjściu z Egiptu osiedlił się w Kanaanie, a za Dawida i Salomona stworzył królestwo ze stolicą w Jerozolimie. Po niewoli babilońskiej wraca do ojczyzny, a po zburzeniu świątyni przez Rzymian w 70 r. żyje w diasporze na całym świecie. Z tego narodu pochodzi Jezus, a św. Jan Paweł II nazwał Żydów „starszymi braćmi” chrześcijan w wierze."
    ],
    [
     "Babilon",
@@ -1151,9 +1151,9 @@ const TEXT = {
     "The peoples of the Arabian Peninsula; tradition places there the land of Sheba, whose queen came to visit Solomon. At Pentecost, Arabs are among those who hear the apostles (Acts 2:11)."
    ],
    [
-    "Israel",
+    "Israel / the Jewish people",
     "Josh 1; 2 Kgs 25",
-    "The people descended from the twelve sons of Jacob, who settled in Canaan after the Exodus and under David and Solomon formed a kingdom with Jerusalem as its capital. Jesus comes from this people, and St John Paul II called the Jews the “elder brothers” of Christians in faith."
+    "The people descended from the twelve sons of Jacob, who settled in Canaan after the Exodus and under David and Solomon formed a kingdom with Jerusalem as its capital. After the Babylonian exile they return home, and after the Romans destroy the temple in AD 70 they live in a diaspora across the world. Jesus comes from this people, and St John Paul II called the Jews the “elder brothers” of Christians in faith."
    ],
    [
     "Babylon",
@@ -1926,7 +1926,7 @@ const UI = {
       eyebrow: 'Datowanie wg katolickich wydań Biblii · Od stworzenia do 2026 n.e.',
       title: 'Wykres dziejów świata',
       lede: 'Rozdziały 1–11 Księgi Rodzaju nie podają dat, dlatego oznaczamy je jako „bez daty”; podajemy tylko długość życia patriarchów, tak jak Biblia. Od Abrahama daty są zgodne z katolickimi wydaniami Biblii, a przed 722 p.n.e. są przybliżone. Naciśnij „Odtwórz” albo przeciągnij oś czasu.',
-      periods: 'Okresy', aliveIn: 'Żyjący w', events: 'Wydarzenia', fullChart: 'Cały wykres',
+      periods: 'Okresy', aliveIn: 'Współcześni w', events: 'Wydarzenia', fullChart: 'Cały wykres',
       zoomIn: 'Powiększ', zoomOut: 'Pomniejsz', chart: 'Kołowy wykres chronologii', reel: 'Wydarzenia w obrazach',
       dock: 'Oś czasu: przeciągnij, aby zmienić rok, albo użyj klawiszy strzałek', lang: 'Język',
       askBar: 'Zapytaj o historię', askHello: 'dzień dobry',
@@ -1968,7 +1968,7 @@ const UI = {
       eyebrow: 'Catholic study Bible dating · Creation to AD 2026',
       title: 'World history chart',
       lede: 'Genesis 1–11 gives no dates, so it is marked “undated”; only the patriarchs’ lifespans are shown, as the Bible gives them. From Abraham on, dates follow Catholic study Bibles and are approximate before 722 BC. Press Play or drag the timeline.',
-      periods: 'Periods', aliveIn: 'Alive in', events: 'Events', fullChart: 'Full chart',
+      periods: 'Periods', aliveIn: 'Contemporaries in', events: 'Events', fullChart: 'Full chart',
       zoomIn: 'Zoom in', zoomOut: 'Zoom out', chart: 'Radial chronology chart', reel: 'Events in pictures',
       dock: 'Timeline: drag to change the year, or use the arrow keys', lang: 'Language',
       askBar: 'Ask about history', askHello: 'hello',
