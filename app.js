@@ -257,11 +257,7 @@
       }
       L.push({ label: U().lanes.nations, kind: 'dots', h: 30, cls: 'dk-head',
         items: NAT.map((n, i) => ({ y: n[2], key: 'n' + i, name: n[0], when: n[2] === SEAM ? U().beforeSeamLower : n[2] < SEAM ? U().fromCain : U().from + fmtD(n[2]), color: COL[n[1]][1] })) });
-      const chItem = (c, i) => ({ y: c[1], key: 'c' + i, name: c[0], when: fmt(c[1]), color: COL[c[4] || 'chu'][1] });
-      L.push({ label: U().lanes.church, kind: 'dots', h: 26, cls: 'dk-sub',
-        items: CH_EV.map(chItem).filter((_, i) => !CH_EV[i][4]) });
-      L.push({ label: U().lanes.history, kind: 'dots', h: 26, cls: 'dk-sub',
-        items: CH_EV.map(chItem).filter((_, i) => CH_EV[i][4]) });
+      // Church and historic events stay on the ring (diamonds); they have no lanes of their own here.
       return L;
     };
 
