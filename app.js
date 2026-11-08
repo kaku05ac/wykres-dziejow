@@ -918,8 +918,8 @@
       tx = e.clientX; ty = e.clientY;
       const t = e.target;
       dot.classList.toggle('is-text', !!(t.closest && t.closest('input, textarea')));
-      // Over the year line on the timeline the dot hides and the two-way drag arrows show instead.
-      const onSlider = !!(t.closest && t.closest('#dkHead'));
+      // Over the year line on the timeline (two-way arrows) and over the wheel (a hand) the dot hides for the native pointer.
+      const onSlider = !!(t.closest && t.closest('#dkHead, #chart'));
       dot.classList.toggle('is-slider', onSlider);
       // Over the pictures and films the dot shows the negative of what is under it, like a photographic negative.
       dot.classList.toggle('is-media', !!(t.closest && t.closest('.art-slot')));

@@ -312,6 +312,10 @@ html.has-cursor, html.has-cursor * { cursor: none !important; }
 html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 /* On the timeline the dot stays; only over the year line do the two-way arrows show, to say it can be dragged. */
 html.has-cursor #dkHead, html.has-cursor #dkHead * { cursor: ew-resize !important; }
+/* Over the wheel an open hand says it can be moved; it closes while dragging, and marks and rings show the pointing hand. */
+html.has-cursor #chart, html.has-cursor #chart * { cursor: grab !important; }
+html.has-cursor #chart.dragging, html.has-cursor #chart.dragging * { cursor: grabbing !important; }
+html.has-cursor #chart [data-key], html.has-cursor #chart [data-key] * { cursor: pointer !important; }
 .cursor-dot { position: fixed; left: 0; top: 0; z-index: 10000; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%;
   background: #111; box-shadow: 3px 4px 6px rgba(0, 0, 0, .22);
   pointer-events: none; opacity: 0; will-change: transform;
