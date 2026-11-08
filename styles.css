@@ -149,7 +149,6 @@ h1, h2, p { margin: 0; }
 .reel-text { position: absolute; left: 200px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: flex-start; gap: 3px; max-width: 280px; pointer-events: none; transition: top .35s cubic-bezier(.3, .7, .2, 1); }
 .rt-meta { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--n-600); }
 .rt-title { font-family: var(--serif); font-size: 22px; font-weight: 300; letter-spacing: -0.01em; line-height: 1.15; color: var(--n-900); }
-.rt-body { font-size: 13px; line-height: 1.45; color: var(--n-600); }
 @media (prefers-reduced-motion: reduce) { .reel-track, .art-slot, .reel-text { transition: none; } }
 
 
@@ -290,7 +289,6 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   .art-slot.is-current { width: 90px; height: 160px; }
   .reel-text { left: 110px; max-width: 200px; }
   .rt-title { font-size: 17px; }
-  .rt-body { display: none; }
   .zoom { right: 12px; bottom: 12px; }
   .ask-bar { padding: 0 16px; }
   .ask-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) 132px; height: 430px; padding: 0 12px 12px; }

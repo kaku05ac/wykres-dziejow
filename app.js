@@ -73,7 +73,7 @@
     yearLabel: $('yearLabel'), aliveYear: $('aliveYear'), play: $('play'), playLabel: $('playLabel'),
     cardTitle: $('cardTitle'), cardBody: $('cardBody'), cardRef: $('cardRef'),
     alive: $('alive'), eventList: $('eventList'), legend: $('legend'),
-    reel: $('reel'), reelTrack: $('reelTrack'), reelText: $('reelText'), capMeta: $('capMeta'), capTitle: $('capTitle'), capBody: $('capBody')
+    reel: $('reel'), reelTrack: $('reelTrack'), reelText: $('reelText'), capMeta: $('capMeta'), capTitle: $('capTitle')
   };
   const cache = new Map();
   const put = (node, prop, value) => {
@@ -612,7 +612,6 @@
     put(el.reelText, 'style', `top: ${(ty + topOf(idx) + hShown / 2).toFixed(1)}px`);
     put(el.capMeta, 'text', `${evWhen(ev)} · ${ev[2] || U().history}`);
     put(el.capTitle, 'text', ev[0]);
-    put(el.capBody, 'text', ev[3]);
 
     // Camera.
     const w = view.w;
