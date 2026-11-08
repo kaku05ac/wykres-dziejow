@@ -187,8 +187,11 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .dk-bar { stroke-linecap: round; }
 .dk-dot:hover .dk-bar, .dk-dot:hover .dk-band { filter: brightness(.85); }
 .dk-count { font-size: 8.5px; font-weight: 600; fill: var(--n-0); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
-.dk-area-nat { fill: var(--c5); opacity: .45; }
-.dk-area-pat { fill: var(--c4); opacity: .55; }
+/* "Alive" lane: a soft gradient under the total and two thin outlines (everyone alive; nations only). */
+.dk-area-fill { pointer-events: none; }
+.dk-area-line { fill: none; stroke-width: 1.2; stroke-linejoin: round; }
+.dk-area-all { stroke: var(--c5); }
+.dk-area-nat2 { stroke: var(--c4); stroke-width: 1; stroke-dasharray: 2 2.5; }
 .dk-testament { stroke: var(--n-300); stroke-width: 1; }
 .dk-testament-label { font-family: var(--mono); font-size: 8.5px; letter-spacing: .08em; text-transform: uppercase; fill: var(--n-500); }
 .dk-head-line { stroke: var(--accent); stroke-width: 1; }

@@ -343,8 +343,13 @@
             const a = NAT.filter(n => t >= n[2] && t <= n[3]).length, b = PAT.filter(p => t >= p[1] && t <= patEnd(p)).length;
             nat.push([x, a]); all.push([x, a + b]); max = Math.max(max, a + b);
           }
-          const area = pts => `M${f1(x0)} ${base}` + pts.map(([x, v]) => `L${f1(x)} ${f1(base - v / max * (base - top))}`).join('') + `L${f1(x1)} ${base}Z`;
-          out += `<path class="dk-area-pat" d="${area(all)}"><title>${U().alivePat}</title></path><path class="dk-area-nat" d="${area(nat)}"><title>${U().aliveNat}</title></path>`;
+          // Light version: a soft gradient under the total, with two thin outlines (all alive, and nations only).
+          const line = pts => pts.map(([x, v], k) => `${k ? 'L' : 'M'}${f1(x)} ${f1(base - v / max * (base - top))}`).join('');
+          const area = pts => `M${f1(x0)} ${base}` + line(pts).replace(/^M/, 'L') + `L${f1(x1)} ${base}Z`;
+          out += `<defs><linearGradient id="dkAliveGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--c5)" stop-opacity=".28"/><stop offset="1" stop-color="var(--c5)" stop-opacity="0"/></linearGradient></defs>`
+            + `<path class="dk-area-fill" d="${area(all)}" fill="url(#dkAliveGrad)"/>`
+            + `<path class="dk-area-line dk-area-all" d="${line(all)}"><title>${U().alivePat}</title></path>`
+            + `<path class="dk-area-line dk-area-nat2" d="${line(nat)}"><title>${U().aliveNat}</title></path>`;
         }
         y += l.h;
       });
