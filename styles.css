@@ -73,7 +73,7 @@ h1, h2, p { margin: 0; }
 .chip:active { background: var(--n-100); }
 
 .card { gap: 8px; min-height: 76px; }
-.card-title { font-family: 'Newsreader', 'Iowan Old Style', Georgia, serif; font-size: 26px; font-weight: 300; letter-spacing: -0.015em; line-height: 1.1; }
+.card-title { font-family: 'Newsreader', 'Iowan Old Style', Georgia, serif; font-size: 25px; font-weight: 300; letter-spacing: -0.015em; line-height: 1.1; }
 .card-body { font-size: 13px; line-height: 1.55; color: #4d4a4c; }
 .card-ref { font-family: 'IBM Plex Mono', ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .card-ref:empty { display: none; }
