@@ -598,8 +598,8 @@
     const curEv = eventAt(year);
     const card = key && items[key] ? items[key] : items['e' + curEv] || { title: EV[curEv][0], body: EV[curEv][3], ref: EV[curEv][2], when: evWhen(EV[curEv]) };
     put(el.cardTitle, 'text', card.title);
-    // „KKK” (the Catechism) gets a hover note that says what the letters stand for, like the timeline lanes.
-    const withKKK = t => esc(t).replace(/\bKKK\b/g, `<abbr class="kkk" title="${esc(U().kkk)}">KKK</abbr>`);
+    // The Catechism's abbreviation (KKK in Polish, CCC in English) gets a hover note that spells it out, like the timeline lanes.
+    const withKKK = t => esc(t).replace(/\b(KKK|CCC)\b/g, m => `<abbr class="kkk" title="${esc(U().kkk)}">${m}</abbr>`);
     put(el.cardBody, 'html', withKKK(card.body));
     // The current event's date is already in the big year above, so its card shows only the reference;
     // a hovered or selected item (another time) keeps its date in this line.
