@@ -114,7 +114,7 @@ const TEXT = {
    [
     "Abraham",
     "Rdz 25,7",
-    "Patriarcha, któremu Bóg zmienia imię z Abram na Abraham, „ojciec mnóstwa narodów”. Ufa Bogu, zawiera z Nim przymierze i w starości otrzymuje syna Izaaka. Szanują go żydzi, chrześcijanie i muzułmanie, a Kościół wspomina go w każdej Mszy odprawianej z Kanonem Rzymskim."
+    "Patriarcha, który na Boże wezwanie opuszcza Charan i wyrusza w nieznane, a Bóg zmienia mu imię z Abram na Abraham, „ojciec mnóstwa narodów”. Wbrew nadziei ufa obietnicy i w starości otrzymuje syna Izaaka, dlatego św. Paweł nazywa go ojcem wszystkich wierzących (Rz 4,11). Czczą go żydzi, chrześcijanie i muzułmanie, a Kanon Rzymski wspomina go jako „naszego patriarchę”."
    ],
    [
     "Sara",
@@ -401,7 +401,7 @@ const TEXT = {
    [
     "Abraham",
     "Ojciec narodów",
-    "Patriarcha, któremu Bóg zmienia imię z Abram na Abraham, „ojciec mnóstwa narodów”. Ufa Bogu, zawiera z Nim przymierze i w starości otrzymuje syna Izaaka. Szanują go żydzi, chrześcijanie i muzułmanie, a Kościół wspomina go w każdej Mszy odprawianej z Kanonem Rzymskim.",
+    "Patriarcha, który na Boże wezwanie opuszcza Charan i wyrusza w nieznane, a Bóg zmienia mu imię z Abram na Abraham, „ojciec mnóstwa narodów”. Wbrew nadziei ufa obietnicy i w starości otrzymuje syna Izaaka, dlatego św. Paweł nazywa go ojcem wszystkich wierzących (Rz 4,11). Czczą go żydzi, chrześcijanie i muzułmanie, a Kanon Rzymski wspomina go jako „naszego patriarchę”.",
     "Rdz 12"
    ],
    [
@@ -437,13 +437,13 @@ const TEXT = {
    [
     "Debora",
     "Sędzia i prorokini",
-    "Prorokini i jedna z sędziów, czyli przywódców Izraela przed czasami królów. Razem z wodzem Barakiem prowadzi lud do zwycięstwa nad Syserą, a jej pieśń (Sdz 5) uchodzi za jeden z najstarszych utworów Biblii.",
+    "Prorokini i sędzia Izraela, która pod palmą między Ramą a Betel rozsądza spory ludu (Sdz 4,5). Gdy Kananejczycy uciskają kraj, wzywa wodza Baraka do walki i idzie razem z nim. Po zwycięstwie nad Syserą śpiewa pieśń (Sdz 5), uznawaną za jeden z najstarszych utworów Biblii.",
     "Sdz 4-5"
    ],
    [
     "Samson",
     "Sędzia",
-    "Sędzia Izraela obdarzony przez Boga ogromną siłą, którą tracił, gdy obcięto mu włosy. Walczył z Filistynami, a List do Hebrajczyków wymienia go wśród bohaterów wiary (Hbr 11,32).",
+    "Sędzia Izraela i nazirejczyk poświęcony Bogu od łona matki, którego niezwykła siła była związana ze ślubem nieobcinania włosów. Zdradzony przez Dalilę, oślepiony i upokorzony przez Filistynów, w ostatniej modlitwie odzyskuje siłę. List do Hebrajczyków wymienia go wśród bohaterów wiary (Hbr 11,32).",
     "Sdz 13-16"
    ],
    [
@@ -503,7 +503,7 @@ const TEXT = {
    [
     "Nehemiasz",
     "Namiestnik",
-    "Żydowski podczaszy króla Persji, który został namiestnikiem Judy i odbudował mury Jerozolimy w 52 dni (Ne 6,15). Doprowadził też do tego, że lud uroczyście odnowił przymierze z Bogiem (Ne 10).",
+    "Podczaszy perskiego króla Artakserksesa, który na wieść o zrujnowanej Jerozolimie płacze i modli się, a potem prosi władcę o pozwolenie na odbudowę miasta. Jako namiestnik Judy odbudowuje z ludem mury w 52 dni, gdy budowniczowie jedną ręką pracują, a w drugiej trzymają broń (Ne 6,15). Prowadzi lud do uroczystego odnowienia przymierza z Bogiem.",
     "Ne 2-6"
    ],
    [
@@ -521,7 +521,7 @@ const TEXT = {
    [
     "Paweł",
     "Apostoł",
-    "Żyd z Tarsu, najpierw prześladowca chrześcijan, który po spotkaniu ze zmartwychwstałym Jezusem pod Damaszkiem został Apostołem Narodów. Zakładał wspólnoty w całym świecie rzymskim, jego listy stanowią dużą część Nowego Testamentu, a życie oddał jako męczennik w Rzymie.",
+    "Żyd z Tarsu i uczeń faryzeuszów, najpierw gorliwy prześladowca chrześcijan, którego pod Damaszkiem zatrzymuje światło i głos zmartwychwstałego Jezusa. Jako Apostoł Narodów przemierza świat rzymski, zakłada wspólnoty i pisze listy, które stanowią dużą część Nowego Testamentu, w tym hymn o miłości (1 Kor 13). Życie oddaje jako męczennik w Rzymie.",
     "Dz 9-28"
    ],
    [
@@ -581,7 +581,7 @@ const TEXT = {
    [
     "Karol Wielki",
     "Cesarz",
-    "Król Franków, koronowany w Rzymie na cesarza przez papieża Leona III w Boże Narodzenie 800 r. Zjednoczył dużą część Europy, wspierał szkoły i klasztory, a jego czasy nazywa się renesansem karolińskim.",
+    "Król Franków, koronowany przez papieża Leona III na cesarza w Boże Narodzenie 800 r., który zjednoczył dużą część zachodniej Europy. Sprowadza na dwór uczonych, zakłada szkoły przy klasztorach i katedrach i każe przepisywać dawne księgi, ratując dla potomnych dziedzictwo starożytności. Ten rozkwit nazwano renesansem karolińskim.",
     ""
    ],
    [
@@ -593,7 +593,7 @@ const TEXT = {
    [
     "Mieszko I",
     "Książę Polan",
-    "Pierwszy historyczny władca Polski, który w 966 r. przyjął chrzest, co uważa się za początek chrześcijaństwa i państwowości polskiej. Do chrztu skłoniła go m.in. żona, czeska księżniczka Dobrawa.",
+    "Pierwszy historyczny władca Polski, który w 966 r. przyjmuje chrzest i wprowadza swój kraj do wspólnoty chrześcijańskiej Europy; od tej chwili liczy się dzieje państwa polskiego. Drogę do chrztu otworzyło mu małżeństwo z czeską księżniczką Dobrawą. Pod koniec życia oddał swoje państwo pod opiekę Stolicy Apostolskiej w dokumencie „Dagome iudex”.",
     ""
    ],
    [
@@ -611,7 +611,7 @@ const TEXT = {
    [
     "Mikołaj Kopernik",
     "Astronom",
-    "Polski astronom i duchowny, kanonik warmiński, który w dziele „O obrotach sfer niebieskich” przedstawił model świata, w którym Ziemia krąży wokół Słońca. Swoje dzieło zadedykował papieżowi Pawłowi III.",
+    "Kanonik warmiński, lekarz i astronom, który po latach obserwacji ukazuje w dziele „O obrotach sfer niebieskich” (1543) Ziemię krążącą wokół Słońca. Jak mówi znane powiedzenie, „wstrzymał Słońce, ruszył Ziemię”. Dzieło zadedykował papieżowi Pawłowi III, a jego model otworzył drogę nowożytnej astronomii.",
     ""
    ],
    [
@@ -1061,7 +1061,7 @@ const TEXT = {
    [
     "Abraham",
     "Gen 25:7",
-    "The patriarch whose name God changes from Abram to Abraham, “father of a multitude of nations”. He trusts God, makes a covenant with him and in old age receives a son, Isaac. He is honoured by Jews, Christians and Muslims, and the Church remembers him at every Mass celebrated with the Roman Canon."
+    "The patriarch who at God’s call leaves Haran and sets out into the unknown, and whom God renames from Abram to Abraham, “father of a multitude of nations”. Hoping against hope, he trusts the promise and in old age receives a son, Isaac, which is why St Paul calls him the father of all who believe (Rom 4:11). He is honoured by Jews, Christians and Muslims, and the Roman Canon remembers him as “our father in faith”."
    ],
    [
     "Sarah",
@@ -1348,7 +1348,7 @@ const TEXT = {
    [
     "Abraham",
     "Father of the nations",
-    "The patriarch whose name God changes from Abram to Abraham, “father of a multitude of nations”. He trusts God, makes a covenant with him and in old age receives a son, Isaac. He is honoured by Jews, Christians and Muslims, and the Church remembers him at every Mass celebrated with the Roman Canon.",
+    "The patriarch who at God’s call leaves Haran and sets out into the unknown, and whom God renames from Abram to Abraham, “father of a multitude of nations”. Hoping against hope, he trusts the promise and in old age receives a son, Isaac, which is why St Paul calls him the father of all who believe (Rom 4:11). He is honoured by Jews, Christians and Muslims, and the Roman Canon remembers him as “our father in faith”.",
     "Gen 12"
    ],
    [
@@ -1384,13 +1384,13 @@ const TEXT = {
    [
     "Deborah",
     "Judge and prophetess",
-    "A prophetess and one of the judges, the leaders of Israel before the time of the kings. With the commander Barak she leads the people to victory over Sisera, and her song (Judg 5) is thought to be one of the oldest texts in the Bible.",
+    "Prophetess and judge of Israel, who settles the people’s disputes beneath a palm tree between Ramah and Bethel (Judg 4:5). When the Canaanites oppress the land, she calls the commander Barak to battle and goes with him. After the victory over Sisera she sings a song (Judg 5) regarded as one of the oldest pieces in the Bible.",
     "Judg 4-5"
    ],
    [
     "Samson",
     "Judge",
-    "A judge of Israel given great strength by God, which he lost when his hair was cut. He fought the Philistines, and the Letter to the Hebrews counts him among the heroes of faith (Heb 11:32).",
+    "Judge of Israel and a Nazirite consecrated to God from his mother’s womb, whose extraordinary strength was bound to his vow never to cut his hair. Betrayed by Delilah, blinded and humiliated by the Philistines, he regains his strength in a final prayer. The Letter to the Hebrews names him among the heroes of faith (Heb 11:32).",
     "Judg 13-16"
    ],
    [
@@ -1450,7 +1450,7 @@ const TEXT = {
    [
     "Nehemiah",
     "Governor",
-    "A Jewish cupbearer to the king of Persia who became governor of Judah and rebuilt the walls of Jerusalem in 52 days (Neh 6:15). He also led the people to renew their covenant with God (Neh 10).",
+    "Cupbearer to the Persian king Artaxerxes, who weeps and prays at the news of ruined Jerusalem and then asks the king for leave to rebuild the city. As governor of Judah he rebuilds the walls with the people in 52 days, while the builders work with one hand and hold a weapon in the other (Neh 6:15). He leads the people in a solemn renewal of the covenant with God.",
     "Neh 2-6"
    ],
    [
@@ -1468,7 +1468,7 @@ const TEXT = {
    [
     "Paul",
     "Apostle",
-    "A Jew from Tarsus, at first a persecutor of Christians, who after meeting the risen Jesus near Damascus became the Apostle of the Nations. He founded communities across the Roman world, his letters make up a large part of the New Testament, and he gave his life as a martyr in Rome.",
+    "A Jew from Tarsus and a disciple of the Pharisees, at first a zealous persecutor of Christians, who is stopped near Damascus by the light and voice of the risen Jesus. As Apostle to the Nations he travels the Roman world, founds communities and writes letters that make up a large part of the New Testament, among them the hymn to love (1 Cor 13). He gives his life as a martyr in Rome.",
     "Acts 9-28"
    ],
    [
@@ -1528,7 +1528,7 @@ const TEXT = {
    [
     "Charlemagne",
     "Emperor",
-    "King of the Franks, crowned emperor in Rome by Pope Leo III on Christmas Day 800. He united much of Europe and supported schools and monasteries; his age is called the Carolingian Renaissance.",
+    "King of the Franks, crowned emperor by Pope Leo III on Christmas Day 800, who united much of western Europe. He brings scholars to his court, founds schools at monasteries and cathedrals and has ancient books copied, saving the heritage of antiquity for later generations. This flowering is known as the Carolingian Renaissance.",
     ""
    ],
    [
@@ -1540,7 +1540,7 @@ const TEXT = {
    [
     "Mieszko I",
     "Duke of the Polans",
-    "The first historical ruler of Poland, who was baptised in 966, regarded as the beginning of Christianity and statehood in Poland. Among those who led him to baptism was his wife, the Czech princess Dobrawa.",
+    "The first historical ruler of Poland, who in 966 receives baptism and brings his land into the community of Christian Europe; the history of the Polish state is counted from that moment. The way to baptism was opened by his marriage to the Czech princess Dobrava. Late in life he placed his realm under the protection of the Holy See in the document known as “Dagome iudex”.",
     ""
    ],
    [
@@ -1558,7 +1558,7 @@ const TEXT = {
    [
     "Nicolaus Copernicus",
     "Astronomer",
-    "Polish astronomer and churchman, a canon of Warmia, who in On the Revolutions of the Heavenly Spheres set out a model of the world in which the Earth goes round the Sun. He dedicated the work to Pope Paul III.",
+    "Canon of Warmia, physician and astronomer, who after years of observation shows in On the Revolutions of the Heavenly Spheres (1543) the Earth moving around the Sun. As a well-known Polish saying puts it, he “stopped the Sun and moved the Earth”. He dedicated the work to Pope Paul III, and his model opened the way for modern astronomy.",
     ""
    ],
    [
