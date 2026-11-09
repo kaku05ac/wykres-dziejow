@@ -280,7 +280,7 @@
         // Kings as two continuous tracks of reigns (Judah with the united kingdom, then Israel), as on the ring.
         L.push({ id: 'kings', label: U().lanes.kings, kind: 'bands', h: 24, cls: 'dk-sub',
           items: KINGS.map((k, i) => ({ y: k[1], e: k[2], row: k[3] === 'is' ? 1 : 0, key: 'k' + i, name: k[0], when: U().range(fmtD(k[1]), fmtD(k[2])), color: COL[KING_SHADE[i]][1] })) });
-        L.push({ id: 'alive', label: U().lanes.alive, kind: 'area', h: 32, cls: 'dk-sub' });
+        // (Trial: the "alive" lane, a curve of how many people and nations are alive each year, is left out.)
       }
       L.push({ id: 'nations', label: U().lanes.nations, kind: 'dots', h: 30, cls: 'dk-head',
         items: NAT.map((n, i) => ({ y: n[2], key: 'n' + i, name: n[0], when: n[2] === SEAM ? U().beforeSeamLower : n[2] < SEAM ? U().fromCain : U().from + fmtD(n[2]), color: COL[n[1]][1] })) });
