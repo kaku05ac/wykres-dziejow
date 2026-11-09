@@ -84,7 +84,7 @@
   const el = {
     ruler: $('ruler'), arcs: $('arcs'), arcLabels: $('arcLabels'), dots: $('dots'), figs: $('figs'),
     pie: $('pie'), sweep: $('sweep'), sweepDot: $('sweepDot'), hubYear: $('hubYear'), hubSub: $('hubSub'),
-    askCtx: $('askCtx'), askYear: $('askKnobYear'), askDial: $('askDial'),
+    askCtx: $('askCtx'), askYear: $('askYear'),
     yearLabel: $('yearLabel'), aliveYear: $('aliveYear'), play: $('play'), playLabel: $('playLabel'),
     cardTitle: $('cardTitle'), cardBody: $('cardBody'), cardRef: $('cardRef'),
     alive: $('alive'), eventList: $('eventList'), legend: $('legend'),
@@ -590,25 +590,6 @@
     put(el.aliveYear, 'text', undated(year) ? U().primeval : yearLabel);
     put(el.askCtx, 'text', yearLabel);
     put(el.askYear, 'text', yearLabel);
-    // The chat key is a small copy of the wheel itself: faint testament slices (coloured up to the year, as on the
-    // wheel), the three testament bands with their ghost tracks, the dashed guide ring, and the year's sweep line and dot.
-    const arc = (r, a1, a2, cls) => {
-      if (a2 - a1 < 0.3) return '';
-      const [x1, y1] = pt(r, a1), [x2, y2] = pt(r, a2);
-      return `<path class="${cls}" d="M${f1(x1)} ${f1(y1)}A${r} ${r} 0 ${a2 - a1 > 180 ? 1 : 0} 1 ${f1(x2)} ${f1(y2)}"/>`;
-    };
-    const wedge = (a1, a2, cls) => {
-      if (a2 - a1 < 0.3) return '';
-      const R = 84, r0 = 48, [o1x, o1y] = pt(R, a1), [o2x, o2y] = pt(R, a2), [i2x, i2y] = pt(r0, a2), [i1x, i1y] = pt(r0, a1), big = a2 - a1 > 180 ? 1 : 0;
-      return `<path class="${cls}" d="M${f1(o1x)} ${f1(o1y)}A${R} ${R} 0 ${big} 1 ${f1(o2x)} ${f1(o2y)}L${f1(i2x)} ${f1(i2y)}A${r0} ${r0} 0 ${big} 0 ${f1(i1x)} ${f1(i1y)}Z"/>`;
-    };
-    const [dx1, dy1] = pt(48, sa), [dx2, dy2] = pt(80, sa);
-    put(el.askDial, 'html', '<circle class="dial-bg" r="84"/>'
-      + TESTAMENTS.map(([from, to], k) => wedge(ang(from), ang(to), 'pie pie-base') + wedge(ang(from), Math.min(ang(to), sa), 'pie pie-' + k)).join('')
-      + '<circle class="dial-guide" r="58"/>'
-      + TESTAMENTS.map(([from, to], k) => arc(70, ang(from) + 3, ang(to) - 3, 'dial-band dial-ghost dial-' + k)
-        + arc(70, ang(from) + 3, Math.min(ang(to) - 3, sa), 'dial-band dial-' + k)).join('')
-      + `<line class="dial-sweep" x1="${f1(dx1)}" y1="${f1(dy1)}" x2="${f1(dx2)}" y2="${f1(dy2)}"/><circle class="dial-dot" cx="${f1(dx2)}" cy="${f1(dy2)}" r="3.2"/>`);
     // The period under the big year: Genesis 1–11, the patriarchs, Exodus and judges, the united kingdom (Saul, 1050 BC),
     // the divided kingdom (931 BC), the exile to Christ's birth, his life, then the Church.
     const HUB = [am(1656), SEAM, -1250, -1050, -931, -587, -5, 30];
