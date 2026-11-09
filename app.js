@@ -512,12 +512,13 @@
       // The name's own length along the arc (small mono letters), so it never gets clipped.
       const half = (G.label.length * 4.4 + 4) / 2 / r * 180 / Math.PI;
       items['g-' + g] = { title: G.title, body: G.body, ref: G.ref, when: '' };
-      const [sx, sy] = pt(r, a0), [ex, ey] = pt(r, a1), [tx, ty] = pt(rIn, a0);
+      const [sx, sy] = pt(r, a0), [ex, ey] = pt(r, a1), [tx, ty] = pt(rIn, a0), [nx, ny] = pt(r, a1 + 1.6 + 2 * half);
       const d = `M${f1(sx)} ${f1(sy)}A${r} ${r} 0 0 1 ${f1(ex)} ${f1(ey)}`;
       arcs += `<g class="grp${on ? ' on' : ''}" style="color:${c}">`
         + `<path class="grp-dots" d="M${f1(tx)} ${f1(ty)}L${f1(sx)} ${f1(sy)}"/><path class="grp-dots" d="${d}"/>`
         + curved('gl-' + g, r, a1 + 1.2 + half, half, G.label, 'grp-label')
-        + `<path class="arc-hit" data-key="g-${g}" d="M${f1(tx)} ${f1(ty)}L${f1(sx)} ${f1(sy)}${d.replace('M', 'L')}" stroke-width="10"/></g>`;
+        // One hover area over the tick, the dots and the name, so the name answers the pointer too.
+        + `<path class="arc-hit" data-key="g-${g}" d="M${f1(tx)} ${f1(ty)}L${f1(sx)} ${f1(sy)}A${r} ${r} 0 0 1 ${f1(nx)} ${f1(ny)}" stroke-width="12"/></g>`;
     });
     const alive = [];
     PAT.forEach((p, i) => {
