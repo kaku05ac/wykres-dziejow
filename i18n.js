@@ -19,7 +19,7 @@ const TEXT = {
    [
     "Adam",
     "Rdz 5,3-5",
-    "Pierwszy człowiek, którego imię oznacza po hebrajsku zarazem „człowieka” i „ludzkość”, bo w nim Biblia widzi cały rodzaj ludzki. Bóg umieszcza go w ogrodzie Eden, a po nieposłuszeństwie, mimo wygnania z raju, obiecuje zwycięstwo nad złem. Chrześcijanie nazywają Chrystusa „nowym Adamem”, który otwiera ludziom drogę z powrotem do Boga."
+    "Pierwszy człowiek, w którym Biblia widzi cały rodzaj ludzki: jego hebrajskie imię oznacza zarazem „człowieka” i „ludzkość”. Umieszczony przez Boga w ogrodzie Eden, przez nieposłuszeństwo traci raj, lecz nie traci nadziei, bo Bóg już wtedy zapowiada zwycięstwo nad złem (Rdz 3,15). Chrześcijanie nazywają Chrystusa „nowym Adamem”, który otwiera ludziom drogę powrotu do Boga."
    ],
    [
     "Set",
@@ -49,7 +49,7 @@ const TEXT = {
    [
     "Henoch",
     "Rdz 5,21-24",
-    "O Henochu Biblia mówi pięknie: „żył w przyjaźni z Bogiem, a następnie zniknął, bo zabrał go Bóg”. Jako jedyny w tym rodowodzie nie umiera zwyczajnie, a List do Hebrajczyków stawia go wśród wzorów wiary. Jego 365 lat to tyle, ile dni ma rok."
+    "Siódmy patriarcha od Adama, o którym Pismo mówi najpiękniej, jak można powiedzieć o człowieku: „żył w przyjaźni z Bogiem, a następnie zniknął, bo zabrał go Bóg” (Rdz 5,24). Jako jedyny w tym rodowodzie nie umiera zwyczajnie, a List do Hebrajczyków stawia go wśród wzorów wiary, która podoba się Bogu (Hbr 11,5)."
    ],
    [
     "Metuszelach",
@@ -64,7 +64,7 @@ const TEXT = {
    [
     "Noe",
     "Rdz 5,32; 9,28-29",
-    "„Człowiek prawy”, który na polecenie Boga zbudował arkę i ocalił w niej rodzinę oraz zwierzęta. Po potopie Bóg zawiera z nim przymierze z całą ludzkością, a jego znakiem jest tęcza. W tradycji chrześcijańskiej arka stała się obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów."
+    "Sprawiedliwy w zepsutym pokoleniu, który z posłuszeństwem i ufnością wznosi arkę i ocala w niej rodzinę oraz wszelkie stworzenia. Po potopie Bóg zawiera z nim przymierze obejmujące całą ludzkość, a jego znakiem staje się tęcza. Dla chrześcijan arka jest obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów."
    ],
    [
     "Sem",
@@ -134,7 +134,7 @@ const TEXT = {
    [
     "Jakub",
     "Rdz 47,28",
-    "Syn Izaaka i Rebeki, młodszy z bliźniąt. W drodze do Charanu śni o drabinie sięgającej nieba, a po nocnej walce otrzymuje od Boga nowe imię: Izrael, od którego pochodzi nazwa całego narodu. Jego dwunastu synów daje początek dwunastu pokoleniom Izraela."
+    "Syn Izaaka i Rebeki, młodszy z bliźniąt, którego droga wiedzie od podstępu do błogosławieństwa. W Betel śni o drabinie łączącej ziemię z niebem, a po nocnej walce nad potokiem Jabbok otrzymuje od Boga nowe imię, Izrael, które przejmie cały naród. Jego dwunastu synów daje początek dwunastu pokoleniom Izraela."
    ],
    [
     "Lewi",
@@ -144,7 +144,7 @@ const TEXT = {
    [
     "Józef",
     "Rdz 50,26",
-    "Ukochany syn Jakuba, sprzedany przez zazdrosnych braci do Egiptu. Dzięki mądrości i wyjaśnieniu snów faraona zostaje zarządcą kraju i ratuje przed głodem Egipt oraz własną rodzinę. Przebacza braciom słowami: „Wy zamierzaliście wyrządzić mi zło, Bóg jednak zamierzył to jako dobro” (Rdz 50,20)."
+    "Ukochany syn Jakuba, sprzedany przez zazdrosnych braci do Egiptu, którego droga prowadzi z więzienia na dwór faraona. Dzięki mądrości i darowi tłumaczenia snów zostaje zarządcą kraju i ratuje przed głodem Egipt oraz własną rodzinę. Braciom, którzy go skrzywdzili, przebacza słowami: „Wy zamierzaliście wyrządzić mi zło, Bóg jednak zamierzył to jako dobro” (Rdz 50,20)."
    ],
    [
     "Kehat",
@@ -164,12 +164,12 @@ const TEXT = {
    [
     "Mojżesz",
     "Pwt 34,7",
-    "Uratowany jako niemowlę z wód Nilu i wychowany na dworze faraona, spotyka Boga w płonącym krzewie, który objawia mu swoje imię. Wyprowadza Izraela z Egiptu, a na górze Synaj otrzymuje Dziesięć Przykazań. Umiera na górze Nebo, oglądając z daleka Ziemię Obiecaną, a w Ewangelii ukazuje się obok Jezusa na górze Przemienienia."
+    "Przywódca i prawodawca Izraela, który jako niemowlę ocalał z wód Nilu i wychował się na dworze faraona, a przy płonącym krzewie usłyszał od Boga Jego imię. Prowadzi lud z niewoli ku wolności, a na górze Synaj otrzymuje Dziesięć Przykazań, fundament przymierza. Umiera na górze Nebo, oglądając z daleka Ziemię Obiecaną, a w Ewangelii ukazuje się obok Jezusa na górze Przemienienia."
    ],
    [
     "Jozue",
     "Joz 24,29",
-    "Sługa i następca Mojżesza, który przeprowadza Izraela przez Jordan do Ziemi Obiecanej. Jego hebrajskie imię, Jehoszua, znaczy „Pan zbawia”; w greckiej formie brzmi ono „Jezus”. Pod koniec życia wzywa lud: „Ja i mój dom służyć będziemy Panu” (Joz 24,15)."
+    "Sługa i następca Mojżesza, który przeprowadza Izraela przez Jordan do Ziemi Obiecanej i rozdziela ją między pokolenia. Jego hebrajskie imię, Jehoszua, znaczy „Pan zbawia”, a w greckiej formie brzmi tak samo jak imię Jezusa. U kresu życia stawia lud przed wyborem i sam daje przykład: „Ja i mój dom służyć będziemy Panu” (Joz 24,15)."
    ],
    [
     "Heli",
@@ -377,19 +377,19 @@ const TEXT = {
    [
     "Adam",
     "Pierwszy człowiek",
-    "Pierwszy człowiek, którego imię oznacza po hebrajsku zarazem „człowieka” i „ludzkość”, bo w nim Biblia widzi cały rodzaj ludzki. Bóg umieszcza go w ogrodzie Eden, a po nieposłuszeństwie, mimo wygnania z raju, obiecuje zwycięstwo nad złem. Chrześcijanie nazywają Chrystusa „nowym Adamem”, który otwiera ludziom drogę z powrotem do Boga.",
+    "Pierwszy człowiek, w którym Biblia widzi cały rodzaj ludzki: jego hebrajskie imię oznacza zarazem „człowieka” i „ludzkość”. Umieszczony przez Boga w ogrodzie Eden, przez nieposłuszeństwo traci raj, lecz nie traci nadziei, bo Bóg już wtedy zapowiada zwycięstwo nad złem (Rdz 3,15). Chrześcijanie nazywają Chrystusa „nowym Adamem”, który otwiera ludziom drogę powrotu do Boga.",
     "Rdz 1-3"
    ],
    [
     "Henoch",
     "Chodził z Bogiem",
-    "O Henochu Biblia mówi pięknie: „żył w przyjaźni z Bogiem, a następnie zniknął, bo zabrał go Bóg”. Jako jedyny w tym rodowodzie nie umiera zwyczajnie, a List do Hebrajczyków stawia go wśród wzorów wiary. Jego 365 lat to tyle, ile dni ma rok.",
+    "Siódmy patriarcha od Adama, o którym Pismo mówi najpiękniej, jak można powiedzieć o człowieku: „żył w przyjaźni z Bogiem, a następnie zniknął, bo zabrał go Bóg” (Rdz 5,24). Jako jedyny w tym rodowodzie nie umiera zwyczajnie, a List do Hebrajczyków stawia go wśród wzorów wiary, która podoba się Bogu (Hbr 11,5).",
     "Rdz 5,24"
    ],
    [
     "Noe",
     "Budowniczy arki",
-    "„Człowiek prawy”, który na polecenie Boga zbudował arkę i ocalił w niej rodzinę oraz zwierzęta. Po potopie Bóg zawiera z nim przymierze z całą ludzkością, a jego znakiem jest tęcza. W tradycji chrześcijańskiej arka stała się obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów.",
+    "Sprawiedliwy w zepsutym pokoleniu, który z posłuszeństwem i ufnością wznosi arkę i ocala w niej rodzinę oraz wszelkie stworzenia. Po potopie Bóg zawiera z nim przymierze obejmujące całą ludzkość, a jego znakiem staje się tęcza. Dla chrześcijan arka jest obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów.",
     "Rdz 6-9"
    ],
    [
@@ -413,25 +413,25 @@ const TEXT = {
    [
     "Jakub",
     "Izrael",
-    "Syn Izaaka i Rebeki, młodszy z bliźniąt. W drodze do Charanu śni o drabinie sięgającej nieba, a po nocnej walce otrzymuje od Boga nowe imię: Izrael, od którego pochodzi nazwa całego narodu. Jego dwunastu synów daje początek dwunastu pokoleniom Izraela.",
+    "Syn Izaaka i Rebeki, młodszy z bliźniąt, którego droga wiedzie od podstępu do błogosławieństwa. W Betel śni o drabinie łączącej ziemię z niebem, a po nocnej walce nad potokiem Jabbok otrzymuje od Boga nowe imię, Izrael, które przejmie cały naród. Jego dwunastu synów daje początek dwunastu pokoleniom Izraela.",
     "Rdz 25-50"
    ],
    [
     "Józef",
     "Zarządca Egiptu",
-    "Ukochany syn Jakuba, sprzedany przez zazdrosnych braci do Egiptu. Dzięki mądrości i wyjaśnieniu snów faraona zostaje zarządcą kraju i ratuje przed głodem Egipt oraz własną rodzinę. Przebacza braciom słowami: „Wy zamierzaliście wyrządzić mi zło, Bóg jednak zamierzył to jako dobro” (Rdz 50,20).",
+    "Ukochany syn Jakuba, sprzedany przez zazdrosnych braci do Egiptu, którego droga prowadzi z więzienia na dwór faraona. Dzięki mądrości i darowi tłumaczenia snów zostaje zarządcą kraju i ratuje przed głodem Egipt oraz własną rodzinę. Braciom, którzy go skrzywdzili, przebacza słowami: „Wy zamierzaliście wyrządzić mi zło, Bóg jednak zamierzył to jako dobro” (Rdz 50,20).",
     "Rdz 37-50"
    ],
    [
     "Mojżesz",
     "Prawodawca",
-    "Uratowany jako niemowlę z wód Nilu i wychowany na dworze faraona, spotyka Boga w płonącym krzewie, który objawia mu swoje imię. Wyprowadza Izraela z Egiptu, a na górze Synaj otrzymuje Dziesięć Przykazań. Umiera na górze Nebo, oglądając z daleka Ziemię Obiecaną, a w Ewangelii ukazuje się obok Jezusa na górze Przemienienia.",
+    "Przywódca i prawodawca Izraela, który jako niemowlę ocalał z wód Nilu i wychował się na dworze faraona, a przy płonącym krzewie usłyszał od Boga Jego imię. Prowadzi lud z niewoli ku wolności, a na górze Synaj otrzymuje Dziesięć Przykazań, fundament przymierza. Umiera na górze Nebo, oglądając z daleka Ziemię Obiecaną, a w Ewangelii ukazuje się obok Jezusa na górze Przemienienia.",
     "Wj 3-20"
    ],
    [
     "Jozue",
     "Zdobywca Kanaanu",
-    "Sługa i następca Mojżesza, który przeprowadza Izraela przez Jordan do Ziemi Obiecanej. Jego hebrajskie imię, Jehoszua, znaczy „Pan zbawia”; w greckiej formie brzmi ono „Jezus”. Pod koniec życia wzywa lud: „Ja i mój dom służyć będziemy Panu” (Joz 24,15).",
+    "Sługa i następca Mojżesza, który przeprowadza Izraela przez Jordan do Ziemi Obiecanej i rozdziela ją między pokolenia. Jego hebrajskie imię, Jehoszua, znaczy „Pan zbawia”, a w greckiej formie brzmi tak samo jak imię Jezusa. U kresu życia stawia lud przed wyborem i sam daje przykład: „Ja i mój dom służyć będziemy Panu” (Joz 24,15).",
     "Joz 3"
    ],
    [
@@ -455,7 +455,7 @@ const TEXT = {
    [
     "Dawid",
     "Król Izraela",
-    "Pasterz z Betlejem, który pokonał Goliata, został królem Izraela i uczynił Jerozolimę stolicą; tradycja przypisuje mu wiele psalmów. Bóg obiecał, że jego dynastia będzie trwać na wieki, dlatego Jezus nazywany jest „Synem Dawida”.",
+    "Najmłodszy syn Jessego z Betlejem, pasterz wybrany przez Boga, który „patrzy na serce” (1 Sm 16,7). Pokonuje Goliata, zostaje królem Izraela i czyni Jerozolimę stolicą. Upada w grzechu, lecz umie żałować, a tradycja przypisuje mu wiele psalmów, w tym psalm skruchy, Miserere (Ps 51). Bóg obiecuje, że jego dynastia przetrwa na wieki, dlatego Jezus nazywany jest „Synem Dawida”.",
     "2 Sm 5"
    ],
    [
@@ -467,37 +467,37 @@ const TEXT = {
    [
     "Eliasz",
     "Prorok",
-    "Jeden z największych proroków Izraela, który na górze Karmel ukazuje moc prawdziwego Boga wobec proroków Baala. Zostaje uniesiony do nieba w wichrze, a w Ewangelii ukazuje się obok Jezusa na górze Przemienienia.",
+    "Ognisty prorok Izraela, który na górze Karmel ukazuje moc prawdziwego Boga wobec proroków Baala. Na Horebie odkrywa jednak, że Bóg nie przychodzi w wichrze, trzęsieniu ziemi ani w ogniu, lecz w „szmerze łagodnego powiewu” (1 Krl 19,12). Uniesiony do nieba w wichrze, w Ewangelii ukazuje się obok Jezusa na górze Przemienienia.",
     "1 Krl 18"
    ],
    [
     "Izajasz",
     "Prorok",
-    "Prorok z Jerozolimy, który zapowiada Emmanuela, którego pocznie Dziewica, i Sługę Pańskiego cierpiącego za grzechy innych. Kościół tak często czyta jego słowa w Adwencie, że św. Hieronim nazwał go raczej ewangelistą niż prorokiem.",
+    "Prorok z Jerozolimy, który w świątyni ogląda chwałę Pana i słyszy wołanie serafinów: „Święty, Święty, Święty” (Iz 6,3), powtarzane dziś w każdej Mszy. Zapowiada Emmanuela, którego pocznie Panna, i Sługę Pańskiego cierpiącego za grzechy innych, tak że św. Hieronim nazwał go raczej ewangelistą niż prorokiem.",
     "Iz 6,1"
    ],
    [
     "Ezechiasz",
     "Król Judy",
-    "Pobożny król Judy, który oczyścił świątynię z bałwochwalstwa i odnowił obchody Paschy. Gdy Asyryjczycy oblegli Jerozolimę, zaufał Bogu za radą Izajasza, a miasto ocalało.",
+    "Król Judy, który po latach bałwochwalstwa swego ojca oczyszcza świątynię i przywraca obchody Paschy. Gdy wojska asyryjskie oblegają Jerozolimę, idzie za radą proroka Izajasza i zawierza miasto Bogu, a Jerozolima ocala.",
     "2 Krl 18-19"
    ],
    [
     "Daniel",
     "Prorok w Babilonie",
-    "Prorok, młody Judejczyk uprowadzony do Babilonu, który pozostał wierny Bogu na dworze królewskim i wyszedł nietknięty z jaskini lwów. W jego wizji pojawia się „ktoś podobny do Syna Człowieczego” (Dn 7,13); tak właśnie często nazywał siebie Jezus.",
+    "Młody Judejczyk uprowadzony do Babilonu, który na obcym dworze pozostaje wierny Bogu, nawet gdy czeka go jaskinia lwów, i wychodzi z niej nietknięty. W jego wizji pojawia się „ktoś podobny do Syna Człowieczego” (Dn 7,13); tym właśnie imieniem najczęściej nazywał siebie Jezus.",
     "Dn 1"
    ],
    [
     "Cyrus",
     "Król Persji",
-    "Król Persji, który w 539 p.n.e. zdobył Babilon i pozwolił Żydom wrócić do Jerozolimy. Księga Izajasza nazywa go „pomazańcem” Pana, czyli władcą wybranym przez Boga do wykonania Jego planu (Iz 45,1).",
+    "Twórca perskiego imperium, który w 539 p.n.e. zdobywa Babilon i otwiera wygnańcom drogę do domu, pozwalając Żydom wrócić do Jerozolimy i odbudować świątynię. Księga Izajasza nazywa tego pogańskiego władcę „pomazańcem” Pana, narzędziem w ręku Boga, który prowadzi dzieje (Iz 45,1).",
     "Ezd 1"
    ],
    [
     "Estera",
     "Królowa Persji",
-    "Żydowska królowa Persji, żona króla Aswerusa, która z narażeniem życia wstawiła się za swoim ludem i ocaliła go przed zagładą zaplanowaną przez Hamana. Na pamiątkę tego ocalenia Żydzi obchodzą święto Purim.",
+    "Młoda Żydówka, królowa Persji u boku króla Aswerusa, która staje przed wyborem, gdy jej ludowi grozi zagłada zaplanowana przez Hamana. Wbrew dworskiemu prawu, gotowa oddać życie, wchodzi nieproszona do króla i ocala swój naród. Na pamiątkę tego ocalenia Żydzi obchodzą radosne święto Purim.",
     "Est 4-8"
    ],
    [
@@ -509,13 +509,13 @@ const TEXT = {
    [
     "Jan Chrzciciel",
     "Poprzednik",
-    "Syn Zachariasza i Elżbiety, krewny Jezusa, który nad Jordanem wzywał do nawrócenia i udzielał chrztu, także samemu Jezusowi. Wskazał na Niego słowami „Oto Baranek Boży” (J 1,29), które Kościół powtarza w każdej Mszy Świętej.",
+    "Syn Zachariasza i Elżbiety, krewny Jezusa i ostatni z proroków, który nad Jordanem wzywa do nawrócenia i chrzci, także samego Jezusa. Wskazuje na Niego słowami „Oto Baranek Boży” (J 1,29), powtarzanymi w każdej Mszy Świętej, i oddaje życie za wierność prawdzie.",
     "Łk 1"
    ],
    [
     "Jezus",
     "Chrystus",
-    "„Tak Bóg umiłował świat, że Syna swego Jednorodzonego dał” (J 3,16): Jezus, Syn Boży i Syn Maryi, przychodzi na świat w Betlejem jako znak tej miłości. Przez swoje nauczanie, cuda, śmierć na krzyżu i zmartwychwstanie otwiera każdemu człowiekowi drogę do Boga.",
+    "„Tak Bóg umiłował świat, że Syna swego Jednorodzonego dał” (J 3,16): w Jezusie, Synu Bożym i Synu Maryi, Bóg staje się jednym z nas. Uzdrawia, przebacza, zasiada do stołu z grzesznikami i uczy modlitwy „Ojcze nasz”, a przez śmierć na krzyżu i zmartwychwstanie otwiera każdemu człowiekowi drogę do Boga.",
     "Mt 2; Łk 2"
    ],
    [
@@ -551,13 +551,13 @@ const TEXT = {
    [
     "Kard. Stefan Wyszyński",
     "Prymas Tysiąclecia",
-    "Prymas Polski, który przez ponad 30 lat prowadził Kościół w czasach komunizmu; więziony w latach 1953–1956, nie ugiął się przed władzą. Wielką Nowenną przygotował Polaków do Tysiąclecia Chrztu Polski, a w 2021 r. został ogłoszony błogosławionym.",
+    "Prymas Polski, który przez ponad trzydzieści lat prowadzi Kościół przez czasy komunizmu, a uwięziony w latach 1953–1956, nie ugina się przed władzą. Wielką Nowenną przygotowuje naród do Tysiąclecia Chrztu Polski, a za niezłomność Polacy nazywają go Prymasem Tysiąclecia. W 2021 r. zostaje ogłoszony błogosławionym.",
     ""
    ],
    [
     "Św. Jan Paweł II",
     "Papież",
-    "Karol Wojtyła z Wadowic, pierwszy papież Polak, wybrany w 1978 r., który w ciągu prawie 27 lat pontyfikatu odwiedził ponad 120 krajów. Jego słowa z 1979 r. „Niech zstąpi Duch Twój! I odnowi oblicze ziemi. Tej ziemi!” dodały Polakom odwagi w drodze do wolności; jest świętym od 2014 r.",
+    "Karol Wojtyła z Wadowic, pierwszy papież Polak, który przez prawie 27 lat pontyfikatu niesie Ewangelię do ponad 120 krajów. Jego słowa z 1979 r. „Niech zstąpi Duch Twój! I odnowi oblicze ziemi. Tej ziemi!” dodały Polakom odwagi w drodze do wolności; od 2014 r. Kościół czci go jako świętego.",
     ""
    ],
    [
@@ -569,7 +569,7 @@ const TEXT = {
    [
     "Św. Grzegorz Wielki",
     "Papież",
-    "Papież i Doktor Kościoła, który troszczył się o ubogich, porządkował liturgię i wysłał misjonarzy do Anglii. Od jego imienia pochodzi nazwa chorału gregoriańskiego, a sam nazywał siebie „sługą sług Bożych”.",
+    "Rzymski patrycjusz, który porzuca wysokie urzędy dla klasztoru, a jako papież w czasach głodu i zarazy staje się ojcem ubogich i opiekunem Rzymu. Porządkuje liturgię, wysyła misjonarzy do Anglii i nazywa siebie „sługą sług Bożych”. Od jego imienia pochodzi nazwa chorału gregoriańskiego, a Kościół czci go jako Doktora.",
     ""
    ],
    [
@@ -599,7 +599,7 @@ const TEXT = {
    [
     "Saladyn",
     "Sułtan",
-    "Muzułmański sułtan Egiptu i Syrii, który w 1187 r. odbił Jerozolimę z rąk krzyżowców. Nawet przeciwnicy cenili go za rycerskość, a w pokoju zawartym w 1192 r. z Ryszardem Lwie Serce zgodził się, by chrześcijanie pielgrzymowali do Jerozolimy.",
+    "Sułtan Egiptu i Syrii, który w 1187 r. odbija Jerozolimę z rąk krzyżowców. Nawet przeciwnicy cenili jego rycerskość, a w pokoju zawartym w 1192 r. z Ryszardem Lwie Serce pozwala chrześcijanom pielgrzymować do Jerozolimy.",
     ""
    ],
    [
@@ -629,25 +629,25 @@ const TEXT = {
    [
     "Leon XIII",
     "Papież",
-    "Papież, który w encyklice „Rerum novarum” upomniał się o godność robotników, sprawiedliwą płacę i prawo do zrzeszania się, dając początek nowożytnej katolickiej nauce społecznej. Był też wielkim czcicielem różańca, któremu poświęcił wiele encyklik.",
+    "Papież epoki przemysłowej, który w encyklice „Rerum novarum” (1891) staje po stronie robotników, upominając się o ich godność, sprawiedliwą płacę i prawo do zrzeszania się. Tym dokumentem daje początek nowożytnej katolickiej nauce społecznej, a wiele encyklik poświęca różańcowi, dlatego nazywany jest papieżem różańca.",
     ""
    ],
    [
     "Sokrates",
     "Filozof",
-    "Twórca filozofii moralnej: w dialogu, metodą pytań, prowadzi rozmówców do samopoznania i szukania prawdy o dobru. Skazany przez Ateńczyków na śmierć, wybiera wierność sumieniu. Jego nauczanie przekazuje uczeń, Platon.",
+    "Ateński myśliciel, który niczego nie spisał, a jednak zmienił bieg filozofii: w rozmowie, przez cierpliwe pytania, prowadzi rozmówców do poznania samych siebie i szukania prawdy o dobru. Skazany przez Ateńczyków na śmierć, wybiera wierność sumieniu zamiast ucieczki. Jego nauczanie przekazuje uczeń, Platon.",
     ""
    ],
    [
     "Platon",
     "Filozof",
-    "Uczeń Sokratesa i założyciel Akademii w Atenach. Uczy, że ponad zmiennym światem istnieje wieczna prawda, dobro i piękno, a dusza człowieka jest nieśmiertelna. Jego myśl stanie się dla Ojców Kościoła językiem do mówienia o Bogu.",
+    "Uczeń Sokratesa i założyciel Akademii w Atenach, który uczy, że ponad zmiennym światem zjawisk istnieje wieczna prawda, dobro i piękno, a dusza człowieka jest nieśmiertelna. Jego myśl stanie się dla Ojców Kościoła, zwłaszcza dla św. Augustyna, językiem mówienia o Bogu.",
     ""
    ],
    [
     "Arystoteles",
     "Filozof",
-    "Uczeń Platona i wychowawca Aleksandra Wielkiego, założyciel Liceum. Porządkuje całą ówczesną wiedzę: tworzy logikę, etykę cnót i badanie przyrody, a rozumem dochodzi do Pierwszego Poruszyciela. Przez św. Tomasza z Akwinu staje się filarem myśli chrześcijańskiej.",
+    "Uczeń Platona i wychowawca Aleksandra Wielkiego, założyciel Liceum, który porządkuje całą ówczesną wiedzę: tworzy logikę, etykę cnót i badanie przyrody, a rozumem dochodzi do Pierwszego Poruszyciela. Dzięki św. Tomaszowi z Akwinu staje się jednym z filarów myśli chrześcijańskiej.",
     ""
    ],
    [
@@ -659,7 +659,7 @@ const TEXT = {
    [
     "Uniwersytet Boloński",
     "Pierwszy uniwersytet",
-    "Najstarszy nieprzerwanie działający uniwersytet świata, który według tradycji powstał w 1088 r. i zasłynął studiami prawa rzymskiego i kanonicznego. Za nim, często ze szkół katedralnych i z przywilejami papieży, powstają uniwersytety w Paryżu, Oksfordzie i Krakowie (1364), gdzie rozwijają się teologia, prawo, medycyna i nauki o przyrodzie.",
+    "Najstarszy nieprzerwanie działający uniwersytet świata, który według tradycji powstał w 1088 r. i zasłynął studiami prawa rzymskiego i kanonicznego. Jego śladem, często ze szkół katedralnych i pod opieką papieży, rodzą się uniwersytety w Paryżu, Oksfordzie i Krakowie (1364): wspólnoty mistrzów i uczniów, w których rozkwitają teologia, prawo, medycyna i nauki o przyrodzie.",
     ""
    ]
   ],
@@ -966,7 +966,7 @@ const TEXT = {
    [
     "Adam",
     "Gen 5:3-5",
-    "The first man, whose Hebrew name means both “man” and “humankind”, for in him the Bible sees the whole human race. God places him in the garden of Eden, and after his disobedience, though he must leave paradise, God promises victory over evil. Christians call Christ the “new Adam”, who opens the way back to God."
+    "The first human being, in whom the Bible sees the whole human race: his Hebrew name means both “man” and “humankind”. Placed by God in the garden of Eden, he loses paradise through disobedience but not hope, for God already promises victory over evil (Gen 3:15). Christians call Christ the “new Adam”, who opens for people the way back to God."
    ],
    [
     "Seth",
@@ -996,7 +996,7 @@ const TEXT = {
    [
     "Enoch",
     "Gen 5:21-24",
-    "The Bible says of Enoch beautifully that he “walked with God, and he was no longer here, for God took him”. He is the only one in this line who does not die in the ordinary way, and the Letter to the Hebrews counts him among the examples of faith. His 365 years match the days of a year."
+    "The seventh patriarch from Adam, of whom Scripture says the most beautiful thing that can be said of a person: “he walked with God, and he was not, for God took him” (Gen 5:24). He alone in this line does not die an ordinary death, and the Letter to the Hebrews counts him among the models of a faith that pleases God (Heb 11:5)."
    ],
    [
     "Methuselah",
@@ -1011,7 +1011,7 @@ const TEXT = {
    [
     "Noah",
     "Gen 5:32; 9:28-29",
-    "“A righteous man” who at God’s command built the ark and saved his family and the animals in it. After the Flood God makes a covenant with him and with all humankind, and its sign is the rainbow. In Christian tradition the ark became an image of the Church, carrying people safely through the waves of history."
+    "A righteous man in a corrupt generation, who with obedience and trust builds the ark and saves in it his family and every kind of creature. After the flood God makes with him a covenant embracing all humanity, and its sign is the rainbow. For Christians the ark is an image of the Church, carrying people safely through the waves of history."
    ],
    [
     "Shem",
@@ -1081,7 +1081,7 @@ const TEXT = {
    [
     "Jacob",
     "Gen 47:28",
-    "Son of Isaac and Rebekah, the younger of the twins. On the way to Haran he dreams of a ladder reaching to heaven, and after a night of wrestling he receives from God a new name: Israel, which became the name of the whole people. His twelve sons are the ancestors of the twelve tribes of Israel."
+    "Son of Isaac and Rebekah, the younger twin, whose path leads from cunning to blessing. At Bethel he dreams of a ladder joining earth and heaven, and after a night of wrestling by the Jabbok he receives from God a new name, Israel, which the whole nation will bear. His twelve sons are the fathers of the twelve tribes of Israel."
    ],
    [
     "Levi",
@@ -1091,7 +1091,7 @@ const TEXT = {
    [
     "Joseph",
     "Gen 50:26",
-    "Jacob’s beloved son, sold into Egypt by his jealous brothers. Through wisdom and by explaining Pharaoh’s dreams he becomes governor of the land and saves Egypt and his own family from famine. He forgives his brothers with the words: “Even though you meant harm to me, God meant it for good” (Gen 50:20)."
+    "Jacob’s beloved son, sold into Egypt by his jealous brothers, whose path leads from prison to Pharaoh’s court. Through wisdom and the gift of interpreting dreams he becomes governor of the land and saves Egypt and his own family from famine. He forgives the brothers who wronged him with the words: “You meant evil against me, but God meant it for good” (Gen 50:20)."
    ],
    [
     "Kohath",
@@ -1111,12 +1111,12 @@ const TEXT = {
    [
     "Moses",
     "Deut 34:7",
-    "Rescued as a baby from the waters of the Nile and raised at Pharaoh’s court, he meets God in the burning bush, who reveals His name to him. He leads Israel out of Egypt and on Mount Sinai receives the Ten Commandments. He dies on Mount Nebo, seeing the Promised Land from afar, and in the Gospel he appears beside Jesus on the mount of the Transfiguration."
+    "Leader and lawgiver of Israel, who as a baby was saved from the waters of the Nile and raised at Pharaoh’s court, and at the burning bush heard God reveal his name. He leads the people from slavery to freedom, and on Mount Sinai receives the Ten Commandments, the foundation of the covenant. He dies on Mount Nebo, seeing the Promised Land from afar, and in the Gospel appears beside Jesus on the mount of the Transfiguration."
    ],
    [
     "Joshua",
     "Josh 24:29",
-    "Servant and successor of Moses, who leads Israel across the Jordan into the Promised Land. His Hebrew name, Yehoshua, means “the Lord saves”; in its Greek form it is “Jesus”. At the end of his life he calls the people: “As for me and my household, we will serve the Lord” (Josh 24:15)."
+    "Servant and successor of Moses, who leads Israel across the Jordan into the Promised Land and divides it among the tribes. His Hebrew name, Yehoshua, means “the Lord saves”, and in Greek it is the same as the name of Jesus. At the end of his life he sets a choice before the people and gives the example himself: “As for me and my house, we will serve the Lord” (Josh 24:15)."
    ],
    [
     "Eli",
@@ -1324,19 +1324,19 @@ const TEXT = {
    [
     "Adam",
     "First man",
-    "The first man, whose Hebrew name means both “man” and “humankind”, for in him the Bible sees the whole human race. God places him in the garden of Eden, and after his disobedience, though he must leave paradise, God promises victory over evil. Christians call Christ the “new Adam”, who opens the way back to God.",
+    "The first human being, in whom the Bible sees the whole human race: his Hebrew name means both “man” and “humankind”. Placed by God in the garden of Eden, he loses paradise through disobedience but not hope, for God already promises victory over evil (Gen 3:15). Christians call Christ the “new Adam”, who opens for people the way back to God.",
     "Gen 1-3"
    ],
    [
     "Enoch",
     "Walked with God",
-    "The Bible says of Enoch beautifully that he “walked with God, and he was no longer here, for God took him”. He is the only one in this line who does not die in the ordinary way, and the Letter to the Hebrews counts him among the examples of faith. His 365 years match the days of a year.",
+    "The seventh patriarch from Adam, of whom Scripture says the most beautiful thing that can be said of a person: “he walked with God, and he was not, for God took him” (Gen 5:24). He alone in this line does not die an ordinary death, and the Letter to the Hebrews counts him among the models of a faith that pleases God (Heb 11:5).",
     "Gen 5:24"
    ],
    [
     "Noah",
     "Builder of the ark",
-    "“A righteous man” who at God’s command built the ark and saved his family and the animals in it. After the Flood God makes a covenant with him and with all humankind, and its sign is the rainbow. In Christian tradition the ark became an image of the Church, carrying people safely through the waves of history.",
+    "A righteous man in a corrupt generation, who with obedience and trust builds the ark and saves in it his family and every kind of creature. After the flood God makes with him a covenant embracing all humanity, and its sign is the rainbow. For Christians the ark is an image of the Church, carrying people safely through the waves of history.",
     "Gen 6-9"
    ],
    [
@@ -1360,25 +1360,25 @@ const TEXT = {
    [
     "Jacob",
     "Israel",
-    "Son of Isaac and Rebekah, the younger of the twins. On the way to Haran he dreams of a ladder reaching to heaven, and after a night of wrestling he receives from God a new name: Israel, which became the name of the whole people. His twelve sons are the ancestors of the twelve tribes of Israel.",
+    "Son of Isaac and Rebekah, the younger twin, whose path leads from cunning to blessing. At Bethel he dreams of a ladder joining earth and heaven, and after a night of wrestling by the Jabbok he receives from God a new name, Israel, which the whole nation will bear. His twelve sons are the fathers of the twelve tribes of Israel.",
     "Gen 25-50"
    ],
    [
     "Joseph",
     "Ruler in Egypt",
-    "Jacob’s beloved son, sold into Egypt by his jealous brothers. Through wisdom and by explaining Pharaoh’s dreams he becomes governor of the land and saves Egypt and his own family from famine. He forgives his brothers with the words: “Even though you meant harm to me, God meant it for good” (Gen 50:20).",
+    "Jacob’s beloved son, sold into Egypt by his jealous brothers, whose path leads from prison to Pharaoh’s court. Through wisdom and the gift of interpreting dreams he becomes governor of the land and saves Egypt and his own family from famine. He forgives the brothers who wronged him with the words: “You meant evil against me, but God meant it for good” (Gen 50:20).",
     "Gen 37-50"
    ],
    [
     "Moses",
     "Lawgiver",
-    "Rescued as a baby from the waters of the Nile and raised at Pharaoh’s court, he meets God in the burning bush, who reveals His name to him. He leads Israel out of Egypt and on Mount Sinai receives the Ten Commandments. He dies on Mount Nebo, seeing the Promised Land from afar, and in the Gospel he appears beside Jesus on the mount of the Transfiguration.",
+    "Leader and lawgiver of Israel, who as a baby was saved from the waters of the Nile and raised at Pharaoh’s court, and at the burning bush heard God reveal his name. He leads the people from slavery to freedom, and on Mount Sinai receives the Ten Commandments, the foundation of the covenant. He dies on Mount Nebo, seeing the Promised Land from afar, and in the Gospel appears beside Jesus on the mount of the Transfiguration.",
     "Ex 3-20"
    ],
    [
     "Joshua",
     "Conqueror of Canaan",
-    "Servant and successor of Moses, who leads Israel across the Jordan into the Promised Land. His Hebrew name, Yehoshua, means “the Lord saves”; in its Greek form it is “Jesus”. At the end of his life he calls the people: “As for me and my household, we will serve the Lord” (Josh 24:15).",
+    "Servant and successor of Moses, who leads Israel across the Jordan into the Promised Land and divides it among the tribes. His Hebrew name, Yehoshua, means “the Lord saves”, and in Greek it is the same as the name of Jesus. At the end of his life he sets a choice before the people and gives the example himself: “As for me and my house, we will serve the Lord” (Josh 24:15).",
     "Josh 3"
    ],
    [
@@ -1402,7 +1402,7 @@ const TEXT = {
    [
     "David",
     "King of Israel",
-    "A shepherd from Bethlehem who defeated Goliath, became king of Israel and made Jerusalem his capital; tradition credits him with many psalms. God promised that his dynasty would last for ever, which is why Jesus is called “Son of David”.",
+    "The youngest son of Jesse of Bethlehem, a shepherd chosen by God, who “looks on the heart” (1 Sam 16:7). He defeats Goliath, becomes king of Israel and makes Jerusalem his capital. He falls into sin but knows how to repent, and tradition ascribes many psalms to him, among them the psalm of contrition, the Miserere (Ps 51). God promises that his dynasty will endure for ever, which is why Jesus is called the “Son of David”.",
     "2 Sam 5"
    ],
    [
@@ -1414,37 +1414,37 @@ const TEXT = {
    [
     "Elijah",
     "Prophet",
-    "One of Israel’s greatest prophets, who on Mount Carmel shows the power of the true God before the prophets of Baal. He is taken up to heaven in a whirlwind, and in the Gospel he appears beside Jesus at the Transfiguration.",
+    "Israel’s fiery prophet, who on Mount Carmel shows the power of the true God before the prophets of Baal. Yet on Horeb he discovers that God comes not in the wind, the earthquake or the fire, but in “a still small voice” (1 Kgs 19:12). Taken up to heaven in a whirlwind, he appears in the Gospel beside Jesus on the mount of the Transfiguration.",
     "1 Kgs 18"
    ],
    [
     "Isaiah",
     "Prophet",
-    "A prophet from Jerusalem who foretells Emmanuel, to be born of a Virgin, and the Servant of the Lord who suffers for the sins of others. The Church reads his words so often in Advent that St Jerome called him an evangelist rather than a prophet.",
+    "Prophet of Jerusalem, who in the Temple beholds the glory of the Lord and hears the seraphim crying “Holy, holy, holy” (Isa 6:3), words repeated today at every Mass. He foretells Immanuel, to be conceived by a virgin, and the Servant of the Lord suffering for the sins of others, so that St Jerome called him an evangelist rather than a prophet.",
     "Isa 6:1"
    ],
    [
     "Hezekiah",
     "King of Judah",
-    "A devout king of Judah who cleansed the temple of idols and restored the Passover. When the Assyrians besieged Jerusalem, he trusted God on Isaiah’s advice, and the city was saved.",
+    "King of Judah, who after years of his father’s idolatry cleanses the Temple and restores the Passover. When the Assyrian army besieges Jerusalem, he follows the counsel of the prophet Isaiah and entrusts the city to God, and Jerusalem is saved.",
     "2 Kgs 18-19"
    ],
    [
     "Daniel",
     "Prophet in Babylon",
-    "A prophet, a young man of Judah taken to Babylon, who stayed faithful to God at the royal court and came out unharmed from the lions’ den. In his vision appears “one like a son of man” (Dan 7:13), the title Jesus often used of himself.",
+    "A young man of Judah carried off to Babylon, who at a foreign court stays faithful to God even when the lions’ den awaits him, and comes out unharmed. In his vision appears “one like a son of man” (Dan 7:13); this is the very name Jesus most often used for himself.",
     "Dan 1"
    ],
    [
     "Cyrus",
     "King of Persia",
-    "King of Persia, who took Babylon in 539 BC and allowed the Jews to return to Jerusalem. The Book of Isaiah calls him the Lord’s “anointed”, a ruler chosen by God to carry out His plan (Isa 45:1).",
+    "Founder of the Persian empire, who in 539 BC takes Babylon and opens the way home for the exiles, allowing the Jews to return to Jerusalem and rebuild the Temple. The Book of Isaiah calls this pagan ruler the Lord’s “anointed”, an instrument in the hand of the God who guides history (Isa 45:1).",
     "Ezra 1"
    ],
    [
     "Esther",
     "Queen of Persia",
-    "A Jewish queen of Persia, wife of King Ahasuerus, who risked her life to plead for her people and saved them from the destruction Haman had planned. Jews celebrate the feast of Purim in memory of this rescue.",
+    "A young Jewish woman, queen of Persia beside King Ahasuerus, who faces a choice when her people are threatened with the destruction plotted by Haman. Against the law of the court, ready to give her life, she goes unbidden to the king and saves her nation. In memory of this deliverance Jews celebrate the joyful feast of Purim.",
     "Esth 4-8"
    ],
    [
@@ -1456,13 +1456,13 @@ const TEXT = {
    [
     "John the Baptist",
     "Forerunner",
-    "Son of Zechariah and Elizabeth, a relative of Jesus, who called people to repentance at the Jordan and baptised them, Jesus too. He pointed to Him with the words “Behold the Lamb of God” (John 1:29), which the Church repeats at every Mass.",
+    "Son of Zechariah and Elizabeth, kinsman of Jesus and the last of the prophets, who by the Jordan calls people to repentance and baptises, Jesus himself among them. He points to him with the words “Behold, the Lamb of God” (John 1:29), repeated at every Mass, and gives his life for his fidelity to the truth.",
     "Luke 1"
    ],
    [
     "Jesus",
     "Christ",
-    "“For God so loved the world that he gave his only Son” (John 3:16): Jesus, Son of God and son of Mary, is born in Bethlehem as the sign of that love. Through his teaching, his miracles, his death on the cross and his resurrection he opens the way to God for every person.",
+    "“For God so loved the world that he gave his only Son” (John 3:16): in Jesus, Son of God and son of Mary, God becomes one of us. He heals, forgives, sits at table with sinners and teaches the Our Father, and through his death on the cross and his resurrection opens the way to God for every person.",
     "Matt 2; Luke 2"
    ],
    [
@@ -1498,13 +1498,13 @@ const TEXT = {
    [
     "Cardinal Stefan Wyszyński",
     "Primate of the Millennium",
-    "Primate of Poland who led the Church through more than 30 years of communism; imprisoned from 1953 to 1956, he did not give in to the regime. With the Great Novena he prepared Poles for the Millennium of Poland’s Baptism, and in 2021 he was declared blessed.",
+    "Primate of Poland, who for more than thirty years leads the Church through the communist era and, imprisoned from 1953 to 1956, does not bow to the regime. Through the Great Novena he prepares the nation for the Millennium of Poland’s Baptism, and for his steadfastness Poles call him the Primate of the Millennium. In 2021 he is declared blessed.",
     ""
    ],
    [
     "St John Paul II",
     "Pope",
-    "Karol Wojtyła from Wadowice, the first Polish pope, elected in 1978, who in nearly 27 years as pope visited more than 120 countries. His words in 1979, “Let your Spirit descend and renew the face of the earth. This land!”, gave Poles courage on the road to freedom; he has been a saint since 2014.",
+    "Karol Wojtyła of Wadowice, the first Polish pope, who over a pontificate of almost 27 years carries the Gospel to more than 120 countries. His words of 1979, “Let your Spirit descend and renew the face of the earth. This land!”, gave Poles courage on the road to freedom; since 2014 the Church has honoured him as a saint.",
     ""
    ],
    [
@@ -1516,7 +1516,7 @@ const TEXT = {
    [
     "St Gregory the Great",
     "Pope",
-    "Pope and Doctor of the Church who cared for the poor, set the liturgy in order and sent missionaries to England. Gregorian chant takes its name from him, and he called himself “servant of the servants of God”.",
+    "A Roman patrician who gives up high office for the monastery and, as pope in a time of famine and plague, becomes a father to the poor and protector of Rome. He orders the liturgy, sends missionaries to England and calls himself “servant of the servants of God”. Gregorian chant takes its name from him, and the Church honours him as a Doctor.",
     ""
    ],
    [
@@ -1546,7 +1546,7 @@ const TEXT = {
    [
     "Saladin",
     "Sultan",
-    "Muslim sultan of Egypt and Syria, who retook Jerusalem from the crusaders in 1187. Even his enemies admired his chivalry, and in the peace he made with Richard the Lionheart in 1192 he allowed Christians to go on pilgrimage to Jerusalem.",
+    "Sultan of Egypt and Syria, who in 1187 retakes Jerusalem from the crusaders. Even his enemies admired his chivalry, and in the peace made with Richard the Lionheart in 1192 he allows Christians to go on pilgrimage to Jerusalem.",
     ""
    ],
    [
@@ -1576,25 +1576,25 @@ const TEXT = {
    [
     "Leo XIII",
     "Pope",
-    "Pope who in the encyclical Rerum novarum stood up for the dignity of workers, a just wage and the right to form unions, giving rise to modern Catholic social teaching. He was also a great lover of the Rosary, to which he devoted many encyclicals.",
+    "Pope of the industrial age, who in the encyclical Rerum Novarum (1891) takes the side of workers, defending their dignity, a just wage and the right to form associations. With this document he begins modern Catholic social teaching, and he devotes many encyclicals to the rosary, which is why he is called the pope of the rosary.",
     ""
    ],
    [
     "Socrates",
     "Philosopher",
-    "Founder of moral philosophy: through dialogue and questioning he leads others to self-knowledge and the search for the truth about the good. Sentenced to death by the Athenians, he chooses fidelity to his conscience. His teaching is handed down by his pupil, Plato.",
+    "An Athenian thinker who wrote nothing down yet changed the course of philosophy: in conversation, through patient questions, he leads others to know themselves and to seek the truth about the good. Sentenced to death by the Athenians, he chooses fidelity to conscience over escape. His teaching is handed down by his pupil, Plato.",
     ""
    ],
    [
     "Plato",
     "Philosopher",
-    "Pupil of Socrates and founder of the Academy in Athens. He teaches that above the changing world stand eternal truth, goodness and beauty, and that the human soul is immortal. His thought will give the Fathers of the Church a language for speaking of God.",
+    "Pupil of Socrates and founder of the Academy in Athens, who teaches that beyond the changing world of appearances there exist eternal truth, goodness and beauty, and that the human soul is immortal. His thought will become for the Church Fathers, above all St Augustine, a language for speaking about God.",
     ""
    ],
    [
     "Aristotle",
     "Philosopher",
-    "Pupil of Plato, tutor of Alexander the Great and founder of the Lyceum. He orders all the knowledge of his age: he creates logic, the ethics of virtue and the study of nature, and by reason arrives at a First Mover. Through St Thomas Aquinas he becomes a pillar of Christian thought.",
+    "Pupil of Plato, tutor of Alexander the Great and founder of the Lyceum, who sets in order all the knowledge of his time: he creates logic, the ethics of virtue and the study of nature, and by reason arrives at the Prime Mover. Through St Thomas Aquinas he becomes one of the pillars of Christian thought.",
     ""
    ],
    [
@@ -1606,7 +1606,7 @@ const TEXT = {
    [
     "University of Bologna",
     "First university",
-    "The oldest university in the world still in continuous operation, founded by tradition in 1088 and famous for the study of Roman and canon law. After it, often out of cathedral schools and with papal privileges, universities arise in Paris, Oxford and Kraków (1364), where theology, law, medicine and the study of nature flourish.",
+    "The oldest university in continuous operation in the world, founded according to tradition in 1088 and famed for the study of Roman and canon law. Following its lead, often growing out of cathedral schools and under the protection of the popes, universities arise in Paris, Oxford and Kraków (1364): communities of masters and students in which theology, law, medicine and the natural sciences flourish.",
     ""
    ]
   ],
