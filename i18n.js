@@ -718,7 +718,7 @@ const TEXT = {
     "Roboam",
     "1 Krl 14,21",
     "17 lat",
-    "Syn Salomona i pierwszy król samej Judy, któremu jedna nierozważna odpowiedź odbiera większość królestwa: za radą młodych doradców zapowiada ludowi jeszcze cięższe jarzmo i dziesięć pokoleń północy odchodzi (1 Krl 12). Za jego czasów faraon Szeszonk zabiera skarby świątyni."
+    "Syn Salomona, który obejmuje tron po ojcu i w jednej chwili traci większą część jego dziedzictwa: odrzuca radę starszych, by ulżyć ludowi, i za podszeptem rówieśników zapowiada jarzmo jeszcze cięższe, a dziesięć pokoleń północy odwraca się od domu Dawida (1 Krl 12). Odtąd panuje już tylko nad Judą, a w piątym roku jego rządów faraon Szeszonk wkracza do Jerozolimy i wywozi skarby świątyni."
    ],
    [
     "Abiam",
@@ -1665,7 +1665,7 @@ const TEXT = {
     "Rehoboam",
     "1 Kgs 14:21",
     "17 years",
-    "Son of Solomon and the first king of Judah alone, whom one rash answer costs most of his kingdom: on the advice of young counsellors he promises the people an even heavier yoke, and the ten northern tribes break away (1 Kgs 12). In his time Pharaoh Shishak carries off the treasures of the Temple."
+    "Son of Solomon, who inherits his father’s throne and in a single moment loses most of his legacy: he rejects the elders’ advice to lighten the people’s load and, urged on by his young companions, promises an even heavier yoke, so the ten northern tribes turn away from the house of David (1 Kgs 12). From then on he rules over Judah alone, and in the fifth year of his reign Pharaoh Shishak enters Jerusalem and carries off the treasures of the Temple."
    ],
    [
     "Abijam",
