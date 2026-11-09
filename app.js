@@ -802,8 +802,8 @@
     const bubble = (cls, text) => {
       const p = document.createElement('p');
       p.className = 'ask-msg ' + cls; p.textContent = text;
-      // Messages go above the suggested questions, which stay at the end of the conversation.
-      log.insertBefore(p, chips); empty.hidden = true; log.scrollTop = log.scrollHeight;
+      // The question and its answer go below the suggested questions, so the reader reads on downwards.
+      log.appendChild(p); empty.hidden = true; log.scrollTop = log.scrollHeight;
       return p;
     };
     const busy = on => {
@@ -911,6 +911,8 @@
       for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
       const pick = pool.filter(([g]) => !seen.has(g) && seen.add(g)).map(([, f]) => f);
       chips.setAttribute('aria-label', U().ask.sugg);
+      // New suggestions move to the end of the conversation, just under the last answer.
+      log.appendChild(chips);
       chips.innerHTML = '';
       pick.slice(0, 3).forEach(f => {
         const b = document.createElement('button');
