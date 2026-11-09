@@ -191,7 +191,7 @@ const TEXT = {
    [
     "Elam",
     "Rdz 10,22",
-    "Jedna z najstarszych cywilizacji świata, rozkwitająca u stóp gór Zagros, w dzisiejszym Iranie, ze stolicą w Suzie. Biblia wywodzi jej lud od Elama, syna Sema (Rdz 10,22). Echo tego dawnego narodu brzmi jeszcze w dniu Pięćdziesiątnicy, gdy Elamici słyszą apostołów głoszących „wielkie dzieła Boże” we własnym języku (Dz 2,9-11)."
+    "Jedna z najstarszych cywilizacji świata, rozkwitająca u stóp gór Zagros, w dzisiejszym Iranie, ze stolicą w Suzie. Biblia wywodzi jej lud od Elama, syna Sema (Rdz 10,22). Echo tego dawnego narodu brzmi jeszcze w dniu Zesłania Ducha Świętego, gdy Elamici słyszą apostołów głoszących „wielkie dzieła Boże” we własnym języku (Dz 2,9-11)."
    ],
    [
     "Asyria",
@@ -206,7 +206,7 @@ const TEXT = {
    [
     "Arabowie",
     "Rdz 25,12-18",
-    "Ludy pustyń i oaz Półwyspu Arabskiego, kupcy prowadzący karawany z kadzidłem i wonnościami. Tradycja umieszcza tu krainę Saby, z której królowa przybyła, by przekonać się o mądrości Salomona. W dniu Pięćdziesiątnicy także Arabowie słyszą apostołów głoszących we własnym języku wielkie dzieła Boże (Dz 2,11)."
+    "Ludy pustyń i oaz Półwyspu Arabskiego, kupcy prowadzący karawany z kadzidłem i wonnościami. Tradycja umieszcza tu krainę Saby, z której królowa przybyła, by przekonać się o mądrości Salomona. W dniu Zesłania Ducha Świętego także Arabowie słyszą apostołów głoszących we własnym języku wielkie dzieła Boże (Dz 2,11)."
    ],
    [
     "Izrael",
@@ -256,7 +256,7 @@ const TEXT = {
    [
     "Kościół katolicki",
     "Mt 16,18; Dz 2",
-    "„Katolicki” znaczy po grecku „powszechny”, bo od Pięćdziesiątnicy Kościół jest otwarty dla każdego narodu, języka i kultury. Z dwunastu apostołów wyrósł przez dwa tysiące lat we wspólnotę ponad 1,4 miliarda ludzi, którą prowadzi papież, następca św. Piotra."
+    "„Katolicki” znaczy po grecku „powszechny”, bo od dnia Zesłania Ducha Świętego Kościół jest otwarty dla każdego narodu, języka i kultury. Z dwunastu apostołów wyrósł przez dwa tysiące lat we wspólnotę ponad 1,4 miliarda ludzi, którą prowadzi papież, następca św. Piotra."
    ],
    [
     "Prawosławie",
@@ -278,7 +278,7 @@ const TEXT = {
    [
     "Stworzenie świata",
     "Rdz 1,1",
-    "„Na początku Bóg stworzył niebo i ziemię”: uroczysty hymn wyznaje, że wszystko, co istnieje, pochodzi od Boga i jest dobre. Obrazowy rytm sześciu dni i odpoczynku siódmego ukazuje ład stworzenia, a jego szczytem jest człowiek, mężczyzna i niewiasta, stworzony na obraz Boga i powołany do troski o świat. Kościół czyta ten tekst nie jako opis przyrodniczy, lecz jako katechezę o Stwórcy i godności człowieka (KKK 337–343).",
+    "„Na początku Bóg stworzył niebo i ziemię” (Rdz 1,1): tak otwiera się Biblia, uroczystym hymnem, który wyznaje, że wszystko, co istnieje, pochodzi od Boga i jest dobre. W rytmie sześciu dni i siódmego dnia odpoczynku wyłania się ład świata, a jego ukoronowaniem jest człowiek, mężczyzna i niewiasta, stworzony na obraz Boga i powołany do troski o świat. Kościół czyta ten tekst nie jako opis przyrodniczy, lecz jako słowo o Stwórcy i godności człowieka (KKK 337–343).",
     "Bez daty"
    ],
    [
@@ -290,25 +290,25 @@ const TEXT = {
    [
     "Wieża Babel",
     "Rdz 11,1-9",
-    "Ludzie mówiący jednym językiem budują miasto i wieżę „sięgającą nieba”, by zdobyć sławę. Bóg miesza ich języki i rozprasza ich po całej ziemi. W dniu Pięćdziesiątnicy dzieje się coś odwrotnego: ludzie różnych języków rozumieją apostołów, co Kościół uznaje za swoje narodziny.",
+    "Zjednoczona jednym językiem ludzkość postanawia zbudować miasto i wieżę „sięgającą nieba”, by uczynić sobie imię bez Boga. Bóg miesza ich mowę i budowa się urywa: jedność zbudowana na pysze rozpada się, a ludzie rozchodzą się po świecie. Dopiero w dniu Zesłania Ducha Świętego ludzie wielu języków znów się rozumieją, słysząc apostołów, każdy we własnej mowie.",
     "Bez daty"
    ],
    [
     "Powołanie Abrahama",
     "Rdz 12,1-4",
-    "Bóg mówi do Abrama: „Wyjdź z twojej ziemi rodzinnej… do kraju, który ci ukażę”, i obiecuje, że przez niego będą błogosławione wszystkie ludy. Abram w wieku 75 lat wyrusza z Charanu do Kanaanu, nie znając drogi. Dlatego nazywa się go „ojcem wszystkich wierzących”.",
+    "„Wyjdź z twojej ziemi rodzinnej… do kraju, który ci ukażę” (Rdz 12,1): tymi słowami zaczyna się historia wiary jednego człowieka i całego ludu. Siedemdziesięciopięcioletni Abram opuszcza Charan i rusza do Kanaanu, ufając jedynie obietnicy, że przez niego będą błogosławione wszystkie narody. Wiara, która wyrusza w drogę, nie znając jej celu (Hbr 11,8), czyni go ojcem wszystkich wierzących.",
     null
    ],
    [
     "Ofiarowanie Izaaka",
     "Rdz 22",
-    "Bóg poddaje Abrahama próbie i każe mu złożyć w ofierze ukochanego syna Izaaka na górze Moria. W ostatniej chwili anioł powstrzymuje jego rękę, a Abraham składa w ofierze baranka uwikłanego w zarośla. Księga Kronik umieszcza górę Moria w miejscu, gdzie Salomon zbudował świątynię (2 Krn 3,1), a chrześcijanie widzą w Izaaku niosącym drwa na ofiarę zapowiedź Chrystusa niosącego krzyż; Kościół czyta tę historię w Wigilię Paschalną.",
+    "Najtrudniejsza próba wiary Abrahama: Bóg każe mu złożyć w ofierze ukochanego syna Izaaka na górze Moria. Gdy ojciec podnosi rękę, anioł ją powstrzymuje, a w zaroślach pojawia się baran, który zajmuje miejsce chłopca; Abraham nazywa to miejsce „Pan widzi” (Rdz 22,14). Chrześcijanie widzą w Izaaku, niosącym drwa na ofiarę, zapowiedź Chrystusa niosącego krzyż, a Kościół czyta tę historię w Wigilię Paschalną.",
     null
    ],
    [
     "Wyjście z Egiptu",
     "Wj 12",
-    "Bóg wyprowadza Izraelitów z niewoli egipskiej pod wodzą Mojżesza. Przed wyjściem spożywają baranka paschalnego, a krew na odrzwiach chroni ich domy; potem przechodzą suchą stopą przez morze. Żydzi wspominają to co roku w święto Paschy, a chrześcijanie widzą w nim zapowiedź Paschy Chrystusa, Jego śmierci i zmartwychwstania.",
+    "Noc, w której rodzi się naród: po latach niewoli w Egipcie Izraelici pod wodzą Mojżesza spożywają w pośpiechu baranka paschalnego, a krew na odrzwiach chroni ich domy. Potem przechodzą suchą stopą przez morze, ku wolności i ku górze Synaj, gdzie Bóg zawrze z nimi przymierze. Żydzi co roku wspominają tę noc w święto Paschy, a chrześcijanie widzą w niej zapowiedź Paschy Chrystusa, który przez śmierć i zmartwychwstanie wyprowadza człowieka z niewoli grzechu.",
     null
    ],
    [
@@ -350,7 +350,7 @@ const TEXT = {
    [
     "Ukrzyżowanie i Pięćdziesiątnica",
     "Dz 2",
-    "Jezus umiera na krzyżu w Jerozolimie i trzeciego dnia zmartwychwstaje, a pięćdziesiąt dni później Duch Święty zstępuje na apostołów zgromadzonych z Maryją. Piotr wygłasza pierwsze kazanie, a tego dnia chrzest przyjmuje około trzech tysięcy osób: to narodziny Kościoła.",
+    "„Nikt nie ma większej miłości od tej, gdy ktoś życie swoje oddaje za przyjaciół swoich” (J 15,13): w Jerozolimie Jezus umiera na krzyżu, a trzeciego dnia pusty grób ogłasza, że miłość jest mocniejsza od śmierci. Pięćdziesiąt dni później Duch Święty zstępuje na apostołów zgromadzonych z Maryją. Piotr, który niedawno trzykrotnie się zaparł, bez lęku głosi Zmartwychwstałego, a tego dnia chrzest przyjmuje około trzech tysięcy osób. Tak rodzi się Kościół.",
     "30 lub 33 n.e."
    ],
    [
@@ -667,7 +667,7 @@ const TEXT = {
    [
     "Sobór Nicejski I",
     "",
-    "Pierwszy sobór powszechny, zwołany przez cesarza Konstantyna, na którym biskupi wyznali przeciw nauce Ariusza, że Syn Boży jest „współistotny Ojcu”. Wyznanie wiary z Nicei, rozwinięte w Konstantynopolu, chrześcijanie odmawiają do dziś w Credo."
+    "Zaledwie kilkanaście lat po ustaniu prześladowań biskupi z całego chrześcijańskiego świata zbierają się w Nicei na pierwszym soborze powszechnym; niektórzy, jak przekazuje tradycja, noszą jeszcze ślady tortur. Wobec nauki Ariusza wyznają, że Syn Boży jest „współistotny Ojcu”, „Bóg z Boga, Światłość ze Światłości”. To wyznanie, rozwinięte w Konstantynopolu, chrześcijanie Wschodu i Zachodu wspólnie odmawiają w Credo do dziś."
    ],
    [
     "Wielka schizma",
@@ -677,12 +677,12 @@ const TEXT = {
    [
     "Sobór Trydencki",
     "",
-    "Sobór, który był odpowiedzią Kościoła na reformację: wyjaśnił naukę o łasce, sakramentach i Piśmie Świętym oraz odnowił życie duchowieństwa. Dał początek seminariom duchownym, Katechizmowi Rzymskiemu i mszałowi, który służył Kościołowi przez cztery stulecia."
+    "Przez osiemnaście lat, z przerwami, biskupi obradują w alpejskim Trydencie nad odpowiedzią na reformację. Sobór jasno wykłada naukę o łasce, sakramentach i Piśmie Świętym, a zarazem podejmuje odnowę od wewnątrz: zakłada seminaria dla przyszłych kapłanów, przygotowuje Katechizm Rzymski i mszał, który przez cztery stulecia jednoczy modlitwę Kościoła. Z tej odnowy wyrastają święci, jak Karol Boromeusz, i nowa fala misji."
    ],
    [
     "Sobór Watykański II",
     "",
-    "Sobór zwołany przez św. Jana XXIII, który odnowił liturgię, wprowadzając języki narodowe, i otworzył Kościół na dialog ze światem współczesnym, innymi chrześcijanami i religiami. Jego dokumenty, jak „Lumen gentium” i „Gaudium et spes”, kształtują życie Kościoła do dziś."
+    "Według przekazu św. Jan XXIII, zwołując sobór, mówił, że trzeba otworzyć okna Kościoła, by wpuścić świeże powietrze. W latach 1962–1965 ponad dwa tysiące biskupów odnawia liturgię, wprowadzając języki narodowe, przypomina, że każdy ochrzczony jest powołany do świętości, i otwiera Kościół na dialog z innymi chrześcijanami, religiami i światem współczesnym. Jego dokumenty, jak „Lumen gentium” i „Gaudium et spes”, kształtują życie Kościoła do dziś."
    ],
    [
     "Rewolucja francuska",
@@ -1225,7 +1225,7 @@ const TEXT = {
    [
     "Creation",
     "Gen 1:1",
-    "“In the beginning God created the heavens and the earth”: this solemn hymn proclaims that everything that exists comes from God and is good. The poetic rhythm of six days and a seventh day of rest shows the order of creation, crowned by the human being, man and woman, made in God’s image and called to care for the world. The Church reads this text not as a scientific account but as a teaching about the Creator and human dignity (CCC 337–343).",
+    "“In the beginning God created the heavens and the earth” (Gen 1:1): so the Bible opens, with a solemn hymn proclaiming that everything that exists comes from God and is good. In the rhythm of six days and a seventh day of rest the order of the world unfolds, crowned by the human being, man and woman, made in God’s image and called to care for the world. The Church reads this text not as a scientific account but as a word about the Creator and the dignity of the human person (CCC 337–343).",
     "Undated"
    ],
    [
@@ -1237,25 +1237,25 @@ const TEXT = {
    [
     "Tower of Babel",
     "Gen 11:1-9",
-    "People speaking one language build a city and a tower “with its top in the sky” to make a name for themselves. God confuses their language and scatters them over all the earth. At Pentecost the opposite happens: people of many languages understand the apostles, which the Church celebrates as her birth.",
+    "United by one language, humanity sets out to build a city and a tower “with its top in the heavens”, to make a name for itself without God. God confuses their speech and the building stops: a unity built on pride falls apart, and people scatter across the world. Only at Pentecost do people of many languages understand one another again, each hearing the apostles in their own tongue.",
     "Undated"
    ],
    [
     "Call of Abraham",
     "Gen 12:1-4",
-    "God says to Abram: “Go forth from your land… to a land that I will show you”, and promises that through him all the families of the earth will be blessed. At 75 Abram sets out from Haran for Canaan, not knowing the way. That is why he is called “the father of all who believe”.",
+    "“Go from your country… to the land that I will show you” (Gen 12:1): with these words begins the story of the faith of one man and of a whole people. At seventy-five, Abram leaves Haran and sets out for Canaan, trusting only in the promise that through him all nations will be blessed. A faith that sets out without knowing where it is going (Heb 11:8) makes him the father of all who believe.",
     null
    ],
    [
     "Binding of Isaac",
     "Gen 22",
-    "God tests Abraham and tells him to offer his beloved son Isaac on Mount Moriah. At the last moment an angel stops his hand, and Abraham offers instead a ram caught in a thicket. The Book of Chronicles places Mount Moriah where Solomon later built the temple (2 Chr 3:1), and Christians see in Isaac carrying the wood for the sacrifice a sign of Christ carrying the cross; the Church reads this story at the Easter Vigil.",
+    "The hardest test of Abraham’s faith: God tells him to offer his beloved son Isaac in sacrifice on Mount Moriah. As the father raises his hand, an angel stays it, and a ram caught in a thicket takes the boy’s place; Abraham names the place “The Lord will provide” (Gen 22:14). Christians see in Isaac, carrying the wood for the sacrifice, a foreshadowing of Christ carrying the cross, and the Church reads this story at the Easter Vigil.",
     null
    ],
    [
     "The Exodus",
     "Ex 12",
-    "God leads the Israelites out of slavery in Egypt under Moses. Before they leave they eat the Passover lamb, and its blood on the doorposts protects their homes; then they cross the sea on dry ground. Jews remember this every year at Passover, and Christians see in it a sign of Christ’s Passover, His death and resurrection.",
+    "The night a nation is born: after years of slavery in Egypt, the Israelites under Moses eat the Passover lamb in haste, and the blood on their doorposts protects their homes. Then they cross the sea on dry ground, towards freedom and towards Mount Sinai, where God will make a covenant with them. Jews remember this night every year at Passover, and Christians see in it a foreshadowing of the Passover of Christ, who through his death and resurrection leads humanity out of the slavery of sin.",
     null
    ],
    [
@@ -1297,7 +1297,7 @@ const TEXT = {
    [
     "Crucifixion and Pentecost",
     "Acts 2",
-    "Jesus dies on the cross in Jerusalem and rises on the third day, and fifty days later the Holy Spirit comes down on the apostles gathered with Mary. Peter preaches the first sermon, and about three thousand people are baptised that day: the birth of the Church.",
+    "“Greater love has no one than this, that someone lay down his life for his friends” (John 15:13): in Jerusalem Jesus dies on the cross, and on the third day the empty tomb proclaims that love is stronger than death. Fifty days later the Holy Spirit descends on the apostles gathered with Mary. Peter, who not long before had denied him three times, fearlessly proclaims the Risen One, and that day about three thousand people are baptised. So the Church is born.",
     "AD 30 or 33"
    ],
    [
@@ -1614,7 +1614,7 @@ const TEXT = {
    [
     "First Council of Nicaea",
     "",
-    "The first ecumenical council, called by Emperor Constantine, at which the bishops professed against the teaching of Arius that the Son of God is “consubstantial with the Father”. The Nicene creed, completed at Constantinople, is still said by Christians today."
+    "Barely a dozen years after the persecutions end, bishops from the whole Christian world gather at Nicaea for the first ecumenical council; some, tradition says, still bear the marks of torture. Against the teaching of Arius they confess that the Son of God is “consubstantial with the Father”, “God from God, Light from Light”. This confession, developed at Constantinople, is still prayed together in the Creed by Christians of East and West."
    ],
    [
     "Great Schism",
@@ -1624,12 +1624,12 @@ const TEXT = {
    [
     "Council of Trent",
     "",
-    "The council that was the Church’s answer to the Reformation: it clarified teaching on grace, the sacraments and Scripture and renewed the life of the clergy. It gave rise to seminaries, the Roman Catechism and a missal that served the Church for four centuries."
+    "For eighteen years, with interruptions, bishops meet in Alpine Trent to respond to the Reformation. The council sets out clearly the teaching on grace, the sacraments and Scripture, and at the same time undertakes renewal from within: it founds seminaries for future priests and prepares the Roman Catechism and a missal that unites the Church’s prayer for four centuries. From this renewal come saints such as Charles Borromeo and a new wave of missions."
    ],
    [
     "Second Vatican Council",
     "",
-    "The council called by St John XXIII, which renewed the liturgy by bringing in national languages and opened the Church to dialogue with the modern world, other Christians and other religions. Its documents, such as Lumen gentium and Gaudium et spes, shape the life of the Church to this day."
+    "St John XXIII is said to have spoken, when calling the council, of opening the windows of the Church to let in fresh air. From 1962 to 1965 more than two thousand bishops renew the liturgy, introducing the vernacular languages, recall that every baptised person is called to holiness, and open the Church to dialogue with other Christians, other religions and the modern world. Its documents, such as Lumen Gentium and Gaudium et Spes, shape the life of the Church to this day."
    ],
    [
     "French Revolution",
