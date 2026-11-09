@@ -256,7 +256,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .ask-note { margin: 8px 0 0; font-family: var(--mono); font-size: 10.5px; letter-spacing: .02em; color: #7d7177; }
 
 .ask-pad { position: relative; overflow: hidden; border-radius: 0;
-  background: var(--n-100); }
+  background: #f4f2f3; }
 .ask-screw { position: absolute; top: 12px; width: 13px; height: 13px; border-radius: 50%; border: 1px solid var(--n-300); background: radial-gradient(circle, var(--n-200) 30%, var(--n-25) 32%); opacity: .7; }
 .ask-screw.tl { left: 12px; } .ask-screw.tr { right: 12px; }
 .ask-grille { position: absolute; top: 18px; right: 40px; width: 45px; height: 14px;
