@@ -119,7 +119,7 @@ const TEXT = {
    [
     "Sara",
     "Rdz 23,1",
-    "Żona Abrahama i matka ludu obietnicy, której Bóg zmienia imię z Saraj na Sara, „księżniczka”. Gdy po latach oczekiwania w starości rodzi Izaaka, jej niedowierzanie przemienia się w radość (Rdz 21,6). Jest jedyną kobietą w Biblii, której wiek przy śmierci zostaje podany: 127 lat (Rdz 23,1)."
+    "Żona Abrahama i matka ludu obietnicy, której Bóg zmienia imię z Saraj na Sara, „księżna – pani wszystkich”, zapowiadając, że stanie się matką ludów, a królowie będą jej potomkami (Rdz 17,16). Gdy po latach oczekiwania w starości rodzi Izaaka, jej niedowierzanie przemienia się w radość (Rdz 21,6). Jest jedyną kobietą w Biblii, której wiek przy śmierci zostaje podany: 127 lat (Rdz 23,1)."
    ],
    [
     "Izmael",
@@ -1066,7 +1066,7 @@ const TEXT = {
    [
     "Sarah",
     "Gen 23:1",
-    "Wife of Abraham and mother of the people of the promise, whom God renames from Sarai to Sarah, “princess”. When after years of waiting she bears Isaac in her old age, her disbelief turns into joy (Gen 21:6). She is the only woman in the Bible whose age at death is recorded: 127 years (Gen 23:1)."
+    "Wife of Abraham and mother of the people of the promise, whom God renames from Sarai to Sarah, “princess – lady of all”, promising that she will become a mother of nations and that kings will come from her (Gen 17:16). When after years of waiting she bears Isaac in her old age, her disbelief turns into joy (Gen 21:6). She is the only woman in the Bible whose age at death is recorded: 127 years (Gen 23:1)."
    ],
    [
     "Ishmael",
