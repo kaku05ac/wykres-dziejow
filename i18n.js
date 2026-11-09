@@ -283,8 +283,8 @@ const TEXT = {
    ],
    [
     "Potop",
-    "Rdz 7",
-    "Gdy zło zalewa ziemię, Bóg zsyła potop, ocalając w arce Noego, jego rodzinę i zwierzęta. Po roku wody opadają, a Bóg obiecuje, że już nigdy nie zniszczy ziemi. Chrześcijanie widzą w tej historii zapowiedź chrztu, w którym woda oznacza nowy początek.",
+    "Rdz 6–9; 1 P 3,20-21",
+    "Gdy zło rozlewa się po ziemi, Bóg nie porzuca świata: wśród wód potopu ocala w arce Noego, jego bliskich i wszelkie stworzenia, by od nich zacząć na nowo. Kiedy wody opadają, nad obmytą ziemią staje tęcza, znak przymierza i obietnicy, że życie nie zostanie już zgładzone. W tych wodach, które kończą stary świat i otwierają nowy, Kościół od początku dostrzega zapowiedź chrztu, przez który człowiek przechodzi ku nowemu życiu.",
     "Bez daty"
    ],
    [
@@ -1230,8 +1230,8 @@ const TEXT = {
    ],
    [
     "The Flood",
-    "Gen 7",
-    "When evil floods the earth, God sends the Flood, saving Noah, his family and the animals in the ark. After a year the waters recede, and God promises never again to destroy the earth. Christians see in this story a foreshadowing of baptism, where water means a new beginning.",
+    "Gen 6–9; 1 Pet 3:20-21",
+    "When evil spreads across the earth, God does not abandon the world: amid the waters of the flood he saves Noah, his family and every kind of creature in the ark, so that life may begin anew from them. When the waters recede, a rainbow rises over the washed earth, a sign of covenant and a promise that life will never again be destroyed. In these waters, which close an old world and open a new one, the Church has from the beginning seen a foreshadowing of baptism, through which a person passes into new life.",
     "Undated"
    ],
    [
