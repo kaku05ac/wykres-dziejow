@@ -858,7 +858,7 @@
       if (input.value.trim()) return askNow(input.value);
       // With nothing typed, the key asks one of a few deeper questions about what the card shows.
       const K = U().ask.q.knob, x = $('cardTitle').textContent;
-      const pool = [K.hist, K.today].concat(state.year < -5 ? [K.nt] : []);
+      const pool = [K.hist].concat(state.year < -5 ? [K.nt] : []);
       askNow(pool[Math.floor(Math.random() * pool.length)](x));
     });
     // Keys typed in the chat must not move the timeline.
@@ -880,18 +880,20 @@
       return A && A[i] ? A[i][0] : null;
     };
     const poolOf = key => {
-      const Q = U().ask.q, k = key[0];
+      const Q = U().ask.q, k = key[0], i = +key.slice(1), K = Q.knob;
+      const y = key === 'sci' ? 1088 : ({ e: EV, c: CH_EV, f: FIG, p: PAT, k: KINGS, n: NAT }[k])[i][k === 'n' ? 2 : 1];
+      const nt = y < -5 ? [K.nt] : [];
       if (k === 'k') return Q.king;
-      if (k === 'n') return ['chu', 'orth', 'ref'].includes(NAT[+key.slice(1)][1]) ? Q.church : Q.nat;
-      // People: words worth knowing, plus the key's questions (influence, lesson for today, link with the New Testament).
-      if ((k === 'f' && FIG[+key.slice(1)][6] !== 'U') || k === 'p') {
-        const y = k === 'f' ? FIG[+key.slice(1)][1] : PAT[+key.slice(1)][1];
-        return Q.fig.concat([Q.knob.hist, Q.knob.today], y < -5 ? [Q.knob.nt] : []);
-      }
-      // Genesis 1–11 has no dates or places to visit: only art, other traditions, liturgy, the New Testament, today.
-      const y = key === 'sci' ? 1088 : (k === 'e' ? EV : k === 'c' ? CH_EV : FIG)[+key.slice(1)][1];
-      if (y < SEAM) return [Q.ev[3], Q.ev[4], Q.ev[6], Q.knob.nt, Q.knob.today];
-      return Q.ev;
+      // Nations: relations with Israel (not for Cain's line, Israel or the Jewish people themselves), sources, influence.
+      if (k === 'n') return ['chu', 'orth', 'ref'].includes(NAT[i][1]) ? Q.church
+        : ([0, 5, 17].includes(i) ? Q.nat.slice(1) : Q.nat).concat(Q.natHist);
+      // People: words worth knowing, their influence, the New Testament link before Christ; biblical people
+      // also where to read about them, later ones their works.
+      if ((k === 'f' && FIG[i][6] !== 'U') || k === 'p') return Q.fig.concat([K.hist], nt, y < 100 ? Q.figBible : Q.figLater);
+      // Genesis 1–11 has no dates or places: only its meaning, where to read more, the New Testament.
+      if (y < SEAM) return Q.primeval.concat(nt);
+      // Biblical events: Scripture, sources, liturgy; later events: sources and the Church's view.
+      return (y < 100 ? Q.ev : Q.later).concat([K.hist], nt);
     };
     let chipsFor = null;
     const suggest = key => {
