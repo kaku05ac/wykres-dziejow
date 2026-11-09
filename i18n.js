@@ -667,7 +667,7 @@ const TEXT = {
    [
     "Sobór Nicejski I",
     "",
-    "Zaledwie kilkanaście lat po ustaniu prześladowań biskupi z całego chrześcijańskiego świata zbierają się w Nicei na pierwszym soborze powszechnym; niektórzy, jak przekazuje tradycja, noszą jeszcze ślady tortur. Wobec nauki Ariusza wyznają, że Syn Boży jest „współistotny Ojcu”, „Bóg z Boga, Światłość ze Światłości”. To wyznanie, rozwinięte w Konstantynopolu, chrześcijanie Wschodu i Zachodu wspólnie odmawiają w Credo do dziś."
+    "Po raz pierwszy w dziejach biskupi Wschodu i Zachodu zasiadają razem: w 325 r. zbierają się w Nicei, by rozstrzygnąć spór, który podzielił chrześcijan, czy Syn Boży jest prawdziwym Bogiem. Wobec nauki Ariusza wyznają, że Syn Boży jest „współistotny Ojcu”, „Bóg z Boga, Światłość ze Światłości”. To wyznanie, rozwinięte w Konstantynopolu, chrześcijanie Wschodu i Zachodu wspólnie odmawiają w Credo do dziś."
    ],
    [
     "Wielka schizma",
@@ -1614,7 +1614,7 @@ const TEXT = {
    [
     "First Council of Nicaea",
     "",
-    "Barely a dozen years after the persecutions end, bishops from the whole Christian world gather at Nicaea for the first ecumenical council; some, tradition says, still bear the marks of torture. Against the teaching of Arius they confess that the Son of God is “consubstantial with the Father”, “God from God, Light from Light”. This confession, developed at Constantinople, is still prayed together in the Creed by Christians of East and West."
+    "For the first time in history the bishops of East and West sit together: in 325 they gather at Nicaea to settle a dispute that had divided Christians, whether the Son of God is truly God. Against the teaching of Arius they confess that the Son of God is “consubstantial with the Father”, “God from God, Light from Light”. This confession, developed at Constantinople, is still prayed together in the Creed by Christians of East and West."
    ],
    [
     "Great Schism",
