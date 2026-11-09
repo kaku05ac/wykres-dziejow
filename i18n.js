@@ -539,7 +539,7 @@ const TEXT = {
    [
     "Św. Tomasz z Akwinu",
     "Doktor Kościoła",
-    "Dominikanin i jeden z największych myślicieli w dziejach Kościoła, który w „Sumie teologicznej” pokazał, że wiara i rozum nie są rywalami, lecz prowadzą do tej samej prawdy. Według tradycji, gdy modlił się przed krzyżem, usłyszał: „Dobrze o Mnie napisałeś, Tomaszu”, a zapytany o nagrodę, odpowiedział: „Tylko Ciebie, Panie”. Kościół uczynił go patronem szkół i uczelni katolickich.",
+    "Dominikanin i jeden z największych myślicieli w dziejach Kościoła, który w „Sumie teologicznej” pokazał, że wiara i rozum nie są rywalami, lecz prowadzą do tej samej prawdy. Gdy pisma Arystotelesa, przez wieki znane na Zachodzie tylko we fragmentach, powracają w przekładach z arabskiego i greckiego, Tomasz nie odrzuca ich z lękiem, lecz włącza w myśl chrześcijańską, tworząc syntezę, która do dziś kształtuje filozofię, etykę i prawo. Leon XIII polecił go jako mistrza dla szkół katolickich, a św. Jan Paweł II w encyklice „Fides et ratio” nazwał go wzorem dla wszystkich, którzy szukają prawdy.",
     ""
    ],
    [
@@ -617,7 +617,7 @@ const TEXT = {
    [
     "Izaak Newton",
     "Uczony",
-    "Angielski fizyk i matematyk, który w „Principiach” (1687) opisał prawa ruchu i powszechnego ciążenia, pokazując, że spadające jabłko i krążący Księżyc podlegają temu samemu prawu. W zakończeniu tego dzieła napisał, że tak piękny układ Słońca, planet i komet mógł powstać jedynie z zamysłu „istoty rozumnej i potężnej”. Wiele pisał też o Biblii.",
+    "Angielski fizyk i matematyk, który w „Principiach” (1687) połączył niebo i ziemię jednym prawem powszechnego ciążenia: tym samym, które sprawia, że jabłko spada, a Księżyc krąży po swojej orbicie. Wpatrzony w ład kosmosu, w zakończeniu dzieła zapisał, że tak piękny układ Słońca, planet i komet mógł zrodzić się jedynie z zamysłu „istoty rozumnej i potężnej”.",
     ""
    ],
    [
@@ -1486,7 +1486,7 @@ const TEXT = {
    [
     "St Thomas Aquinas",
     "Doctor of the Church",
-    "Dominican friar and one of the greatest thinkers in the history of the Church, who in his Summa Theologiae showed that faith and reason are not rivals but lead to the same truth. According to tradition, as he prayed before a crucifix he heard: “You have written well of me, Thomas,” and asked what reward he wished, he answered: “Only you, Lord.” The Church has made him patron of Catholic schools and universities.",
+    "Dominican friar and one of the greatest thinkers in the history of the Church, who in his Summa Theologiae showed that faith and reason are not rivals but lead to the same truth. When the works of Aristotle, known in the West for centuries only in fragments, return in translations from Arabic and Greek, Thomas does not reject them in fear but weaves them into Christian thought, creating a synthesis that still shapes philosophy, ethics and law. Leo XIII commended him as the master for Catholic schools, and St John Paul II, in the encyclical Fides et Ratio, called him a model for all who seek the truth.",
     ""
    ],
    [
@@ -1564,7 +1564,7 @@ const TEXT = {
    [
     "Isaac Newton",
     "Scientist",
-    "English physicist and mathematician who in the Principia (1687) set out the laws of motion and universal gravitation, showing that a falling apple and the orbiting Moon obey the same law. At the close of that work he wrote that so beautiful a system of the Sun, planets and comets could only proceed from the counsel of “an intelligent and powerful Being”. He also wrote extensively on the Bible.",
+    "English physicist and mathematician who in the Principia (1687) joined heaven and earth under one law of universal gravitation: the same law that makes an apple fall and keeps the Moon in its orbit. Contemplating the order of the cosmos, he wrote at the close of the work that so beautiful a system of the Sun, planets and comets could only proceed from the counsel of “an intelligent and powerful Being”.",
     ""
    ],
    [
