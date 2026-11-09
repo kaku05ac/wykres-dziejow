@@ -492,18 +492,23 @@
     // A nation's card: its description, with its dates in the line below; the line of Cain has no dates, only "from Cain to the Flood".
     NAT.forEach((n, i) => addArc('n' + i, 90 + i * 14.5, 7, n[2], n[3], n[1], n[0], n[5] || '', n[4], n[0], 5,
       n[2] < SEAM ? U().natCain.replace(/\.$/, '') : U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3]))));
-    // Noah's three sons (Genesis 10): a hairline across each family's rings where its colour begins, with the
-    // son's name beside it; hovering or clicking it lights up that family and explains it.
+    // Noah's three sons (Genesis 10): above the first rings of each family a dotted line runs along them from
+    // where the colour begins (a short tick drops to the rings there) and ends in the son's name. Hovering or
+    // clicking it lights up that family and explains it.
     ['sem', 'ham', 'jap'].forEach(g => {
       const idx = NAT.map((n, i) => (n[1] === g ? i : -1)).filter(i => i >= 0);
-      const G = U().groups[g], r1 = 90 + idx[0] * 14.5 - 3.5, r2 = 90 + idx[idx.length - 1] * 14.5 + 3.5, on = gFocus === g;
-      const a = Math.min(...idx.map(i => ang(NAT[i][2]))) - 1.6;
+      const G = U().groups[g], on = gFocus === g, c = COL[g][1];
+      const y0 = Math.min(...idx.map(i => NAT[i][2])), first = idx.filter(i => NAT[i][2] - y0 < 10);
+      const r = 90 + Math.max(...first) * 14.5 + 6.5, a0 = ang(y0), a1 = a0 + 12;
+      // The name's own length along the arc (6.5px mono capitals with wide spacing), so it never gets clipped.
+      const half = (G.label.length * 7.4 + 4) / 2 / r * 180 / Math.PI;
       items['g-' + g] = { title: G.title, body: G.body, ref: G.ref, when: '' };
-      const [x1, y1] = pt(r1, a), [x2, y2] = pt(r2, a), [lx, ly] = pt((r1 + r2) / 2, a - 1.7), c = COL[g][1];
+      const [sx, sy] = pt(r, a0), [ex, ey] = pt(r, a1), [tx, ty] = pt(r - 4, a0);
+      const d = `M${f1(sx)} ${f1(sy)}A${r} ${r} 0 0 1 ${f1(ex)} ${f1(ey)}`;
       arcs += `<g class="grp${on ? ' on' : ''}" style="color:${c}">`
-        + `<line class="grp-line" x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}"/>`
-        + `<text class="grp-label" transform="translate(${f1(lx)} ${f1(ly)}) rotate(${f1(a - 90)})" text-anchor="middle" dominant-baseline="central">${esc(G.label)}</text>`
-        + `<line class="arc-hit" data-key="g-${g}" x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke-width="14"/></g>`;
+        + `<path class="grp-line" d="M${f1(tx)} ${f1(ty)}L${f1(sx)} ${f1(sy)}"/><path class="grp-dots" d="${d}"/>`
+        + curved('gl-' + g, r, a1 + 0.8 + half, half, G.label, 'grp-label')
+        + `<path class="arc-hit" data-key="g-${g}" d="${d}" stroke-width="10"/></g>`;
     });
     const alive = [];
     PAT.forEach((p, i) => {
