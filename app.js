@@ -45,6 +45,15 @@
   // live on into Abraham's time, so each later person takes the outermost track that is free
   // for the whole of their life (in order of birth); no two arcs ever overlap.
   const primeval = p => p[1] < ABRAHAM;
+  // Nation rings, inside out; a little extra room between Noah's families (Shem, Ham, Japheth) and before the
+  // Churches, where each family's dotted mark and name run.
+  const NAT_R = (() => {
+    let gap = 0;
+    return NAT.map((n, i) => {
+      if (i && n[1] !== NAT[i - 1][1] && ['ham', 'jap', 'chu'].includes(n[1])) gap += 5;
+      return 90 + i * 13.8 + gap;
+    });
+  })();
   const PAT_R = (() => {
     const r = [], used = {}, take = (rad, s, e) => (used[rad] = used[rad] || []).push([s, e]);
     const free = (rad, s, e) => !(used[rad] || []).some(([a, b]) => s < b + 8 && a < e + 8);
@@ -490,23 +499,23 @@
 
     // Nations ring (inner) and patriarch lifespans (outer).
     // A nation's card: its description, with its dates in the line below; the line of Cain has no dates, only "from Cain to the Flood".
-    NAT.forEach((n, i) => addArc('n' + i, 90 + i * 14.5, 7, n[2], n[3], n[1], n[0], n[5] || '', n[4], n[0], 5,
+    NAT.forEach((n, i) => addArc('n' + i, NAT_R[i], 7, n[2], n[3], n[1], n[0], n[5] || '', n[4], n[0], 5,
       n[2] < SEAM ? U().natCain.replace(/\.$/, '') : U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3]))));
-    // Noah's three sons (Genesis 10): where a family's colour begins, a fine tick runs across the rings that open
-    // it, from the first to the last; from its outer end a dotted line follows them and ends in the son's name. Hovering or clicking it lights up that family and explains it.
+    // Noah's three sons (Genesis 10): where a family's colour begins, a dotted tick runs across all its rings,
+    // from the first to the last; from its outer end a dotted line follows them and ends in the son's name. Hovering or clicking it lights up that family and explains it.
     ['sem', 'ham', 'jap'].forEach(g => {
       const idx = NAT.map((n, i) => (n[1] === g ? i : -1)).filter(i => i >= 0);
       const G = U().groups[g], on = gFocus === g, c = COL[g][1];
-      // The rings that open the family (those starting within its first century): the tick spans them all.
-      const y0 = Math.min(...idx.map(i => NAT[i][2])), first = idx.filter(i => NAT[i][2] - y0 < 100), a0 = ang(y0) - 0.8, a1 = a0 + 12;
-      const rIn = 90 + first[0] * 14.5 - 4.5, r = 90 + first[first.length - 1] * 14.5 + 8;
-      // The name's own length along the arc (6.5px mono capitals with wide spacing), so it never gets clipped.
-      const half = (G.label.length * 7.4 + 4) / 2 / r * 180 / Math.PI;
+      // The tick spans the whole family, from its first ring to its last; the dots run a little outside the last.
+      const y0 = Math.min(...idx.map(i => NAT[i][2])), a0 = ang(y0) - 1.8, a1 = a0 + 12;
+      const rIn = NAT_R[idx[0]] - 4.5, r = NAT_R[idx[idx.length - 1]] + 9.4;
+      // The name's own length along the arc (small mono letters), so it never gets clipped.
+      const half = (G.label.length * 4.4 + 4) / 2 / r * 180 / Math.PI;
       items['g-' + g] = { title: G.title, body: G.body, ref: G.ref, when: '' };
       const [sx, sy] = pt(r, a0), [ex, ey] = pt(r, a1), [tx, ty] = pt(rIn, a0);
       const d = `M${f1(sx)} ${f1(sy)}A${r} ${r} 0 0 1 ${f1(ex)} ${f1(ey)}`;
       arcs += `<g class="grp${on ? ' on' : ''}" style="color:${c}">`
-        + `<path class="grp-line" d="M${f1(tx)} ${f1(ty)}L${f1(sx)} ${f1(sy)}"/><path class="grp-dots" d="${d}"/>`
+        + `<path class="grp-dots" d="M${f1(tx)} ${f1(ty)}L${f1(sx)} ${f1(sy)}"/><path class="grp-dots" d="${d}"/>`
         + curved('gl-' + g, r, a1 + 1.2 + half, half, G.label, 'grp-label')
         + `<path class="arc-hit" data-key="g-${g}" d="M${f1(tx)} ${f1(ty)}L${f1(sx)} ${f1(sy)}${d.replace('M', 'L')}" stroke-width="10"/></g>`;
     });
