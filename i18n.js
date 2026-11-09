@@ -332,7 +332,7 @@ const TEXT = {
    [
     "Niewola babilońska",
     "2 Krl 24",
-    "Nabuchodonozor po raz pierwszy zdobywa Jerozolimę i uprowadza do Babilonu króla Jojakina wraz z elitą kraju; w 587 p.n.e. niszczy miasto i świątynię.",
+    "Nabuchodonozor zdobywa Jerozolimę i uprowadza do Babilonu króla Jojakina wraz z elitą kraju, a dziesięć lat później burzy miasto i świątynię. Na obczyźnie, z dala od świątyni, Izrael na nowo uczy się wierności: „Nad rzekami Babilonu – tam myśmy siedzieli i płakali, gdyśmy wspominali Syjon” (Ps 137,1). Prorocy, jak Ezechiel, podtrzymują w nim nadzieję na powrót.",
     null
    ],
    [
@@ -587,7 +587,7 @@ const TEXT = {
    [
     "Św. Cyryl i Metody",
     "Apostołowie Słowian",
-    "Niosą Ewangelię Słowianom na Morawach; Cyryl tworzy dla nich pismo (głagolicę), a bracia przekładają na język słowiański Pismo i liturgię.",
+    "Bracia z Tesaloniki, którzy na prośbę księcia Rościsława przybywają na Morawy, by głosić Słowianom Ewangelię w ich własnym języku. Cyrylowi przypisuje się stworzenie pierwszego słowiańskiego pisma, głagolicy, a obaj bracia przekładają Pismo Święte i liturgię. Św. Jan Paweł II ogłosił ich w 1980 r. współpatronami Europy.",
     ""
    ],
    [
@@ -653,7 +653,7 @@ const TEXT = {
    [
     "Św. Augustyn",
     "Biskup Hippony, Doktor Kościoła",
-    "Pisze „Wyznania” (ok. 397–400); łączy wiarę chrześcijańską z myślą Platona i kształtuje teologię Zachodu.",
+    "Po latach niespokojnych poszukiwań, wspierany wytrwałą modlitwą matki, św. Moniki, nawraca się i zostaje biskupem Hippony w Afryce. W „Wyznaniach” opowiada Bogu historię swojego serca słowami, które poruszają do dziś: „Stworzyłeś nas bowiem dla siebie i niespokojne jest serce nasze, dopóki nie spocznie w Tobie”. Jako Doktor Kościoła łączy wiarę z myślą Platona i kształtuje teologię całego Zachodu.",
     ""
    ],
    [
@@ -687,12 +687,12 @@ const TEXT = {
    [
     "Rewolucja francuska",
     "",
-    "Wybucha rewolucja we Francji, a w 1792 r. upada monarchia; hasła wolności, równości i braterstwa, a zarazem podporządkowanie Kościoła państwu (1790) i prześladowania duchownych i wiernych."
+    "Pod hasłami wolności, równości i braterstwa Francja obala dawny porządek, a w 1792 r. upada monarchia. Rewolucja podporządkowuje jednak Kościół państwu i rozpętuje prześladowania, w których giną tysiące duchownych i wiernych. Wielu z nich Kościół czci dziś jako męczenników, jak szesnaście karmelitanek z Compiègne, które szły na gilotynę ze śpiewem."
    ],
    [
     "Septuaginta",
     "",
-    "Żydzi w Aleksandrii zaczynają tłumaczyć Stary Testament na grekę (etapami, od III w. p.n.e.); Nowy Testament często cytuje ten przekład."
+    "W Aleksandrii, wielkim ośrodku nauki, Żydzi zaczynają przekładać swoje święte Księgi na grekę, wspólny język ówczesnego świata, a dzieło to trwa przez kilka pokoleń. Tradycja mówi o siedemdziesięciu dwóch tłumaczach, stąd nazwa Septuaginta. W tym przekładzie Biblię czytali pierwsi chrześcijanie i często cytują go autorzy Nowego Testamentu."
    ]
   ],
   "KINGS": [
@@ -1279,7 +1279,7 @@ const TEXT = {
    [
     "Babylonian captivity",
     "2 Kgs 24",
-    "Nebuchadnezzar first takes Jerusalem and deports King Jehoiachin and the leading men of the land to Babylon; in 587 BC he destroys the city and the temple.",
+    "Nebuchadnezzar captures Jerusalem and carries King Jehoiachin and the country’s elite off to Babylon; ten years later he destroys the city and the Temple. In exile, far from the Temple, Israel learns faithfulness anew: “By the rivers of Babylon there we sat and wept, remembering Zion” (Ps 137:1). Prophets such as Ezekiel keep alive its hope of return.",
     null
    ],
    [
@@ -1534,7 +1534,7 @@ const TEXT = {
    [
     "Sts Cyril and Methodius",
     "Apostles to the Slavs",
-    "They bring the Gospel to the Slavs in Moravia; Cyril creates an alphabet for them (Glagolitic), and the brothers translate Scripture and the liturgy into Slavonic.",
+    "Brothers from Thessalonica who, at the request of Prince Rastislav, come to Moravia to preach the Gospel to the Slavs in their own language. Cyril is credited with creating the first Slavic script, Glagolitic, and the two brothers translate Scripture and the liturgy. In 1980 St John Paul II proclaimed them co-patrons of Europe.",
     ""
    ],
    [
@@ -1600,7 +1600,7 @@ const TEXT = {
    [
     "St Augustine",
     "Bishop of Hippo, Doctor of the Church",
-    "Writes the Confessions (c. 397–400); joins Christian faith with the thought of Plato and shapes Western theology.",
+    "After years of restless searching, sustained by the persevering prayer of his mother, St Monica, he is converted and becomes bishop of Hippo in Africa. In his Confessions he tells God the story of his heart in words that still move readers today: “You have made us for yourself, and our heart is restless until it rests in you.” As a Doctor of the Church he unites faith with the thought of Plato and shapes the theology of the whole West.",
     ""
    ],
    [
@@ -1634,12 +1634,12 @@ const TEXT = {
    [
     "French Revolution",
     "",
-    "Revolution breaks out in France, and in 1792 the monarchy falls; the ideals of liberty, equality and fraternity, and also the Church placed under the state (1790) and the persecution of clergy and faithful."
+    "Under the banner of liberty, equality and fraternity, France overthrows the old order, and in 1792 the monarchy falls. Yet the Revolution subjects the Church to the state and unleashes persecutions in which thousands of clergy and faithful lose their lives. The Church honours many of them as martyrs, among them the sixteen Carmelites of Compiègne, who went to the guillotine singing."
    ],
    [
     "Septuagint",
     "",
-    "Jews in Alexandria begin translating the Old Testament into Greek (in stages, from the 3rd century BC); the New Testament often quotes this translation."
+    "In Alexandria, a great centre of learning, Jews begin translating their sacred books into Greek, the common language of the age, a work that continues over several generations. Tradition speaks of seventy-two translators, hence the name Septuagint. The first Christians read the Bible in this translation, and the writers of the New Testament often quote it."
    ]
   ],
   "KINGS": [
