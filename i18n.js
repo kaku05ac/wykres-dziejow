@@ -700,253 +700,253 @@ const TEXT = {
     "Saul",
     "1 Sm 13,1; Dz 13,21",
     "40 lat",
-    "Pierwszy król Izraela, syn Kisza z pokolenia Beniamina, namaszczony przez proroka Samuela; według Dz 13,21 panował 40 lat. Odważny wojownik, który z czasem przestał słuchać Boga i zginął w bitwie z Filistynami na górach Gilboa."
+    "Pierwszy król Izraela, syn Kisza z pokolenia Beniamina: z jego namaszczenia przez Samuela rodzi się monarchia, a rosły młodzieniec, wyższy od całego ludu, prowadzi naród do pierwszych zwycięstw. Z czasem jednak przestaje słuchać Boga i ginie wraz z synami w bitwie z Filistynami na górach Gilboa."
    ],
    [
     "Dawid",
     "2 Sm 5,4",
     "40 lat",
-    "Drugi król Izraela, syn Jessego z Betlejem, który objął tron w wieku 30 lat i panował 40 lat. Zdobył Jerozolimę i uczynił ją stolicą, a Bóg obiecał mu dynastię na wieki, z której pochodzi Jezus, „Syn Dawida”."
+    "Drugi król Izraela, pasterz z Betlejem, syn Jessego: za jego panowania pokolenia Izraela stają się jednym królestwem, a zdobyta Jerozolima staje się stolicą i miastem Arki Przymierza. Bóg obiecuje mu dom, który przetrwa na wieki (2 Sm 7,16), dlatego Jezus nazywany jest „Synem Dawida”, a tradycja przypisuje Dawidowi wiele psalmów."
    ],
    [
     "Salomon",
     "1 Krl 11,42",
     "40 lat",
-    "Trzeci król zjednoczonego królestwa Izraela, syn Dawida i Batszeby, który według Pisma panował 40 lat. Zasłynął mądrością i zbudował świątynię w Jerozolimie, a po jego śmierci królestwo podzieliło się na dwa."
+    "Syn Dawida i Batszeby, trzeci król zjednoczonego Izraela, którego czterdzieści lat panowania to złoty wiek królestwa: pokój, handel sięgający dalekich krain i świątynia wzniesiona w Jerozolimie. Ciężary nałożone na lud i ustępstwa wobec bogów cudzoziemskich żon przygotowują jednak rozpad królestwa po jego śmierci."
    ],
    [
     "Roboam",
     "1 Krl 14,21",
     "17 lat",
-    "Pierwszy król Judy po podziale królestwa, syn Salomona, który objął tron w wieku 41 lat i panował 17 lat. Odrzucił prośbę ludu o ulżenie ciężarom, przez co dziesięć pokoleń północnych oddzieliło się od Jerozolimy."
+    "Syn Salomona i pierwszy król samej Judy, któremu jedna nierozważna odpowiedź odbiera większość królestwa: za radą młodych doradców zapowiada ludowi jeszcze cięższe jarzmo i dziesięć pokoleń północy odchodzi (1 Krl 12). Za jego czasów faraon Szeszonk zabiera skarby świątyni."
    ],
    [
     "Abiam",
     "1 Krl 15,2",
     "3 lata",
-    "Król Judy, syn Roboama, który panował 3 lata. Prowadził wojnę z Jeroboamem, królem Izraela (2 Krn 13)."
+    "Król Judy, syn Roboama, którego krótkie, trzyletnie panowanie wypełnia wojna z Jeroboamem. Według Księgi Kronik przed bitwą przypomina Izraelowi, że Bóg dał królestwo na zawsze Dawidowi, i odnosi zwycięstwo (2 Krn 13)."
    ],
    [
     "Asa",
     "1 Krl 15,10",
     "41 lat",
-    "Król Judy, syn Abiama, który panował 41 lat. Usunął z kraju bożki, a Księga Królów mówi, że jego serce było szczere wobec Pana (1 Krl 15,14); Kroniki dodają, że pod koniec życia zaufał bardziej królowi Aramu niż Bogu (2 Krn 16)."
+    "Król Judy, syn Abiama, który przez 41 lat oczyszcza kraj z bożków, nie oszczędzając nawet własnej babki Maaki, którą pozbawia godności królowej matki (1 Krl 15,13). Pismo mówi, że jego serce było szczere wobec Pana, choć pod koniec życia szukał pomocy raczej u króla Aramu niż u Boga (2 Krn 16)."
    ],
    [
     "Jozafat",
     "1 Krl 22,42",
     "25 lat",
-    "Król Judy, syn Asy, który objął tron w wieku 35 lat i panował 25 lat. Kontynuował reformy ojca i posyłał nauczycieli Prawa do miast Judy (2 Krn 17,7-9); zawarł przymierze z Achabem i walczył u jego boku pod Ramot w Gileadzie."
+    "Król Judy, syn Asy, którego panowanie to czas pokoju i nauki: posyła do miast lewitów i kapłanów, by uczyli lud Prawa Pańskiego (2 Krn 17,7-9), i ustanawia sędziów. Sprzymierzony z Achabem, walczy u jego boku pod Ramot w Gileadzie."
    ],
    [
     "Joram",
     "2 Krl 8,17",
     "8 lat",
-    "Król Judy, syn Jozafata, który objął tron w wieku 32 lat i panował 8 lat. Jego żoną była Atalia, córka Achaba (2 Krl 8,18), a on sam poszedł drogą królów Izraela, odchodząc od Boga."
+    "Król Judy, syn Jozafata, którego małżeństwo z Atalią, córką Achaba, wprowadza na dwór jerozolimski obyczaje i bogów Północy (2 Krl 8,18). W ciągu ośmiu lat panowania traci władzę nad Edomem, a Pismo ocenia go surowo jako króla, który odszedł od Boga."
    ],
    [
     "Ochozjasz",
     "2 Krl 8,26",
     "1 rok",
-    "Król Judy, syn Jorama i Atalii, który objął tron w wieku 22 lat i panował tylko rok. Podczas odwiedzin u króla Izraela Jorama został śmiertelnie raniony przez ludzi Jehu i zmarł w Megiddo (2 Krl 9,27)."
+    "Król Judy, syn Jorama i Atalii, a więc wnuk Achaba, który panuje zaledwie rok. Odwiedzając rannego krewnego, Jorama izraelskiego, trafia w sam środek przewrotu Jehu i umiera od ran w Megiddo (2 Krl 9,27)."
    ],
    [
     "Atalia",
     "2 Krl 11,3",
     "6 lat",
-    "Jedyna kobieta, która samodzielnie rządziła Judą, córka Achaba z rodu Omriego; po śmierci syna przejęła władzę na 6 lat. Obalił ją kapłan Jojada, osadzając na tronie małego Joasza."
+    "Córka Achaba, wdowa po królu Joramie i jedyna kobieta, która samodzielnie rządziła Judą: po śmierci syna wymordowuje królewskie potomstwo, by przejąć tron. Ocalał jednak mały Joasz, ukryty w świątyni, i po sześciu latach kapłan Jojada osadza go na tronie, kończąc jej rządy."
    ],
    [
     "Joasz",
     "2 Krl 12,1-2",
     "40 lat",
-    "Król Judy, syn Ochozjasza, ocalony jako niemowlę przed Atalią, który objął tron w wieku 7 lat i panował 40 lat. Za życia kapłana Jojady odnowił świątynię, później jednak odszedł od Boga."
+    "Król Judy, syn Ochozjasza, ocalony jako niemowlę i wychowany w ukryciu przy świątyni, który obejmuje tron w wieku siedmiu lat. Dopóki żyje jego opiekun, kapłan Jojada, odnawia świątynię ze zbiórki do skrzyni przy ołtarzu, lecz po jego śmierci odchodzi od Boga."
    ],
    [
     "Amazjasz",
     "2 Krl 14,2",
     "29 lat",
-    "Król Judy, syn Joasza, który objął tron w wieku 25 lat i panował 29 lat. Pokonał Edomitów, lecz potem wyzwał na wojnę Joasza, króla Izraela, i przegrał; zginął w spisku w Lakisz."
+    "Król Judy, syn Joasza, któremu zwycięstwo nad Edomitami w Dolinie Soli dodaje pewności siebie, więc wyzywa na wojnę Joasza, króla Izraela; ten odpowiada mu przypowieścią o oście i cedrze (2 Krl 14,9). Przegrana kończy się splądrowaniem Jerozolimy, a sam król ginie w spisku w Lakisz."
    ],
    [
     "Azariasz (Ozjasz)",
     "2 Krl 15,2",
     "52 lata",
-    "Król Judy, syn Amazjasza, który objął tron w wieku 16 lat i panował 52 lata; za jego czasów Juda przeżyła rozkwit. Gdy w pysze chciał sam składać kadzidło w świątyni, dotknął go trąd (2 Krn 26), a w roku jego śmierci został powołany prorok Izajasz."
+    "Król Judy, syn Amazjasza, którego ponad półwieczne panowanie to dla kraju czas rozkwitu: buduje wieże, kopie studnie, wzmacnia wojsko i rolnictwo (2 Krn 26). Gdy jednak w pysze sam wchodzi do świątyni, by złożyć kadzidło, dotyka go trąd, a w roku jego śmierci Izajasz ogląda w świątyni chwałę Pana (Iz 6,1)."
    ],
    [
     "Jotam",
     "2 Krl 15,33",
     "16 lat",
-    "Król Judy, syn Azariasza, który objął tron w wieku 25 lat i panował 16 lat. Rządził w imieniu chorego ojca i umacniał miasta Judy, a Pismo mówi, że postępował słusznie w oczach Pana."
+    "Król Judy, syn Azariasza, który przez lata choroby ojca rządzi w jego imieniu, a potem sam panuje 16 lat, budując Górną Bramę świątyni i umacniając miasta Judy. Pismo wystawia mu dobre świadectwo: postępował słusznie w oczach Pana."
    ],
    [
     "Achaz",
     "2 Krl 16,2",
     "16 lat",
-    "Król Judy, syn Jotama, który objął tron w wieku 20 lat i panował 16 lat. Gdy Aram i Izrael wyruszyli przeciw Judzie, prorok Izajasz wezwał go do wiary, a on wolał szukać pomocy u Asyrii; to jemu prorok zapowiedział znak Emmanuela (Iz 7)."
+    "Król Judy, syn Jotama: gdy Aram i Izrael ruszają na Jerozolimę, prorok Izajasz wzywa go do zaufania Bogu i daje znak: „Oto Panna pocznie i porodzi Syna, i nazwie Go imieniem Emmanuel” (Iz 7,14). Achaz woli jednak szukać ratunku u Asyrii, płacąc jej daninę ze skarbów świątyni."
    ],
    [
     "Ezechiasz",
     "2 Krl 18,2",
     "29 lat",
-    "Król Judy, syn Achaza, który objął tron w wieku 25 lat i panował 29 lat. Oczyścił świątynię i zaufał Bogu, gdy Asyryjczycy oblegli Jerozolimę; Pismo zalicza go do najwierniejszych królów."
+    "Król Judy, syn Achaza, który oczyszcza świątynię i przywraca obchody Paschy, a w godzinie próby, gdy wojska asyryjskie oblegają Jerozolimę, rozkłada list wroga przed Panem i modli się (2 Krl 19,14). Miasto ocalało, a Pismo mówi, że wśród królów Judy nie było mu równego w ufności wobec Boga (2 Krl 18,5)."
    ],
    [
     "Manasses",
     "2 Krl 21,1",
     "55 lat",
-    "Król Judy, syn Ezechiasza, który objął tron w wieku 12 lat i panował 55 lat, najdłużej ze wszystkich królów. Przywrócił bałwochwalstwo, lecz według Księgi Kronik w niewoli asyryjskiej upokorzył się przed Bogiem i nawrócił (2 Krn 33,12-13)."
+    "Król Judy, syn Ezechiasza, który przez 55 lat, dłużej niż jakikolwiek król na tronie Dawida, przywraca kult obcych bogów, usunięty przez ojca. Księga Kronik ukazuje jednak jego nawrócenie: w niewoli asyryjskiej upokarza się przed Bogiem, a Bóg wysłuchuje jego modlitwy i przywraca go do Jerozolimy (2 Krn 33,12-13)."
    ],
    [
     "Amon",
     "2 Krl 21,19",
     "2 lata",
-    "Król Judy, syn Manassesa, który objął tron w wieku 22 lat i panował 2 lata. Powrócił do bałwochwalstwa i zginął w spisku swoich dworzan."
+    "Król Judy, syn Manassesa, który idzie drogą ojca z czasów jego bałwochwalstwa, lecz nie z czasów jego nawrócenia. Po dwóch latach panowania ginie w spisku własnych dworzan, a lud osadza na tronie jego ośmioletniego syna Jozjasza."
    ],
    [
     "Jozjasz",
     "2 Krl 22,1",
     "31 lat",
-    "Król Judy, syn Amona, który objął tron w wieku 8 lat i panował 31 lat. Gdy w świątyni odnaleziono księgę Prawa, przeprowadził wielką reformę religijną; zginął w bitwie z faraonem Neko pod Megiddo."
+    "Król Judy, syn Amona: w osiemnastym roku jego panowania kapłani odnajdują w świątyni księgę Prawa, a król, słysząc jej słowa, rozdziera szaty i prowadzi lud do odnowienia przymierza (2 Krl 22–23). Ten najgorliwszy z reformatorów ginie młodo, w bitwie z faraonem Neko pod Megiddo."
    ],
    [
     "Joachaz",
     "2 Krl 23,31",
     "3 miesiące",
-    "Król Judy, syn Jozjasza, który objął tron w wieku 23 lat i panował tylko 3 miesiące. Faraon Neko uwięził go w Ribla i uprowadził do Egiptu, gdzie zmarł."
+    "Król Judy, syn Jozjasza, obwołany przez lud po śmierci ojca, który panuje zaledwie trzy miesiące: faraon Neko więzi go w Ribla i uprowadza do Egiptu, skąd już nie wraca. Jeremiasz woła: „Płaczcie gorzko nad tym, który odchodzi, bo nie wróci już” (Jr 22,10)."
    ],
    [
     "Jojakim",
     "2 Krl 23,36",
     "11 lat",
-    "Król Judy, syn Jozjasza, osadzony na tronie przez faraona, który objął go w wieku 25 lat i panował 11 lat. Spalił zwój z proroctwami Jeremiasza (Jr 36) i zbuntował się przeciw Babilonii."
+    "Król Judy, syn Jozjasza, osadzony na tronie przez faraona, który przez 11 lat lawiruje między Egiptem a Babilonem. Gdy słucha czytanych proroctw Jeremiasza, odcina zwój kawałek po kawałku i wrzuca do ognia (Jr 36), lecz słowo Boże zostaje spisane na nowo."
    ],
    [
     "Jojakin",
     "2 Krl 24,8",
     "3 miesiące",
-    "Król Judy, syn Jojakima, który objął tron w wieku 18 lat i panował 3 miesiące. Nabuchodonozor uprowadził go do Babilonu, gdzie po latach wypuszczono go z więzienia; jest wymieniony w rodowodzie Jezusa jako Jechoniasz (Mt 1,12)."
+    "Król Judy, syn Jojakima, który po zaledwie trzech miesiącach panowania zostaje uprowadzony do Babilonu wraz z dworem i elitą kraju. Po 37 latach niewoli król babiloński uwalnia go i sadza przy swoim stole (2 Krl 25,27-30), a Ewangelia wymienia go w rodowodzie Jezusa jako Jechoniasza (Mt 1,12)."
    ],
    [
     "Sedecjasz",
     "2 Krl 24,18",
     "11 lat",
-    "Ostatni król Judy, stryj Jojakina, osadzony na tronie przez Nabuchodonozora, który objął go w wieku 21 lat i panował 11 lat. Zbuntował się przeciw Babilonii wbrew radom Jeremiasza; w 587 p.n.e. Jerozolima i świątynia zostały zburzone, a on sam oślepiony i uprowadzony do Babilonu."
+    "Ostatni król Judy, stryj Jojakina, rozdarty między słowem Jeremiasza a naciskiem dworzan: potajemnie radzi się proroka, lecz nie ma odwagi go posłuchać. Bunt przeciw Babilonowi kończy się zburzeniem Jerozolimy i świątyni w 587 p.n.e., a oślepiony król zostaje uprowadzony w kajdanach do Babilonu."
    ],
    [
     "Jeroboam I",
     "1 Krl 14,20",
     "22 lata",
-    "Pierwszy król północnego Królestwa Izraela, za Salomona nadzorca robót przymusowych, który panował 22 lata. Aby lud nie pielgrzymował do Jerozolimy, postawił złote cielce w Betel i Dan, co Pismo nazywa „grzechem Jeroboama”."
+    "Pierwszy król północnego Królestwa Izraela, za Salomona nadzorca robót przymusowych, któremu prorok Achiasz zapowiada panowanie, rozdzierając swój płaszcz na dwanaście części (1 Krl 11,29-31). Aby lud nie pielgrzymował do Jerozolimy, stawia złote cielce w Betel i Dan, co Pismo odtąd wspomina jako „grzech Jeroboama”."
    ],
    [
     "Nadab",
     "1 Krl 15,25",
     "2 lata",
-    "Król Izraela, syn Jeroboama, który panował 2 lata. Zginął z rąk Baszy, który wymordował cały ród Jeroboama."
+    "Król Izraela, syn Jeroboama, który panuje zaledwie dwa lata i ginie podczas oblężenia filistyńskiego Gibbeton z ręki Baszy (1 Krl 15,27). Wraz z nim kończy się ród Jeroboama, a Północ wchodzi w epokę przewrotów."
    ],
    [
     "Baasza",
     "1 Krl 15,33",
     "24 lata",
-    "Król Izraela, który zdobył tron, zabijając Nadaba, i panował 24 lata. Prowadził wojny z Judą, a prorok Jehu zapowiedział upadek jego rodu."
+    "Król Izraela z pokolenia Issachara, który zdobywa tron mieczem i panuje 24 lata, prowadząc nieustanne wojny z Judą, między innymi o graniczną Ramę. Prorok Jehu, syn Chananiego, zapowiada mu, że jego dom podzieli los domu Jeroboama (1 Krl 16,1-4)."
    ],
    [
     "Ela",
     "1 Krl 16,8",
     "2 lata",
-    "Król Izraela, syn Baszy, który panował 2 lata. Został zamordowany podczas pijatyki przez swojego dowódcę Zimriego."
+    "Król Izraela, syn Baszy, który po dwóch latach panowania ginie w Tirsie, pijany w domu zarządcy pałacu, z ręki własnego dowódcy Zimriego (1 Krl 16,9-10). Jego śmierć dopełnia proroctwa o końcu rodu Baszy."
    ],
    [
     "Zimri",
     "1 Krl 16,15",
     "7 dni",
-    "Dowódca połowy rydwanów, który zabił Elę i panował w Izraelu tylko 7 dni. Gdy wojsko, które obwołało królem Omriego, zdobyło Tirsę, Zimri podpalił pałac i zginął w płomieniach."
+    "Dowódca połowy królewskich rydwanów, który zabija Elę i zasiada na tronie Izraela zaledwie na siedem dni: wojsko obwołuje królem Omriego i oblega Tirsę. Widząc, że miasto upada, Zimri podpala nad sobą pałac królewski i ginie w płomieniach (1 Krl 16,18)."
    ],
    [
     "Omri",
     "1 Krl 16,23",
     "12 lat",
-    "Król Izraela, wcześniej dowódca wojska, który panował 12 lat. Zbudował nową stolicę, Samarię, a jego dynastię znają także źródła asyryjskie, które nazywały Izrael „domem Omriego”."
+    "Król Izraela, wcześniej dowódca wojska, założyciel jednej z najsilniejszych dynastii Północy: kupuje od Szemera wzgórze i buduje na nim nową stolicę, Samarię (1 Krl 16,24). Jego imię przetrwało w źródłach asyryjskich, które jeszcze długo po nim nazywały Izrael „domem Omriego”."
    ],
    [
     "Achab",
     "1 Krl 16,29",
     "22 lata",
-    "Król Izraela, syn Omriego, który panował 22 lata. Pod wpływem żony Izebel szerzył kult Baala, któremu przeciwstawił się prorok Eliasz; zginął w bitwie pod Ramot w Gileadzie."
+    "Król Izraela, syn Omriego, który pod wpływem żony, fenickiej księżniczki Izebel, wprowadza do Samarii kult Baala; przeciw niemu staje prorok Eliasz na górze Karmel. Gdy dla winnicy Nabota dopuszcza do zabicia niewinnego, Eliasz zapowiada mu sąd, a król ginie od przypadkowej strzały pod Ramot w Gileadzie."
    ],
    [
     "Ochozjasz",
     "1 Krl 22,52",
     "2 lata",
-    "Król Izraela, syn Achaba, który panował 2 lata. Po upadku z okna pałacu posłał pytać o zdrowie bożka Baal-Zebuba, za co prorok Eliasz zapowiedział mu śmierć."
+    "Król Izraela, syn Achaba, który po upadku przez kratę w górnej komnacie posyła pytać o zdrowie bożka Baal-Zebuba z Ekronu. Eliasz zatrzymuje posłańców, pytając, czy nie ma Boga w Izraelu (2 Krl 1,3), i zapowiada królowi śmierć."
    ],
    [
     "Joram",
     "2 Krl 3,1",
     "12 lat",
-    "Król Izraela, syn Achaba, który panował 12 lat; za jego czasów działał prorok Elizeusz. Zginął z rąk Jehu, który zakończył dynastię Omriego."
+    "Król Izraela, syn Achaba, w którego czasach działa prorok Elizeusz, uzdrawiający z trądu Naamana, wodza króla Aramu (2 Krl 5). Joram ginie od strzały Jehu na polu Nabota, a wraz z nim kończy się dynastia Omriego."
    ],
    [
     "Jehu",
     "2 Krl 10,36",
     "28 lat",
-    "Dowódca wojska namaszczony na króla Izraela przez ucznia proroka, wysłanego przez Elizeusza; panował 28 lat. Wytępił ród Achaba i kult Baala w Samarii, lecz nie usunął złotych cielców Jeroboama."
+    "Dowódca wojska, namaszczony na króla Izraela w tajemnicy przez ucznia Elizeusza, który pędzi rydwanem do Jizreel i jednym przewrotem kończy dynastię Omriego oraz kult Baala w Samarii. Nie usuwa jednak złotych cielców Jeroboama."
    ],
    [
     "Joachaz",
     "2 Krl 13,1",
     "17 lat",
-    "Król Izraela, syn Jehu, który panował 17 lat. Gdy Aramejczycy uciskali Izrael, błagał Pana o pomoc, a Bóg dał ludowi wybawcę (2 Krl 13,4-5)."
+    "Król Izraela, syn Jehu, za którego panowania Aramejczycy tak uciskają kraj, że z wojska zostaje garstka, starta jak proch przy młóceniu. Wtedy król błaga Pana o pomoc, a Bóg daje ludowi wybawcę (2 Krl 13,4-7)."
    ],
    [
     "Joasz",
     "2 Krl 13,10",
     "16 lat",
-    "Król Izraela, syn Joachaza, który panował 16 lat. Odwiedził umierającego proroka Elizeusza, odzyskał miasta zabrane przez Aram i pokonał króla Judy Amazjasza."
+    "Król Izraela, syn Joachaza, który płacze nad umierającym Elizeuszem, wołając: „Ojcze mój! Ojcze mój! Rydwanie Izraela i jego jeźdźcze!” (2 Krl 13,14); prorok zapowiada mu trzy zwycięstwa nad Aramem. Odzyskuje utracone miasta i pokonuje króla Judy Amazjasza."
    ],
    [
     "Jeroboam II",
     "2 Krl 14,23",
     "41 lat",
-    "Król Izraela, syn Joasza, który panował 41 lat i odzyskał dawne granice królestwa (2 Krl 14,25). W jego czasach działali prorocy Amos i Ozeasz, upominając bogatych za krzywdę ubogich (Am 1,1; Oz 1,1)."
+    "Król Izraela, syn Joasza, za którego 41-letniego panowania kraj przeżywa ostatni rozkwit: król przywraca dawne granice (2 Krl 14,25), a bogactwo elit rośnie. Właśnie wtedy prorocy Amos i Ozeasz upominają możnych za krzywdę ubogich i wzywają do wierności."
    ],
    [
     "Zachariasz",
     "2 Krl 15,8",
     "6 miesięcy",
-    "Król Izraela, syn Jeroboama II i ostatni z dynastii Jehu, który panował tylko 6 miesięcy. Zginął w spisku Szalluma."
+    "Król Izraela, syn Jeroboama II i ostatni z dynastii Jehu, który po sześciu miesiącach panowania ginie publicznie w spisku Szalluma. Wypełnia się zapowiedź, że ród Jehu będzie panował do czwartego pokolenia (2 Krl 15,12)."
    ],
    [
     "Szallum",
     "2 Krl 15,13",
     "1 miesiąc",
-    "Król Izraela, który zabił Zachariasza i panował tylko miesiąc. Zginął z rąk Menachema."
+    "Król Izraela, syn Jabesza, który zdobywa tron mordem i traci go po miesiącu, zabity w Samarii przez Menachema. Jego krótkie rządy pokazują, jak chwiejne stało się królestwo w ostatnich latach przed upadkiem."
    ],
    [
     "Menachem",
     "2 Krl 15,17",
     "10 lat",
-    "Król Izraela, który panował 10 lat. Aby utrzymać się na tronie, zapłacił królowi Asyrii Pulowi tysiąc talentów srebra (2 Krl 15,19)."
+    "Król Izraela, syn Gadiego, który przez 10 lat panowania kupuje sobie spokój od Asyrii: płaci królowi Pulowi tysiąc talentów srebra, ściągając je od zamożnych Izraelitów (2 Krl 15,19-20). Cień asyryjskiej potęgi kładzie się odtąd na całym królestwie."
    ],
    [
     "Pekachiasz",
     "2 Krl 15,23",
     "2 lata",
-    "Król Izraela, syn Menachema, który panował 2 lata. Zginął w spisku swego adiutanta Pekacha."
+    "Król Izraela, syn Menachema, który po dwóch latach panowania ginie w swoim pałacu w Samarii, zabity przez własnego adiutanta Pekacha i pięćdziesięciu ludzi z Gileadu. Kolejny przewrót przybliża koniec Północy."
    ],
    [
     "Pekach",
     "2 Krl 15,27",
     "20 lat",
-    "Król Izraela, który zabił Pekachiasza; Pismo podaje 20 lat jego panowania. Sprzymierzony z Aramem napadł na Judę, a Asyria w odwecie zajęła Galileę i Gilead."
+    "Król Izraela, syn Remaliasza, który w sojuszu z Aramem wyrusza na Jerozolimę, by wciągnąć Judę do wspólnej walki z Asyrią; wtedy Izajasz wypowiada proroctwo o Emmanuelu. Asyria odpowiada zajęciem Galilei i Gileadu (2 Krl 15,29), a Pekach ginie w spisku Ozeasza."
    ],
    [
     "Ozeasz",
     "2 Krl 17,1",
     "9 lat",
-    "Ostatni król północnego Królestwa Izraela, który panował 9 lat. Za jego rządów Asyria zdobyła Samarię (722 p.n.e.), co zakończyło istnienie królestwa."
+    "Ostatni król Izraela, syn Eli, który płaci daninę Asyrii, a potem szuka pomocy w Egipcie i odmawia trybutu. W odwecie Asyryjczycy oblegają Samarię przez trzy lata i w 722 p.n.e. ją zdobywają, kończąc dzieje północnego królestwa (2 Krl 17,4-6)."
    ]
   ]
  },
@@ -1647,253 +1647,253 @@ const TEXT = {
     "Saul",
     "1 Sam 13:1; Acts 13:21",
     "40 years",
-    "The first king of Israel, son of Kish of the tribe of Benjamin, anointed by the prophet Samuel; according to Acts 13:21 he reigned 40 years. A brave warrior who in time stopped listening to God and died in battle with the Philistines on Mount Gilboa."
+    "The first king of Israel, son of Kish of the tribe of Benjamin: with his anointing by Samuel the monarchy is born, and the tall young man, taller than all the people, leads the nation to its first victories. In time, however, he stops listening to God and dies with his sons in battle against the Philistines on Mount Gilboa."
    ],
    [
     "David",
     "2 Sam 5:4",
     "40 years",
-    "The second king of Israel, son of Jesse of Bethlehem, who came to the throne at 30 and reigned 40 years. He took Jerusalem and made it his capital, and God promised him a dynasty for ever, from which Jesus, the “Son of David”, comes."
+    "The second king of Israel, a shepherd from Bethlehem, son of Jesse: under his rule the tribes of Israel become one kingdom, and conquered Jerusalem becomes its capital and the city of the Ark of the Covenant. God promises him a house that will endure for ever (2 Sam 7:16), which is why Jesus is called the “Son of David”, and tradition ascribes many psalms to David."
    ],
    [
     "Solomon",
     "1 Kgs 11:42",
     "40 years",
-    "The third king of the united kingdom of Israel, son of David and Bathsheba, who according to Scripture reigned 40 years. He was famous for his wisdom and built the temple in Jerusalem, and after his death the kingdom split in two."
+    "Son of David and Bathsheba, the third king of united Israel, whose forty years on the throne are the kingdom’s golden age: peace, trade reaching distant lands and a temple raised in Jerusalem. Yet the burdens laid on the people and concessions to the gods of his foreign wives prepare the kingdom’s break-up after his death."
    ],
    [
     "Rehoboam",
     "1 Kgs 14:21",
     "17 years",
-    "The first king of Judah after the kingdom divided, son of Solomon, who came to the throne at 41 and reigned 17 years. He refused the people’s plea to lighten their burdens, so the ten northern tribes broke away from Jerusalem."
+    "Son of Solomon and the first king of Judah alone, whom one rash answer costs most of his kingdom: on the advice of young counsellors he promises the people an even heavier yoke, and the ten northern tribes break away (1 Kgs 12). In his time Pharaoh Shishak carries off the treasures of the Temple."
    ],
    [
     "Abijam",
     "1 Kgs 15:2",
     "3 years",
-    "King of Judah, son of Rehoboam, who reigned 3 years. He waged war against Jeroboam, king of Israel (2 Chr 13)."
+    "King of Judah, son of Rehoboam, whose short three-year reign is filled with war against Jeroboam. According to Chronicles, before the battle he reminds Israel that God gave the kingship to David for ever, and he wins the day (2 Chr 13)."
    ],
    [
     "Asa",
     "1 Kgs 15:10",
     "41 years",
-    "King of Judah, son of Abijam, who reigned 41 years. He removed the idols from the land, and the Book of Kings says his heart was wholly devoted to the Lord (1 Kgs 15:14); Chronicles adds that late in life he trusted the king of Aram more than God (2 Chr 16)."
+    "King of Judah, son of Abijam, who for 41 years cleanses the land of idols, sparing not even his own grandmother Maacah, whom he removes as queen mother (1 Kgs 15:13). Scripture says his heart was true to the Lord, though late in life he sought help from the king of Aram rather than from God (2 Chr 16)."
    ],
    [
     "Jehoshaphat",
     "1 Kgs 22:42",
     "25 years",
-    "King of Judah, son of Asa, who came to the throne at 35 and reigned 25 years. He continued his father’s reforms and sent teachers of the Law to the towns of Judah (2 Chr 17:7-9); he made an alliance with Ahab and fought beside him at Ramoth-gilead."
+    "King of Judah, son of Asa, whose reign is a time of peace and teaching: he sends Levites and priests to the towns to teach the people the Law of the Lord (2 Chr 17:7-9) and appoints judges. Allied with Ahab, he fights at his side at Ramoth-gilead."
    ],
    [
     "Jehoram",
     "2 Kgs 8:17",
     "8 years",
-    "King of Judah, son of Jehoshaphat, who came to the throne at 32 and reigned 8 years. His wife was Athaliah, daughter of Ahab (2 Kgs 8:18), and he followed the ways of the kings of Israel, turning away from God."
+    "King of Judah, son of Jehoshaphat, whose marriage to Athaliah, daughter of Ahab, brings the customs and gods of the North into the court of Jerusalem (2 Kgs 8:18). In eight years on the throne he loses control of Edom, and Scripture judges him severely as a king who turned away from God."
    ],
    [
     "Ahaziah",
     "2 Kgs 8:26",
     "1 year",
-    "King of Judah, son of Jehoram and Athaliah, who came to the throne at 22 and reigned only one year. While visiting Joram, king of Israel, he was mortally wounded by Jehu’s men and died at Megiddo (2 Kgs 9:27)."
+    "King of Judah, son of Jehoram and Athaliah and so a grandson of Ahab, who reigns for only a year. Visiting his wounded kinsman, Joram of Israel, he is caught in the middle of Jehu’s coup and dies of his wounds at Megiddo (2 Kgs 9:27)."
    ],
    [
     "Athaliah",
     "2 Kgs 11:3",
     "6 years",
-    "The only woman to rule Judah in her own right, daughter of Ahab of the house of Omri; after her son’s death she seized power for 6 years. The priest Jehoiada overthrew her and set the young Joash on the throne."
+    "Daughter of Ahab, widow of King Jehoram and the only woman to rule Judah in her own right: after her son’s death she has the royal offspring killed to seize the throne. Little Joash, however, survives, hidden in the Temple, and after six years the priest Jehoiada sets him on the throne, ending her rule."
    ],
    [
     "Joash",
     "2 Kgs 12:1-2",
     "40 years",
-    "King of Judah, son of Ahaziah, saved as a baby from Athaliah, who came to the throne at 7 and reigned 40 years. While the priest Jehoiada lived he restored the temple, but later he turned away from God."
+    "King of Judah, son of Ahaziah, saved as a baby and raised in hiding at the Temple, who takes the throne at the age of seven. While his guardian, the priest Jehoiada, lives, he restores the Temple with gifts collected in a chest by the altar, but after Jehoiada’s death he turns away from God."
    ],
    [
     "Amaziah",
     "2 Kgs 14:2",
     "29 years",
-    "King of Judah, son of Joash, who came to the throne at 25 and reigned 29 years. He defeated the Edomites, but then challenged Jehoash, king of Israel, to war and lost; he was killed in a conspiracy at Lachish."
+    "King of Judah, son of Joash, whose victory over the Edomites in the Valley of Salt makes him bold enough to challenge Joash, king of Israel, who answers him with the parable of the thistle and the cedar (2 Kgs 14:9). Defeat ends in the plundering of Jerusalem, and the king himself dies in a conspiracy at Lachish."
    ],
    [
     "Azariah (Uzziah)",
     "2 Kgs 15:2",
     "52 years",
-    "King of Judah, son of Amaziah, who came to the throne at 16 and reigned 52 years; under him Judah flourished. When in pride he tried to offer incense in the temple himself, he was struck with leprosy (2 Chr 26), and in the year of his death the prophet Isaiah was called."
+    "King of Judah, son of Amaziah, whose reign of more than half a century is a time of prosperity: he builds towers, digs wells and strengthens the army and farming (2 Chr 26). But when in his pride he enters the Temple himself to burn incense, he is struck with leprosy, and in the year of his death Isaiah sees the glory of the Lord in the Temple (Isa 6:1)."
    ],
    [
     "Jotham",
     "2 Kgs 15:33",
     "16 years",
-    "King of Judah, son of Azariah, who came to the throne at 25 and reigned 16 years. He governed for his sick father and strengthened the towns of Judah, and Scripture says he did what was right in the eyes of the Lord."
+    "King of Judah, son of Azariah, who governs on behalf of his sick father and then reigns 16 years in his own right, building the Upper Gate of the Temple and fortifying the towns of Judah. Scripture gives him a good testimony: he did what was right in the eyes of the Lord."
    ],
    [
     "Ahaz",
     "2 Kgs 16:2",
     "16 years",
-    "King of Judah, son of Jotham, who came to the throne at 20 and reigned 16 years. When Aram and Israel marched against Judah, the prophet Isaiah called him to faith, but he preferred to seek help from Assyria; it was to him that the prophet announced the sign of Emmanuel (Isa 7)."
+    "King of Judah, son of Jotham: when Aram and Israel march on Jerusalem, the prophet Isaiah calls him to trust in God and gives a sign: “Behold, a virgin shall conceive and bear a son, and shall call his name Immanuel” (Isa 7:14). Ahaz, however, prefers to seek rescue from Assyria, paying it tribute from the Temple treasures."
    ],
    [
     "Hezekiah",
     "2 Kgs 18:2",
     "29 years",
-    "King of Judah, son of Ahaz, who came to the throne at 25 and reigned 29 years. He cleansed the temple and trusted God when the Assyrians besieged Jerusalem; Scripture counts him among the most faithful kings."
+    "King of Judah, son of Ahaz, who cleanses the Temple and restores the Passover, and in the hour of trial, when the Assyrian army besieges Jerusalem, spreads the enemy’s letter before the Lord and prays (2 Kgs 19:14). The city is saved, and Scripture says that among the kings of Judah there was none like him in trusting God (2 Kgs 18:5)."
    ],
    [
     "Manasseh",
     "2 Kgs 21:1",
     "55 years",
-    "King of Judah, son of Hezekiah, who came to the throne at 12 and reigned 55 years, the longest of all the kings. He brought back idol worship, but according to Chronicles he humbled himself before God in Assyrian captivity and repented (2 Chr 33:12-13)."
+    "King of Judah, son of Hezekiah, who for 55 years, longer than any other king on David’s throne, restores the worship of foreign gods that his father had removed. Yet Chronicles tells of his conversion: in Assyrian captivity he humbles himself before God, and God hears his prayer and brings him back to Jerusalem (2 Chr 33:12-13)."
    ],
    [
     "Amon",
     "2 Kgs 21:19",
     "2 years",
-    "King of Judah, son of Manasseh, who came to the throne at 22 and reigned 2 years. He returned to idol worship and was killed in a plot by his courtiers."
+    "King of Judah, son of Manasseh, who follows his father’s path from the years of idolatry, not from the years of conversion. After two years on the throne he dies in a plot by his own courtiers, and the people set his eight-year-old son Josiah on the throne."
    ],
    [
     "Josiah",
     "2 Kgs 22:1",
     "31 years",
-    "King of Judah, son of Amon, who came to the throne at 8 and reigned 31 years. When the book of the Law was found in the temple, he carried out a great religious reform; he died in battle with Pharaoh Neco at Megiddo."
+    "King of Judah, son of Amon: in the eighteenth year of his reign the priests find the book of the Law in the Temple, and the king, hearing its words, tears his clothes and leads the people in renewing the covenant (2 Kgs 22–23). This most zealous of reformers dies young, in battle against Pharaoh Neco at Megiddo."
    ],
    [
     "Jehoahaz",
     "2 Kgs 23:31",
     "3 months",
-    "King of Judah, son of Josiah, who came to the throne at 23 and reigned only 3 months. Pharaoh Neco imprisoned him at Riblah and took him to Egypt, where he died."
+    "King of Judah, son of Josiah, proclaimed by the people after his father’s death, who reigns only three months: Pharaoh Neco imprisons him at Riblah and takes him to Egypt, from which he never returns. Jeremiah cries out: “Weep bitterly for him who goes away, for he shall return no more” (Jer 22:10)."
    ],
    [
     "Jehoiakim",
     "2 Kgs 23:36",
     "11 years",
-    "King of Judah, son of Josiah, set on the throne by Pharaoh, who came to it at 25 and reigned 11 years. He burned the scroll of Jeremiah’s prophecies (Jer 36) and rebelled against Babylon."
+    "King of Judah, son of Josiah, set on the throne by Pharaoh, who for 11 years manoeuvres between Egypt and Babylon. As Jeremiah’s prophecies are read to him, he cuts the scroll piece by piece and throws it into the fire (Jer 36), but the word of God is written down anew."
    ],
    [
     "Jehoiachin",
     "2 Kgs 24:8",
     "3 months",
-    "King of Judah, son of Jehoiakim, who came to the throne at 18 and reigned 3 months. Nebuchadnezzar took him to Babylon, where years later he was released from prison; he appears in the genealogy of Jesus as Jechoniah (Matt 1:12)."
+    "King of Judah, son of Jehoiakim, who after only three months on the throne is carried off to Babylon with the court and the country’s elite. After 37 years of captivity the king of Babylon releases him and seats him at his own table (2 Kgs 25:27-30), and the Gospel names him in the genealogy of Jesus as Jechoniah (Matt 1:12)."
    ],
    [
     "Zedekiah",
     "2 Kgs 24:18",
     "11 years",
-    "The last king of Judah, uncle of Jehoiachin, set on the throne by Nebuchadnezzar, who came to it at 21 and reigned 11 years. He rebelled against Babylon against Jeremiah’s advice; in 587 BC Jerusalem and the temple were destroyed, and he was blinded and taken to Babylon."
+    "The last king of Judah, uncle of Jehoiachin, torn between the word of Jeremiah and the pressure of his courtiers: he consults the prophet in secret but lacks the courage to heed him. Revolt against Babylon ends with the destruction of Jerusalem and the Temple in 587 BC, and the blinded king is taken in chains to Babylon."
    ],
    [
     "Jeroboam I",
     "1 Kgs 14:20",
     "22 years",
-    "The first king of the northern Kingdom of Israel, under Solomon an overseer of forced labour, who reigned 22 years. To keep the people from going on pilgrimage to Jerusalem, he set up golden calves at Bethel and Dan, which Scripture calls “the sin of Jeroboam”."
+    "The first king of the northern Kingdom of Israel, once Solomon’s overseer of forced labour, to whom the prophet Ahijah foretells his rule by tearing his cloak into twelve pieces (1 Kgs 11:29-31). To keep the people from going on pilgrimage to Jerusalem, he sets up golden calves at Bethel and Dan, which Scripture ever after recalls as “the sin of Jeroboam”."
    ],
    [
     "Nadab",
     "1 Kgs 15:25",
     "2 years",
-    "King of Israel, son of Jeroboam, who reigned 2 years. He was killed by Baasha, who wiped out the whole house of Jeroboam."
+    "King of Israel, son of Jeroboam, who reigns only two years and is killed by Baasha during the siege of the Philistine town of Gibbethon (1 Kgs 15:27). With him the house of Jeroboam ends, and the North enters an age of coups."
    ],
    [
     "Baasha",
     "1 Kgs 15:33",
     "24 years",
-    "King of Israel who seized the throne by killing Nadab and reigned 24 years. He fought wars with Judah, and the prophet Jehu foretold the fall of his house."
+    "King of Israel from the tribe of Issachar, who seizes the throne by the sword and reigns 24 years, waging constant war with Judah, among other things over the border town of Ramah. The prophet Jehu son of Hanani tells him that his house will share the fate of the house of Jeroboam (1 Kgs 16:1-4)."
    ],
    [
     "Elah",
     "1 Kgs 16:8",
     "2 years",
-    "King of Israel, son of Baasha, who reigned 2 years. He was murdered during a drinking feast by his commander Zimri."
+    "King of Israel, son of Baasha, who after two years on the throne is killed at Tirzah, drunk in the house of his palace steward, by his own commander Zimri (1 Kgs 16:9-10). His death fulfils the prophecy of the end of Baasha’s house."
    ],
    [
     "Zimri",
     "1 Kgs 16:15",
     "7 days",
-    "Commander of half the chariots, who killed Elah and reigned in Israel for only 7 days. When the army that had proclaimed Omri king took Tirzah, Zimri set the palace on fire and died in the flames."
+    "Commander of half the royal chariots, who kills Elah and sits on the throne of Israel for only seven days: the army proclaims Omri king and besieges Tirzah. Seeing the city fall, Zimri sets the royal palace on fire over himself and dies in the flames (1 Kgs 16:18)."
    ],
    [
     "Omri",
     "1 Kgs 16:23",
     "12 years",
-    "King of Israel, formerly an army commander, who reigned 12 years. He built a new capital, Samaria, and Assyrian sources also knew his dynasty, calling Israel “the house of Omri”."
+    "King of Israel, formerly commander of the army, founder of one of the strongest dynasties of the North: he buys a hill from Shemer and builds on it a new capital, Samaria (1 Kgs 16:24). His name lives on in Assyrian records, which long after him still called Israel “the house of Omri”."
    ],
    [
     "Ahab",
     "1 Kgs 16:29",
     "22 years",
-    "King of Israel, son of Omri, who reigned 22 years. Under the influence of his wife Jezebel he spread the worship of Baal, which the prophet Elijah opposed; he died in battle at Ramoth-gilead."
+    "King of Israel, son of Omri, who under the influence of his wife, the Phoenician princess Jezebel, brings the worship of Baal to Samaria; the prophet Elijah stands against it on Mount Carmel. When he allows an innocent man to be killed for Naboth’s vineyard, Elijah announces judgement, and the king dies from a stray arrow at Ramoth-gilead."
    ],
    [
     "Ahaziah",
     "1 Kgs 22:52",
     "2 years",
-    "King of Israel, son of Ahab, who reigned 2 years. After falling from a window of his palace he sent to ask the idol Baal-zebub about his health, so the prophet Elijah foretold his death."
+    "King of Israel, son of Ahab, who after falling through the lattice of his upper room sends to ask the idol Baal-zebub of Ekron whether he will recover. Elijah stops the messengers, asking whether there is no God in Israel (2 Kgs 1:3), and announces the king’s death."
    ],
    [
     "Joram",
     "2 Kgs 3:1",
     "12 years",
-    "King of Israel, son of Ahab, who reigned 12 years; the prophet Elisha was active in his time. He was killed by Jehu, who ended the dynasty of Omri."
+    "King of Israel, son of Ahab, in whose time the prophet Elisha is at work, healing Naaman, commander of the king of Aram, of leprosy (2 Kgs 5). Joram dies by Jehu’s arrow on Naboth’s field, and with him the dynasty of Omri ends."
    ],
    [
     "Jehu",
     "2 Kgs 10:36",
     "28 years",
-    "An army commander anointed king of Israel by a disciple of the prophets sent by Elisha; he reigned 28 years. He wiped out the house of Ahab and the worship of Baal in Samaria, but did not remove Jeroboam’s golden calves."
+    "An army commander, secretly anointed king of Israel by a disciple of Elisha, who races his chariot to Jezreel and in a single coup ends the dynasty of Omri and the worship of Baal in Samaria. He does not, however, remove Jeroboam’s golden calves."
    ],
    [
     "Jehoahaz",
     "2 Kgs 13:1",
     "17 years",
-    "King of Israel, son of Jehu, who reigned 17 years. When the Arameans oppressed Israel he pleaded with the Lord, and God gave the people a deliverer (2 Kgs 13:4-5)."
+    "King of Israel, son of Jehu, under whose rule the Arameans oppress the land so harshly that only a handful of the army is left, crushed like dust at threshing. Then the king begs the Lord for help, and God gives the people a deliverer (2 Kgs 13:4-7)."
    ],
    [
     "Jehoash",
     "2 Kgs 13:10",
     "16 years",
-    "King of Israel, son of Jehoahaz, who reigned 16 years. He visited the dying prophet Elisha, won back the towns taken by Aram and defeated Amaziah, king of Judah."
+    "King of Israel, son of Jehoahaz, who weeps over the dying Elisha, crying: “My father, my father! The chariots of Israel and its horsemen!” (2 Kgs 13:14); the prophet promises him three victories over Aram. He wins back the lost towns and defeats Amaziah, king of Judah."
    ],
    [
     "Jeroboam II",
     "2 Kgs 14:23",
     "41 years",
-    "King of Israel, son of Jehoash, who reigned 41 years and restored the kingdom’s old borders (2 Kgs 14:25). In his time the prophets Amos and Hosea were active, rebuking the rich for wronging the poor (Amos 1:1; Hos 1:1)."
+    "King of Israel, son of Joash, under whose 41-year reign the land enjoys its last flowering: the king restores the old borders (2 Kgs 14:25), and the wealth of the elite grows. It is then that the prophets Amos and Hosea rebuke the powerful for wronging the poor and call them to faithfulness."
    ],
    [
     "Zechariah",
     "2 Kgs 15:8",
     "6 months",
-    "King of Israel, son of Jeroboam II and the last of Jehu’s dynasty, who reigned only 6 months. He was killed in a plot by Shallum."
+    "King of Israel, son of Jeroboam II and the last of the dynasty of Jehu, who after six months on the throne is killed in public in Shallum’s conspiracy. So the promise is fulfilled that Jehu’s line would reign to the fourth generation (2 Kgs 15:12)."
    ],
    [
     "Shallum",
     "2 Kgs 15:13",
     "1 month",
-    "King of Israel who killed Zechariah and reigned only one month. He was killed by Menahem."
+    "King of Israel, son of Jabesh, who takes the throne by murder and loses it after a month, killed in Samaria by Menahem. His brief rule shows how unstable the kingdom had become in its last years before the fall."
    ],
    [
     "Menahem",
     "2 Kgs 15:17",
     "10 years",
-    "King of Israel who reigned 10 years. To keep his throne he paid Pul, king of Assyria, a thousand talents of silver (2 Kgs 15:19)."
+    "King of Israel, son of Gadi, who during his 10-year reign buys peace from Assyria: he pays King Pul a thousand talents of silver, exacted from the wealthy men of Israel (2 Kgs 15:19-20). From then on the shadow of Assyrian power lies over the whole kingdom."
    ],
    [
     "Pekahiah",
     "2 Kgs 15:23",
     "2 years",
-    "King of Israel, son of Menahem, who reigned 2 years. He was killed in a plot by his officer Pekah."
+    "King of Israel, son of Menahem, who after two years on the throne is killed in his palace in Samaria by his own officer Pekah and fifty men of Gilead. Yet another coup brings the end of the North closer."
    ],
    [
     "Pekah",
     "2 Kgs 15:27",
     "20 years",
-    "King of Israel who killed Pekahiah; Scripture gives him 20 years of reign. Allied with Aram he attacked Judah, and in return Assyria took Galilee and Gilead."
+    "King of Israel, son of Remaliah, who in alliance with Aram marches on Jerusalem to force Judah into a joint struggle against Assyria; it is then that Isaiah speaks the prophecy of Immanuel. Assyria responds by seizing Galilee and Gilead (2 Kgs 15:29), and Pekah dies in Hoshea’s conspiracy."
    ],
    [
     "Hoshea",
     "2 Kgs 17:1",
     "9 years",
-    "The last king of the northern Kingdom of Israel, who reigned 9 years. In his reign Assyria took Samaria (722 BC), which ended the kingdom."
+    "The last king of Israel, son of Elah, who pays tribute to Assyria, then seeks help from Egypt and withholds the tribute. In reprisal the Assyrians besiege Samaria for three years and take it in 722 BC, ending the story of the northern kingdom (2 Kgs 17:4-6)."
    ]
   ]
  }
