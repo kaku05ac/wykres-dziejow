@@ -256,12 +256,12 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .ask-note { margin: 8px 0 0; font-family: var(--mono); font-size: 10.5px; letter-spacing: .02em; color: #7d7177; }
 
 .ask-pad { position: relative; overflow: hidden; border-radius: 0;
-  background: radial-gradient(90% 70% at 30% 20%, #f7f5f6, #ebe8ea 75%); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .05); }
-.ask-screw { position: absolute; top: 12px; width: 13px; height: 13px; border-radius: 50%; border: 1px solid #d3cfd2; background: radial-gradient(circle, #dcd8db 30%, #f3f1f2 32%); }
+  background: radial-gradient(90% 70% at 30% 20%, var(--n-25), var(--n-100) 80%); box-shadow: inset 0 0 0 1px var(--n-200); }
+.ask-screw { position: absolute; top: 12px; width: 13px; height: 13px; border-radius: 50%; border: 1px solid var(--n-300); background: radial-gradient(circle, var(--n-200) 30%, var(--n-25) 32%); opacity: .7; }
 .ask-screw.tl { left: 12px; } .ask-screw.tr { right: 12px; }
 .ask-grille { position: absolute; top: 18px; right: 40px; width: 45px; height: 14px;
-  background: radial-gradient(circle, #9a959a 1px, transparent 1.4px) 0 0 / 9px 7px; opacity: .7; }
-.ask-seam { position: absolute; background: #dcd8db; box-shadow: 0 1px 0 #fbfafb; }
+  background: radial-gradient(circle, #9a959a 1px, transparent 1.4px) 0 0 / 9px 7px; opacity: .45; }
+.ask-seam { position: absolute; background: var(--n-200); box-shadow: 0 1px 0 var(--n-0); }
 .ask-seam.h { left: 0; right: 0; top: 50%; height: 1px; }
 .ask-seam.v { top: 50%; bottom: 0; left: 50%; width: 1px; box-shadow: 1px 0 0 #fbfafb; }
 .ask-tag { position: absolute; right: 16px; bottom: 15px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--n-500); }
@@ -270,15 +270,15 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .ask.is-busy .ask-ring { background: var(--c1); border-color: var(--c1); }
 .ask-knob { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; margin: -60px 0 0 -60px; border-radius: 50%; border: 0; cursor: pointer;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
-  background: radial-gradient(circle at 50% 30%, #ffffff, #f1eef0 80%);
-  box-shadow: 0 0 0 7px #eeebed, 0 0 0 8px #dedadc, 0 14px 24px -8px rgba(35, 30, 35, .18), 0 2px 3px rgba(35, 30, 35, .08), inset 0 -2px 4px rgba(0, 0, 0, .04), inset 0 1px 1px #fff;
+  background: radial-gradient(circle at 50% 30%, var(--n-0), var(--n-25) 80%);
+  box-shadow: 0 0 0 7px var(--n-100), 0 0 0 8px #e3dfe1, 0 10px 20px -10px rgba(35, 30, 35, .14), 0 1px 2px rgba(35, 30, 35, .06), inset 0 -2px 4px rgba(0, 0, 0, .03), inset 0 1px 1px #fff;
   transition: transform .12s, box-shadow .12s; }
 .ask-knob:hover { transform: translateY(-1px); }
-.ask-knob:active { transform: translateY(1px); box-shadow: 0 0 0 7px #eeebed, 0 0 0 8px #dedadc, 0 4px 8px -2px rgba(35, 30, 35, .14), inset 0 2px 5px rgba(0, 0, 0, .07); }
+.ask-knob:active { transform: translateY(1px); box-shadow: 0 0 0 7px var(--n-100), 0 0 0 8px #e3dfe1, 0 3px 6px -2px rgba(35, 30, 35, .12), inset 0 2px 5px rgba(0, 0, 0, .06); }
 .ask-knob:focus-visible { outline: 2px solid var(--accent); outline-offset: 12px; }
 .ask-knob:disabled { cursor: default; transform: none; }
 /* The key's light: bright red while idle, a moving pastel rainbow while Claude answers. */
-.ask-dash { width: 20.5px; height: 3px; border-radius: 2px; background: #ff2d2d; }
+.ask-dash { width: 20.5px; height: 3px; border-radius: 2px; background: var(--c1); }
 
 .ask.is-busy .ask-dash { width: 25.5px; opacity: 1;
   background: linear-gradient(90deg, #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #ffadad) 0 0 / 200% 100%;
