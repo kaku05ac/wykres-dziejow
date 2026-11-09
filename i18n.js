@@ -196,17 +196,17 @@ const TEXT = {
    [
     "Asyria",
     "Rdz 10,22; 2 Krl 17",
-    "Potężne królestwo nad Tygrysem ze stolicą w Niniwie, które w 722 p.n.e. podbiło północne królestwo Izraela. Księga Jonasza opowiada jednak, jak mieszkańcy Niniwy nawrócili się i doznali Bożego miłosierdzia."
+    "Imperium znad Tygrysu ze stolicą w Niniwie, przez stulecia budzące lęk całego Bliskiego Wschodu; w 722 p.n.e. jego wojska kładą kres północnemu Królestwu Izraela. A jednak właśnie do Niniwy Bóg posyła proroka Jonasza, a gdy jej mieszkańcy pokutują, okazuje im miłosierdzie. Uczy w ten sposób, że Jego troska obejmuje także wrogów Izraela."
    ],
    [
     "Aram / Syria",
     "Rdz 10,22; 2 Krl 16,9",
-    "Starożytne królestwo Aramejczyków ze stolicą w Damaszku, sąsiad i częsty rywal Izraela. Ich język, aramejski, stał się powszechny na Bliskim Wschodzie; posługiwał się nim także Jezus."
+    "Królestwo Aramejczyków ze stolicą w Damaszku, przez wieki sąsiad i rywal Izraela, z którego pochodził wódz Naaman, uzdrowiony przez proroka Elizeusza. Ich język, aramejski, stał się mową całego Bliskiego Wschodu. W nim Jezus nauczał i modlił się, a Ewangelie zachowały Jego słowa: „Talitha kum” i „Abba” (Mk 5,41; 14,36)."
    ],
    [
     "Arabowie",
     "Rdz 25,12-18",
-    "Ludy Półwyspu Arabskiego; tradycja umieszcza tam krainę Saby, z której królowa przybyła do Salomona. W dniu Pięćdziesiątnicy wśród słuchaczy apostołów są także Arabowie (Dz 2,11)."
+    "Ludy pustyń i oaz Półwyspu Arabskiego, kupcy prowadzący karawany z kadzidłem i wonnościami. Tradycja umieszcza tu krainę Saby, z której królowa przybyła, by przekonać się o mądrości Salomona. W dniu Pięćdziesiątnicy także Arabowie słyszą apostołów głoszących we własnym języku wielkie dzieła Boże (Dz 2,11)."
    ],
    [
     "Izrael",
@@ -216,17 +216,17 @@ const TEXT = {
    [
     "Babilon",
     "Rdz 10,8-10",
-    "Starożytne miasto w krainie Szinear, którego nazwę Księga Rodzaju łączy z pomieszaniem języków przy wieży Babel. Później stolica imperium Nabuchodonozora, który zburzył Jerozolimę. W Apokalipsie nazwa „Babilon” stała się symbolem potęgi przeciwnej Bogu."
+    "Miasto nad Eufratem, w krainie Szinear, którego nazwę Księga Rodzaju łączy z wieżą Babel i pomieszaniem języków. Za Nabuchodonozora staje się stolicą imperium i miejscem wygnania Judejczyków. W Apokalipsie jego imię oznacza każdą potęgę, która staje przeciw Bogu."
    ],
    [
     "Egipt",
     "Rdz 10,6",
-    "W biblijnej tablicy narodów to Misraim, syn Chama; tak Egipt nazywa się po hebrajsku do dziś. To kraj niewoli Izraela i wielkiego wyjścia, a później schronienie dla Świętej Rodziny. Wkrótce stał się jedną z kolebek chrześcijaństwa."
+    "Kraina Nilu i piramid, jedna z najstarszych cywilizacji świata, którą Biblia wywodzi od Misraima, syna Chama; tak Egipt nazywa się po hebrajsku do dziś. Tu Józef ratuje rodzinę przed głodem, tu Izrael doświadcza niewoli i wielkiego wyjścia, a wieki później schronienie znajduje Święta Rodzina. Na jego pustyniach rodzi się chrześcijańskie życie pustelnicze i zakonne."
    ],
    [
     "Kanaan",
     "Rdz 10,15-19",
-    "Kraj nazwany od Kanaana, wnuka Noego, zamieszkany przez wiele ludów, m.in. Sydończyków, Hetytów i Jebusytów. To ziemia obiecana Abrahamowi i jego potomkom. W Ewangelii Jezus chwali wiarę kobiety kananejskiej i uzdrawia jej córkę."
+    "Ziemia opływająca mlekiem i miodem (Wj 3,8), obiecana przez Boga Abrahamowi i jego potomkom, zamieszkana przez wiele ludów, m.in. Hetytów i Jebusytów; Biblia wywodzi jej nazwę od Kanaana, wnuka Noego. W Ewangelii Jezus chwali kobietę kananejską: „O niewiasto, wielka jest twoja wiara” (Mt 15,28), i uzdrawia jej córkę."
    ],
    [
     "Fenicja",
@@ -246,7 +246,7 @@ const TEXT = {
    [
     "Persja",
     "Dn 8,20",
-    "Imperium Achemenidów z ośrodkami w Suzie i Persepolis, jedno z największych państw starożytności, od Indii po Egipt. Jego królowie, zwłaszcza Cyrus, pozwolili Żydom wrócić z wygnania i odbudować świątynię."
+    "Imperium Achemenidów, rozciągające się od Indii po Egipt, z pałacami w Suzie i Persepolis, słynące z królewskich dróg, sprawnej poczty i szacunku dla zwyczajów podbitych ludów. Jego władca Cyrus pozwala Żydom wrócić z wygnania i odbudować świątynię, a w Suzie rozgrywa się historia królowej Estery."
    ],
    [
     "Rzym",
@@ -1143,17 +1143,17 @@ const TEXT = {
    [
     "Assyria",
     "Gen 10:22; 2 Kgs 17",
-    "A powerful kingdom on the Tigris with its capital at Nineveh, which conquered the northern kingdom of Israel in 722 BC. Yet the Book of Jonah tells how the people of Nineveh repented and received God’s mercy."
+    "An empire on the Tigris with its capital at Nineveh, for centuries the terror of the whole Near East; in 722 BC its armies put an end to the northern Kingdom of Israel. And yet it is to Nineveh that God sends the prophet Jonah, and when its people repent he shows them mercy, teaching that his care reaches even Israel’s enemies."
    ],
    [
     "Aram / Syria",
     "Gen 10:22; 2 Kgs 16:9",
-    "The ancient kingdom of the Arameans with its capital at Damascus, a neighbour and frequent rival of Israel. Their language, Aramaic, spread across the Middle East; Jesus spoke it too."
+    "The kingdom of the Arameans with its capital at Damascus, for centuries Israel’s neighbour and rival, and home of the commander Naaman, healed by the prophet Elisha. Their language, Aramaic, became the common speech of the whole Near East. In it Jesus taught and prayed, and the Gospels preserve his words: “Talitha cum” and “Abba” (Mark 5:41; 14:36)."
    ],
    [
     "Arabs",
     "Gen 25:12-18",
-    "The peoples of the Arabian Peninsula; tradition places there the land of Sheba, whose queen came to visit Solomon. At Pentecost, Arabs are among those who hear the apostles (Acts 2:11)."
+    "Peoples of the deserts and oases of the Arabian Peninsula, merchants leading caravans laden with incense and spices. Tradition places here the land of Sheba, whose queen came to see Solomon’s wisdom for herself. At Pentecost, Arabs too hear the apostles proclaiming the mighty works of God in their own tongue (Acts 2:11)."
    ],
    [
     "Israel",
@@ -1163,17 +1163,17 @@ const TEXT = {
    [
     "Babylon",
     "Gen 10:8-10",
-    "An ancient city in the land of Shinar, whose name Genesis links with the confusion of languages at the tower of Babel. Later it was the capital of Nebuchadnezzar’s empire, which destroyed Jerusalem. In Revelation the name “Babylon” became a symbol of power set against God."
+    "A city on the Euphrates, in the land of Shinar, whose name Genesis links with the Tower of Babel and the confusion of tongues. Under Nebuchadnezzar it becomes the capital of an empire and the place of Judah’s exile. In Revelation its name stands for every power that sets itself against God."
    ],
    [
     "Egypt",
     "Gen 10:6",
-    "In the Bible’s table of nations it is Mizraim, son of Ham; this is still the Hebrew name for Egypt. It is the land of Israel’s slavery and of the great Exodus, and later a refuge for the Holy Family. Soon it became one of the cradles of Christianity."
+    "Land of the Nile and the pyramids, one of the world’s oldest civilisations, which the Bible traces to Mizraim, son of Ham; Egypt is still called by that name in Hebrew. Here Joseph saves his family from famine, here Israel knows slavery and the great Exodus, and centuries later the Holy Family finds refuge. In its deserts Christian hermit and monastic life is born."
    ],
    [
     "Canaan",
     "Gen 10:15-19",
-    "The land named after Canaan, a grandson of Noah, home to many peoples, among them the Sidonians, Hittites and Jebusites. It is the land promised to Abraham and his descendants. In the Gospel Jesus praises the faith of a Canaanite woman and heals her daughter."
+    "A land flowing with milk and honey (Exod 3:8), promised by God to Abraham and his descendants and home to many peoples, among them the Hittites and Jebusites; the Bible derives its name from Canaan, grandson of Noah. In the Gospel Jesus praises a Canaanite woman: “O woman, great is your faith” (Matt 15:28), and heals her daughter."
    ],
    [
     "Phoenicia",
@@ -1193,7 +1193,7 @@ const TEXT = {
    [
     "Persia",
     "Dan 8:20",
-    "The Achaemenid Empire, centred on Susa and Persepolis, one of the largest states of the ancient world, from India to Egypt. Its kings, above all Cyrus, allowed the Jews to return from exile and rebuild the temple."
+    "The Achaemenid Empire, stretching from India to Egypt, with palaces at Susa and Persepolis, famed for its royal roads, efficient post and respect for the customs of conquered peoples. Its ruler Cyrus allows the Jews to return from exile and rebuild the Temple, and the story of Queen Esther unfolds at Susa."
    ],
    [
     "Rome",
