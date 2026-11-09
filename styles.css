@@ -270,8 +270,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .ask.is-busy .ask-ring { background: var(--c1); border-color: var(--c1); }
 .ask-knob { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; margin: -60px 0 0 -60px; border-radius: 50%; border: 0; cursor: pointer;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
-  background: radial-gradient(circle at 50% 30%, var(--n-0), var(--n-25) 80%);
-  box-shadow: 0 0 0 7px var(--n-100), 0 0 0 8px #e3dfe1, inset 0 -2px 4px rgba(0, 0, 0, .02), inset 0 1px 1px #fff;
+  background: radial-gradient(circle at 50% 30%, var(--n-0), #f4f2f3 80%);
+  box-shadow: 0 0 0 7px var(--n-100), 0 0 0 8px #e3dfe1, inset 0 -2px 4px rgba(0, 0, 0, .04), inset 0 0 6px rgba(35, 30, 35, .05), inset 0 1px 1px #fff;
   transition: transform .12s, box-shadow .12s; }
 .ask-knob:hover { transform: translateY(-1px); }
 .ask-knob:active { transform: translateY(1px); box-shadow: 0 0 0 7px var(--n-100), 0 0 0 8px #e3dfe1, inset 0 2px 5px rgba(0, 0, 0, .06); }
