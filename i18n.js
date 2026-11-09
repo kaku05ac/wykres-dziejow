@@ -1932,6 +1932,14 @@ const UI = {
           x => `W jakich świętach i czytaniach Kościół wspomina wydarzenie „${x}”?`],
         later: [x => `Co o wydarzeniu „${x}” mówią źródła historyczne?`, x => `Jak Kościół ocenia wydarzenie „${x}” z perspektywy czasu?`],
         primeval: [x => `Jak Kościół rozumie „${x}”: co jest w tej historii przesłaniem, a co obrazem?`, x => `Gdzie w Piśmie i w Katechizmie szukać więcej o wydarzeniu „${x}”?`],
+        pat: {
+          name: x => `${x}: co znaczy to imię i co mówi o tej postaci?`,
+          age: x => `${x}: dlaczego Biblia przypisuje tej postaci tak długie życie i jak to rozumieć?`,
+          family: x => `${x}: kim byli rodzice, rodzeństwo i potomkowie tej postaci?`,
+          trad: x => `${x}: co o tej postaci mówią tradycja żydowska i Ojcowie Kościoła?`,
+          luke: x => `${x}: co oznacza obecność tej postaci w rodowodzie Jezusa?`,
+          cov: x => `${x}: jaką rolę ta postać odgrywa w dziejach przymierza Boga z Izraelem?`
+        },
         fig: [x => `${x}: jakie słowa tej postaci warto znać na pamięć?`],
         figBible: [x => `${x}: które fragmenty Pisma najpełniej pokazują tę postać?`],
         figLater: [x => `${x}: jakie dzieła lub świadectwa tej postaci warto poznać?`],
@@ -1993,6 +2001,14 @@ const UI = {
           x => `In which feasts and readings does the Church remember “${x}”?`],
         later: [x => `What do historical sources say about “${x}”?`, x => `How does the Church judge “${x}” with hindsight?`],
         primeval: [x => `How does the Church understand “${x}”: what in this story is message and what is image?`, x => `Where in Scripture and the Catechism can I read more about “${x}”?`],
+        pat: {
+          name: x => `${x}: what does this name mean, and what does it say about the person?`,
+          age: x => `${x}: why does the Bible give this person such a long life, and how should we understand it?`,
+          family: x => `${x}: who were this person’s parents, siblings and descendants?`,
+          trad: x => `${x}: what do Jewish tradition and the Church Fathers say about this person?`,
+          luke: x => `${x}: what does this person’s place in the genealogy of Jesus mean?`,
+          cov: x => `${x}: what part does this person play in the story of God’s covenant with Israel?`
+        },
         fig: [x => `${x}: which words of this person are worth knowing by heart?`],
         figBible: [x => `${x}: which passages of Scripture show this person most fully?`],
         figLater: [x => `${x}: which works or testimonies of this person are worth knowing?`],

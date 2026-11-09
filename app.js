@@ -896,7 +896,16 @@
       }
       // People: their words or the passages about them (one theme), their influence, the New Testament link
       // before Christ; later people also their works.
-      if ((k === 'f' && FIG[i][6] !== 'U') || k === 'p') {
+      // The patriarchs' ring: a wider set of themes, so that neighbouring people do not all get the same three
+      // questions (name, family, tradition, the genealogy of Jesus or the covenant, long life, influence).
+      if (k === 'p') {
+        const P = Q.pat, early = primeval(PAT[i]);
+        const words = SAYINGS.has(TEXT.pl.PAT[i][0]) ? [['read', Q.fig[0]]] : [['read', Q.figBible[0]]];
+        return early
+          ? [['name', P.name], ['age', P.age], ['family', P.family], ['trad', P.trad], ['luke', P.luke]]
+          : words.concat([['name', P.name], ['family', P.family], ['trad', P.trad], ['cov', P.cov], hist], nt);
+      }
+      if (k === 'f' && FIG[i][6] !== 'U') {
         // "Words worth knowing by heart" only for people whose words are well known; the others get the
         // Scripture passages about them (biblical) or their works (later).
         const words = SAYINGS.has(TEXT.pl[k === 'f' ? 'FIG' : 'PAT'][i][0]) ? [['read', Q.fig[0]]] : [];
