@@ -344,7 +344,7 @@ const TEXT = {
    [
     "Narodzenie Chrystusa",
     "Mt 2; Łk 2",
-    "„A Słowo stało się ciałem i zamieszkało wśród nas” (J 1,14): w Betlejem, mieście Dawida, Syn Boży przychodzi na świat z Maryi Dziewicy i spoczywa w żłobie, bo dla Świętej Rodziny zabrakło miejsca w gospodzie. Ten, przez którego wszystko się stało, przychodzi w ubóstwie i ciszy. Pierwsi rozpoznają Go pasterze z okolicznych pól, po nich zaś Mędrcy przybyli z dalekiego Wschodu, jakby bliscy i dalecy, prości i uczeni, zbiegali się do jednego Dziecka. Od tej nocy ludzkość liczy swoje dzieje na lata przed Chrystusem i po Nim.",
+    "„A Słowo stało się ciałem i zamieszkało wśród nas” (J 1,14): w Betlejem, mieście Dawida, Syn Boży przychodzi na świat z Maryi Dziewicy, a pierwszą kołyską staje się dla Niego skromny żłóbek w betlejemskiej stajence. Ten, przez którego wszystko się stało, przychodzi w ubóstwie i ciszy. Pierwsi rozpoznają Go pasterze z okolicznych pól, po nich zaś Mędrcy przybyli z dalekiego Wschodu, jakby bliscy i dalecy, prości i uczeni, zbiegali się do jednego Dziecka. Od tej nocy ludzkość liczy swoje dzieje na lata przed Chrystusem i po Nim.",
     "ok. 6–4 p.n.e."
    ],
    [
@@ -1291,7 +1291,7 @@ const TEXT = {
    [
     "Birth of Christ",
     "Matt 2; Luke 2",
-    "“And the Word became flesh and dwelt among us” (John 1:14): in Bethlehem, the city of David, the Son of God is born of the Virgin Mary and lies in a manger, because there was no room for the Holy Family at the inn. He through whom all things were made comes in poverty and silence. The first to recognise him are shepherds from the nearby fields, and after them Magi come from the distant East, as if those near and far, the simple and the learned, were all hastening to one Child. From that night humanity counts its history in years before Christ and after him.",
+    "“And the Word became flesh and dwelt among us” (John 1:14): in Bethlehem, the city of David, the Son of God is born of the Virgin Mary, and his first cradle is a humble manger in a Bethlehem stable. He through whom all things were made comes in poverty and silence. The first to recognise him are shepherds from the nearby fields, and after them Magi come from the distant East, as if those near and far, the simple and the learned, were all hastening to one Child. From that night humanity counts its history in years before Christ and after him.",
     "c. 6–4 BC"
    ],
    [
