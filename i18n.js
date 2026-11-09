@@ -24,12 +24,12 @@ const TEXT = {
    [
     "Set",
     "Rdz 5,6-8",
-    "Syn Adama i Ewy, urodzony po śmierci Abla; Ewa nazywa go darem od Boga. Od niego wywodzi się ród, z którego przychodzą Noe i Abraham, a Ewangelia według św. Łukasza wymienia go w rodowodzie Jezusa."
+    "Syn Adama i Ewy, urodzony po śmierci Abla jako nowy początek: Ewa przyjmuje go jako dar od Boga, który dał jej potomka w miejsce utraconego syna (Rdz 4,25). Od niego wywodzi się ród, z którego przyjdą Noe i Abraham, a św. Łukasz wymienia go w rodowodzie Jezusa."
    ],
    [
     "Enosz",
     "Rdz 5,9-11",
-    "Syn Seta, którego imię to poetyckie hebrajskie słowo na „człowieka”, to samo, które pojawia się w Psalmie: „Czym jest człowiek, że o nim pamiętasz?” (Ps 8,5). Przy jego narodzinach Biblia zapisuje, że „wtedy zaczęto wzywać imienia Pana”, czyli pierwszą wzmiankę o ludziach zwracających się do Boga w modlitwie."
+    "Syn Seta, którego imię jest poetyckim hebrajskim słowem na „człowieka”, tym samym, które brzmi w Psalmie: „Czym jest człowiek, że o nim pamiętasz?” (Ps 8,5). Przy jego narodzinach Biblia zapisuje, że „wtedy zaczęto wzywać imienia Pana” (Rdz 4,26). To pierwsza wzmianka o ludziach, którzy zwracają się do Boga w modlitwie."
    ],
    [
     "Kenan",
@@ -39,7 +39,7 @@ const TEXT = {
    [
     "Mahalalel",
     "Rdz 5,15-17",
-    "Syn Kenana, którego imię znaczy „chwała Boga”. Należy do pokoleń, którym Biblia przypisuje bardzo długie życie, co w starożytnych tekstach było znakiem błogosławieństwa i dawności rodu."
+    "Syn Kenana, którego imię brzmi jak modlitwa: „chwała Boga”. Należy do pokoleń, którym Biblia przypisuje bardzo długie życie; w starożytnych tekstach był to znak Bożego błogosławieństwa i czcigodnej dawności rodu."
    ],
    [
     "Jered",
@@ -54,12 +54,12 @@ const TEXT = {
    [
     "Metuszelach",
     "Rdz 5,25-27",
-    "Syn Henocha i dziadek Noego, najdłużej żyjący człowiek w Biblii; stąd powiedzenie „wiek Matuzalema”. Według liczb tekstu hebrajskiego umiera w roku potopu."
+    "Syn Henocha i dziadek Noego, najdłużej żyjący człowiek w Biblii, bo żył 969 lat (Rdz 5,27); stąd powiedzenie o „wieku Matuzalema”. Według liczb tekstu hebrajskiego jego życie dobiega końca w roku potopu, jakby razem z nim odchodziło ostatnie pokolenie dawnego świata."
    ],
    [
     "Lamek",
     "Rdz 5,28-31",
-    "Syn Metuszelacha. Nadając synowi imię Noe, czyli „odpoczynek, pociecha”, wyraża nadzieję: „Ten nas pocieszy w naszej pracy i w trudzie rąk naszych”."
+    "Syn Metuszelacha i ojciec Noego, który nadaje synowi imię znaczące „odpoczynek, pociecha”. Wyraża w nim nadzieję całego zmęczonego pokolenia: „Ten nas pocieszy w naszej pracy i w trudzie rąk naszych” (Rdz 5,29)."
    ],
    [
     "Noe",
@@ -69,27 +69,27 @@ const TEXT = {
    [
     "Sem",
     "Rdz 11,10-11",
-    "Najstarszy syn Noego, którego ojciec szczególnie pobłogosławił. Od jego imienia pochodzi nazwa Semitów, a jego potomkami są Abraham, naród Izraela i według Ewangelii sam Jezus."
+    "Najstarszy syn Noego, któremu ojciec udziela szczególnego błogosławieństwa (Rdz 9,26). Od jego imienia pochodzi nazwa Semitów, a przez jego potomków prowadzi linia obietnicy: do Abrahama, do narodu Izraela i, jak podaje Ewangelia, do samego Jezusa."
    ],
    [
     "Arpachszad",
     "Rdz 11,12-13",
-    "Syn Sema, urodzony dwa lata po potopie, pierwszy z rodowodu, który przyszedł na świat już na odnowionej ziemi. Jego imię przetrwało w rodowodzie Jezusa."
+    "Syn Sema, urodzony dwa lata po potopie, pierwszy w rodowodzie, który przychodzi na świat na obmytej, odnowionej ziemi. Jego imię przetrwało w rodowodzie Jezusa (Łk 3,36)."
    ],
    [
     "Szelach",
     "Rdz 11,14-15",
-    "Syn Arpachszada i ojciec Hebera. Ciekawostka: grecki przekład Biblii, a za nim Ewangelia według św. Łukasza, dodaje przed nim jeszcze jedno pokolenie, Kainama, którego nie ma w tekście hebrajskim."
+    "Syn Arpachszada i ojciec Hebera, jedno z ogniw rodowodu prowadzącego do Abrahama. Grecki przekład Biblii, a za nim Ewangelia według św. Łukasza, umieszcza przed nim jeszcze jedno pokolenie, Kainama, którego nie zna tekst hebrajski (Łk 3,35-36)."
    ],
    [
     "Heber",
     "Rdz 11,16-17",
-    "Syn Szelacha, od którego imienia tradycja wywodzi nazwę „Hebrajczycy”. Pierwszym, kogo Biblia tak nazywa, jest jego potomek Abraham."
+    "Syn Szelacha, od którego imienia tradycja wywodzi nazwę „Hebrajczycy”. Pierwszym, kogo Biblia tak nazywa, jest jego daleki potomek, „Abram Hebrajczyk” (Rdz 14,13)."
    ],
    [
     "Peleg",
     "Rdz 11,18-19",
-    "Syn Hebera, którego imię znaczy „podział”, bo „za jego dni ziemia została podzielona”, czyli ludzie rozeszli się po świecie. Od jego pokolenia długość życia patriarchów wyraźnie maleje."
+    "Syn Hebera, którego imię znaczy „podział”, bo „za jego dni ziemia została podzielona” (Rdz 10,25), a ludzie rozeszli się po świecie. Od jego pokolenia długość życia patriarchów wyraźnie maleje, jakby dawny świat ustępował miejsca dziejom bliższym nam."
    ],
    [
     "Reu",
@@ -99,7 +99,7 @@ const TEXT = {
    [
     "Serug",
     "Rdz 11,22-23",
-    "Pradziad Abrahama. Jego imię brzmi jak nazwa starożytnej miejscowości Sarugi w północnej Mezopotamii, w okolicy, z której wyszła rodzina Abrahama."
+    "Pradziad Abrahama, którego imię brzmi jak nazwa starożytnego miasta Sarugi w północnej Mezopotamii, w krainie, z której wyszła rodzina Abrahama. Tak w samych imionach rodowodu przetrwała pamięć o ojczystych stronach patriarchów."
    ],
    [
     "Nachor",
@@ -119,12 +119,12 @@ const TEXT = {
    [
     "Sara",
     "Rdz 23,1",
-    "Żona Abrahama, której Bóg zmienia imię z Saraj na Sara, „księżniczka”. W starości rodzi Izaaka, którego imię znaczy „śmiać się”. Jest jedyną kobietą w Biblii, której wiek przy śmierci jest podany."
+    "Żona Abrahama i matka ludu obietnicy, której Bóg zmienia imię z Saraj na Sara, „księżniczka”. Gdy po latach oczekiwania w starości rodzi Izaaka, jej niedowierzanie przemienia się w radość (Rdz 21,6). Jest jedyną kobietą w Biblii, której wiek przy śmierci zostaje podany: 127 lat (Rdz 23,1)."
    ],
    [
     "Izmael",
     "Rdz 25,17",
-    "Pierworodny syn Abrahama i Hagar, egipskiej służącej Sary; jego imię znaczy „Bóg słyszy”. Gdy Hagar z chłopcem błąka się po pustyni, Bóg słyszy jego płacz, otwiera Hagar oczy na studnię i obiecuje, że z Izmaela wyprowadzi wielki naród. Razem z Izaakiem grzebie ojca; według tradycji arabskiej jest przodkiem Arabów."
+    "Pierworodny syn Abrahama i Hagar, egipskiej służącej Sary, którego imię znaczy „Bóg słyszy”. Gdy Hagar z chłopcem błąka się po pustyni, Bóg słyszy jego płacz, otwiera jej oczy na studnię i obiecuje, że z Izmaela wyprowadzi wielki naród. Razem z Izaakiem grzebie ojca, a tradycja arabska uważa go za swojego przodka."
    ],
    [
     "Izaak",
@@ -139,7 +139,7 @@ const TEXT = {
    [
     "Lewi",
     "Wj 6,16",
-    "Trzeci syn Jakuba i Lei. Od niego pochodzi pokolenie Lewiego, któremu Bóg powierzył służbę w przybytku, a później w świątyni; z tego pokolenia pochodzą Mojżesz i Aaron. Pokolenie Lewiego nie otrzymało własnej ziemi, bo, jak mówi Pismo, „Pan jest jego dziedzictwem” (Pwt 10,9)."
+    "Trzeci syn Jakuba i Lei, od którego pochodzi pokolenie powołane do służby w przybytku, a później w świątyni; z niego wywodzą się Mojżesz i Aaron. Lewici nie otrzymują własnej ziemi, bo, jak mówi Pismo, „Pan jest jego dziedzictwem” (Pwt 10,9)."
    ],
    [
     "Józef",
@@ -149,17 +149,17 @@ const TEXT = {
    [
     "Kehat",
     "Wj 6,18",
-    "Syn Lewiego, który wraz z ojcem i dziadkiem Jakubem przybył do Egiptu (Rdz 46,11). Jego potomkowie, Kehatyci, nosili podczas wędrówki po pustyni najświętsze sprzęty przybytku, w tym Arkę Przymierza (Lb 4). Jest dziadkiem Mojżesza i Aarona."
+    "Syn Lewiego, który wraz z ojcem i dziadkiem Jakubem przybywa do Egiptu (Rdz 46,11). Jego potomkom, Kehatytom, powierzono najświętsze zadanie: w czasie wędrówki przez pustynię nieśli sprzęty przybytku, z Arką Przymierza na czele (Lb 4). Jest dziadkiem Mojżesza i Aarona."
    ],
    [
     "Amram",
     "Wj 6,20",
-    "Wnuk Lewiego, mąż Jokebed i ojciec Aarona, Miriam i Mojżesza (Wj 6,20). Jego żona ukryła małego Mojżesza przed rozkazem faraona i powierzyła go wodom Nilu w koszyku (Wj 2). Wj 6 podaje skróconą genealogię: między Kehatem a Amramem mogło upłynąć więcej pokoleń."
+    "Ojciec Aarona, Miriam i Mojżesza, mąż Jokebed, która z miłości i odwagi ukryła małego Mojżesza przed rozkazem faraona, a potem powierzyła go wodom Nilu w koszyku z sitowia (Wj 2). Genealogia Księgi Wyjścia jest skrócona, więc między Kehatem a Amramem mogło upłynąć więcej pokoleń (Wj 6,20)."
    ],
    [
     "Aaron",
     "Lb 33,38-39",
-    "Starszy brat Mojżesza, który przemawiał w jego imieniu przed faraonem. Bóg ustanowił go pierwszym arcykapłanem Izraela, a jego potomkowie sprawowali kapłaństwo w świątyni. Umiera na górze Hor. List do Hebrajczyków ukazuje Chrystusa jako doskonałego arcykapłana, którego zapowiadało kapłaństwo Aarona."
+    "Starszy brat Mojżesza i jego głos przed faraonem, ustanowiony przez Boga pierwszym arcykapłanem Izraela; jego potomkowie przez wieki sprawują kapłaństwo w świątyni. Umiera na górze Hor, a List do Hebrajczyków ukazuje Chrystusa jako doskonałego Arcykapłana, którego zapowiadało kapłaństwo Aarona."
    ],
    [
     "Mojżesz",
@@ -174,12 +174,12 @@ const TEXT = {
    [
     "Heli",
     "1 Sm 4,15",
-    "Kapłan w sanktuarium w Szilo, u którego wychowywał się prorok Samuel. To on nauczył chłopca odpowiadać Bogu: „Mów, Panie, bo sługa Twój słucha” (1 Sm 3,9)."
+    "Kapłan w sanktuarium w Szilo, u którego dorasta mały Samuel. Gdy chłopiec nocą słyszy wołanie, stary kapłan rozpoznaje głos Boga i uczy go odpowiedzi, która stała się modlitwą wielu pokoleń: „Mów, Panie, bo sługa Twój słucha” (1 Sm 3,9)."
    ],
    [
     "Jojada",
     "2 Krn 24,15",
-    "Kapłan w Jerozolimie, który ukrył małego Joasza przed królową Atalią i osadził go na tronie. Za to, że czynił dobro w Izraelu, pochowano go w grobach królewskich (2 Krn 24,16)."
+    "Kapłan w Jerozolimie, który z odwagą ratuje dynastię Dawida: ukrywa w świątyni małego Joasza przed królową Atalią, a po sześciu latach osadza go na tronie. Za dobro, które czynił w Izraelu, pochowano go w grobach królewskich (2 Krn 24,16)."
    ]
   ],
   "NAT": [
@@ -971,12 +971,12 @@ const TEXT = {
    [
     "Seth",
     "Gen 5:6-8",
-    "Son of Adam and Eve, born after the death of Abel; Eve calls him a gift from God. From him comes the line of Noah and Abraham, and the Gospel of Luke names him in the genealogy of Jesus."
+    "Son of Adam and Eve, born after Abel’s death as a new beginning: Eve receives him as a gift from God, who has given her offspring in place of the son she lost (Gen 4:25). From him comes the line that will lead to Noah and Abraham, and St Luke names him in the genealogy of Jesus."
    ],
    [
     "Enosh",
     "Gen 5:9-11",
-    "Son of Seth, whose name is a poetic Hebrew word for “man”, the same word as in the Psalm: “What is man that you are mindful of him?” (Ps 8:5). At his birth the Bible records that “people began to invoke the name of the Lord”, the first mention of people turning to God in prayer."
+    "Son of Seth, whose name is a poetic Hebrew word for “man”, the same that sounds in the Psalm: “What is man that you are mindful of him?” (Ps 8:4). At his birth the Bible records that “at that time people began to call upon the name of the Lord” (Gen 4:26). It is the first mention of people turning to God in prayer."
    ],
    [
     "Kenan",
@@ -986,7 +986,7 @@ const TEXT = {
    [
     "Mahalalel",
     "Gen 5:15-17",
-    "Son of Kenan, whose name means “praise of God”. He belongs to the generations to whom the Bible gives very long lives, which in ancient texts was a sign of blessing and of a family’s great age."
+    "Son of Kenan, whose name sounds like a prayer: “praise of God”. He belongs to the generations to whom the Bible ascribes very long lives; in ancient texts this was a sign of God’s blessing and of a family’s venerable antiquity."
    ],
    [
     "Jared",
@@ -1001,12 +1001,12 @@ const TEXT = {
    [
     "Methuselah",
     "Gen 5:25-27",
-    "Son of Enoch and grandfather of Noah, the longest-lived man in the Bible; hence the saying “as old as Methuselah”. By the numbers of the Hebrew text he dies in the year of the Flood."
+    "Son of Enoch and grandfather of Noah, the longest-lived man in the Bible at 969 years (Gen 5:27); hence the saying “as old as Methuselah”. By the numbers of the Hebrew text his life ends in the year of the flood, as if the last generation of the old world were passing away with him."
    ],
    [
     "Lamech",
     "Gen 5:28-31",
-    "Son of Methuselah. Naming his son Noah, “rest, comfort”, he speaks his hope: “This one will bring us relief from our work and the toil of our hands.”"
+    "Son of Methuselah and father of Noah, who gives his son a name meaning “rest, comfort”. In it he voices the hope of a whole weary generation: “Out of the ground that the Lord has cursed this one shall bring us relief from our work and from the painful toil of our hands” (Gen 5:29)."
    ],
    [
     "Noah",
@@ -1016,27 +1016,27 @@ const TEXT = {
    [
     "Shem",
     "Gen 11:10-11",
-    "The eldest son of Noah, whom his father especially blessed. The word “Semite” comes from his name, and his descendants include Abraham, the people of Israel and, according to the Gospel, Jesus himself."
+    "The eldest son of Noah, to whom his father gives a special blessing (Gen 9:26). The name Semites comes from his, and through his descendants runs the line of the promise: to Abraham, to the people of Israel and, as the Gospel records, to Jesus himself."
    ],
    [
     "Arpachshad",
     "Gen 11:12-13",
-    "Son of Shem, born two years after the Flood, the first of this line born on the renewed earth. His name lives on in the genealogy of Jesus."
+    "Son of Shem, born two years after the flood, the first in the line to come into the world on a washed and renewed earth. His name lives on in the genealogy of Jesus (Luke 3:36)."
    ],
    [
     "Shelah",
     "Gen 11:14-15",
-    "Son of Arpachshad and father of Eber. A curiosity: the Greek translation of the Bible, and after it the Gospel of Luke, adds one more generation before him, Cainan, who is not in the Hebrew text."
+    "Son of Arpachshad and father of Eber, one of the links in the line that leads to Abraham. The Greek translation of the Bible, and after it the Gospel of Luke, places one more generation before him, Cainan, unknown to the Hebrew text (Luke 3:35-36)."
    ],
    [
     "Eber",
     "Gen 11:16-17",
-    "Son of Shelah, from whose name tradition derives the word “Hebrews”. The first person the Bible calls a Hebrew is his descendant Abraham."
+    "Son of Shelah, from whose name tradition derives the word “Hebrews”. The first person the Bible calls by that name is his distant descendant, “Abram the Hebrew” (Gen 14:13)."
    ],
    [
     "Peleg",
     "Gen 11:18-19",
-    "Son of Eber, whose name means “division”, because “in his time the earth was divided”, that is, people spread out across the world. From his generation on, the patriarchs’ lives grow clearly shorter."
+    "Son of Eber, whose name means “division”, because “in his days the earth was divided” (Gen 10:25) and people spread across the world. From his generation the lifespans of the patriarchs clearly shorten, as if the ancient world were giving way to a history closer to our own."
    ],
    [
     "Reu",
@@ -1046,7 +1046,7 @@ const TEXT = {
    [
     "Serug",
     "Gen 11:22-23",
-    "Great-grandfather of Abraham. His name sounds like the ancient town of Sarugi in northern Mesopotamia, in the region Abraham’s family came from."
+    "Great-grandfather of Abraham, whose name echoes the ancient town of Sarugi in northern Mesopotamia, in the region from which Abraham’s family came. So the very names of the genealogy preserve the memory of the patriarchs’ homeland."
    ],
    [
     "Nahor",
@@ -1066,12 +1066,12 @@ const TEXT = {
    [
     "Sarah",
     "Gen 23:1",
-    "Wife of Abraham, whose name God changes from Sarai to Sarah, “princess”. In old age she gives birth to Isaac, whose name means “he laughs”. She is the only woman in the Bible whose age at death is given."
+    "Wife of Abraham and mother of the people of the promise, whom God renames from Sarai to Sarah, “princess”. When after years of waiting she bears Isaac in her old age, her disbelief turns into joy (Gen 21:6). She is the only woman in the Bible whose age at death is recorded: 127 years (Gen 23:1)."
    ],
    [
     "Ishmael",
     "Gen 25:17",
-    "Firstborn son of Abraham and Hagar, Sarah’s Egyptian maid; his name means “God hears”. When Hagar wanders in the desert with the boy, God hears his cry, opens Hagar’s eyes to a well and promises to make of Ishmael a great nation. With Isaac he buries their father; Arab tradition regards him as the ancestor of the Arabs."
+    "Abraham’s firstborn son by Hagar, Sarah’s Egyptian servant, whose name means “God hears”. When Hagar wanders in the desert with the boy, God hears his cry, opens her eyes to a well and promises to make of Ishmael a great nation. Together with Isaac he buries their father, and Arab tradition regards him as its ancestor."
    ],
    [
     "Isaac",
@@ -1086,7 +1086,7 @@ const TEXT = {
    [
     "Levi",
     "Ex 6:16",
-    "Third son of Jacob and Leah. From him comes the tribe of Levi, to which God entrusted the service of the tabernacle and later of the temple; Moses and Aaron belong to this tribe. The tribe of Levi received no land of its own, because, as Scripture says, “the Lord is its heritage” (Deut 10:9)."
+    "Third son of Jacob and Leah, from whom comes the tribe called to serve in the tabernacle and later in the Temple; Moses and Aaron descend from it. The Levites receive no land of their own because, as Scripture says, “the Lord is his inheritance” (Deut 10:9)."
    ],
    [
     "Joseph",
@@ -1096,17 +1096,17 @@ const TEXT = {
    [
     "Kohath",
     "Ex 6:18",
-    "Son of Levi, who came to Egypt with his father and his grandfather Jacob (Gen 46:11). His descendants, the Kohathites, carried the most holy objects of the tabernacle during the desert journey, among them the Ark of the Covenant (Num 4). He is the grandfather of Moses and Aaron."
+    "Son of Levi, who comes to Egypt with his father and his grandfather Jacob (Gen 46:11). His descendants, the Kohathites, are entrusted with the holiest task: during the journey through the desert they carry the furnishings of the tabernacle, with the Ark of the Covenant at their head (Num 4). He is the grandfather of Moses and Aaron."
    ],
    [
     "Amram",
     "Ex 6:20",
-    "Grandson of Levi, husband of Jochebed and father of Aaron, Miriam and Moses (Ex 6:20). His wife hid the baby Moses from Pharaoh’s order and set him in a basket on the waters of the Nile (Ex 2). Exodus 6 gives a shortened genealogy: more generations may lie between Kohath and Amram."
+    "Father of Aaron, Miriam and Moses, husband of Jochebed, who out of love and courage hid the infant Moses from Pharaoh’s decree and then entrusted him to the waters of the Nile in a basket of reeds (Exod 2). The genealogy in Exodus is abbreviated, so more generations may have passed between Kohath and Amram (Exod 6:20)."
    ],
    [
     "Aaron",
     "Num 33:38-39",
-    "Elder brother of Moses, who spoke for him before Pharaoh. God made him the first high priest of Israel, and his descendants served as priests in the temple. He dies on Mount Hor. The Letter to the Hebrews presents Christ as the perfect high priest, foreshadowed by the priesthood of Aaron."
+    "Elder brother of Moses and his voice before Pharaoh, appointed by God the first high priest of Israel; his descendants serve as priests in the Temple for centuries. He dies on Mount Hor, and the Letter to the Hebrews presents Christ as the perfect High Priest, foreshadowed by the priesthood of Aaron."
    ],
    [
     "Moses",
@@ -1121,12 +1121,12 @@ const TEXT = {
    [
     "Eli",
     "1 Sam 4:15",
-    "A priest at the sanctuary of Shiloh, in whose care the prophet Samuel grew up. He taught the boy to answer God: “Speak, Lord, for your servant is listening” (1 Sam 3:9)."
+    "Priest at the sanctuary of Shiloh, with whom the young Samuel grows up. When the boy hears a voice calling in the night, the old priest recognises the voice of God and teaches him the answer that has become the prayer of many generations: “Speak, Lord, for your servant is listening” (1 Sam 3:9)."
    ],
    [
     "Jehoiada",
     "2 Chr 24:15",
-    "A priest in Jerusalem who hid the young Joash from Queen Athaliah and set him on the throne. Because he had done good in Israel, he was buried among the kings (2 Chr 24:16)."
+    "Priest in Jerusalem who courageously saves the dynasty of David: he hides the young Joash in the Temple from Queen Athaliah and after six years sets him on the throne. For the good he had done in Israel he was buried among the kings (2 Chr 24:16)."
    ]
   ],
   "NAT": [
