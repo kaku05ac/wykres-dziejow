@@ -34,7 +34,7 @@ const TEXT = {
    [
     "Kenan",
     "Rdz 5,12-14",
-    "Syn Enosza i ojciec Mahalalela, jedno z ogniw długiego rodowodu od Adama do Noego. Choć Biblia nie opowiada o jego czynach, jego imię przetrwało w rodowodzie Jezusa."
+    "W rodowodzie od Adama do Noego każde imię jest ogniwem nici, której Bóg nie pozwala zerwać: Kenan, syn Enosza, przekazuje życie i pamięć o Stwórcy kolejnemu pokoleniu. Biblia nie zapisuje jego czynów, lecz św. Łukasz umieszcza go w rodowodzie Jezusa (Łk 3,37)."
    ],
    [
     "Mahalalel",
@@ -44,7 +44,7 @@ const TEXT = {
    [
     "Jered",
     "Rdz 5,18-20",
-    "Syn Mahalalela i jeden z najdłużej żyjących patriarchów. Najbardziej znany jest jako ojciec Henocha, człowieka szczególnie bliskiego Bogu."
+    "Żyje 962 lata, dłużej niż ktokolwiek w Biblii poza swoim wnukiem Metuszelachem. Najpiękniejszym owocem jego długiego życia jest jednak syn Henoch, o którym Pismo mówi, że „żył w przyjaźni z Bogiem” (Rdz 5,22)."
    ],
    [
     "Henoch",
@@ -94,7 +94,7 @@ const TEXT = {
    [
     "Reu",
     "Rdz 11,20-21",
-    "Syn Pelega i ojciec Seruga. Biblia nie opowiada o jego życiu, ale wiernie przechowuje jego imię w rodowodzie prowadzącym do Abrahama i do Jezusa."
+    "Przychodzi na świat w czasie, gdy ludzkość rozchodzi się po ziemi; jego ojciec, Peleg, nosi imię znaczące „podział”. Biblia nie opowiada o jego życiu, lecz przechowuje jego imię w rodowodzie, który przez Abrahama prowadzi do Jezusa (Łk 3,35)."
    ],
    [
     "Serug",
@@ -104,12 +104,12 @@ const TEXT = {
    [
     "Nachor",
     "Rdz 11,24-25",
-    "Dziadek Abrahama. Jego imię nosi również brat Abrahama, dziadek Rebeki, która później zostanie żoną Izaaka."
+    "Od niego wychodzą dwie gałęzie jednej historii: wnuk Abraham, ojciec wierzących, i wnuk Nachor, którego wnuczka Rebeka zostanie żoną Izaaka. Imię dziadka, nadane wnukowi, pokazuje, jak w tych rodzinach pamięć przechodziła z pokolenia na pokolenie."
    ],
    [
     "Terach",
     "Rdz 11,26-32",
-    "Ojciec Abrama, Nachora i Harana. Wyrusza z rodziną z Ur chaldejskiego w stronę Kanaanu, ale zatrzymuje się w Charanie i tam umiera."
+    "Wyrusza z Ur chaldejskiego w stronę Kanaanu, prowadząc rodzinę w drogę, której sam nie ukończy: zatrzymuje się w Charanie i tam umiera. To, co ojciec zaczął, dopełni jego syn Abram, gdy usłyszy Boże wezwanie: „Wyjdź z twojej ziemi rodzinnej” (Rdz 12,1)."
    ],
    [
     "Abraham",
@@ -981,7 +981,7 @@ const TEXT = {
    [
     "Kenan",
     "Gen 5:12-14",
-    "Son of Enosh and father of Mahalalel, one of the links in the long line from Adam to Noah. Though the Bible tells nothing of his deeds, his name lives on in the genealogy of Jesus."
+    "In the line from Adam to Noah every name is a link in a thread that God does not let break: Kenan, son of Enosh, passes on life and the memory of the Creator to the next generation. The Bible records none of his deeds, yet St Luke places him in the genealogy of Jesus (Luke 3:37)."
    ],
    [
     "Mahalalel",
@@ -991,7 +991,7 @@ const TEXT = {
    [
     "Jared",
     "Gen 5:18-20",
-    "Son of Mahalalel and one of the longest-lived patriarchs. He is best known as the father of Enoch, a man especially close to God."
+    "He lives 962 years, longer than anyone in the Bible except his grandson Methuselah. Yet the finest fruit of his long life is his son Enoch, of whom Scripture says that he “walked with God” (Gen 5:22)."
    ],
    [
     "Enoch",
@@ -1041,7 +1041,7 @@ const TEXT = {
    [
     "Reu",
     "Gen 11:20-21",
-    "Son of Peleg and father of Serug. The Bible tells nothing of his life, but faithfully keeps his name in the line that leads to Abraham and to Jesus."
+    "He is born at a time when humanity is spreading out across the earth; his father, Peleg, bears a name meaning “division”. The Bible tells nothing of his life, but keeps his name in the genealogy that leads through Abraham to Jesus (Luke 3:35)."
    ],
    [
     "Serug",
@@ -1051,12 +1051,12 @@ const TEXT = {
    [
     "Nahor",
     "Gen 11:24-25",
-    "Grandfather of Abraham. Abraham’s brother also bears his name, and is the grandfather of Rebekah, who will later marry Isaac."
+    "From him spring two branches of one story: his grandson Abraham, father of believers, and his grandson Nahor, whose granddaughter Rebekah will become Isaac’s wife. The grandfather’s name, given to a grandson, shows how memory passed from generation to generation in these families."
    ],
    [
     "Terah",
     "Gen 11:26-32",
-    "Father of Abram, Nahor and Haran. He sets out with his family from Ur of the Chaldeans towards Canaan, but stops in Haran and dies there."
+    "He sets out from Ur of the Chaldeans towards Canaan, leading his family on a journey he will not finish himself: he stops in Haran and dies there. What the father began, his son Abram will complete when he hears God’s call: “Go from your country” (Gen 12:1)."
    ],
    [
     "Abraham",
