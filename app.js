@@ -879,32 +879,40 @@
       const i = +key.slice(1), A = { e: EV, c: CH_EV, f: FIG, p: PAT, k: KINGS, n: NAT }[key[0]];
       return A && A[i] ? A[i][0] : null;
     };
+    // Each question carries a theme; the three shown always have three different themes, so two never
+    // ask nearly the same thing (e.g. Scripture passages and the readings at Mass are one theme).
     const poolOf = key => {
       const Q = U().ask.q, k = key[0], i = +key.slice(1), K = Q.knob;
       const y = key === 'sci' ? 1088 : ({ e: EV, c: CH_EV, f: FIG, p: PAT, k: KINGS, n: NAT }[k])[i][k === 'n' ? 2 : 1];
-      const nt = y < -5 ? [K.nt] : [];
-      if (k === 'k') return Q.king;
+      const nt = y < -5 ? [['nt', K.nt]] : [], hist = ['hist', K.hist];
+      if (k === 'k') return [['src', Q.king[0]], ['proph', Q.king[1]], ['judge', Q.king[2]]];
       // Nations: relations with Israel (not for Cain's line, Israel or the Jewish people themselves), sources, influence.
-      if (k === 'n') return ['chu', 'orth', 'ref'].includes(NAT[i][1]) ? Q.church
-        : ([0, 5, 17].includes(i) ? Q.nat.slice(1) : Q.nat).concat(Q.natHist);
-      // People: words worth knowing, their influence, the New Testament link before Christ; biblical people
-      // also where to read about them, later ones their works.
-      if ((k === 'f' && FIG[i][6] !== 'U') || k === 'p') return Q.fig.concat([K.hist], nt, y < 100 ? Q.figBible : Q.figLater);
+      if (k === 'n') {
+        if (['chu', 'orth', 'ref'].includes(NAT[i][1])) return Q.church.map((f, j) => ['c' + j, f]);
+        return ([0, 5, 17].includes(i) ? [] : [['rel', Q.nat[0]]]).concat([['src', Q.nat[1]], ['hist', Q.natHist[0]]]);
+      }
+      // People: their words or the passages about them (one theme), their influence, the New Testament link
+      // before Christ; later people also their works.
+      if ((k === 'f' && FIG[i][6] !== 'U') || k === 'p') {
+        return [['read', Q.fig[0]], hist].concat(nt, y < 100 ? [['read', Q.figBible[0]]] : [['works', Q.figLater[0]]]);
+      }
       // Genesis 1–11 has no dates or places: only its meaning, where to read more, the New Testament.
-      if (y < SEAM) return Q.primeval.concat(nt);
-      // Biblical events: Scripture, sources, liturgy; later events: sources and the Church's view.
-      return (y < 100 ? Q.ev : Q.later).concat([K.hist], nt);
+      if (y < SEAM) return [['view', Q.primeval[0]], ['read', Q.primeval[1]]].concat(nt);
+      // Biblical events: Scripture or liturgy (one theme), sources, influence; later events: sources, the Church's view.
+      if (y < 100) return [['read', Q.ev[0]], ['src', Q.ev[1]], ['read', Q.ev[2]], hist].concat(nt);
+      return [['src', Q.later[0]], ['view', Q.later[1]], hist];
     };
     let chipsFor = null;
     const suggest = key => {
       const x = key && nameOf(key);
       if (!x) return;
       chipsFor = key;
-      const pool = poolOf(key).slice();
+      const pool = poolOf(key).slice(), seen = new Set();
       for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+      const pick = pool.filter(([g]) => !seen.has(g) && seen.add(g)).map(([, f]) => f);
       chips.setAttribute('aria-label', U().ask.sugg);
       chips.innerHTML = '';
-      pool.slice(0, 3).forEach(f => {
+      pick.slice(0, 3).forEach(f => {
         const b = document.createElement('button');
         b.type = 'button'; b.className = 'ask-chip'; b.textContent = f(x);
         b.addEventListener('click', () => { input.value = b.textContent; input.focus({ preventScroll: true }); input.setSelectionRange(input.value.length, input.value.length); });
