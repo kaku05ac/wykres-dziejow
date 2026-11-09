@@ -234,9 +234,9 @@ const TEXT = {
     "Kraina kupców i żeglarzy na wybrzeżu dzisiejszego Libanu, z miastami Tyr i Sydon; król Tyru dostarczył Salomonowi cedrów na budowę świątyni. Fenicjanie rozpowszechnili alfabet, od którego pochodzą nasze litery."
    ],
    [
-    "Ludy indoeuropejskie",
-    "Rdz 10,2-5",
-    "Biblijna tablica narodów wywodzi od Jafeta, syna Noego, ludy północy i dalekich wybrzeży, wśród nich Medów i Greków. Ukazuje w ten sposób całą ludzkość jako jedną rodzinę, a błogosławieństwo Noego dla Jafeta, by Bóg dał mu szeroką przestrzeń (Rdz 9,27), Ojcowie Kościoła odczytywali jako zapowiedź Ewangelii docierającej do pogan."
+    "Medowie",
+    "Rdz 10,2; Dn 6,9; Mt 2,1",
+    "Lud z gór dzisiejszego Iranu, w którym tradycja widzi potomków Madaja, syna Jafeta (Rdz 10,2). To ich „nieodwołalne prawo Medów i Persów” (Dn 6,9) sprawiło, że prorok Daniel trafił do jaskini lwów. Herodot wymienia wśród Medów plemię magów, kapłanów i znawców gwiazd, a tym samym słowem Ewangelia nazywa Mędrców ze Wschodu, którzy przyszli pokłonić się Jezusowi (Mt 2,1)."
    ],
    [
     "Grecja",
@@ -1181,9 +1181,9 @@ const TEXT = {
     "A land of merchants and sailors on the coast of present-day Lebanon, with the cities of Tyre and Sidon; the king of Tyre sent Solomon cedar for the temple. The Phoenicians spread the alphabet from which our letters come."
    ],
    [
-    "Indo-European peoples",
-    "Gen 10:2-5",
-    "The Bible’s table of nations traces to Japheth, son of Noah, the peoples of the north and of the distant coasts, among them the Medes and the Greeks. In this way it presents all humanity as one family, and Noah’s blessing that God would enlarge Japheth (Gen 9:27) was read by the Church Fathers as a foreshadowing of the Gospel reaching the Gentiles."
+    "Medes",
+    "Gen 10:2; Dan 6:8; Matt 2:1",
+    "A people from the mountains of today’s Iran, in whom tradition sees the descendants of Madai, son of Japheth (Gen 10:2). It was their “law of the Medes and Persians, which cannot be revoked” (Dan 6:8) that sent the prophet Daniel into the lions’ den. Herodotus names among the Medes a tribe of magi, priests and stargazers, and with the very same word the Gospel names the Wise Men from the East who came to worship Jesus (Matt 2:1)."
    ],
    [
     "Greece",
