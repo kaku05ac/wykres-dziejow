@@ -545,7 +545,7 @@ const TEXT = {
    [
     "Jan Gutenberg",
     "Drukarz",
-    "Drukuje Biblię ruchomą czcionką; do ok. 1500 r. w całej Europie działają setki drukarń, a Pismo Święte staje się dużo łatwiej dostępne.",
+    "Pierwszą wielką księgą drukowaną ruchomą czcionką jest Biblia: Jan Gutenberg wydaje ją w Moguncji ok. 1455 r., a piękno jej liter zachwyca do dziś. Słowo, przez wieki mozolnie przepisywane w klasztorach, zaczyna trafiać do tysięcy rąk, a do 1500 r. drukarnie działają już w setkach europejskich miast.",
     ""
    ],
    [
@@ -563,7 +563,7 @@ const TEXT = {
    [
     "Justynian I",
     "Cesarz bizantyjski",
-    "Cesarz od 527 r.; spisuje prawo rzymskie (Kodeks Justyniana, 529–534) i buduje Hagię Sophię (537).",
+    "Dwa dzieła przetrwały jego panowanie o półtora tysiąca lat: uporządkowane prawo rzymskie, na którym wspiera się prawo Europy, i Hagia Sophia w Konstantynopolu, przez stulecia największa świątynia chrześcijaństwa. Według legendy cesarz Justynian, wchodząc do ukończonej świątyni, zawołał: „Salomonie, prześcignąłem cię!”.",
     ""
    ],
    [
@@ -575,7 +575,7 @@ const TEXT = {
    [
     "Mahomet",
     "Założyciel islamu",
-    "Hidżra z Mekki do Medyny: powstaje wspólnota muzułmańska (umma), a od tej daty liczy się kalendarz islamski. Mahomet głosił od ok. 610 r.; islam zmienia Bliski Wschód i świat arabski.",
+    "Od roku 622 muzułmanie liczą swój kalendarz. Wtedy Mahomet, który od ok. 610 r. głosił w Mekce wiarę w jednego Boga, przenosi się ze zwolennikami do Medyny i tworzy tam pierwszą wspólnotę islamu. To wydarzenie nazywa się hidżrą.",
     ""
    ],
    [
@@ -605,7 +605,7 @@ const TEXT = {
    [
     "Krzysztof Kolumb",
     "Żeglarz",
-    "Dopływa do Ameryki; zaczyna się epoka wielkich odkryć, a wraz z nią misje Kościoła w Nowym Świecie.",
+    "Wyprawa, która miała odnaleźć zachodnią drogę do Azji, łączy dwa światy: w 1492 r. Krzysztof Kolumb, żeglujący pod banderą Hiszpanii, dociera do wysp Nowego Świata. Za odkrywcami idą misjonarze i Ewangelia dociera do obu Ameryk. Gdy zdobywcy krzywdzą rdzennych mieszkańców, w ich obronie staje dominikanin Bartłomiej de Las Casas.",
     ""
    ],
    [
@@ -1492,7 +1492,7 @@ const TEXT = {
    [
     "Johannes Gutenberg",
     "Printer",
-    "Prints the Bible with movable type; by about 1500 hundreds of presses work across Europe, and Scripture becomes far more widely available.",
+    "The first great book printed with movable type is the Bible: Johannes Gutenberg publishes it in Mainz around 1455, and the beauty of its lettering is still admired today. The Word, for centuries painstakingly copied in monasteries, begins to reach thousands of hands, and by 1500 printing presses are at work in hundreds of European cities.",
     ""
    ],
    [
@@ -1510,7 +1510,7 @@ const TEXT = {
    [
     "Justinian I",
     "Byzantine emperor",
-    "Emperor from 527; codifies Roman law (the Code of Justinian, 529–534) and builds the Hagia Sophia (537).",
+    "Two works have outlived his reign by fifteen hundred years: Roman law set in order, on which the law of Europe still rests, and Hagia Sophia in Constantinople, for centuries the greatest church in Christendom. According to legend, Emperor Justinian, entering the finished church, exclaimed: “Solomon, I have surpassed you!”",
     ""
    ],
    [
@@ -1522,7 +1522,7 @@ const TEXT = {
    [
     "Muhammad",
     "Founder of Islam",
-    "The Hijra from Mecca to Medina founds the Muslim community (ummah) and begins the Islamic calendar. Muhammad had preached since about 610; Islam transforms the Middle East and the Arab world.",
+    "Muslims count their calendar from the year 622. That year Muhammad, who from about 610 had preached faith in one God in Mecca, moves with his followers to Medina and forms there the first community of Islam. This event is called the Hijra.",
     ""
    ],
    [
@@ -1552,7 +1552,7 @@ const TEXT = {
    [
     "Christopher Columbus",
     "Navigator",
-    "Reaches America; the age of discovery begins, and with it the Church's missions in the New World.",
+    "A voyage meant to find a western route to Asia joins two worlds: in 1492 Christopher Columbus, sailing under the flag of Spain, reaches the islands of the New World. Missionaries follow the explorers and the Gospel reaches both Americas. When the conquerors wrong the native peoples, the Dominican Bartolomé de las Casas rises in their defence.",
     ""
    ],
    [
