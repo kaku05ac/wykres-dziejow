@@ -191,7 +191,7 @@ const TEXT = {
    [
     "Elam",
     "Rdz 10,22",
-    "Starożytny lud na wschód od Babilonii, w dzisiejszym Iranie, ze stolicą w Suzie. W dniu Pięćdziesiątnicy Elamici są wśród tych, którzy słyszą apostołów we własnym języku."
+    "Jedna z najstarszych cywilizacji świata, rozkwitająca u stóp gór Zagros, w dzisiejszym Iranie, ze stolicą w Suzie. Biblia wywodzi jej lud od Elama, syna Sema (Rdz 10,22). Echo tego dawnego narodu brzmi jeszcze w dniu Pięćdziesiątnicy, gdy Elamici słyszą apostołów głoszących „wielkie dzieła Boże” we własnym języku (Dz 2,9-11)."
    ],
    [
     "Asyria",
@@ -236,7 +236,7 @@ const TEXT = {
    [
     "Ludy indoeuropejskie",
     "Rdz 10,2-5",
-    "Potomkowie Jafeta, syna Noego, zamieszkują północ i wybrzeża morza; wśród nich są Medowie i Grecy. Biblijna tablica narodów przedstawia całą ludzkość jako jedną wielką rodzinę wywodzącą się od Noego."
+    "Biblijna tablica narodów wywodzi od Jafeta, syna Noego, ludy północy i dalekich wybrzeży, wśród nich Medów i Greków. Ukazuje w ten sposób całą ludzkość jako jedną rodzinę, a błogosławieństwo Noego dla Jafeta, by Bóg dał mu szeroką przestrzeń (Rdz 9,27), Ojcowie Kościoła odczytywali jako zapowiedź Ewangelii docierającej do pogan."
    ],
    [
     "Grecja",
@@ -271,7 +271,7 @@ const TEXT = {
    [
     "Naród żydowski",
     "Ezd 1; Rz 11,1-2",
-    "Potomkowie Izraela, którzy po upadku Jerozolimy w 587 p.n.e. zachowali wiarę na wygnaniu, wrócili do ojczyzny i odbudowali świątynię. Po jej zburzeniu przez Rzymian w 70 r. żyją w diasporze na całym świecie; w 1948 r. powstało współczesne państwo Izrael."
+    "Wygnanie babilońskie nie kończy dziejów Izraela, lecz je odmienia: wokół Pism, modlitwy i synagogi kształtuje się wiara, która przetrwa wszystkie burze historii. Po zburzeniu drugiej świątyni przez Rzymian w 70 r. Żydzi rozpraszają się po świecie i przez blisko dwa tysiące lat diaspory pozostają wierni Torze mimo prześladowań, aż po Zagładę, a w 1948 r. powstaje współczesne państwo Izrael. Kościół, za św. Pawłem, pamięta, że „dary łaski i wezwanie Boże są nieodwołalne” (Rz 11,29)."
    ]
   ],
   "EV": [
@@ -314,19 +314,19 @@ const TEXT = {
    [
     "Świątynia Salomona",
     "1 Krl 6-8",
-    "Pierwsza świątynia w Jerozolimie, zbudowana przez Salomona jako dom dla Pana, w którym w najświętszym miejscu stała Arka Przymierza. Przez wieki była sercem modlitwy Izraela, aż do zburzenia przez Babilończyków w 587 p.n.e.",
+    "Na górze Moria, związanej z ofiarą Abrahama (2 Krn 3,1), Salomon wznosi Bogu dom z kamienia i cedru, a w jego najświętszym miejscu staje Arka Przymierza. Przy poświęceniu król prosi, by Bóg wysłuchał każdego, kto tu się pomodli, także przybysza z dalekiego kraju (1 Krl 8,41-43). Przez blisko cztery stulecia świątynia jest sercem wiary Izraela, aż do zburzenia przez Babilończyków w 587 p.n.e.",
     null
    ],
    [
     "Podział królestwa",
     "1 Krl 12",
-    "Po śmierci Salomona jedno królestwo rozpada się na dwa: północne Królestwo Izraela pod wodzą Jeroboama i południową Judę z Jerozolimą, przy której zostaje dynastia Dawida. Oba królestwa istnieją obok siebie przez dwa stulecia.",
+    "Jedność zbudowana przez Dawida i Salomona nie przetrwa nawet jednego pokolenia: gdy Roboam odrzuca prośbę ludu o ulżenie ciężarom, dziesięć pokoleń północy odchodzi i obiera królem Jeroboama. Odtąd obok siebie trwają dwa królestwa: Izrael na północy i Juda z Jerozolimą na południu, gdzie przy tronie pozostaje ród Dawida, z którego według obietnicy wyjdzie Mesjasz.",
     null
    ],
    [
     "Upadek Samarii",
     "2 Krl 17",
-    "Koniec północnego Królestwa Izraela: Asyria zdobywa jego stolicę, Samarię, i przesiedla mieszkańców w odległe krainy. Od tej krainy biorą nazwę Samarytanie, znani z przypowieści Jezusa o miłosiernym Samarytaninie.",
+    "Po dwóch stuleciach północne Królestwo Izraela znika z mapy: Asyryjczycy zdobywają Samarię, przesiedlają jej mieszkańców w odległe krainy, a na ich miejsce sprowadzają obce ludy (2 Krl 17,24). Z tego splotu narodów wyrosną Samarytanie, przez Żydów traktowani z dystansem, a przez Jezusa postawieni za wzór w przypowieści o miłosiernym Samarytaninie.",
     null
    ],
    [
@@ -338,13 +338,13 @@ const TEXT = {
    [
     "Powrót z wygnania",
     "Ezd 1",
-    "Perski król Cyrus pozwala Żydom uprowadzonym do Babilonu wrócić do ojczyzny i odbudować świątynię w Jerozolimie. Powracający, prowadzeni m.in. przez Zorobabela, odbudowują ją; druga świątynia zostaje ukończona ok. 515 p.n.e. (Ezd 6,15).",
+    "„Gdy Pan odmienił los Syjonu, wydawało się nam, że śnimy” (Ps 126,1): edykt perskiego króla Cyrusa pozwala wygnańcom wrócić do ojczyzny. Pod wodzą Zorobabela wracają do zrujnowanej Jerozolimy i wśród trudów wznoszą na nowo świątynię, ukończoną ok. 515 p.n.e. (Ezd 6,15).",
     null
    ],
    [
     "Narodzenie Chrystusa",
     "Mt 2; Łk 2",
-    "Jezus, Syn Boży, rodzi się z Maryi Dziewicy w Betlejem, mieście Dawida, i zostaje złożony w żłobie. Odwiedzają Go pasterze i Mędrcy ze Wschodu, a Kościół świętuje to wydarzenie w Boże Narodzenie.",
+    "„A Słowo stało się ciałem i zamieszkało wśród nas” (J 1,14): w Betlejem, mieście Dawida, Syn Boży rodzi się z Maryi Dziewicy i zostaje złożony w żłobie, bo nie było dla nich miejsca w gospodzie. Pierwsi witają Go ubodzy pasterze, potem Mędrcy ze Wschodu, jakby cały świat, bliski i daleki, przychodził oddać Mu pokłon. Od tego narodzenia liczymy lata „przed” i „po” Chrystusie.",
     "ok. 6–4 p.n.e."
    ],
    [
@@ -356,13 +356,13 @@ const TEXT = {
    [
     "Upadek Rzymu",
     "",
-    "Upada zachodnie cesarstwo rzymskie. Przez kolejne tysiąc lat Kościół jednoczy Europę: klasztory chronią wiedzę, misjonarze chrzczą nowe ludy, powstają katedry i uniwersytety. Kościół daje też zalążek rozwojowi nauki: w jego szkołach i na uniwersytetach przekonanie, że stworzony świat jest rozumny i poznawalny, prowadzi do badania przyrody.",
+    "W 476 r. germański wódz Odoaker pozbawia władzy ostatniego cesarza Zachodu, Romulusa Augustulusa, a dawne imperium rozpada się na królestwa barbarzyńców. W tym zmierzchu Kościół przechowuje światło: klasztory przepisują księgi, misjonarze niosą wiarę nowym ludom, a z czasem wyrastają katedry i uniwersytety. Z połączenia dziedzictwa Rzymu z Ewangelią rodzi się chrześcijańska Europa.",
     null
    ],
    [
     "Reformacja",
     "",
-    "Luter ogłasza 95 tez. Spór o odpusty szybko przeradza się w szerszy ruch: Luter naucza o zbawieniu przez samą wiarę i o Piśmie Świętym jako jedynym autorytecie, odrzucając część nauczania i władzy Kościoła. Za nim idą inni reformatorzy, jak Zwingli i Kalwin, a w Anglii Henryk VIII zrywa z Rzymem. Dzięki drukowi i poparciu władców w ciągu kilku dekad zachodnie chrześcijaństwo dzieli się na katolików i protestantów. Kościół odpowiada odnową na Soborze Trydenckim (1545–1563).",
+    "Spór, który miał być akademicką dysputą o odpustach, wstrząsa całym Zachodem: w 1517 r. augustianin Marcin Luter ogłasza 95 tez, a za nim idą Zwingli, Kalwin i angielski król Henryk VIII. Dzięki drukowi i poparciu władców w ciągu kilku dekad zachodnie chrześcijaństwo dzieli się na katolików i protestantów. Kościół odpowiada głęboką odnową na Soborze Trydenckim (1545–1563).",
     null
    ]
   ],
@@ -395,7 +395,7 @@ const TEXT = {
    [
     "Nimrod",
     "Dzielny myśliwy",
-    "Syn Kusza, nazwany „pierwszym mocarzem na ziemi” i „dzielnym myśliwym przed Panem”. Zakłada królestwo w krainie Szinear, z miastami Babel, Erek i Akkad, a jego imię stało się przysłowiowe dla wielkich łowców.",
+    "Biblia nazywa go „pierwszym mocarzem na ziemi” i „dzielnym myśliwym przed Panem”. Zakłada królestwo w krainie Szinear, z miastami Babel, Erek i Akkad. Józef Flawiusz widział w nim inicjatora budowy wieży Babel, obrazu ludzkiej pychy, a jego imię przetrwało w przysłowiu o wielkich łowcach.",
     "Rdz 10,8-10"
    ],
    [
@@ -449,7 +449,7 @@ const TEXT = {
    [
     "Saul",
     "Pierwszy król Izraela",
-    "Pierwszy król Izraela, namaszczony przez proroka Samuela. Odważny wojownik, który z czasem przestaje słuchać Boga i ginie w bitwie z Filistynami.",
+    "Izrael prosi o króla, „tak jak to jest u innych narodów” (1 Sm 8,5), a prorok Samuel namaszcza Saula z pokolenia Beniamina, który „o głowę przewyższał cały lud”. Odważny wojownik z czasem przestaje słuchać Boga, a jego dramat kończy się śmiercią na górze Gilboa. Dawid opłakuje go i Jonatana pieśnią: „Jakże padli bohaterowie!” (2 Sm 1,19).",
     "1 Sm 10"
    ],
    [
@@ -461,7 +461,7 @@ const TEXT = {
    [
     "Salomon",
     "Budowniczy świątyni",
-    "Syn Dawida i król Izraela, który poprosił Boga nie o bogactwo, lecz o mądrość. Słynął z mądrych wyroków i zbudował w Jerozolimie świątynię.",
+    "Gdy Bóg pozwala mu prosić, o co zechce, młody król prosi nie o bogactwo ani długie życie, lecz o „serce pełne rozsądku do sądzenia ludu” (1 Krl 3,9). Jego mądrość staje się przysłowiowa, jak świadczy sąd nad dwiema matkami i wizyta królowej Saby, a w Jerozolimie wznosi Bogu świątynię. Tradycja przypisuje mu Księgę Przysłów, Koheleta i Pieśń nad Pieśniami.",
     "1 Krl 6"
    ],
    [
@@ -527,7 +527,7 @@ const TEXT = {
    [
     "Konstantyn",
     "Cesarz rzymski",
-    "Cesarz rzymski, który wraz z Licyniuszem ogłosił w 313 r. edykt mediolański, dający chrześcijanom wolność wyznania. Zwołał Sobór Nicejski, założył Konstantynopol, a sam przyjął chrzest u kresu życia.",
+    "Po trzech stuleciach prześladowań chrześcijanie mogą wreszcie wyznawać wiarę jawnie: w 313 r. Konstantyn wraz z Licyniuszem ogłasza edykt mediolański. Cesarz zwołuje Sobór Nicejski i zakłada nad Bosforem Konstantynopol, a chrzest przyjmuje dopiero u kresu życia. Kościoły Wschodu czczą go jako świętego „równego apostołom”.",
     ""
    ],
    [
@@ -672,7 +672,7 @@ const TEXT = {
    [
     "Wielka schizma",
     "",
-    "Rozłam między chrześcijaństwem zachodnim, łacińskim (katolickim), a wschodnim, greckim (prawosławnym), symbolicznie datowany na wzajemne ekskomuniki z 1054 r. Od 1965 r. papieże i patriarchowie Konstantynopola prowadzą dialog na drodze do pojednania."
+    "Chrześcijański Wschód i Zachód, greckie i łacińskie dziedzictwo jednej wiary, przez wieki oddalają się od siebie, aż w 1054 r. legaci papiescy i patriarcha Konstantynopola obkładają się wzajemnie ekskomuniką. Rozłam nie został jeszcze przezwyciężony, lecz od 1965 r., gdy Paweł VI i patriarcha Atenagoras oddali te ekskomuniki w niepamięć, papieże i patriarchowie wspólnie modlą się o pojednanie."
    ],
    [
     "Sobór Trydencki",
@@ -1138,7 +1138,7 @@ const TEXT = {
    [
     "Elam",
     "Gen 10:22",
-    "An ancient people east of Babylonia, in present-day Iran, with its capital at Susa. At Pentecost, Elamites are among those who hear the apostles in their own language."
+    "One of the oldest civilisations in the world, flourishing at the foot of the Zagros Mountains, in today’s Iran, with Susa as its capital. The Bible traces its people to Elam, son of Shem (Gen 10:22). An echo of this ancient nation still sounds at Pentecost, when Elamites hear the apostles proclaiming “the mighty works of God” in their own tongue (Acts 2:9-11)."
    ],
    [
     "Assyria",
@@ -1183,7 +1183,7 @@ const TEXT = {
    [
     "Indo-European peoples",
     "Gen 10:2-5",
-    "The descendants of Japheth, son of Noah, live in the north and along the coasts; among them are the Medes and the Greeks. The Bible’s table of nations presents all humankind as one great family descended from Noah."
+    "The Bible’s table of nations traces to Japheth, son of Noah, the peoples of the north and of the distant coasts, among them the Medes and the Greeks. In this way it presents all humanity as one family, and Noah’s blessing that God would enlarge Japheth (Gen 9:27) was read by the Church Fathers as a foreshadowing of the Gospel reaching the Gentiles."
    ],
    [
     "Greece",
@@ -1218,7 +1218,7 @@ const TEXT = {
    [
     "The Jewish people",
     "Ezra 1; Rom 11:1-2",
-    "The descendants of Israel, who after the fall of Jerusalem in 587 BC kept their faith in exile, returned home and rebuilt the temple. After the Romans destroyed it in AD 70 they have lived in a diaspora across the world; in 1948 the modern State of Israel was founded."
+    "The Babylonian exile does not end Israel’s story but transforms it: around the Scriptures, prayer and the synagogue a faith takes shape that will survive every storm of history. After the Romans destroy the Second Temple in 70, the Jews are scattered across the world and through nearly two thousand years of diaspora remain faithful to the Torah despite persecution, up to the Holocaust; in 1948 the modern State of Israel is founded. The Church, with St Paul, remembers that “the gifts and the call of God are irrevocable” (Rom 11:29)."
    ]
   ],
   "EV": [
@@ -1261,19 +1261,19 @@ const TEXT = {
    [
     "Solomon's temple",
     "1 Kgs 6-8",
-    "The first temple in Jerusalem, built by Solomon as a house for the Lord, with the Ark of the Covenant in its holiest place. For centuries it was the heart of Israel’s prayer, until the Babylonians destroyed it in 587 BC.",
+    "On Mount Moriah, linked with Abraham’s sacrifice (2 Chr 3:1), Solomon raises a house of stone and cedar for God, and the Ark of the Covenant is placed in its holiest room. At its dedication the king asks God to hear everyone who prays here, even the foreigner from a distant land (1 Kgs 8:41-43). For nearly four centuries the Temple is the heart of Israel’s faith, until the Babylonians destroy it in 587 BC.",
     null
    ],
    [
     "Kingdom divides",
     "1 Kgs 12",
-    "After Solomon’s death the one kingdom splits in two: the northern Kingdom of Israel under Jeroboam and southern Judah with Jerusalem, which stays with the line of David. The two kingdoms exist side by side for two centuries.",
+    "The unity built by David and Solomon does not outlast a single generation: when Rehoboam rejects the people’s plea to lighten their burdens, the ten northern tribes break away and make Jeroboam their king. From then on two kingdoms stand side by side: Israel in the north and Judah with Jerusalem in the south, where the house of David keeps the throne, the line from which, as promised, the Messiah will come.",
     null
    ],
    [
     "Fall of Samaria",
     "2 Kgs 17",
-    "The end of the northern Kingdom of Israel: Assyria takes its capital, Samaria, and deports its people to distant lands. The Samaritans take their name from this region, known from Jesus’ parable of the Good Samaritan.",
+    "After two centuries the northern Kingdom of Israel vanishes from the map: the Assyrians take Samaria, deport its people to distant lands and settle foreign peoples in their place (2 Kgs 17:24). From this mingling of nations come the Samaritans, kept at a distance by the Jews, yet held up by Jesus as an example in the parable of the Good Samaritan.",
     null
    ],
    [
@@ -1285,13 +1285,13 @@ const TEXT = {
    [
     "Return from exile",
     "Ezra 1",
-    "The Persian king Cyrus allows the Jews exiled in Babylon to return home and rebuild the temple in Jerusalem. The returning exiles, led among others by Zerubbabel, rebuild it; the second temple is completed around 515 BC (Ezra 6:15).",
+    "“When the Lord restored the fortunes of Zion, we were like those who dream” (Ps 126:1): a decree of the Persian king Cyrus allows the exiles to return home. Led by Zerubbabel, they come back to ruined Jerusalem and, amid hardship, raise the Temple again, completed around 515 BC (Ezra 6:15).",
     null
    ],
    [
     "Birth of Christ",
     "Matt 2; Luke 2",
-    "Jesus, the Son of God, is born of the Virgin Mary in Bethlehem, the city of David, and laid in a manger. Shepherds and the Magi from the East come to see him, and the Church celebrates this at Christmas.",
+    "“And the Word became flesh and dwelt among us” (John 1:14): in Bethlehem, the city of David, the Son of God is born of the Virgin Mary and laid in a manger, because there was no room for them in the inn. Poor shepherds are the first to welcome him, then the Magi from the East, as if the whole world, near and far, were coming to pay him homage. From this birth we count the years “before” and “after” Christ.",
     "c. 6–4 BC"
    ],
    [
@@ -1303,13 +1303,13 @@ const TEXT = {
    [
     "Fall of Rome",
     "",
-    "The western Roman empire ends. For the next thousand years the Church holds Europe together: monasteries preserve learning, missionaries baptise new peoples, cathedrals and universities rise. The Church also plants the seed of science: in its schools and universities the conviction that the created world is rational and knowable leads to the study of nature.",
+    "In 476 the Germanic chieftain Odoacer deposes the last emperor of the West, Romulus Augustulus, and the old empire breaks up into barbarian kingdoms. In this twilight the Church keeps the light: monasteries copy books, missionaries carry the faith to new peoples, and in time cathedrals and universities rise. From the union of Rome’s heritage with the Gospel, Christian Europe is born.",
     null
    ],
    [
     "Reformation",
     "",
-    "Luther posts the 95 theses. The dispute over indulgences soon grows into a wider movement: Luther teaches salvation by faith alone and Scripture as the only authority, rejecting part of the Church's teaching and authority. Other reformers follow, such as Zwingli and Calvin, and in England Henry VIII breaks with Rome. With printing and the support of rulers, within a few decades Western Christianity divides into Catholics and Protestants. The Church responds with renewal at the Council of Trent (1545–1563).",
+    "A dispute meant to be an academic debate about indulgences shakes the whole West: in 1517 the Augustinian friar Martin Luther publishes his 95 theses, and Zwingli, Calvin and King Henry VIII of England follow. Helped by printing and by the support of rulers, within a few decades Western Christianity divides into Catholics and Protestants. The Church responds with deep renewal at the Council of Trent (1545–1563).",
     null
    ]
   ],
@@ -1342,7 +1342,7 @@ const TEXT = {
    [
     "Nimrod",
     "Mighty hunter",
-    "Son of Cush, called “the first mighty man on earth” and “a mighty hunter before the Lord”. He founds a kingdom in the land of Shinar, with the cities of Babel, Erech and Akkad, and his name became proverbial for great hunters.",
+    "The Bible calls him “the first mighty man on earth” and “a mighty hunter before the Lord”. He founds a kingdom in the land of Shinar, with the cities of Babel, Erech and Akkad. Josephus saw in him the instigator of the Tower of Babel, an image of human pride, and his name lives on in the proverb about great hunters.",
     "Gen 10:8-10"
    ],
    [
@@ -1396,7 +1396,7 @@ const TEXT = {
    [
     "Saul",
     "First king of Israel",
-    "The first king of Israel, anointed by the prophet Samuel. A brave warrior who in time stops listening to God and dies in battle with the Philistines.",
+    "Israel asks for a king “like all the nations” (1 Sam 8:5), and the prophet Samuel anoints Saul of the tribe of Benjamin, who “stood head and shoulders above all the people”. A brave warrior, he gradually stops listening to God, and his drama ends in death on Mount Gilboa. David mourns him and Jonathan in a lament: “How are the mighty fallen!” (2 Sam 1:19).",
     "1 Sam 10"
    ],
    [
@@ -1408,7 +1408,7 @@ const TEXT = {
    [
     "Solomon",
     "Builder of the temple",
-    "Son of David and king of Israel, who asked God not for riches but for wisdom. He was famous for his wise judgements and built the temple in Jerusalem.",
+    "When God lets him ask for whatever he wishes, the young king asks not for riches or a long life but for “an understanding mind to govern your people” (1 Kgs 3:9). His wisdom becomes proverbial, as the judgement between two mothers and the visit of the Queen of Sheba bear witness, and in Jerusalem he builds a temple for God. Tradition ascribes to him Proverbs, Ecclesiastes and the Song of Songs.",
     "1 Kgs 6"
    ],
    [
@@ -1474,7 +1474,7 @@ const TEXT = {
    [
     "Constantine",
     "Roman emperor",
-    "Roman emperor who, with Licinius, issued the Edict of Milan in 313, giving Christians freedom of worship. He called the Council of Nicaea, founded Constantinople and was himself baptised at the end of his life.",
+    "After three centuries of persecution Christians can at last profess their faith openly: in 313 Constantine, together with Licinius, issues the Edict of Milan. The emperor convenes the Council of Nicaea and founds Constantinople on the Bosporus, and receives baptism only at the end of his life. The Eastern Churches venerate him as a saint “equal to the apostles”.",
     ""
    ],
    [
@@ -1619,7 +1619,7 @@ const TEXT = {
    [
     "Great Schism",
     "",
-    "The split between Western, Latin (Catholic) and Eastern, Greek (Orthodox) Christianity, symbolically dated to the mutual excommunications of 1054. Since 1965 popes and patriarchs of Constantinople have been in dialogue on the way to reconciliation."
+    "The Christian East and West, the Greek and Latin heritage of one faith, drift apart over the centuries, until in 1054 the papal legates and the Patriarch of Constantinople excommunicate each other. The division has not yet been overcome, but since 1965, when Paul VI and Patriarch Athenagoras consigned those excommunications to oblivion, popes and patriarchs pray together for reconciliation."
    ],
    [
     "Council of Trent",
