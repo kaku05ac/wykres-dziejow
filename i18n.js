@@ -687,7 +687,7 @@ const TEXT = {
    [
     "Rewolucja francuska",
     "",
-    "Pod hasłami wolności, równości i braterstwa Francja obala dawny porządek, a w 1792 r. upada monarchia. Rewolucja podporządkowuje jednak Kościół państwu i rozpętuje prześladowania, w których giną tysiące duchownych i wiernych. Wielu z nich Kościół czci dziś jako męczenników, jak szesnaście karmelitanek z Compiègne, które szły na gilotynę ze śpiewem."
+    "Pod hasłami wolności, równości i braterstwa Francja obala dawny porządek, a w 1792 r. upada monarchia. Rewolucja podporządkowuje jednak Kościół państwu i rozpętuje prześladowania, w których giną tysiące duchownych i wiernych. Wielu z nich Kościół czci dziś jako męczenników."
    ],
    [
     "Septuaginta",
@@ -1634,7 +1634,7 @@ const TEXT = {
    [
     "French Revolution",
     "",
-    "Under the banner of liberty, equality and fraternity, France overthrows the old order, and in 1792 the monarchy falls. Yet the Revolution subjects the Church to the state and unleashes persecutions in which thousands of clergy and faithful lose their lives. The Church honours many of them as martyrs, among them the sixteen Carmelites of Compiègne, who went to the guillotine singing."
+    "Under the banner of liberty, equality and fraternity, France overthrows the old order, and in 1792 the monarchy falls. Yet the Revolution subjects the Church to the state and unleashes persecutions in which thousands of clergy and faithful lose their lives. The Church honours many of them as martyrs."
    ],
    [
     "Septuagint",
