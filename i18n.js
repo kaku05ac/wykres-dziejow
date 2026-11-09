@@ -256,17 +256,17 @@ const TEXT = {
    [
     "Kościół katolicki",
     "Mt 16,18; Dz 2",
-    "„Katolicki” znaczy po grecku „powszechny”, bo od dnia Zesłania Ducha Świętego Kościół jest otwarty dla każdego narodu, języka i kultury. Z dwunastu apostołów wyrósł przez dwa tysiące lat we wspólnotę ponad 1,4 miliarda ludzi, którą prowadzi papież, następca św. Piotra."
+    "Zbudowany na Piotrze, „opoce” (Mt 16,18), od dnia Zesłania Ducha Świętego wychodzi do wszystkich narodów; dlatego nazywa się katolickim, czyli po grecku „powszechnym”. Z małej wspólnoty dwunastu apostołów wyrósł przez dwa tysiące lat w rodzinę ponad 1,4 miliarda wiernych wszystkich języków i kultur, którą prowadzi papież, następca św. Piotra."
    ],
    [
     "Prawosławie",
     "",
-    "Przez wieki chrześcijański Wschód i Zachód rozwijały się w różnych kulturach, greckiej i łacińskiej. Narastały różnice w liturgii i zwyczajach, w rozumieniu jedności Kościoła wokół następcy św. Piotra oraz w sprawie słów „i Syna” (Filioque) w Credo. W 1054 r. legaci papiescy i patriarcha Konstantynopola obłożyli się wzajemnie ekskomuniką; rozłam utrwalał się w kolejnych wiekach. W 1965 r. św. Paweł VI i patriarcha Atenagoras usunęli te ekskomuniki z pamięci Kościoła, otwierając drogę do pojednania, choć pełnej jedności jeszcze nie ma."
+    "Kościoły chrześcijańskiego Wschodu, które po rozłamie z 1054 r. zachowały wiarę pierwszych soborów, sakramenty i sukcesję apostolską. Ich serce bije w uroczystej liturgii, w modlitwie przed ikonami i w tradycji mnichów, od pustyń Egiptu po górę Athos. Kościół katolicki uznaje ich sakramenty i kapłaństwo, a od 1965 r., gdy zdjęto wzajemne ekskomuniki, szuka z nimi pełnej jedności."
    ],
    [
     "Protestantyzm",
     "",
-    "Wspólnoty chrześcijańskie wyrosłe z reformacji XVI wieku, m.in. luteranie, kalwiniści i liczne Kościoły ewangelikalne, które podkreślają autorytet Pisma Świętego i zbawienie z łaski przez wiarę. Kościół katolicki uznaje ochrzczonych protestantów za braci w Chrystusie i prowadzi z nimi dialog ekumeniczny."
+    "Wspólnoty wyrosłe z reformacji XVI wieku, luterańskie i kalwińskie, a później liczne Kościoły ewangelikalne, które na pierwszym miejscu stawiają Pismo Święte i zbawienie z łaski przez wiarę. Wniosły w chrześcijaństwo umiłowanie Biblii czytanej w ojczystym języku i bogactwo pieśni. Kościół katolicki uznaje ochrzczonych protestantów za braci w Chrystusie i prowadzi z nimi dialog ekumeniczny."
    ],
    [
     "Naród żydowski",
@@ -1203,17 +1203,17 @@ const TEXT = {
    [
     "Catholic Church",
     "Matt 16:18; Acts 2",
-    "“Catholic” means “universal” in Greek, because since Pentecost the Church has been open to every nation, language and culture. From twelve apostles it has grown over two thousand years into a community of more than 1.4 billion people, led by the Pope, the successor of St Peter."
+    "Built on Peter, the “rock” (Matt 16:18), it has gone out to all nations since Pentecost, which is why it is called catholic, Greek for “universal”. From a small community of twelve apostles it has grown over two thousand years into a family of more than 1.4 billion faithful of every language and culture, led by the pope, the successor of St Peter."
    ],
    [
     "Orthodox Church",
     "",
-    "Over the centuries the Christian East and West grew up in different cultures, Greek and Latin. Differences deepened in liturgy and custom, in understanding the unity of the Church around the successor of St Peter, and over the words \"and the Son\" (Filioque) in the Creed. In 1054 the papal legates and the Patriarch of Constantinople excommunicated each other; the rift hardened over the following centuries. In 1965 St Paul VI and Patriarch Athenagoras removed those excommunications from the memory of the Church, opening the way to reconciliation, though full communion is not yet restored."
+    "The Churches of the Christian East, which after the division of 1054 kept the faith of the first councils, the sacraments and apostolic succession. Their heart beats in solemn liturgy, in prayer before icons and in the tradition of monks, from the deserts of Egypt to Mount Athos. The Catholic Church recognises their sacraments and priesthood, and since 1965, when the mutual excommunications were lifted, has sought full unity with them."
    ],
    [
     "Protestantism",
     "",
-    "Christian communities that grew out of the 16th-century Reformation, among them Lutherans, Calvinists and many evangelical churches, which stress the authority of Scripture and salvation by grace through faith. The Catholic Church regards baptised Protestants as brothers and sisters in Christ and is in ecumenical dialogue with them."
+    "Communities that grew out of the sixteenth-century Reformation, Lutheran and Reformed, and later many evangelical churches, which put Holy Scripture and salvation by grace through faith first. They brought to Christianity a love of the Bible read in one’s own language and a wealth of hymns. The Catholic Church recognises baptised Protestants as brothers and sisters in Christ and pursues ecumenical dialogue with them."
    ],
    [
     "The Jewish people",
@@ -1918,10 +1918,10 @@ const UI = {
     science: 'Rozwój nauki', scienceRef: 'KKK 159; Mdr 11,20',
     scienceBody: 'Nowożytna nauka dojrzewała w murach uniwersytetów chrześcijańskiej Europy, poczynając od Bolonii w 1088 r., i czerpała zarówno z mądrości Greków, jak i z dorobku uczonych świata islamu, Indii i Chin. U jej źródeł leży przekonanie wiary, że świat, jako dzieło stwórczego Logosu, nosi w sobie ład dostępny ludzkiemu rozumowi, a będąc owocem wolnego daru, nie wynika z żadnej konieczności. Jego praw nie sposób więc wywieść z samej spekulacji, trzeba je cierpliwie odczytywać w doświadczeniu. Toteż wśród badaczy natury nie brak ludzi Kościoła, od Alberta Wielkiego i Kopernika po Mendla i Lemaître’a, świadków przekonania, że prawda odkrywana w przyrodzie i prawda objawiona mają jedno Źródło.',
     laneTips: { events: 'Najważniejsze wydarzenia, zilustrowane obrazem lub filmem.',
-      figures: 'Ważne postaci, umieszczone w roku, z którego są najbardziej znane.',
-      patriarchs: 'Patriarchowie i inne osoby, których lata życia podaje Pismo Święte.',
+      figures: 'Ważne postaci, umieszczone w roku, z którym najbardziej się kojarzą.',
+      patriarchs: 'Patriarchowie i inne osoby, których długość życia podaje Pismo Święte.',
       kings: 'Okresy panowania królów Judy (górny pas) i Izraela (dolny pas).',
-      alive: 'Ile osób i narodów z wykresu istnieje w danym roku. Linia ciągła: osoby i narody razem; linia kropkowana: tylko narody.',
+      alive: 'Ile osób i narodów z wykresu żyje w danym roku. Linia ciągła: osoby i narody razem; linia kropkowana: same narody.',
       nations: 'Narody i Kościoły od chwili ich powstania.' },
     realm: { un: 'Zjednoczone królestwo', ju: 'Królestwo Judy', is: 'Królestwo Izraela' }, realmShort: { un: 'Izrael', ju: 'Juda', is: 'Izrael' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Wiek przy objęciu tronu: ' + age + '.' : '') + ' Pismo podaje: ' + reign + ' panowania.',
@@ -1954,13 +1954,13 @@ const UI = {
       docTitle: 'Wykres dziejów świata',
       eyebrow: 'Datowanie wg katolickich wydań Biblii · Od stworzenia do 2026 n.e.',
       title: 'Wykres dziejów świata',
-      lede: 'Rozdziały 1–11 Księgi Rodzaju nie podają dat, dlatego oznaczamy je jako „bez daty”; podajemy tylko długość życia patriarchów, tak jak Biblia. Od Abrahama daty są zgodne z katolickimi wydaniami Biblii, a przed 722 p.n.e. są przybliżone. Naciśnij „Odtwórz” albo przeciągnij oś czasu.',
+      lede: 'Pierwsze rozdziały Księgi Rodzaju (1–11) nie podają dat, dlatego oznaczamy je jako „bez daty” i, tak jak Biblia, pokazujemy tylko długość życia patriarchów. Od Abrahama daty są zgodne z katolickimi wydaniami Pisma Świętego, a przed 722 p.n.e. są przybliżone. Naciśnij „Odtwórz” albo przeciągnij oś czasu.',
       periods: 'Okresy', aliveIn: 'Współcześni w', events: 'Wydarzenia', fullChart: 'Cały wykres',
       zoomIn: 'Powiększ', zoomOut: 'Pomniejsz', chart: 'Kołowy wykres chronologii', reel: 'Wydarzenia w obrazach',
       dock: 'Oś czasu: przeciągnij, aby zmienić rok, albo użyj klawiszy strzałek', lang: 'Język',
       askBar: 'Zapytaj o historię', askHello: 'dzień dobry',
-      askIntro: 'Zapytaj o postać, wydarzenie albo epokę. Odpowiedź uwzględnia rok, w którym jesteś na osi czasu.',
-      askPh: 'Np. kim był św. Augustyn?', askSend: 'Wyślij', askStop: 'Stop', askKnob: 'Zapytaj', askMode: 'Czat',
+      askIntro: 'Zapytaj o postać, wydarzenie lub epokę albo wybierz jedno z proponowanych pytań. Odpowiedź uwzględni rok, w którym jesteś na osi czasu.',
+      askPh: 'Np. dlaczego św. Augustyn pisał o niespokojnym sercu?', askSend: 'Wyślij', askStop: 'Stop', askKnob: 'Zapytaj', askMode: 'Czat',
       askNote: 'Odpowiada Claude (AI) i może się mylić.', askChips: 'Propozycje pytań', askLog: 'Rozmowa o historii'
     }
   },
@@ -1981,9 +1981,9 @@ const UI = {
     legend: { patLine: 'Lifespans given in Scripture' },
     science: 'Growth of science', scienceRef: 'CCC 159; Wis 11:20',
     scienceBody: 'Modern science matured within the universities of Christian Europe, beginning with Bologna in 1088, and drew both on the wisdom of the Greeks and on the achievements of scholars in the Islamic world, India and China. At its roots lies a conviction of faith: the world, as the work of the creative Logos, bears an order open to human reason, yet as the fruit of a free gift it follows from no necessity. Its laws therefore cannot be deduced by speculation alone but must be patiently read in experience. Thus among the students of nature there have been many men of the Church, from Albert the Great and Copernicus to Mendel and Lemaître, witnesses to the conviction that the truth found in nature and the truth revealed share a single Source.',
-    laneTips: { events: 'Key events, each with a picture or film.', figures: 'Key people, at the year of their main deed.',
-      patriarchs: 'People whose lifespan the Bible gives.', kings: 'Reigns of the kings: Judah (top) and Israel (bottom).',
-      alive: 'How many people and nations on the chart exist in a given year. Solid line: people and nations together; dotted line: nations only.', nations: 'Nations and Churches, from their beginning.' },
+    laneTips: { events: 'Key events, each with a picture or film.', figures: 'Key people, placed at the year they are best remembered for.',
+      patriarchs: 'Patriarchs and others whose lifespan Holy Scripture records.', kings: 'Reigns of the kings: Judah (top) and Israel (bottom).',
+      alive: 'How many people and nations on the chart are alive in a given year. Solid line: people and nations together; dotted line: nations alone.', nations: 'Nations and Churches, from their beginning.' },
     realm: { un: 'United kingdom', ju: 'Kingdom of Judah', is: 'Kingdom of Israel' }, realmShort: { un: 'Israel', ju: 'Judah', is: 'Israel' },
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Age at accession: ' + age + '.' : '') + ' Scripture gives ' + reign + ' of reign.',
     ask: {
@@ -2015,13 +2015,13 @@ const UI = {
       docTitle: 'World History Chart',
       eyebrow: 'Catholic study Bible dating · Creation to AD 2026',
       title: 'World history chart',
-      lede: 'Genesis 1–11 gives no dates, so it is marked “undated”; only the patriarchs’ lifespans are shown, as the Bible gives them. From Abraham on, dates follow Catholic study Bibles and are approximate before 722 BC. Press Play or drag the timeline.',
+      lede: 'The first chapters of Genesis (1–11) give no dates, so we mark them “undated” and, as the Bible does, show only the patriarchs’ lifespans. From Abraham on, dates follow Catholic editions of Holy Scripture and are approximate before 722 BC. Press Play or drag the timeline.',
       periods: 'Periods', aliveIn: 'Contemporaries in', events: 'Events', fullChart: 'Full chart',
       zoomIn: 'Zoom in', zoomOut: 'Zoom out', chart: 'Radial chronology chart', reel: 'Events in pictures',
       dock: 'Timeline: drag to change the year, or use the arrow keys', lang: 'Language',
       askBar: 'Ask about history', askHello: 'hello',
-      askIntro: 'Ask about a person, an event or an era. The answer takes into account the year you are at on the timeline.',
-      askPh: 'E.g. who was St Augustine?', askSend: 'Send', askStop: 'Stop', askKnob: 'Ask', askMode: 'Chat',
+      askIntro: 'Ask about a person, an event or an era, or choose one of the suggested questions. The answer will take into account the year you are at on the timeline.',
+      askPh: 'E.g. why did St Augustine write of the restless heart?', askSend: 'Send', askStop: 'Stop', askKnob: 'Ask', askMode: 'Chat',
       askNote: 'Answered by Claude (AI), which can make mistakes.', askChips: 'Suggested questions', askLog: 'Conversation about history'
     }
   }
