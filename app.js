@@ -67,6 +67,13 @@
     return `<path class="pie ${cls}" d="M${f1(ox1)} ${f1(oy1)}A${R} ${R} 0 ${big} 1 ${f1(ox2)} ${f1(oy2)}L${f1(ix2)} ${f1(iy2)}A${r0} ${r0} 0 ${big} 0 ${f1(ix1)} ${f1(iy1)}Z"/>`;
   };
   const pieBase = TESTAMENTS.map(([from, to]) => slice(ang(from), ang(to), 'pie-base')).join('');
+  // Engraved seams between the testament plates: a dark line with a light one beside it, as between the panel's tiles.
+  const seamAt = a => {
+    const [x1, y1] = pt(60, a), [x2, y2] = pt(650, a), t = a * Math.PI / 180, nx = Math.cos(t) * 0.9, ny = Math.sin(t) * 0.9;
+    return `<line class="seam-dark" x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}"/>`
+      + `<line class="seam-light" x1="${f1(x1 + nx)}" y1="${f1(y1 + ny)}" x2="${f1(x2 + nx)}" y2="${f1(y2 + ny)}"/>`;
+  };
+  const seams = [...new Set(TESTAMENTS.flatMap(([from, to]) => [ang(from), ang(to)]))].map(seamAt).join('');
 
   const FULL_VIEW = { cx: 0, cy: 0, w: 1500 };
   const MIN_W = 200, MAX_W = 1500;
@@ -568,7 +575,7 @@
         + `<text class="fig-initial" x="${f1(x)}" y="${f1(y)}" text-anchor="middle" dominant-baseline="central" style="font-size:${(10 * p).toFixed(2)}px">${esc(g[6] || g[0].replace(/^(Św\.|Bł\.|Kard\.|St|Cardinal)\s+/, '')[0])}</text></g>`;
     });
 
-    put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join(''));
+    put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join('') + seams);
     put(el.arcs, 'html', ghosts + arcs);
     // While an arc is hovered or selected, the other arcs and names step back.
     const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n' || fk[0] === 'k') && items[fk]);
@@ -579,7 +586,7 @@
     put(el.figs, 'html', figs);
 
     // Year sweep line.
-    const sa = ang(year), [sx1, sy1] = pt(52, sa), [sx2, sy2] = pt(606, sa);
+    const sa = ang(year), [sx1, sy1] = pt(60, sa), [sx2, sy2] = pt(606, sa);
     put(el.sweep, 'x1', f1(sx1)); put(el.sweep, 'y1', f1(sy1)); put(el.sweep, 'x2', f1(sx2)); put(el.sweep, 'y2', f1(sy2));
     put(el.sweepDot, 'cx', f1(sx2)); put(el.sweepDot, 'cy', f1(sy2));
 
