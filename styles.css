@@ -227,7 +227,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .ask-empty { margin: auto 0 4px; }
 .ask-empty[hidden] { display: none; }
 .ask-hello { font-family: var(--mono); font-size: 22px; font-weight: 400; letter-spacing: -.01em; color: #cfc5c9; margin: 0 0 8px; }
-.ask-intro { font-family: var(--mono); font-size: 10.5px; letter-spacing: .02em; line-height: 1.55; color: #a99ea3; margin: 0; max-width: 116ch; }
+.ask-intro { font-family: var(--mono); font-size: 10.5px; letter-spacing: .02em; line-height: 1.55; color: #a99ea3; margin: 0; max-width: 87ch; }
 .ask-msg { margin: 0; white-space: pre-wrap; }
 .ask-msg.q { align-self: flex-end; max-width: 80%; font-family: var(--mono); font-size: 11px; line-height: 1.5; color: #b9adb2; text-align: right; }
 .ask-msg.q::before { content: '› '; color: var(--c1); }
