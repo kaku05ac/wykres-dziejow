@@ -335,8 +335,8 @@ html.has-cursor #chart [data-key], html.has-cursor #chart [data-key] * { cursor:
 abbr.kkk { text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 2px; cursor: help; }
 
 /* Noah's sons: a hairline bracket and a small name beside each family of nation rings. */
-.grp-line { fill: none; stroke: currentColor; stroke-width: 1; opacity: .7; pointer-events: none; transition: opacity .15s ease; }
-.grp-label { font-family: var(--mono); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; fill: currentColor; opacity: .85; pointer-events: none; transition: opacity .15s ease; }
+.grp-line { fill: none; stroke: currentColor; stroke-width: .7; stroke-linecap: round; opacity: .6; pointer-events: none; transition: opacity .15s ease; }
+.grp-label { font-family: var(--mono); font-size: 6.5px; letter-spacing: .22em; text-transform: uppercase; fill: currentColor; opacity: .75; pointer-events: none; transition: opacity .15s ease; }
 .grp.on .grp-line, .grp.on .grp-label { opacity: 1; }
 .legend-grp { cursor: pointer; }
 html.has-cursor .legend-grp { cursor: pointer !important; }

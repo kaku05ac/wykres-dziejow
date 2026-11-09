@@ -492,18 +492,18 @@
     // A nation's card: its description, with its dates in the line below; the line of Cain has no dates, only "from Cain to the Flood".
     NAT.forEach((n, i) => addArc('n' + i, 90 + i * 14.5, 7, n[2], n[3], n[1], n[0], n[5] || '', n[4], n[0], 5,
       n[2] < SEAM ? U().natCain.replace(/\.$/, '') : U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3]))));
-    // Noah's three sons (Genesis 10): a thin bracket with the son's name beside each family's rings, in the
-    // empty wedge just before Creation; hovering or clicking it lights up that family and explains it.
+    // Noah's three sons (Genesis 10): a hairline across each family's rings where its colour begins, with the
+    // son's name beside it; hovering or clicking it lights up that family and explains it.
     ['sem', 'ham', 'jap'].forEach(g => {
       const idx = NAT.map((n, i) => (n[1] === g ? i : -1)).filter(i => i >= 0);
-      const G = U().groups[g], r1 = 90 + idx[0] * 14.5 - 4, r2 = 90 + idx[idx.length - 1] * 14.5 + 4, a = 356, on = gFocus === g;
+      const G = U().groups[g], r1 = 90 + idx[0] * 14.5 - 3.5, r2 = 90 + idx[idx.length - 1] * 14.5 + 3.5, on = gFocus === g;
+      const a = Math.min(...idx.map(i => ang(NAT[i][2]))) - 1.6;
       items['g-' + g] = { title: G.title, body: G.body, ref: G.ref, when: '' };
-      const [x1, y1] = pt(r1, a), [x2, y2] = pt(r2, a), [t1x, t1y] = pt(r1, a + 1.4), [t2x, t2y] = pt(r2, a + 1.4);
-      const [lx, ly] = pt((r1 + r2) / 2, a - 3), c = COL[g][1];
+      const [x1, y1] = pt(r1, a), [x2, y2] = pt(r2, a), [lx, ly] = pt((r1 + r2) / 2, a - 1.7), c = COL[g][1];
       arcs += `<g class="grp${on ? ' on' : ''}" style="color:${c}">`
-        + `<path class="grp-line" d="M${f1(t1x)} ${f1(t1y)}L${f1(x1)} ${f1(y1)}L${f1(x2)} ${f1(y2)}L${f1(t2x)} ${f1(t2y)}"/>`
-        + `<text class="grp-label" transform="translate(${f1(lx)} ${f1(ly)}) rotate(${a - 90})" text-anchor="middle" dominant-baseline="central">${esc(G.label)}</text>`
-        + `<path class="arc-hit" data-key="g-${g}" d="M${f1(x1)} ${f1(y1)}L${f1(x2)} ${f1(y2)}" stroke-width="16"/></g>`;
+        + `<line class="grp-line" x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}"/>`
+        + `<text class="grp-label" transform="translate(${f1(lx)} ${f1(ly)}) rotate(${f1(a - 90)})" text-anchor="middle" dominant-baseline="central">${esc(G.label)}</text>`
+        + `<line class="arc-hit" data-key="g-${g}" x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke-width="14"/></g>`;
     });
     const alive = [];
     PAT.forEach((p, i) => {
