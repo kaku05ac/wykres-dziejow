@@ -129,7 +129,7 @@ const TEXT = {
    [
     "Izaak",
     "Rdz 35,28",
-    "Syn Abrahama i Sary, urodzony, gdy rodzice byli już w podeszłym wieku; jego imię znaczy „śmiać się”. Żeni się z Rebeką, a jego synami są bliźnięta Ezaw i Jakub. Żyje najdłużej z trzech patriarchów, o których Bóg mówi: „Jestem Bogiem Abrahama, Izaaka i Jakuba”."
+    "Syn obietnicy, którego Abraham i Sara doczekali się w podeszłym wieku; jego imię wyraża radość, jaką narodziny dziecka sprawiły długo czekającym rodzicom (Rdz 21,6). Ocalony na górze Moria, gdy Bóg powstrzymał rękę ojca, poślubia Rebekę i zostaje ojcem bliźniąt, Ezawa i Jakuba. Bóg przedstawia się odtąd jako „Bóg Abrahama, Izaaka i Jakuba”."
    ],
    [
     "Jakub",
@@ -407,7 +407,7 @@ const TEXT = {
    [
     "Izaak",
     "Syn obietnicy",
-    "Syn Abrahama i Sary, urodzony, gdy rodzice byli już w podeszłym wieku; jego imię znaczy „śmiać się”. Żeni się z Rebeką, a jego synami są bliźnięta Ezaw i Jakub. Żyje najdłużej z trzech patriarchów, o których Bóg mówi: „Jestem Bogiem Abrahama, Izaaka i Jakuba”.",
+    "Syn obietnicy, którego Abraham i Sara doczekali się w podeszłym wieku; jego imię wyraża radość, jaką narodziny dziecka sprawiły długo czekającym rodzicom (Rdz 21,6). Ocalony na górze Moria, gdy Bóg powstrzymał rękę ojca, poślubia Rebekę i zostaje ojcem bliźniąt, Ezawa i Jakuba. Bóg przedstawia się odtąd jako „Bóg Abrahama, Izaaka i Jakuba”.",
     "Rdz 21"
    ],
    [
@@ -533,13 +533,13 @@ const TEXT = {
    [
     "Marcin Luter",
     "Reformator",
-    "Niemiecki zakonnik augustiański i profesor teologii, którego 95 tez z 1517 r. zapoczątkowało reformację protestancką. Przetłumaczył Biblię na niemiecki; dziś katolicy i luteranie prowadzą dialog, a w 1999 r. podpisali wspólną deklarację o usprawiedliwieniu.",
+    "Augustianin i profesor teologii w Wittenberdze, który, dręczony pytaniem o łaskawego Boga, odkrywa w Liście do Rzymian zbawienie z łaski przez wiarę. Jego 95 tez z 1517 r. daje początek reformacji, a przekład Biblii na niemiecki kształtuje język całego narodu.",
     ""
    ],
    [
     "Św. Tomasz z Akwinu",
     "Doktor Kościoła",
-    "Włoski dominikanin, jeden z największych teologów Kościoła, nazywany Doktorem Anielskim. W Sumie teologicznej połączył wiarę z rozumem, korzystając z filozofii Arystotelesa; jest patronem szkół i uczelni katolickich.",
+    "Dominikanin i jeden z największych myślicieli w dziejach Kościoła, który w „Sumie teologicznej” pokazał, że wiara i rozum nie są rywalami, lecz prowadzą do tej samej prawdy. Według tradycji, gdy modlił się przed krzyżem, usłyszał: „Dobrze o Mnie napisałeś, Tomaszu”, a zapytany o nagrodę, odpowiedział: „Tylko Ciebie, Panie”. Kościół uczynił go patronem szkół i uczelni katolickich.",
     ""
    ],
    [
@@ -617,7 +617,7 @@ const TEXT = {
    [
     "Izaak Newton",
     "Uczony",
-    "Angielski uczony, który w „Principiach” opisał prawa ruchu i powszechnego ciążenia, kładąc podstawy nowożytnej fizyki. Był człowiekiem głęboko wierzącym i wiele pisał o Biblii.",
+    "Angielski fizyk i matematyk, który w „Principiach” (1687) opisał prawa ruchu i powszechnego ciążenia, pokazując, że spadające jabłko i krążący Księżyc podlegają temu samemu prawu. W zakończeniu tego dzieła napisał, że tak piękny układ Słońca, planet i komet mógł powstać jedynie z zamysłu „istoty rozumnej i potężnej”. Wiele pisał też o Biblii.",
     ""
    ],
    [
@@ -1076,7 +1076,7 @@ const TEXT = {
    [
     "Isaac",
     "Gen 35:28",
-    "Son of Abraham and Sarah, born when his parents were already old; his name means “he laughs”. He marries Rebekah, and his sons are the twins Esau and Jacob. He lives the longest of the three patriarchs of whom God says: “I am the God of Abraham, the God of Isaac and the God of Jacob.”"
+    "The son of the promise, born to Abraham and Sarah in their old age; his name expresses the joy that the child’s birth brought to parents who had waited so long (Gen 21:6). Spared on Mount Moriah when God stayed his father’s hand, he marries Rebekah and becomes the father of twins, Esau and Jacob. From then on God names himself “the God of Abraham, Isaac and Jacob”."
    ],
    [
     "Jacob",
@@ -1354,7 +1354,7 @@ const TEXT = {
    [
     "Isaac",
     "Son of promise",
-    "Son of Abraham and Sarah, born when his parents were already old; his name means “he laughs”. He marries Rebekah, and his sons are the twins Esau and Jacob. He lives the longest of the three patriarchs of whom God says: “I am the God of Abraham, the God of Isaac and the God of Jacob.”",
+    "The son of the promise, born to Abraham and Sarah in their old age; his name expresses the joy that the child’s birth brought to parents who had waited so long (Gen 21:6). Spared on Mount Moriah when God stayed his father’s hand, he marries Rebekah and becomes the father of twins, Esau and Jacob. From then on God names himself “the God of Abraham, Isaac and Jacob”.",
     "Gen 21"
    ],
    [
@@ -1480,13 +1480,13 @@ const TEXT = {
    [
     "Martin Luther",
     "Reformer",
-    "German Augustinian friar and professor of theology whose 95 theses of 1517 began the Protestant Reformation. He translated the Bible into German; today Catholics and Lutherans are in dialogue, and in 1999 they signed a joint declaration on justification.",
+    "Augustinian friar and professor of theology at Wittenberg who, troubled by the question of a gracious God, discovers in the Letter to the Romans salvation by grace through faith. His 95 theses of 1517 begin the Reformation, and his translation of the Bible into German shapes the language of a whole nation.",
     ""
    ],
    [
     "St Thomas Aquinas",
     "Doctor of the Church",
-    "Italian Dominican, one of the Church’s greatest theologians, called the Angelic Doctor. In the Summa Theologiae he brought faith and reason together, drawing on the philosophy of Aristotle; he is the patron of Catholic schools and universities.",
+    "Dominican friar and one of the greatest thinkers in the history of the Church, who in his Summa Theologiae showed that faith and reason are not rivals but lead to the same truth. According to tradition, as he prayed before a crucifix he heard: “You have written well of me, Thomas,” and asked what reward he wished, he answered: “Only you, Lord.” The Church has made him patron of Catholic schools and universities.",
     ""
    ],
    [
@@ -1564,7 +1564,7 @@ const TEXT = {
    [
     "Isaac Newton",
     "Scientist",
-    "English scientist who in the Principia described the laws of motion and universal gravitation, laying the foundations of modern physics. He was a deeply religious man and wrote much about the Bible.",
+    "English physicist and mathematician who in the Principia (1687) set out the laws of motion and universal gravitation, showing that a falling apple and the orbiting Moon obey the same law. At the close of that work he wrote that so beautiful a system of the Sun, planets and comets could only proceed from the counsel of “an intelligent and powerful Being”. He also wrote extensively on the Bible.",
     ""
    ],
    [
