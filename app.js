@@ -131,11 +131,15 @@
     const L = U().legend, sw = k => `<span class="swatch" style="background:${COL[k][0]};border-color:${COL[k][1]}"></span>`;
     // First row: the peoples (Genesis 10) and the patriarchs; second row: the Church.
     el.legend.innerHTML = `<div class="legend-row">`
-      + ['cain', 'sem', 'ham', 'jap'].map(k => `<span>${sw(k)}${esc(COL[k][2])}</span>`).join('')
+      + ['cain', 'sem', 'ham', 'jap'].map(k => `<span${k === 'cain' ? '' : ` class="legend-grp" data-group="${k}"`}>${sw(k)}${esc(COL[k][2])}</span>`).join('')
       + `<span>${sw('pat')}${esc(L.patLine)}</span><span>${sw('king')}${esc(COL.king[2])}</span></div>`
       + `<div class="legend-row">` + ['chu', 'orth', 'ref'].map(k => `<span>${sw(k)}${esc(COL[k][2])}</span>`).join('') + `</div>`;
   };
   buildStatic();
+  // The families in the legend work like their brackets on the wheel: hover to light them up, click to keep them.
+  el.legend.addEventListener('mouseover', e => { const g = e.target.closest('[data-group]'); if (g) set({ hover: 'g-' + g.dataset.group }); });
+  el.legend.addEventListener('mouseout', e => { if (e.target.closest('[data-group]')) set({ hover: null }); });
+  el.legend.addEventListener('click', e => { const g = e.target.closest('[data-group]'); if (g) set({ sel: 'g-' + g.dataset.group }); });
 
   // Event reel: a column of blocks down the left of the chart, one per event, right edges
   // aligned and widths staggered. A block shows images/events/<EV_IDS id>.(jpg|png|webp) when
@@ -441,6 +445,8 @@
   const render = () => {
     const { year, playing, view, hover, sel } = state;
     const focus = k => sel === k || hover === k;
+    // A family of nations (Shem, Ham, Japheth) chosen on its bracket or in the legend: its rings stay bright.
+    const gk = hover || sel, gFocus = gk && gk.startsWith('g-') ? gk.slice(2) : null;
     const items = {};
     let arcs = '', arcLabels = '';
 
@@ -467,7 +473,7 @@
       if (year < s) return;
       const a1 = ang(s), a2 = ang(Math.min(e, year));
       if (a2 - a1 < 0.05) return;
-      const on = focus(key);
+      const on = focus(key) || (gFocus && key[0] === 'n' && col === gFocus);
       items[key] = { title, body, ref, when };
       // A band along the arc with softly rounded corners, plus a wider invisible line for easy hovering.
       const [sx, sy] = pt(r, a1), [ex, ey] = pt(r, a2), big = a2 - a1 > 180 ? 1 : 0;
@@ -486,6 +492,19 @@
     // A nation's card: its description, with its dates in the line below; the line of Cain has no dates, only "from Cain to the Flood".
     NAT.forEach((n, i) => addArc('n' + i, 90 + i * 14.5, 7, n[2], n[3], n[1], n[0], n[5] || '', n[4], n[0], 5,
       n[2] < SEAM ? U().natCain.replace(/\.$/, '') : U().range(n[2] === SEAM ? U().beforeSeam : fmtD(n[2]), n[3] >= END ? U().present : fmtD(n[3]))));
+    // Noah's three sons (Genesis 10): a thin bracket with the son's name beside each family's rings, in the
+    // empty wedge just before Creation; hovering or clicking it lights up that family and explains it.
+    ['sem', 'ham', 'jap'].forEach(g => {
+      const idx = NAT.map((n, i) => (n[1] === g ? i : -1)).filter(i => i >= 0);
+      const G = U().groups[g], r1 = 90 + idx[0] * 14.5 - 4, r2 = 90 + idx[idx.length - 1] * 14.5 + 4, a = 356, on = gFocus === g;
+      items['g-' + g] = { title: G.title, body: G.body, ref: G.ref, when: '' };
+      const [x1, y1] = pt(r1, a), [x2, y2] = pt(r2, a), [t1x, t1y] = pt(r1, a + 1.4), [t2x, t2y] = pt(r2, a + 1.4);
+      const [lx, ly] = pt((r1 + r2) / 2, a - 3), c = COL[g][1];
+      arcs += `<g class="grp${on ? ' on' : ''}" style="color:${c}">`
+        + `<path class="grp-line" d="M${f1(t1x)} ${f1(t1y)}L${f1(x1)} ${f1(y1)}L${f1(x2)} ${f1(y2)}L${f1(t2x)} ${f1(t2y)}"/>`
+        + `<text class="grp-label" transform="translate(${f1(lx)} ${f1(ly)}) rotate(${a - 90})" text-anchor="middle" dominant-baseline="central">${esc(G.label)}</text>`
+        + `<path class="arc-hit" data-key="g-${g}" d="M${f1(x1)} ${f1(y1)}L${f1(x2)} ${f1(y2)}" stroke-width="16"/></g>`;
+    });
     const alive = [];
     PAT.forEach((p, i) => {
       // Full lifespans: the post-Flood patriarchs reach into Abraham's time (cards stay undated).
@@ -571,7 +590,7 @@
     put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join(''));
     put(el.arcs, 'html', ghosts + arcs);
     // While an arc is hovered or selected, the other arcs and names step back.
-    const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n' || fk[0] === 'k') && items[fk]);
+    const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n' || fk[0] === 'k' || fk.startsWith('g-')) && items[fk]);
     el.arcs.classList.toggle('dim', arcFocus);
     el.arcLabels.classList.toggle('dim', arcFocus);
     put(el.arcLabels, 'html', arcLabels);
@@ -892,7 +911,8 @@
       // Nations: relations with Israel (not for Cain's line, Israel or the Jewish people themselves), sources, influence.
       if (k === 'n') {
         if (['chu', 'orth', 'ref'].includes(NAT[i][1])) return Q.church.map((f, j) => ['c' + j, f]);
-        return ([0, 5, 17].includes(i) ? [] : [['rel', Q.nat[0]]]).concat([['src', Q.nat[1]], ['hist', Q.natHist[0]]]);
+        const own = ['Ród Kaina', 'Izrael', 'Naród żydowski'].includes(TEXT.pl.NAT[i][0]);
+        return (own ? [] : [['rel', Q.nat[0]]]).concat([['src', Q.nat[1]], ['hist', Q.natHist[0]]]);
       }
       // People: their words or the passages about them (one theme), their influence, the New Testament link
       // before Christ; later people also their works.

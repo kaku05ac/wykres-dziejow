@@ -214,6 +214,11 @@ const TEXT = {
     "Naród wywodzący się od dwunastu synów Jakuba, który po wyjściu z Egiptu osiedlił się w Kanaanie, a za Dawida i Salomona stworzył królestwo ze stolicą w Jerozolimie. Z tego narodu pochodzi Jezus, a św. Jan Paweł II nazwał Żydów „starszymi braćmi” chrześcijan w wierze."
    ],
    [
+    "Naród żydowski",
+    "Ezd 1; Rz 11,1-2",
+    "Wygnanie babilońskie nie kończy dziejów Izraela, lecz je odmienia: wokół Pism, modlitwy i synagogi kształtuje się wiara, która przetrwa wszystkie burze historii. Po zburzeniu drugiej świątyni przez Rzymian w 70 r. Żydzi rozpraszają się po świecie i przez blisko dwa tysiące lat diaspory pozostają wierni Torze mimo prześladowań, aż po Zagładę, a w 1948 r. powstaje współczesne państwo Izrael. Kościół, za św. Pawłem, pamięta, że „dary łaski i wezwanie Boże są nieodwołalne” (Rz 11,29)."
+   ],
+   [
     "Babilon",
     "Rdz 10,8-10",
     "Miasto nad Eufratem, w krainie Szinear, którego nazwę Księga Rodzaju łączy z wieżą Babel i pomieszaniem języków. Za Nabuchodonozora staje się stolicą imperium i miejscem wygnania Judejczyków. W Apokalipsie jego imię oznacza każdą potęgę, która staje przeciw Bogu."
@@ -267,11 +272,6 @@ const TEXT = {
     "Protestantyzm",
     "",
     "Wspólnoty wyrosłe z reformacji XVI wieku, luterańskie i kalwińskie, a później liczne Kościoły ewangelikalne, które na pierwszym miejscu stawiają Pismo Święte i zbawienie z łaski przez wiarę. Wniosły w chrześcijaństwo umiłowanie Biblii czytanej w ojczystym języku i bogactwo pieśni. Kościół katolicki uznaje ochrzczonych protestantów za braci w Chrystusie i prowadzi z nimi dialog ekumeniczny."
-   ],
-   [
-    "Naród żydowski",
-    "Ezd 1; Rz 11,1-2",
-    "Wygnanie babilońskie nie kończy dziejów Izraela, lecz je odmienia: wokół Pism, modlitwy i synagogi kształtuje się wiara, która przetrwa wszystkie burze historii. Po zburzeniu drugiej świątyni przez Rzymian w 70 r. Żydzi rozpraszają się po świecie i przez blisko dwa tysiące lat diaspory pozostają wierni Torze mimo prześladowań, aż po Zagładę, a w 1948 r. powstaje współczesne państwo Izrael. Kościół, za św. Pawłem, pamięta, że „dary łaski i wezwanie Boże są nieodwołalne” (Rz 11,29)."
    ]
   ],
   "EV": [
@@ -1161,6 +1161,11 @@ const TEXT = {
     "The people descended from the twelve sons of Jacob, who settled in Canaan after the Exodus and under David and Solomon formed a kingdom with Jerusalem as its capital. Jesus comes from this people, and St John Paul II called the Jews the “elder brothers” of Christians in faith."
    ],
    [
+    "The Jewish people",
+    "Ezra 1; Rom 11:1-2",
+    "The Babylonian exile does not end Israel’s story but transforms it: around the Scriptures, prayer and the synagogue a faith takes shape that will survive every storm of history. After the Romans destroy the Second Temple in 70, the Jews are scattered across the world and through nearly two thousand years of diaspora remain faithful to the Torah despite persecution, up to the Holocaust; in 1948 the modern State of Israel is founded. The Church, with St Paul, remembers that “the gifts and the call of God are irrevocable” (Rom 11:29)."
+   ],
+   [
     "Babylon",
     "Gen 10:8-10",
     "A city on the Euphrates, in the land of Shinar, whose name Genesis links with the Tower of Babel and the confusion of tongues. Under Nebuchadnezzar it becomes the capital of an empire and the place of Judah’s exile. In Revelation its name stands for every power that sets itself against God."
@@ -1214,11 +1219,6 @@ const TEXT = {
     "Protestantism",
     "",
     "Communities that grew out of the sixteenth-century Reformation, Lutheran and Reformed, and later many evangelical churches, which put Holy Scripture and salvation by grace through faith first. They brought to Christianity a love of the Bible read in one’s own language and a wealth of hymns. The Catholic Church recognises baptised Protestants as brothers and sisters in Christ and pursues ecumenical dialogue with them."
-   ],
-   [
-    "The Jewish people",
-    "Ezra 1; Rom 11:1-2",
-    "The Babylonian exile does not end Israel’s story but transforms it: around the Scriptures, prayer and the synagogue a faith takes shape that will survive every storm of history. After the Romans destroy the Second Temple in 70, the Jews are scattered across the world and through nearly two thousand years of diaspora remain faithful to the Torah despite persecution, up to the Holocaust; in 1948 the modern State of Israel is founded. The Church, with St Paul, remembers that “the gifts and the call of God are irrevocable” (Rom 11:29)."
    ]
   ],
   "EV": [
@@ -1915,6 +1915,14 @@ const UI = {
     age: (name, n) => name + ', wiek ' + n,
     hub: ['Od stworzenia do potopu', 'Od potopu do Abrahama', 'Patriarchowie', 'Wyjście i sędziowie', 'Królestwo Izraela', 'Izrael i Juda', 'Oczekiwanie na Mesjasza', 'Życie Jezusa', 'Czas Kościoła'],
     legend: { patLine: 'Długość życia podana w Piśmie' },
+    groups: {
+      sem: { label: 'Sem', title: 'Sem i jego potomkowie', ref: 'Rdz 10,21-31',
+        body: 'Od Sema, najstarszego syna Noego, Księga Rodzaju wywodzi ludy Elamu, Asyrii, Aramu i Arabii, a przez Abrahama naród Izraela (Rdz 10,21-31). Od jego imienia pochodzi nazwa Semitów, a przez jego potomków prowadzi linia obietnicy aż do Jezusa.' },
+      ham: { label: 'Cham', title: 'Cham i jego potomkowie', ref: 'Rdz 10,6-20',
+        body: 'Od Chama Księga Rodzaju wywodzi ludy Egiptu, Kanaanu i Fenicji oraz Nimroda, założyciela Babilonu (Rdz 10,6-20). W ich krainach rozgrywa się niewola Izraela i jego wejście do Ziemi Obiecanej, a Egipt da później schronienie Świętej Rodzinie.' },
+      jap: { label: 'Jafet', title: 'Jafet i jego potomkowie', ref: 'Rdz 10,2-5',
+        body: 'Od Jafeta Księga Rodzaju wywodzi ludy północy i dalekich wybrzeży, wśród nich Medów i Greków (Rdz 10,2-5). Z tego kręgu wyrosną imperia Persji, Grecji i Rzymu, a w świecie greckim i rzymskim Ewangelia najszybciej dotrze do pogan.' }
+    },
     science: 'Rozwój nauki', scienceRef: 'KKK 159; Mdr 11,20',
     scienceBody: 'Nowożytna nauka dojrzewała w murach uniwersytetów chrześcijańskiej Europy, poczynając od Bolonii w 1088 r., i czerpała zarówno z mądrości Greków, jak i z dorobku uczonych świata islamu, Indii i Chin. U jej źródeł leży przekonanie wiary, że świat, jako dzieło stwórczego Logosu, nosi w sobie ład dostępny ludzkiemu rozumowi, a będąc owocem wolnego daru, nie wynika z żadnej konieczności. Jego praw nie sposób więc wywieść z samej spekulacji, trzeba je cierpliwie odczytywać w doświadczeniu. Toteż wśród badaczy natury nie brak ludzi Kościoła, od Alberta Wielkiego i Kopernika po Mendla i Lemaître’a, świadków przekonania, że prawda odkrywana w przyrodzie i prawda objawiona mają jedno Źródło.',
     laneTips: { events: 'Najważniejsze wydarzenia, zilustrowane obrazem lub filmem.',
@@ -1987,6 +1995,14 @@ const UI = {
     age: (name, n) => name + ', age ' + n,
     hub: ['From creation to the flood', 'From the flood to Abraham', 'Patriarchs', 'Exodus and judges', 'Kingdom of Israel', 'Israel and Judah', 'Awaiting the Messiah', 'Life of Jesus', 'Church age'],
     legend: { patLine: 'Lifespans given in Scripture' },
+    groups: {
+      sem: { label: 'Shem', title: 'Shem and his descendants', ref: 'Gen 10:21-31',
+        body: 'From Shem, Noah’s eldest son, Genesis traces the peoples of Elam, Assyria, Aram and Arabia, and through Abraham the people of Israel (Gen 10:21-31). The name Semites comes from his, and through his descendants runs the line of the promise all the way to Jesus.' },
+      ham: { label: 'Ham', title: 'Ham and his descendants', ref: 'Gen 10:6-20',
+        body: 'From Ham, Genesis traces the peoples of Egypt, Canaan and Phoenicia, and Nimrod, the founder of Babylon (Gen 10:6-20). In their lands Israel’s slavery and its entry into the Promised Land take place, and Egypt will later shelter the Holy Family.' },
+      jap: { label: 'Japheth', title: 'Japheth and his descendants', ref: 'Gen 10:2-5',
+        body: 'From Japheth, Genesis traces the peoples of the north and of the distant coasts, among them the Medes and the Greeks (Gen 10:2-5). From this circle grow the empires of Persia, Greece and Rome, and in the Greek and Roman world the Gospel will reach the Gentiles most quickly.' }
+    },
     science: 'Growth of science', scienceRef: 'CCC 159; Wis 11:20',
     scienceBody: 'Modern science matured within the universities of Christian Europe, beginning with Bologna in 1088, and drew both on the wisdom of the Greeks and on the achievements of scholars in the Islamic world, India and China. At its roots lies a conviction of faith: the world, as the work of the creative Logos, bears an order open to human reason, yet as the fruit of a free gift it follows from no necessity. Its laws therefore cannot be deduced by speculation alone but must be patiently read in experience. Thus among the students of nature there have been many men of the Church, from Albert the Great and Copernicus to Mendel and Lemaître, witnesses to the conviction that the truth found in nature and the truth revealed share a single Source.',
     laneTips: { events: 'Key events, each with a picture or film.', figures: 'Key people, placed at the year they are best remembered for.',
