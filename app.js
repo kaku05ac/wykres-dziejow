@@ -418,8 +418,8 @@
         const y = key && (key[0] === 'p' || key[0] === 'n') ? y0 + 3 : key && key[0] === 'k' ? y0 + 1 : y0;
         set({ year: y, playing: false, sel: key || null });
         flyToYear(y0);
-        // Put a question about the clicked mark into the chat, ready to send.
-        if (drag.dot.dataset.ask) ask.prefill(drag.dot.dataset.ask.split('\n'));
+        // Offer questions about the clicked mark in the chat.
+        if (key) ask.suggest(key);
       }
       drag = null;
     };
@@ -731,18 +731,6 @@
 
   // Chart: hover, click-to-select and drag-to-pan share the pointer events.
   // A press that moves less than a few pixels counts as a click on the item under it.
-  // "Name · date" for a mark on the chart, worded as on the timeline, for the chat's question.
-  const askLabel = key => {
-    const i = +key.slice(1), k = key[0];
-    if (k === 'e' && EV[i]) return EV[i][0] + ' · ' + evWhen(EV[i]);
-    if (k === 'f' && FIG[i]) return FIG[i][0] + ' · ' + fmtD(FIG[i][1]);
-    if (k === 'p' && PAT[i]) return PAT[i][0] + ' · ' + (primeval(PAT[i]) ? U().undated : U().born + fmtD(PAT[i][1]));
-    if (k === 'k' && KINGS[i]) return KINGS[i][0] + ' · ' + U().range(fmtD(KINGS[i][1]), fmtD(KINGS[i][2]));
-    if (k === 'n' && NAT[i]) { const n = NAT[i]; return n[0] + ' · ' + (n[2] === SEAM ? U().beforeSeamLower : n[2] < SEAM ? U().fromCain : U().from + fmtD(n[2])); }
-    if (k === 'c' && CH_EV[i]) return CH_EV[i][0] + ' · ' + fmt(CH_EV[i][1]);
-    if (key === 'sci') return U().science + ' · ' + U().from + fmtD(1088);
-    return null;
-  };
   const keyAt = t => { const n = t && t.closest && t.closest('[data-key]'); return n ? n.getAttribute('data-key') : null; };
   svg.addEventListener('pointerdown', e => {
     tween = null;
@@ -763,7 +751,7 @@
   });
   const endDrag = e => {
     if (!drag) return;
-    if (!drag.moved && e.type === 'pointerup' && drag.key) { set({ sel: drag.key }); const q = askLabel(drag.key); if (q) ask.prefill([q]); }
+    if (!drag.moved && e.type === 'pointerup' && drag.key) { set({ sel: drag.key }); ask.suggest(drag.key); }
     drag = null; svg.classList.remove('dragging');
   };
   svg.addEventListener('pointerup', endDrag);
@@ -783,7 +771,7 @@
   const ask = (() => {
     const $a = id => document.getElementById(id);
     const box = $a('ask'), toggle = $a('askToggle'), body = $a('askBody'), log = $a('askLog'), empty = $a('askEmpty');
-    const form = $a('askForm'), input = $a('askInput'), send = $a('askSend'), knob = $a('askKnob'), note = $a('askNote');
+    const form = $a('askForm'), input = $a('askInput'), send = $a('askSend'), knob = $a('askKnob'), note = $a('askNote'), chips = $a('askChips');
     const MAX_TURNS = 8;
     let sample = null, turns = [], ctl = null, off = false;
 
@@ -814,7 +802,8 @@
     const bubble = (cls, text) => {
       const p = document.createElement('p');
       p.className = 'ask-msg ' + cls; p.textContent = text;
-      log.appendChild(p); empty.hidden = true; log.scrollTop = log.scrollHeight;
+      // Messages go above the suggested questions, which stay at the end of the conversation.
+      log.insertBefore(p, chips); empty.hidden = true; log.scrollTop = log.scrollHeight;
       return p;
     };
     const busy = on => {
@@ -867,8 +856,10 @@
     form.addEventListener('submit', e => { e.preventDefault(); if (ctl) ctl.abort(); else askNow(input.value); });
     knob.addEventListener('click', () => {
       if (input.value.trim()) return askNow(input.value);
-      const y = Math.round(state.year);
-      askNow(U().ask.auto(undated(y) ? '' : fmt(y), EV[eventAt(y)][0]));
+      // With nothing typed, the key asks one of a few deeper questions about what the card shows.
+      const K = U().ask.q.knob, x = $('cardTitle').textContent;
+      const pool = [K.hist, K.today].concat(state.year < -5 ? [K.nt] : []);
+      askNow(pool[Math.floor(Math.random() * pool.length)](x));
     });
     // Keys typed in the chat must not move the timeline.
     box.addEventListener('keydown', e => e.stopPropagation());
@@ -880,15 +871,48 @@
       if (sample) box.hidden = false;
     };
     start();
-    // A click on a marker only shows its card. If the chat is already open, it also types a question
-    // about that marker, ready to send; a closed chat stays closed.
-    const prefill = items => {
-      if (box.hidden || off || body.hidden) return;
-      input.value = U().ask.about(items.map(t => { const [name, when] = t.split(' · '); return !when || when === U().undated ? name : name + ' (' + when + ')'; }));
-      input.focus({ preventScroll: true });
-      input.setSelectionRange(input.value.length, input.value.length);
+    // Suggested questions: three, drawn at random for the marker the reader chose, about things the card
+    // does not say (everyday life, archaeology, art, places, liturgy, other traditions). A click types the
+    // question into the field, ready to send or change; nothing is sent without the reader.
+    const nameOf = key => {
+      if (key === 'sci') return U().science;
+      const i = +key.slice(1), A = { e: EV, c: CH_EV, f: FIG, p: PAT, k: KINGS, n: NAT }[key[0]];
+      return A && A[i] ? A[i][0] : null;
     };
-    return { prefill, relabel: () => { if (!ctl) send.textContent = U().html.askSend; if (off) note.textContent = offline ? U().ask.err.offline : U().ask.err.off; } };
+    const poolOf = key => {
+      const Q = U().ask.q, k = key[0];
+      if (k === 'k') return Q.king;
+      if (k === 'n') return ['chu', 'orth', 'ref'].includes(NAT[+key.slice(1)][1]) ? Q.church : Q.nat;
+      // People: words worth knowing, plus the key's questions (influence, lesson for today, link with the New Testament).
+      if ((k === 'f' && FIG[+key.slice(1)][6] !== 'U') || k === 'p') {
+        const y = k === 'f' ? FIG[+key.slice(1)][1] : PAT[+key.slice(1)][1];
+        return Q.fig.concat([Q.knob.hist, Q.knob.today], y < -5 ? [Q.knob.nt] : []);
+      }
+      // Genesis 1–11 has no dates or places to visit: only art, other traditions, liturgy, the New Testament, today.
+      const y = key === 'sci' ? 1088 : (k === 'e' ? EV : k === 'c' ? CH_EV : FIG)[+key.slice(1)][1];
+      if (y < SEAM) return [Q.ev[3], Q.ev[4], Q.ev[6], Q.knob.nt, Q.knob.today];
+      return Q.ev;
+    };
+    let chipsFor = null;
+    const suggest = key => {
+      const x = key && nameOf(key);
+      if (!x) return;
+      chipsFor = key;
+      const pool = poolOf(key).slice();
+      for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+      chips.setAttribute('aria-label', U().ask.sugg);
+      chips.innerHTML = '';
+      pool.slice(0, 3).forEach(f => {
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'ask-chip'; b.textContent = f(x);
+        b.addEventListener('click', () => { input.value = b.textContent; input.focus({ preventScroll: true }); input.setSelectionRange(input.value.length, input.value.length); });
+        chips.appendChild(b);
+      });
+      log.scrollTop = log.scrollHeight;
+    };
+    // Opening the chat offers questions about whatever the card shows now.
+    toggle.addEventListener('click', () => { if (!body.hidden) suggest(state.sel || 'e' + eventAt(Math.round(state.year))); });
+    return { suggest, relabel: () => { if (chipsFor) suggest(chipsFor); if (!ctl) send.textContent = U().html.askSend; if (off) note.textContent = offline ? U().ask.err.offline : U().ask.err.off; } };
   })();
 
   // ── Info: the note on dating shows only after a click ─────

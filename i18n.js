@@ -1927,6 +1927,21 @@ const UI = {
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Wiek przy objęciu tronu: ' + age + '.' : '') + ' Pismo podaje: ' + reign + ' panowania.',
     ask: {
       lang: 'Polish', you: 'Ty',
+      q: {
+        ev: [x => `Jak wyglądało codzienne życie zwykłych ludzi w czasach wydarzenia „${x}”?`, x => `Co mówią archeolodzy i dawne źródła o wydarzeniu „${x}”?`,
+          x => `„${x}”: co w tym samym czasie działo się w Chinach, Indiach albo Ameryce?`, x => `Jak wielcy malarze przedstawiali wydarzenie „${x}”? Który obraz warto zobaczyć?`,
+          x => `Jak wydarzenie „${x}” widzą Żydzi, prawosławni albo protestanci?`, x => `Gdzie dziś można stanąć w miejscu, w którym rozegrało się wydarzenie „${x}”?`,
+          x => `Jak wydarzenie „${x}” brzmi w liturgii: w których czytaniach, pieśniach albo świętach je wspominamy?`],
+        fig: [x => `${x}: jakie słowa tej postaci warto znać na pamięć?`],
+        king: [x => `${x}: co o tym panowaniu mówi archeologia? Czy to imię zachowało się poza Biblią?`, x => `${x}: którzy prorocy działali w czasie tego panowania i co mówili władcy?`,
+          x => `${x}: jak wyglądała stolica w czasie tego panowania?`],
+        nat: [x => `${x}: jakim językiem tu mówiono, jak pisano i w co wierzono?`, x => `${x}: co z tego świata możemy dziś zobaczyć w muzeach?`,
+          x => `${x}: co z tego dziedzictwa przetrwało do naszych czasów?`],
+        church: [x => `${x}: jak ta wspólnota żyje dziś na świecie?`, x => `${x}: czym wyróżnia się liturgia i modlitwa tej wspólnoty?`,
+          x => `${x}: którzy święci i świadkowie wiary są dla tej wspólnoty najważniejsi?`],
+        knob: { nt: x => `Jak „${x}” łączy się z Nowym Testamentem?`, hist: x => `Jaki wpływ na dalszy bieg historii ma „${x}”?`, today: x => `Czego „${x}” może nauczyć człowieka dzisiaj?` }
+      },
+      sugg: 'Propozycje pytań',
       about: list => 'Opowiedz mi więcej o: ' + (list.length > 1 ? list.slice(0, -1).join(', ') + ' i ' + list[list.length - 1] : list[0]) + ': tło historyczne, znaczenie i ciekawostki, których nie ma w krótkim opisie.', thinking: 'Myślę…', stopped: '(przerwano)',
       auto: (year, ev) => (year ? 'Co działo się w ' + year + '?' : 'Co opowiada ta część Księgi Rodzaju?') + ' Jestem przy wydarzeniu „' + ev + '”.',
       err: { rate_limited: 'Zbyt wiele pytań naraz. Spróbuj ponownie za chwilę.', session_expired: 'Zaloguj się ponownie do claude.ai, aby dalej pytać.',
@@ -1944,7 +1959,7 @@ const UI = {
       askBar: 'Zapytaj o historię', askHello: 'dzień dobry',
       askIntro: 'Zapytaj o postać, wydarzenie albo epokę. Odpowiedź uwzględnia rok, w którym jesteś na osi czasu.',
       askPh: 'Np. kim był św. Augustyn?', askSend: 'Wyślij', askStop: 'Stop', askKnob: 'Zapytaj', askMode: 'Czat',
-      askNote: 'Odpowiada Claude (AI) i może się mylić.', askLog: 'Rozmowa o historii'
+      askNote: 'Odpowiada Claude (AI) i może się mylić.', askChips: 'Propozycje pytań', askLog: 'Rozmowa o historii'
     }
   },
   en: {
@@ -1971,6 +1986,21 @@ const UI = {
     kingBody: (realm, age, reign) => realm + '.' + (age ? ' Age at accession: ' + age + '.' : '') + ' Scripture gives ' + reign + ' of reign.',
     ask: {
       lang: 'English', you: 'You',
+      q: {
+        ev: [x => `What was everyday life like for ordinary people at the time of “${x}”?`, x => `What do archaeologists and ancient sources say about “${x}”?`,
+          x => `“${x}”: what was happening at the same time in China, India or the Americas?`, x => `How have great painters portrayed “${x}”? Which painting is worth seeing?`,
+          x => `How do Jews, Orthodox or Protestant Christians see “${x}”?`, x => `Where can one stand today on the spot where “${x}” took place?`,
+          x => `How does “${x}” sound in the liturgy: in which readings, hymns or feasts do we remember it?`],
+        fig: [x => `${x}: which words of this person are worth knowing by heart?`],
+        king: [x => `${x}: what does archaeology say about this reign? Has the name survived outside the Bible?`, x => `${x}: which prophets were active during this reign, and what did they tell the ruler?`,
+          x => `${x}: what did the capital look like during this reign?`],
+        nat: [x => `${x}: what language was spoken, how did they write and what did they believe?`, x => `${x}: what of this world can we see in museums today?`,
+          x => `${x}: what of this heritage has survived to our times?`],
+        church: [x => `${x}: how does this community live around the world today?`, x => `${x}: what is distinctive about its liturgy and prayer?`,
+          x => `${x}: which saints and witnesses of faith matter most to it?`],
+        knob: { nt: x => `How is “${x}” connected with the New Testament?`, hist: x => `What influence does “${x}” have on the later course of history?`, today: x => `What can “${x}” teach a person today?` }
+      },
+      sugg: 'Suggested questions',
       about: list => 'Tell me more about ' + (list.length > 1 ? list.slice(0, -1).join(', ') + ' and ' + list[list.length - 1] : list[0]) + ': the background, its meaning and details that are not in the short description.', thinking: 'Thinking…', stopped: '(stopped)',
       auto: (year, ev) => (year ? 'What was happening in ' + year + '?' : 'What does this part of Genesis tell?') + ' I am at the event "' + ev + '".',
       err: { rate_limited: 'Too many questions at once. Try again in a moment.', session_expired: 'Sign in to claude.ai again to keep asking.',
@@ -1988,7 +2018,7 @@ const UI = {
       askBar: 'Ask about history', askHello: 'hello',
       askIntro: 'Ask about a person, an event or an era. The answer takes into account the year you are at on the timeline.',
       askPh: 'E.g. who was St Augustine?', askSend: 'Send', askStop: 'Stop', askKnob: 'Ask', askMode: 'Chat',
-      askNote: 'Answered by Claude (AI), which can make mistakes.', askLog: 'Conversation about history'
+      askNote: 'Answered by Claude (AI), which can make mistakes.', askChips: 'Suggested questions', askLog: 'Conversation about history'
     }
   }
 };

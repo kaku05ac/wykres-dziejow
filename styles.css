@@ -249,6 +249,10 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .ask-input:disabled { cursor: not-allowed; }
 .ask-knob:disabled .ask-dash { background: var(--n-300); }
 .ask.is-busy .ask-send { border-color: var(--c1); color: #f3edef; }
+.ask-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.ask-chips:empty { display: none; }
+.ask-chip { padding: 5px 9px; border: 1px solid #4a3f44; border-radius: 0; background: transparent; color: #c9bcc2; font-family: var(--mono); font-size: 10.5px; letter-spacing: .02em; line-height: 1.4; text-align: left; cursor: pointer; transition: border-color .15s, color .15s; }
+.ask-chip:hover, .ask-chip:focus-visible { border-color: #8a7d83; color: #f3edef; outline: none; }
 .ask-note { margin: 8px 0 0; font-family: var(--mono); font-size: 10.5px; letter-spacing: .02em; color: #7d7177; }
 
 .ask-pad { position: relative; overflow: hidden; border-radius: 0;
