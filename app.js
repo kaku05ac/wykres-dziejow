@@ -881,6 +881,9 @@
     };
     // Each question carries a theme; the three shown always have three different themes, so two never
     // ask nearly the same thing (e.g. Scripture passages and the readings at Mass are one theme).
+    const SAYINGS = new Set(['Mojżesz', 'Jozue', 'Dawid', 'Salomon', 'Eliasz', 'Izajasz', 'Józef', 'Estera', 'Jan Chrzciciel', 'Jezus', 'Paweł',
+      'Sokrates', 'Platon', 'Arystoteles', 'Św. Augustyn', 'Św. Grzegorz Wielki', 'Św. Tomasz z Akwinu', 'Marcin Luter', 'Leon XIII',
+      'Kard. Stefan Wyszyński', 'Św. Jan Paweł II']);
     const poolOf = key => {
       const Q = U().ask.q, k = key[0], i = +key.slice(1), K = Q.knob;
       const y = key === 'sci' ? 1088 : ({ e: EV, c: CH_EV, f: FIG, p: PAT, k: KINGS, n: NAT }[k])[i][k === 'n' ? 2 : 1];
@@ -894,7 +897,10 @@
       // People: their words or the passages about them (one theme), their influence, the New Testament link
       // before Christ; later people also their works.
       if ((k === 'f' && FIG[i][6] !== 'U') || k === 'p') {
-        return [['read', Q.fig[0]], hist].concat(nt, y < 100 ? [['read', Q.figBible[0]]] : [['works', Q.figLater[0]]]);
+        // "Words worth knowing by heart" only for people whose words are well known; the others get the
+        // Scripture passages about them (biblical) or their works (later).
+        const words = SAYINGS.has(TEXT.pl[k === 'f' ? 'FIG' : 'PAT'][i][0]) ? [['read', Q.fig[0]]] : [];
+        return words.concat([hist], nt, y < 100 ? [['read', Q.figBible[0]]] : [['works', Q.figLater[0]]]);
       }
       // Genesis 1–11 has no dates or places: only its meaning, where to read more, the New Testament.
       if (y < SEAM) return [['view', Q.primeval[0]], ['read', Q.primeval[1]]].concat(nt);
