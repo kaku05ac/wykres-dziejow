@@ -519,9 +519,15 @@ const TEXT = {
     "Mt 2; Łk 2"
    ],
    [
+    "Piotr",
+    "Apostoł",
+    "Rybak z Galilei, któremu Jezus nadaje imię Kefas, czyli Skała, i na nim buduje swój Kościół (Mt 16,18). Po zmartwychwstaniu trzykrotnie słyszy: „Paś owce moje” (J 21,15-17), a od dnia Zesłania Ducha Świętego staje się pasterzem pierwszej wspólnoty, który ją umacnia, jednoczy i prowadzi. Życie oddaje jako męczennik w Rzymie, a jego następcami są papieże.",
+    "Mt 16,18; J 21,15-17"
+   ],
+   [
     "Paweł",
     "Apostoł",
-    "Żyd z Tarsu i uczeń faryzeuszów, najpierw gorliwy prześladowca chrześcijan, którego pod Damaszkiem zatrzymuje światło i głos zmartwychwstałego Jezusa. Jako Apostoł Narodów przemierza świat rzymski, zakłada wspólnoty i pisze listy, które stanowią dużą część Nowego Testamentu, w tym hymn o miłości (1 Kor 13). Życie oddaje jako męczennik w Rzymie.",
+    "Żyd z Tarsu i uczeń faryzeuszów, który z prześladowcy chrześcijan, po spotkaniu ze zmartwychwstałym Jezusem pod Damaszkiem, staje się Apostołem Narodów. Jako misjonarz przemierza świat rzymski i zakłada wspólnoty od Azji Mniejszej po Grecję, a jako pierwszy wielki teolog Kościoła wykłada w listach tajemnicę Chrystusa, łaski i miłości (1 Kor 13). Życie oddaje jako męczennik w Rzymie.",
     "Dz 9-28"
    ],
    [
@@ -1466,9 +1472,15 @@ const TEXT = {
     "Matt 2; Luke 2"
    ],
    [
+    "Peter",
+    "Apostle",
+    "A fisherman from Galilee whom Jesus names Cephas, the Rock, and on whom he builds his Church (Matt 16:18). After the resurrection he hears three times, “Feed my sheep” (John 21:15-17), and from Pentecost on he is the shepherd of the first community, strengthening, uniting and leading it. He gives his life as a martyr in Rome, and the popes are his successors.",
+    "Matt 16:18; John 21:15-17"
+   ],
+   [
     "Paul",
     "Apostle",
-    "A Jew from Tarsus and a disciple of the Pharisees, at first a zealous persecutor of Christians, who is stopped near Damascus by the light and voice of the risen Jesus. As Apostle to the Nations he travels the Roman world, founds communities and writes letters that make up a large part of the New Testament, among them the hymn to love (1 Cor 13). He gives his life as a martyr in Rome.",
+    "A Jew from Tarsus and a disciple of the Pharisees who, after meeting the risen Jesus near Damascus, turns from persecutor of Christians into the Apostle to the Nations. As a missionary he travels the Roman world, founding communities from Asia Minor to Greece, and as the Church’s first great theologian he sets out in his letters the mystery of Christ, of grace and of love (1 Cor 13). He gives his life as a martyr in Rome.",
     "Acts 9-28"
    ],
    [

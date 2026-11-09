@@ -915,7 +915,7 @@
     };
     // Each question carries a theme; the three shown always have three different themes, so two never
     // ask nearly the same thing (e.g. Scripture passages and the readings at Mass are one theme).
-    const SAYINGS = new Set(['Mojżesz', 'Jozue', 'Dawid', 'Salomon', 'Eliasz', 'Izajasz', 'Józef', 'Estera', 'Jan Chrzciciel', 'Jezus', 'Paweł',
+    const SAYINGS = new Set(['Mojżesz', 'Jozue', 'Dawid', 'Salomon', 'Eliasz', 'Izajasz', 'Józef', 'Estera', 'Jan Chrzciciel', 'Jezus', 'Piotr', 'Paweł',
       'Sokrates', 'Platon', 'Arystoteles', 'Św. Augustyn', 'Św. Grzegorz Wielki', 'Św. Tomasz z Akwinu', 'Marcin Luter', 'Leon XIII',
       'Kard. Stefan Wyszyński', 'Św. Jan Paweł II']);
     const poolOf = key => {
