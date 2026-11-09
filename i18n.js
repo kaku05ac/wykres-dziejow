@@ -623,7 +623,7 @@ const TEXT = {
    [
     "Napoleon Bonaparte",
     "Cesarz Francuzów",
-    "Po zamachu stanu w 1799 r. przejmuje władzę, a w 1804 r., w obecności Piusa VII, koronuje się na cesarza; jego wojny i kodeks niosą idee rewolucji przez Europę.",
+    "Z chaosu rewolucji wyłania się nie dawna monarchia, lecz władza jednego człowieka. W 1799 r. Napoleon ogłasza, że rewolucja „jest skończona”, a zarazem wpisuje jej ideały w prawo: Kodeks cywilny, zbudowany na zasadzie równości wobec prawa, wędruje wraz z jego armiami przez całą Europę i kształtuje ją po dziś dzień. W 1804 r., w katedrze Notre-Dame, sam wkłada sobie na głowę koronę cesarską. Ten, który konkordatem z 1801 r. przywrócił Francji publiczny kult, wkrótce przez pięć lat więzi papieża Piusa VII.",
     ""
    ],
    [
@@ -1570,7 +1570,7 @@ const TEXT = {
    [
     "Napoleon Bonaparte",
     "Emperor of the French",
-    "After the coup of 1799 he takes power, and in 1804, with Pius VII present, crowns himself emperor; his wars and code carry the ideas of the Revolution across Europe.",
+    "Out of the chaos of the Revolution emerges not the old monarchy but the rule of one man. In 1799 Napoleon declares that the Revolution “is over”, and at the same time writes its ideals into law: the Civil Code, built on equality before the law, travels with his armies across Europe and shapes it to this day. In 1804, in the cathedral of Notre-Dame, he places the imperial crown on his own head. The man who restored public worship to France through the Concordat of 1801 soon holds Pope Pius VII captive for five years.",
     ""
    ],
    [
