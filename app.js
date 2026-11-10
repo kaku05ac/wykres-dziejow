@@ -225,7 +225,7 @@
   };
   // The wheel and a finger scroll the column of pictures freely, like an ordinary list; the slider and the
   // chart stay where they are. A click on a picture (or the arrow keys) moves the timeline to that event.
-  let reelOffset = 0, reelCur = -1, reelScrollT = 0;
+  let reelOffset = 0, reelCur = -1, reelScrollT = 0, capSlot = null, capLast = '';
   const scrollReel = dy => {
     reelOffset -= dy; reelScrolled = true;
     el.reel.classList.add('is-scrolling'); clearTimeout(reelScrollT);
@@ -725,10 +725,8 @@
       s.classList.toggle('is-past', year >= EV[i][1]);
     });
     put(el.reelTrack, 'style', `transform: translateY(${ty.toFixed(1)}px)`);
-    const hShown = idx === cur ? HC : H;
     // The caption moves with its block; it hides while that block is scrolled out of the column.
-    const capY = ty + topOf(idx) + hShown / 2, capIn = capY > 12 && capY < reelH - 12;
-    put(el.reelText, 'style', `top: ${capY.toFixed(1)}px; opacity: ${capIn ? 1 : 0}`);
+    capSlot = slots[idx];
     put(el.capMeta, 'text', `${evWhen(ev)} · ${ev[2] || U().history}`);
     put(el.capTitle, 'text', ev[0]);
 
@@ -789,6 +787,14 @@
       else set({ year: y });
     }
     if (dirty) { dirty = false; render(); }
+    // The caption is pinned to its block on every frame, so it travels with the picture rather than
+    // animating on its own and arriving before or after it.
+    if (capSlot) {
+      const rr = el.reel.getBoundingClientRect(), sr = capSlot.getBoundingClientRect();
+      const capY = sr.top + sr.height / 2 - rr.top, capIn = capY > 12 && capY < rr.height - 12;
+      const st = `top: ${(capY + el.reel.offsetTop).toFixed(1)}px; opacity: ${capIn ? 1 : 0}`;
+      if (st !== capLast) { capLast = st; el.reelText.style.cssText = st; }
+    }
     requestAnimationFrame(loop);
   };
 

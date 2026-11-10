@@ -139,7 +139,6 @@ h1, h2, p { margin: 0; }
 .reel { position: absolute; left: 0; top: 0; bottom: 40px; width: 190px; overflow: hidden; background: var(--n-75); touch-action: none; overscroll-behavior: contain; }
 .reel-track { position: absolute; right: 16px; top: 0; display: flex; flex-direction: column; align-items: flex-end; transition: transform .9s cubic-bezier(.45, 0, .2, 1); will-change: transform; }
 .reel.is-scrolling .reel-track { transition: transform .12s linear; }
-.reel.is-scrolling ~ .reel-text, .reel.is-scrolling .reel-text { transition: top .12s linear, opacity .2s ease; }
 .art-slot { pointer-events: auto; position: relative; display: block; flex: none; width: var(--w); height: 92px; padding: 0; border: 0; margin: 0; overflow: hidden; cursor: pointer;
   background: var(--shade); filter: grayscale(1) contrast(1.05); transition: height .9s cubic-bezier(.45, 0, .2, 1), width .9s cubic-bezier(.45, 0, .2, 1), filter .6s ease; }
 .art-slot.is-current { width: 150px; height: 267px; filter: grayscale(1) contrast(1.05); }
@@ -149,7 +148,7 @@ h1, h2, p { margin: 0; }
 .scene > img, .scene > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 /* Caption next to the event blocks: a label in small mono capitals, the title in ink and the date and
    reference after it in grey, with a thin corner bracket and a row of faint dots above. */
-.reel-text { position: absolute; left: 206px; top: 50%; transform: translateY(-50%); display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; max-width: 420px; padding-top: 10px; pointer-events: none; transition: top .9s cubic-bezier(.45, 0, .2, 1), opacity .3s ease; }
+.reel-text { position: absolute; left: 206px; top: 50%; transform: translateY(-50%); display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; max-width: 420px; padding-top: 10px; pointer-events: none; transition: opacity .3s ease; }
 .reel-text::before { content: ''; position: absolute; left: -8px; top: -2px; width: 7px; height: 9px; border-left: 1px solid var(--n-900); border-bottom: 1px solid var(--n-900); }
 .reel-text::after { content: ''; position: absolute; left: 30px; right: 0; top: 0; height: 4px; background: radial-gradient(circle, var(--n-300) 1.1px, transparent 1.6px) 0 50% / 64px 4px repeat-x; }
 .rt-title { font-family: var(--mono); font-size: 10.5px; font-weight: 400; letter-spacing: .08em; line-height: 1.5; text-transform: uppercase; color: var(--n-900); }
