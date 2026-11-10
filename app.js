@@ -263,7 +263,7 @@
     const svgD = $('dockSvg');
     const A_MAX = ang(END), RULER = 22;
     const yearFromA = a => (a <= 70 ? START + a / 70 * (SEAM - START) : a <= 190 ? SEAM + (a - 70) / 120 * -SEAM : (a - 190) / 95 * END);
-    let W = 0, x0 = 0, x1 = 1, open = true, dots = [], head = null, lastX = null, drag = null, pill = null, pillText = null, pillRect = null, lastLabel = '', tickEls = [];
+    let W = 0, x0 = 0, x1 = 1, open = false, dots = [], head = null, lastX = null, drag = null, pill = null, pillText = null, pillRect = null, lastLabel = '', tickEls = [];
     const xOf = y => x0 + ang(y) / A_MAX * (x1 - x0);
     const yearOf = x => clamp(Math.round(yearFromA(clamp((x - x0) / (x1 - x0), 0, 1) * A_MAX)), START, END);
     const patEnd = p => p[1] + p[2];
