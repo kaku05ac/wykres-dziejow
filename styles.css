@@ -344,6 +344,6 @@ abbr.kkk { text-decoration: underline dotted; text-decoration-thickness: 1px; te
 html.has-cursor .legend-grp { cursor: pointer !important; }
 
 /* The travelling star along the edge of the New Testament wedge: a white core, a warm halo and a fading tail. */
-.nt-tail { stroke-width: 1; stroke-linecap: round; }
+.nt-tail { stroke-width: 1.4; stroke-linecap: round; }
 .nt-halo { opacity: 1; }
 .nt-core { fill: #ffffff; }

@@ -459,9 +459,9 @@
     g.innerHTML = '<defs><linearGradient id="ntTail" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
       + '<stop offset="1" stop-color="#fff" stop-opacity=".95"/></linearGradient>'
       // The halo fades smoothly to nothing at its edge, so even small on the whole chart it reads as light, not a disc.
-      + '<radialGradient id="ntHalo"><stop offset="0" stop-color="#fff4da" stop-opacity=".95"/><stop offset=".35" stop-color="#fff1d2" stop-opacity=".55"/>'
-      + '<stop offset=".7" stop-color="#fff1d2" stop-opacity=".15"/><stop offset="1" stop-color="#fff1d2" stop-opacity="0"/></radialGradient></defs>'
-      + '<line class="nt-tail" stroke="url(#ntTail)"/><circle class="nt-halo" r="22" fill="url(#ntHalo)"/><circle class="nt-core" r="1.8"/>';
+      + '<radialGradient id="ntHalo"><stop offset="0" stop-color="#fff4da" stop-opacity="1"/><stop offset=".35" stop-color="#ffecc2" stop-opacity=".8"/>'
+      + '<stop offset=".7" stop-color="#ffecc2" stop-opacity=".3"/><stop offset="1" stop-color="#fff1d2" stop-opacity="0"/></radialGradient></defs>'
+      + '<line class="nt-tail" stroke="url(#ntTail)"/><circle class="nt-halo" r="28" fill="url(#ntHalo)"/><circle class="nt-core" r="2.4"/>';
     el.pie.parentNode.insertBefore(g, el.pie.nextSibling);
     const tail = g.querySelector('.nt-tail'), halo = g.querySelector('.nt-halo'), core = g.querySelector('.nt-core'), grad = g.querySelector('#ntTail');
     let t0 = 0, raf = 0;
