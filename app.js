@@ -608,9 +608,9 @@
       const key = 'c' + i, [x, y] = pt(88, ang(c[1])), d = focus(key) ? 5.5 : 3.6;
       items[key] = { title: c[0], body: c[3], ref: c[2] || (c[4] ? U().historyEvent : U().churchEvent), when: fmt(c[1]) };
       // A round mark like the other events; its colour tells Church history from world history.
-      // Like the rings: a pale fill with a darker rim, in the colour of Church or world history.
+      // Like the rings, but a step stronger since they are small: the rim colour inside, the text colour as the rim.
       const cc = COL[c[4] || 'chu'];
-      dots += `<circle data-key="${key}" class="ch-mark" cx="${f1(x)}" cy="${f1(y)}" r="${f1(d * 0.8)}" fill="${cc[3] ? cc[0] : cc[1]}" stroke="${cc[1]}" stroke-width="${cc[3] ? 0.8 : 0}"/>`
+      dots += `<circle data-key="${key}" class="ch-mark" cx="${f1(x)}" cy="${f1(y)}" r="${f1(d * 0.8)}" fill="${cc[1]}" stroke="${cc[3] || cc[1]}" stroke-width="${cc[3] ? 0.8 : 0}"/>`
         + `<circle data-key="${key}" cx="${f1(x)}" cy="${f1(y)}" r="8" fill="transparent"/>`;
     });
 
