@@ -228,8 +228,8 @@
   let reelOffset = 0, reelCur = -1, reelScrollT = 0;
   const scrollReel = dy => {
     reelOffset -= dy; reelScrolled = true;
-    el.reelTrack.classList.add('is-scrolling'); clearTimeout(reelScrollT);
-    reelScrollT = setTimeout(() => el.reelTrack.classList.remove('is-scrolling'), 160);
+    el.reel.classList.add('is-scrolling'); clearTimeout(reelScrollT);
+    reelScrollT = setTimeout(() => el.reel.classList.remove('is-scrolling'), 160);
     dirty = true;
   };
   el.reel.addEventListener('wheel', e => { e.preventDefault(); scrollReel(e.deltaY * (e.deltaMode === 1 ? 16 : 1)); }, { passive: false });
@@ -726,7 +726,9 @@
     });
     put(el.reelTrack, 'style', `transform: translateY(${ty.toFixed(1)}px)`);
     const hShown = idx === cur ? HC : H;
-    put(el.reelText, 'style', `top: ${(ty + topOf(idx) + hShown / 2).toFixed(1)}px`);
+    // The caption moves with its block; it hides while that block is scrolled out of the column.
+    const capY = ty + topOf(idx) + hShown / 2, capIn = capY > 12 && capY < reelH - 12;
+    put(el.reelText, 'style', `top: ${capY.toFixed(1)}px; opacity: ${capIn ? 1 : 0}`);
     put(el.capMeta, 'text', `${evWhen(ev)} · ${ev[2] || U().history}`);
     put(el.capTitle, 'text', ev[0]);
 
