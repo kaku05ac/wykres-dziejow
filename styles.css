@@ -161,7 +161,7 @@ h1, h2, p { margin: 0; }
 @media (prefers-reduced-motion: reduce) { .reel-track, .art-slot, .reel-text { transition: none; } .art-slot.is-current .scene { animation: none; } }
 
 
-.zoom { position: absolute; right: 20px; bottom: 8px; display: flex; gap: 8px; }
+.zoom { position: absolute; right: 20px; bottom: 2px; display: flex; gap: 8px; }
 .zoom-btn { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; border-radius: 999px; border: 1px solid var(--n-300); background: var(--n-75);
   font-family: var(--mono); font-size: 13px; font-weight: 400; color: var(--n-900); transition: background-color .15s ease, color .15s ease, border-color .15s ease; cursor: pointer; }
 .zoom-btn:hover { border-color: var(--n-900); color: var(--n-900); }
@@ -308,7 +308,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   .art-slot.is-current { width: 90px; height: 160px; }
   .reel-text { left: 114px; max-width: 200px; }
   .rt-title, .rt-meta { font-size: 9.5px; }
-  .zoom { right: 12px; bottom: 8px; }
+  .zoom { right: 12px; bottom: 2px; }
   .ask-bar { padding: 0 16px; }
   .dock-head { padding: 6px 16px 12px; }
   .ask-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) 132px; height: 430px; padding: 0 12px 12px; }
