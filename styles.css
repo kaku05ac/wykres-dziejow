@@ -161,10 +161,12 @@ h1, h2, p { margin: 0; }
 @media (prefers-reduced-motion: reduce) { .reel-track, .art-slot, .reel-text { transition: none; } .art-slot.is-current .scene { animation: none; } }
 
 
-.zoom { position: absolute; right: 20px; bottom: 20px; display: flex; gap: 8px; }
-.zoom-btn { width: 40px; height: 40px; border-radius: 999px; border: 1px solid var(--n-200); background: var(--n-75); font-size: 18px; font-weight: 300; color: var(--n-600); transition: border-color .15s ease, color .15s ease; cursor: pointer;  }
-.zoom-btn:hover { border-color: var(--n-300); color: var(--n-900); background: var(--n-25); }
-.zoom-btn.wide { width: auto; padding: 0 16px; font-size: 14px; font-weight: 400; }
+.zoom { position: absolute; right: 20px; bottom: 8px; display: flex; gap: 8px; }
+.zoom-btn { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; border-radius: 999px; border: 1px solid var(--n-300); background: var(--n-75);
+  font-family: var(--mono); font-size: 13px; font-weight: 400; color: var(--n-900); transition: background-color .15s ease, color .15s ease, border-color .15s ease; cursor: pointer; }
+.zoom-btn:hover { border-color: var(--n-900); color: var(--n-900); }
+.zoom-btn:active { background: var(--n-100); }
+.zoom-btn.wide { width: auto; padding: 0 14px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
 
 button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
@@ -306,15 +308,15 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   .art-slot.is-current { width: 90px; height: 160px; }
   .reel-text { left: 114px; max-width: 200px; }
   .rt-title, .rt-meta { font-size: 9.5px; }
-  .zoom { right: 12px; bottom: 12px; }
+  .zoom { right: 12px; bottom: 8px; }
   .ask-bar { padding: 0 16px; }
   .dock-head { padding: 6px 16px 12px; }
   .ask-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) 132px; height: 430px; padding: 0 12px 12px; }
   .ask-screen { padding: 18px 16px 12px; }
   .ask-knob { width: 92px; height: 92px; margin: -46px 0 0 -46px; gap: 9px; }
   .ask-hello { font-size: 20px; }
-  .zoom-btn { width: 40px; height: 40px; }
-  .zoom-btn.wide { height: 40px; }
+  .zoom-btn { width: 36px; height: 36px; }
+  .zoom-btn.wide { height: 36px; }
 }
 
 /* ── Custom cursor: a small ink dot with a soft shadow, always the same size; over pictures and films it shows the
