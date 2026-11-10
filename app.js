@@ -670,8 +670,9 @@
     // A long name breaks into two lines at the space nearest its middle, so it stays inside the small centre circle.
     const hubTxt = U().hub[hubAt < 0 ? HUB.length : hubAt];
     let hubLines = [hubTxt];
-    if (hubTxt.length > 19) {
-      const sp = [...hubTxt.matchAll(/ /g)].map(m => m.index).sort((a, b) => Math.abs(a - hubTxt.length / 2) - Math.abs(b - hubTxt.length / 2))[0];
+    if (hubTxt.length > 18) {
+      // Polish typography: a one-letter word (i, w, z…) never ends a line, it moves down with the next word.
+      const sp = [...hubTxt.matchAll(/ /g)].map(m => m.index).filter(i => !/(^| )\S$/.test(hubTxt.slice(0, i))).sort((a, b) => Math.abs(a - hubTxt.length / 2) - Math.abs(b - hubTxt.length / 2))[0];
       if (sp) hubLines = [hubTxt.slice(0, sp), hubTxt.slice(sp + 1)];
     }
     put(el.hubSub, 'html', hubLines.map((l, i) => `<tspan x="0" dy="${i ? 8 : 0}">${esc(l)}</tspan>`).join(''));
