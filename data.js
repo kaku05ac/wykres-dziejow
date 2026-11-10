@@ -27,7 +27,7 @@ const ABRAHAM = am(1948);   // Abraham's birth; patriarchs born before him belon
 // Palette taken from a vivid poured-paint image: red-orange #eb5628, orange #f09c3f, yellow #e6c363,
 // green #3f8a3a, turquoise #2a9db0, petrol #24586b, crimson #a8344a, plum #6b2c43; kings in dark brown #2c201b
 // alternating with a warm grey #b7a79e.
-const COL = { cain: ['#ffefa6', '#eace5d', 'Kain i jego potomkowie', '#b9a944'], sem: ['#ffb9ab', '#de7a69', 'Semici', '#b25748'], ham: ['#ffc8a8', '#e29364', 'Chamici', '#ba6f40'], jap: ['#eaf5b6', '#b7c281', 'Jafetyci', '#848e5a'], chu: ['#bfede2', '#83b7b1', 'Kościół katolicki', '#62938d'], orth: ['#e5c5ed', '#aa85c8', 'Prawosławie', '#876ba1'], ref: ['#bcf2bc', '#83bc8b', 'Protestantyzm', '#68976b'], pat: ['#ffc8a8', '#e29364', 'Patriarchowie', '#ba6f40'], king: ['#d9d2cf', '#2c201b', 'Królowie Izraela i Judy'] };
+const COL = { cain: ['#ffea8c', '#fbd437', 'Kain i jego potomkowie', '#b9a735'], sem: ['#ffa491', '#eb6048', 'Semici', '#b14b3a'], ham: ['#ffb88e', '#f08341', 'Chamici', '#ba6631'], jap: ['#e4f2a0', '#b5c46a', 'Jafetyci', '#7e894f'], chu: ['#abe7d9', '#6fb7ae', 'Kościół katolicki', '#578e88'], orth: ['#dcb2e7', '#a16ecb', 'Prawosławie', '#805da0'], ref: ['#a7eea7', '#6ebd79', 'Protestantyzm', '#5d9261'], pat: ['#ffb88e', '#f08341', 'Patriarchowie', '#ba6631'], king: ['#d9d2cf', '#2c201b', 'Królowie Izraela i Judy'] };
 
 // Patriarchs: name, birth (internal year), years lived (as Scripture gives them), reference.
 // The first 19 are counted from Creation (Rdz 5; 11,10-32).
