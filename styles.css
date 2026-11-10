@@ -154,9 +154,10 @@ h1, h2, p { margin: 0; }
 .reel-text::after { content: ''; position: absolute; left: 30px; right: 0; top: 0; height: 4px; background: radial-gradient(circle, var(--n-300) 1.1px, transparent 1.6px) 0 50% / 64px 4px repeat-x; }
 .rt-title { font-family: var(--mono); font-size: 10.5px; font-weight: 400; letter-spacing: .08em; line-height: 1.5; text-transform: uppercase; color: var(--n-900); }
 .rt-meta { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; line-height: 1.5; text-transform: uppercase; color: var(--n-500); white-space: nowrap; }
-/* A block that becomes the current one fades in softly, with a slight settle, so films do not cut from one to the next. */
+/* A block that becomes the current one settles in softly (a gentle zoom and a brief glow), never fading to the
+   grey under it, so films do not cut from one to the next. */
 .art-slot.is-current .scene { animation: sceneIn 1.1s cubic-bezier(.3, 0, .2, 1); }
-@keyframes sceneIn { from { opacity: .15; transform: scale(1.06); } to { opacity: 1; transform: none; } }
+@keyframes sceneIn { from { transform: translateY(-50%) scale(1.06); filter: brightness(1.12); } to { transform: translateY(-50%); filter: none; } }
 @media (prefers-reduced-motion: reduce) { .reel-track, .art-slot, .reel-text { transition: none; } .art-slot.is-current .scene { animation: none; } }
 
 
