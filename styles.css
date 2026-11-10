@@ -343,6 +343,8 @@ abbr.kkk { text-decoration: underline dotted; text-decoration-thickness: 1px; te
 .legend-grp { cursor: pointer; }
 html.has-cursor .legend-grp { cursor: pointer !important; }
 
-/* The beam of light along the New Testament wedge: a soft halo with a bright, thin core. */
-.nt-beam-glow { stroke-width: 14; stroke-linecap: round; opacity: .75; pointer-events: none; }
-.nt-beam { stroke-width: 1.8; stroke-linecap: round; pointer-events: none; }
+/* The line of light along the edge of the New Testament wedge: a thin laser with a faint halo and a bright tip. */
+.nt-laser-glow { stroke: #f4b63d; stroke-width: 3; opacity: .55; pointer-events: none; }
+.nt-laser { stroke: #f0a92a; stroke-width: .9; pointer-events: none; }
+.nt-laser-tip { fill: #ffc94d; pointer-events: none; }
+.nt-laser-core { fill: #fffbe8; pointer-events: none; }
