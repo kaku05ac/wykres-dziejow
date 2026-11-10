@@ -343,8 +343,7 @@ abbr.kkk { text-decoration: underline dotted; text-decoration-thickness: 1px; te
 .legend-grp { cursor: pointer; }
 html.has-cursor .legend-grp { cursor: pointer !important; }
 
-/* The line of light along the edge of the New Testament wedge: a thin laser with a faint halo and a bright tip. */
-.nt-laser-glow { stroke: #f4b63d; stroke-width: 3; opacity: .55; pointer-events: none; }
-.nt-laser { stroke: #f0a92a; stroke-width: .9; pointer-events: none; }
-.nt-laser-tip { fill: #ffc94d; pointer-events: none; }
-.nt-laser-core { fill: #fffbe8; pointer-events: none; }
+/* The travelling star along the edge of the New Testament wedge: a white core, a warm halo and a fading tail. */
+.nt-tail { stroke-width: 2; stroke-linecap: round; }
+.nt-halo { fill: #ffdc8f; opacity: 1; }
+.nt-core { fill: #ffffff; }

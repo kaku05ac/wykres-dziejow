@@ -451,8 +451,38 @@
   })();
 
   // ── Render ────────────────────────────────────────────────
+  // Christ is born: when the slider passes 5 BC, a small white star of light travels along the edge of the
+  // New Testament wedge, from the centre out to the rim, trailing a short tail, and fades away there.
+  const ntStar = (() => {
+    const NS = 'http://www.w3.org/2000/svg', g = document.createElementNS(NS, 'g');
+    g.setAttribute('class', 'nt-star'); g.setAttribute('pointer-events', 'none');
+    g.innerHTML = '<defs><linearGradient id="ntTail" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
+      + '<stop offset="1" stop-color="#fff" stop-opacity=".95"/></linearGradient>'
+      + '<filter id="ntHalo" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="3"/></filter></defs>'
+      + '<line class="nt-tail" stroke="url(#ntTail)"/><circle class="nt-halo" r="8" filter="url(#ntHalo)"/><circle class="nt-core" r="1.8"/>';
+    el.pie.parentNode.insertBefore(g, el.pie.nextSibling);
+    const tail = g.querySelector('.nt-tail'), halo = g.querySelector('.nt-halo'), core = g.querySelector('.nt-core'), grad = g.querySelector('#ntTail');
+    let t0 = 0, raf = 0;
+    const DUR = 2600, still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const frame = now => {
+      const k = Math.min(1, (now - t0) / DUR), e = 1 - Math.pow(1 - k, 2), a = ang(-5);
+      const r = 56 + 594 * e, [x, y] = pt(r, a), [tx, ty] = pt(Math.max(56, r - 90), a);
+      const op = k < 0.75 ? 1 : 1 - (k - 0.75) / 0.25;
+      [halo, core].forEach(c => { c.setAttribute('cx', f1(x)); c.setAttribute('cy', f1(y)); });
+      [['x1', tx], ['y1', ty], ['x2', x], ['y2', y]].forEach(([n, v]) => { tail.setAttribute(n, f1(v)); grad.setAttribute(n, f1(v)); });
+      g.style.opacity = op.toFixed(3);
+      if (k < 1) raf = requestAnimationFrame(frame); else g.style.opacity = 0;
+    };
+    g.style.opacity = 0;
+    return () => { if (still) return; cancelAnimationFrame(raf); t0 = performance.now(); raf = requestAnimationFrame(frame); };
+  })();
+  let starYear = null;
+
   const render = () => {
     const { year, playing, view, hover, sel } = state;
+    // The star of Bethlehem's light starts when the slider moves past 5 BC.
+    if (starYear !== null && starYear < -5 && year >= -5) ntStar();
+    starYear = year;
     const focus = k => sel === k || hover === k;
     // A family of nations (Shem, Ham, Japheth) chosen on its bracket or in the legend: its rings stay bright.
     const gk = hover || sel, gFocus = gk && gk.startsWith('g-') ? gk.slice(2) : null;
@@ -603,17 +633,7 @@
         + `<text class="fig-initial" x="${f1(x)}" y="${f1(y)}" text-anchor="middle" dominant-baseline="central" style="font-size:${(10 * p).toFixed(2)}px">${esc(g[6] || g[0].replace(/^(Św\.|Bł\.|Kard\.|St|Cardinal)\s+/, '')[0])}</text></g>`;
     });
 
-    // Christ is born: from 5 BC a thin line of light, like a laser, runs along the edge of the New Testament
-    // wedge from the centre to the rim, its bright tip reaching the rim as the slider passes AD 30; then the line stays.
-    let beam = '';
-    if (year >= -5) {
-      const bA = ang(-5), t = clamp((year + 5) / 35, 0, 1), [bx1, by1] = pt(56, bA), [bx2, by2] = pt(56 + 594 * t, bA);
-      beam = `<defs><filter id="ntGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter></defs>`
-        + `<line class="nt-laser-glow" x1="${f1(bx1)}" y1="${f1(by1)}" x2="${f1(bx2)}" y2="${f1(by2)}" filter="url(#ntGlow)"/>`
-        + `<line class="nt-laser" x1="${f1(bx1)}" y1="${f1(by1)}" x2="${f1(bx2)}" y2="${f1(by2)}"/>`
-        + (t < 1 ? `<circle class="nt-laser-tip" cx="${f1(bx2)}" cy="${f1(by2)}" r="2.6" filter="url(#ntGlow)"/><circle class="nt-laser-core" cx="${f1(bx2)}" cy="${f1(by2)}" r="1.3"/>` : '');
-    }
-    put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join('') + beam);
+    put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join(''));
     put(el.arcs, 'html', ghosts + arcs);
     // While an arc is hovered or selected, the other arcs and names step back.
     const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n' || fk[0] === 'k' || fk.startsWith('g-')) && items[fk]);
