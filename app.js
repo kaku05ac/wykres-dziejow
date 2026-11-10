@@ -573,7 +573,8 @@
       if (year < c[1]) return;
       const key = 'c' + i, [x, y] = pt(88, ang(c[1])), d = focus(key) ? 5.5 : 3.6;
       items[key] = { title: c[0], body: c[3], ref: c[2] || (c[4] ? U().historyEvent : U().churchEvent), when: fmt(c[1]) };
-      dots += `<path data-key="${key}" class="ch-mark" d="M${f1(x)} ${f1(y - d)}L${f1(x + d)} ${f1(y)}L${f1(x)} ${f1(y + d)}L${f1(x - d)} ${f1(y)}Z" fill="${COL[c[4] || 'chu'][1]}"/>`
+      // A round mark like the other events; its colour tells Church history from world history.
+      dots += `<circle data-key="${key}" class="ch-mark" cx="${f1(x)}" cy="${f1(y)}" r="${f1(d * 0.8)}" fill="${COL[c[4] || 'chu'][1]}"/>`
         + `<circle data-key="${key}" cx="${f1(x)}" cy="${f1(y)}" r="8" fill="transparent"/>`;
     });
 
