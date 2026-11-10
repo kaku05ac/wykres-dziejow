@@ -362,7 +362,7 @@ const TEXT = {
    [
     "Reformacja",
     "",
-    "W 1517 r. w Wittenberdze augustianin Marcin Luter występuje z 95 tezami przeciw nadużyciom przy odpustach, a spór uczonych przeradza się w burzę, która na zawsze odmienia oblicze Zachodu. Dzięki prasie drukarskiej jego pisma w ciągu kilku tygodni obiegają Niemcy, a książęta stają po stronie reformatorów; pokój augsburski z 1555 r. przypieczętowuje podział, oddając władcom prawo wyboru wyznania dla swoich ziem. Kościół odpowiada odnową od wewnątrz: Sobór Trydencki porządkuje naukę i życie duchowieństwa.",
+    "W 1517 r. augustianin Marcin Luter, wykładowca teologii w Wittenberdze, ogłosił 95 tez krytykujących nadużycia związane z odpustami. Rozpowszechnione drukiem, w ciągu kilku tygodni stały się znane w całych Niemczech i zapoczątkowały spór, który wkrótce objął podstawy wiary i życia Kościoła. Poparcie części książąt nadało reformie wymiar polityczny, a pokój augsburski z 1555 r. usankcjonował podział, przyznając władcom prawo do wyboru wyznania dla swoich ziem. W odpowiedzi Kościół katolicki zwołał Sobór Trydencki (1545–1563), który sprecyzował naukę wiary i zreformował formację oraz życie duchowieństwa.",
     null
    ]
   ],
@@ -1315,7 +1315,7 @@ const TEXT = {
    [
     "Reformation",
     "",
-    "In 1517, in Wittenberg, the Augustinian friar Martin Luther comes forward with 95 theses against abuses in the sale of indulgences, and a scholars’ dispute grows into a storm that changes the face of the West for ever. Thanks to the printing press his writings spread across Germany within weeks, and princes take the reformers’ side; the Peace of Augsburg of 1555 seals the division, giving rulers the right to choose the faith of their lands. The Church answers with renewal from within: the Council of Trent sets doctrine and the life of the clergy in order.",
+    "In 1517 the Augustinian friar Martin Luther, a lecturer in theology at Wittenberg, published 95 theses criticising abuses connected with indulgences. Spread by the printing press, within a few weeks they were known throughout Germany and began a dispute that soon reached the foundations of the faith and of the Church’s life. The support of some of the princes gave the reform a political dimension, and the Peace of Augsburg of 1555 sanctioned the division, granting rulers the right to choose the confession of their lands. In response the Catholic Church convened the Council of Trent (1545–1563), which defined the teaching of the faith more precisely and reformed the formation and life of the clergy.",
     null
    ]
   ],
