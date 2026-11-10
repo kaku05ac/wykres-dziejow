@@ -520,12 +520,14 @@
       const [sx, sy] = pt(r, a1), [ex, ey] = pt(r, a2), big = a2 - a1 > 180 ? 1 : 0;
       const d = `M${f1(sx)} ${f1(sy)}A${r} ${r} 0 ${big} 1 ${f1(ex)} ${f1(ey)}`;
       // A hovered or selected arc keeps its width; it stands out because the others fade.
-      arcs += band(r, w, a1, a2, COL[col][1], on, 'arc-line', round)
+      // Rings with a pale fill and a darker rim, like a tag (colours with a 4th, text, entry); kings keep solid bands.
+      arcs += (COL[col][3] ? band(r, w + 1.6, a1, a2, COL[col][1], on, 'arc-line', round) + band(r, w, a1, a2, COL[col][0], on, 'arc-line', round)
+        : band(r, w, a1, a2, COL[col][1], on, 'arc-line', round))
         + `<path class="arc-hit" data-key="${key}" d="${d}" stroke-width="${w + 7}"/>`;
       const am = (a1 + a2) / 2, len = (a2 - a1) * Math.PI / 180 * r;
       if (len > label.length * size * 0.66 + 8) {
         // The name sits on its line and bends with it.
-        arcLabels += curved('lp-' + key, r, am, (a2 - a1) / 2, label, `arc-label${on ? ' on' : ''}${LIGHT_LINE.has(col) ? ' dark' : ''}`, `font-size:${size}px`);
+        arcLabels += curved('lp-' + key, r, am, (a2 - a1) / 2, label, `arc-label${on ? ' on' : ''}${LIGHT_LINE.has(col) ? ' dark' : ''}`, `font-size:${size}px${COL[col][3] ? `;fill:${COL[col][3]}` : ''}`);
       }
     };
 
