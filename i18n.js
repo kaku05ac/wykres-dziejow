@@ -1929,9 +1929,9 @@ const UI = {
     legend: { patLine: 'Długość życia podana w Piśmie' },
     groups: {
       sem: { label: 'Sem', title: 'Sem i jego potomkowie', ref: 'Rdz 10,21-31',
-        body: 'Od Sema, najstarszego syna Noego, Księga Rodzaju wywodzi ludy Elamu, Asyrii, Aramu i Arabii, a przez Abrahama naród Izraela (Rdz 10,21-31). Od jego imienia pochodzi nazwa Semitów, a przez jego potomków prowadzi linia obietnicy aż do Jezusa.' },
+        body: 'Od Sema, najstarszego syna Noego, Księga Rodzaju wywodzi ludy Elamu, Asyrii, Aramu i Arabii, a przez Abrahama naród wybrany (Rdz 10,21-31). Jego imię przetrwało w nazwie Semitów, a przez jego potomków biegnie nić obietnicy, która przez wieki prowadzi aż do Chrystusa.' },
       ham: { label: 'Cham', title: 'Cham i jego potomkowie', ref: 'Rdz 10,6-20',
-        body: 'Od Chama Księga Rodzaju wywodzi ludy Egiptu, Kanaanu i Fenicji oraz Nimroda, założyciela Babilonu (Rdz 10,6-20). W ich krainach rozgrywa się niewola Izraela i jego wejście do Ziemi Obiecanej, a Egipt da później schronienie Świętej Rodzinie.' },
+        body: 'Ku południowi, w dolinę Nilu i ku wybrzeżom Kanaanu, rozchodzą się według Księgi Rodzaju potomkowie Chama, a wśród nich Nimrod, założyciel Babilonu (Rdz 10,6-20). Na ich ziemiach Izrael pozna niewolę i wolność wyjścia, wejdzie do Ziemi Obiecanej, a wieki później Egipt da schronienie Świętej Rodzinie.' },
       jap: { label: 'Jafet', title: 'Jafet i jego potomkowie', ref: 'Rdz 10,2-5',
         body: 'Ku północy i ku dalekim wybrzeżom mórz rozchodzą się, według Księgi Rodzaju, potomkowie Jafeta, a wśród nich Medowie i Grecy (Rdz 10,2-5). Z tego kręgu wyrosną wielkie cywilizacje Persji, Grecji i Rzymu, a w ich języku, na ich drogach i w ich miastach Ewangelia znajdzie szlaki, którymi rozejdzie się po całym świecie.' }
     },
@@ -2009,9 +2009,9 @@ const UI = {
     legend: { patLine: 'Lifespans given in Scripture' },
     groups: {
       sem: { label: 'Shem', title: 'Shem and his descendants', ref: 'Gen 10:21-31',
-        body: 'From Shem, Noah’s eldest son, Genesis traces the peoples of Elam, Assyria, Aram and Arabia, and through Abraham the people of Israel (Gen 10:21-31). The name Semites comes from his, and through his descendants runs the line of the promise all the way to Jesus.' },
+        body: 'From Shem, Noah’s eldest son, Genesis traces the peoples of Elam, Assyria, Aram and Arabia, and through Abraham the chosen people (Gen 10:21-31). His name lives on in the word Semites, and through his descendants runs the thread of the promise that leads across the centuries to Christ.' },
       ham: { label: 'Ham', title: 'Ham and his descendants', ref: 'Gen 10:6-20',
-        body: 'From Ham, Genesis traces the peoples of Egypt, Canaan and Phoenicia, and Nimrod, the founder of Babylon (Gen 10:6-20). In their lands Israel’s slavery and its entry into the Promised Land take place, and Egypt will later shelter the Holy Family.' },
+        body: 'Southwards, into the valley of the Nile and towards the shores of Canaan, Genesis tells us, the descendants of Ham spread out, among them Nimrod, the founder of Babylon (Gen 10:6-20). In their lands Israel will know slavery and the freedom of the Exodus and will enter the Promised Land, and centuries later Egypt will shelter the Holy Family.' },
       jap: { label: 'Japheth', title: 'Japheth and his descendants', ref: 'Gen 10:2-5',
         body: 'Northwards and towards the distant shores of the sea, Genesis tells us, the descendants of Japheth spread out, among them the Medes and the Greeks (Gen 10:2-5). From this circle will grow the great civilisations of Persia, Greece and Rome, and in their language, along their roads and in their cities the Gospel will find the paths by which it spreads across the whole world.' }
     },
