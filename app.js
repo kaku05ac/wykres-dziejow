@@ -717,7 +717,7 @@
     // A new current event brings the column back to it; between events the reader may scroll it freely.
     if (cur !== reelCur) { reelCur = cur; reelOffset = 0; }
     const full = topOf(EV.length - 1) + H, reelH = el.reel.clientHeight;
-    reelOffset = clamp(reelOffset, Math.min(0, reelH - 40 - (full - topOf(cur)) - TOP), topOf(cur));
+    reelOffset = clamp(reelOffset, Math.min(0, reelH - (full - topOf(cur)) - TOP), topOf(cur));
     const ty = TOP - topOf(cur) + reelOffset;
     slots.forEach((s, i) => {
       s.classList.toggle('is-current', i === cur);

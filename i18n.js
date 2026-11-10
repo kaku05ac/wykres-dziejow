@@ -1986,7 +1986,7 @@ const UI = {
       periods: 'Okresy', aliveIn: 'Współcześni w', events: 'Wydarzenia', fullChart: 'Cały wykres',
       zoomIn: 'Powiększ', zoomOut: 'Pomniejsz', chart: 'Kołowy wykres chronologii', reel: 'Wydarzenia w obrazach',
       dock: 'Oś czasu: przeciągnij, aby zmienić rok, albo użyj klawiszy strzałek', lang: 'Język',
-      askBar: 'Zapytaj o historię', askHello: 'dzień dobry',
+      askBar: 'Zapytaj o historię', navBar: 'Nawigacja', askHello: 'dzień dobry',
       askIntro: 'Zapytaj o postać, wydarzenie lub epokę albo wybierz jedno z proponowanych pytań. Odpowiedź uwzględni rok, w którym jesteś na osi czasu.',
       askPh: 'Np. dlaczego św. Augustyn pisał o niespokojnym sercu?', askSend: 'Wyślij', askStop: 'Stop', askKnob: 'Zapytaj', askMode: 'Czat',
       askNote: 'Odpowiada Claude (AI) i może się mylić.', askChips: 'Propozycje pytań', askLog: 'Rozmowa o historii'
@@ -2063,7 +2063,7 @@ const UI = {
       periods: 'Periods', aliveIn: 'Contemporaries in', events: 'Events', fullChart: 'Full chart',
       zoomIn: 'Zoom in', zoomOut: 'Zoom out', chart: 'Radial chronology chart', reel: 'Events in pictures',
       dock: 'Timeline: drag to change the year, or use the arrow keys', lang: 'Language',
-      askBar: 'Ask about history', askHello: 'hello',
+      askBar: 'Ask about history', navBar: 'Navigation', askHello: 'hello',
       askIntro: 'Ask about a person, an event or an era, or choose one of the suggested questions. The answer will take into account the year you are at on the timeline.',
       askPh: 'E.g. why did St Augustine write of the restless heart?', askSend: 'Send', askStop: 'Stop', askKnob: 'Ask', askMode: 'Chat',
       askNote: 'Answered by Claude (AI), which can make mistakes.', askChips: 'Suggested questions', askLog: 'Conversation about history'

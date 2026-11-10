@@ -136,7 +136,7 @@ h1, h2, p { margin: 0; }
 
 
 /* ── Event reel: a column of blocks at the left of the chart, text to the right ── */
-.reel { position: absolute; left: 0; top: 0; bottom: 0; width: 190px; overflow: hidden; background: var(--n-75); touch-action: none; overscroll-behavior: contain; }
+.reel { position: absolute; left: 0; top: 0; bottom: 40px; width: 190px; overflow: hidden; background: var(--n-75); touch-action: none; overscroll-behavior: contain; }
 .reel-track { position: absolute; right: 16px; top: 0; display: flex; flex-direction: column; align-items: flex-end; transition: transform .9s cubic-bezier(.45, 0, .2, 1); will-change: transform; }
 .reel.is-scrolling .reel-track { transition: transform .12s linear; }
 .reel.is-scrolling ~ .reel-text, .reel.is-scrolling .reel-text { transition: top .12s linear, opacity .2s ease; }
@@ -174,7 +174,9 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .lang button:hover, .lang button.on { color: var(--ink); }
 
 /* ── Layered timeline dock: hairlines, small marks, muted labels ── */
-.dock { flex: none; border-top: 1px solid var(--n-200); background: var(--n-75); }
+.dock { flex: none; background: var(--n-75); }
+.dock-head { display: flex; align-items: center; gap: 10px; height: 34px; padding: 6px 20px 0;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--n-600); }
 #dockSvg { display: block; width: 100%; height: 170px; touch-action: none; user-select: none; -webkit-user-select: none; cursor: ew-resize; }
 /* No focus rim when the timeline is clicked or dragged; keyboard users still get a thin one. */
 #dockSvg:focus, #dockSvg:focus:not(:focus-visible) { outline: none; }
@@ -306,6 +308,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   .rt-title, .rt-meta { font-size: 9.5px; }
   .zoom { right: 12px; bottom: 12px; }
   .ask-bar { padding: 0 16px; }
+  .dock-head { padding: 6px 16px 0; }
   .ask-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) 132px; height: 430px; padding: 0 12px 12px; }
   .ask-screen { padding: 18px 16px 12px; }
   .ask-knob { width: 92px; height: 92px; margin: -46px 0 0 -46px; gap: 9px; }
