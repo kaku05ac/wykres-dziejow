@@ -459,7 +459,7 @@
     g.innerHTML = '<defs><linearGradient id="ntTail" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/>'
       + '<stop offset="1" stop-color="#fff" stop-opacity=".95"/></linearGradient>'
       + '<filter id="ntHalo" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="3"/></filter></defs>'
-      + '<line class="nt-tail" stroke="url(#ntTail)"/><circle class="nt-halo" r="12" filter="url(#ntHalo)"/><circle class="nt-core" r="1.8"/>';
+      + '<line class="nt-tail" stroke="url(#ntTail)"/><circle class="nt-halo" r="16" filter="url(#ntHalo)"/><circle class="nt-core" r="1.8"/>';
     el.pie.parentNode.insertBefore(g, el.pie.nextSibling);
     const tail = g.querySelector('.nt-tail'), halo = g.querySelector('.nt-halo'), core = g.querySelector('.nt-core'), grad = g.querySelector('#ntTail');
     let t0 = 0, raf = 0;
