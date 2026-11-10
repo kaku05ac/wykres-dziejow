@@ -503,7 +503,7 @@
       return `<path class="${cls}${on ? ' on' : ''}" d="M${f1(o1x)} ${f1(o1y)}A${f1(ro)} ${f1(ro)} 0 ${big} 1 ${f1(o2x)} ${f1(o2y)}L${f1(i2x)} ${f1(i2y)}A${f1(ri)} ${f1(ri)} 0 ${big} 0 ${f1(i1x)} ${f1(i1y)}Z" fill="${color}" stroke="${color}" stroke-width="${f1(2 * rc)}"/>`;
     };
     // Lines light enough that white names would not read on them get dark names.
-    const LIGHT_LINE = new Set(['cain', 'ham', 'king2']);
+    const LIGHT_LINE = new Set(['cain', 'king2']);
     // Ghost tracks: every arc's whole span is drawn first as a faint line of its colour,
     // and the strong colour fills it up to the slider's year.
     let ghosts = '';
