@@ -603,7 +603,18 @@
         + `<text class="fig-initial" x="${f1(x)}" y="${f1(y)}" text-anchor="middle" dominant-baseline="central" style="font-size:${(10 * p).toFixed(2)}px">${esc(g[6] || g[0].replace(/^(Św\.|Bł\.|Kard\.|St|Cardinal)\s+/, '')[0])}</text></g>`;
     });
 
-    put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join(''));
+    // Christ is born: from 5 BC a beam of light runs out along the New Testament wedge, from the centre to the
+    // rim, reaching it as the slider passes AD 30; afterwards it stays, softly glowing.
+    let beam = '';
+    if (year >= -5) {
+      const bA = (ang(-5) + ang(30)) / 2, t = clamp((year + 5) / 35, 0, 1), [bx1, by1] = pt(56, bA), [bx2, by2] = pt(56 + 594 * t, bA), [gx2, gy2] = pt(650, bA);
+      beam = `<defs><linearGradient id="ntBeam" gradientUnits="userSpaceOnUse" x1="${f1(bx1)}" y1="${f1(by1)}" x2="${f1(gx2)}" y2="${f1(gy2)}">`
+        + `<stop offset="0" stop-color="#f5c04a" stop-opacity="1"/><stop offset=".5" stop-color="#f7d27a" stop-opacity=".8"/><stop offset="1" stop-color="#fbe3a8" stop-opacity=".2"/></linearGradient>`
+        + `<filter id="ntGlow" x="-200%" y="-20%" width="500%" height="140%"><feGaussianBlur stdDeviation="4"/></filter></defs>`
+        + `<line class="nt-beam-glow" x1="${f1(bx1)}" y1="${f1(by1)}" x2="${f1(bx2)}" y2="${f1(by2)}" stroke="url(#ntBeam)" filter="url(#ntGlow)"/>`
+        + `<line class="nt-beam" x1="${f1(bx1)}" y1="${f1(by1)}" x2="${f1(bx2)}" y2="${f1(by2)}" stroke="url(#ntBeam)"/>`;
+    }
+    put(el.pie, 'html', pieBase + TESTAMENTS.map(([from, to], k) => (year > from ? slice(ang(from), ang(Math.min(to, year)), 'pie-' + k) : '')).join('') + beam);
     put(el.arcs, 'html', ghosts + arcs);
     // While an arc is hovered or selected, the other arcs and names step back.
     const fk = hover || sel, arcFocus = !!(fk && (fk[0] === 'p' || fk[0] === 'n' || fk[0] === 'k' || fk.startsWith('g-')) && items[fk]);
