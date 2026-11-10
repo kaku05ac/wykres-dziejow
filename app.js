@@ -214,7 +214,7 @@
     const to = e.relatedTarget;
     if (!(to && to.closest && to.closest('.art-slot')) && state.hover && state.hover[0] === 'e') set({ hover: null });
   });
-  // Scrolling the reel steps through the events: the slider, chart, text and films follow.
+  // The arrow keys step through the events: the slider, chart, text and films follow.
   let reelScrolled = false;
   el.reel.addEventListener('mousemove', e => { if (e.movementX || e.movementY) reelScrolled = false; });
   const stepEvent = dir => {
@@ -223,20 +223,21 @@
     if (i !== ci || state.playing) set({ year: EV[i][1], playing: false, sel: 'e' + i, hover: null });
     reelScrolled = true;                                // ignore hover until the mouse really moves
   };
-  let wheelAcc = 0, wheelLock = 0;
-  el.reel.addEventListener('wheel', e => {
-    e.preventDefault();
-    const now = performance.now();
-    if (now < wheelLock) return;                       // one step per flick, not one per wheel tick
-    wheelAcc += e.deltaY;
-    if (Math.abs(wheelAcc) >= 24) { stepEvent(wheelAcc > 0 ? 1 : -1); wheelAcc = 0; wheelLock = now + 90; }
-  }, { passive: false });
+  // The wheel and a finger scroll the column of pictures freely, like an ordinary list; the slider and the
+  // chart stay where they are. A click on a picture (or the arrow keys) moves the timeline to that event.
+  let reelOffset = 0, reelCur = -1, reelScrollT = 0;
+  const scrollReel = dy => {
+    reelOffset -= dy; reelScrolled = true;
+    el.reelTrack.classList.add('is-scrolling'); clearTimeout(reelScrollT);
+    reelScrollT = setTimeout(() => el.reelTrack.classList.remove('is-scrolling'), 160);
+    dirty = true;
+  };
+  el.reel.addEventListener('wheel', e => { e.preventDefault(); scrollReel(e.deltaY * (e.deltaMode === 1 ? 16 : 1)); }, { passive: false });
   let swipe = null;
   el.reel.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') swipe = { y: e.clientY }; });
   el.reel.addEventListener('pointermove', e => {
     if (!swipe) return;
-    const dy = e.clientY - swipe.y;
-    if (Math.abs(dy) >= 30) { stepEvent(dy < 0 ? 1 : -1); swipe.y = e.clientY; }
+    scrollReel(swipe.y - e.clientY); swipe.y = e.clientY;
   });
   ['pointerup', 'pointercancel'].forEach(t => el.reel.addEventListener(t, () => { swipe = null; }));
   el.reelTrack.addEventListener('keydown', e => {
@@ -713,7 +714,11 @@
     const topOf = i => i * H + (i > cur ? HC - H : 0);
     // The current block sits near the top, with a small margin; earlier blocks scroll up out of view.
     const TOP = narrow ? 14 : 32;
-    const ty = TOP - topOf(cur);
+    // A new current event brings the column back to it; between events the reader may scroll it freely.
+    if (cur !== reelCur) { reelCur = cur; reelOffset = 0; }
+    const full = topOf(EV.length - 1) + H, reelH = el.reel.clientHeight;
+    reelOffset = clamp(reelOffset, Math.min(0, reelH - 40 - (full - topOf(cur)) - TOP), topOf(cur));
+    const ty = TOP - topOf(cur) + reelOffset;
     slots.forEach((s, i) => {
       s.classList.toggle('is-current', i === cur);
       s.classList.toggle('is-shown', i === idx);
