@@ -469,8 +469,8 @@
     const frame = now => {
       const k = Math.min(1, (now - t0) / DUR), e = k, a = ang(-5);
       const r = 56 + 594 * e, [x, y] = pt(r, a), [tx, ty] = pt(Math.max(56, r - 90), a);
-      // Even speed all the way; over the last third the light fades away as it flies on.
-      const op = k < 0.65 ? 1 : 1 - (k - 0.65) / 0.35;
+      // Even speed all the way; only near the rim does the light fade away as it flies on.
+      const op = k < 0.85 ? 1 : 1 - (k - 0.85) / 0.15;
       [halo, core].forEach(c => { c.setAttribute('cx', f1(x)); c.setAttribute('cy', f1(y)); });
       [['x1', tx], ['y1', ty], ['x2', x], ['y2', y]].forEach(([n, v]) => { tail.setAttribute(n, f1(v)); grad.setAttribute(n, f1(v)); });
       g.style.opacity = op.toFixed(3);
