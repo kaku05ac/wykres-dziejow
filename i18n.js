@@ -362,7 +362,7 @@ const TEXT = {
    [
     "Reformacja",
     "",
-    "W 1517 r. w Wittenberdze augustianin Marcin Luter występuje z 95 tezami przeciw nadużyciom przy odpustach, a spór uczonych przeradza się w burzę, która na zawsze odmienia oblicze Zachodu. Dzięki prasie drukarskiej jego pisma w ciągu kilku tygodni obiegają Niemcy, a książęta stają po stronie reformatorów; pokój augsburski z 1555 r. przypieczętowuje podział, oddając władcom prawo wyboru wyznania dla swoich ziem. Kościół odpowiada odnową od wewnątrz: Sobór Trydencki porządkuje naukę i życie duchowieństwa, a święci tacy jak Ignacy Loyola i Teresa z Ávili budzą nową żarliwość wiary.",
+    "W 1517 r. w Wittenberdze augustianin Marcin Luter występuje z 95 tezami przeciw nadużyciom przy odpustach, a spór uczonych przeradza się w burzę, która na zawsze odmienia oblicze Zachodu. Dzięki prasie drukarskiej jego pisma w ciągu kilku tygodni obiegają Niemcy, a książęta stają po stronie reformatorów; pokój augsburski z 1555 r. przypieczętowuje podział, oddając władcom prawo wyboru wyznania dla swoich ziem. Kościół odpowiada odnową od wewnątrz: Sobór Trydencki porządkuje naukę i życie duchowieństwa.",
     null
    ]
   ],
@@ -1315,7 +1315,7 @@ const TEXT = {
    [
     "Reformation",
     "",
-    "In 1517, in Wittenberg, the Augustinian friar Martin Luther comes forward with 95 theses against abuses in the sale of indulgences, and a scholars’ dispute grows into a storm that changes the face of the West for ever. Thanks to the printing press his writings spread across Germany within weeks, and princes take the reformers’ side; the Peace of Augsburg of 1555 seals the division, giving rulers the right to choose the faith of their lands. The Church answers with renewal from within: the Council of Trent sets doctrine and the life of the clergy in order, and saints such as Ignatius of Loyola and Teresa of Ávila kindle a new fervour of faith.",
+    "In 1517, in Wittenberg, the Augustinian friar Martin Luther comes forward with 95 theses against abuses in the sale of indulgences, and a scholars’ dispute grows into a storm that changes the face of the West for ever. Thanks to the printing press his writings spread across Germany within weeks, and princes take the reformers’ side; the Peace of Augsburg of 1555 seals the division, giving rulers the right to choose the faith of their lands. The Church answers with renewal from within: the Council of Trent sets doctrine and the life of the clergy in order.",
     null
    ]
   ],
