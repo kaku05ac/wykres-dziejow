@@ -216,7 +216,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 @media (prefers-reduced-motion: reduce) { .dk-dot, .dk-mark { transition: none; } }
 
 /* ── Ask about history: a dark screen for the conversation beside a light panel with a round key ── */
-.ask { flex: none; border-top: 1px solid var(--n-200); background: var(--n-75); }
+.ask { flex: none; padding-top: 12px; background: var(--n-75); }
 .ask[hidden], .ask-body[hidden] { display: none; }
 .ask-bar { display: flex; align-items: center; gap: 10px; width: 100%; height: 40px; padding: 0 20px; border: 0; background: transparent; cursor: pointer;
   font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--n-600); text-align: left; }
