@@ -114,6 +114,10 @@ h1, h2, p { margin: 0; }
 .arc-line { stroke-linejoin: round; opacity: .85; pointer-events: none; transition: opacity .15s ease; }
 .arc-line.on { opacity: 1; }
 .arc-ghost { stroke-linejoin: round; opacity: .14; pointer-events: none; }
+/* Load-time intro: the rings are shown in full while the chart is taken apart, then settle back to their faint outlines. */
+#chart.intro .arc-ghost { opacity: .85; }
+#chart.intro-fade .arc-ghost { transition: opacity 1.2s ease; }
+#chart.intro-fade #sweep, #chart.intro-fade #sweepDot { transition: opacity .8s ease; }
 #arcs.dim .arc-line:not(.on) { opacity: .22; }
 #arcLabels.dim .arc-label:not(.on) { opacity: .3; }
 .arc-label.on { font-weight: 600; }
