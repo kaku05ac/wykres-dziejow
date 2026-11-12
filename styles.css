@@ -270,9 +270,9 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   background: radial-gradient(circle, #9a959a 1px, transparent 1.4px) 0 0 / 9px 7px; opacity: .45; }
 .ask-seam { position: absolute; background: var(--n-200); box-shadow: 0 1px 0 var(--n-0); }
 .ask-seam.h { left: 0; right: 0; top: 50%; height: 1px; }
-.ask-seam.v { display: none; }
-.ask-tag { position: absolute; left: 16px; bottom: 15px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--n-500); }
-.ask-mode { position: absolute; left: 16px; bottom: 33px; display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--n-900); }
+.ask-seam.v { top: 50%; bottom: 0; left: 50%; width: 1px; box-shadow: 1px 0 0 #fbfbfa; }
+.ask-tag { position: absolute; right: 16px; bottom: 15px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--n-500); }
+.ask-mode { position: absolute; left: 16px; bottom: 15px; display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--n-900); }
 .ask-ring { width: 6px; height: 6px; border-radius: 50%; border: 1px solid var(--n-900); }
 .ask.is-busy .ask-ring { background: var(--c1); border-color: var(--c1); }
 .ask-knob { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; margin: -60px 0 0 -60px; border-radius: 50%; border: 0; cursor: pointer;
