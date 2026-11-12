@@ -950,10 +950,11 @@
     knob.addEventListener('click', () => {
       if (ctl) return ctl.abort();
       if (input.value.trim()) return askNow(input.value);
-      // With nothing typed, the key asks one of a few deeper questions about what the card shows.
-      const K = U().ask.q.knob, x = $('cardTitle').textContent;
-      const pool = [K.hist].concat(state.year < -5 ? [K.nt] : []);
-      askNow(pool[Math.floor(Math.random() * pool.length)](x));
+      // With nothing typed, the key asks one of the questions suggested for what the card shows, so it never
+      // asks something that does not fit (as the general questions would for Jesus or for Socrates).
+      const key = state.sel || 'e' + eventAt(Math.round(state.year)), x = nameOf(key);
+      if (x) { const pool = poolOf(key); return askNow(pool[Math.floor(Math.random() * pool.length)][1](x)); }
+      askNow(U().ask.q.knob.hist($('cardTitle').textContent));
     });
     // Keys typed in the chat must not move the timeline.
     box.addEventListener('keydown', e => e.stopPropagation());
@@ -978,7 +979,16 @@
     const SAYINGS = new Set(['Mojżesz', 'Jozue', 'Dawid', 'Salomon', 'Eliasz', 'Izajasz', 'Józef', 'Estera', 'Jan Chrzciciel', 'Piotr', 'Paweł',
       'Sokrates', 'Platon', 'Arystoteles', 'Św. Augustyn', 'Św. Grzegorz Wielki', 'Św. Tomasz z Akwinu', 'Marcin Luter', 'Leon XIII',
       'Kard. Stefan Wyszyński', 'Św. Jan Paweł II']);
+    // A marker's questions: its own set when the general ones do not fit it, otherwise the general set with
+    // any single question swapped or left out where it would not make sense (see ask.q.only and ask.q.fix).
+    const LISTS = { e: 'EV', c: 'CH_EV', f: 'FIG', p: 'PAT', k: 'KINGS', n: 'NAT' };
+    const idOf = key => key === 'sci' ? 'sci' : key[0] + ':' + TEXT.pl[LISTS[key[0]]][+key.slice(1)][0];
     const poolOf = key => {
+      const Q = U().ask.q, id = idOf(key), fx = Q.fix[id] || {};
+      if (Q.only[id]) return Q.only[id].map((f, j) => ['o' + j, f]);
+      return basePool(key).filter(([t]) => !(t in fx)).concat(Object.keys(fx).filter(t => fx[t]).map(t => [t, fx[t]]));
+    };
+    const basePool = key => {
       const Q = U().ask.q, k = key[0], i = +key.slice(1), K = Q.knob;
       const y = key === 'sci' ? 1088 : ({ e: EV, c: CH_EV, f: FIG, p: PAT, k: KINGS, n: NAT }[k])[i][k === 'n' ? 2 : 1];
       const nt = y < -5 ? [['nt', K.nt]] : [], hist = ['hist', K.hist];
@@ -1000,7 +1010,6 @@
           ? [['name', P.name], ['age', P.age], ['family', P.family], ['trad', P.trad], ['luke', P.luke]]
           : words.concat([['name', P.name], ['family', P.family], ['trad', P.trad], ['cov', P.cov], hist], nt);
       }
-      if (k === 'f' && TEXT.pl.FIG[i][0] === 'Jezus') return Q.jesus.map((f, j) => ['j' + j, f]);
       if (k === 'f' && FIG[i][6] !== 'U') {
         // "Words worth knowing by heart" only for people whose words are well known; the others get the
         // Scripture passages about them (biblical) or their works (later).
