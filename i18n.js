@@ -1980,7 +1980,7 @@ const UI = {
     },
     html: {
       docTitle: 'Wykres dziejów świata',
-      eyebrow: 'Datowanie wg katolickich wydań Biblii · Od stworzenia do 2026 n.e.',
+      eyebrow: 'Datowanie wg Biblii katolickiej · Od stworzenia do 2026 n.e.',
       title: 'Wykres dziejów świata',
       lede: 'Pierwsze rozdziały Księgi Rodzaju (1–11) nie podają dat, dlatego oznaczamy je jako „bez daty” i, wiernie za Biblią, pokazujemy jedynie długość życia patriarchów. Ich pierścień podąża jedną nicią pokoleń: od Adama przez Noego i Sema aż do Abrahama, tą samą, która wiedzie ku Izraelowi i ku Chrystusowi, podczas gdy Cham i Jafet stają u początku innych gałęzi ludzkiej rodziny. Od Abrahama daty odpowiadają katolickim wydaniom Pisma Świętego, choć sprzed 722 p.n.e. mają charakter przybliżony.',
       periods: 'Okresy', aliveIn: 'Współcześni w', events: 'Wydarzenia', fullChart: 'Cały wykres',
@@ -2057,7 +2057,7 @@ const UI = {
     },
     html: {
       docTitle: 'World History Chart',
-      eyebrow: 'Catholic study Bible dating · Creation to AD 2026',
+      eyebrow: 'Dating by the Catholic Bible · Creation to AD 2026',
       title: 'World history chart',
       lede: 'The first chapters of Genesis (1–11) give no dates, so we mark them “undated” and, faithful to the Bible, show only the patriarchs’ lifespans. Their ring follows a single thread of generations: from Adam through Noah and Shem to Abraham, the very thread that leads towards Israel and towards Christ, while Ham and Japheth stand at the head of other branches of the human family. From Abraham on, dates follow Catholic editions of Holy Scripture, though before 722 BC they are approximate.',
       periods: 'Periods', aliveIn: 'Living in', events: 'Events', fullChart: 'Full chart',
