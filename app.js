@@ -690,7 +690,7 @@
     // The Catechism's abbreviation (KKK in Polish, CCC in English) gets a hover note that spells it out, like the timeline lanes.
     const withKKK = t => esc(t).replace(/\b(KKK|CCC)\b/g, m => `<abbr class="kkk" title="${esc(U().kkk)}">${m}</abbr>`);
     // Named institutions in a description link to their own site (opened in a new tab).
-    const LINKS = [['Akademia Katolicka w Warszawie', 'https://akademiakatolicka.pl/'], ['Catholic Academy in Warsaw', 'https://akademiakatolicka.pl/']];
+    const LINKS = [['Akademia Katolicka w Warszawie', 'https://akademiakatolicka.pl/'], ['Akademii Katolickiej w Warszawie', 'https://akademiakatolicka.pl/'], ['Catholic Academy in Warsaw', 'https://akademiakatolicka.pl/']];
     const withLinks = t => LINKS.reduce((h, [name, url]) => h.split(name).join(`<a class="card-link" href="${url}" target="_blank" rel="noopener">${name}</a>`), withKKK(t));
     put(el.cardBody, 'html', withLinks(card.body));
     // The current event's date is already in the big year above, so its card shows only the reference;
