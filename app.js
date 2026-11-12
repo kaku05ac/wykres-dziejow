@@ -950,11 +950,18 @@
     knob.addEventListener('click', () => {
       if (ctl) return ctl.abort();
       if (input.value.trim()) return askNow(input.value);
-      // With nothing typed, the key asks one of the questions suggested for what the card shows, so it never
-      // asks something that does not fit (as the general questions would for Jesus or for Socrates).
+      // With nothing typed, the key does not send anything unseen: like a suggested question, it writes one of
+      // the questions for what the card shows into the field (if it can, one not already offered above), so
+      // the reader sees it, may change it, and sends it with a second press or Enter.
       const key = state.sel || 'e' + eventAt(Math.round(state.year)), x = nameOf(key);
-      if (x) { const pool = poolOf(key); return askNow(pool[Math.floor(Math.random() * pool.length)][1](x)); }
-      askNow(U().ask.q.knob.hist($('cardTitle').textContent));
+      let q = U().ask.q.knob.hist($('cardTitle').textContent);
+      if (x) {
+        const shown = new Set([...chips.children].map(c => c.textContent));
+        const all = poolOf(key).map(([, f]) => f(x)), fresh = all.filter(t => !shown.has(t));
+        const from = fresh.length ? fresh : all;
+        q = from[Math.floor(Math.random() * from.length)];
+      }
+      input.value = q; input.focus({ preventScroll: true }); input.setSelectionRange(q.length, q.length);
     });
     // Keys typed in the chat must not move the timeline.
     box.addEventListener('keydown', e => e.stopPropagation());
