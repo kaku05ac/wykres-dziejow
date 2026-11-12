@@ -115,7 +115,7 @@
     let html = '';
     ticks.forEach(([y, text]) => {
       const a = ang(y), seam = y === SEAM, [x1, y1] = pt(seam ? 82 : 342, a), [x2, y2] = pt(606, a), [x3, y3] = pt(630, a);
-      html += `<line x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke="${seam ? '#b7b1ab' : '#e5e3dd'}" stroke-width=".6"${seam ? ' stroke-dasharray="4 4"' : ''}/>`;
+      html += `<line x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke="${seam ? '#b3afb1' : '#e5e3dd'}" stroke-width=".6"${seam ? ' stroke-dasharray="4 4"' : ''}/>`;
       html += `<text class="tick-label" x="${f1(x3)}" y="${f1(y3)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(a))} ${f1(x3)} ${f1(y3)})">${text}</text>`;
     });
     // Testament bands around the outside: Old Testament, New Testament, Church history.
@@ -155,7 +155,7 @@
   // there is one, otherwise a flat grey. Each block holds a 9:16 scene centred in it.
   const EXTS = ['jpg', 'jpeg', 'png', 'webp'];
   const REEL_W = [118, 134, 104, 142, 126, 112, 138, 98, 130, 120, 108, 144, 116, 132, 124];
-  const REEL_GREY = ['#dcdad2', '#ccc9be', '#e6e5df', '#bab4ae', '#d3d1c7', '#e0dfd8', '#c0bbb6', '#d7d4cb', '#c8c5b8', '#e2e0da', '#bdb7b1', '#cfcdc3', '#d9d7cf', '#cac7bc', '#deddd6'];
+  const REEL_GREY = ['#dcdad2', '#ccc9be', '#e6e5df', '#b6b2b4', '#d3d1c7', '#e0dfd8', '#bdb9bb', '#d7d4cb', '#c8c5b8', '#e2e0da', '#b9b5b7', '#cfcdc3', '#d9d7cf', '#cac7bc', '#deddd6'];
   // Films for events, by EV_IDS id.
   const VIDEOS = { creation: 'images/events/creation.mp4', 'the-flood': 'images/events/the-flood.mp4', 'tower-of-babel': 'images/events/tower-of-babel.mp4', 'binding-of-isaac': 'images/events/binding-of-isaac.mp4', 'the-exodus': 'images/events/the-exodus.mp4', 'kingdom-divides': 'images/events/kingdom-divides.mp4', 'return-from-exile': 'images/events/return-from-exile.mp4', 'crucifixion-and-pentecost': 'images/events/crucifixion-and-pentecost.mp4', 'fall-of-rome': 'images/events/fall-of-rome.mp4', reformation: 'images/events/reformation.mp4' };
   // A film covers its event's stretch of the timeline: from the event to the next one.
