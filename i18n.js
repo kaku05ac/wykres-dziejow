@@ -2060,7 +2060,7 @@ const UI = {
       eyebrow: 'Catholic study Bible dating · Creation to AD 2026',
       title: 'World history chart',
       lede: 'The first chapters of Genesis (1–11) give no dates, so we mark them “undated” and, faithful to the Bible, show only the patriarchs’ lifespans. Their ring follows a single thread of generations: from Adam through Noah and Shem to Abraham, the very thread that leads towards Israel and towards Christ, while Ham and Japheth stand at the head of other branches of the human family. From Abraham on, dates follow Catholic editions of Holy Scripture, though before 722 BC they are approximate.',
-      periods: 'Periods', aliveIn: 'Contemporaries in', events: 'Events', fullChart: 'Full chart',
+      periods: 'Periods', aliveIn: 'Living in', events: 'Events', fullChart: 'Full chart',
       zoomIn: 'Zoom in', zoomOut: 'Zoom out', chart: 'Radial chronology chart', reel: 'Events in pictures',
       dock: 'Timeline: drag to change the year, or use the arrow keys', lang: 'Language',
       askBar: 'Ask about history', navBar: 'Navigation', askHello: 'hello',
