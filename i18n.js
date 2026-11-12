@@ -491,7 +491,7 @@ const TEXT = {
    [
     "Jeremiasz",
     "Prorok upadku Jerozolimy",
-    "Powołany jako młodzieniec słowami: „Zanim ukształtowałem cię w łonie matki, znałem cię” (Jr 1,5), przez ponad czterdzieści lat wzywał Judę do nawrócenia i zapowiadał upadek Jerozolimy. Za wierność temu przesłaniu był prześladowany, więziony i wrzucony do cysterny, a mimo to nie przestał mówić w imieniu Boga. Gdy w 587 r. p.n.e. Babilończycy zburzyli miasto i świątynię, zapowiedział nadzieję większą niż klęska: „Oto nadchodzą dni (…), kiedy zawrę z domem Izraela i z domem judzkim nowe przymierze” (Jr 31,31). Chrześcijanie widzą w tych słowach zapowiedź Nowego Przymierza w Chrystusie.",
+    "Powołany przez Boga już w młodości słowami: „Zanim ukształtowałem cię w łonie matki, znałem cię” (Jr 1,5), przez ponad czterdzieści lat wzywał mieszkańców Judy do nawrócenia i ostrzegał przed nadchodzącym upadkiem Jerozolimy. Wierność Bożemu posłannictwu wystawiała go na liczne próby – doświadczał odrzucenia, prześladowań i uwięzienia, a nawet został wrzucony do cysterny. Mimo cierpienia i samotności nie wyrzekł się swojej misji, pozostając niezłomnym głosicielem słowa Bożego. Gdy w 587 roku p.n.e. Babilończycy zburzyli Jerozolimę i świątynię, spełniły się jego dramatyczne proroctwa. Jeremiasz niósł jednak również przesłanie nadziei, zapowiadając odnowienie więzi między Bogiem a Jego ludem: „Oto nadchodzą dni (…), kiedy zawrę z domem Izraela i z domem judzkim nowe przymierze” (Jr 31,31). W tradycji chrześcijańskiej słowa te odczytywane są jako zapowiedź Nowego Przymierza, które wypełniło się w Jezusie Chrystusie.",
     "Jr 1,5; 31,31"
    ],
    [
@@ -1456,7 +1456,7 @@ const TEXT = {
    [
     "Jeremiah",
     "Prophet of Jerusalem’s fall",
-    "Called as a young man with the words “Before I formed you in the womb I knew you” (Jer 1:5), for more than forty years he urged Judah to repent and foretold the fall of Jerusalem. For his faithfulness to this message he was persecuted, imprisoned and thrown into a cistern, yet he never stopped speaking in God’s name. When in 587 BC the Babylonians destroyed the city and the Temple, he proclaimed a hope greater than defeat: “The days are coming (…) when I will make a new covenant with the house of Israel and the house of Judah” (Jer 31:31). Christians see in these words the announcement of the New Covenant in Christ.",
+    "Called by God in his youth with the words “Before I formed you in the womb I knew you” (Jer 1:5), for more than forty years he urged the people of Judah to repent and warned of the coming fall of Jerusalem. Faithfulness to God’s mission exposed him to many trials – he suffered rejection, persecution and imprisonment, and was even thrown into a cistern. Despite suffering and loneliness he did not renounce his mission, remaining a steadfast preacher of God’s word. When in 587 BC the Babylonians destroyed Jerusalem and the Temple, his dramatic prophecies were fulfilled. Yet Jeremiah also carried a message of hope, announcing the renewal of the bond between God and His people: “The days are coming (…) when I will make a new covenant with the house of Israel and the house of Judah” (Jer 31:31). In Christian tradition these words are read as the announcement of the New Covenant fulfilled in Jesus Christ.",
     "Jer 1:5; 31:31"
    ],
    [
