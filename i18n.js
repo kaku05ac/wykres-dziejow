@@ -186,7 +186,7 @@ const TEXT = {
    [
     "Ród Kaina",
     "Rdz 4,1-22",
-    "Kain, pierworodny syn Adama i Ewy, po tragicznej śmierci swojego brata Abla osiedla się w krainie Nod, gdzie zakłada pierwsze miasto wspomniane w Biblii. Jego potomkowie dają początek kolejnym pokoleniom, rozwijając umiejętności, które stają się fundamentem ludzkiej cywilizacji. Jabal zostaje przedstawiony jako praojciec pasterzy i ludów wędrownych, Jubal jako ojciec muzyków grających na cytrze i flecie, a Tubal-Kain jako mistrz obróbki brązu i żelaza. W ten sposób Księga Rodzaju ukazuje początki życia społecznego, rzemiosła i muzyki, przedstawiając ród Kaina jako uczestnika narodzin ludzkiej kultury. Historia ta przypomina, że nawet w świecie naznaczonym grzechem człowiek zachowuje zdolność tworzenia, odkrywania i rozwijania darów, w które został wyposażony (Rdz 4,1–22)."
+    "Kain, pierworodny syn Adama i Ewy, po tragicznej śmierci swojego brata Abla osiedla się w krainie Nod, gdzie zakłada pierwsze miasto wspomniane w Biblii. Jego potomkowie dają początek kolejnym pokoleniom, rozwijając umiejętności, które stają się fundamentem ludzkiej cywilizacji. Jabal zostaje przedstawiony jako praojciec pasterzy i ludów wędrownych, Jubal jako ojciec muzyków grających na cytrze i flecie, a Tubal-Kain jako mistrz obróbki brązu i żelaza. W ten sposób Księga Rodzaju ukazuje początki życia społecznego, rzemiosła i muzyki, przedstawiając ród Kaina jako uczestnika narodzin ludzkiej kultury. Historia ta przypomina, że nawet w świecie naznaczonym grzechem człowiek zachowuje zdolność tworzenia, odkrywania i rozwijania darów, w które został wyposażony."
    ],
    [
     "Elam",
@@ -1139,7 +1139,7 @@ const TEXT = {
    [
     "Line of Cain",
     "Gen 4:1-22",
-    "Cain, the firstborn son of Adam and Eve, after the tragic death of his brother Abel settles in the land of Nod, where he founds the first city mentioned in the Bible. His descendants give rise to further generations, developing skills that become the foundation of human civilisation. Jabal is presented as the forefather of herdsmen and nomadic peoples, Jubal as the father of musicians who play the lyre and pipe, and Tubal-cain as a master of working bronze and iron. In this way the Book of Genesis shows the beginnings of social life, craft and music, presenting Cain’s line as a participant in the birth of human culture. This story reminds us that even in a world marked by sin, the human person keeps the ability to create, discover and develop the gifts with which they have been endowed (Gen 4:1–22)."
+    "Cain, the firstborn son of Adam and Eve, after the tragic death of his brother Abel settles in the land of Nod, where he founds the first city mentioned in the Bible. His descendants give rise to further generations, developing skills that become the foundation of human civilisation. Jabal is presented as the forefather of herdsmen and nomadic peoples, Jubal as the father of musicians who play the lyre and pipe, and Tubal-cain as a master of working bronze and iron. In this way the Book of Genesis shows the beginnings of social life, craft and music, presenting Cain’s line as a participant in the birth of human culture. This story reminds us that even in a world marked by sin, the human person keeps the ability to create, discover and develop the gifts with which they have been endowed."
    ],
    [
     "Elam",
