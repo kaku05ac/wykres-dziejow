@@ -340,6 +340,9 @@ html.has-cursor #chart [data-key], html.has-cursor #chart [data-key] * { cursor:
 @media (prefers-reduced-motion: reduce) { .cursor-dot { transition: opacity .2s ease; } }
 
 /* „KKK” in the card: a quiet dotted underline; hovering it explains the letters. */
+.card-link { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: var(--n-300); }
+.card-link:hover { color: var(--n-900); text-decoration-color: currentColor; }
+html.has-cursor .card-link { cursor: pointer !important; }
 abbr.kkk { text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 2px; cursor: help; }
 
 /* Noah's sons: a hairline bracket and a small name beside each family of nation rings. */

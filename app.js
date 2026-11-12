@@ -689,7 +689,10 @@
     put(el.cardTitle, 'text', card.title);
     // The Catechism's abbreviation (KKK in Polish, CCC in English) gets a hover note that spells it out, like the timeline lanes.
     const withKKK = t => esc(t).replace(/\b(KKK|CCC)\b/g, m => `<abbr class="kkk" title="${esc(U().kkk)}">${m}</abbr>`);
-    put(el.cardBody, 'html', withKKK(card.body));
+    // Named institutions in a description link to their own site (opened in a new tab).
+    const LINKS = [['Akademia Katolicka w Warszawie', 'https://akademiakatolicka.pl/'], ['Catholic Academy in Warsaw', 'https://akademiakatolicka.pl/']];
+    const withLinks = t => LINKS.reduce((h, [name, url]) => h.split(name).join(`<a class="card-link" href="${url}" target="_blank" rel="noopener">${name}</a>`), withKKK(t));
+    put(el.cardBody, 'html', withLinks(card.body));
     // The current event's date is already in the big year above, so its card shows only the reference;
     // a hovered or selected item (another time) keeps its date in this line.
     const isCurrent = !(key && items[key]) || key === 'e' + curEv;
@@ -1075,7 +1078,7 @@
       const t = e.target;
       dot.classList.toggle('is-text', !!(t.closest && t.closest('input, textarea')));
       // Over the year line on the timeline (two-way arrows) and over the wheel (a hand) the dot hides for the native pointer.
-      const onSlider = !!(t.closest && t.closest('#dkHead, #chart, abbr.kkk'));
+      const onSlider = !!(t.closest && t.closest('#dkHead, #chart, abbr.kkk, a'));
       dot.classList.toggle('is-slider', onSlider);
       // Over the pictures and films the dot shows the negative of what is under it, like a photographic negative.
       dot.classList.toggle('is-media', !!(t.closest && t.closest('.art-slot')));
