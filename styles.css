@@ -266,7 +266,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
   background: transparent; }
 .ask-screw { position: absolute; top: 12px; width: 13px; height: 13px; border-radius: 50%; border: 1px solid var(--n-300); background: radial-gradient(circle, var(--n-200) 30%, var(--n-25) 32%); opacity: .7; }
 .ask-screw.tl { left: 12px; } .ask-screw.tr { right: 12px; }
-.ask-grille { position: absolute; top: 34px; right: 13px; width: 45px; height: 14px;
+.ask-grille { position: absolute; top: 40px; right: 13px; width: 45px; height: 14px;
   background: radial-gradient(circle, #9a959a 1px, transparent 1.4px) 0 0 / 9px 7px; opacity: .45; }
 .ask-seam { position: absolute; background: var(--n-200); box-shadow: 0 1px 0 var(--n-0); }
 .ask-seam.h { display: none; }
