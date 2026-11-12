@@ -64,7 +64,7 @@ const TEXT = {
    [
     "Noe",
     "Rdz 5,32; 9,28-29",
-    "Sprawiedliwy w zepsutym pokoleniu, który z posłuszeństwem i ufnością wznosi arkę i ocala w niej rodzinę oraz wszelkie stworzenia. Po potopie Bóg zawiera z nim przymierze obejmujące całą ludzkość, a jego znakiem staje się tęcza. Dla chrześcijan arka jest obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów."
+    "Człowiek sprawiedliwy i wierny Bogu, który pośród świata pogrążonego w nieprawości zachował wiarę i prawość serca. Ufając Bożemu słowu, zbudował arkę, w której ocalił swoją rodzinę oraz przedstawicieli świata zwierząt przed wodami potopu. Gdy wody ustąpiły, Bóg zawarł z Noem przymierze obejmujące całą ludzkość i wszystkie istoty żywe, a jego widzialnym znakiem uczynił tęczę – symbol Bożej wierności, miłosierdzia i nadziei na nowy początek. W tradycji chrześcijańskiej arka Noego jest zapowiedzią Kościoła, który pośród burz i niepewności dziejów prowadzi wierzących ku ocaleniu. Historia Noego przypomina o sile wiary, znaczeniu posłuszeństwa Bogu oraz nadziei, która trwa nawet w obliczu największych prób."
    ],
    [
     "Sem",
@@ -389,7 +389,7 @@ const TEXT = {
    [
     "Noe",
     "Budowniczy arki",
-    "Sprawiedliwy w zepsutym pokoleniu, który z posłuszeństwem i ufnością wznosi arkę i ocala w niej rodzinę oraz wszelkie stworzenia. Po potopie Bóg zawiera z nim przymierze obejmujące całą ludzkość, a jego znakiem staje się tęcza. Dla chrześcijan arka jest obrazem Kościoła, który bezpiecznie niesie ludzi przez fale dziejów.",
+    "Człowiek sprawiedliwy i wierny Bogu, który pośród świata pogrążonego w nieprawości zachował wiarę i prawość serca. Ufając Bożemu słowu, zbudował arkę, w której ocalił swoją rodzinę oraz przedstawicieli świata zwierząt przed wodami potopu. Gdy wody ustąpiły, Bóg zawarł z Noem przymierze obejmujące całą ludzkość i wszystkie istoty żywe, a jego widzialnym znakiem uczynił tęczę – symbol Bożej wierności, miłosierdzia i nadziei na nowy początek. W tradycji chrześcijańskiej arka Noego jest zapowiedzią Kościoła, który pośród burz i niepewności dziejów prowadzi wierzących ku ocaleniu. Historia Noego przypomina o sile wiary, znaczeniu posłuszeństwa Bogu oraz nadziei, która trwa nawet w obliczu największych prób.",
     "Rdz 6-9"
    ],
    [
@@ -1017,7 +1017,7 @@ const TEXT = {
    [
     "Noah",
     "Gen 5:32; 9:28-29",
-    "A righteous man in a corrupt generation, who with obedience and trust builds the ark and saves in it his family and every kind of creature. After the flood God makes with him a covenant embracing all humanity, and its sign is the rainbow. For Christians the ark is an image of the Church, carrying people safely through the waves of history."
+    "A righteous man, faithful to God, who in a world sunk in wickedness kept his faith and uprightness of heart. Trusting God’s word, he built the ark, in which he saved his family and representatives of the animal world from the waters of the flood. When the waters receded, God made a covenant with Noah embracing all humanity and every living creature, and made the rainbow its visible sign – a symbol of God’s faithfulness, mercy and the hope of a new beginning. In Christian tradition Noah’s ark foreshadows the Church, which amid the storms and uncertainties of history leads believers to salvation. The story of Noah recalls the strength of faith, the importance of obedience to God and a hope that endures even in the face of the greatest trials."
    ],
    [
     "Shem",
@@ -1342,7 +1342,7 @@ const TEXT = {
    [
     "Noah",
     "Builder of the ark",
-    "A righteous man in a corrupt generation, who with obedience and trust builds the ark and saves in it his family and every kind of creature. After the flood God makes with him a covenant embracing all humanity, and its sign is the rainbow. For Christians the ark is an image of the Church, carrying people safely through the waves of history.",
+    "A righteous man, faithful to God, who in a world sunk in wickedness kept his faith and uprightness of heart. Trusting God’s word, he built the ark, in which he saved his family and representatives of the animal world from the waters of the flood. When the waters receded, God made a covenant with Noah embracing all humanity and every living creature, and made the rainbow its visible sign – a symbol of God’s faithfulness, mercy and the hope of a new beginning. In Christian tradition Noah’s ark foreshadows the Church, which amid the storms and uncertainties of history leads believers to salvation. The story of Noah recalls the strength of faith, the importance of obedience to God and a hope that endures even in the face of the greatest trials.",
     "Gen 6-9"
    ],
    [
