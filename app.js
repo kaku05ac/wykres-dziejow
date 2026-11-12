@@ -665,7 +665,7 @@
     put(el.askYear, 'text', yearLabel);
     // The period under the big year: Genesis 1–11, the patriarchs, Exodus and judges, the united kingdom (Saul, 1050 BC),
     // the divided kingdom (931 BC), the exile to Christ's birth, his life, then the Church.
-    const HUB = [am(1656), SEAM, -1250, -1050, -931, -587, -5, 30];
+    const HUB = [am(1656), SEAM, -1250, -1050, -931, -587, -5, 33];
     const hubAt = HUB.findIndex(b => year < b);
     // A long name breaks into two lines at the space nearest its middle, so it stays inside the small centre circle.
     const hubTxt = U().hub[hubAt < 0 ? HUB.length : hubAt];

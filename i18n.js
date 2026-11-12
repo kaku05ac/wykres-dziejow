@@ -351,7 +351,7 @@ const TEXT = {
     "Ukrzyżowanie i Pięćdziesiątnica",
     "Dz 2",
     "„Nikt nie ma większej miłości od tej, gdy ktoś życie swoje oddaje za przyjaciół swoich” (J 15,13): w Jerozolimie Jezus umiera na krzyżu, a trzeciego dnia pusty grób ogłasza, że miłość jest mocniejsza od śmierci. Pięćdziesiąt dni później Duch Święty zstępuje na apostołów zgromadzonych z Maryją. Piotr, który niedawno trzykrotnie się zaparł, bez lęku głosi Zmartwychwstałego, a tego dnia chrzest przyjmuje około trzech tysięcy osób. Tak rodzi się Kościół.",
-    "30 lub 33 n.e."
+    "33 n.e."
    ],
    [
     "Upadek Rzymu",
@@ -1304,7 +1304,7 @@ const TEXT = {
     "Crucifixion and Pentecost",
     "Acts 2",
     "“Greater love has no one than this, that someone lay down his life for his friends” (John 15:13): in Jerusalem Jesus dies on the cross, and on the third day the empty tomb proclaims that love is stronger than death. Fifty days later the Holy Spirit descends on the apostles gathered with Mary. Peter, who not long before had denied him three times, fearlessly proclaims the Risen One, and that day about three thousand people are baptised. So the Church is born.",
-    "AD 30 or 33"
+    "AD 33"
    ],
    [
     "Fall of Rome",
