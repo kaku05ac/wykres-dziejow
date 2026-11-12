@@ -563,7 +563,7 @@ const TEXT = {
    [
     "Św. Jan Paweł II",
     "Papież",
-    "Karol Wojtyła z Wadowic, pierwszy papież Polak, który przez prawie 27 lat pontyfikatu niesie Ewangelię do ponad 120 krajów. Jego słowa z 1979 r. „Niech zstąpi Duch Twój! I odnowi oblicze ziemi. Tej ziemi!” dodały Polakom odwagi w drodze do wolności; od 2014 r. Kościół czci go jako świętego.",
+    "Karol Wojtyła, urodzony w Wadowicach, w 1978 r. został pierwszym papieżem z Polski. Pontyfikat rozpoczął słowami „Non abbiate paura!” („Nie lękajcie się!”), a w ciągu blisko 27 lat odwiedził ponad sto krajów na wszystkich kontynentach. Jego słowa z 1979 r. „Niech zstąpi Duch Twój! I odnowi oblicze ziemi. Tej ziemi!” dodały Polakom odwagi w drodze do wolności. W 1981 r. przeżył zamach na placu św. Piotra, a od początku lat 90. zmagał się z chorobą Parkinsona, która stopniowo odbierała mu siły. Mimo to nie zrezygnował z posługi i pełnił ją do końca, publicznie i z godnością. W 2014 r. Kościół ogłosił go świętym.",
     ""
    ],
    [
@@ -1516,7 +1516,7 @@ const TEXT = {
    [
     "St John Paul II",
     "Pope",
-    "Karol Wojtyła of Wadowice, the first Polish pope, who over a pontificate of almost 27 years carries the Gospel to more than 120 countries. His words of 1979, “Let your Spirit descend and renew the face of the earth. This land!”, gave Poles courage on the road to freedom; since 2014 the Church has honoured him as a saint.",
+    "Karol Wojtyła, born in Wadowice, became the first pope from Poland in 1978. He began his pontificate with the words “Non abbiate paura!” (“Be not afraid!”), and over almost 27 years he visited more than a hundred countries on every continent. His words of 1979, “Let your Spirit descend and renew the face of the earth. This land!”, gave Poles courage on the road to freedom. In 1981 he survived an assassination attempt in St Peter’s Square, and from the early 1990s he lived with Parkinson’s disease, which gradually took away his strength. Even so, he did not step down and carried out his ministry to the end, in public and with dignity. In 2014 the Church declared him a saint.",
     ""
    ],
    [
