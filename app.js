@@ -454,6 +454,8 @@
   // ── Render ────────────────────────────────────────────────
   // Christ is born: when the slider passes 5 BC, a small white star of light travels along the edge of the
   // New Testament wedge, from the centre out to the rim, trailing a short tail, and fades away there.
+  // Switched off for now (kept for later): set NT_STAR to true to bring the star of light back.
+  const NT_STAR = false;
   const ntStar = (() => {
     const NS = 'http://www.w3.org/2000/svg', g = document.createElementNS(NS, 'g');
     g.setAttribute('class', 'nt-star'); g.setAttribute('pointer-events', 'none');
@@ -485,7 +487,7 @@
   const render = () => {
     const { year, playing, view, hover, sel } = state;
     // The star of Bethlehem's light starts when the slider moves past 5 BC.
-    if (starYear !== null && starYear < -5 && year >= -5) ntStar();
+    if (NT_STAR && starYear !== null && starYear < -5 && year >= -5) ntStar();
     starYear = year;
     const focus = k => sel === k || hover === k;
     // A family of nations (Shem, Ham, Japheth) chosen on its bracket or in the legend: its rings stay bright.
