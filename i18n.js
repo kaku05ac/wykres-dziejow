@@ -557,7 +557,7 @@ const TEXT = {
    [
     "Kard. Stefan Wyszyński",
     "Prymas Tysiąclecia",
-    "Prymas Polski, który przez ponad trzydzieści lat prowadził Kościół przez czasy komunizmu. Uwięziony w latach 1953–1956, nie ugiął się przed władzą. Wielką Nowenną przygotował naród do obchodów Tysiąclecia Chrztu Polski, a za niezłomność Polacy nazwali go Prymasem Tysiąclecia. Gdy władze komunistyczne usunęły Wydział Teologiczny z Uniwersytetu Warszawskiego, Prymas uzyskał w 1962 r. od Stolicy Apostolskiej zgodę na studia akademickie dla swoich alumnów; z tej inicjatywy wyrosła dzisiejsza Akademia Katolicka w Warszawie.",
+    "Prymas Polski, który przez ponad trzydzieści lat prowadził Kościół przez czasy komunizmu. Uwięziony w latach 1953–1956, nie ugiął się przed władzą. Wielką Nowenną przygotował naród do obchodów Tysiąclecia Chrztu Polski, a za niezłomność Polacy nazwali go Prymasem Tysiąclecia i „interrex’em narodu”, nawiązując do roli, jaką prymasi pełnili w dawnej Rzeczypospolitej. W 1971 r. został nominowany do Pokojowej Nagrody Nobla za starania o pokój społeczny. Gdy władze komunistyczne usunęły Wydział Teologiczny z Uniwersytetu Warszawskiego, Prymas uzyskał w 1962 r. od Stolicy Apostolskiej zgodę na studia akademickie dla swoich alumnów; z tej inicjatywy wyrosła dzisiejsza Akademia Katolicka w Warszawie.",
     ""
    ],
    [
@@ -1510,7 +1510,7 @@ const TEXT = {
    [
     "Cardinal Stefan Wyszyński",
     "Primate of the Millennium",
-    "Primate of Poland, who for more than thirty years led the Church through the communist era. Imprisoned from 1953 to 1956, he did not bow to the regime. Through the Great Novena he prepared the nation for the Millennium of Poland’s Baptism, and for his steadfastness Poles called him the Primate of the Millennium. When the communist authorities removed the Faculty of Theology from the University of Warsaw, in 1962 the Primate obtained the Holy See’s approval for academic studies for his seminarians; from this initiative grew today’s Catholic Academy in Warsaw.",
+    "Primate of Poland, who for more than thirty years led the Church through the communist era. Imprisoned from 1953 to 1956, he did not bow to the regime. Through the Great Novena he prepared the nation for the Millennium of Poland’s Baptism, and for his steadfastness Poles called him the Primate of the Millennium and the “interrex of the nation”, recalling the role the primates held in the old Polish Commonwealth, where they governed during an interregnum. In 1971 he was nominated for the Nobel Peace Prize for his efforts for social peace. When the communist authorities removed the Faculty of Theology from the University of Warsaw, in 1962 the Primate obtained the Holy See’s approval for academic studies for his seminarians; from this initiative grew today’s Catholic Academy in Warsaw.",
     ""
    ],
    [
