@@ -84,7 +84,13 @@
   const state = { year: START, playing: false, stopAt: END, rate: 89, view: { ...FULL_VIEW }, hover: null, sel: null };
   let tween = null, drag = null, dirty = true;
   let FIG_R = null;
-  const set = patch => { Object.assign(state, typeof patch === 'function' ? patch(state) : patch); dirty = true; };
+  // The chat listens for the reader choosing a marker (the hook is set once the chat exists).
+  let onSel = null;
+  const set = patch => {
+    const sel = state.sel;
+    Object.assign(state, typeof patch === 'function' ? patch(state) : patch); dirty = true;
+    if (onSel && state.sel !== sel) onSel(state.sel);
+  };
   const flyTo = b => { tween = { t: 0, a: { ...state.view }, b }; };
 
   // ── DOM ───────────────────────────────────────────────────
@@ -430,10 +436,11 @@
         const key = drag.dot.dataset.key, y0 = +drag.dot.dataset.y;
         // Arcs need a few years of length before they exist, so step just past their start.
         const y = key && (key[0] === 'p' || key[0] === 'n') ? y0 + 3 : key && key[0] === 'k' ? y0 + 1 : y0;
+        const same = key && state.sel === key;
         set({ year: y, playing: false, sel: key || null });
         flyToYear(y0);
         // Offer questions about the clicked mark in the chat.
-        if (key) ask.suggest(key);
+        if (same) ask.suggest(key);                        // a new marker gets its questions through onSel
       }
       drag = null;
     };
@@ -842,7 +849,7 @@
   });
   const endDrag = e => {
     if (!drag) return;
-    if (!drag.moved && e.type === 'pointerup' && drag.key) { set({ sel: drag.key }); ask.suggest(drag.key); }
+    if (!drag.moved && e.type === 'pointerup' && drag.key) { const same = state.sel === drag.key; set({ sel: drag.key }); if (same) ask.suggest(drag.key); }
     drag = null; svg.classList.remove('dragging');
   };
   svg.addEventListener('pointerup', endDrag);
@@ -950,6 +957,8 @@
     knob.addEventListener('click', () => {
       if (ctl) return ctl.abort();
       if (input.value.trim()) return askNow(input.value);
+      // Before any marker is chosen there is nothing to suggest yet: the key just puts the cursor in the field.
+      if (!started) return input.focus({ preventScroll: true });
       // With nothing typed, the key does not send anything unseen: like a suggested question, it writes one of
       // the questions for what the card shows into the field (if it can, one not already offered above), so
       // the reader sees it, may change it, and sends it with a second press or Enter.
@@ -1029,7 +1038,9 @@
       if (y < 100) return [['read', Q.ev[0]], ['src', Q.ev[1]], ['read', Q.ev[2]], hist].concat(nt);
       return [['src', Q.later[0]], ['view', Q.later[1]], hist];
     };
-    let chipsFor = null;
+    let chipsFor = null, started = false;
+    // The field says what to do: before any marker, pick one (or type); once questions are offered, pick one of them.
+    const placeholder = () => { input.placeholder = chips.children.length ? U().html.askPh : U().html.askPhStart; };
     const suggest = key => {
       const x = key && nameOf(key);
       if (!x) return;
@@ -1048,10 +1059,13 @@
         chips.appendChild(b);
       });
       log.scrollTop = log.scrollHeight;
+      placeholder();
     };
     // Opening the chat offers questions about whatever the card shows now.
-    toggle.addEventListener('click', () => { if (!body.hidden) suggest(state.sel || 'e' + eventAt(Math.round(state.year))); });
-    return { suggest, relabel: () => { if (chipsFor) suggest(chipsFor); if (!ctl) send.textContent = U().html.askSend; if (off) note.textContent = offline ? U().ask.err.offline : U().ask.err.off; } };
+    toggle.addEventListener('click', () => { if (!body.hidden && started) suggest(state.sel || 'e' + eventAt(Math.round(state.year))); });
+    // Until the reader picks a marker the chat shows only its welcome; the first marker starts the suggestions.
+    onSel = sel => { if (!sel) return; started = true; if (nameOf(sel)) suggest(sel); else placeholder(); };
+    return { suggest, relabel: () => { if (chipsFor) suggest(chipsFor); placeholder(); if (!ctl) send.textContent = U().html.askSend; if (off) note.textContent = offline ? U().ask.err.offline : U().ask.err.off; } };
   })();
 
   // ── Info: the note on dating shows only after a click ─────
