@@ -449,7 +449,7 @@ const TEXT = {
    [
     "Samuel",
     "Ostatni sędzia i prorok",
-    "Syn Anny, która wymodliła go u Boga i oddała na służbę w przybytku w Szilo. Jako chłopiec usłyszał w nocy wołanie Pana i odpowiedział słowami, które stały się wzorem posłuszeństwa: „Mów, bo sługa Twój słucha” (1 Sm 3,10). Był ostatnim z sędziów i pierwszym z wielkich proroków Izraela. Gdy lud zapragnął króla, namaścił Saula, a później w Betlejem najmłodszego z synów Jessego, Dawida. W ten sposób stał się pomostem między czasami sędziów a epoką królów.",
+    "Syn Anny, która wyprosiła go u Boga gorliwą modlitwą, już od dzieciństwa został poświęcony służbie Bożej w przybytku w Szilo. Tam pewnej nocy usłyszał głos Pana i odpowiedział słowami, które stały się ponadczasowym wyrazem wiary i posłuszeństwa: „Mów, bo sługa Twój słucha” (1 Sm 3,10). Jako ostatni sędzia i jeden z najważniejszych proroków Izraela odegrał szczególną rolę w dziejach narodu wybranego. Gdy Izraelici zapragnęli ustanowienia monarchii, namaścił na pierwszego króla Saula, a później, zgodnie z wolą Boga, wybrał i namaścił Dawida, najmłodszego syna Jessego. W ten sposób stał się postacią łączącą dwie epoki biblijnej historii – czasy sędziów i początki królestwa Izraela.",
     "1 Sm 3; 10,1; 16,13"
    ],
    [
@@ -1414,7 +1414,7 @@ const TEXT = {
    [
     "Samuel",
     "Last judge and prophet",
-    "Son of Hannah, who obtained him from God in prayer and gave him to serve at the sanctuary in Shiloh. As a boy he heard the Lord calling in the night and answered with words that became a model of obedience: “Speak, for your servant is listening” (1 Sam 3:10). He was the last of the judges and the first of Israel’s great prophets. When the people asked for a king, he anointed Saul, and later, in Bethlehem, the youngest of Jesse’s sons, David. In this way he became the bridge between the age of the judges and the age of the kings.",
+    "Son of Hannah, who obtained him from God through fervent prayer, he was dedicated from childhood to God’s service at the sanctuary in Shiloh. There one night he heard the voice of the Lord and answered with words that became a timeless expression of faith and obedience: “Speak, for your servant is listening” (1 Sam 3:10). As the last judge and one of the most important prophets of Israel, he played a special role in the history of the chosen people. When the Israelites wanted a monarchy, he anointed Saul as the first king, and later, in accordance with God’s will, chose and anointed David, the youngest son of Jesse. In this way he became the figure joining two eras of biblical history – the time of the judges and the beginnings of the kingdom of Israel.",
     "1 Sam 3; 10:1; 16:13"
    ],
    [
