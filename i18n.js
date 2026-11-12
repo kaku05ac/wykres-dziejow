@@ -2129,8 +2129,8 @@ const UI = {
       zoomIn: 'Powiększ', zoomOut: 'Pomniejsz', chart: 'Kołowy wykres chronologii', reel: 'Wydarzenia w obrazach',
       dock: 'Oś czasu: przeciągnij, aby zmienić rok, albo użyj klawiszy strzałek', lang: 'Język',
       askBar: 'Zapytaj o historię', navBar: 'Nawigacja', askHello: 'dzień dobry',
-      askIntro: 'Zapytaj o postać, wydarzenie lub epokę albo wybierz jedno z proponowanych pytań. Odpowiedź uwzględni rok, w którym jesteś na osi czasu.',
-      askPh: 'Wpisz pytanie lub wybierz propozycję powyżej', askPhStart: 'Wpisz pytanie lub wybierz marker', askSend: 'Wyślij', askStop: 'Stop', askKnob: 'Zapytaj', askMode: 'Czat',
+      askIntro: 'Zapytaj o postać, wydarzenie lub epokę albo kliknij dowolny element wykresu, a pojawią się propozycje pytań. Odpowiedź uwzględni rok, w którym jesteś na osi czasu.',
+      askPh: 'Wpisz pytanie lub wybierz propozycję powyżej', askPhStart: 'Wpisz pytanie lub kliknij dowolny element wykresu', askSend: 'Wyślij', askStop: 'Stop', askKnob: 'Zapytaj', askMode: 'Czat',
       askNote: 'Odpowiada Claude (AI) i może się mylić.', askChips: 'Propozycje pytań', askLog: 'Rozmowa o historii'
     }
   },
@@ -2321,8 +2321,8 @@ const UI = {
       zoomIn: 'Zoom in', zoomOut: 'Zoom out', chart: 'Radial chronology chart', reel: 'Events in pictures',
       dock: 'Timeline: drag to change the year, or use the arrow keys', lang: 'Language',
       askBar: 'Ask about history', navBar: 'Navigation', askHello: 'hello',
-      askIntro: 'Ask about a person, an event or an era, or choose one of the suggested questions. The answer will take into account the year you are at on the timeline.',
-      askPh: 'Type a question or choose a suggestion above', askPhStart: 'Type a question or choose a marker', askSend: 'Send', askStop: 'Stop', askKnob: 'Ask', askMode: 'Chat',
+      askIntro: 'Ask about a person, an event or an era, or click anything on the chart and suggested questions will appear. The answer will take into account the year you are at on the timeline.',
+      askPh: 'Type a question or choose a suggestion above', askPhStart: 'Type a question or click anything on the chart', askSend: 'Send', askStop: 'Stop', askKnob: 'Ask', askMode: 'Chat',
       askNote: 'Answered by Claude (AI), which can make mistakes.', askChips: 'Suggested questions', askLog: 'Conversation about history'
     }
   }
