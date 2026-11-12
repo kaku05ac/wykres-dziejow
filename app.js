@@ -900,7 +900,9 @@
     const busy = on => {
       box.classList.toggle('is-busy', on);
       send.textContent = on ? U().html.askStop : U().html.askSend;
-      knob.disabled = on || off; input.disabled = off;
+      // The send button is hidden: while an answer is being written the knob itself stops it.
+      knob.querySelector('.ask-knob-label').textContent = on ? U().html.askStop : U().html.askKnob;
+      knob.disabled = off; input.disabled = off;
     };
     const setOpen = open => {
       body.hidden = !open; box.classList.toggle('is-open', open);
@@ -946,6 +948,7 @@
     toggle.addEventListener('click', () => setOpen(body.hidden));
     form.addEventListener('submit', e => { e.preventDefault(); if (ctl) ctl.abort(); else askNow(input.value); });
     knob.addEventListener('click', () => {
+      if (ctl) return ctl.abort();
       if (input.value.trim()) return askNow(input.value);
       // With nothing typed, the key asks one of a few deeper questions about what the card shows.
       const K = U().ask.q.knob, x = $('cardTitle').textContent;

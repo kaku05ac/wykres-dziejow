@@ -256,6 +256,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .ask-input:disabled { cursor: not-allowed; }
 .ask-knob:disabled .ask-dash { background: var(--n-300); }
 .ask.is-busy .ask-send { border-color: var(--c1); color: #f3f2ed; }
+/* The send button stays in the form (Enter still sends) but is hidden: the Zapytaj knob asks and, while an answer is written, stops it. */
+.ask-send { display: none; }
 .ask-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
 .ask-chips:empty { display: none; }
 .ask-chip { padding: 5px 9px; border: 1px solid #4a3f44; border-radius: 0; background: transparent; color: #cac7bb; font-family: var(--mono); font-size: 10.5px; letter-spacing: .02em; line-height: 1.4; text-align: left; cursor: pointer; transition: border-color .15s, color .15s; }
