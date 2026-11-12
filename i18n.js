@@ -447,6 +447,12 @@ const TEXT = {
     "Sdz 13-16"
    ],
    [
+    "Samuel",
+    "Ostatni sędzia i prorok",
+    "Syn Anny, która wymodliła go u Boga i oddała na służbę w przybytku w Szilo. Jako chłopiec usłyszał w nocy wołanie Pana i odpowiedział słowami, które stały się wzorem posłuszeństwa: „Mów, bo sługa Twój słucha” (1 Sm 3,10). Był ostatnim z sędziów i pierwszym z wielkich proroków Izraela. Gdy lud zapragnął króla, namaścił Saula, a później w Betlejem najmłodszego z synów Jessego, Dawida. W ten sposób stał się pomostem między czasami sędziów a epoką królów.",
+    "1 Sm 3; 10,1; 16,13"
+   ],
+   [
     "Saul",
     "Pierwszy król Izraela",
     "Izrael prosi o króla, „tak jak to jest u innych narodów” (1 Sm 8,5), a prorok Samuel namaszcza Saula z pokolenia Beniamina, który „o głowę przewyższał cały lud”. Odważny wojownik z czasem przestaje słuchać Boga, a jego dramat kończy się śmiercią na górze Gilboa. Dawid opłakuje go i Jonatana pieśnią: „Jakże padli bohaterowie!” (2 Sm 1,19).",
@@ -481,6 +487,12 @@ const TEXT = {
     "Król Judy",
     "Król Judy, który po latach bałwochwalstwa swego ojca oczyszcza świątynię i przywraca obchody Paschy. Gdy wojska asyryjskie oblegają Jerozolimę, idzie za radą proroka Izajasza i zawierza miasto Bogu, a Jerozolima ocala.",
     "2 Krl 18-19"
+   ],
+   [
+    "Jeremiasz",
+    "Prorok upadku Jerozolimy",
+    "Powołany jako młodzieniec słowami: „Zanim ukształtowałem cię w łonie matki, znałem cię” (Jr 1,5), przez ponad czterdzieści lat wzywał Judę do nawrócenia i zapowiadał upadek Jerozolimy. Za wierność temu przesłaniu był prześladowany, więziony i wrzucony do cysterny, a mimo to nie przestał mówić w imieniu Boga. Gdy w 587 r. p.n.e. Babilończycy zburzyli miasto i świątynię, zapowiedział nadzieję większą niż klęska: „Oto nadchodzą dni (…), kiedy zawrę z domem Izraela i z domem judzkim nowe przymierze” (Jr 31,31). Chrześcijanie widzą w tych słowach zapowiedź Nowego Przymierza w Chrystusie.",
+    "Jr 1,5; 31,31"
    ],
    [
     "Daniel",
@@ -1400,6 +1412,12 @@ const TEXT = {
     "Judg 13-16"
    ],
    [
+    "Samuel",
+    "Last judge and prophet",
+    "Son of Hannah, who obtained him from God in prayer and gave him to serve at the sanctuary in Shiloh. As a boy he heard the Lord calling in the night and answered with words that became a model of obedience: “Speak, for your servant is listening” (1 Sam 3:10). He was the last of the judges and the first of Israel’s great prophets. When the people asked for a king, he anointed Saul, and later, in Bethlehem, the youngest of Jesse’s sons, David. In this way he became the bridge between the age of the judges and the age of the kings.",
+    "1 Sam 3; 10:1; 16:13"
+   ],
+   [
     "Saul",
     "First king of Israel",
     "Israel asks for a king “like all the nations” (1 Sam 8:5), and the prophet Samuel anoints Saul of the tribe of Benjamin, who “stood head and shoulders above all the people”. A brave warrior, he gradually stops listening to God, and his drama ends in death on Mount Gilboa. David mourns him and Jonathan in a lament: “How are the mighty fallen!” (2 Sam 1:19).",
@@ -1434,6 +1452,12 @@ const TEXT = {
     "King of Judah",
     "King of Judah, who after years of his father’s idolatry cleanses the Temple and restores the Passover. When the Assyrian army besieges Jerusalem, he follows the counsel of the prophet Isaiah and entrusts the city to God, and Jerusalem is saved.",
     "2 Kgs 18-19"
+   ],
+   [
+    "Jeremiah",
+    "Prophet of Jerusalem’s fall",
+    "Called as a young man with the words “Before I formed you in the womb I knew you” (Jer 1:5), for more than forty years he urged Judah to repent and foretold the fall of Jerusalem. For his faithfulness to this message he was persecuted, imprisoned and thrown into a cistern, yet he never stopped speaking in God’s name. When in 587 BC the Babylonians destroyed the city and the Temple, he proclaimed a hope greater than defeat: “The days are coming (…) when I will make a new covenant with the house of Israel and the house of Judah” (Jer 31:31). Christians see in these words the announcement of the New Covenant in Christ.",
+    "Jer 1:5; 31:31"
    ],
    [
     "Daniel",
