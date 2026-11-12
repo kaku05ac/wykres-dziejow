@@ -64,7 +64,7 @@
     });
     return r;
   })();
-  COL.king2 = ['#f4e4da', '#b7a79e', ''];
+  COL.king2 = ['#eceae2', '#b7a79e', ''];
   const KING_SHADE = (() => { const n = { ju: 0, is: 0 }; return KINGS.map(k => (n[k[3] === 'is' ? 'is' : 'ju']++ % 2 ? 'king2' : 'king')); })();
 
   // Faint pie slices behind everything, one per testament band, from the hub to the outer circle.
@@ -115,7 +115,7 @@
     let html = '';
     ticks.forEach(([y, text]) => {
       const a = ang(y), seam = y === SEAM, [x1, y1] = pt(seam ? 82 : 342, a), [x2, y2] = pt(606, a), [x3, y3] = pt(630, a);
-      html += `<line x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke="${seam ? '#bcafa6' : '#ebdfd7'}" stroke-width=".6"${seam ? ' stroke-dasharray="4 4"' : ''}/>`;
+      html += `<line x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke="${seam ? '#b7b1ab' : '#e5e3dd'}" stroke-width=".6"${seam ? ' stroke-dasharray="4 4"' : ''}/>`;
       html += `<text class="tick-label" x="${f1(x3)}" y="${f1(y3)}" text-anchor="middle" dominant-baseline="middle" transform="rotate(${f1(uprightRot(a))} ${f1(x3)} ${f1(y3)})">${text}</text>`;
     });
     // Testament bands around the outside: Old Testament, New Testament, Church history.
@@ -155,7 +155,7 @@
   // there is one, otherwise a flat grey. Each block holds a 9:16 scene centred in it.
   const EXTS = ['jpg', 'jpeg', 'png', 'webp'];
   const REEL_W = [118, 134, 104, 142, 126, 112, 138, 98, 130, 120, 108, 144, 116, 132, 124];
-  const REEL_GREY = ['#e4d4ca', '#d8c1b2', '#ece1d9', '#beb2aa', '#ddcabd', '#e7dad1', '#c5b9b1', '#e0cec2', '#d4bcac', '#e9dcd3', '#c1b5ad', '#dac6b8', '#e2d1c6', '#d6bfb0', '#e6d8ce'];
+  const REEL_GREY = ['#dcdad2', '#ccc9be', '#e6e5df', '#bab4ae', '#d3d1c7', '#e0dfd8', '#c0bbb6', '#d7d4cb', '#c8c5b8', '#e2e0da', '#bdb7b1', '#cfcdc3', '#d9d7cf', '#cac7bc', '#deddd6'];
   // Films for events, by EV_IDS id.
   const VIDEOS = { creation: 'images/events/creation.mp4', 'the-flood': 'images/events/the-flood.mp4', 'tower-of-babel': 'images/events/tower-of-babel.mp4', 'binding-of-isaac': 'images/events/binding-of-isaac.mp4', 'the-exodus': 'images/events/the-exodus.mp4', 'kingdom-divides': 'images/events/kingdom-divides.mp4', 'return-from-exile': 'images/events/return-from-exile.mp4', 'crucifixion-and-pentecost': 'images/events/crucifixion-and-pentecost.mp4', 'fall-of-rome': 'images/events/fall-of-rome.mp4', reformation: 'images/events/reformation.mp4' };
   // A film covers its event's stretch of the timeline: from the event to the next one.
@@ -639,7 +639,7 @@
       figs += `<g opacity="${p.toFixed(3)}">`
         + `<line x1="${f1(lx)}" y1="${f1(ly)}" x2="${f1(x)}" y2="${f1(y)}" stroke="${c[1]}" stroke-width=".6" opacity=".7"/>`
         + `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(9 + 26 * (1 - ho))}" fill="none" stroke="${c[1]}" stroke-width=".6" opacity="${(ho * 0.8).toFixed(3)}" pointer-events="none"/>`
-        + `<circle data-key="${key}" cx="${f1(x)}" cy="${f1(y)}" r="${r.toFixed(2)}" fill="#fdfaf8" stroke="${stroke}" stroke-width="${on ? 1.4 : 0.9}"/>`
+        + `<circle data-key="${key}" cx="${f1(x)}" cy="${f1(y)}" r="${r.toFixed(2)}" fill="#fbfbfa" stroke="${stroke}" stroke-width="${on ? 1.4 : 0.9}"/>`
         + `<text class="fig-initial" x="${f1(x)}" y="${f1(y)}" text-anchor="middle" dominant-baseline="central" style="font-size:${(10 * p).toFixed(2)}px">${esc(g[6] || g[0].replace(/^(Św\.|Bł\.|Kard\.|St|Cardinal)\s+/, '')[0])}</text></g>`;
     });
 
