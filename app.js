@@ -975,7 +975,7 @@
     };
     // Each question carries a theme; the three shown always have three different themes, so two never
     // ask nearly the same thing (e.g. Scripture passages and the readings at Mass are one theme).
-    const SAYINGS = new Set(['Mojżesz', 'Jozue', 'Dawid', 'Salomon', 'Eliasz', 'Izajasz', 'Józef', 'Estera', 'Jan Chrzciciel', 'Jezus', 'Piotr', 'Paweł',
+    const SAYINGS = new Set(['Mojżesz', 'Jozue', 'Dawid', 'Salomon', 'Eliasz', 'Izajasz', 'Józef', 'Estera', 'Jan Chrzciciel', 'Piotr', 'Paweł',
       'Sokrates', 'Platon', 'Arystoteles', 'Św. Augustyn', 'Św. Grzegorz Wielki', 'Św. Tomasz z Akwinu', 'Marcin Luter', 'Leon XIII',
       'Kard. Stefan Wyszyński', 'Św. Jan Paweł II']);
     const poolOf = key => {
@@ -1000,6 +1000,7 @@
           ? [['name', P.name], ['age', P.age], ['family', P.family], ['trad', P.trad], ['luke', P.luke]]
           : words.concat([['name', P.name], ['family', P.family], ['trad', P.trad], ['cov', P.cov], hist], nt);
       }
+      if (k === 'f' && TEXT.pl.FIG[i][0] === 'Jezus') return Q.jesus.map((f, j) => ['j' + j, f]);
       if (k === 'f' && FIG[i][6] !== 'U') {
         // "Words worth knowing by heart" only for people whose words are well known; the others get the
         // Scripture passages about them (biblical) or their works (later).

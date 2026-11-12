@@ -1987,6 +1987,14 @@ const UI = {
         fig: [x => `${x}: jakie słowa tej postaci warto znać na pamięć?`],
         figBible: [x => `${x}: które fragmenty Pisma najpełniej pokazują tę postać?`],
         figLater: [x => `${x}: jakie dzieła lub świadectwa tej postaci warto poznać?`],
+        // Jesus has His own questions: the general ones about "a person" do not fit Him.
+        jesus: [
+          () => 'Jak cztery Ewangelie ukazują Jezusa i czym różnią się ich spojrzenia?',
+          () => 'Które przypowieści Jezusa najpełniej odsłaniają Jego naukę o Królestwie Bożym?',
+          () => 'Co o Jezusie mówią źródła spoza Biblii, np. Józef Flawiusz i Tacyt?',
+          () => 'Jak Kościół wyznaje wiarę w Jezusa Chrystusa, prawdziwego Boga i prawdziwego człowieka?',
+          () => 'Które słowa Jezusa Kościół szczególnie powtarza w modlitwie i liturgii?',
+        ],
         king: [x => `${x}: co o tym panowaniu mówią źródła spoza Biblii i archeologia?`, x => `${x}: którzy prorocy działali w czasie tego panowania i co mówili?`,
           x => `${x}: jak Biblia ocenia to panowanie i dlaczego?`],
         nat: [x => `${x}: jak Biblia opisuje relacje tego narodu z Izraelem?`, x => `${x}: co mówią o tym narodzie archeologia i źródła z epoki?`],
@@ -2064,6 +2072,13 @@ const UI = {
         fig: [x => `${x}: which words of this person are worth knowing by heart?`],
         figBible: [x => `${x}: which passages of Scripture show this person most fully?`],
         figLater: [x => `${x}: which works or testimonies of this person are worth knowing?`],
+        jesus: [
+          () => 'How do the four Gospels portray Jesus, and how do their perspectives differ?',
+          () => 'Which of Jesus’ parables most fully reveal His teaching on the Kingdom of God?',
+          () => 'What do sources outside the Bible, such as Josephus and Tacitus, say about Jesus?',
+          () => 'How does the Church profess faith in Jesus Christ, true God and true man?',
+          () => 'Which words of Jesus does the Church repeat especially in prayer and the liturgy?',
+        ],
         king: [x => `${x}: what do sources outside the Bible and archaeology say about this reign?`, x => `${x}: which prophets were active during this reign, and what did they say?`,
           x => `${x}: how does the Bible judge this reign, and why?`],
         nat: [x => `${x}: how does the Bible describe this people’s relations with Israel?`, x => `${x}: what do archaeology and sources of the time say about this people?`],
