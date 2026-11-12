@@ -278,7 +278,7 @@ const TEXT = {
    [
     "Stworzenie świata",
     "Rdz 1,1",
-    "„Na początku Bóg stworzył niebo i ziemię” (Rdz 1,1): tak otwiera się Biblia, uroczystym hymnem, który wyznaje, że wszystko, co istnieje, pochodzi od Boga i jest dobre. W rytmie sześciu dni i siódmego dnia odpoczynku wyłania się ład świata, a jego ukoronowaniem jest człowiek, mężczyzna i niewiasta, stworzony na obraz Boga i powołany do troski o świat. Kościół czyta ten tekst nie jako opis przyrodniczy, lecz jako słowo o Stwórcy i godności człowieka (KKK 337–343).",
+    "„Na początku Bóg stworzył niebo i ziemię” (Rdz 1,1) – tymi słowami rozpoczyna się Biblia, ukazując Boga jako Stwórcę wszystkiego, co istnieje. W majestatycznym rytmie sześciu dni stworzenia i siódmego dnia odpoczynku odsłania się harmonijny porządek świata, którego zwieńczeniem jest człowiek – mężczyzna i kobieta – stworzony na obraz i podobieństwo Boga, obdarzony szczególną godnością i powołany do troski o powierzone mu dzieło. Każdy etap stworzenia objawia dobroć i mądrość Stwórcy, a cały świat jawi się jako dar Jego miłości. Kościół odczytuje biblijny opis stworzenia nie jako naukowe wyjaśnienie początków wszechświata, lecz jako głęboką prawdę o pochodzeniu wszelkiego istnienia, harmonii stworzenia oraz wyjątkowym miejscu i odpowiedzialności człowieka w Bożym zamyśle (KKK 337–343).",
     "Bez daty"
    ],
    [
@@ -1231,7 +1231,7 @@ const TEXT = {
    [
     "Creation",
     "Gen 1:1",
-    "“In the beginning God created the heavens and the earth” (Gen 1:1): so the Bible opens, with a solemn hymn proclaiming that everything that exists comes from God and is good. In the rhythm of six days and a seventh day of rest the order of the world unfolds, crowned by the human being, man and woman, made in God’s image and called to care for the world. The Church reads this text not as a scientific account but as a word about the Creator and the dignity of the human person (CCC 337–343).",
+    "“In the beginning God created the heavens and the earth” (Gen 1:1) – with these words the Bible begins, presenting God as the Creator of all that exists. In the majestic rhythm of six days of creation and a seventh day of rest, the harmonious order of the world unfolds, crowned by the human being – man and woman – created in the image and likeness of God, endowed with a particular dignity and called to care for the work entrusted to them. Every stage of creation reveals the goodness and wisdom of the Creator, and the whole world appears as a gift of His love. The Church reads the biblical account of creation not as a scientific explanation of the origins of the universe, but as a profound truth about the origin of all that exists, the harmony of creation, and the unique place and responsibility of the human person in God’s plan (CCC 337–343).",
     "Undated"
    ],
    [
