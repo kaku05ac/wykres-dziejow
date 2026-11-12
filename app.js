@@ -957,20 +957,16 @@
     knob.addEventListener('click', () => {
       if (ctl) return ctl.abort();
       if (input.value.trim()) return askNow(input.value);
-      // Before any marker is chosen there is nothing to suggest yet: the key just puts the cursor in the field.
-      if (!started) return input.focus({ preventScroll: true });
+      // Before any element is clicked there is nothing to suggest yet: the key just puts the cursor in the field.
+      if (!chipsFor) return input.focus({ preventScroll: true });
       // With nothing typed, the key does not send anything unseen: like a suggested question, it writes one of
-      // the questions for what the card shows into the field (if it can, one not already offered above), so
-      // the reader sees it, may change it, and sends it with a second press or Enter.
-      const key = state.sel || 'e' + eventAt(Math.round(state.year)), x = nameOf(key);
-      let q = U().ask.q.knob.hist($('cardTitle').textContent);
-      if (x) {
-        const shown = new Set([...chips.children].map(c => c.textContent));
-        const all = poolOf(key).map(([, f]) => f(x)), fresh = all.filter(t => !shown.has(t));
-        const from = fresh.length ? fresh : all;
-        q = from[Math.floor(Math.random() * from.length)];
-      }
-      input.value = q; input.focus({ preventScroll: true }); input.setSelectionRange(q.length, q.length);
+      // the questions about the element clicked last (the one the suggestions above are about; if it can, one
+      // not already offered there) into the field, so the reader sees it, may change it, and sends it with a
+      // second press or Enter.
+      const x = nameOf(chipsFor), shown = new Set([...chips.children].map(c => c.textContent));
+      const all = poolOf(chipsFor).map(([, f]) => f(x)), fresh = all.filter(t => !shown.has(t));
+      const from = fresh.length ? fresh : all;
+      offer(from[Math.floor(Math.random() * from.length)]);
     });
     // Keys typed in the chat must not move the timeline.
     box.addEventListener('keydown', e => e.stopPropagation());
@@ -1038,7 +1034,13 @@
       if (y < 100) return [['read', Q.ev[0]], ['src', Q.ev[1]], ['read', Q.ev[2]], hist].concat(nt);
       return [['src', Q.later[0]], ['view', Q.later[1]], hist];
     };
-    let chipsFor = null, started = false;
+    // The chat is always about the element clicked last (chipsFor) and changes only when the reader clicks:
+    // moving the slider, playing or reopening the chat leaves its suggestions as they are.
+    let chipsFor = null, offered = '';
+    // A suggestion written into the field; remembered so that it can be cleared when it no longer fits,
+    // while anything the reader typed or changed stays.
+    const offer = q => { input.value = offered = q; input.focus({ preventScroll: true }); input.setSelectionRange(q.length, q.length); };
+    const clearOffer = () => { if (input.value && input.value === offered) input.value = ''; };
     // The field says what to do: before any marker, pick one (or type); once questions are offered, pick one of them.
     const placeholder = () => { input.placeholder = chips.children.length ? U().html.askPh : U().html.askPhStart; };
     const suggest = key => {
@@ -1055,17 +1057,18 @@
       pick.slice(0, 3).forEach(f => {
         const b = document.createElement('button');
         b.type = 'button'; b.className = 'ask-chip'; b.textContent = f(x);
-        b.addEventListener('click', () => { input.value = b.textContent; input.focus({ preventScroll: true }); input.setSelectionRange(input.value.length, input.value.length); });
+        b.addEventListener('click', () => offer(b.textContent));
         chips.appendChild(b);
       });
       log.scrollTop = log.scrollHeight;
       placeholder();
     };
-    // Opening the chat offers questions about whatever the card shows now.
-    toggle.addEventListener('click', () => { if (!body.hidden && started) suggest(state.sel || 'e' + eventAt(Math.round(state.year))); });
-    // Until the reader picks a marker the chat shows only its welcome; the first marker starts the suggestions.
-    onSel = sel => { if (!sel) return; started = true; if (nameOf(sel)) suggest(sel); else placeholder(); };
-    return { suggest, relabel: () => { if (chipsFor) suggest(chipsFor); placeholder(); if (!ctl) send.textContent = U().html.askSend; if (off) note.textContent = offline ? U().ask.err.offline : U().ask.err.off; } };
+    // Until the reader clicks an element the chat shows only its welcome. A click on another element brings
+    // its questions and clears a suggestion left in the field for the previous one.
+    onSel = sel => { if (!sel || !nameOf(sel)) return; if (sel !== chipsFor) clearOffer(); suggest(sel); };
+    // A new language: the suggestions are written again, and a suggestion left in the field (in the old
+    // language) is cleared.
+    return { suggest, relabel: () => { clearOffer(); if (chipsFor) suggest(chipsFor); placeholder(); if (!ctl) send.textContent = U().html.askSend; if (off) note.textContent = offline ? U().ask.err.offline : U().ask.err.off; } };
   })();
 
   // ── Info: the note on dating shows only after a click ─────
