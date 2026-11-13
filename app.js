@@ -158,7 +158,7 @@
 
   // Event reel: a column of blocks down the left of the chart, one per event, right edges
   // aligned and widths staggered. A block shows images/events/<EV_IDS id>.(jpg|png|webp) when
-  // there is one, otherwise a flat grey. Each block holds a 9:16 scene centred in it.
+  // there is one, otherwise a flat grey. The picture or film covers its block, cropped to the centre.
   const EXTS = ['jpg', 'jpeg', 'png', 'webp'];
   const REEL_W = [118, 134, 104, 142, 126, 112, 138, 98, 130, 120, 108, 144, 116, 132, 124];
   const REEL_GREY = ['#dcdad2', '#ccc9be', '#e6e5df', '#b6b2b4', '#d3d1c7', '#e0dfd8', '#bdb9bb', '#d7d4cb', '#c8c5b8', '#e2e0da', '#b9b5b7', '#cfcdc3', '#d9d7cf', '#cac7bc', '#deddd6'];
